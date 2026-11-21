@@ -1,0 +1,9 @@
+{
+  "source": "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/FCPLCN-161608-1v0/.work/data8-expansion/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+  "source_sha256": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+  "stable": true,
+  "threshold_mm": 0.175,
+  "tested_different_net_pairs": 3707,
+  "violations_below_threshold": [],
+  "method": "KiCad actual effective copper-shape collision at 174999nm clearance, on F/B copper, includes filled polygons. Same-net geometry ignored; no electrical substitutions; zero violations means all tested different-net shape pairs satisfy the 0.175mm threshold within 1nm comparison and KiCad polygonization tolerance. Native DRC is authoritative for project-specific constraints."
+}

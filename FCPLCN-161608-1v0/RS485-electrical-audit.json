@@ -1,0 +1,2399 @@
+{
+  "date": "2026-11-13",
+  "status": "pass",
+  "stage_only": false,
+  "sources_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "2592644c74a39559e2b532ddc4e1c992a71a0071a535deb9cfa6d8d727480d27",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "1759118d9e806128c3c548b6a5b7c7f60371050b8487fac048ff950e16d52a49",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "cf1c7d75abe0bd37ea548fa5183ee7196b226036f324c0d9b1b4a8ce22fc61f0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/tools/check_board.py": "ec576bf1b126187f661d2399ded6686dd17459212c4a334a56495a37a1ac1376",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/Power-budget.json": "de384da65af38f49cde693cc4c2e8ff376bdf05c4b91881fd84dfe52d21bc3ba",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/RS485-logic-budget.json": "bb18b745a7389052d8d13f61e9120b6f8e20d1144bdd1d667a52a5cd086fc585",
+    "RS485-bypass-leads.json": "473d9feb8aa03cd04a22e9b2afb4f217a484feab970b15eac837c04fe5c2fb23"
+  },
+  "native_reports": {
+    "Lower.ERC": {
+      "sha256": "594bf9b870dcfd62a453bf51a855d81262d620c5eee8203b89e089d6676f7e8b",
+      "violations": 0
+    },
+    "Lower.DRC": {
+      "sha256": "36ce2822b221f286e7a28876d19a2353b4a5281cf5864bef4f37e3a9a7924286",
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    },
+    "Upper.ERC": {
+      "sha256": "56a19e8ac121bdab83a7941d958747e7f5401b0f769cbecde4389e334231a3ff",
+      "violations": 0
+    },
+    "Upper.DRC": {
+      "sha256": "22b2433ba50d98998e8ce674d823b10dea6a47753fce15f7633eae79883bc9e1",
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    }
+  },
+  "errors": [],
+  "notes": [],
+  "XML_PCB_full_parity": {
+    "component_count": 131,
+    "footprint_count": 131,
+    "XML_pin_count": 431,
+    "PCB_unique_pin_count": 431,
+    "refs_unique": true,
+    "full_pin_net_match": true,
+    "duplicate_physical_pad_numbers": {
+      "U1.41": [
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND"
+      ],
+      "J2.SH": [
+        "GND",
+        "GND",
+        "GND"
+      ],
+      "U12.2": [
+        "+3V3_RS485"
+      ]
+    },
+    "metadata_mismatches": []
+  },
+  "independent_RS485_pin_map": {
+    "U11": {
+      "1": "GND",
+      "2": "+3V3_RS485",
+      "3": "RS485_RX_RAW",
+      "4": "RS485_DIR",
+      "5": "RS485_DIR",
+      "6": "RS485_TX",
+      "7": "+3V3_RS485",
+      "8": "GND",
+      "9": "GND_ISO",
+      "10": "RS485_VISO_OUT",
+      "11": "RS485_A",
+      "12": "RS485_B",
+      "13": "RS485_B",
+      "14": "RS485_A",
+      "15": "RS485_VISO",
+      "16": "GND_ISO"
+    },
+    "U12": {
+      "1": "GND",
+      "2": "+3V3_RS485",
+      "3": "MOD_VBUS"
+    },
+    "U13": {
+      "1": "GND",
+      "2": "RS485_TX_CPU",
+      "3": "RS485_TX_BUF",
+      "4": "GND",
+      "5": "RS485_DIR_CPU",
+      "6": "RS485_DIR_BUF",
+      "7": "GND",
+      "8": "unconnected-(U13-3Y-Pad8)",
+      "9": "GND",
+      "10": "+3V3_RS485",
+      "11": "unconnected-(U13-4Y-Pad11)",
+      "12": "GND",
+      "13": "+3V3_RS485",
+      "14": "+3V3_RS485"
+    },
+    "U14": {
+      "1": "GND",
+      "2": "RS485_RX_RAW",
+      "3": "RS485_RX_BUF",
+      "4": "+3V3",
+      "5": "GND",
+      "6": "unconnected-(U14-2Y-Pad6)",
+      "7": "GND",
+      "8": "unconnected-(U14-3Y-Pad8)",
+      "9": "GND",
+      "10": "+3V3",
+      "11": "unconnected-(U14-4Y-Pad11)",
+      "12": "GND",
+      "13": "+3V3",
+      "14": "+3V3"
+    },
+    "FB1": {
+      "1": "RS485_VISO_OUT",
+      "2": "RS485_VISO"
+    },
+    "D9": {
+      "1": "RS485_A",
+      "2": "RS485_B",
+      "3": "GND_ISO"
+    },
+    "J8": {
+      "1": "+5V_ISO",
+      "2": "RS485_A",
+      "3": "RS485_B",
+      "4": "GND_ISO"
+    },
+    "JP2": {
+      "1": "RS485_TERM",
+      "2": "RS485_B"
+    },
+    "R47": {
+      "1": "RS485_TX_BUF",
+      "2": "RS485_TX"
+    },
+    "R48": {
+      "1": "RS485_DIR_BUF",
+      "2": "RS485_DIR"
+    },
+    "R49": {
+      "1": "RS485_RX_BUF",
+      "2": "RS485_RX_CPU"
+    },
+    "R50": {
+      "1": "+3V3",
+      "2": "RS485_TX_CPU"
+    },
+    "R51": {
+      "1": "RS485_DIR_CPU",
+      "2": "GND"
+    },
+    "R52": {
+      "1": "RS485_RX_CPU",
+      "2": "+3V3"
+    },
+    "R53": {
+      "1": "RS485_A",
+      "2": "RS485_TERM"
+    },
+    "R54": {
+      "1": "+3V3_RS485",
+      "2": "RS485_TX"
+    },
+    "R55": {
+      "1": "RS485_DIR",
+      "2": "GND"
+    },
+    "R56": {
+      "1": "+3V3_RS485",
+      "2": "RS485_RX_RAW"
+    },
+    "C37": {
+      "1": "MOD_VBUS",
+      "2": "GND"
+    },
+    "C38": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C39": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C40": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C41": {
+      "1": "RS485_VISO_OUT",
+      "2": "GND_ISO"
+    },
+    "C42": {
+      "1": "RS485_VISO_OUT",
+      "2": "GND_ISO"
+    },
+    "C43": {
+      "1": "RS485_VISO",
+      "2": "GND_ISO"
+    },
+    "C44": {
+      "1": "RS485_VISO",
+      "2": "GND_ISO"
+    },
+    "C45": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C46": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C47": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  "critical_MPNs": {
+    "U11": {
+      "MPN": "ADM2687EBRIZ",
+      "Manufacturer": "Analog Devices",
+      "footprint": "RelayStack:ADM2687E_SOIC_IC_16_7.5x12.75mm_P1.27mm"
+    },
+    "U12": {
+      "MPN": "TLV1117LV33DCYR",
+      "Manufacturer": "Texas Instruments",
+      "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+    },
+    "U13": {
+      "MPN": "74LVC125AD,118",
+      "Manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+    },
+    "U14": {
+      "MPN": "74LVC125AD,118",
+      "Manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+    },
+    "FB1": {
+      "MPN": "BLM21PG221SN1D",
+      "Manufacturer": "Murata",
+      "footprint": "Inductor_SMD:L_0805_2012Metric"
+    },
+    "D9": {
+      "MPN": "CDSOT23-SM712",
+      "Manufacturer": "Bourns",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    "C37": {
+      "MPN": "C3216X7R1E106K160AB",
+      "Manufacturer": "TDK",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    "C38": {
+      "MPN": "C3216X7R1E106K160AB",
+      "Manufacturer": "TDK",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric"
+    }
+  },
+  "root_check_board_RS485_comparison": {
+    "status": "pass",
+    "assertion_statements": 30
+  },
+  "bypass_placement": [
+    {
+      "cap": "C39",
+      "ADM_power_pin": 2,
+      "ADM_ground_pin": 1,
+      "cap_side": "B.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        103.6,
+        109.95
+      ],
+      "cap_ground_xy_mm": [
+        103.6,
+        111.85
+      ],
+      "ADM_power_xy_mm": [
+        105.85,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        105.85,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 2.561859676094692,
+      "direct_ground_distance_XY_mm": 2.3273429055470105,
+      "terminal_loop_XY_lower_bound_mm": 8.059202581641703,
+      "minimum_vertical_via_allowance_mm": 0,
+      "terminal_loop_3D_lower_bound_mm": 8.059202581641703,
+      "two_external_leads_3D_lower_bound_mm": 4.889202581641703,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C45",
+      "ADM_power_pin": 2,
+      "ADM_ground_pin": 1,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        107.3,
+        110.45
+      ],
+      "cap_ground_xy_mm": [
+        107.3,
+        112.35
+      ],
+      "ADM_power_xy_mm": [
+        105.85,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        105.85,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 1.6211492836873476,
+      "direct_ground_distance_XY_mm": 1.453108736468128,
+      "terminal_loop_XY_lower_bound_mm": 6.244258020155476,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 9.444258020155477,
+      "two_external_leads_3D_lower_bound_mm": 6.274258020155476,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C40",
+      "ADM_power_pin": 7,
+      "ADM_ground_pin": 8,
+      "cap_side": "B.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        103.7,
+        106.35
+      ],
+      "cap_ground_xy_mm": [
+        103.7,
+        104.45
+      ],
+      "ADM_power_xy_mm": [
+        105.85,
+        104.825
+      ],
+      "ADM_ground_xy_mm": [
+        105.85,
+        103.555
+      ],
+      "direct_power_distance_XY_mm": 2.63592962728522,
+      "direct_ground_distance_XY_mm": 2.32884628088674,
+      "terminal_loop_XY_lower_bound_mm": 8.13477590817196,
+      "minimum_vertical_via_allowance_mm": 0,
+      "terminal_loop_3D_lower_bound_mm": 8.13477590817196,
+      "two_external_leads_3D_lower_bound_mm": 4.96477590817196,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C42",
+      "ADM_power_pin": 10,
+      "ADM_ground_pin": 9,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        114.65,
+        106.05
+      ],
+      "cap_ground_xy_mm": [
+        116.55,
+        106.05
+      ],
+      "ADM_power_xy_mm": [
+        116.15,
+        104.825
+      ],
+      "ADM_ground_xy_mm": [
+        116.15,
+        103.555
+      ],
+      "direct_power_distance_XY_mm": 1.936653040686431,
+      "direct_ground_distance_XY_mm": 2.5268607005531583,
+      "terminal_loop_XY_lower_bound_mm": 7.6335137412395895,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 10.833513741239589,
+      "two_external_leads_3D_lower_bound_mm": 7.66351374123959,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C43",
+      "ADM_power_pin": 15,
+      "ADM_ground_pin": 16,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        115.25,
+        112.4
+      ],
+      "cap_ground_xy_mm": [
+        117.15,
+        112.4
+      ],
+      "ADM_power_xy_mm": [
+        116.15,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        116.15,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 1.520074011356026,
+      "direct_ground_distance_XY_mm": 1.0010119879402044,
+      "terminal_loop_XY_lower_bound_mm": 5.691085999296231,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 8.89108599929623,
+      "two_external_leads_3D_lower_bound_mm": 5.72108599929623,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C44",
+      "ADM_power_pin": 15,
+      "ADM_ground_pin": 16,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        115.25,
+        110.2
+      ],
+      "cap_ground_xy_mm": [
+        117.15,
+        110.2
+      ],
+      "ADM_power_xy_mm": [
+        116.15,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        116.15,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 1.3268854509715602,
+      "direct_ground_distance_XY_mm": 2.457646231661506,
+      "terminal_loop_XY_lower_bound_mm": 6.954531682633066,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 10.154531682633067,
+      "two_external_leads_3D_lower_bound_mm": 6.984531682633066,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    }
+  ],
+  "bypass_actual_copper_leads": {
+    "source": ".work/rs485-recovery/review/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+    "source_sha256": "2592644c74a39559e2b532ddc4e1c992a71a0071a535deb9cfa6d8d727480d27",
+    "source_stable_during_audit": true,
+    "board_thickness_mm": 1.6,
+    "grid_step_mm": 0.1,
+    "segment_samples_max_spacing_mm": 0.04,
+    "method": "Constructed8-waygrid paths constrained to actual filled same-net copper union. Layer changes only at existing via/PTH centers, weighted by board thickness. Total lead length excludes capacitor/body internal span per ADM RevD p18. Distances are conservative grid route upper bounds, not full EM simulation.",
+    "records": [
+      {
+        "capacitor": "C39",
+        "leads": [
+          {
+            "cap_pin": 1,
+            "ADM_pin": 2,
+            "net": "/+3V3_RS485",
+            "path_length_mm": 2.735143415797879,
+            "layer_transitions": 0,
+            "sampled_path_mm": [
+              [
+                103.6,
+                109.95,
+                "B.Cu"
+              ],
+              [
+                103.7,
+                110.0,
+                "B.Cu"
+              ],
+              [
+                103.8,
+                110.1,
+                "B.Cu"
+              ],
+              [
+                103.9,
+                110.2,
+                "B.Cu"
+              ],
+              [
+                104.0,
+                110.3,
+                "B.Cu"
+              ],
+              [
+                104.1,
+                110.4,
+                "B.Cu"
+              ],
+              [
+                104.2,
+                110.5,
+                "B.Cu"
+              ],
+              [
+                104.3,
+                110.6,
+                "B.Cu"
+              ],
+              [
+                104.4,
+                110.7,
+                "B.Cu"
+              ],
+              [
+                104.5,
+                110.8,
+                "B.Cu"
+              ],
+              [
+                104.6,
+                110.9,
+                "B.Cu"
+              ],
+              [
+                104.7,
+                111.0,
+                "B.Cu"
+              ],
+              [
+                104.8,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                104.9,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.0,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.1,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.2,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.3,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.4,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.5,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.6,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.7,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.85,
+                111.175,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 100
+          },
+          {
+            "cap_pin": 2,
+            "ADM_pin": 1,
+            "net": "/GND",
+            "path_length_mm": 2.4755147776951953,
+            "layer_transitions": 0,
+            "sampled_path_mm": [
+              [
+                103.6,
+                111.85,
+                "B.Cu"
+              ],
+              [
+                103.7,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                103.8,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                103.9,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.0,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.1,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.2,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.3,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.4,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.5,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.6,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.7,
+                111.9,
+                "B.Cu"
+              ],
+              [
+                104.8,
+                112.0,
+                "B.Cu"
+              ],
+              [
+                104.9,
+                112.0,
+                "B.Cu"
+              ],
+              [
+                105.0,
+                112.1,
+                "B.Cu"
+              ],
+              [
+                105.1,
+                112.2,
+                "B.Cu"
+              ],
+              [
+                105.2,
+                112.3,
+                "B.Cu"
+              ],
+              [
+                105.3,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                105.4,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                105.5,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                105.6,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                105.7,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                105.85,
+                112.445,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 151
+          }
+        ],
+        "combined_lead_length_mm": 5.2106581934930745,
+        "constructed_lead_path_at_most10mm": true
+      },
+      {
+        "capacitor": "C45",
+        "leads": [
+          {
+            "cap_pin": 1,
+            "ADM_pin": 2,
+            "net": "/+3V3_RS485",
+            "path_length_mm": 4.645038936933398,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                107.3,
+                110.45,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                110.3,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                110.2,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                110.1,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                110.0,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                109.9,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                109.8,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                109.7,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                109.6,
+                "F.Cu"
+              ],
+              [
+                107.2,
+                109.6,
+                "B.Cu"
+              ],
+              [
+                107.1,
+                109.7,
+                "B.Cu"
+              ],
+              [
+                107.0,
+                109.8,
+                "B.Cu"
+              ],
+              [
+                106.9,
+                109.9,
+                "B.Cu"
+              ],
+              [
+                106.9,
+                110.0,
+                "B.Cu"
+              ],
+              [
+                106.9,
+                110.1,
+                "B.Cu"
+              ],
+              [
+                106.8,
+                110.2,
+                "B.Cu"
+              ],
+              [
+                106.8,
+                110.3,
+                "B.Cu"
+              ],
+              [
+                106.7,
+                110.4,
+                "B.Cu"
+              ],
+              [
+                106.6,
+                110.5,
+                "B.Cu"
+              ],
+              [
+                106.5,
+                110.6,
+                "B.Cu"
+              ],
+              [
+                106.4,
+                110.7,
+                "B.Cu"
+              ],
+              [
+                106.3,
+                110.8,
+                "B.Cu"
+              ],
+              [
+                106.2,
+                110.9,
+                "B.Cu"
+              ],
+              [
+                106.1,
+                111.0,
+                "B.Cu"
+              ],
+              [
+                106.0,
+                111.1,
+                "B.Cu"
+              ],
+              [
+                105.85,
+                111.175,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 588
+          },
+          {
+            "cap_pin": 2,
+            "ADM_pin": 1,
+            "net": "/GND",
+            "path_length_mm": 5.268407996508644,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                107.3,
+                112.35,
+                "F.Cu"
+              ],
+              [
+                107.4,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                107.5,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                107.6,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                107.7,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                107.8,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                107.9,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                108.0,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                108.1,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                108.2,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                108.3,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                108.4,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                108.4,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                108.3,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                108.2,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                108.1,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                108.0,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.9,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.8,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.7,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.6,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.5,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.4,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.3,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.2,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.1,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                107.0,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.9,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.8,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.7,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.6,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.5,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.4,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.3,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.2,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.1,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                106.0,
+                112.4,
+                "B.Cu"
+              ],
+              [
+                105.85,
+                112.445,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 257
+          }
+        ],
+        "combined_lead_length_mm": 9.913446933442042,
+        "constructed_lead_path_at_most10mm": true
+      },
+      {
+        "capacitor": "C40",
+        "leads": [
+          {
+            "cap_pin": 1,
+            "ADM_pin": 7,
+            "net": "/+3V3_RS485",
+            "path_length_mm": 5.975635250526647,
+            "layer_transitions": 2,
+            "sampled_path_mm": [
+              [
+                103.7,
+                106.35,
+                "B.Cu"
+              ],
+              [
+                103.8,
+                106.3,
+                "B.Cu"
+              ],
+              [
+                103.9,
+                106.3,
+                "B.Cu"
+              ],
+              [
+                104.05,
+                106.35,
+                "B.Cu"
+              ],
+              [
+                104.05,
+                106.35,
+                "F.Cu"
+              ],
+              [
+                104.2,
+                106.3,
+                "F.Cu"
+              ],
+              [
+                104.3,
+                106.2,
+                "F.Cu"
+              ],
+              [
+                104.4,
+                106.1,
+                "F.Cu"
+              ],
+              [
+                104.5,
+                106.0,
+                "F.Cu"
+              ],
+              [
+                104.6,
+                105.9,
+                "F.Cu"
+              ],
+              [
+                104.7,
+                105.8,
+                "F.Cu"
+              ],
+              [
+                104.8,
+                105.7,
+                "F.Cu"
+              ],
+              [
+                104.9,
+                105.6,
+                "F.Cu"
+              ],
+              [
+                105.0,
+                105.5,
+                "F.Cu"
+              ],
+              [
+                105.1,
+                105.4,
+                "F.Cu"
+              ],
+              [
+                105.2,
+                105.3,
+                "F.Cu"
+              ],
+              [
+                105.3,
+                105.2,
+                "F.Cu"
+              ],
+              [
+                105.4,
+                105.1,
+                "F.Cu"
+              ],
+              [
+                105.5,
+                105.0,
+                "F.Cu"
+              ],
+              [
+                105.6,
+                104.9,
+                "F.Cu"
+              ],
+              [
+                105.7,
+                104.9,
+                "F.Cu"
+              ],
+              [
+                105.85,
+                104.825,
+                "F.Cu"
+              ],
+              [
+                105.85,
+                104.825,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 299
+          },
+          {
+            "cap_pin": 2,
+            "ADM_pin": 8,
+            "net": "/GND",
+            "path_length_mm": 2.4997788464071236,
+            "layer_transitions": 0,
+            "sampled_path_mm": [
+              [
+                103.7,
+                104.45,
+                "B.Cu"
+              ],
+              [
+                103.8,
+                104.4,
+                "B.Cu"
+              ],
+              [
+                103.9,
+                104.4,
+                "B.Cu"
+              ],
+              [
+                104.0,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.1,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.2,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.3,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.4,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.5,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.6,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.7,
+                104.3,
+                "B.Cu"
+              ],
+              [
+                104.8,
+                104.2,
+                "B.Cu"
+              ],
+              [
+                104.9,
+                104.1,
+                "B.Cu"
+              ],
+              [
+                105.0,
+                104.0,
+                "B.Cu"
+              ],
+              [
+                105.1,
+                103.9,
+                "B.Cu"
+              ],
+              [
+                105.2,
+                103.8,
+                "B.Cu"
+              ],
+              [
+                105.3,
+                103.7,
+                "B.Cu"
+              ],
+              [
+                105.4,
+                103.7,
+                "B.Cu"
+              ],
+              [
+                105.5,
+                103.7,
+                "B.Cu"
+              ],
+              [
+                105.6,
+                103.7,
+                "B.Cu"
+              ],
+              [
+                105.7,
+                103.6,
+                "B.Cu"
+              ],
+              [
+                105.85,
+                103.555,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 166
+          }
+        ],
+        "combined_lead_length_mm": 8.47541409693377,
+        "constructed_lead_path_at_most10mm": true
+      },
+      {
+        "capacitor": "C42",
+        "leads": [
+          {
+            "cap_pin": 1,
+            "ADM_pin": 10,
+            "net": "/RS485_VISO_OUT",
+            "path_length_mm": 3.991504406270142,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                114.65,
+                106.05,
+                "F.Cu"
+              ],
+              [
+                114.7,
+                105.9,
+                "F.Cu"
+              ],
+              [
+                114.8,
+                105.8,
+                "F.Cu"
+              ],
+              [
+                114.9,
+                105.7,
+                "F.Cu"
+              ],
+              [
+                114.9,
+                105.6,
+                "F.Cu"
+              ],
+              [
+                114.9,
+                105.5,
+                "F.Cu"
+              ],
+              [
+                114.9,
+                105.4,
+                "F.Cu"
+              ],
+              [
+                114.9,
+                105.3,
+                "F.Cu"
+              ],
+              [
+                114.9,
+                105.2,
+                "F.Cu"
+              ],
+              [
+                115.0,
+                105.1,
+                "F.Cu"
+              ],
+              [
+                115.0,
+                105.0,
+                "F.Cu"
+              ],
+              [
+                115.0,
+                105.0,
+                "B.Cu"
+              ],
+              [
+                115.1,
+                105.0,
+                "B.Cu"
+              ],
+              [
+                115.2,
+                105.0,
+                "B.Cu"
+              ],
+              [
+                115.3,
+                105.0,
+                "B.Cu"
+              ],
+              [
+                115.4,
+                104.9,
+                "B.Cu"
+              ],
+              [
+                115.5,
+                104.9,
+                "B.Cu"
+              ],
+              [
+                115.6,
+                104.9,
+                "B.Cu"
+              ],
+              [
+                115.7,
+                104.9,
+                "B.Cu"
+              ],
+              [
+                115.8,
+                104.9,
+                "B.Cu"
+              ],
+              [
+                115.9,
+                104.9,
+                "B.Cu"
+              ],
+              [
+                116.0,
+                104.9,
+                "B.Cu"
+              ],
+              [
+                116.15,
+                104.825,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 171
+          },
+          {
+            "cap_pin": 2,
+            "ADM_pin": 9,
+            "net": "/GND_ISO",
+            "path_length_mm": 5.586664282706681,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                116.55,
+                106.05,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.9,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.8,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.7,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.6,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.5,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.4,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.3,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.2,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.1,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                105.0,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.9,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.8,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.7,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.6,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.5,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.4,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.3,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.2,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.1,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                104.0,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.9,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.8,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.7,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.6,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.5,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.4,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.3,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.2,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.1,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                103.0,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                102.9,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                102.9,
+                "B.Cu"
+              ],
+              [
+                116.5,
+                103.0,
+                "B.Cu"
+              ],
+              [
+                116.4,
+                103.1,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                103.2,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                103.3,
+                "B.Cu"
+              ],
+              [
+                116.2,
+                103.4,
+                "B.Cu"
+              ],
+              [
+                116.15,
+                103.555,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 860
+          }
+        ],
+        "combined_lead_length_mm": 9.578168688976824,
+        "constructed_lead_path_at_most10mm": true
+      },
+      {
+        "capacitor": "C43",
+        "leads": [
+          {
+            "cap_pin": 1,
+            "ADM_pin": 15,
+            "net": "/RS485_VISO",
+            "path_length_mm": 3.988136530844374,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                115.25,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                112.3,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                112.2,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                112.1,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                112.0,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                111.9,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                111.8,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                111.7,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                111.6,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                111.5,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                111.4,
+                "F.Cu"
+              ],
+              [
+                115.0,
+                111.3,
+                "F.Cu"
+              ],
+              [
+                115.0,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.1,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.2,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.3,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.4,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.5,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.6,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.7,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.8,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.9,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                116.0,
+                111.2,
+                "B.Cu"
+              ],
+              [
+                116.15,
+                111.175,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 221
+          },
+          {
+            "cap_pin": 2,
+            "ADM_pin": 16,
+            "net": "/GND_ISO",
+            "path_length_mm": 3.5745133884206997,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                117.15,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                112.5,
+                "F.Cu"
+              ],
+              [
+                116.9,
+                112.6,
+                "F.Cu"
+              ],
+              [
+                116.8,
+                112.7,
+                "F.Cu"
+              ],
+              [
+                116.7,
+                112.8,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                112.9,
+                "F.Cu"
+              ],
+              [
+                116.5,
+                113.0,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                113.1,
+                "F.Cu"
+              ],
+              [
+                116.3,
+                113.2,
+                "F.Cu"
+              ],
+              [
+                116.3,
+                113.2,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                113.1,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                113.0,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                112.9,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                112.8,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                112.7,
+                "B.Cu"
+              ],
+              [
+                116.2,
+                112.6,
+                "B.Cu"
+              ],
+              [
+                116.15,
+                112.445,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 342
+          }
+        ],
+        "combined_lead_length_mm": 7.562649919265073,
+        "constructed_lead_path_at_most10mm": true
+      },
+      {
+        "capacitor": "C44",
+        "leads": [
+          {
+            "cap_pin": 1,
+            "ADM_pin": 15,
+            "net": "/RS485_VISO",
+            "path_length_mm": 3.988136530844374,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                115.25,
+                110.2,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                110.3,
+                "F.Cu"
+              ],
+              [
+                115.2,
+                110.4,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                110.5,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                110.6,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                110.7,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                110.8,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                110.9,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                111.0,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                111.1,
+                "F.Cu"
+              ],
+              [
+                115.1,
+                111.2,
+                "F.Cu"
+              ],
+              [
+                115.0,
+                111.3,
+                "F.Cu"
+              ],
+              [
+                115.0,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.1,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.2,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.3,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.4,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.5,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.6,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.7,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.8,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                115.9,
+                111.3,
+                "B.Cu"
+              ],
+              [
+                116.0,
+                111.2,
+                "B.Cu"
+              ],
+              [
+                116.15,
+                111.175,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 237
+          },
+          {
+            "cap_pin": 2,
+            "ADM_pin": 16,
+            "net": "/GND_ISO",
+            "path_length_mm": 5.747460579759798,
+            "layer_transitions": 1,
+            "sampled_path_mm": [
+              [
+                117.15,
+                110.2,
+                "F.Cu"
+              ],
+              [
+                117.1,
+                110.3,
+                "F.Cu"
+              ],
+              [
+                117.1,
+                110.4,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                110.5,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                110.6,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                110.7,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                110.8,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                110.9,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                111.0,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                111.1,
+                "F.Cu"
+              ],
+              [
+                117.0,
+                111.2,
+                "F.Cu"
+              ],
+              [
+                116.9,
+                111.3,
+                "F.Cu"
+              ],
+              [
+                116.8,
+                111.4,
+                "F.Cu"
+              ],
+              [
+                116.7,
+                111.5,
+                "F.Cu"
+              ],
+              [
+                116.6,
+                111.6,
+                "F.Cu"
+              ],
+              [
+                116.5,
+                111.7,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                111.8,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                111.9,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.0,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.1,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.2,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.3,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.4,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.5,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.6,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.7,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.8,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                112.9,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                113.0,
+                "F.Cu"
+              ],
+              [
+                116.4,
+                113.1,
+                "F.Cu"
+              ],
+              [
+                116.3,
+                113.2,
+                "F.Cu"
+              ],
+              [
+                116.3,
+                113.2,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                113.1,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                113.0,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                112.9,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                112.8,
+                "B.Cu"
+              ],
+              [
+                116.3,
+                112.7,
+                "B.Cu"
+              ],
+              [
+                116.2,
+                112.6,
+                "B.Cu"
+              ],
+              [
+                116.15,
+                112.445,
+                "B.Cu"
+              ]
+            ],
+            "explored_states": 1049
+          }
+        ],
+        "combined_lead_length_mm": 9.735597110604171,
+        "constructed_lead_path_at_most10mm": true
+      }
+    ]
+  },
+  "LDO_thermal": {
+    "regulator": "U12 TLV1117LV33DCYR",
+    "side": "F.Cu",
+    "design_current_A": 0.201,
+    "Vin_design_max_V": 5.25,
+    "Vout_engineering_min_V": 3.201,
+    "design_dissipation_W": 0.411849,
+    "TI_reference_thetaJA_C_per_W": 62.9,
+    "TI_reference_temperature_rise_C": 25.9053021,
+    "output_pads": [
+      {
+        "xy_mm": [
+          100.5,
+          112.45
+        ],
+        "size_mm": [
+          2.0,
+          1.5
+        ],
+        "net": "+3V3_RS485",
+        "zones_containing_pad_center": [
+          {
+            "filled_area_mm2": 57.766500912555,
+            "pad_connection": 1,
+            "thermal_gap_mm": 0.25,
+            "thermal_spoke_width_mm": 0.3
+          }
+        ]
+      },
+      {
+        "xy_mm": [
+          100.5,
+          106.15
+        ],
+        "size_mm": [
+          2.0,
+          3.8
+        ],
+        "net": "+3V3_RS485",
+        "zones_containing_pad_center": [
+          {
+            "filled_area_mm2": 57.766500912555,
+            "pad_connection": 1,
+            "thermal_gap_mm": 0.25,
+            "thermal_spoke_width_mm": 0.3
+          }
+        ]
+      }
+    ],
+    "scope": "Reference thermal estimate only, not enclosure/actual-PCB thermal qualification. Output tab connected to local3V3, not GND. Effective C38 capacitance must exceed0.5uF including bias/temperature/aging; chosen10uF25VX7R1206 characterization gives design margin, not an independent guaranteed full-temperature cap model."
+  },
+  "ADM_ground_copper": [
+    {
+      "pin": 1,
+      "net": "GND",
+      "xy_mm": [
+        105.85,
+        112.445
+      ],
+      "same_net_nearby_vias_mm": [
+        2.550397
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 1463.715494350452,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    },
+    {
+      "pin": 8,
+      "net": "GND",
+      "xy_mm": [
+        105.85,
+        103.555
+      ],
+      "same_net_nearby_vias_mm": [
+        0.983628
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 1463.715494350452,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    },
+    {
+      "pin": 9,
+      "net": "GND_ISO",
+      "xy_mm": [
+        116.15,
+        103.555
+      ],
+      "same_net_nearby_vias_mm": [
+        0.794685,
+        1.843509,
+        2.707679
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 793.018999423568,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    },
+    {
+      "pin": 16,
+      "net": "GND_ISO",
+      "xy_mm": [
+        116.15,
+        112.445
+      ],
+      "same_net_nearby_vias_mm": [
+        0.769756
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 793.018999423568,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    }
+  ],
+  "poweroff_logic": {
+    "buffers": "Nexperia74LVC125AD,118; U13 local3V3_RS485 / U14 main3V3",
+    "ADM_input_biases": "TX47kPUlocal; DIR47kPD; localRO47kPU",
+    "CPU_side_biases": "TX47kPUmain; DIR10kPD; RX10kPUmain",
+    "Ioff_10uA_scope": "VCC=0V, -40..85C; not an intermediate-ramp guarantee",
+    "prototype_required": [
+      "Independent main/local rail on/off order and slow ramps",
+      "ADM transmit/receive under load54ohm and120ohm",
+      "LDO heat and main/local rail ripple/undershoot during relay switching",
+      "Actual total input current and fuse/inrush margin"
+    ]
+  },
+  "dangerous_connections_checked": {
+    "ADM_primary_power_is_dedicated_3V3_from_common5V_LDO": true,
+    "no_5V_RxD_direct_into_ESP32": true,
+    "no_internal_ADM_isoPower_parallel_with_external3V3ISO": true,
+    "half_duplex_A_Y_and_B_Z_joined_correctly": true,
+    "all_bus_ground_refs_GND_ISO": true,
+    "bus_supply_pin_5V_from_TMR_domain": true,
+    "sensor_and_RS485_ground_domain_shared_not_port_isolated": true
+  },
+  "primary_sources": {
+    "ADM2687E": "https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf",
+    "buffer": "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf",
+    "LDO": "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf",
+    "C37_C38": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X7R1E106K160AB",
+    "capacitor_characterization": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c3216x7r1e106k160ab_200122.pdf"
+  },
+  "limits": "XML/PCB physical pin topology, part metadata, placement lower bounds and same-net thermal copper. Not EMC certification, high-voltage isolation qualification, full EM return-path extraction or physical prototype validation."
+}

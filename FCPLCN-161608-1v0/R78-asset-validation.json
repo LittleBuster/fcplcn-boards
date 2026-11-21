@@ -1,0 +1,26 @@
+{
+  "all_four_assets_reproduced_exactly": true,
+  "generator_sha256": "5634e640325117400bbb766a3d2697c29c4d7b78780ec65d396ae7f89d350117",
+  "canonical_asset_sha256": {
+    "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-0.5_SIP3_P2.54mm.kicad_mod": "ce2ae5174b49a01dd0cb3a7678443c7e300ab8befca9313bc33d9520a8eb17d2",
+    "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-1.0.wrl": "84767b8854cd9aa834ef1a710195fd4a307f97a455acd26208a391a5edb8ed69",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-1.0_SIP3_P2.54mm.kicad_mod": "ba1df257f23ad41bec8efec61072b6f83cdc08b7d04f60babde989bf7fedb0f5"
+  },
+  "datasheet_sources": [
+    {
+      "mpn": "R-78K3.3-0.5",
+      "url": "https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf",
+      "file": "FCPLCN-CPU-08-1v0/datasheets/RECOM-R-78K-0.5.pdf",
+      "sha256": "d8e4fdee028568b88bbf750518761745cbe5ec81aa2ba30fdaed63d0479ff94e",
+      "rated_current_a": 0.5
+    },
+    {
+      "mpn": "R-78K3.3-1.0",
+      "url": "https://recom-power.com/pdf/Innoline/R-78K-1.0.pdf",
+      "file": "FCPLCN-CPU-08-1v0/datasheets/RECOM-R-78K-1.0.pdf",
+      "sha256": "cd5d711b279b4585e38b052655d3a080323979ad400fc177381230f2b77783d7",
+      "rated_current_a": 1.0
+    }
+  ]
+}

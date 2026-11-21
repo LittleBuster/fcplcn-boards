@@ -1,0 +1,1169 @@
+{
+  "part": "C3216X7R1V106K160AC",
+  "max_body_mm": [
+    3.4,
+    1.8,
+    1.8
+  ],
+  "positions": [
+    {
+      "board": "Upper",
+      "ref": "C1",
+      "center_mm": [
+        59.6,
+        79.3
+      ],
+      "rotation": 0.0,
+      "side": "front",
+      "max_body_aabb_mm": [
+        57.9,
+        78.39999999999999,
+        61.300000000000004,
+        80.2
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Upper",
+      "ref": "C5",
+      "center_mm": [
+        79.8,
+        78.7
+      ],
+      "rotation": 0.0,
+      "side": "back",
+      "max_body_aabb_mm": [
+        78.1,
+        77.8,
+        81.5,
+        79.60000000000001
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Upper",
+      "ref": "C8",
+      "center_mm": [
+        61.7,
+        107.65
+      ],
+      "rotation": 0.0,
+      "side": "front",
+      "max_body_aabb_mm": [
+        60.0,
+        106.75,
+        63.400000000000006,
+        108.55000000000001
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Upper",
+      "ref": "C11",
+      "center_mm": [
+        116.2,
+        76.3
+      ],
+      "rotation": 90.0,
+      "side": "back",
+      "max_body_aabb_mm": [
+        115.3,
+        74.6,
+        117.10000000000001,
+        78.0
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Upper",
+      "ref": "C12",
+      "center_mm": [
+        125.0,
+        87.0
+      ],
+      "rotation": 0.0,
+      "side": "front",
+      "max_body_aabb_mm": [
+        123.3,
+        86.1,
+        126.7,
+        87.9
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Upper",
+      "ref": "C13",
+      "center_mm": [
+        134.2,
+        102.2
+      ],
+      "rotation": 90.0,
+      "side": "front",
+      "max_body_aabb_mm": [
+        133.29999999999998,
+        100.5,
+        135.1,
+        103.9
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Upper",
+      "ref": "C38",
+      "center_mm": [
+        107.3,
+        107.2
+      ],
+      "rotation": 90.0,
+      "side": "front",
+      "max_body_aabb_mm": [
+        106.39999999999999,
+        105.5,
+        108.2,
+        108.9
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Upper",
+      "ref": "C41",
+      "center_mm": [
+        119.2,
+        106.1
+      ],
+      "rotation": 90.0,
+      "side": "back",
+      "max_body_aabb_mm": [
+        118.3,
+        104.39999999999999,
+        120.10000000000001,
+        107.8
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Lower",
+      "ref": "C2",
+      "center_mm": [
+        134.05,
+        97.4
+      ],
+      "rotation": 0.0,
+      "side": "front",
+      "max_body_aabb_mm": [
+        132.35000000000002,
+        96.5,
+        135.75,
+        98.30000000000001
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "board": "Lower",
+      "ref": "C3",
+      "center_mm": [
+        124.9,
+        97.4
+      ],
+      "rotation": 0.0,
+      "side": "front",
+      "max_body_aabb_mm": [
+        123.2,
+        96.5,
+        126.60000000000001,
+        98.30000000000001
+      ],
+      "existing_model": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    }
+  ],
+  "bottom_to_lower_bulk": [
+    {
+      "upper": "C5",
+      "lower": "C1",
+      "xy_gap_mm": 9.2491,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C5",
+      "lower": "C11",
+      "xy_gap_mm": 14.5,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C5",
+      "lower": "C12",
+      "xy_gap_mm": 22.1031,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C5",
+      "lower": "C8",
+      "xy_gap_mm": 55.7633,
+      "vertical_gap_if_xy_overlap_mm": -2.823,
+      "collision": false
+    },
+    {
+      "upper": "C11",
+      "lower": "C1",
+      "xy_gap_mm": 46.1177,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C11",
+      "lower": "C11",
+      "xy_gap_mm": 51.7091,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C11",
+      "lower": "C12",
+      "xy_gap_mm": 59.3,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C11",
+      "lower": "C8",
+      "xy_gap_mm": 20.1,
+      "vertical_gap_if_xy_overlap_mm": -2.823,
+      "collision": false
+    },
+    {
+      "upper": "C41",
+      "lower": "C1",
+      "xy_gap_mm": 52.7915,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C41",
+      "lower": "C11",
+      "xy_gap_mm": 60.0095,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C41",
+      "lower": "C12",
+      "xy_gap_mm": 67.6316,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper": "C41",
+      "lower": "C8",
+      "xy_gap_mm": 32.1474,
+      "vertical_gap_if_xy_overlap_mm": -2.823,
+      "collision": false
+    }
+  ],
+  "bulk_collision_count": 0,
+  "carrier_model_matches_existing_audit": true,
+  "top_to_w5500": [
+    {
+      "ref": "C1",
+      "other": "carrier PCB",
+      "xy_gap_mm": 12.3,
+      "vertical_gap_if_xy_overlap_mm": 0.74,
+      "collision": false
+    },
+    {
+      "ref": "C1",
+      "other": "underside Ethernet IC",
+      "xy_gap_mm": 18.65,
+      "vertical_gap_if_xy_overlap_mm": -0.66,
+      "collision": false
+    },
+    {
+      "ref": "C1",
+      "other": "underside crystal",
+      "xy_gap_mm": 16.6048,
+      "vertical_gap_if_xy_overlap_mm": -0.06,
+      "collision": false
+    },
+    {
+      "ref": "C1",
+      "other": "left module header",
+      "xy_gap_mm": 18.1746,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C1",
+      "other": "right module header",
+      "xy_gap_mm": 18.4013,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C1",
+      "other": "RJ45 modeled envelope",
+      "xy_gap_mm": 18.05,
+      "vertical_gap_if_xy_overlap_mm": 2.34,
+      "collision": false
+    },
+    {
+      "ref": "C8",
+      "other": "carrier PCB",
+      "xy_gap_mm": 0.0,
+      "vertical_gap_if_xy_overlap_mm": 0.74,
+      "collision": false
+    },
+    {
+      "ref": "C8",
+      "other": "underside Ethernet IC",
+      "xy_gap_mm": 0.3,
+      "vertical_gap_if_xy_overlap_mm": -0.66,
+      "collision": false
+    },
+    {
+      "ref": "C8",
+      "other": "underside crystal",
+      "xy_gap_mm": 7.2919,
+      "vertical_gap_if_xy_overlap_mm": -0.06,
+      "collision": false
+    },
+    {
+      "ref": "C8",
+      "other": "left module header",
+      "xy_gap_mm": 8.71,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C8",
+      "other": "right module header",
+      "xy_gap_mm": 5.11,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C8",
+      "other": "RJ45 modeled envelope",
+      "xy_gap_mm": 0.0,
+      "vertical_gap_if_xy_overlap_mm": 2.34,
+      "collision": false
+    },
+    {
+      "ref": "C12",
+      "other": "carrier PCB",
+      "xy_gap_mm": 51.8046,
+      "vertical_gap_if_xy_overlap_mm": 0.74,
+      "collision": false
+    },
+    {
+      "ref": "C12",
+      "other": "underside Ethernet IC",
+      "xy_gap_mm": 59.516,
+      "vertical_gap_if_xy_overlap_mm": -0.66,
+      "collision": false
+    },
+    {
+      "ref": "C12",
+      "other": "underside crystal",
+      "xy_gap_mm": 66.3992,
+      "vertical_gap_if_xy_overlap_mm": -0.06,
+      "collision": false
+    },
+    {
+      "ref": "C12",
+      "other": "left module header",
+      "xy_gap_mm": 72.5991,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C12",
+      "other": "right module header",
+      "xy_gap_mm": 52.5076,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C12",
+      "other": "RJ45 modeled envelope",
+      "xy_gap_mm": 56.0145,
+      "vertical_gap_if_xy_overlap_mm": 2.34,
+      "collision": false
+    },
+    {
+      "ref": "C13",
+      "other": "carrier PCB",
+      "xy_gap_mm": 61.6,
+      "vertical_gap_if_xy_overlap_mm": 0.74,
+      "collision": false
+    },
+    {
+      "ref": "C13",
+      "other": "underside Ethernet IC",
+      "xy_gap_mm": 68.5,
+      "vertical_gap_if_xy_overlap_mm": -0.66,
+      "collision": false
+    },
+    {
+      "ref": "C13",
+      "other": "underside crystal",
+      "xy_gap_mm": 75.8024,
+      "vertical_gap_if_xy_overlap_mm": -0.06,
+      "collision": false
+    },
+    {
+      "ref": "C13",
+      "other": "left module header",
+      "xy_gap_mm": 82.01,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C13",
+      "other": "right module header",
+      "xy_gap_mm": 61.69,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C13",
+      "other": "RJ45 modeled envelope",
+      "xy_gap_mm": 65.05,
+      "vertical_gap_if_xy_overlap_mm": 2.34,
+      "collision": false
+    },
+    {
+      "ref": "C38",
+      "other": "carrier PCB",
+      "xy_gap_mm": 34.7,
+      "vertical_gap_if_xy_overlap_mm": 0.74,
+      "collision": false
+    },
+    {
+      "ref": "C38",
+      "other": "underside Ethernet IC",
+      "xy_gap_mm": 41.6,
+      "vertical_gap_if_xy_overlap_mm": -0.66,
+      "collision": false
+    },
+    {
+      "ref": "C38",
+      "other": "underside crystal",
+      "xy_gap_mm": 49.2196,
+      "vertical_gap_if_xy_overlap_mm": -0.06,
+      "collision": false
+    },
+    {
+      "ref": "C38",
+      "other": "left module header",
+      "xy_gap_mm": 55.11,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C38",
+      "other": "right module header",
+      "xy_gap_mm": 34.79,
+      "vertical_gap_if_xy_overlap_mm": -1.8,
+      "collision": false
+    },
+    {
+      "ref": "C38",
+      "other": "RJ45 modeled envelope",
+      "xy_gap_mm": 38.15,
+      "vertical_gap_if_xy_overlap_mm": 2.34,
+      "collision": false
+    }
+  ],
+  "bottom_to_lower_tall": [
+    {
+      "ref": "C5",
+      "other": "C1",
+      "xy_gap_mm": 9.2491,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "C11",
+      "xy_gap_mm": 14.5,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "C12",
+      "xy_gap_mm": 22.1031,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "C8",
+      "xy_gap_mm": 55.4633,
+      "vertical_gap_if_xy_overlap_mm": -3.75,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J43",
+      "xy_gap_mm": 19.4402,
+      "vertical_gap_if_xy_overlap_mm": 0.5,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J44",
+      "xy_gap_mm": 45.815,
+      "vertical_gap_if_xy_overlap_mm": 0.5,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "U2 R78E right column",
+      "xy_gap_mm": 54.318,
+      "vertical_gap_if_xy_overlap_mm": -1.95,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "relay and top-terminal row",
+      "xy_gap_mm": 7.7,
+      "vertical_gap_if_xy_overlap_mm": -10.75,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J15",
+      "xy_gap_mm": 53.1473,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J6",
+      "xy_gap_mm": 29.2132,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J33",
+      "xy_gap_mm": 53.4398,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J17",
+      "xy_gap_mm": 63.8077,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J5",
+      "xy_gap_mm": 30.2491,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J10",
+      "xy_gap_mm": 32.1834,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J13",
+      "xy_gap_mm": 43.3753,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J1",
+      "xy_gap_mm": 70.1684,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J2",
+      "xy_gap_mm": 39.4355,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J25",
+      "xy_gap_mm": 39.9,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J9",
+      "xy_gap_mm": 30.0944,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J8",
+      "xy_gap_mm": 29.1799,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J11",
+      "xy_gap_mm": 35.2387,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J4",
+      "xy_gap_mm": 32.4423,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J7",
+      "xy_gap_mm": 29.15,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J12",
+      "xy_gap_mm": 39.0339,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J3",
+      "xy_gap_mm": 35.5792,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J21",
+      "xy_gap_mm": 41.1268,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J16",
+      "xy_gap_mm": 58.3959,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J14",
+      "xy_gap_mm": 48.1153,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C5",
+      "other": "J29",
+      "xy_gap_mm": 41.744,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "C1",
+      "xy_gap_mm": 46.1177,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "C11",
+      "xy_gap_mm": 51.7091,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "C12",
+      "xy_gap_mm": 59.3,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "C8",
+      "xy_gap_mm": 19.8,
+      "vertical_gap_if_xy_overlap_mm": -3.75,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J43",
+      "xy_gap_mm": 56.5935,
+      "vertical_gap_if_xy_overlap_mm": 0.5,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J44",
+      "xy_gap_mm": 10.2155,
+      "vertical_gap_if_xy_overlap_mm": 0.5,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "U2 R78E right column",
+      "xy_gap_mm": 18.9391,
+      "vertical_gap_if_xy_overlap_mm": -1.95,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "relay and top-terminal row",
+      "xy_gap_mm": 4.5,
+      "vertical_gap_if_xy_overlap_mm": -10.75,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J15",
+      "xy_gap_mm": 27.4144,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J6",
+      "xy_gap_mm": 46.9444,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J33",
+      "xy_gap_mm": 41.5,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J17",
+      "xy_gap_mm": 33.4835,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J5",
+      "xy_gap_mm": 52.1889,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J10",
+      "xy_gap_mm": 29.7165,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J13",
+      "xy_gap_mm": 25.95,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J1",
+      "xy_gap_mm": 47.0271,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J2",
+      "xy_gap_mm": 68.8385,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J25",
+      "xy_gap_mm": 47.8851,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J9",
+      "xy_gap_mm": 33.1574,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J8",
+      "xy_gap_mm": 37.3047,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J11",
+      "xy_gap_mm": 27.2511,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J4",
+      "xy_gap_mm": 57.6149,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J7",
+      "xy_gap_mm": 41.9495,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J12",
+      "xy_gap_mm": 26.0397,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J3",
+      "xy_gap_mm": 63.1756,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J21",
+      "xy_gap_mm": 62.8272,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J16",
+      "xy_gap_mm": 29.9734,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J14",
+      "xy_gap_mm": 26.088,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C11",
+      "other": "J29",
+      "xy_gap_mm": 41.5045,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "C1",
+      "xy_gap_mm": 52.7915,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "C11",
+      "xy_gap_mm": 60.0095,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "C12",
+      "xy_gap_mm": 67.6316,
+      "vertical_gap_if_xy_overlap_mm": 0.25,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "C8",
+      "xy_gap_mm": 31.8474,
+      "vertical_gap_if_xy_overlap_mm": -3.75,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J43",
+      "xy_gap_mm": 60.8833,
+      "vertical_gap_if_xy_overlap_mm": 0.5,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J44",
+      "xy_gap_mm": 22.2474,
+      "vertical_gap_if_xy_overlap_mm": 0.5,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "U2 R78E right column",
+      "xy_gap_mm": 16.9544,
+      "vertical_gap_if_xy_overlap_mm": -1.95,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "relay and top-terminal row",
+      "xy_gap_mm": 34.3,
+      "vertical_gap_if_xy_overlap_mm": -10.75,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J15",
+      "xy_gap_mm": 56.055,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J6",
+      "xy_gap_mm": 69.8724,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J33",
+      "xy_gap_mm": 11.7,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J17",
+      "xy_gap_mm": 58.6332,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J5",
+      "xy_gap_mm": 73.7497,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J10",
+      "xy_gap_mm": 58.4261,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J13",
+      "xy_gap_mm": 55.75,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J1",
+      "xy_gap_mm": 22.4157,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J2",
+      "xy_gap_mm": 86.9768,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J25",
+      "xy_gap_mm": 29.3251,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J9",
+      "xy_gap_mm": 60.555,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J8",
+      "xy_gap_mm": 63.2147,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J11",
+      "xy_gap_mm": 56.8877,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J4",
+      "xy_gap_mm": 77.9216,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J7",
+      "xy_gap_mm": 66.3414,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J12",
+      "xy_gap_mm": 55.9883,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J3",
+      "xy_gap_mm": 82.3433,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J21",
+      "xy_gap_mm": 51.5162,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J16",
+      "xy_gap_mm": 57.0269,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J14",
+      "xy_gap_mm": 55.75,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    },
+    {
+      "ref": "C41",
+      "other": "J29",
+      "xy_gap_mm": 12.2443,
+      "vertical_gap_if_xy_overlap_mm": 0.15,
+      "collision": false
+    }
+  ],
+  "targeted_collision_count": 0,
+  "scope": "Read-only actual PCB poses; selected TDK maximum body3.4x1.8x1.8mm. Existing unchanged W5500 model envelopes (+0.3mmXY allowance) and Lower tall-body envelopes from RS485 audit. Nominal11.05mm interboard mating gap. Solder standoff/production tolerances remain assembly qualification, no full3D boolean.",
+  "geometry_checked_source_sha256": {
+    "Upper": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+    "Lower": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337"
+  },
+  "current_source_sha256": {
+    "Upper": "1cf36ff0412b3bf563635dbfe7ad512737435fae7364c25e5fbb8a01cd1aa52f",
+    "Lower": "1bfe5b167c3534736eed53252d5c476a67aa97faa132bbab1f496cc39e18e59e"
+  },
+  "metadata_revision_note": "Geometry was checked against the pre-unification PCBs. The independent source audit verifies identical protected geometry and connectivity in the current PCBs; only approved purchasing properties changed.",
+  "independent_source_audit": "Passive-unification-source-audit.json",
+  "datasheet": {
+    "url": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c3216x7r1v106k160ac.pdf",
+    "local_path": "FCPLCN-CPU-08-1v0/datasheets/TDK-C3216X7R1V106K160AC.pdf",
+    "sha256": "6b97cbe1c653105bb0ec59b722d382d40c2d54e239d6f5b34a8beb36c2b1e24d",
+    "nominal_capacitance_uF": 10,
+    "voltage_V": 35,
+    "dielectric": "X7R",
+    "tolerance_percent": 10,
+    "nominal_body_mm": [
+      3.2,
+      1.6,
+      1.6
+    ],
+    "max_body_mm": [
+      3.4,
+      1.8,
+      1.8
+    ]
+  },
+  "electrical_review": {
+    "approximate_typical_effective_capacitance_uF": {
+      "3.3V": [
+        9.5,
+        9.7
+      ],
+      "5V": 9,
+      "12V": 6
+    },
+    "capacitance_estimate_limits": "Typical DC-bias curves, not guaranteed minima; tolerance, temperature and aging are additional factors.",
+    "all_ten_original_nominal_capacitances_preserved": true,
+    "Upper_C38": "Output of U12 R-78K3.3-0.5 at +3V3_RS485. Replaces 25V TDK with 35V TDK; nominal 10uF and X7R retained.",
+    "R78E_5V_nominal_capacitance_uF": 30,
+    "R78E_capacitive_load_limit_uF": 220,
+    "TMR_5V_ISO_nominal_capacitance_uF": 10.404,
+    "TMR_capacitive_load_limit_uF": 1680,
+    "prototype_checks": [
+      "Power-up and transient response",
+      "Supply ripple",
+      "Actual W5500 carrier/component and stacked-board fit"
+    ],
+    "sources": [
+      "https://recom-power.com/pdf/Innoline/R-78E-1.0.pdf",
+      "https://www.tracopower.com/products/tmr1.pdf",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf"
+    ]
+  }
+}

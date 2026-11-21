@@ -1,0 +1,663 @@
+{
+  "result": "PASS",
+  "upper_components": 148,
+  "net_nodes": 496,
+  "nets": 114,
+  "combined_purchased": 302,
+  "native_erc_violations": 0,
+  "all_retained_component_uuids_preserved": true,
+  "all_retained_metadata_except_exact_TVS_and_C50_silk_footprint_changes_exact": true,
+  "C50_only_Footprint_changed": "RelayStack:C0805_C50_Clearance",
+  "all_old_nets_except_explicit_TVS_and_ICside_changes_exact": true,
+  "CPU_pinmap_exact": true,
+  "connector_pinmaps_exact": true,
+  "REF1_nodes_each_exactly_two_same_array_pins_no_supply": true,
+  "unused_IO_grounded_only_D1_D3": true,
+  "fresh_directory_byte_exact": {
+    "FCPLCN-CPU-08-1v0.kicad_sch": true,
+    "RelayStack.kicad_sym": true,
+    "sym-lib-table": true,
+    "fp-lib-table": true
+  },
+  "fresh_XML_components_nets_exact": true,
+  "expected_pinmaps": {
+    "D1": {
+      "1": "USB_DP",
+      "4": "USB_DN",
+      "6": "GND",
+      "7": "GND",
+      "2": "TVS_USB_REF",
+      "3": "TVS_USB_REF",
+      "5": "GND",
+      "8": "GND"
+    },
+    "D2": {
+      "1": "DATA1_ISO",
+      "4": "DATA2_ISO",
+      "6": "DATA3_ISO",
+      "7": "DATA4_ISO",
+      "2": "TVS_DATA14_REF_ISO",
+      "3": "TVS_DATA14_REF_ISO",
+      "5": "GND_ISO",
+      "8": "GND_ISO"
+    },
+    "D6": {
+      "1": "DATA5_ISO",
+      "4": "DATA6_ISO",
+      "6": "DATA7_ISO",
+      "7": "DATA8_ISO",
+      "2": "TVS_DATA58_REF_ISO",
+      "3": "TVS_DATA58_REF_ISO",
+      "5": "GND_ISO",
+      "8": "GND_ISO"
+    },
+    "D3": {
+      "1": "SDA_ISO",
+      "4": "SCL_ISO",
+      "6": "GND_ISO",
+      "7": "GND_ISO",
+      "2": "TVS_I2C_REF_ISO",
+      "3": "TVS_I2C_REF_ISO",
+      "5": "GND_ISO",
+      "8": "GND_ISO"
+    },
+    "D4": {
+      "1": "LED_NET_OUT",
+      "4": "LED_STATUS_OUT",
+      "6": "LED_ALARM_OUT",
+      "7": "LED_PWR_OUT",
+      "2": "TVS_LED_REF",
+      "3": "TVS_LED_REF",
+      "5": "GND",
+      "8": "GND"
+    },
+    "R61": {
+      "1": "DATA1_ISO",
+      "2": "DATA1_IC_ISO"
+    },
+    "R62": {
+      "1": "DATA2_ISO",
+      "2": "DATA2_IC_ISO"
+    },
+    "R63": {
+      "1": "DATA3_ISO",
+      "2": "DATA3_IC_ISO"
+    },
+    "R64": {
+      "1": "DATA4_ISO",
+      "2": "DATA4_IC_ISO"
+    },
+    "R65": {
+      "1": "DATA5_ISO",
+      "2": "DATA5_IC_ISO"
+    },
+    "R66": {
+      "1": "DATA6_ISO",
+      "2": "DATA6_IC_ISO"
+    },
+    "R67": {
+      "1": "DATA7_ISO",
+      "2": "DATA7_IC_ISO"
+    },
+    "R68": {
+      "1": "DATA8_ISO",
+      "2": "DATA8_IC_ISO"
+    },
+    "R69": {
+      "1": "SDA_ISO",
+      "2": "SDA_IC_ISO"
+    },
+    "R70": {
+      "1": "SCL_ISO",
+      "2": "SCL_IC_ISO"
+    }
+  },
+  "changed_connections": [
+    {
+      "ref": "D1",
+      "pin": "1",
+      "before": "/USB_DN",
+      "after": "/USB_DP"
+    },
+    {
+      "ref": "D1",
+      "pin": "2",
+      "before": "/USB_DP",
+      "after": "/TVS_USB_REF"
+    },
+    {
+      "ref": "D1",
+      "pin": "3",
+      "before": "/GND",
+      "after": "/TVS_USB_REF"
+    },
+    {
+      "ref": "D1",
+      "pin": "4",
+      "before": null,
+      "after": "/USB_DN"
+    },
+    {
+      "ref": "D1",
+      "pin": "5",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "D1",
+      "pin": "6",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "D1",
+      "pin": "7",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "D1",
+      "pin": "8",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "D10",
+      "pin": "1",
+      "before": "/DATA7_ISO",
+      "after": null
+    },
+    {
+      "ref": "D10",
+      "pin": "2",
+      "before": "/DATA8_ISO",
+      "after": null
+    },
+    {
+      "ref": "D10",
+      "pin": "3",
+      "before": "/GND_ISO",
+      "after": null
+    },
+    {
+      "ref": "D2",
+      "pin": "2",
+      "before": "/DATA2_ISO",
+      "after": "/TVS_DATA14_REF_ISO"
+    },
+    {
+      "ref": "D2",
+      "pin": "3",
+      "before": "/GND_ISO",
+      "after": "/TVS_DATA14_REF_ISO"
+    },
+    {
+      "ref": "D2",
+      "pin": "4",
+      "before": null,
+      "after": "/DATA2_ISO"
+    },
+    {
+      "ref": "D2",
+      "pin": "5",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D2",
+      "pin": "6",
+      "before": null,
+      "after": "/DATA3_ISO"
+    },
+    {
+      "ref": "D2",
+      "pin": "7",
+      "before": null,
+      "after": "/DATA4_ISO"
+    },
+    {
+      "ref": "D2",
+      "pin": "8",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D3",
+      "pin": "2",
+      "before": "/SCL_ISO",
+      "after": "/TVS_I2C_REF_ISO"
+    },
+    {
+      "ref": "D3",
+      "pin": "3",
+      "before": "/GND_ISO",
+      "after": "/TVS_I2C_REF_ISO"
+    },
+    {
+      "ref": "D3",
+      "pin": "4",
+      "before": null,
+      "after": "/SCL_ISO"
+    },
+    {
+      "ref": "D3",
+      "pin": "5",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D3",
+      "pin": "6",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D3",
+      "pin": "7",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D3",
+      "pin": "8",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D4",
+      "pin": "2",
+      "before": "/LED_STATUS_OUT",
+      "after": "/TVS_LED_REF"
+    },
+    {
+      "ref": "D4",
+      "pin": "3",
+      "before": "/GND",
+      "after": "/TVS_LED_REF"
+    },
+    {
+      "ref": "D4",
+      "pin": "4",
+      "before": null,
+      "after": "/LED_STATUS_OUT"
+    },
+    {
+      "ref": "D4",
+      "pin": "5",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "D4",
+      "pin": "6",
+      "before": null,
+      "after": "/LED_ALARM_OUT"
+    },
+    {
+      "ref": "D4",
+      "pin": "7",
+      "before": null,
+      "after": "/LED_PWR_OUT"
+    },
+    {
+      "ref": "D4",
+      "pin": "8",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "D5",
+      "pin": "1",
+      "before": "/LED_ALARM_OUT",
+      "after": null
+    },
+    {
+      "ref": "D5",
+      "pin": "2",
+      "before": "/LED_PWR_OUT",
+      "after": null
+    },
+    {
+      "ref": "D5",
+      "pin": "3",
+      "before": "/GND",
+      "after": null
+    },
+    {
+      "ref": "D6",
+      "pin": "1",
+      "before": "/DATA3_ISO",
+      "after": "/DATA5_ISO"
+    },
+    {
+      "ref": "D6",
+      "pin": "2",
+      "before": "/DATA4_ISO",
+      "after": "/TVS_DATA58_REF_ISO"
+    },
+    {
+      "ref": "D6",
+      "pin": "3",
+      "before": "/GND_ISO",
+      "after": "/TVS_DATA58_REF_ISO"
+    },
+    {
+      "ref": "D6",
+      "pin": "4",
+      "before": null,
+      "after": "/DATA6_ISO"
+    },
+    {
+      "ref": "D6",
+      "pin": "5",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D6",
+      "pin": "6",
+      "before": null,
+      "after": "/DATA7_ISO"
+    },
+    {
+      "ref": "D6",
+      "pin": "7",
+      "before": null,
+      "after": "/DATA8_ISO"
+    },
+    {
+      "ref": "D6",
+      "pin": "8",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D7",
+      "pin": "1",
+      "before": "/DATA5_ISO",
+      "after": null
+    },
+    {
+      "ref": "D7",
+      "pin": "2",
+      "before": "/DATA6_ISO",
+      "after": null
+    },
+    {
+      "ref": "D7",
+      "pin": "3",
+      "before": "/GND_ISO",
+      "after": null
+    },
+    {
+      "ref": "R17",
+      "pin": "2",
+      "before": "/DATA1_ISO",
+      "after": "/DATA1_IC_ISO"
+    },
+    {
+      "ref": "R18",
+      "pin": "2",
+      "before": "/DATA2_ISO",
+      "after": "/DATA2_IC_ISO"
+    },
+    {
+      "ref": "R21",
+      "pin": "2",
+      "before": "/SDA_ISO",
+      "after": "/SDA_IC_ISO"
+    },
+    {
+      "ref": "R22",
+      "pin": "2",
+      "before": "/SCL_ISO",
+      "after": "/SCL_IC_ISO"
+    },
+    {
+      "ref": "R35",
+      "pin": "2",
+      "before": "/DATA3_ISO",
+      "after": "/DATA3_IC_ISO"
+    },
+    {
+      "ref": "R36",
+      "pin": "2",
+      "before": "/DATA4_ISO",
+      "after": "/DATA4_IC_ISO"
+    },
+    {
+      "ref": "R39",
+      "pin": "2",
+      "before": "/DATA5_ISO",
+      "after": "/DATA5_IC_ISO"
+    },
+    {
+      "ref": "R40",
+      "pin": "2",
+      "before": "/DATA6_ISO",
+      "after": "/DATA6_IC_ISO"
+    },
+    {
+      "ref": "R59",
+      "pin": "2",
+      "before": "/DATA7_ISO",
+      "after": "/DATA7_IC_ISO"
+    },
+    {
+      "ref": "R60",
+      "pin": "2",
+      "before": "/DATA8_ISO",
+      "after": "/DATA8_IC_ISO"
+    },
+    {
+      "ref": "R61",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA1_ISO"
+    },
+    {
+      "ref": "R61",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA1_IC_ISO"
+    },
+    {
+      "ref": "R62",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA2_ISO"
+    },
+    {
+      "ref": "R62",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA2_IC_ISO"
+    },
+    {
+      "ref": "R63",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA3_ISO"
+    },
+    {
+      "ref": "R63",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA3_IC_ISO"
+    },
+    {
+      "ref": "R64",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA4_ISO"
+    },
+    {
+      "ref": "R64",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA4_IC_ISO"
+    },
+    {
+      "ref": "R65",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA5_ISO"
+    },
+    {
+      "ref": "R65",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA5_IC_ISO"
+    },
+    {
+      "ref": "R66",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA6_ISO"
+    },
+    {
+      "ref": "R66",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA6_IC_ISO"
+    },
+    {
+      "ref": "R67",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA7_ISO"
+    },
+    {
+      "ref": "R67",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA7_IC_ISO"
+    },
+    {
+      "ref": "R68",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA8_ISO"
+    },
+    {
+      "ref": "R68",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA8_IC_ISO"
+    },
+    {
+      "ref": "R69",
+      "pin": "1",
+      "before": null,
+      "after": "/SDA_ISO"
+    },
+    {
+      "ref": "R69",
+      "pin": "2",
+      "before": null,
+      "after": "/SDA_IC_ISO"
+    },
+    {
+      "ref": "R70",
+      "pin": "1",
+      "before": null,
+      "after": "/SCL_ISO"
+    },
+    {
+      "ref": "R70",
+      "pin": "2",
+      "before": null,
+      "after": "/SCL_IC_ISO"
+    },
+    {
+      "ref": "U15",
+      "pin": "6",
+      "before": "/DATA8_ISO",
+      "after": "/DATA8_IC_ISO"
+    },
+    {
+      "ref": "U15",
+      "pin": "7",
+      "before": "/DATA7_ISO",
+      "after": "/DATA7_IC_ISO"
+    },
+    {
+      "ref": "U6",
+      "pin": "6",
+      "before": "/DATA2_ISO",
+      "after": "/DATA2_IC_ISO"
+    },
+    {
+      "ref": "U6",
+      "pin": "7",
+      "before": "/DATA1_ISO",
+      "after": "/DATA1_IC_ISO"
+    },
+    {
+      "ref": "U7",
+      "pin": "6",
+      "before": "/SCL_ISO",
+      "after": "/SCL_IC_ISO"
+    },
+    {
+      "ref": "U7",
+      "pin": "7",
+      "before": "/SDA_ISO",
+      "after": "/SDA_IC_ISO"
+    },
+    {
+      "ref": "U8",
+      "pin": "6",
+      "before": "/DATA4_ISO",
+      "after": "/DATA4_IC_ISO"
+    },
+    {
+      "ref": "U8",
+      "pin": "7",
+      "before": "/DATA3_ISO",
+      "after": "/DATA3_IC_ISO"
+    },
+    {
+      "ref": "U9",
+      "pin": "6",
+      "before": "/DATA6_ISO",
+      "after": "/DATA6_IC_ISO"
+    },
+    {
+      "ref": "U9",
+      "pin": "7",
+      "before": "/DATA5_ISO",
+      "after": "/DATA5_IC_ISO"
+    }
+  ],
+  "artifacts": {
+    "tools/build_upper_schema.py": "3bafb296b7c93319107211f230488923355c00abbfb2455e9367f2ecdda3da34",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "d10c754428b478b8b7dc91f67be994803eff7a6b87875e034810671939a2193a",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "5c7a4f46a6312a2da50d5bf206508f7c7f289ea148d0d84917b215278b6b2d6f",
+    "FCPLCN-CPU-08-1v0/RelayStack.kicad_sym": "ca732094180d96a6621dc5009b029df238fe61fa87c3b446f4943385b097cb1d",
+    "FCPLCN-CPU-08-1v0/ERC.json": "e67ba76c917fb94871cfa1f68f7b23b7ccc96b345d1636fc8e1a9803fac76524",
+    "FCPLCN-CPU-08-1v0/BOM.csv": "e313de858100d27cbd814c764c579ce47a58f6d26fa05b2e21e40d5ebbc8a04f",
+    "BOM-combined.csv": "c8275f13f53fed7e4d0fba1e4f6a10fa9e94b31151e0537e042410b09da6b595",
+    "FCPLCN-CPU-08-1v0/schematic-svg/FCPLCN-CPU-08-1v0.svg": "94e13323d6b3dcb037be657a0b8e6db9399ef22557e73466e0a9c9805db2df70",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0-schematic.png": "d2c08445c27a5b585b24283085c2b5638e6fe01923ab091851ab68d0574fd2f0"
+  },
+  "scope": "Current SRDA schematic revision: eight isolated DATA ports, five SRDA arrays and ten100R FIELD resistors. D1 IOswap/custom silk footprint and C50 silk-only0805 footprint included; C14 remains0805. PCB routing verification is separate.",
+  "D1_footprint": "RelayStack:SOIC8_SRDA_USB_Clearance",
+  "C50_footprint": "RelayStack:C0805_C50_Clearance",
+  "generated_at_utc": "2026-11-14T06:28:40.688041+00:00",
+  "native_ERC_report": "FCPLCN-CPU-08-1v0/ERC.json",
+  "schematic": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch",
+  "netlist": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml",
+  "bom": "BOM-combined.csv",
+  "fresh_generation_proof": {
+    "generator": "tools/build_upper_schema.py",
+    "byte_exact_schematic_and_libraries": {
+      "FCPLCN-CPU-08-1v0.kicad_sch": true,
+      "RelayStack.kicad_sym": true,
+      "sym-lib-table": true,
+      "fp-lib-table": true
+    },
+    "XML_components_nets_exact": true,
+    "native_ERC_violations": 0
+  }
+}

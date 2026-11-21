@@ -1,0 +1,138 @@
+{
+  "product": "FCPLCn",
+  "model": "FCPLCN-161608-1v0",
+  "checked_at": "2026-11-19T02:23:10.038831+07:00",
+  "passed": true,
+  "revision": "1v0 / 16 input RC filters and LED shunts",
+  "sha256": {
+    "Upper": {
+      ".kicad_pcb": "dd2678dc7f24703057267fe0a1100e75983b2325da928cea1dc8f16eccf914ed",
+      ".kicad_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      ".kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      ".xml": "85d29fe2cda720f407e26b25b20abe629144e84b5724063b888d8db7f0827bdd"
+    },
+    "Lower": {
+      ".kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      ".kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      ".kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      ".xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb"
+    }
+  },
+  "native_checks": {
+    "FCPLCN-CPU-08-1v0": {
+      "pcb_sha256": "dd2678dc7f24703057267fe0a1100e75983b2325da928cea1dc8f16eccf914ed",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "active_drc": 0,
+      "excluded_drc": 2,
+      "unconnected": 0,
+      "parity": 0,
+      "ERC": 0,
+      "local_models": 15,
+      "standard_models": 133,
+      "missing_models": []
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "pcb_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "active_drc": 0,
+      "excluded_drc": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "ERC": 0,
+      "local_models": 61,
+      "standard_models": 187,
+      "missing_models": [
+        "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse-NANO2-451_453.step"
+      ]
+    }
+  },
+  "independent_source_audit": "Input-RC-source-audit.json",
+  "independent_source_audit_sha256": "9515fd44ff05b14a897b94af5a934a478ac6b2e1ba4ed1fad99c5d3268616ab9",
+  "board_check": "Input-RC-board-check.json",
+  "geometry": {
+    "Lower": {
+      "copper_layers": 2,
+      "footprints": 251,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {}
+    },
+    "Upper": {
+      "copper_layers": 2,
+      "footprints": 148,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {
+        "/USB_DN_CPU": 8.474,
+        "/USB_DP_CPU": 4.315,
+        "/USB_DP": 12.647,
+        "/USB_DN": 15.889
+      }
+    }
+  },
+  "input_optocouplers": {
+    "mpn": "TLP2363(TPL,E",
+    "count": 16,
+    "input_resistor": "1.2k + 220R; 1% 0.5W0805",
+    "input_pre_filter": "220R / 1uF; TVS on terminal DI",
+    "input_LED_shunt": "4.7k in parallel with LED",
+    "output_pullup": "10k on RAW",
+    "output_filter": "470R / 100nF",
+    "local_bypass": "100nF each",
+    "bypass_pad_distance_mm": {
+      "U21": 2.223,
+      "U22": 2.223,
+      "U23": 2.223,
+      "U24": 2.223,
+      "U25": 2.223,
+      "U26": 2.223,
+      "U27": 2.223,
+      "U28": 2.223,
+      "U29": 2.223,
+      "U30": 2.223,
+      "U31": 2.223,
+      "U32": 2.223,
+      "U33": 2.223,
+      "U34": 2.223,
+      "U35": 2.223,
+      "U36": 2.223
+    }
+  },
+  "bom_purchased": {
+    "Upper": 148,
+    "Lower": 248,
+    "total": 396
+  },
+  "firmware_validation": "Input-RC-firmware-qualification.json",
+  "firmware_host_tests_passed": 51,
+  "firmware_source_unchanged": true,
+  "power_budget": "Input-RC-electrical-review.json",
+  "lower3v3": {
+    "component_envelope_ma": 82.5,
+    "supply_allocation_ma": 100,
+    "nominal_LDO_loss_W": 0.1705,
+    "new_prefilter_supply": "12V"
+  },
+  "R78_and_lower_capacitor_mechanical_check": "Input-RC-R78-mechanical-check.json",
+  "gallery": {
+    "standard_native_views": 27,
+    "native_detail_views": 4,
+    "source_and_image_hashes_verified": true,
+    "index": "Previews/native-all-views/index.html",
+    "details": {
+      "I2C-labels-closeup.png": "15e55a64bda5d84babf3896b1efcc7676dceabf97d55a9988297fb7283a98d08",
+      "FRAM-3D-closeup.png": "1d6b4c660b02bfad05a0280ccfb4c11f37ee9000a6eed26f7ee560ecc3a34163",
+      "TLP2363-3D-closeup.png": "11c7e0ff187c93d14bdd9cefb3e18f617e3a9dd67375605635fd6e7a6cce897a",
+      "Input-RC-3D-bottom-closeup.png": "6317c39ad0cac7bc7b76d7acf29f4dcd3229582c2ba653f635c7fcec16b4b728"
+    }
+  },
+  "prototype_qualification_pending": true
+}

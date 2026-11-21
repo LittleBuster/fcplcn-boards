@@ -1,0 +1,51 @@
+﻿refs,value,footprint,qty,datasheet,mpn,manufacturer,tolerance,supplier_part_number,source_url,package,bom_group,power_rating,voltage,dielectric,resistor_type,height_max,cad_footprints
+"C1, C11, C12",100u / 35V,RelayBoard:CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max,3,https://www.apaq.com.tw/Templates/att/ARHA_20241121.pdf?lng=en,350ARHA101M06X8P00,APAQ,20%,C217555,https://www.lcsc.com/product-detail/C217555.html,RelayBoard:CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max,,,,,,9 mm,RelayBoard:CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max
+"C2, C3",10uF,RelayBoard:C_1206_3216Metric,2,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c3216x7r1v106k160ac.pdf,C3216X7R1V106K160AC,TDK,10%,,,1206,C-1206-10uF-35V-X7R-10pct-TDK,,35 V,X7R,,1.8 mm,RelayBoard:C_1206_3216Metric
+"C4, C5, C13, C14, C101, C102, C103, C104, C105, C106, C107, C108, C109, C110, C111, C112, C113, C114, C115, C116, C121, C122, C123, C124, C125, C126, C127, C128, C129, C130, C131, C132, C133, C134, C135, C136",100nF,RelayBoard:C_0805_2012Metric,36,,,,10%,,,0805,C-0805-100nF-50V-X7R-10pct,,50 V,X7R,,,RelayBoard:C_0805_2012Metric
+"C6, C7",10u / 16V X7R,RelayBoard:C_0805_2012Metric,2,,,,,,,RelayBoard:C_0805_2012Metric,,,,,,,RelayBoard:C_0805_2012Metric
+C8,220u / 35V,RelayBoard:CP_Radial_D8.0mm_P3.50mm,1,,,,,,,RelayBoard:CP_Radial_D8.0mm_P3.50mm,,,,,,,RelayBoard:CP_Radial_D8.0mm_P3.50mm
+"C9, C10",10nF,RelayBoard:C_0805_2012Metric,2,,,,10%,,,0805,C-0805-10nF-50V-X7R-10pct,,50 V,X7R,,,RelayBoard:C_0805_2012Metric
+"C141, C142, C143, C144, C145, C146, C147, C148, C149, C150, C151, C152, C153, C154, C155, C156",1uF,RelayBoard:C_0805_2012Metric,16,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c2012x7r1h105k125ab.pdf,C2012X7R1H105K125AB,TDK,10%,,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1H105K125AB,0805,C-0805-1uF-50V-X7R-10pct-TDK,,50 V,X7R,,1.45 mm,RelayBoard:C_0805_2012Metric
+D1,SS34-E3,RelayBoard:D_SMC,1,https://www.vishay.com/docs/88751/ss32.pdf,,,,,,RelayBoard:D_SMC,,,,,,,RelayBoard:D_SMC
+D2,SMBJ15A,RelayBoard:D_SMB,1,,,,,,,RelayBoard:D_SMB,,,,,,,RelayBoard:D_SMB
+D3,B340B-13-F,RelayBoard:D_SMB,1,https://www.diodes.com/datasheet/download/B340B.pdf,,,,,,RelayBoard:D_SMB,,,,,,,RelayBoard:D_SMB
+"D101, D102, D103, D104, D105, D106, D107, D108, D109, D110, D111, D112, D113, D114, D115, D116",1N4148W-7-F,RelayBoard:D_SOD-123,16,https://www.diodes.com/datasheet/download/1N4148W.pdf,,,,,,RelayBoard:D_SOD-123,,,,,,,RelayBoard:D_SOD-123
+"D121, D122, D123, D124, D125, D126, D127, D128, D129, D130, D131, D132, D133, D134, D135, D136",PTVS15VS1UR,RelayBoard:Nexperia_CFP3_SOD-123W,16,https://assets.nexperia.com/documents/data-sheet/PTVSXS1UR_SER.pdf,,,,,,RelayBoard:Nexperia_CFP3_SOD-123W,,,,,,,RelayBoard:Nexperia_CFP3_SOD-123W
+F1,045201.5MRL,RelayBoard:Fuse_Littelfuse-NANO2-451_453,1,https://www.littelfuse.com/assetdocs/littelfuse_fuse_452_454_datasheet?assetguid=8c87aa93-80a7-4ea8-8749-a19ba03901c2,045201.5MRL,Littelfuse,,,,RelayBoard:Fuse_Littelfuse-NANO2-451_453,,,,,,,RelayBoard:Fuse_Littelfuse-NANO2-451_453
+J1,12V IN,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J2,OUT 1,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J3,OUT 2,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J4,OUT 3,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J5,OUT 4,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J6,OUT 5,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J7,OUT 6,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J8,OUT 7,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J9,OUT 8,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J10,OUT 9,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J11,OUT 10,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J12,OUT 11,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J13,OUT 12,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J14,OUT 13,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J15,OUT 14,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J16,OUT 15,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J17,OUT 16,RelayBoard:KF128-2.54-2P,1,,,,,,,RelayBoard:KF128-2.54-2P,,,,,,,RelayBoard:KF128-2.54-2P
+J21,IN 1–4,RelayBoard:KF128-2.54-8P,1,https://www.kefaelectronic.com/KF128-2-54-PCB-Terminal-Block-pd42410974.html,,,,,,RelayBoard:KF128-2.54-8P,,,,,,,RelayBoard:KF128-2.54-8P
+J25,IN 5–8,RelayBoard:KF128-2.54-8P,1,https://www.kefaelectronic.com/KF128-2-54-PCB-Terminal-Block-pd42410974.html,,,,,,RelayBoard:KF128-2.54-8P,,,,,,,RelayBoard:KF128-2.54-8P
+J29,IN 9–12,RelayBoard:KF128-2.54-8P,1,https://www.kefaelectronic.com/KF128-2-54-PCB-Terminal-Block-pd42410974.html,,,,,,RelayBoard:KF128-2.54-8P,,,,,,,RelayBoard:KF128-2.54-8P
+J33,IN 13–16,RelayBoard:KF128-2.54-8P,1,https://www.kefaelectronic.com/KF128-2-54-PCB-Terminal-Block-pd42410974.html,,,,,,RelayBoard:KF128-2.54-8P,,,,,,,RelayBoard:KF128-2.54-8P
+J43,STACK I²C,RelayBoard:StackSocket_2x03_P2.54mm,1,https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf,SSW-103-01-L-D,Samtec,,,,RelayBoard:StackSocket_2x03_P2.54mm,,,,,,,RelayBoard:StackSocket_2x03_P2.54mm
+J44,STACK CTRL,RelayBoard:StackSocket_2x03_P2.54mm,1,https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf,SSW-103-01-L-D,Samtec,,,,RelayBoard:StackSocket_2x03_P2.54mm,,,,,,,RelayBoard:StackSocket_2x03_P2.54mm
+"K1, K2, K3, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16",HF49FD/012-1H11,RelayBoard:Relay_SPST_Hongfa_HF49FD-1H11,16,https://www.hongfa.com/product/industrial-relay/HF49FD,,,,,,RelayBoard:Relay_SPST_Hongfa_HF49FD-1H11,,,,,,,RelayBoard:Relay_SPST_Hongfa_HF49FD-1H11
+"R2, R3, R181, R182, R183, R184, R185, R186, R187, R188, R189, R190, R191, R192, R193, R194, R195, R196",4.7k,RelayBoard:R_0805_2012Metric,18,,,,1%,,,0805,R-0805-4.7k-1pct-125mW,0.125 W,,,,,RelayBoard:R_0805_2012Metric
+"R4, R121, R122, R123, R124, R125, R126, R127, R128, R129, R130, R131, R132, R133, R134, R135, R136",10k,RelayBoard:R_0805_2012Metric,17,,,,1%,,,0805,R-0805-10k-1pct-125mW,0.125 W,,,,,RelayBoard:R_0805_2012Metric
+"R10, R11, R141, R142, R143, R144, R145, R146, R147, R148, R149, R150, R151, R152, R153, R154, R155, R156",470R,RelayBoard:R_0805_2012Metric,18,,,,1%,,,0805,R-0805-470R-1pct-125mW,0.125 W,,,,,RelayBoard:R_0805_2012Metric
+R12,1R / 2W pulse,RelayBoard:R_2512_6332Metric,1,https://www.bourns.com/docs/product-datasheets/crm.pdf,CRM2512-FX-1R00ELF,Bourns,1%,,,RelayBoard:R_2512_6332Metric,,2 W,,,,,RelayBoard:R_2512_6332Metric
+"R101, R102, R103, R104, R105, R106, R107, R108, R109, R110, R111, R112, R113, R114, R115, R116",1.2k,RelayBoard:R_0805_Wetting,16,https://www.vishay.com/docs/20115/crcwhp.pdf,CRCW08051K20FKTAHP,Vishay,1%,,,0805,R-0805-1.2k-1pct-500mW-Vishay-HP,0.5 W,,,,,RelayBoard:R_0805_Wetting
+"R161, R162, R163, R164, R165, R166, R167, R168, R169, R170, R171, R172, R173, R174, R175, R176",220R,RelayBoard:R_0805_2012Metric,16,https://www.vishay.com/docs/20115/crcwhp.pdf,CRCW0805220RFKTAHP,Vishay,1%,,,0805,R-0805-220R-1pct-500mW-Vishay-HP,0.5 W,,,,,RelayBoard:R_0805_2012Metric
+"RN1, RN2",8 × 10k,RelayBoard:R_Array_SIP9,2,https://www.bourns.com/data/global/pdfs/4600X.pdf,,,,,,RelayBoard:R_Array_SIP9,,,,,,,RelayBoard:R_Array_SIP9
+U2,R-78E5.0-1.0,RelayBoard:RECOM_R-78E_PSE,1,https://recom-power.com/pdf/Innoline/R-78E-1.0.pdf,,,,,,RelayBoard:RECOM_R-78E_PSE,,,,,,,RelayBoard:RECOM_R-78E_PSE
+"U3, U4",TBD62083AFWG,RelayBoard:SOP-18_7.495x11.515mm_P1.27mm,2,https://toshiba.semicon-storage.com/info/datasheet_en_20160511.pdf?did=29893,,,,,,RelayBoard:SOP-18_7.495x11.515mm_P1.27mm,,,,,,,RelayBoard:SOP-18_7.495x11.515mm_P1.27mm
+"U5, U6",MCP23017-E/SO,RelayBoard:SOIC-28W_7.5x17.9mm_P1.27mm,2,https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf,,,,,,RelayBoard:SOIC-28W_7.5x17.9mm_P1.27mm,,,,,,,RelayBoard:SOIC-28W_7.5x17.9mm_P1.27mm
+U8,TLV1117LV33DCYR,RelayBoard:SOT-223-3_TabPin2,1,https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf,,,,,,RelayBoard:SOT-223-3_TabPin2,,,,,,,RelayBoard:SOT-223-3_TabPin2
+U9,FM24CL64B-GTR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,1,https://www.infineon.com/assets/row/public/documents/10/49/infineon-fm24cl64b-64-kbit-8-k-8-serial-i2c-f-ram-datasheet-en.pdf,FM24CL64B-GTR,Infineon,,C9829,https://www.hqonline.com/product-detail/frams-cypress-fm24cl64b-gtr-2500407054,SOIC-8,IC-FRAM-FM24CL64B-GTR-SOIC8,,,,,1.75 mm,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+"U21, U22, U23, U24, U25, U26, U27, U28, U29, U30, U31, U32, U33, U34, U35, U36",TLP2363,RelayBoard:TLP2363_5pin_SO6,16,https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363,"TLP2363(TPL,E",Toshiba,,,,SO6-5pin,IC-OPTO-TLP2363-SO6-5pin,,,,,,RelayBoard:TLP2363_5pin_SO6

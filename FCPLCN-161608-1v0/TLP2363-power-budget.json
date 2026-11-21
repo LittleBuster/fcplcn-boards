@@ -1,0 +1,270 @@
+{
+  "revision": "DATA8 + SRDA + FRAM + TLP2363: CPU148/RLY200 purchased, total348; replace4 LTV-847S with16 TLP2363; add16 VCC decouplers and16 output filter resistors; lower3V3/5V allocation+64mA",
+  "status": "Calculated design budget; prototype measurements pending",
+  "counts": {
+    "CPU_purchased": 148,
+    "RLY_purchased_before": 156,
+    "RLY_purchased": 200,
+    "combined_purchased": 348,
+    "RLY_physical_footprints_including3_testpoints": 203,
+    "change": {
+      "removed_quad_opto": 4,
+      "added_single_opto": 16,
+      "added_decoupling_capacitors": 16,
+      "added_output_series_resistors": 16,
+      "net_added_purchased": 44
+    }
+  },
+  "implementation": {
+    "source": "TLP2363-power-budget.json",
+    "design_review": "TLP2363-design-review.md",
+    "replaced": "Lower U21..U24 LTV-847S quad optocouplers",
+    "installed": "Lower U21..U36 TLP2363 single-channel logic-output optocouplers",
+    "channels": 16,
+    "detector_supply_net": "+3V3",
+    "detector_ground_net": "GND",
+    "detector_supply_max_ma_each": 4,
+    "detector_supply_increment_ma": 64,
+    "input_resistors": "R101..R116, 1.5k 1% 0.5W0805, Vishay CRCW08051K50FKTAHP",
+    "new_decouplers": "C121..C136,100nF0805, VCC6 to GND4 each",
+    "new_output_series": "R141..R156,470ohm1%0805, VO/OPTOi_RAW to INi",
+    "existing_output_pullups": "R121..R13610k moved to OPTOi_RAW, before the470ohm series resistor",
+    "preserved_filter": "C101..C116100nF from INi to GND; all DI reverse diodes and TVS retained",
+    "firmware_requirement": "MCP GPPUA/GPPUB=0: initialization, readback and reset recovery updated; 22/22 host driver tests and ESP-IDF6.1 build passed. See TLP2363-firmware-validation.json. Physical board validation pending.",
+    "lower_logic_current_allocation_ma": 89.3,
+    "common5v_design_current_ma": 352.458,
+    "lower_LDO_dissipation_W_at5V_and3p3V": 0.15181000000000003,
+    "engineering_input_envelope_V": [
+      10.8,
+      13.2
+    ],
+    "engineering_input_envelope_scope": "12V +/-10% is an explicit design assumption; minimum IF must be verified with the chosen PSU, wiring, contact resistance and temperature.",
+    "input_IF_minimum_mA_with_D1_0p6V_VF2p0V_Rplus1pct": 5.412541254125414,
+    "VF2p0V_scope": "Engineering allowance; the Toshiba1.65V VFmaximum is only specified at2.6mA25C and is not treated as a guaranteed all-temperature value.",
+    "input_resistor_upper_power_W_no_D1_or_LED_drop_bound": 0.11733333333333332,
+    "input_current_upper_mA_no_D1_or_LED_drop_bound": 8.88888888888889,
+    "engineering_lower3v3_envelope_V": [
+      3.135,
+      3.465
+    ],
+    "lower3v3_envelope_scope": "3.3V +/-5% is an engineering review envelope, not a guaranteed all-temperature TLV1117LV accuracy claim. Full assembled-rail transient/temperature validation remains necessary.",
+    "logic_margins_with_GPPU_disabled": {
+      "pullup_initial_tolerance_pct": 1,
+      "series_initial_tolerance_pct": 1,
+      "TLP_VOLmax_V": 0.6,
+      "TLP_IOHmax_uA": 50,
+      "MCP_input_leakage_uA": 1,
+      "MCP_VILmax_factor": 0.2,
+      "MCP_VIHmin_factor": 0.8,
+      "Vin_LOWmax_V": 0.6004747,
+      "LOW_margin_V": 0.026525299999999974,
+      "Vin_HIGHmin_V": 2.6194253,
+      "HIGH_margin_V": 0.11142530000000006,
+      "HIGH_margin_V_with_5pct_existing_pullups": 0.09102530000000003,
+      "required_steady_lower_VDD_for_LOW_V": 3.0023735,
+      "maximum_C_discharge_and_pullup_current_mA": 7.796808510638297,
+      "TLP_VOL_test_sink_current_mA": 13
+    },
+    "nominal_RC_time_constants_us": {
+      "asserted_LOW": 47,
+      "released_HIGH": 1047
+    },
+    "common_ground_scope": "DI LED/cable return and detector logic both use GND. Optical transfer does not establish galvanic isolation of the complete external dry-contact domain; no port-to-port isolation or assembly voltage-withstand rating is claimed.",
+    "prototype_checks": [
+      "Measure lowest3V3, LOW/HIGH margins, relay-switch transients and brownout/reset behavior with all16 inputs closed and all16 relay coils energized.",
+      "Verify IF>=5mA at minimum external supply, cold, maximum intended cable/contact resistance; verify input resistor temperature at maximum supply.",
+      "Verify total common5V load, lower LDO temperature and R12 temperature in the intended enclosure; regulator efficiency and component temperature are not inferred from package ratings.",
+      "Verify all16 input transitions and readback/recovery with MCP GPPU disabled; check intended debounce and cable pickup after routing."
+    ],
+    "source_datasheets": {
+      "TLP2363": "https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363",
+      "MCP23017": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf",
+      "TLV1117LV": "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf",
+      "Vishay_CRCW_HP": "https://www.vishay.com/docs/20115/crcwhp.pdf"
+    }
+  },
+  "opto_datasheet_facts": {
+    "VCC_operating_V": [
+      2.7,
+      5.5
+    ],
+    "ICC_max_mA": 4,
+    "IF_for_general_VOL_guarantee_mA": 5,
+    "VOLmax_V_at13mA_sink": 0.6,
+    "IOHmax_uA": 50,
+    "inputVFmax_1p65_scope": "IF2.6mA, Ta25C only",
+    "pin_mapping": {
+      "1": "A",
+      "3": "K",
+      "4": "GND",
+      "5": "VO",
+      "6": "VCC"
+    },
+    "VCC_bypass": "0.1uF between pins6and4 within1cm; preferably beside pads",
+    "TLP_operating_temperature_C": [
+      -40,
+      105
+    ],
+    "whole_board_temperature_scope": "TLP105C rating does not extend the lower-board MCP/FRAM operating-temperature specifications."
+  },
+  "resistor_verification": {
+    "manufacturer": "Vishay Draloric",
+    "series": "CRCW-HP",
+    "MPN": "CRCW08051K50FKTAHP",
+    "size": "0805",
+    "nominal_ohm": 1500,
+    "initial_tolerance_pct": 1,
+    "TCR_ppm_per_K": 100,
+    "P70_W": 0.5,
+    "manufacturer_document_number": "20115",
+    "manufacturer_document_revision": "2026-06-09",
+    "official_source": "https://www.vishay.com/docs/20115/crcwhp.pdf",
+    "rating_scope": "Rated dissipation requires assembled thermal conditions that keep film temperature within155C.0.5W is the component P70 rating, not demonstrated PCB heat-removal performance. Calculated worst-input resistor power bound0.1174W excludes unknown sustained overvoltage faults."
+  },
+  "common_5v": {
+    "source": "Lower.U2 R-78E5.0-1.0",
+    "input_net": "+12V_LOGIC",
+    "output_net": "MOD_VBUS",
+    "rated_current_ma": 1000,
+    "Lower.U8": "TLV1117LV33DCYR retained; no new tall regulator under Upper",
+    "lower_design_current_ma": 89.3,
+    "TMR_at_full_output_1w_typical_efficiency_pct": 76,
+    "TMR_at_full_output_typical_input_ma": 263.158,
+    "combined_full_load_design_estimate_ma": 352.458,
+    "TMR_no_load_input_typical_ma": 40,
+    "full_load_efficiency_must_not_be_applied_at_no_load": true,
+    "main_Upper_3v3_not_supplied_by_5v": true,
+    "RS485_design_current_removed_from_5v_ma": 201,
+    "RS485_Upper_3v3_not_supplied_by_5v": true,
+    "lower_design_current_before_FRAM_ma": 25,
+    "FRAM_U9_design_increment_ma": 0.3,
+    "nominal_current_reserve_ma_at_full_TMR_output": 647.542,
+    "FRAM_scope": "U9 FM24CL64B-GTR powered by Lower.U8 /+3V3; 0.3mA max device-current allocation at1MHz. LDO input current increment approximates output increment; existing25mA allocation retained for other lower logic and regulator overhead. TMR typical full-load efficiency remains an engineering assumption.",
+    "lower_design_current_before_TLP2363_ma": 25.3,
+    "TLP2363_detector_supply_increment_ma": 64,
+    "TLP2363_scope": "16 detector supplies at4mA maximum each, on Lower +3V3. The existing25.3mA allocation is retained for MCP logic, FRAM, external pull-ups and regulator overhead; no double-count of pull-up current. New100nF capacitors do not add steady DC load. LDO input-current increment approximates output increment. Full-load TMR efficiency remains a typical engineering assumption."
+  },
+  "lower_LDO": {
+    "part": "TLV1117LV33DCYR",
+    "nominal_input_V": 5,
+    "nominal_output_V": 3.3,
+    "design_output_current_mA": 89.3,
+    "nominal_dissipation_W": 0.15181000000000003,
+    "increment_dissipation_W": 0.10880000000000001,
+    "accuracy_scope": "TI electrical table defaults to25C unless specified; do not treat its +/-1.5% output accuracy as an all-temperature/transient guarantee."
+  },
+  "current_12v": {
+    "fuse": "Lower.F1 Littelfuse 045201.5MRL, 1.5A Slo-Blo",
+    "current_budget_a_nominal_coils": 0.860495484864443,
+    "current_budget_a_minus10percent_coil_resistance": 0.8776806700496281,
+    "fuse_recommended_continuous_current_a_at25c": 1.125,
+    "additional_ambient_temperature_derating_required": true,
+    "audit": "Power-budget.json input_12v.calculation and TLP2363-power-budget.json are current; Lower F1-current-audit.json is the historical pre-U12-R78 fuse selection and geometry record",
+    "design_estimate_not_measured": true,
+    "historical_fuse_audit_not_current_budget": true,
+    "calculation": {
+      "external_input_v": 12,
+      "relay_and_DI_supply_after_D1_v": 11.6,
+      "logic_supply_before_R12_v": 11.2,
+      "logic_supply_after_R12_v": 10.605104515135556,
+      "all_switching_regulators_efficiency_assumption": 0.85,
+      "TMR_full_load_typical_efficiency": 0.76,
+      "main3v3_output_power_w": 2.937,
+      "common5v_output_power_w": 1.7622894736842105,
+      "RS485_local3v3_output_power_w": 0.6633,
+      "logic_input_current_a": 0.594895484864443,
+      "coil_current_a_nominal": 0.15466666666666667,
+      "coil_current_a_minus10percent_resistance": 0.17185185185185184,
+      "DI_current_a_all16_closed": 0.11093333333333334,
+      "DI_series_ohm": 1500,
+      "opto_LED_drop_assumption_v": 1.2,
+      "R12_included": true,
+      "series_resistor_power_W": 0.35390063791210075,
+      "U12_conversion_only_reduction_a_without_RC_vs_5v_LDO": 0.03589285714285715,
+      "scope": "Simultaneous design allocations including0.3mA FRAM and16x4mA TLP2363 detector supply. DI LED drop1.2V is retained as an engineering current-budget assumption, not an all-temperature Toshiba VF minimum; the separate IFminimum design uses2.0V. Not measured peak/inrush or guaranteed worst-case regulator efficiency; supply tolerance, cable/contact drops, fuse/temperature derating require prototype validation.",
+      "FRAM_increment_ma_on_lower3v3_and_5v": 0.3,
+      "TLP2363_detector_increment_ma_on_lower3v3_and_5v": 64
+    },
+    "nominal_25c_fuse_current_reserve_a_at_minus10percent_coil_resistance": 0.24731932995037187
+  },
+  "protected_12v_RC": {
+    "topology": "Lower D3 cathode -> +12V_LOGIC_RAW -> R12 -> +12V_LOGIC; C8/C2/C13 and all regulator inputs remain after R12",
+    "series_ref": "Lower.R12",
+    "series_MPN": "CRM2512-FX-1R00ELF",
+    "series_manufacturer": "Bourns",
+    "R_ohm": 1,
+    "resistance_tolerance_pct": 1,
+    "manufacturer_power_rating_W": 2,
+    "manufacturer_full_power_condition": "300 mm2 total solder pad and trace area at 70 C; 2 W is not a demonstrated PCB assembly thermal rating",
+    "bulk_ref": "Lower.C8",
+    "bulk_nominal_uF": 220,
+    "HF_ref": "Lower.C13",
+    "HF_uF": 0.1,
+    "HF_voltage_V": 50,
+    "HF_dielectric": "X7R",
+    "upstream_design_voltage_V": 11.2,
+    "upstream_voltage_scope": "Engineering 12 V source minus assumed D1/D3 drops, not a guaranteed minimum for every PSU/diode/temperature",
+    "converter_input_power_W_assuming85pct_efficiency": 6.308928792569659,
+    "self_consistent_current_A": 0.594895484864443,
+    "voltage_drop_V": 0.594895484864443,
+    "protected_voltage_V": 10.605104515135556,
+    "resistor_dissipation_W": 0.35390063791210075,
+    "formula": "I*(11.2-I*R)=P; choose the low-current stable operating root",
+    "at_resistance_plus1pct": {
+      "R_ohm": 1.01,
+      "I_A": 0.5952494579391302,
+      "protected_voltage_V": 10.598798047481477,
+      "resistor_dissipation_W": 0.3578651363485966,
+      "headroom_to_Lower_R78E5_min8V": 2.598798047481477,
+      "headroom_to_Upper_R78K_min4p5V": 6.098798047481477
+    },
+    "R_TCR_ppm_per_K": 100,
+    "temperature_scope": "Above corner is resistor initial tolerance at the assumed input/load. TCR, diode drop, supply tolerance and converter efficiency vary with temperature; actual enclosure validation required.",
+    "at_0p6A": {
+      "drop_V": 0.6,
+      "resistor_dissipation_W": 0.36
+    },
+    "bulk_only_ideal_time_constant_us": 220,
+    "bulk_only_ideal_cutoff_Hz": 723.4315595086151,
+    "filter_scope": "First-order unloaded RC estimate only; actual ESR, wiring inductance, converter input impedance and local decoupling change the response. RC does not clamp sustained overvoltage or guarantee EMC/reset immunity.",
+    "startup_pulse": {
+      "supply_step_envelope_V": 13.2,
+      "downstream_capacitance_design_ceiling_uF": 400,
+      "capacitance_scope": "Engineering ceiling including tolerances and module input capacitance; listed external nominal capacitors sum262.2uF. Unknown module internal capacitance and actual PSU startup must be verified.",
+      "nominal_R_peak_W": 174.23999999999998,
+      "minus1pct_R_peak_W": 175.99999999999997,
+      "minus1pct_R_peak_A": 13.333333333333332,
+      "pure_capacitive_charge_energy_J": 0.034848,
+      "nominal_R_voltage_tau_us": 400,
+      "manufacturer_curve_category": "Nominal resistance >=1 ohm; CRM datasheet page3",
+      "approximate_graph_limit_W_at1ms": 220,
+      "first1ms_peak_bound_W": 175.99999999999997,
+      "comparison": "The first1ms instantaneous bound176W is below the approximate220W rectangular-pulse graph. This is an engineering comparison, not repetitive/hot-start/surge qualification.",
+      "pure_RC_power_at1ms_W": 1.1740198851206516,
+      "tail_scope": "The pure-RC tail excludes running converter load. Actual startup and repeated restart waveform/temperature remain prototype checks; do not infer full-circuit tail power from the unloaded RC formula."
+    }
+  },
+  "calculation_method": {
+    "TMR_full_load_input_A": "1W / (5V *0.76)",
+    "common5V_output_W": "5V * (0.0253A +16*0.004A +1W/(5V*0.76))",
+    "all_converter_input_W": "(2.937W + common5V_output_W +0.6633W)/0.85",
+    "filter_current_A": "Solve I*(11.2V -I*1ohm)=all_converter_input_W using low-current root",
+    "all16_DI_current_A": "16*(11.6V -1.2V)/1500ohm",
+    "fuse_current_A": "filter_current +16coil_current +all16_DI_current",
+    "numerical_scope": "Calculations retain existing nominal diode-drop/rail/efficiency assumptions. Budgets are not measurements, guaranteed maxima over all ambient/input/load corners, inrush ratings or completed EMC qualification."
+  },
+  "historical_reports_preserved": [
+    "FRAM-power-budget.json",
+    "SRDA-budget-audit.json",
+    "SRDA-technical-review.json",
+    "RS485-logic-budget.json",
+    "FCPLCN-RLY-1616-1v0/F1-current-audit.json"
+  ],
+  "historical_report_scope": "Preceding source hashes and results remain historical. They are not rewritten to claim certification of changed TLP2363 topology or routing.",
+  "sources": {
+    "TLP2363": "https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363",
+    "MCP23017": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf",
+    "TLV1117LV": "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf",
+    "Vishay_CRCW_HP": "https://www.vishay.com/docs/20115/crcwhp.pdf"
+  }
+}

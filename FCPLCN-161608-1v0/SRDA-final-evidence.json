@@ -1,0 +1,122 @@
+{
+  "status": "pass_for_checked_static_requirements_with_documented_layout_limits",
+  "created_UTC": "2026-11-14T07:37:23.064153+00:00",
+  "sources_sha256": {
+    "ASSEMBLY.md": "a97bc1dfa48add74c3db30e981f3f3c6c68a4731f78b50f7f9015a461540329d",
+    "RS485-WORK-STATUS.md": "251865c1d3bdcfe9415975db5c34e85003e997d804360bd78e48b2f67945d09d",
+    "tools/README.md": "f8ad3cc40a29dbedab2d722f3dc9d59df79e79679b11e514fcdfbe6881ff5772",
+    "Power-budget.json": "0ba89106f85ca70b66f0ace61f37659bcceae1674af929d0bd80b64da501719b",
+    "RS485-logic-budget.json": "1460cdf9e263f3c08e1e8d5f83b75d6b62abdabe792c08f0c238a1d88a201116",
+    "SRDA-technical-review.json": "8bdaced1062264ffd789afd6db4157c81209f3111d06866cdfdc25e991dde286",
+    "Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+    "tools/check_rs485_clearance.py": "06d7a7f23bc99a2f0d2bdfecbcbad05a9adcb4a5878cbb8042a70adf6d27f059",
+    "tools/check_r78_clearance.py": "2e2183a6f6668e6951785a9b6f10745251b555c3363f5d5f7b1052afb347c8ff",
+    "tools/check_pcb_strip_clearance.py": "53b04856e9e1a2ecfb1942e14849c8e9d184bfc01616cac7f53aa41e003c4096",
+    "tools/electrical_audit.py": "106595ea100f892bf489d6ec8282161ae65c9ec4a8177276e66324c3a17edfe6",
+    "tools/check_board.py": "4d4ecca9bdd81da7a23afd793b0d187cc310304bbcaaa16518fdbc0c507270d9",
+    "tools/srda_contract.py": "3f1224c271a0441c0d9767d946a0f4ab3bce1236a57a2dd4c5e4a2dd4841906b",
+    "tools/audit_srda_budget.py": "d474f164244d3d6f967b64da5803cd867d99907bdd178ec8bd7e457d1ec8dc58",
+    "tools/collect_srda_final_evidence.py": "efabc4f18797e237c187157b637e32558b9a8687999b773258326548003748d7",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "d10c754428b478b8b7dc91f67be994803eff7a6b87875e034810671939a2193a",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "5c7a4f46a6312a2da50d5bf206508f7c7f289ea148d0d84917b215278b6b2d6f",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "b5635554fc8ff19e1013d3eb3e013aaffb88c1816694acc6b47046ad1abafb71",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "d3d44cb511be23a925795c674c17d145b8cb6cd267b6d15ab6041fd66010a0a4",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "26a31bc54de222e2743e2efde3698994ae6347a023c4287460fb0232eed58811"
+  },
+  "reports_sha256": {
+    "SRDA-budget-audit.json": "fc1dfa239c94e731a63cca00ce875fb06d8fa01b8b4e756b62d5959d77458f08",
+    "SRDA-electrical-audit.json": "f387b02ea7e615413d9cb905dc977384174f8c1f98b6fb9cc1146f720467900c",
+    "SRDA-mechanical-audit.json": "951d579a5996199c4f09350c4f205f321b7ec0e9bf0893925e2af47e5e66aaa3",
+    "SRDA-R78-mechanical-audit.json": "cad25c317e9063f77ff56fea67fd38100b7381695e92268d4ef891712740960d",
+    "SRDA-PCB-strip-clearance.json": "a63a087ce8f7d5a7017643ed65a949b9553de0b89f011615069c77df4318d91d",
+    "SRDA-bypass-copper.json": "ff0211d229ed496e3b7f83df695b1fee0a75e3ecd7863b5a855e884cfc394e17",
+    "SRDA-ISO-bypass-copper.json": "404ea518e6d654a8f12b5fd49cfad92573bc08b87a0d4389e72b298f2a528740",
+    "SRDA-electrical-connectivity.json": "3e6e501198225f769e7632ecccc74d0f15240ad0450e279a062001770608a507",
+    "SRDA-source-delta-audit.json": "f3b6ac27d37a58ef0ecf76a412a373862236659bbcf9dd3ac9f85eab6ed7a571",
+    "SRDA-source-negative-controls.json": "0a737a0596f9a3086ea5980d903774faca0e445f494249d77ee35e6515c9749e",
+    "FCPLCN-CPU-08-1v0/DRC-with-exclusions.json": "a53b78073d4db1b1cb53671b132b3243d314819cc039309036a70b5046ca8e6c",
+    "FCPLCN-CPU-08-1v0/DRC.json": "08537d0cd83df14c142876e3687ae0b4b25a7c39f316d1b1732ab6e16b5344e8",
+    "FCPLCN-CPU-08-1v0/ERC.json": "557662f8701a032d07352f0470f180ac25cd4e8b536ce9af013474719ddbaae8",
+    "FCPLCN-RLY-1616-1v0/DRC.json": "55e6480317d41fa43a8bac9e0261c2ab4b6731a7d62cba3755a8faf17ce5b796",
+    "FCPLCN-RLY-1616-1v0/ERC.json": "7e1251e2be184e3a89d924e080e5ff6b91a7948f1de9cba1840d425de267e15c"
+  },
+  "native_active_counts": {
+    "Upper": {
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "ERC_violations": 0
+    },
+    "Lower": {
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "ERC_violations": 0
+    }
+  },
+  "previous_excluded_Upper_BT1_courtyard_items": 2,
+  "inventory": {
+    "Upper": 148,
+    "Lower": 154,
+    "combined_purchased_parts": 302,
+    "new_zero_ohm_jumper_added": false
+  },
+  "static_budget": {
+    "passed": 39,
+    "total": 39,
+    "main_ma": 890,
+    "local_RS485_ma": 201,
+    "isolated_total_equivalent5V_ma": 175,
+    "isolated_external_design_limit_ma": 120,
+    "R12_current_A": 0.5572520882411753,
+    "R12_heat_W": 0.31052988984915064,
+    "filtered12V_V": 10.642747911758825
+  },
+  "actual_ADM_bypass": {
+    "all_six_at_most10mm": true,
+    "constructed_external_lead_totals_mm": {
+      "C39": 5.2106581934930745,
+      "C45": 9.913446933442042,
+      "C40": 8.47541409693377,
+      "C42": 9.578168688976824,
+      "C43": 7.562649919265073,
+      "C44": 9.735597110604171
+    },
+    "maximum_mm": 9.913446933442042
+  },
+  "ISO_engineering_target": {
+    "target_combined_lead_mm": 10,
+    "is_claimed_mandatory_manufacturer_limit": false,
+    "target_demonstrated_for_all_four": false,
+    "constructed_external_lead_totals_mm": {
+      "C14": 15.238898484134978,
+      "C15": 15.08534509354169,
+      "C48": 10.94895623633816,
+      "C49": 21.589440947310088
+    },
+    "interpretation": "Constructed copper-path upper bounds; the10mm engineering target is not demonstrated. These are documented layout limits for prototype switching/noise tests, not EM simulation or a fabricatedPASS."
+  },
+  "mechanical": {
+    "component_carrier_tail_collisions": 0,
+    "R78_and_lowstack_cap_collisions": 0,
+    "nominal_added_strip_vertical_clearance_mm": 1.900000000000001,
+    "lower_terminal_axis_distance_from_upper_edge_mm": 2.299999999999997,
+    "actual_upper_dimensions_mm": [
+      89.0,
+      49.44000000000001
+    ],
+    "full3Dboolean_or_stack_tolerance_signoff": false
+  },
+  "limits": [
+    "No hardware, thermal, surge, ESD or EMC qualification performed.",
+    "No physical USB FullSpeed waveform or cable interoperability qualification performed.",
+    "TVS plus100ohmFIELDseries is not proof of compliance with every ISO1640 absolute-maximum transient condition and is not12/24V miswire protection.",
+    "Mechanical envelopes use nominal mating height and stated conservative body allowances; verify vendor clones and tool access on the assembled sample.",
+    "Full source manifests, DRC reports and actual contour connectivity are separate linked evidence, not replaced by this summary."
+  ]
+}

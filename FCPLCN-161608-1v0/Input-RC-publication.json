@@ -1,0 +1,265 @@
+{
+  "checked_at": "2026-11-19T02:19:33.625747+07:00",
+  "guarded_existing_files": 312,
+  "published_files": [
+    {
+      "file": "ASSEMBLY.md",
+      "before_sha256": "4194d43c2f3452f7abebd3d81581a18e1ef4437c24c2fe24a98979f79ae06dc0",
+      "after_sha256": "453db95c234f0fc49e4c94332c8aa6582929f4157dbbc4e37d463f89c7562348"
+    },
+    {
+      "file": "BOM-combined.csv",
+      "before_sha256": "030a964f78076240eeed404639ac5ea641928f4db4ec6e56abcbc006ca501721",
+      "after_sha256": "d6392f5f3116c6071d51d616b372af951675d5958df3c6526c7ec0b930b4aeb3"
+    },
+    {
+      "file": "DELIVERY.txt",
+      "before_sha256": "49d4d353c872efed063730891aeaac8dc6f73bf9360b120faeb2817ac05953f0",
+      "after_sha256": "800af2fc8a314441710c4f9f958f3452bf0f4e3e8e253986d88d7b007eb6c620"
+    },
+    {
+      "file": "EMI-power-review.md",
+      "before_sha256": "7585f977d78c8fc674e8c54c212de4f860e8ab738e9c820daede40386882a948",
+      "after_sha256": "fc8793aa086c215150f1f4ce01aad30f586abf7fd3c00e8d5787efd3509fa745"
+    },
+    {
+      "file": "FCPLCN-CPU-08-1v0/Input-RC-DRC.json",
+      "before_sha256": null,
+      "after_sha256": "d3adac04e228dc8af753baa1e19e39ac470c7ea4b05effd4f5f61beeccad19ba"
+    },
+    {
+      "file": "FCPLCN-CPU-08-1v0/Input-RC-ERC.json",
+      "before_sha256": null,
+      "after_sha256": "012b15ed79479bbd7487a45aeaab11132e32e4b53754831b38bc3fd99d4465a2"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/BOM.csv",
+      "before_sha256": "77f4973a8655531cd00c419058edc4e2fae10fc7f6521fd3737560b6fe135351",
+      "after_sha256": "fae8ca63fa685d892e2170b83e63c3aaf7fdeb639645341c64d3a58bbcc04353"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0-schematic.png",
+      "before_sha256": "1f6f4b1a5f76bd64af11fc50ffd11ff40490a14510e44f0f7329f7604612edcf",
+      "after_sha256": "8568a080f5ce7097f20f02474579e9e13cbe36d3d7f5b2b4ff547f52b8f377ed"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+      "before_sha256": "2ca12a73ac67e44febe7deca835caaef7aa68fa4d056655796cbc42f942ed805",
+      "after_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+      "before_sha256": "0108d27e380dc09d2521e429a9312e33c00f670485d69e7b7858cef291e177a6",
+      "after_sha256": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml",
+      "before_sha256": "f84c2b329bf61c24e804bf96f71d922eabcd76633788c81b7cfde7de58f344e0",
+      "after_sha256": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-DRC.json",
+      "before_sha256": null,
+      "after_sha256": "4c8cb5c5bf40e63fa0f9a4c00a6e5cc551c5fd73bed167970bb5ab6850ca6fbe"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-ERC.json",
+      "before_sha256": null,
+      "after_sha256": "c6b2cfe0199f91d35b51dea604b02e56ef319b30f41c68bd735ef3b57701ee91"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-explicit-junctions.json",
+      "before_sha256": null,
+      "after_sha256": "ee74b87d137ef4b6555954aa045750c799a198d80b84fed34567c4c2723c6f71"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-ground-spurs.json",
+      "before_sha256": null,
+      "after_sha256": "1a2d70ee49622c20ddc31ceba8313c7f62e822188af6565059495ac2a70fca41"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-ground-stitch.json",
+      "before_sha256": null,
+      "after_sha256": "fb850cf89a7d75cda111e766d5c75c9cfb1a2ab196b95b1c113ef0fa2783b7cd"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-layout.json",
+      "before_sha256": null,
+      "after_sha256": "5f1f53bd70be2c127efa3c3cd36ca70085806246e4f62c94a102518f02342e28"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-placement-initial.json",
+      "before_sha256": null,
+      "after_sha256": "a8182a56b8745547d06a17b924c86ec2688075ccb437795dc1fab82333517596"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-schematic-channel1.png",
+      "before_sha256": null,
+      "after_sha256": "2e8bb11f7069f2eaf43bc14efe098788933e74844944ce107f3c3e6362b505a4"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-schematic-section.png",
+      "before_sha256": null,
+      "after_sha256": "6ee357726bbd4895bba24261e9b099eb2b038546278cdd856f6b9b67e4ca9446"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-schematic-validation.json",
+      "before_sha256": null,
+      "after_sha256": "684970025eb95b2f0bb3ac00dbb6503d5430673fb0ea360fbc59e3ae365b3f10"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/Input-RC-shunt-placement.json",
+      "before_sha256": null,
+      "after_sha256": "e7a31f850846c7a8d0d9253207467f65348ce0ed81330e5da4741e239238af57"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/RelayBoard.kicad_sym",
+      "before_sha256": "8b07bda9afa81b56a00280af32f25582c64cab8d73c834d4cc2cb4aa169a70e8",
+      "after_sha256": "545c131c709f100580486e48217d935d250efa7f1c575ffed6527be19ccab14d"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/schematic-svg/FCPLCN-RLY-1616-1v0.svg",
+      "before_sha256": "7190529f87423ff6c8709b226ba77a6588a42ac1b3a2d54ed38cf1a3371d67fd",
+      "after_sha256": "fe7ebbf9e614ad195e4776bd05d6815bd4d19c5787f267d6bc6c02dda10897a6"
+    },
+    {
+      "file": "Input-RC-board-check.json",
+      "before_sha256": null,
+      "after_sha256": "7b0795084e80d8f8a85a04982ff37961f97e368299b275ec9f99fdc342ac614a"
+    },
+    {
+      "file": "Input-RC-controller-tests.log",
+      "before_sha256": null,
+      "after_sha256": "8a47d87eda19db9369e90b7e405a5259e65c04532754a0dd4e3a00c240d8e5c4"
+    },
+    {
+      "file": "Input-RC-electrical-review.json",
+      "before_sha256": null,
+      "after_sha256": "465564e8e2d53e439b887a73afdc431c1cde8bd6d22ae67eb532c92fb61adcff"
+    },
+    {
+      "file": "Input-RC-electrical-review.md",
+      "before_sha256": null,
+      "after_sha256": "d1bd60ccb8206c77bbcdfce7c4a5e11458126f5cecbe4a68693b2ffca8b9880a"
+    },
+    {
+      "file": "Input-RC-firmware-qualification.json",
+      "before_sha256": null,
+      "after_sha256": "b4168b51b6beff9bb9eb0c9c0e7936771208759f32920baf78eda4639819fc99"
+    },
+    {
+      "file": "Input-RC-source-audit.json",
+      "before_sha256": null,
+      "after_sha256": "77698b47f5a3d5424a64c3d906c08db9d55522456c78aae4cee820dbf81185d7"
+    },
+    {
+      "file": "Power-budget.json",
+      "before_sha256": "9d45fa7b3f431f44c879613e0a449042adc89f9933a9c141c3e86839b0552232",
+      "after_sha256": "ff8374467f3da5eeeba649695463c5819a8376d872d4676a0c2a7ca1b2d6e4dc"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "974210d81e583a31291b9b20e331c61a0ad734a766d22447ffc085c8ec37961c",
+      "after_sha256": "4d46b3ba314be66c2b3140bb10791d4043ddbc454d0aa81ad11871e397263708"
+    },
+    {
+      "file": "tools/README.md",
+      "before_sha256": "94f538b485e4a25407b2eea873575e1cfe1194b3b7023364a29be5dccd14fb04",
+      "after_sha256": "69f73e21ac3d5e94ac20c252ac5e329e38b88e70a94be2c823a85eeed89dfc7d"
+    },
+    {
+      "file": "tools/add_lower_input_rc_schematic.py",
+      "before_sha256": null,
+      "after_sha256": "42861026c61bffe44fbf858d2f2bee114c10c9bc0822e34bab81085b2a502723"
+    },
+    {
+      "file": "tools/audit_input_rc_layout.py",
+      "before_sha256": null,
+      "after_sha256": "ee9bb97e6c773ffd98976a2c73e5315883ac58d293345671ecd89815beae0a0b"
+    },
+    {
+      "file": "tools/audit_input_rc_revision.py",
+      "before_sha256": null,
+      "after_sha256": "7a4bf958f56f27097165e43c91c3b005a7c423e52cf9605b5e23472e40723825"
+    },
+    {
+      "file": "tools/check_board.py",
+      "before_sha256": "eb3edd323692e7d362f90dbc54c9512703ed1b914e078950cfa729e250ebdc76",
+      "after_sha256": "eadde9eae46b01d0db97610ad72103df47da63ef9ecec3a7731ae55140c7a288"
+    },
+    {
+      "file": "tools/passive_specifications.py",
+      "before_sha256": "32edfdbec8317851e8478d2820647d4f6f02bd3ec5c276c5388558f73e8a2c58",
+      "after_sha256": "772b98703d33a1a38a107827a69f8a07eaa9d22ed5108fce4778db84349be4ed"
+    },
+    {
+      "file": "tools/replace_lower_tlp2363_schematic.py",
+      "before_sha256": "6ee1c50da80d1f389ae0b8774528532e4e769a72c478b0449b2be8857405aadb",
+      "after_sha256": "ee39d6b602e96d5a9bcf4134e0cf959614f179b9fcc894beb4a2bcfda283ffad"
+    }
+  ],
+  "obsolete_previews_removed": [],
+  "only_current_two_boards_retained": true,
+  "current_generated_aliases": [
+    {
+      "file": "Base-3D-preview.png",
+      "source": "Previews/native-all-views/FCPLCN-RLY-1616-1v0-angled-front.png",
+      "sha256": "84671a3ddd6371282be07837bb0bd1805cc223a47046866f31e63f9ffc425198"
+    },
+    {
+      "file": "Base-3D-top.png",
+      "source": "Previews/native-all-views/FCPLCN-RLY-1616-1v0-top.png",
+      "sha256": "6edf50ebfed2e38eecd50b6c348f035857b82fcb398028a83a061a76dc6a68ee"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0-3D-bottom.png",
+      "source": "Previews/native-all-views/FCPLCN-RLY-1616-1v0-bottom.png",
+      "sha256": "16e1f437fbb2d2228793373469f6a345c0201d1064a11a46c6e722c8c46558af"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0-3D-bottom-preview.png",
+      "source": "Previews/native-all-views/FCPLCN-RLY-1616-1v0-angled-bottom.png",
+      "sha256": "82c0fbd3c160468dc6c6c3baa2354e6915ed0ba25685f7b275429ec18f475175"
+    },
+    {
+      "file": "FCPLCN-CPU-08-1v0-3D-bottom.png",
+      "source": "Previews/native-all-views/FCPLCN-CPU-08-1v0-bottom.png",
+      "sha256": "b9f4715740eef3062007624ca552d9707cfda1679875a840aac6c9cc473e10a9"
+    },
+    {
+      "file": "FCPLCN-CPU-08-1v0-3D-bottom-preview.png",
+      "source": "Previews/native-all-views/FCPLCN-CPU-08-1v0-angled-bottom.png",
+      "sha256": "2087560d06baed4bf5bcf7ac67247a226ddf4b4c63c995d19d98907da4902f77"
+    },
+    {
+      "file": "Stack-3D-preview.png",
+      "source": "Previews/native-all-views/Stack-angled-front.png",
+      "sha256": "46ca47789072804b1d264634f4a3e87370310ff86ec3787195777f45f4f132b1"
+    },
+    {
+      "file": "Stack-3D-top.png",
+      "source": "Previews/native-all-views/Stack-top.png",
+      "sha256": "0400c65761ba3a24b63da8dc24f0c40205f8fe17a3df0c59ab131ecbbcb7830e"
+    },
+    {
+      "file": "Stack-alignment-top.png",
+      "source": "Previews/native-all-views/Stack-top.png",
+      "sha256": "0400c65761ba3a24b63da8dc24f0c40205f8fe17a3df0c59ab131ecbbcb7830e"
+    },
+    {
+      "file": "Stack-3D-low-side.png",
+      "source": "Previews/native-all-views/Stack-front.png",
+      "sha256": "97708e8424b22ca70a71f396dc7b10fd251b0eaa12c829d30868183fc4f5c2b2"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-schematic-channel1.png",
+      "source": "FCPLCN-RLY-1616-1v0/Input-RC-schematic-channel1.png",
+      "sha256": "2e8bb11f7069f2eaf43bc14efe098788933e74844944ce107f3c3e6362b505a4"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-schematic-section.png",
+      "source": "FCPLCN-RLY-1616-1v0/Input-RC-schematic-section.png",
+      "sha256": "6ee357726bbd4895bba24261e9b099eb2b038546278cdd856f6b9b67e4ca9446"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+Part selected by user: HBXINTAO 16PIN vertical DIP USB-C
+AliExpress item: 1005004175942555
+Selected SKU: 12000028287569580
+Product: https://www.aliexpress.com/item/1005004175942555.html?sku_id=12000028287569580
+Matching seller photo: https://connectorscn.com/wp-content/uploads/2026/10/b16-5-1.webp
+Matching seller drawing: https://connectorscn.com/wp-content/uploads/2026/10/b16-detail-5-4.webp
+Retrieved: 2026-11-11
+The PNG drawing was also provided directly by the user in this chat.
+
+Electrical mounting pattern:
+16 separate plated through-hole tails in2 aligned rows; there is no stagger.
+Signal/power holes0.50mm, pad0.80mm, row centresY+/-0.80mm.
+X columns: -3.85,-2.75,-1.65,-0.55,+0.55,+1.65,+2.75,+3.85mm.
+FCPLCN-CPU-08-1v0 rowY-0.80mm from left: A1,A4,A5,A6,A7,A8,A9,A12.
+FCPLCN-RLY-1616-1v0 rowY+0.80mm from left: B12,B9,B8,B7,B6,B5,B4,B1.
+The drawing's0.55mm dimension is half the1.10mm column pitch, not a row offset.
+A6+B6 are D+; A7+B7 are D-. A5/B5 are separate CC1/CC2 tails.
+
+Intentional mounting-footprint adaptation:
+The four physical shield lead centres areX+/-2.50,Y+/-2.15mm in the drawing.
+The four corresponding PCB drill centres areX+/-2.50,Y+/-2.20mm, shifted only
+0.05mm outwards inY. Their recommended circular diameter1.30mm is retained.
+Copper pads1.60mm retain the0.15mm annulus. This increases the nearest
+shield-to-power copper gap from0.172953mm to0.222146mm, preserving0.20mm
+clearance without changing board design rules.
+
+Nominal lead fit check for a1.00x0.30mm shield tail in the offset1.30mm hole:
+farthest corner radius = sqrt(0.50^2 + (0.15+0.05)^2) =0.538516mm;
+hole radius0.650mm leaves0.111484mm nominal radial space at that corner.
+The model keeps physical leads atY+/-2.15mm; it does not move them to match
+adapted PCB drill centres. Check the selected actual SKU on a prototype.
+
+Nominal3D model:
+Tube8.94x3.16mm, height6.50mm.16 electrical tails project1.90mm below the
+mounting plane; this projection is explicitly dimensioned. The four shield
+tails are modelled at nominal1.90mm, derived from8.40mm overall minus6.50mm
+body height; shield projection is not separately dimensioned in the supplied
+image. No2.10mm A44 dimension is reused. Small internal moulding details are
+simplified; this is an authored nominal mechanical model, not a vendor STEP.
+For PCB thickness1.60mm, nominal tail projection below the underside is0.30mm.
+No SMD signal lands or AB7-style power-sharing tails/retaining ears are used.
+
+Drawing PNG SHA256: 41dcb8826df6c7af809489a4d1471e8449fd9ec3786a9313cf7190aada3d83c0
+Product photo SHA256: 818b0832290ec5f30b105141773ca2b1a92239744457329759fd7915d04159ab

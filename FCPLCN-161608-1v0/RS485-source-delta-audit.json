@@ -1,0 +1,441 @@
+{
+  "Lower": {
+    "before_sha256": "8c0d64d1e66b3e4a5f4566498579b89b1ac834b7cd54a5863081cf8fe5f5d500",
+    "sha256": "7f4ab4870b80d78a587cc2cbf8250e25e9b9bcd77daaa74ddc1fc91c5cc7582c",
+    "footprints": 155,
+    "added_refs": [],
+    "removed_refs": [],
+    "moved_or_flipped": [],
+    "changed_pad_net_maps": [],
+    "changed_footprints": [],
+    "changed_values": [
+      {
+        "ref": "F1",
+        "before": "0452001.MRL",
+        "after": "045201.5MRL"
+      }
+    ],
+    "board_size_mm": [
+      101.0,
+      86.0
+    ],
+    "outline_and_layer_count_preserved": true,
+    "project_preserved": true,
+    "rules_preserved_or_strengthened": true,
+    "rules_match_approved_revision": true,
+    "approved_rule_delta": null,
+    "USB_data_and_CC_track_via_geometry_preserved": true,
+    "USB_data_and_CC_match_approved_revision": true,
+    "approved_USB_DN_delta": null,
+    "copper_delta": {
+      "added": 0,
+      "removed": 0,
+      "modified_existing": 0
+    }
+  },
+  "Upper": {
+    "before_sha256": "000352a9e2a6e51c3be436edd5af61483475183f996707ad852a84e257117717",
+    "sha256": "2592644c74a39559e2b532ddc4e1c992a71a0071a535deb9cfa6d8d727480d27",
+    "footprints": 131,
+    "added_refs": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "D9",
+      "FB1",
+      "JP2",
+      "R47",
+      "R48",
+      "R49",
+      "R50",
+      "R51",
+      "R52",
+      "R53",
+      "R54",
+      "R55",
+      "R56",
+      "U11",
+      "U12",
+      "U13",
+      "U14"
+    ],
+    "removed_refs": [
+      "J10",
+      "J11",
+      "J4",
+      "J9"
+    ],
+    "moved_or_flipped": [
+      {
+        "ref": "C18",
+        "before": [
+          103700000,
+          100400000,
+          180.0,
+          2
+        ],
+        "after": [
+          103700000,
+          99900000,
+          180.0,
+          2
+        ]
+      },
+      {
+        "ref": "C19",
+        "before": [
+          103700000,
+          102600000,
+          180.0,
+          2
+        ],
+        "after": [
+          96300000,
+          99300000,
+          0.0,
+          2
+        ]
+      },
+      {
+        "ref": "C21",
+        "before": [
+          114800000,
+          103000000,
+          0.0,
+          2
+        ],
+        "after": [
+          114800000,
+          103000000,
+          0.0,
+          0
+        ]
+      },
+      {
+        "ref": "C33",
+        "before": [
+          66200000,
+          79400000,
+          0.0,
+          2
+        ],
+        "after": [
+          74500000,
+          75250000,
+          -90.0,
+          2
+        ]
+      },
+      {
+        "ref": "C34",
+        "before": [
+          51800000,
+          93535000,
+          90.0,
+          2
+        ],
+        "after": [
+          52000000,
+          98275000,
+          -90.0,
+          2
+        ]
+      },
+      {
+        "ref": "D2",
+        "before": [
+          84500000,
+          107900000,
+          0.0,
+          2
+        ],
+        "after": [
+          80000000,
+          111200000,
+          0.0,
+          2
+        ]
+      },
+      {
+        "ref": "D6",
+        "before": [
+          101000000,
+          107900000,
+          0.0,
+          2
+        ],
+        "after": [
+          86000000,
+          111200000,
+          0.0,
+          2
+        ]
+      },
+      {
+        "ref": "D7",
+        "before": [
+          119900000,
+          107900000,
+          0.0,
+          2
+        ],
+        "after": [
+          92000000,
+          111200000,
+          0.0,
+          2
+        ]
+      },
+      {
+        "ref": "J8",
+        "before": [
+          93750000,
+          118000000,
+          0.0,
+          0
+        ],
+        "after": [
+          112950000,
+          118000000,
+          0.0,
+          0
+        ]
+      },
+      {
+        "ref": "R16",
+        "before": [
+          103000000,
+          85400000,
+          0.0,
+          0
+        ],
+        "after": [
+          102900000,
+          85800000,
+          90.0,
+          0
+        ]
+      },
+      {
+        "ref": "R22",
+        "before": [
+          118800000,
+          104000000,
+          0.0,
+          2
+        ],
+        "after": [
+          118800000,
+          104000000,
+          0.0,
+          0
+        ]
+      }
+    ],
+    "changed_pad_net_maps": [
+      {
+        "ref": "J3",
+        "before": {
+          "1": "/+5V_ISO",
+          "2": "/DATA1_ISO",
+          "3": "/GND_ISO"
+        },
+        "after": {
+          "1": "/DATA1_ISO",
+          "2": "/DATA2_ISO",
+          "3": "/DATA3_ISO",
+          "4": "/DATA4_ISO",
+          "5": "/DATA5_ISO",
+          "6": "/DATA6_ISO",
+          "7": "/+5V_ISO",
+          "8": "/GND_ISO"
+        }
+      },
+      {
+        "ref": "J8",
+        "before": {
+          "1": "/+5V_ISO",
+          "2": "/DATA3_ISO",
+          "3": "/GND_ISO"
+        },
+        "after": {
+          "1": "/+5V_ISO",
+          "2": "/RS485_A",
+          "3": "/RS485_B",
+          "4": "/GND_ISO"
+        }
+      },
+      {
+        "ref": "U1",
+        "before": {
+          "1": "/GND",
+          "2": "/+3V3",
+          "3": "/ESP_EN",
+          "4": "/I2C_SDA",
+          "5": "/I2C_SCL",
+          "6": "/MCP_RESET_N",
+          "7": "/NET_LED",
+          "8": "/STATUS_LED",
+          "9": "/ALARM_LED",
+          "10": "/DATA3_CPU",
+          "11": "/DATA4_CPU",
+          "12": "unconnected-(U1-IO8-Pad12)",
+          "13": "/USB_DN_CPU",
+          "14": "/USB_DP_CPU",
+          "15": "unconnected-(U1-IO3-Pad15)",
+          "16": "unconnected-(U1-IO46-Pad16)",
+          "17": "/ETH_CS_CPU",
+          "18": "/ETH_SCK_CPU",
+          "19": "/ETH_MOSI_CPU",
+          "20": "/ETH_MISO_CPU",
+          "21": "/ETH_INT_N",
+          "22": "/ETH_RST_N",
+          "23": "/USB_VBUS_SENSE",
+          "24": "unconnected-(U1-IO47-Pad24)",
+          "25": "unconnected-(U1-IO48-Pad25)",
+          "26": "unconnected-(U1-IO45-Pad26)",
+          "27": "/ESP_BOOT",
+          "28": "unconnected-(U1-IO35-Pad28)",
+          "29": "unconnected-(U1-IO36-Pad29)",
+          "30": "unconnected-(U1-IO37-Pad30)",
+          "31": "unconnected-(U1-IO38-Pad31)",
+          "32": "/DATA1_CPU",
+          "33": "/DATA2_CPU",
+          "34": "/ISO_SDA_CPU",
+          "35": "/ISO_SCL_CPU",
+          "36": "unconnected-(U1-RXD0-Pad36)",
+          "37": "unconnected-(U1-TXD0-Pad37)",
+          "38": "/DATA6_CPU",
+          "39": "/DATA5_CPU",
+          "40": "/GND",
+          "41": "/GND"
+        },
+        "after": {
+          "1": "/GND",
+          "2": "/+3V3",
+          "3": "/ESP_EN",
+          "4": "/I2C_SDA",
+          "5": "/I2C_SCL",
+          "6": "/MCP_RESET_N",
+          "7": "/NET_LED",
+          "8": "/STATUS_LED",
+          "9": "/ALARM_LED",
+          "10": "/DATA3_CPU",
+          "11": "/DATA4_CPU",
+          "12": "/RS485_TX_CPU",
+          "13": "/USB_DN_CPU",
+          "14": "/USB_DP_CPU",
+          "15": "unconnected-(U1-IO3-Pad15)",
+          "16": "unconnected-(U1-IO46-Pad16)",
+          "17": "/ETH_CS_CPU",
+          "18": "/ETH_SCK_CPU",
+          "19": "/ETH_MOSI_CPU",
+          "20": "/ETH_MISO_CPU",
+          "21": "/ETH_INT_N",
+          "22": "/ETH_RST_N",
+          "23": "/USB_VBUS_SENSE",
+          "24": "/RS485_RX_CPU",
+          "25": "/RS485_DIR_CPU",
+          "26": "unconnected-(U1-IO45-Pad26)",
+          "27": "/ESP_BOOT",
+          "28": "unconnected-(U1-IO35-Pad28)",
+          "29": "unconnected-(U1-IO36-Pad29)",
+          "30": "unconnected-(U1-IO37-Pad30)",
+          "31": "unconnected-(U1-IO38-Pad31)",
+          "32": "/DATA1_CPU",
+          "33": "/DATA2_CPU",
+          "34": "/ISO_SDA_CPU",
+          "35": "/ISO_SCL_CPU",
+          "36": "unconnected-(U1-RXD0-Pad36)",
+          "37": "unconnected-(U1-TXD0-Pad37)",
+          "38": "/DATA6_CPU",
+          "39": "/DATA5_CPU",
+          "40": "/GND",
+          "41": "/GND"
+        }
+      }
+    ],
+    "changed_footprints": [
+      {
+        "ref": "C34",
+        "before": "Capacitor_SMD:C_0805_2012Metric",
+        "after": "Capacitor_SMD:C_1206_3216Metric"
+      },
+      {
+        "ref": "J3",
+        "before": "RelayStack:KF128-2.54-3P",
+        "after": "RelayStack:KF128-2.54-8P"
+      },
+      {
+        "ref": "J8",
+        "before": "RelayStack:KF128-2.54-3P",
+        "after": "RelayStack:KF128-2.54-4P"
+      }
+    ],
+    "changed_values": [
+      {
+        "ref": "J3",
+        "before": "DATA 1",
+        "after": "DATA1–6 / 5V / GND"
+      },
+      {
+        "ref": "J8",
+        "before": "DATA 3",
+        "after": "RS-485 / 5V A B G"
+      }
+    ],
+    "board_size_mm": [
+      89.0,
+      48.44
+    ],
+    "outline_and_layer_count_preserved": true,
+    "project_preserved": false,
+    "rules_preserved_or_strengthened": false,
+    "rules_match_approved_revision": true,
+    "approved_rule_delta": {
+      "project_changed_paths": {
+        "board.design_settings.rules.min_via_diameter": [
+          0.8,
+          0.6
+        ],
+        "board.design_settings.rules.min_via_annular_width": [
+          0.25,
+          0.15
+        ]
+      },
+      "minimum_through_hole_diameter_mm_unchanged": 0.3,
+      "standard_via_annular_rule_mm": [
+        0.25,
+        0.15
+      ],
+      "added_exact_galvanic_domain_clearance_mm": 1.5,
+      "all_other_project_settings_and_existing_DRC_rules_exact": true
+    },
+    "USB_data_and_CC_track_via_geometry_preserved": false,
+    "USB_data_and_CC_match_approved_revision": true,
+    "approved_USB_DN_delta": {
+      "manifest": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/RS485-approved-USB-delta.json",
+      "manifest_sha256": "aa87e6bd36a6b8cc6668de3fd9eaf0d89abb9a979d9b339db2855a6a77229e39",
+      "canonical_before_sha256": "000352a9e2a6e51c3be436edd5af61483475183f996707ad852a84e257117717",
+      "approved_candidate_sha256": "aff3153ffec2c2b4537950226edf37cb620470c4eafac81aa738746eaf43fe7c",
+      "net": "/USB_DN",
+      "removed_items": 1,
+      "added_items": 5,
+      "complete_before_and_after_geometry_exact": true
+    },
+    "copper_delta": {
+      "added": 1878,
+      "removed": 936,
+      "modified_existing": 0
+    }
+  },
+  "Stack-mechanics_sha256": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17"
+}

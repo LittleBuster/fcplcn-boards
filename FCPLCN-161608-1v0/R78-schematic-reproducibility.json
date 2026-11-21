@@ -1,0 +1,22 @@
+{
+  "generator_sha256": "2684f305fe9ac294eb8f252298245d6e82a09a6b115b87c7f5cfe50f1aa9c5dd",
+  "files": {
+    "FCPLCN-CPU-08-1v0.kicad_sch": {
+      "canonical_sha256": "f16a97cb8f3a879b9f4c14b4aafb129f8510cdef3f5dc3a9e669a77dce9f26f4",
+      "regenerated_sha256": "f16a97cb8f3a879b9f4c14b4aafb129f8510cdef3f5dc3a9e669a77dce9f26f4"
+    },
+    "RelayStack.kicad_sym": {
+      "canonical_sha256": "59a668b26e828c7d306e76f926e8635a401a32af93601ff72bfe7a17e269970e",
+      "regenerated_sha256": "59a668b26e828c7d306e76f926e8635a401a32af93601ff72bfe7a17e269970e"
+    },
+    "sym-lib-table": {
+      "canonical_sha256": "c861dd52ecd5efba05043798e5d0c8b96edb09a240a21ab63916ddc4bed35c60",
+      "regenerated_sha256": "c861dd52ecd5efba05043798e5d0c8b96edb09a240a21ab63916ddc4bed35c60"
+    },
+    "fp-lib-table": {
+      "canonical_sha256": "02ff5395a7f27ac712d45bb665cf3bc52799448b8713ca9780bfd62a09245064",
+      "regenerated_sha256": "02ff5395a7f27ac712d45bb665cf3bc52799448b8713ca9780bfd62a09245064"
+    }
+  },
+  "all_four_generated_sources_reproduced_exactly": true
+}

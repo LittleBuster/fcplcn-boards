@@ -1,0 +1,169 @@
+{
+  "operation": "Extend Upper top edge halfway into relay gap; ground on both layers",
+  "baseline_sha256": "a66fc1e14708e639c0f38826060819f1606ad2365cebb35779aa6315779b0594",
+  "result_sha256": "c7de4ac6ca92a84d8f4f738c6539bdf549df805621d1ef72afdfd61a631a0a9a",
+  "old_top_y_mm": 72.3,
+  "new_top_y_mm": 70.96,
+  "bottom_y_mm": 119.4,
+  "width_mm": 89,
+  "height_mm": 48.44,
+  "all_118_footprints_and_pad_maps_preserved": true,
+  "all_original_copper_objects_preserved": 1058,
+  "old_tracks_changed": 0,
+  "old_copper_removed": 0,
+  "new_front_gnd_zone": {
+    "uuid": "038ed3ed-7a35-4f06-b723-232e09aa23a9",
+    "outline_mm": [
+      [
+        47.3,
+        71.26
+      ],
+      [
+        135.7,
+        71.26
+      ],
+      [
+        135.7,
+        72.35
+      ],
+      [
+        47.3,
+        72.35
+      ]
+    ]
+  },
+  "expanded_back_gnd_zone": {
+    "uuid": "b0852fae-db2d-43ee-80bf-53ccfbed921a",
+    "old_outline_mm": [
+      [
+        47.3,
+        72.6
+      ],
+      [
+        135.7,
+        72.6
+      ],
+      [
+        135.7,
+        83.3
+      ],
+      [
+        126.0,
+        83.3
+      ],
+      [
+        126.0,
+        78.8
+      ],
+      [
+        107.0,
+        78.8
+      ],
+      [
+        107.0,
+        104.0
+      ],
+      [
+        73.5,
+        104.0
+      ],
+      [
+        73.5,
+        119.1
+      ],
+      [
+        47.3,
+        119.1
+      ]
+    ],
+    "new_outline_mm": [
+      [
+        47.3,
+        71.26
+      ],
+      [
+        135.7,
+        71.26
+      ],
+      [
+        135.7,
+        83.3
+      ],
+      [
+        126.0,
+        83.3
+      ],
+      [
+        126.0,
+        78.8
+      ],
+      [
+        107.0,
+        78.8
+      ],
+      [
+        107.0,
+        104.0
+      ],
+      [
+        73.5,
+        104.0
+      ],
+      [
+        73.5,
+        119.1
+      ],
+      [
+        47.3,
+        119.1
+      ]
+    ]
+  },
+  "added_ground_vias": [
+    {
+      "uuid": "6146314b-3b36-41b8-a06e-72fb38a08fb5",
+      "centre_mm": [
+        48.0,
+        71.8
+      ],
+      "diameter_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    {
+      "uuid": "7bb6bc3b-73c9-420d-856c-f29e3c5b852c",
+      "centre_mm": [
+        95.0,
+        71.8
+      ],
+      "diameter_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    {
+      "uuid": "ac580927-fcd7-41ec-8114-c67748850f01",
+      "centre_mm": [
+        120.0,
+        71.8
+      ],
+      "diameter_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    {
+      "uuid": "e41a4e32-b873-423f-abc8-f35d2a8a5bc8",
+      "centre_mm": [
+        135.0,
+        71.8
+      ],
+      "diameter_mm": 0.8,
+      "drill_mm": 0.3
+    },
+    {
+      "uuid": "ef652d51-9b6c-4174-a23d-8a7eedcc46c0",
+      "centre_mm": [
+        70.0,
+        71.8
+      ],
+      "diameter_mm": 0.8,
+      "drill_mm": 0.3
+    }
+  ]
+}

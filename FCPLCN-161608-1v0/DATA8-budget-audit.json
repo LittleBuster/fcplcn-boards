@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "checks": {
+    "main_allocations_sum": true,
+    "main_increment15_and_reserve110": true,
+    "RS485201of500_unchanged": true,
+    "common5V_full_TMR_budget_unchanged": true,
+    "isolated_electronics55_external120": true,
+    "TMR_175of200_and25reserve": true,
+    "TMR_0p875W_below1W": true,
+    "CPU_STATIC_independent_calc": true,
+    "FIELD_STATIC_independent_calc": true,
+    "dynamic_reserves_positive": true,
+    "converter_Pin_independent": true,
+    "RC_balance": true,
+    "RC_loss": true,
+    "RC_tolerance_headroom": true,
+    "R12_hardware_unchanged": true,
+    "inrush_ceiling_still400uF": true,
+    "external_input_fuse_budget": true,
+    "logic_margins_unchanged_positive": true,
+    "no_architecture_12Vbridge": true,
+    "DATA8_GPIO38_44_and_J3power9_10": true,
+    "LowerPCB_exact_before": true,
+    "checkers_python_syntax": true
+  },
+  "source_sha256": {
+    "Power-budget.json": "c70e8613c7014574958270a7fc738bf78215e59b86200caedcbf71d48fe05dce",
+    "RS485-logic-budget.json": "1460cdf9e263f3c08e1e8d5f83b75d6b62abdabe792c08f0c238a1d88a201116",
+    "ASSEMBLY.md": "c267fe6e7478f9c1088de1c7e608e3b133035604dafcbc6cae4d1ffd03da17a9",
+    "tools/check_board.py": "13fbd1c10304c6c9c84916b4c0e2f1ac3b897feb327ff61a863864933e8de8aa",
+    "tools/electrical_audit.py": "6ab7d43ac4cb9a52e8dc9eca386a90c276c08682107bf0505fa8374cb9dd64a7",
+    "tools/README.md": "30dc73f36b41bc1af7a6f666b0a1b44f08d9798776895857dc04a9ee7e5cae3e",
+    "RS485-WORK-STATUS.md": "0b550aec8ea4f25d5945be1fc70dc8cbf1eb79cbaf1850b055cca9dffe78c092"
+  },
+  "Lower_PCB_sha256": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+  "before_Upper_PCB_sha256": "d81498f71022ca1f942df70da954d846e54012d6cf7ddeec27a39aa6dbe32d95",
+  "scope": "Static DATA8 power calculations and unchanged Lower only. Current Upper native routing, actual bypass lengths and physical/thermal/EMC qualification are separate. No current Upper CAD success asserted by this report.",
+  "calculation_summary": {
+    "main_ma": 890,
+    "local_RS485_ma": 201,
+    "isolated_total_equivalent5V_ma": 175,
+    "isolated_external_design_limit_ma": 120,
+    "R12_current_A": 0.5572520882411753,
+    "R12_heat_W": 0.31052988984915064,
+    "filtered12V_V": 10.642747911758825
+  },
+  "primary_sources": {
+    "RECOM_1A": "https://recom-power.com/pdf/Innoline/R-78K-1.0.pdf",
+    "RECOM_0p5A": "https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf",
+    "RECOM_5v": "https://recom-power.com/pdf/Innoline/R-78E-1.0.pdf",
+    "TMR": "https://www.tracopower.com/products/tmr1.pdf",
+    "ISO1640": "https://www.ti.com/lit/ds/symlink/iso1640.pdf",
+    "ESP32_module": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+    "W5500": "https://docs.wiznet.io/img/products/w5500/W5500_ds_v110e.pdf",
+    "ADM2687E": "https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf",
+    "Nexperia_buffer": "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf",
+    "Bourns_CRM2512": "https://www.bourns.com/docs/product-datasheets/crm.pdf"
+  },
+  "checker_source_sha256": "a83f5871b84bffd125f99cdf4bf0a1dba43fcc3627d65513b35b3903e09fc4a9"
+}

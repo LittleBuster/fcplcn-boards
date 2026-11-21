@@ -1,0 +1,56 @@
+{
+  "product": "FCPLCn",
+  "revision": "power_emi_revision",
+  "checked_at": "2026-11-14T06:37:11.217541+07:00",
+  "status": "PASS — native CAD, physical copper connectivity and engineering calculations",
+  "source_sha256": {
+    "Upper": {
+      ".kicad_pcb": "d81498f71022ca1f942df70da954d846e54012d6cf7ddeec27a39aa6dbe32d95",
+      ".kicad_sch": "582bc9ef1c622f850fe10d0003a8f2d132e9072f960d98f3c7749ed950fc07bd",
+      ".kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+      ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      ".xml": "d54cb92563d4825a00d5a7f27def0308938afc064bf9593854bb250b258ab3e7"
+    },
+    "Lower": {
+      ".kicad_pcb": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+      ".kicad_sch": "b5635554fc8ff19e1013d3eb3e013aaffb88c1816694acc6b47046ad1abafb71",
+      ".kicad_pro": "d3d44cb511be23a925795c674c17d145b8cb6cd267b6d15ab6041fd66010a0a4",
+      ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      ".xml": "26a31bc54de222e2743e2efde3698994ae6347a023c4287460fb0232eed58811"
+    }
+  },
+  "reports_sha256": {
+    "Power-EMI-electrical-connectivity.json": "46e635f331dc64e31ba0b97844d8572cc5af799c7f46d09fbf255f31f90706c7",
+    "Power-EMI-electrical-audit.json": "beb63935b8cc55699b01f36959265660354c06052ccb904efd1f3945571479ef",
+    "Power-EMI-bypass-copper.json": "c5787d039170823aff9df364021e4eac0f83c53da133058635eee042c986ed90",
+    "Power-EMI-source-delta-audit.json": "75350eacd077e651630ededfea6e0fe498dcc13eb1ec0a984a29519308eb6ebc",
+    "Power-EMI-mechanical-audit.json": "4c6926c95bb8c7020e527fa3eb242374cb07db25641e9b53b2492528fa163201",
+    "R78-mechanical-audit.json": "dc27e55cad75755dde077acdd3adbcd63719b69c5c4b68123c45f262514c4a17",
+    "Power-EMI-budget-check.json": "8ae53fa6c08f3f238c735e1787aae62ad89110df8e915d120dff67fbb4acbd13",
+    "Power-EMI-final-evidence.json": "255f39b0999c5e6da2eac25e4ef2c93fe4ffdb1395c7eaf2c87a2cb92978111f",
+    "3D-render-validation.json": "282656710b2cd89ed77a35aae056528704318b754a780c38589b5e2e00d0593a",
+    "3D-visual-inspection.json": "81c929160e231b64552f47783e284534e9957bdc5b274032e76cc1932f0eeb36",
+    "Validation.json": "c8b22cee14e7b285027dbfb87c46c939f1963e754f5d544f69b41a5daebc4508",
+    "Power-EMI-board-check.json": "aba0d424ae76abed82065e3b7e72446f23a60ca2d041b774069baad0232b3dcc",
+    "Power-EMI-manufacturing-check.json": "1f1c80a9b87fddf9c0deb0fea7e1a5065cde8f8d642a11b97837cff3c7376a14",
+    "EMI-power-review.md": "28bd6ad763710412d8185da24bbc51275e973ffe17ac1d14d2f54c7b51a8a770",
+    "BOM-combined.csv": "cb8e14cff25d5a7df9176a8b4534809bf994a0998f5ba578ac84d520c21a9cd9",
+    "FCPLCN-RLY-1616-1v0/Power-EMI-native-validation.json": "632d92225506a0c167db7d2bb3dacfac4e18c4be3d55a8cdc68bd30483f6db7b",
+    "FCPLCN-RLY-1616-1v0/Power-EMI-copper-spacing.json": "2d70ad2852193f38dd9bb8bd890d4a38dcddf48049e25cbdec765b665532e774",
+    "FCPLCN-CPU-08-1v0/Power-EMI-copper-spacing.json": "831be3996d804065ee68e7e828b7050441e90600f690cb0de3bae9328fbc82f3",
+    "ASSEMBLY.md": "02e71f7407d54c9150bb29c65d2422e2482cf732c968aec044e210b2e012c8d5",
+    "RS485-WORK-STATUS.md": "b5da155eddc86ad6485a19f73f9a1080c2cb37debf8073d8f431f205fcd8fa9c",
+    "DELIVERY.txt": "1b37610b0eafb60965b19ead14903eb0676fa912eb6c350ff178b3506acfaa22"
+  },
+  "CAD_changed_during_final_validation": false,
+  "ERC_active_DRC_opens_parity": 0,
+  "mechanical_NPTH_exclusions": 2,
+  "purchased_BOM_count": 285,
+  "separate_CR1220_cell": 1,
+  "prototype_testing": "Not performed; EMI immunity, transients, thermal behavior and assembly fit need physical prototype verification.",
+  "path_mapping": {
+    "recorded_stage_root": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage",
+    "published_project_root": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0",
+    "meaning": "Audit source paths may name stage; relative file paths and SHA-256 identify identical published bytes."
+  }
+}

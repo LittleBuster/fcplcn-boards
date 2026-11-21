@@ -1,0 +1,123 @@
+{
+  "product": "FCPLCn",
+  "model": "FCPLCN-161608-1v0",
+  "revision": "FRAM U9/C14 placement power-budget increment",
+  "checked_at": "2026-11-18T05:10:28.579756+07:00",
+  "status": "calculated_current_increment_and_dependencies_verified; prototype measurements pending",
+  "added_components": [
+    "Lower.U9 FM24CL64B-GTR",
+    "Lower.C14 100nF0805"
+  ],
+  "purchased_counts": {
+    "CPU": 148,
+    "RLY": 156,
+    "total": 304
+  },
+  "supply": {
+    "ref": "Lower.U9",
+    "MPN": "FM24CL64B-GTR",
+    "package": "SOIC-8 3.9x4.9mm P1.27mm",
+    "memory_bytes": 8192,
+    "i2c_bus": "internal I2C GPIO4/5; /I2C_SDA and /I2C_SCL",
+    "i2c_address_7bit": "0x50",
+    "A0_A1_A2": "GND",
+    "WP": "GND; write enabled",
+    "source": "Lower.U8 TLV1117LV33DCYR",
+    "supply_net": "+3V3",
+    "ground_net": "GND",
+    "operating_supply_V": [
+      2.7,
+      3.65
+    ],
+    "industrial_temperature_C": [
+      -40,
+      85
+    ],
+    "current_max_uA": {
+      "100kHz": 100,
+      "400kHz": 170,
+      "1MHz": 300,
+      "standby": 6
+    },
+    "design_current_increment_ma": 0.3,
+    "decoupling": "Lower.C14 100nF0805 between VDD8 and VSS4; local placement",
+    "extra_I2C_pullups_added": false,
+    "existing_I2C_pullups": "Lower.R2/R3 4.7k",
+    "powerup_first_START_after_VDDmin_ms": 1,
+    "minimum_power_ramp_us_per_V": {
+      "rise": 30,
+      "fall": 30
+    },
+    "power_ramp_and_brownout_prototype_validation_pending": true,
+    "firmware_integration_implemented_by_this_placement": false,
+    "source_datasheet": "https://www.infineon.com/assets/row/public/documents/10/49/infineon-fm24cl64b-64-kbit-8-k-8-serial-i2c-f-ram-datasheet-en.pdf",
+    "budget_report": "FRAM-power-budget.json"
+  },
+  "assumptions": {
+    "device_current_allocation_ma": 0.3,
+    "existing_lower_logic_allocation_ma": 25,
+    "new_lower_logic_allocation_ma": 25.3,
+    "incremental_LDO_dissipation_W_at5V_input": 0.00051,
+    "incremental_5V_output_power_W": 0.0014999999999999998,
+    "TMR_full_load_typical_efficiency_pct": 76,
+    "switching_regulator_efficiency_pct": 85,
+    "FRAM_on_nonisolated_internal_bus": true,
+    "existing_pullup_static_current_not_double_counted": true,
+    "main3V3_budget_ma_unchanged": 890,
+    "isolated_TMR_output_budget_ma_unchanged": 175,
+    "incremental_LDO_output_power_W": 0.0009899999999999998,
+    "existing_12V_startup_capacitance_ceiling_uF_unchanged": 400,
+    "C14_scope": "C14 is100nF on regulated lower3V3, not a directly added12V-input capacitor. The prior400uF engineering ceiling remains unchanged; actual startup/input capacitance still require prototype verification."
+  },
+  "before": {
+    "common5V_total_ma": 288.158,
+    "logic_branch_input_A": 0.5572520882411753,
+    "protected_voltage_V": 10.642747911758825,
+    "R12_dissipation_W": 0.31052988984915064,
+    "input_current_nominal_coils_A": 0.8043631993522865,
+    "input_current_minus10percent_coil_R_A": 0.8215483845374716
+  },
+  "after": {
+    "common5V_total_ma": 288.45789473684215,
+    "common5V_nominal_reserve_ma_at_full_TMR_output": 711.5421052631579,
+    "logic_branch_input_A": 0.5574270659051805,
+    "protected_voltage_V": 10.642572934094819,
+    "R12_dissipation_W": 0.3107249338036585,
+    "input_current_nominal_coils_A": 0.8045381770162917,
+    "input_current_minus10percent_coil_R_A": 0.8217233622014768,
+    "nominal25c_fuse_headroom_A": 0.3032766377985232,
+    "R12_plus1pct": {
+      "R_ohm": 1.01,
+      "I_A": 0.5577355179854551,
+      "protected_voltage_V": 10.63668712683469,
+      "resistor_dissipation_W": 0.3141795971027289,
+      "headroom_to_Lower_R78E5_min8V": 2.6366871268346905,
+      "headroom_to_Upper_R78K_min4p5V": 6.1366871268346905
+    },
+    "U12_input_current_ma_at_new_filtered_voltage": 73.3237109117206
+  },
+  "formulae": {
+    "TMR_input_ma": "1000mW/(5V*0.76)",
+    "common5V_output_power_W": "(25mA+0.3mA+1000mW/(5V*0.76))*5V/1000",
+    "converter_input_power_W": "(main3V3_output+common5V_output+RS485_output)/0.85",
+    "protected_branch": "I*(11.2-I*R)=converter_input_power_W; low-current root",
+    "fuse_load": "protected_logic_current + relay_coil_current + all16_DI_current"
+  },
+  "startup_and_firmware_constraints": [
+    "First START at least1ms after VDD reaches2.7V.",
+    "VDD rise and fall must each satisfy at least30us/V; check actual pin waveform on prototype.",
+    "After VDD falls below the operating minimum, begin subsequent communication with a new START.",
+    "WP is tied to GND, so writes are enabled. No automatic record-level integrity or atomic transaction guarantee is added.",
+    "Placement does not implement a firmware driver, storage format, or brownout-safe record commit policy."
+  ],
+  "datasheet": {
+    "url": "https://www.infineon.com/assets/row/public/documents/10/49/infineon-fm24cl64b-64-kbit-8-k-8-serial-i2c-f-ram-datasheet-en.pdf",
+    "document": "001-84458 Rev. *K",
+    "DC_supply_and_current_page": 9,
+    "power_cycle_timing_page": 12,
+    "package_page": 14
+  },
+  "source_budget_sha256_before": "04c388ad2b9d114c91b28a7eb0bfaeab82acedc0a6050330169c81460c604292",
+  "source_budget_sha256_after": "f0e0ed42a964aa0dba11e7061e5eaa2e02b12052ee75ad60bf32c1087ac7f87b",
+  "historic_reports_not_recertified": true
+}

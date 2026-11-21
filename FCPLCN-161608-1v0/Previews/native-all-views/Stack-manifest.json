@@ -1,0 +1,190 @@
+{
+  "renderer": "KiCad pcb export vrml + pcb render",
+  "source_sha256": {
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+    "FCPLCN-CPU-08-1v0/3d/ADM2687E_RI-16-2.wrl": "78fc299a8ac88660ba08bae32433f784902a2909bfde543b50c066a11472949a",
+    "FCPLCN-CPU-08-1v0/3d/BatteryHolder_QJ_CR1220-2_C70381.wrl": "6a8f69ef759bfe98e390059fb8392cab30b2e60e72088d1eeec473e298456e6b",
+    "FCPLCN-CPU-08-1v0/3d/D_SMA.step": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+    "FCPLCN-CPU-08-1v0/3d/ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
+    "FCPLCN-CPU-08-1v0/3d/KF128-10P.wrl": "b7e847cf2313f060d6b121f1b0f114bc8f106bf16695c6b85970ad90e2abd6d3",
+    "FCPLCN-CPU-08-1v0/3d/KF128-3P.wrl": "d598b818b6fe9eca2051874c6661f19e053543e199034fe5eecf61662048aaa0",
+    "FCPLCN-CPU-08-1v0/3d/KF128-4P.wrl": "b46d141ae4db1b0ac8d0a6e152699a60f02ef2aca8210554447655b4d5e09add",
+    "FCPLCN-CPU-08-1v0/3d/KF128-8P.wrl": "226920cce14c85ceafed0cc79e470a41856c8e9ccba1ca4d9fddca7caf89ed54",
+    "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+    "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-1.0.wrl": "84767b8854cd9aa834ef1a710195fd4a307f97a455acd26208a391a5edb8ed69",
+    "FCPLCN-CPU-08-1v0/3d/SOIC-8_3.9x4.9mm_P1.27mm.step": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+    "FCPLCN-CPU-08-1v0/3d/SW_SPST_TS-1088-xR020.step": "ebfe1a50181c9a502cd98b44b03a5ce8568ff7c77d4fd5906caaef4b9a290da8",
+    "FCPLCN-CPU-08-1v0/3d/StackHeader_2x03_P2.54mm_Bottom.wrl": "90a23b38676afc3a6bbe0071635019a0dda159b4a15868bde79be88ad7b0c82b",
+    "FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_GCT_USB4120_Vertical.wrl": "53776f37f82434833b6b0d3ace5e82c7069dd3517b7bb6e2c218d8238f85ec85",
+    "FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.wrl": "64226a267ab1e0680d23f4ad7f3dfbc8b032d718c3cae9e3c309e01a29d314b1",
+    "FCPLCN-CPU-08-1v0/3d/W5500_Lite_2x6-assembly.wrl": "2f1c19b8a6bcd1400b4f38ad26e18ff8607c7ae4f48a0dcc40fb25064aaf8a91",
+    "FCPLCN-RLY-1616-1v0/3d/APAQ_350ARHA101M06X8P00_H9max.wrl": "b9854934d71e6db2476d3cc82713bb347a19ed3eae790fd65537bdd4f30e7d2e",
+    "FCPLCN-RLY-1616-1v0/3d/C1-D8H12.wrl": "3661cad8c040d3ef81301e1ec000bece2b90293c061671ed3d902c9f4d6ffff0",
+    "FCPLCN-RLY-1616-1v0/3d/ESP32-C3_Super_Mini-assembly.wrl": "68b783b6e316c1879c710b0251ad29fcec33f34083d4b1e4f97af821420ef848",
+    "FCPLCN-RLY-1616-1v0/3d/HF49FD-1H11.step": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a",
+    "FCPLCN-RLY-1616-1v0/3d/KF128-2P.wrl": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81",
+    "FCPLCN-RLY-1616-1v0/3d/KF128-8P.wrl": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1",
+    "FCPLCN-RLY-1616-1v0/3d/LTV847S.wrl": "6c916c5190b3409f646ea676eb07092ccc6e8412ae7c0f68ef8b3a46e4affb44",
+    "FCPLCN-RLY-1616-1v0/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step": "05ad7d4945131c76ec7b9448dd9cbb5376b56adcd564c58d93e50ca7870fab1f",
+    "FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c",
+    "FCPLCN-RLY-1616-1v0/3d/TLP2363_5pin_SO6.wrl": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b",
+    "FCPLCN-RLY-1616-1v0/3d/W5500_Lite_2x6-assembly.wrl": "c9787e50d7d567ad870ee4e7197a75ca693504010d8962b1c6694c6b0b85f401"
+  },
+  "source_files_preserved": true,
+  "board_to_board_clearance_mm": 11.05,
+  "upper_top_above_lower_top_mm": 12.65,
+  "images": [
+    {
+      "scene": "Stack",
+      "view": "top",
+      "side": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-top.png",
+      "sha256": "46bf1940d05960a1cd122e8b6a8de99ed9f47139c5c35bbfe8cdb646eae44318",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-bottom.png",
+      "sha256": "9712c425e1caf23f4172e991e95b7e70185be2bf69a8a0e7257c7ac2dbc71fbc",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "front",
+      "side": "front",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-front.png",
+      "sha256": "6aa47c7fa0d3d63f67b700103444f107edc79521091e286a1ef8158870ede7ae",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "back",
+      "side": "back",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-back.png",
+      "sha256": "a882ecd5862a2ee0347b98a4dec2315cc66177f5b40c7de8721e1f10f2eb4b43",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "left",
+      "side": "left",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-left.png",
+      "sha256": "522eeb7efd84d6618a4d2e6b1f94f70adc708adaa931585acb08ba08f1f9578b",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "right",
+      "side": "right",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-right.png",
+      "sha256": "1da607df9816b3845f415c38b412e61aa1c8e243ab84d871f3275d88e57dd068",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-front",
+      "side": "top",
+      "rotation_deg": [
+        -32.0,
+        0.0,
+        -8.0
+      ],
+      "file": "Stack-angled-front.png",
+      "sha256": "21085a7e2c148247fe0ba94b27fe3f8185b737977d0f5afdeb4c7d835e63069a",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-back",
+      "side": "top",
+      "rotation_deg": [
+        32.0,
+        0.0,
+        8.0
+      ],
+      "file": "Stack-angled-back.png",
+      "sha256": "b74e53df82e5ab3de2f21c817c2bdcd45cc1c6c6ff821259d923a27e5d6e6bae",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        -25.0,
+        0.0,
+        -8.0
+      ],
+      "file": "Stack-angled-bottom.png",
+      "sha256": "263aaefc5090e7fc98a812c14263c8ace65fb5fe5713736a9cd688554af5cab1",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    }
+  ]
+}

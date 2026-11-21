@@ -1,0 +1,29 @@
+{
+  "source_unchanged": true,
+  "source_sha256": {
+    "firmware/base/main/controllers/controller_switches.cpp": "495c00f5a14fc833ae1169c36470858ae92d71ea5e84e116ba0b6f2132f21107",
+    "firmware/base/main/controllers/controller_internal.h": "9edf566032634d1ad1718cedd04276ce352b77e19c6b0fededaf48a526926ef9",
+    "firmware/base/tests/sockets/socket_test.cpp": "d9c13a47764e7a6f2ade961da072c6643834d6e83b7bac9eec202de0c7eac664",
+    "firmware/base/main/hardware/hardware_io.cpp": "c22fb65f10b2f029241094b17b8e6104f7fb9d4438da1fd39f6219fa89ea8a46"
+  },
+  "command": "tools/firmware/test-base-sockets",
+  "host_tests_passed": 51,
+  "host_tests_total": 51,
+  "checks": [
+    "startup_low",
+    "button_confirmation",
+    "recovery",
+    "thermostat_hardware_recovery",
+    "thermostat_item_input_fault"
+  ],
+  "existing_button_qualification": {
+    "first_or_recovered_LOW": "baseline only; no synthesized press",
+    "consecutive_LOW_samples": 3,
+    "controller_worker_interval_ms": 20,
+    "released_HIGH_rearm_ms": 50,
+    "press_lockout_ms": 300
+  },
+  "raw_input_API": "Diagnostic GPIO levels remain raw and can report a startup transient. New consumers must apply their own validity/event qualification.",
+  "scope": "Existing local button actions reject initial LOW and isolated short observations; this is not measurement of analog filter timing or a completed EMC test.",
+  "passed": true
+}

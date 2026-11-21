@@ -1,0 +1,46 @@
+{
+  "FCPLCN-CPU-08-1v0": {
+    "kicad_pcb": {
+      "before_sha256": "1cf36ff0412b3bf563635dbfe7ad512737435fae7364c25e5fbb8a01cd1aa52f",
+      "after_sha256": "25c97070dc6feb11dfc259f8289a4f86a5a9200aa5e138a6a2195e96ebf8ce0b",
+      "only_project_names_title_revision_changed": true
+    },
+    "kicad_sch": {
+      "before_sha256": "e7689580f16a62b2ab0bf3cd38b011ad11671141465f1249f7c1a02ce06f28a0",
+      "after_sha256": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      "only_project_names_title_revision_changed": true
+    },
+    "kicad_pro": {
+      "before_sha256": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+      "after_sha256": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      "only_project_names_title_revision_changed": true
+    },
+    "kicad_dru": {
+      "before_sha256": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      "after_sha256": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      "only_project_names_title_revision_changed": true
+    }
+  },
+  "FCPLCN-RLY-1616-1v0": {
+    "kicad_pcb": {
+      "before_sha256": "1bfe5b167c3534736eed53252d5c476a67aa97faa132bbab1f496cc39e18e59e",
+      "after_sha256": "c419dd4425b9e8cf1d0cf1842b6ba9bf91c229632bd608483e4e93767223f210",
+      "only_project_names_title_revision_changed": true
+    },
+    "kicad_sch": {
+      "before_sha256": "7f9ed5eb6784af66e2d9bebc5b6f864f97224225f0b4e1abd56d2be0152cfa78",
+      "after_sha256": "d5cb48f2b655797fc50de3ee929d97933de923ff25d44679bc00602053a1756d",
+      "only_project_names_title_revision_changed": true
+    },
+    "kicad_pro": {
+      "before_sha256": "d3d44cb511be23a925795c674c17d145b8cb6cd267b6d15ab6041fd66010a0a4",
+      "after_sha256": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      "only_project_names_title_revision_changed": true
+    },
+    "kicad_dru": {
+      "before_sha256": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      "after_sha256": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      "only_project_names_title_revision_changed": true
+    }
+  }
+}

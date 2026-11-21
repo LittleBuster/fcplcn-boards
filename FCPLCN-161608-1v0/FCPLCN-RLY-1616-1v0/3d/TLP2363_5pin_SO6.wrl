@@ -1,0 +1,14 @@
+#VRML V2.0 utf8
+# Toshiba TLP2363 11-4L1S; source Toshiba datasheet pages13/18. Max-body model.
+Transform { translation 0 0 0.462598 children [ Shape { appearance Appearance { material Material { diffuseColor 0.08 0.08 0.085 } } geometry Box { size 1.88976 1.55512 0.807087 } } ] }
+Transform { translation -1.24016 0.5 0.0708661 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.433071 0.15748 0.0629921 } } ] }
+Transform { translation -0.992126 0.5 0.181102 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.102362 0.15748 0.216535 } } ] }
+Transform { translation -1.24016 -0.5 0.0708661 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.433071 0.15748 0.0629921 } } ] }
+Transform { translation -0.992126 -0.5 0.181102 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.102362 0.15748 0.216535 } } ] }
+Transform { translation 1.24016 -0.5 0.0708661 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.433071 0.15748 0.0629921 } } ] }
+Transform { translation 0.992126 -0.5 0.181102 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.102362 0.15748 0.216535 } } ] }
+Transform { translation 1.24016 0 0.0708661 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.433071 0.15748 0.0629921 } } ] }
+Transform { translation 0.992126 0 0.181102 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.102362 0.15748 0.216535 } } ] }
+Transform { translation 1.24016 0.5 0.0708661 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.433071 0.15748 0.0629921 } } ] }
+Transform { translation 0.992126 0.5 0.181102 children [ Shape { appearance Appearance { material Material { diffuseColor 0.78 0.78 0.76 } } geometry Box { size 0.102362 0.15748 0.216535 } } ] }
+Transform { translation -0.688976 0.511811 0.862598 rotation 1 0 0 1.5707963 children [ Shape { appearance Appearance { material Material { diffuseColor 0.82 0.78 0.65 } } geometry Cylinder { radius 0.0866142 height 0.00708661 } } ] }

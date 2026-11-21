@@ -1,0 +1,420 @@
+{
+  "source_sha256": {
+    ".work/rs485-recovery/before-rs485/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "000352a9e2a6e51c3be436edd5af61483475183f996707ad852a84e257117717",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "2592644c74a39559e2b532ddc4e1c992a71a0071a535deb9cfa6d8d727480d27"
+  },
+  "protected_USB_data_and_CC_geometry_preserved": false,
+  "five_unchanged_USB_data_and_CC_nets_exact": true,
+  "USB_data_and_CC_match_approved_revision": true,
+  "approved_USB_DN_delta": {
+    "manifest": "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/FCPLCN-161608-1v0/RS485-approved-USB-delta.json",
+    "manifest_sha256": "aa87e6bd36a6b8cc6668de3fd9eaf0d89abb9a979d9b339db2855a6a77229e39",
+    "canonical_before_sha256": "000352a9e2a6e51c3be436edd5af61483475183f996707ad852a84e257117717",
+    "approved_candidate_sha256": "aff3153ffec2c2b4537950226edf37cb620470c4eafac81aa738746eaf43fe7c",
+    "net": "/USB_DN",
+    "removed_items": 1,
+    "added_items": 5,
+    "complete_before_and_after_geometry_exact": true
+  },
+  "scope": "Physical track/via geometry counters, independent of UUID and track direction. The five fixed data/CC nets are exact; USB_DN is unchanged or matches the complete hash-bound approved inventory. VBUS and its voltage-sense changes are listed separately.",
+  "nets": {
+    "/USB_CC1": {
+      "unchanged": true,
+      "before_items": 9,
+      "after_items": 9,
+      "removed": [],
+      "added": []
+    },
+    "/USB_CC2": {
+      "unchanged": true,
+      "before_items": 8,
+      "after_items": 8,
+      "removed": [],
+      "added": []
+    },
+    "/USB_DN": {
+      "unchanged": false,
+      "before_items": 23,
+      "after_items": 27,
+      "removed": [
+        {
+          "geometry_nm": [
+            "track",
+            86900000,
+            96950000,
+            90062500,
+            96950000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        }
+      ],
+      "added": [
+        {
+          "geometry_nm": [
+            "track",
+            86900000,
+            96950000,
+            87850000,
+            96950000,
+            2,
+            180000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            87850000,
+            96950000,
+            89200000,
+            96950000,
+            0,
+            180000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            89200000,
+            96950000,
+            89650000,
+            97400000,
+            0,
+            180000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "via",
+            87850000,
+            96950000,
+            600000,
+            300000,
+            0,
+            2
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "via",
+            89650000,
+            97400000,
+            600000,
+            300000,
+            0,
+            2
+          ],
+          "quantity": 1
+        }
+      ]
+    },
+    "/USB_DN_CPU": {
+      "unchanged": true,
+      "before_items": 8,
+      "after_items": 8,
+      "removed": [],
+      "added": []
+    },
+    "/USB_DP": {
+      "unchanged": true,
+      "before_items": 13,
+      "after_items": 13,
+      "removed": [],
+      "added": []
+    },
+    "/USB_DP_CPU": {
+      "unchanged": true,
+      "before_items": 7,
+      "after_items": 7,
+      "removed": [],
+      "added": []
+    },
+    "/USB_VBUS": {
+      "unchanged": false,
+      "before_items": 14,
+      "after_items": 14,
+      "removed": [
+        {
+          "geometry_nm": [
+            "track",
+            89476800,
+            98773200,
+            94185800,
+            98773200,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            94185800,
+            98773200,
+            97373400,
+            101960800,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            97373400,
+            101960800,
+            98626700,
+            101960800,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            98626700,
+            101960800,
+            99387500,
+            101200000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        }
+      ],
+      "added": [
+        {
+          "geometry_nm": [
+            "track",
+            89476800,
+            98773200,
+            92260500,
+            98773200,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            92260500,
+            98773200,
+            95448300,
+            101961000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            95448300,
+            101961000,
+            98626500,
+            101961000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            98626500,
+            101961000,
+            99387500,
+            101200000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        }
+      ]
+    },
+    "/USB_VBUS_SENSE": {
+      "unchanged": false,
+      "before_items": 13,
+      "after_items": 15,
+      "removed": [
+        {
+          "geometry_nm": [
+            "track",
+            92364000,
+            100062600,
+            92364000,
+            102151400,
+            0,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            92364000,
+            102151400,
+            92732400,
+            102519800,
+            0,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            92732400,
+            102519800,
+            94561100,
+            102519800,
+            0,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            94561100,
+            102519800,
+            95066300,
+            103025000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            99387500,
+            103025000,
+            101212500,
+            101200000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "via",
+            94561100,
+            102519800,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          "quantity": 1
+        }
+      ],
+      "added": [
+        {
+          "geometry_nm": [
+            "track",
+            92364000,
+            100062600,
+            92364000,
+            102151600,
+            0,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            92364000,
+            102151600,
+            92732400,
+            102520000,
+            0,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            92732400,
+            102520000,
+            94561300,
+            102520000,
+            0,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            94561300,
+            102520000,
+            95066300,
+            103025000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            99387500,
+            103024500,
+            99387500,
+            103025000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            99387500,
+            103024500,
+            101212000,
+            101200000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "track",
+            101212000,
+            101200000,
+            101212500,
+            101200000,
+            2,
+            220000
+          ],
+          "quantity": 1
+        },
+        {
+          "geometry_nm": [
+            "via",
+            94561300,
+            102520000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          "quantity": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2321 @@
+{
+  "schema": "fcplcn-passive-unification-source-audit-v1",
+  "generatedAt": "2026-11-14T14:40:33.742646+00:00",
+  "baseline": "/tmp/fcplcn-passive-baseline-20261114T141806Z",
+  "scope": "Independent source/structure/netlist/BOM audit; native ERC/DRC are separate reports.",
+  "allowedChanges": "Values and approved purchasing metadata for exactly 117 whitelisted references; unchanged electrical R/C nominal values.",
+  "boards": {
+    "Upper": {
+      "approvedReferences": [
+        "C1",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C33",
+        "C35",
+        "C38",
+        "C39",
+        "C40",
+        "C41",
+        "C42",
+        "C43",
+        "C44",
+        "C45",
+        "C46",
+        "C47",
+        "C48",
+        "C49",
+        "C5",
+        "C50",
+        "C51",
+        "C6",
+        "C8",
+        "C9",
+        "R1",
+        "R11",
+        "R12",
+        "R17",
+        "R18",
+        "R2",
+        "R21",
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "R29",
+        "R35",
+        "R36",
+        "R39",
+        "R4",
+        "R40",
+        "R46",
+        "R47",
+        "R48",
+        "R49",
+        "R5",
+        "R51",
+        "R52",
+        "R59",
+        "R6",
+        "R60",
+        "R7",
+        "R8"
+      ],
+      "structure": {
+        "kicad_sch": {
+          "protectedEqual": true,
+          "beforeSha256": "8ad811db84f5b78625a99d328cab8c8ec1e69147a040019ae1ecf64234587d04",
+          "afterSha256": "8ad811db84f5b78625a99d328cab8c8ec1e69147a040019ae1ecf64234587d04",
+          "categories": {
+            "version": {
+              "count": 1,
+              "sha256": "9a0e99e745ac620a22d802372a0bde70d7df23c697311a22a2dada38c61924af"
+            },
+            "generator": {
+              "count": 1,
+              "sha256": "0a6dc22e21f4608b4dc0b774ce493b5fe0baddb53b1989b389bff4285556b5ee"
+            },
+            "generator_version": {
+              "count": 1,
+              "sha256": "c11593788e474618e1d7516faf3db247dd46c9f1e79221f14c777e768c7be3f9"
+            },
+            "uuid": {
+              "count": 1,
+              "sha256": "4bf13f9ed7b6494608d64d7fa3ad5cc784c4892f8168c9a4a860e7a3798629c5"
+            },
+            "paper": {
+              "count": 1,
+              "sha256": "2899f4feb5987d9328ddc51cc7d0a7bb05f4e254ee8533e7e54c574b7661e665"
+            },
+            "title_block": {
+              "count": 1,
+              "sha256": "446ca0f8472eb29a7ee42deb649368def69e450c94df9acfdeef4ec6e5a47a89"
+            },
+            "lib_symbols": {
+              "count": 1,
+              "sha256": "4b88046400a368a9a6ea5df961d6d1871b13c2d6d52cd7eceb21839ef84620e5"
+            },
+            "text": {
+              "count": 34,
+              "sha256": "feb965f4558e42d0c0bc7d54982ea0eb856438a5f725a19b2fad996fe151b05f"
+            },
+            "polyline": {
+              "count": 14,
+              "sha256": "60c4f7f44f94cf3f38416834c840500186d78c3607da614cddd49c9249aed574"
+            },
+            "symbol": {
+              "count": 153,
+              "sha256": "fe83864ef97a3e971b1ddbf4dbf45fc03d48c722c948801018c4e6fd3fc7a210"
+            },
+            "wire": {
+              "count": 483,
+              "sha256": "a9c03dd4f18b6fb74b4305d40d36a7b97eb34ddae3e7c51e24c99ba47a659743"
+            },
+            "label": {
+              "count": 483,
+              "sha256": "1bafb40d5d0dd0f48ea58e2ef7d20eb1107b2b9f95d0449c2f9624460321ea95"
+            },
+            "no_connect": {
+              "count": 18,
+              "sha256": "23b263a4bb47d59654a1d6f3c60575e6644fb9819f351b95326fac46373c7d75"
+            },
+            "sheet_instances": {
+              "count": 1,
+              "sha256": "9c8241f790e327bf25f20fa3d09b2c6d680ff10fd06be3734eedd2ba3f6ab6ce"
+            }
+          },
+          "changedCategories": []
+        },
+        "kicad_pcb": {
+          "protectedEqual": true,
+          "beforeSha256": "25236fd94197d5091b531d8f8784b9720cb2f28a1a3fd9a93695d838aff356b0",
+          "afterSha256": "25236fd94197d5091b531d8f8784b9720cb2f28a1a3fd9a93695d838aff356b0",
+          "categories": {
+            "version": {
+              "count": 1,
+              "sha256": "2f54f0ca7b336e25937a8a803eba93a2e5f83bd3380bacbef23b485da0b27095"
+            },
+            "generator": {
+              "count": 1,
+              "sha256": "414493eaf55af31a8ca01ec60b97480c109540bd943d5f6b417e30175c72029d"
+            },
+            "generator_version": {
+              "count": 1,
+              "sha256": "be5ae31faf0b1cf23339e40eff3af27096782ce3ecea164ba1098b89948aaaf7"
+            },
+            "general": {
+              "count": 1,
+              "sha256": "8c3225fe9623528d39e7f7fb1892ec6b9017fa0bfb94d9e275e37837fe4f9256"
+            },
+            "paper": {
+              "count": 1,
+              "sha256": "501b69d0ebed1778e7b8eddb6c7648ee26e13455ae7db53fb4e7c7a38164057f"
+            },
+            "title_block": {
+              "count": 1,
+              "sha256": "b902503efc333a97365c0998a3555a20f5d86ad5ece013458fd4bc7eb55c4a27"
+            },
+            "layers": {
+              "count": 1,
+              "sha256": "30e9f9c354526a8b5106d65d3c02adec66202b0341f1865158bc36d03f7a737f"
+            },
+            "setup": {
+              "count": 1,
+              "sha256": "5f9b11ab1e12bfa2516f9c06db4f4b856afa8598d8ce1fcff99c09bb15baf407"
+            },
+            "footprint": {
+              "count": 148,
+              "sha256": "ba4750b3e73d6c303c30e8cb26bbd52be09f19c75e674b91a899770c5e22c8a2"
+            },
+            "gr_rect": {
+              "count": 1,
+              "sha256": "cc9a08be385d5ed83df395b31e76e43ca5c4e4ae13356a8f7aaf0cc3020c8de3"
+            },
+            "gr_text": {
+              "count": 31,
+              "sha256": "db0ef76894dcb0b90f59e82e71efebff7fe8b6babbb21c322560a51e3d6c9e81"
+            },
+            "segment": {
+              "count": 2096,
+              "sha256": "2b23ba80d412cd6fdea0006250a50ee0e578461f3e73b3dd03699cf5abbf93d3"
+            },
+            "via": {
+              "count": 361,
+              "sha256": "ab2cb61651d9b9869c865e81140726aaf930efae4c5187cd74f1c386466a143c"
+            },
+            "zone": {
+              "count": 9,
+              "sha256": "b9776735812ee610372ad17895ca803e66120e414e1043e14863cd755bcfe238"
+            },
+            "embedded_fonts": {
+              "count": 1,
+              "sha256": "b14b378739fb2ffb2c51a01b94ede2288f678ad7b0b2f0e52f40ec662eb314d5"
+            }
+          },
+          "changedCategories": []
+        }
+      },
+      "metadataChanges": {
+        "kicad_sch": [
+          "C1",
+          "C10",
+          "C11",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C16",
+          "C17",
+          "C18",
+          "C19",
+          "C20",
+          "C21",
+          "C22",
+          "C23",
+          "C24",
+          "C25",
+          "C26",
+          "C27",
+          "C28",
+          "C29",
+          "C33",
+          "C35",
+          "C38",
+          "C39",
+          "C40",
+          "C41",
+          "C42",
+          "C43",
+          "C44",
+          "C45",
+          "C46",
+          "C47",
+          "C48",
+          "C49",
+          "C5",
+          "C50",
+          "C51",
+          "C6",
+          "C8",
+          "C9",
+          "R1",
+          "R11",
+          "R12",
+          "R17",
+          "R18",
+          "R2",
+          "R21",
+          "R22",
+          "R23",
+          "R24",
+          "R25",
+          "R26",
+          "R27",
+          "R28",
+          "R29",
+          "R35",
+          "R36",
+          "R39",
+          "R4",
+          "R40",
+          "R46",
+          "R47",
+          "R48",
+          "R49",
+          "R5",
+          "R51",
+          "R52",
+          "R59",
+          "R6",
+          "R60",
+          "R7",
+          "R8"
+        ],
+        "kicad_pcb": [
+          "C1",
+          "C10",
+          "C11",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C16",
+          "C17",
+          "C18",
+          "C19",
+          "C20",
+          "C21",
+          "C22",
+          "C23",
+          "C24",
+          "C25",
+          "C26",
+          "C27",
+          "C28",
+          "C29",
+          "C33",
+          "C35",
+          "C38",
+          "C39",
+          "C40",
+          "C41",
+          "C42",
+          "C43",
+          "C44",
+          "C45",
+          "C46",
+          "C47",
+          "C48",
+          "C49",
+          "C5",
+          "C50",
+          "C51",
+          "C6",
+          "C8",
+          "C9",
+          "R1",
+          "R11",
+          "R12",
+          "R17",
+          "R18",
+          "R2",
+          "R21",
+          "R22",
+          "R23",
+          "R24",
+          "R25",
+          "R26",
+          "R27",
+          "R28",
+          "R29",
+          "R35",
+          "R36",
+          "R39",
+          "R4",
+          "R40",
+          "R46",
+          "R47",
+          "R48",
+          "R49",
+          "R5",
+          "R51",
+          "R52",
+          "R59",
+          "R6",
+          "R60",
+          "R7",
+          "R8"
+        ]
+      },
+      "netlist": {
+        "connectivityEqual": true,
+        "beforeSha256": "a27b3ae526f042068d9af6e0b2e75d58cf54e13835985e0e963b16e0c6e103c6",
+        "afterSha256": "a27b3ae526f042068d9af6e0b2e75d58cf54e13835985e0e963b16e0c6e103c6",
+        "netCount": 114,
+        "componentCount": 148
+      },
+      "purchasedCount": 148,
+      "passiveCount": 112,
+      "electricalNominalsUnchanged": true,
+      "rawValueTextChanged": [
+        "C1",
+        "C15",
+        "C17",
+        "C19",
+        "C21",
+        "C23",
+        "C25",
+        "C27",
+        "C29",
+        "C33",
+        "C49",
+        "C51",
+        "R11",
+        "R12",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "protectedComponentsUnchanged": [
+        "BT1",
+        "C3",
+        "C34",
+        "C36",
+        "C37",
+        "C4",
+        "C7",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D6",
+        "D9",
+        "FB1",
+        "J1",
+        "J2",
+        "J3",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "JP2",
+        "Q1",
+        "Q2",
+        "Q3",
+        "R10",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R19",
+        "R20",
+        "R3",
+        "R30",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R37",
+        "R38",
+        "R50",
+        "R53",
+        "R54",
+        "R55",
+        "R56",
+        "R57",
+        "R58",
+        "R61",
+        "R62",
+        "R63",
+        "R64",
+        "R65",
+        "R66",
+        "R67",
+        "R68",
+        "R69",
+        "R70",
+        "R9",
+        "SW1",
+        "SW2",
+        "U1",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U7",
+        "U8",
+        "U9"
+      ]
+    },
+    "Lower": {
+      "approvedReferences": [
+        "C10",
+        "C101",
+        "C102",
+        "C103",
+        "C104",
+        "C105",
+        "C106",
+        "C107",
+        "C108",
+        "C109",
+        "C110",
+        "C111",
+        "C112",
+        "C113",
+        "C114",
+        "C115",
+        "C116",
+        "C13",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C9",
+        "R10",
+        "R11",
+        "R121",
+        "R122",
+        "R123",
+        "R124",
+        "R125",
+        "R126",
+        "R127",
+        "R128",
+        "R129",
+        "R130",
+        "R131",
+        "R132",
+        "R133",
+        "R134",
+        "R135",
+        "R136",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "structure": {
+        "kicad_sch": {
+          "protectedEqual": true,
+          "beforeSha256": "11c7d8f3b511e9d4717c2d9bac8a4fb0f519024e0ce5b8802cb22d986fc1ce59",
+          "afterSha256": "11c7d8f3b511e9d4717c2d9bac8a4fb0f519024e0ce5b8802cb22d986fc1ce59",
+          "categories": {
+            "version": {
+              "count": 1,
+              "sha256": "9a0e99e745ac620a22d802372a0bde70d7df23c697311a22a2dada38c61924af"
+            },
+            "generator": {
+              "count": 1,
+              "sha256": "0a6dc22e21f4608b4dc0b774ce493b5fe0baddb53b1989b389bff4285556b5ee"
+            },
+            "generator_version": {
+              "count": 1,
+              "sha256": "c11593788e474618e1d7516faf3db247dd46c9f1e79221f14c777e768c7be3f9"
+            },
+            "uuid": {
+              "count": 1,
+              "sha256": "2545bdbbb175ebfe05c9291bbf71ae9b37c818c3dc02994866f09a8f30f1972c"
+            },
+            "paper": {
+              "count": 1,
+              "sha256": "bc49088c7b9b9598d5e7791afca81798f535b7727025086ae58a08d504fb8fa4"
+            },
+            "title_block": {
+              "count": 1,
+              "sha256": "2b7aa45af0de2519368b276bb7f73c2438aa76ec04c54fb05755e1e1dd0fe2c0"
+            },
+            "lib_symbols": {
+              "count": 1,
+              "sha256": "c271df52318b4bf5f9aa685ad61a7a42dc5c0616fc63d05570938dd4bf48dafd"
+            },
+            "polyline": {
+              "count": 9,
+              "sha256": "5cc0837925d80330ec5283d402893f7c07a2fee8c8b3768c7123f1d192870cce"
+            },
+            "text": {
+              "count": 38,
+              "sha256": "5395817701622d6b49746dbd4346d33e56c22b56de3bda873f0092a365c1dde3"
+            },
+            "symbol": {
+              "count": 160,
+              "sha256": "f0e65b868ac5151d5a6540da6e81200cae987fd7edf3031a3c8550b5a743b356"
+            },
+            "wire": {
+              "count": 619,
+              "sha256": "5738545aa165a4c676eb9b54f49c7bf1e532028fd62c215815a2dd2b9a62bc24"
+            },
+            "label": {
+              "count": 308,
+              "sha256": "1188f83b94a3ce1e09d3cc9c66b2a7c3c9f4bd0ce381d95250c01538cad3df47"
+            },
+            "junction": {
+              "count": 115,
+              "sha256": "e0e10082d946d770dd6feb71dd922e5c8bc0645629f48dd9c030cebcd3f40a5f"
+            },
+            "no_connect": {
+              "count": 8,
+              "sha256": "ed6babd313c3cff05775ea7583f5d39188f5c70a9cdaa2b5a77cb5df08f57532"
+            },
+            "sheet_instances": {
+              "count": 1,
+              "sha256": "9c8241f790e327bf25f20fa3d09b2c6d680ff10fd06be3734eedd2ba3f6ab6ce"
+            }
+          },
+          "changedCategories": []
+        },
+        "kicad_pcb": {
+          "protectedEqual": true,
+          "beforeSha256": "217e704e35e9003e8ce22e30d8b173b95f7d2ced87b2eb6ab9f92cbb81f07337",
+          "afterSha256": "217e704e35e9003e8ce22e30d8b173b95f7d2ced87b2eb6ab9f92cbb81f07337",
+          "categories": {
+            "version": {
+              "count": 1,
+              "sha256": "2f54f0ca7b336e25937a8a803eba93a2e5f83bd3380bacbef23b485da0b27095"
+            },
+            "generator": {
+              "count": 1,
+              "sha256": "414493eaf55af31a8ca01ec60b97480c109540bd943d5f6b417e30175c72029d"
+            },
+            "generator_version": {
+              "count": 1,
+              "sha256": "be5ae31faf0b1cf23339e40eff3af27096782ce3ecea164ba1098b89948aaaf7"
+            },
+            "general": {
+              "count": 1,
+              "sha256": "8c3225fe9623528d39e7f7fb1892ec6b9017fa0bfb94d9e275e37837fe4f9256"
+            },
+            "paper": {
+              "count": 1,
+              "sha256": "501b69d0ebed1778e7b8eddb6c7648ee26e13455ae7db53fb4e7c7a38164057f"
+            },
+            "title_block": {
+              "count": 1,
+              "sha256": "af14ce5706b54a80be0e91abc616bc5fc3bd7d89c6e6e54790ffe83b58408dfd"
+            },
+            "layers": {
+              "count": 1,
+              "sha256": "eedf65a266817b3ef05e65bdeff52f9805406d47a21f227274240455331d5df0"
+            },
+            "setup": {
+              "count": 1,
+              "sha256": "a73062a7986889c392cd32118d0615733c2297e18a0d66a9e62f6a5c8863c5d6"
+            },
+            "footprint": {
+              "count": 157,
+              "sha256": "ca9fffde9e7cab8aefe2b1e7ab5687021781e0d1723a5cbc2d9be2e894fd9b13"
+            },
+            "gr_line": {
+              "count": 6,
+              "sha256": "02c2dc8dde689e389b6273337ab27609de37e2bcfb33a4596666dcd0a2a235d8"
+            },
+            "gr_rect": {
+              "count": 1,
+              "sha256": "25c3c6a2ccdda3b1ca08f7f633843aafceceb6c65d3d0e4bf2b800b1d90ddf51"
+            },
+            "gr_text": {
+              "count": 156,
+              "sha256": "5a349005c6854812ce43bc5c69f2764879a2d0556ad6c88f50f358507d21d7b8"
+            },
+            "segment": {
+              "count": 1447,
+              "sha256": "e0557449f34df7a03fbe380493ce76b79b84ec81103b96ffc7d3e13cae01160a"
+            },
+            "via": {
+              "count": 110,
+              "sha256": "8253747134a617da58643d67b4b250dfbcdc86bf1be4f4c62e6a86dc1b388920"
+            },
+            "zone": {
+              "count": 2,
+              "sha256": "80caa374c85949f7788b6bb4c3cdb81041e9ed4663656969cfcfcede8333890f"
+            },
+            "group": {
+              "count": 1,
+              "sha256": "ded0f2633f427fc6e8d5a6da68149d8848139551e3abde0007631260ee2a5439"
+            },
+            "embedded_fonts": {
+              "count": 1,
+              "sha256": "b14b378739fb2ffb2c51a01b94ede2288f678ad7b0b2f0e52f40ec662eb314d5"
+            }
+          },
+          "changedCategories": []
+        }
+      },
+      "metadataChanges": {
+        "kicad_sch": [
+          "C10",
+          "C101",
+          "C102",
+          "C103",
+          "C104",
+          "C105",
+          "C106",
+          "C107",
+          "C108",
+          "C109",
+          "C110",
+          "C111",
+          "C112",
+          "C113",
+          "C114",
+          "C115",
+          "C116",
+          "C13",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C9",
+          "R10",
+          "R11",
+          "R121",
+          "R122",
+          "R123",
+          "R124",
+          "R125",
+          "R126",
+          "R127",
+          "R128",
+          "R129",
+          "R130",
+          "R131",
+          "R132",
+          "R133",
+          "R134",
+          "R135",
+          "R136",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "kicad_pcb": [
+          "C10",
+          "C101",
+          "C102",
+          "C103",
+          "C104",
+          "C105",
+          "C106",
+          "C107",
+          "C108",
+          "C109",
+          "C110",
+          "C111",
+          "C112",
+          "C113",
+          "C114",
+          "C115",
+          "C116",
+          "C13",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C9",
+          "R10",
+          "R11",
+          "R121",
+          "R122",
+          "R123",
+          "R124",
+          "R125",
+          "R126",
+          "R127",
+          "R128",
+          "R129",
+          "R130",
+          "R131",
+          "R132",
+          "R133",
+          "R134",
+          "R135",
+          "R136",
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      "netlist": {
+        "connectivityEqual": true,
+        "beforeSha256": "0535b642f5f6cc4656ac464af6d9aa111fddd8aabbe7f2c05f5f1605e53ba650",
+        "afterSha256": "0535b642f5f6cc4656ac464af6d9aa111fddd8aabbe7f2c05f5f1605e53ba650",
+        "netCount": 133,
+        "componentCount": 157
+      },
+      "purchasedCount": 154,
+      "passiveCount": 69,
+      "electricalNominalsUnchanged": true,
+      "rawValueTextChanged": [
+        "C13",
+        "C2",
+        "C3",
+        "R10",
+        "R11"
+      ],
+      "protectedComponentsUnchanged": [
+        "C1",
+        "C11",
+        "C12",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D101",
+        "D102",
+        "D103",
+        "D104",
+        "D105",
+        "D106",
+        "D107",
+        "D108",
+        "D109",
+        "D110",
+        "D111",
+        "D112",
+        "D113",
+        "D114",
+        "D115",
+        "D116",
+        "D121",
+        "D122",
+        "D123",
+        "D124",
+        "D125",
+        "D126",
+        "D127",
+        "D128",
+        "D129",
+        "D130",
+        "D131",
+        "D132",
+        "D133",
+        "D134",
+        "D135",
+        "D136",
+        "D2",
+        "D3",
+        "F1",
+        "J1",
+        "J10",
+        "J11",
+        "J12",
+        "J13",
+        "J14",
+        "J15",
+        "J16",
+        "J17",
+        "J2",
+        "J21",
+        "J25",
+        "J29",
+        "J3",
+        "J33",
+        "J4",
+        "J43",
+        "J44",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9",
+        "K1",
+        "K10",
+        "K11",
+        "K12",
+        "K13",
+        "K14",
+        "K15",
+        "K16",
+        "K2",
+        "K3",
+        "K4",
+        "K5",
+        "K6",
+        "K7",
+        "K8",
+        "K9",
+        "R101",
+        "R102",
+        "R103",
+        "R104",
+        "R105",
+        "R106",
+        "R107",
+        "R108",
+        "R109",
+        "R110",
+        "R111",
+        "R112",
+        "R113",
+        "R114",
+        "R115",
+        "R116",
+        "R12",
+        "RN1",
+        "RN2",
+        "U2",
+        "U21",
+        "U22",
+        "U23",
+        "U24",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "U8"
+      ]
+    }
+  },
+  "files": {
+    "before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "d10c754428b478b8b7dc91f67be994803eff7a6b87875e034810671939a2193a",
+    "after/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "e7689580f16a62b2ab0bf3cd38b011ad11671141465f1249f7c1a02ce06f28a0",
+    "before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+    "after/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "1cf36ff0412b3bf563635dbfe7ad512737435fae7364c25e5fbb8a01cd1aa52f",
+    "before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "5c7a4f46a6312a2da50d5bf206508f7c7f289ea148d0d84917b215278b6b2d6f",
+    "after/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "d954ee91d26d57f32aa309219cd97ce43805c721949f5661c44db8da71bb2b7d",
+    "before/FCPLCN-CPU-08-1v0/BOM.csv": "e313de858100d27cbd814c764c579ce47a58f6d26fa05b2e21e40d5ebbc8a04f",
+    "after/FCPLCN-CPU-08-1v0/BOM.csv": "9087631b5c53d4747109fcb44fbf6a751056f65d03762ed0befa51a91f0a0373",
+    "before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "b5635554fc8ff19e1013d3eb3e013aaffb88c1816694acc6b47046ad1abafb71",
+    "after/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "7f9ed5eb6784af66e2d9bebc5b6f864f97224225f0b4e1abd56d2be0152cfa78",
+    "before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+    "after/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "1bfe5b167c3534736eed53252d5c476a67aa97faa132bbab1f496cc39e18e59e",
+    "before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "26a31bc54de222e2743e2efde3698994ae6347a023c4287460fb0232eed58811",
+    "after/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "9244da4c43eb984d4276006d46e3cd42fbd52d6b8349609fdf6b5b69d64f872b",
+    "before/FCPLCN-RLY-1616-1v0/BOM.csv": "374942033f464c35c3be0ee98f27a9e19ecf163f0af88a35e1abcbf936721a0c",
+    "after/FCPLCN-RLY-1616-1v0/BOM.csv": "36f600a334237c18f38e2d8cb1c5b4d10fea74b9dac4f783ac7dbf7eb323576b",
+    "after/BOM-combined.csv": "a21eecd8c03f9cdafd18cafe8c13aff1eda4311ad33071e90920ab866312543c",
+    "after/tools/passive_specifications.py": "eb004430d0b5ebd0dee59e1fa86126be48cbd407fcd4245c670265045cbbee7e"
+  },
+  "issues": [],
+  "summary": {
+    "status": "PASS",
+    "purchasedParts": 302,
+    "passiveParts": 181,
+    "approvedChangedReferences": 117,
+    "beforePassiveSpecGroups": 43,
+    "afterPassiveSpecGroups": 25,
+    "groupReduction": 18,
+    "electricalNominalsUnchanged": true,
+    "tdk10uF35V": {
+      "mpn": "C3216X7R1V106K160AC",
+      "count": 10,
+      "references": [
+        "Lower:C2",
+        "Lower:C3",
+        "Upper:C1",
+        "Upper:C11",
+        "Upper:C12",
+        "Upper:C13",
+        "Upper:C38",
+        "Upper:C41",
+        "Upper:C5",
+        "Upper:C8"
+      ]
+    },
+    "nativeERCAndDRC": "Not rerun by this audit; reviewed separately by root."
+  },
+  "groups": [
+    {
+      "value": "1nF C0G",
+      "package": "0805",
+      "quantity": 11,
+      "bomGroup": "C-0805-1nF-50V-C0G-5pct",
+      "mpn": ""
+    },
+    {
+      "value": "1uF",
+      "package": "Capacitor_SMD:C_0805_2012Metric",
+      "quantity": 1,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "10nF",
+      "package": "0805",
+      "quantity": 5,
+      "bomGroup": "C-0805-10nF-50V-X7R-10pct",
+      "mpn": ""
+    },
+    {
+      "value": "10u / 16V X7R",
+      "package": "RelayBoard:C_0805_2012Metric",
+      "quantity": 2,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "10uF",
+      "package": "1206",
+      "quantity": 10,
+      "bomGroup": "C-1206-10uF-35V-X7R-10pct-TDK",
+      "mpn": "C3216X7R1V106K160AC"
+    },
+    {
+      "value": "22uF 35V X5R",
+      "package": "Capacitor_SMD:C_1206_3216Metric",
+      "quantity": 4,
+      "bomGroup": "",
+      "mpn": "C3216X5R1V226M160AC"
+    },
+    {
+      "value": "100nF",
+      "package": "0805",
+      "quantity": 38,
+      "bomGroup": "C-0805-100nF-50V-X7R-10pct",
+      "mpn": ""
+    },
+    {
+      "value": "100nF",
+      "package": "Capacitor_SMD:C_1206_3216Metric",
+      "quantity": 1,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "100u / 35V",
+      "package": "RelayBoard:CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max",
+      "quantity": 3,
+      "bomGroup": "",
+      "mpn": "350ARHA101M06X8P00"
+    },
+    {
+      "value": "220u / 35V",
+      "package": "RelayBoard:CP_Radial_D8.0mm_P3.50mm",
+      "quantity": 1,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "1.8k",
+      "package": "RelayBoard:R_0805_Wetting",
+      "quantity": 16,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "1R / 2W pulse",
+      "package": "RelayBoard:R_2512_6332Metric",
+      "quantity": 1,
+      "bomGroup": "",
+      "mpn": "CRM2512-FX-1R00ELF"
+    },
+    {
+      "value": "1k",
+      "package": "Resistor_SMD:R_0805_2012Metric",
+      "quantity": 1,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "4.3k",
+      "package": "Resistor_SMD:R_0805_2012Metric",
+      "quantity": 10,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "4.7k",
+      "package": "0805",
+      "quantity": 15,
+      "bomGroup": "R-0805-4.7k-1pct-125mW",
+      "mpn": ""
+    },
+    {
+      "value": "5.1k",
+      "package": "Resistor_SMD:R_0805_2012Metric",
+      "quantity": 2,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "8 × 10k",
+      "package": "RelayBoard:R_Array_SIP9",
+      "quantity": 2,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "10k",
+      "package": "0805",
+      "quantity": 21,
+      "bomGroup": "R-0805-10k-1pct-125mW",
+      "mpn": ""
+    },
+    {
+      "value": "22R",
+      "package": "0805",
+      "quantity": 9,
+      "bomGroup": "R-0805-22R-1pct-125mW",
+      "mpn": ""
+    },
+    {
+      "value": "47k",
+      "package": "Resistor_SMD:R_0805_2012Metric",
+      "quantity": 4,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "68k",
+      "package": "Resistor_SMD:R_0805_2012Metric",
+      "quantity": 1,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "100R",
+      "package": "Resistor_SMD:R_0805_2012Metric",
+      "quantity": 10,
+      "bomGroup": "",
+      "mpn": "CRCW0805100RFKTAHP"
+    },
+    {
+      "value": "100k",
+      "package": "Resistor_SMD:R_0805_2012Metric",
+      "quantity": 4,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "120R 0.25W",
+      "package": "Resistor_SMD:R_1206_3216Metric",
+      "quantity": 1,
+      "bomGroup": "",
+      "mpn": ""
+    },
+    {
+      "value": "470R",
+      "package": "0805",
+      "quantity": 8,
+      "bomGroup": "R-0805-470R-1pct-125mW",
+      "mpn": ""
+    }
+  ],
+  "explicitRatingChecks": {
+    "count": 78,
+    "allNotWeakened": true,
+    "checks": [
+      {
+        "board": "Upper",
+        "reference": "C1",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C3",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C3",
+        "kind": "tolerance",
+        "before": 20.0,
+        "after": 20.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C4",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C4",
+        "kind": "tolerance",
+        "before": 20.0,
+        "after": 20.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C33",
+        "kind": "voltage",
+        "before": 50.0,
+        "after": 50.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C36",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C36",
+        "kind": "tolerance",
+        "before": 20.0,
+        "after": 20.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C37",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C37",
+        "kind": "tolerance",
+        "before": 20.0,
+        "after": 20.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "C38",
+        "kind": "tolerance",
+        "before": 10.0,
+        "after": 10.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R15",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R16",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R17",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R18",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R19",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R20",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R21",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R22",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R33",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R34",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R35",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R36",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R37",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R38",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R39",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R40",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R46",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R47",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R48",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R49",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R50",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R51",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R52",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R53",
+        "kind": "power",
+        "before": 0.25,
+        "after": 0.25,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R53",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R54",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R55",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R56",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R57",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R58",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R59",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R60",
+        "kind": "tolerance",
+        "before": 5.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R61",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R61",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R62",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R62",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R63",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R63",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R64",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R64",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R65",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R65",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R66",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R66",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R67",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R67",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R68",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R68",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R69",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R69",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R70",
+        "kind": "power",
+        "before": 0.5,
+        "after": 0.5,
+        "notWeakened": true
+      },
+      {
+        "board": "Upper",
+        "reference": "R70",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C1",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C1",
+        "kind": "tolerance",
+        "before": 20.0,
+        "after": 20.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C2",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C3",
+        "kind": "voltage",
+        "before": 16.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C6",
+        "kind": "voltage",
+        "before": 16.0,
+        "after": 16.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C7",
+        "kind": "voltage",
+        "before": 16.0,
+        "after": 16.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C8",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C11",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C11",
+        "kind": "tolerance",
+        "before": 20.0,
+        "after": 20.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C12",
+        "kind": "voltage",
+        "before": 35.0,
+        "after": 35.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C12",
+        "kind": "tolerance",
+        "before": 20.0,
+        "after": 20.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C13",
+        "kind": "voltage",
+        "before": 50.0,
+        "after": 50.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "C13",
+        "kind": "tolerance",
+        "before": 10.0,
+        "after": 10.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "R12",
+        "kind": "power",
+        "before": 2.0,
+        "after": 2.0,
+        "notWeakened": true
+      },
+      {
+        "board": "Lower",
+        "reference": "R12",
+        "kind": "tolerance",
+        "before": 1.0,
+        "after": 1.0,
+        "notWeakened": true
+      }
+    ],
+    "c38ApprovedPartChange": {
+      "beforeMPN": "C3216X7R1E106K160AB",
+      "afterMPN": "C3216X7R1V106K160AC",
+      "afterVoltage": "35 V",
+      "capacitance": "10uF",
+      "tolerance": "10%",
+      "dielectric": "X7R"
+    }
+  },
+  "protectedLibraryProjectModelFiles": [
+    {
+      "path": "FCPLCN-CPU-08-1v0/fp-lib-table",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.kicad_sym",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/sym-lib-table",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_GCT_USB4120_Vertical.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/BatteryHolder_QJ_CR1220-2_C70381.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/SW_SPST_TS-1088-xR020.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/C3_Carrier_2x8.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-8P.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_GCT_USB4085_Overhang.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/W5500_Lite_2x6.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-1.0_SIP3_P2.54mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-0.5_SIP3_P2.54mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/ADM2687E_SOIC_IC_16_7.5x12.75mm_P1.27mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/ESP32-S3-WROOM-1U_PTH030.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/SOIC8_SRDA_USB_Clearance.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-3P.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/TMR1_SIP6.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/C0805_C50_Clearance.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/StackHeader_2x03_P2.54mm_Bottom.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-10P.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-4P.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/fp-lib-table",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.kicad_sym",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/sym-lib-table",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOIC-28W_7.5x17.9mm_P1.27mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_0805_2012Metric.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-2P.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_1206_3216Metric.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/RECOM_R-78E_PSE.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/StackSocket_2x03_P2.54mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMC.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-8P.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOP-18_7.495x11.515mm_P1.27mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOT-223-3_TabPin2.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/W5500_Lite_2x6.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_2012Metric.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SOD-123.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_1206_3216Metric.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMB.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LOLIN_S2_mini_V1.0.0.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_Radial_D8.0mm_P3.50mm.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_Wetting.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Nexperia_CFP3_SOD-123W.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/ESP32-C3_Super_Mini.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LTV-847S.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Relay_SPST_Hongfa_HF49FD-1H11.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_2512_6332Metric.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_Array_SIP9.kicad_mod",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/D_SMA.step",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/KF128-3P.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/KF128-4P.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/ESP32-S3-WROOM-1U.step",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/KF128-8P.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/SW_SPST_TS-1088-xR020.step",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/ADM2687E_RI-16-2.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/BatteryHolder_QJ_CR1220-2_C70381.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/StackHeader_2x03_P2.54mm_Bottom.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-1.0.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/SOIC-8_3.9x4.9mm_P1.27mm.step",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/KF128-10P.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/W5500_Lite_2x6-assembly.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_GCT_USB4120_Vertical.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/LTV847S.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/KF128-2P.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/APAQ_350ARHA101M06X8P00_H9max.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/ESP32-C3_Super_Mini-assembly.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/KF128-8P.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/C1-D8H12.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/HF49FD-1H11.step",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/W5500_Lite_2x6-assembly.wrl",
+      "byteIdentical": true
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl",
+      "byteIdentical": true
+    }
+  ],
+  "source_sha256": {
+    "Stack-3D-low-side.png": "f771b45fe84610d5984203d6f62c7070e663777339e3910fd2a881bafa682eb3",
+    "ASSEMBLY.md": "f5ea6ca0145a18b99751e5f2edc1c2664ab3ff6cc52a396a5f722d69cfb63470",
+    "Stack-3D-top.png": "e13848a03676a29d15a2f6c643e580567990644b6043aba3dd9dea3874cd94c2",
+    "Stack-3D-preview.png": "2b0e2c4afa273c7491502f702f415ef0c3e6b95eeefad9c7255d871b624adc8f",
+    "Base-3D-top.png": "17ddc4d1c4b78c2e78674ced7e1ac4a050a01af56485a32fb34cfb3ecedd4a3d",
+    "FCPLCN-CPU-08-1v0-3D-bottom-preview.png": "61b3c90e2c2d9a64bb8c6df0e533407591cc9dec31fffc3d01a9dd02e2b21128",
+    "Base-3D-preview.png": "32db76f72ea71d340599f48e389cdc349bb6c966c98f58e98958d03b09079a81",
+    "Stack-alignment-top.svg": "d7e381487df86ee506ffdecc92165b8a5ac78ca52602591cd080b08ea1bf7509",
+    "RS485-WORK-STATUS.md": "251865c1d3bdcfe9415975db5c34e85003e997d804360bd78e48b2f67945d09d",
+    "FCPLCN-RLY-1616-1v0-3D-bottom.png": "41c56e06c8d8207d6ee514d8c0015ab97d0376aa3c3eae3df62db73fde31c864",
+    "BOM-combined.csv": "a21eecd8c03f9cdafd18cafe8c13aff1eda4311ad33071e90920ab866312543c",
+    "FCPLCN-CPU-08-1v0-3D-bottom.png": "4e599cdeac88ef09f37cd235082e5a44780139e370dc639cff5bb792aacdaf0a",
+    "EMI-power-review.md": "d20bcfcd6bd1343899d39a1acab074bf2cf6c347eaa3a5ff8aab8d78e6ade1da",
+    "Stack-alignment-top.png": "e13848a03676a29d15a2f6c643e580567990644b6043aba3dd9dea3874cd94c2",
+    "FCPLCN-RLY-1616-1v0-3D-bottom-preview.png": "398d97be08826a4184ab9554bf28c87c11adf2c9b8fa17ff838c52bcc314dc6e",
+    "tools/electrical_audit.py": "106595ea100f892bf489d6ec8282161ae65c9ec4a8177276e66324c3a17edfe6",
+    "tools/audit_rs485_rules.py": "6f16b5581b0292494eee67591b097b61cd92d6cbd34a7e57c8573e0b35a45c17",
+    "tools/build_cr1220_holder.py": "095bd3d066f26a972a558184caa517bc885cbcf7a57b191528c238c0cc87f4df",
+    "tools/audit_data8_revision.py": "7a4576a9b9a536f8ac11dd3a431983a7940e7511f5368dc1de8ffe6b81fca8af",
+    "tools/check_board.py": "4f6aad8785d2dbe6ec9ff211459c92606c9e3ec4a83191d98eedae34cc596e12",
+    "tools/audit_rs485_revision.py": "fb60852b92fc375f5d6a9d0138926670bb577491f32072d2a1f53e28227f4b9a",
+    "tools/export_combined_bom.py": "fde4d47935b907bef891498140ab54ee9c96d4e9de78b70e04ae7430c8378e4f",
+    "tools/build_r78k_assets.py": "176711aa3d1f21bd1059442b62e91467c40155249f9738c4ae3185e3603f72b9",
+    "tools/bom_common.py": "84c91b6f92fbcde337a6a8fbd1f9bb6b5666fb44227014d0fa96ca9e2e5793e4",
+    "tools/collect_srda_final_evidence.py": "efabc4f18797e237c187157b637e32558b9a8687999b773258326548003748d7",
+    "tools/build_rs485_assets.py": "fd33d5d9b12b137038c5f53396122672c0ed634f55ec12530e1e356a084c967f",
+    "tools/audit_data8_srda_revision.py": "edba7316bd22dffb700e087374e42599affd1d59e657c080b55969290a777620",
+    "tools/build_low_profile_cap.py": "38c706ad0c5a0b45e1e72ce529bbc7f9698291051e40e1174cce4cab9f33bf32",
+    "tools/README.md": "68e1c7f12a3bddc18feca9b73ae1fbde88ce6f28dd76de14c3ccc44e7c1861df",
+    "tools/build_hbxintao.py": "cf8277eb515a1412e3d3222e605a5aed16d6617d278f0ac7cc4b3d3ce9bf7c07",
+    "tools/render_stack.py": "4018bb12f4ee74fb79c5e0c0a1e79d67368e926026554a4ab4a4c3e0c0681158",
+    "tools/build_upper_schema.py": "a3cd26031caf3d5b0ea01841c07ec48ddc058aab8b89afead8396a3a3af9264e",
+    "tools/check_r78_clearance.py": "2e2183a6f6668e6951785a9b6f10745251b555c3363f5d5f7b1052afb347c8ff",
+    "tools/apply_passive_specifications.py": "96db351f0bb5fe49f9922ff2f8df5193a3e7a2121703b166a3011e8d845e9674",
+    "tools/srda_contract.py": "e151408cdf15e580b8c45158b82a618fad558223b56785cd9f688cd88c22aa31",
+    "tools/export_bom.py": "a89cd20d8f1a63179e6ae19bbac324e89531c999e089b53dbfbe55a54a53b8e7",
+    "tools/audit_srda_budget.py": "d474f164244d3d6f967b64da5803cd867d99907bdd178ec8bd7e457d1ec8dc58",
+    "tools/check_pcb_strip_clearance.py": "53b04856e9e1a2ecfb1942e14849c8e9d184bfc01616cac7f53aa41e003c4096",
+    "tools/audit_usb_copper.py": "4e2546e699790c6473224af8ce4df43c0ca1599b90afb1fe0a26965eeaead9be",
+    "tools/render_all_views.py": "4137b0acc94650775581bb8649d5044da55de988e7f6fa8c8fd5a67cae6d1e38",
+    "tools/render_usb_dip_closeup.py": "4e9a7bb884b9ca62db93b9b6c082313cb64e2abe5e9d62cfea4d11db897feb27",
+    "tools/passive_specifications.py": "eb004430d0b5ebd0dee59e1fa86126be48cbd407fcd4245c670265045cbbee7e",
+    "tools/check_rs485_clearance.py": "06d7a7f23bc99a2f0d2bdfecbcbad05a9adcb4a5878cbb8042a70adf6d27f059",
+    "tools/audit_power_emi_revision.py": "adccc649f5e0b6d5b270f1dd45d703d78697b9226788e1bdf84fe59282521a9d",
+    "tools/schematic.py": "3bbc55f71d4ab964f80f8afa5ad1cfd4c8ba8e35e3c12b58ec24eea0922b2039",
+    "tools/build_ssw_socket.py": "b44bfa14242361ff6588b1035dc1fc7c111148b9eb78b86dc682935578aa2741",
+    "FCPLCn-3D-views/Stack-top.png": "e13848a03676a29d15a2f6c643e580567990644b6043aba3dd9dea3874cd94c2",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-angled-bottom.png": "398d97be08826a4184ab9554bf28c87c11adf2c9b8fa17ff838c52bcc314dc6e",
+    "FCPLCn-3D-views/Stack-front.png": "f771b45fe84610d5984203d6f62c7070e663777339e3910fd2a881bafa682eb3",
+    "FCPLCn-3D-views/Stack-right.png": "5268cf9955923ba5f15b3e381b33e774aca9d99da4a43a2b822cacba2761ba54",
+    "FCPLCn-3D-views/Stack-back.png": "24719470021da158b2754b9106f4e6934f253bb06cfbf62e9cfbb4781b67cbfe",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-angled-back.png": "022b3baab8be20a99704b6ead5209c7ea178b93f76d6443a36842bdc29aebb21",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-front.png": "5ae435f602dbd2a45b5c70070d6dcca6a8d21cbd1b762c8f44cca031e60807d0",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-right.png": "3555c57cc661732f2187848565df5d3de9a8c270bc4e27b932b2340da5a5ef46",
+    "FCPLCn-3D-views/Stack-angled-back.png": "9ea4e7cd35a50a9082cbc52c351b911d3c0028b527ac893e87bfe944d2534558",
+    "FCPLCn-3D-views/Stack-left.png": "78f733fed2c71715eb8f218e21893c103fb309b1f0c7286420acb59ee7158080",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-bottom.png": "4e599cdeac88ef09f37cd235082e5a44780139e370dc639cff5bb792aacdaf0a",
+    "FCPLCn-3D-views/Stack-angled-bottom.png": "816cd6fc32c79b252b47edd6f9de41fa9b89b707f4b5ceeed4fce6db2286eb2b",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-angled-bottom.png": "61b3c90e2c2d9a64bb8c6df0e533407591cc9dec31fffc3d01a9dd02e2b21128",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-right.png": "4af3e73187b4221b16d9140d619139fee7f6741b5377229ac611a2471c5eff59",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-front.png": "7518ad5f220839f519fa27491d1d2e45ef188d945507bc3fcbf9cdbdc9108e1c",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-top.png": "17ddc4d1c4b78c2e78674ced7e1ac4a050a01af56485a32fb34cfb3ecedd4a3d",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-angled-back.png": "4f2cf5c3a292986d096840dea44c31c956a8c8391259477bd8bfa0e503efd1da",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-left.png": "9806b1a3f430e88b41dc0d468f5dcd17f3cc21b708f24f8d388fc9bbf3abbb2e",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-back.png": "203afc94e769781144fce3fd5ce53c30be82c83ebf1c9fa34a69e767f6f5b790",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-bottom.png": "41c56e06c8d8207d6ee514d8c0015ab97d0376aa3c3eae3df62db73fde31c864",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-angled-front.png": "470667bec94697ed093d07e90311668dd50089eb2a60dde1b206771567cd26a3",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-left.png": "f208418402761690043f06ecd47218d25920e262dc722d05498b2684f94304d8",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-angled-front.png": "32db76f72ea71d340599f48e389cdc349bb6c966c98f58e98958d03b09079a81",
+    "FCPLCn-3D-views/Stack-angled-front.png": "2b0e2c4afa273c7491502f702f415ef0c3e6b95eeefad9c7255d871b624adc8f",
+    "FCPLCn-3D-views/FCPLCN-CPU-08-1v0-top.png": "84b15444377c3b67dab8fab6572773b3492463509c68cbd0a29a50da9e6c8100",
+    "FCPLCn-3D-views/FCPLCN-RLY-1616-1v0-back.png": "f8184e245eba8b577d2fbd9fd203640253afe25a8f56187ee21b7cf6bdc37bac",
+    "FCPLCn-3D-views/Stack-bottom.png": "cafaea6e1b2da1789ae6b9219e24891eb053292bca4f17c41c4987c32812e2c9",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "e7689580f16a62b2ab0bf3cd38b011ad11671141465f1249f7c1a02ce06f28a0",
+    "FCPLCN-CPU-08-1v0/BOM.csv": "9087631b5c53d4747109fcb44fbf6a751056f65d03762ed0befa51a91f0a0373",
+    "FCPLCN-CPU-08-1v0/fp-lib-table": "02ff5395a7f27ac712d45bb665cf3bc52799448b8713ca9780bfd62a09245064",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0-schematic.png": "b3ebc26a5d382dbadb3450671c80d984d38bd8c189718c725287f5d1ba362c01",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "d954ee91d26d57f32aa309219cd97ce43805c721949f5661c44db8da71bb2b7d",
+    "FCPLCN-CPU-08-1v0/RelayStack.kicad_sym": "ca732094180d96a6621dc5009b029df238fe61fa87c3b446f4943385b097cb1d",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "1cf36ff0412b3bf563635dbfe7ad512737435fae7364c25e5fbb8a01cd1aa52f",
+    "FCPLCN-CPU-08-1v0/sym-lib-table": "c861dd52ecd5efba05043798e5d0c8b96edb09a240a21ab63916ddc4bed35c60",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_GCT_USB4120_Vertical.kicad_mod": "3dae00168af245a359dde600484ed6f45510de7592679a6da9887f51976f8d7c",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/BatteryHolder_QJ_CR1220-2_C70381.kicad_mod": "c44a9d411ef89406e35bc49646692bc20a395bf008487fd6febec9f9c71631e6",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/SW_SPST_TS-1088-xR020.kicad_mod": "86e6da30eba8a50145a47512986a66f0e29b0d10165afa215bfd6ff27bdf45df",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/C3_Carrier_2x8.kicad_mod": "e35af89fa594fb43bd49fb6be5edc0a857af22bd38e1a1fc52673370474ee2df",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-8P.kicad_mod": "2ca56a7c7142276bece34aaf9f76696e900c4cec774749c4dfb2df1cb6a42156",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_GCT_USB4085_Overhang.kicad_mod": "a28e95f7d37f40c5ace10224cd36102dffcb1c2f9d1dec9896f81a7d4b2c5d69",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/W5500_Lite_2x6.kicad_mod": "bac748ff4d05cb4e55b91b55a5e196f9f92c99539aaa65a239063b6212932af9",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-1.0_SIP3_P2.54mm.kicad_mod": "ba1df257f23ad41bec8efec61072b6f83cdc08b7d04f60babde989bf7fedb0f5",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-0.5_SIP3_P2.54mm.kicad_mod": "ce2ae5174b49a01dd0cb3a7678443c7e300ab8befca9313bc33d9520a8eb17d2",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/ADM2687E_SOIC_IC_16_7.5x12.75mm_P1.27mm.kicad_mod": "af6955d9ea14b4e36e477478399f95bdbe5deb2fd8293fadee71e4dfbb4fa4f1",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.kicad_mod": "df251be00a9f091f21e17725163be92816914e8a82147f3c48eb4edb3a3cb7f9",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/ESP32-S3-WROOM-1U_PTH030.kicad_mod": "215f8f26c03bfc250312babeadfec3a6a7269b89370d69f89f739a416835a5b3",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/SOIC8_SRDA_USB_Clearance.kicad_mod": "f7fd9fed81dd1b307e0140e2d99f496928b86a60f07d84ea82157453d232270e",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-3P.kicad_mod": "eb491f1cb5c14b0ed6ee9224ad5843e04e087fd4c27d877b942a8308f08f018f",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/TMR1_SIP6.kicad_mod": "501d447c9cff6237c990d36eec021f79a44dfdb7db52d83a0b57403b402da916",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/C0805_C50_Clearance.kicad_mod": "4f5231acfc50b47517f2f6b90f537a8d1668595b778e6c68368a0f3f6ce56d87",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/StackHeader_2x03_P2.54mm_Bottom.kicad_mod": "25d6b45724f403a335ea642ca8457c6103145c3d3ead4c0714a6766b187646ea",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-10P.kicad_mod": "032e4036190bdfabbcd5baeec9169ba374dec0b79657556d093d67aeb683d9ed",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-4P.kicad_mod": "2603ec81936270341d88956f778015b36deb8827c004043e3e1af4a068e31727",
+    "FCPLCN-CPU-08-1v0/schematic-svg/FCPLCN-CPU-08-1v0.svg": "3683d9d50eac3c80195f9f5d78547c3c820446391e3a7ae6fd73eebdce0e6336",
+    "FCPLCN-CPU-08-1v0/datasheets/HBXINTAO16PIN-seller-drawing.png": "41dcb8826df6c7af809489a4d1471e8449fd9ec3786a9313cf7190aada3d83c0",
+    "FCPLCN-CPU-08-1v0/datasheets/QJ-CR1220-2-C70381-drawing.png": "6bd496867343d74c245c2793687d9706e6671354bdcb88cb45f0cd159995f433",
+    "History/FCPLCN-CPU-08-1v0-USB-DIP-3D-bottom.png": "a3670aa44721a74f45b7ac297bf0bbcda683874543bb43b2e9eb4933611a66b1",
+    "History/FCPLCN-CPU-08-1v0-power-3D-closeup.png": "f0f2ab481eca8ffe9215fa602e201d9e353de5e20db5c4798c5787872011c7de",
+    "History/Stack-6DATA-draft-top.png": "b57126c0755d4c3d59ec7ebb6dea3d18bcac4b0ffa2048c51384f32354e85378",
+    "History/Stack-6DATA-draft-angle.png": "dd232d2a32586c69fde428844c281576e6d5eff144bec176635d0795b5b2cfcf",
+    "History/FCPLCN-CPU-08-1v0-USB-DIP-3D-top.png": "4d10ca0eb6cbb32043ad9aca294a02b5d5a3332cf9c890223a22d62c242bebd8",
+    "Previews/native-all-views/Stack-top.png": "e13848a03676a29d15a2f6c643e580567990644b6043aba3dd9dea3874cd94c2",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-angled-bottom.png": "398d97be08826a4184ab9554bf28c87c11adf2c9b8fa17ff838c52bcc314dc6e",
+    "Previews/native-all-views/Stack-front.png": "f771b45fe84610d5984203d6f62c7070e663777339e3910fd2a881bafa682eb3",
+    "Previews/native-all-views/Stack-right.png": "5268cf9955923ba5f15b3e381b33e774aca9d99da4a43a2b822cacba2761ba54",
+    "Previews/native-all-views/Stack-back.png": "24719470021da158b2754b9106f4e6934f253bb06cfbf62e9cfbb4781b67cbfe",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-angled-back.png": "022b3baab8be20a99704b6ead5209c7ea178b93f76d6443a36842bdc29aebb21",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-front.png": "5ae435f602dbd2a45b5c70070d6dcca6a8d21cbd1b762c8f44cca031e60807d0",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-right.png": "3555c57cc661732f2187848565df5d3de9a8c270bc4e27b932b2340da5a5ef46",
+    "Previews/native-all-views/Stack-angled-back.png": "9ea4e7cd35a50a9082cbc52c351b911d3c0028b527ac893e87bfe944d2534558",
+    "Previews/native-all-views/Stack-left.png": "78f733fed2c71715eb8f218e21893c103fb309b1f0c7286420acb59ee7158080",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-bottom.png": "4e599cdeac88ef09f37cd235082e5a44780139e370dc639cff5bb792aacdaf0a",
+    "Previews/native-all-views/Stack-angled-bottom.png": "816cd6fc32c79b252b47edd6f9de41fa9b89b707f4b5ceeed4fce6db2286eb2b",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-angled-bottom.png": "61b3c90e2c2d9a64bb8c6df0e533407591cc9dec31fffc3d01a9dd02e2b21128",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-right.png": "4af3e73187b4221b16d9140d619139fee7f6741b5377229ac611a2471c5eff59",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-front.png": "7518ad5f220839f519fa27491d1d2e45ef188d945507bc3fcbf9cdbdc9108e1c",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-top.png": "17ddc4d1c4b78c2e78674ced7e1ac4a050a01af56485a32fb34cfb3ecedd4a3d",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-angled-back.png": "4f2cf5c3a292986d096840dea44c31c956a8c8391259477bd8bfa0e503efd1da",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-left.png": "9806b1a3f430e88b41dc0d468f5dcd17f3cc21b708f24f8d388fc9bbf3abbb2e",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-back.png": "203afc94e769781144fce3fd5ce53c30be82c83ebf1c9fa34a69e767f6f5b790",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-bottom.png": "41c56e06c8d8207d6ee514d8c0015ab97d0376aa3c3eae3df62db73fde31c864",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-angled-front.png": "470667bec94697ed093d07e90311668dd50089eb2a60dde1b206771567cd26a3",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-left.png": "f208418402761690043f06ecd47218d25920e262dc722d05498b2684f94304d8",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-angled-front.png": "32db76f72ea71d340599f48e389cdc349bb6c966c98f58e98958d03b09079a81",
+    "Previews/native-all-views/Stack-angled-front.png": "2b0e2c4afa273c7491502f702f415ef0c3e6b95eeefad9c7255d871b624adc8f",
+    "Previews/native-all-views/FCPLCN-CPU-08-1v0-top.png": "84b15444377c3b67dab8fab6572773b3492463509c68cbd0a29a50da9e6c8100",
+    "Previews/native-all-views/FCPLCN-RLY-1616-1v0-back.png": "f8184e245eba8b577d2fbd9fd203640253afe25a8f56187ee21b7cf6bdc37bac",
+    "Previews/native-all-views/Stack-bottom.png": "cafaea6e1b2da1789ae6b9219e24891eb053292bca4f17c41c4987c32812e2c9",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "9244da4c43eb984d4276006d46e3cd42fbd52d6b8349609fdf6b5b69d64f872b",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0-schematic.png": "a9c56a93da9f2604538110adb31a6f57a8cce8782142d4d822bd963d952b72d4",
+    "FCPLCN-RLY-1616-1v0/BOM.csv": "36f600a334237c18f38e2d8cb1c5b4d10fea74b9dac4f783ac7dbf7eb323576b",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "d3d44cb511be23a925795c674c17d145b8cb6cd267b6d15ab6041fd66010a0a4",
+    "FCPLCN-RLY-1616-1v0/fp-lib-table": "1b949ceb17e92dc95d5b7ccfda22d859fd5333fa05c2275c3c19780cc4c55be3",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "7f9ed5eb6784af66e2d9bebc5b6f864f97224225f0b4e1abd56d2be0152cfa78",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "1bfe5b167c3534736eed53252d5c476a67aa97faa132bbab1f496cc39e18e59e",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.kicad_sym": "743f84327480bedfd80a2a84bab10cdf57cf132ac488daabdd875257a8a98319",
+    "FCPLCN-RLY-1616-1v0/sym-lib-table": "dd9af350d58d84876f1d7b559fbca8784ebe41f6f407472714301a4ced7afec0",
+    "FCPLCN-RLY-1616-1v0/schematic-svg/FCPLCN-RLY-1616-1v0.svg": "5b3c766dacebc54a9ee6df2f1c4e3767b002f7c063293dd14e908c3ae0bf3cdf",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOIC-28W_7.5x17.9mm_P1.27mm.kicad_mod": "e2e6228017067d669ab789000cf4ecfed3381efb5ac7cc8b4db4f05cd19bb900",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_0805_2012Metric.kicad_mod": "ef1b2453a6d3bd77735746543bd9f96f2cc1f489548ef8526e12d302dfcb0ae0",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-2P.kicad_mod": "6d2ff66fc54f1d763814df8b77efcf924f98bb244706a0aec3b2251f16bb7260",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_1206_3216Metric.kicad_mod": "c7320668dc81bbb954cb4f15e4e7a766c120059343d43551468c8f7ccc8fde37",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/RECOM_R-78E_PSE.kicad_mod": "c904c95327ccd09632876faffc768cad0828d4e22835f27316b4e710c839c1fa",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/StackSocket_2x03_P2.54mm.kicad_mod": "435f9763e8345477f23432223de7ae4c0eae5c5ac36fc77db4b04ca28eb18145",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMC.kicad_mod": "9a1b89a52213e361a095ebfe372c05b12cf2b521d205087ffaed73fdeadd84ce",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod": "6def6a60ffffe386dbcea1dd94a12a6a31c45f95731b3eac5a669d2fcdb8660b",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max.kicad_mod": "13f29b1826ebc9784e62f29325181af978c9e5380de7a453a08241fc34b8702c",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-8P.kicad_mod": "5286a0ea6ee297414d4bec15f5cc2356832cf688477c9dd6dab7b4f74392cfe0",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOP-18_7.495x11.515mm_P1.27mm.kicad_mod": "30492d74a3208066646e44a1404843cbe0ed47773f93ec073301a21c06590b34",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOT-223-3_TabPin2.kicad_mod": "8ae5f03e2c16377abed15e51af6864e23a934e1457b97fb7ea930e17fa99f11d",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/W5500_Lite_2x6.kicad_mod": "bac748ff4d05cb4e55b91b55a5e196f9f92c99539aaa65a239063b6212932af9",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_2012Metric.kicad_mod": "cee1a355ee5ff95cd71a2a6e5ab74dce46e5974ddc31f4ab4c9fd1c17469a150",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": "694cf437b654373e63541bcb4bc80c7e617c041ea9b7fe807b11d229631e512e",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "bcf73e24b31b178156321004e85bf691f00c41cbe79c312608011d64434764f9",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SOD-123.kicad_mod": "743aef59e65e82c128879ed4a43dfb3b86fd143c54a7999c0ffe4e99c5061987",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_1206_3216Metric.kicad_mod": "6182da432d3564c0b1de303aaad936efaa5c937c16dc0d6495852ebec66f9a80",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMB.kicad_mod": "008cc370f8c594eaa23f69e8622ac08679e37dcbcc919a57b12a37cd0a84978a",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LOLIN_S2_mini_V1.0.0.kicad_mod": "6a864e605ca94bc8844c523bea1b86b0fb6309c9b90c57159bfaf53f44bb4866",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_Radial_D8.0mm_P3.50mm.kicad_mod": "6e627d54604b5df38f1cfed257fa04afcce1fef809705f2183637f777e28625e",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_Wetting.kicad_mod": "3f1e04ca36c01e09357153c6bf5f70ef8c4d1ac89eacabbe7aac6023c8c26ca0",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Nexperia_CFP3_SOD-123W.kicad_mod": "8a8a58edc936c04d55d72438f89c22c29726776436f70fe45f865cd6ad19e996",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/ESP32-C3_Super_Mini.kicad_mod": "7c1b1359c94fe90f4c63d496e6157fb8d4b024a91ddd75fbb327855415d12aec",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LTV-847S.kicad_mod": "81d35d81ddc69932e68cb618839358d65955622cc0f8a395ce326169deff1071",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Relay_SPST_Hongfa_HF49FD-1H11.kicad_mod": "d9c37341ff0e6b3f10a352892f334a69ceb2d1d796f9e4807d59f9f58afe8fb0",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_2512_6332Metric.kicad_mod": "abab4bf8eeb3ed03061d8eeb56b542cdac074ce8a0ace0f9b06e933c0b48f297",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_Array_SIP9.kicad_mod": "c3ab6c56bac3a83fab434e3330bab4f294af68312c12085fffd17f1835ebc2f8",
+    "Passive-unification-application.json": "5bd01f8db2afbdb41f7d7ae137947f32b8035c6b60bd34d8130d105e838db20d",
+    "Passive-unification-board-check.json": "36a46555c2aaf762ed20223d15b85f44c507989a190c5ff6efd7e18d005ce034",
+    "Passive-unification-capacitor-geometry.json": "500375989dbd8d882f30a300cbd96008c57031e0db35225b561ec62929db6a27",
+    "Passive-unification-caption-adjustment.json": "895c30755cc6dc8ff4a10a6e1e46d90df27d5c6dfd1434e2392b284c0d16f303",
+    "FCPLCN-CPU-08-1v0/Passive-unification-ERC.json": "c264d81fa28ce17a99a1679df42c4f42bd8048477771016c6effd0e245c86e5f",
+    "FCPLCN-CPU-08-1v0/Passive-unification-DRC.json": "57689b9e7b30dae64dfb4f893651548ac5254ae88858eefb09cfe1d346781f87",
+    "FCPLCN-RLY-1616-1v0/Passive-unification-ERC.json": "630eafce72f3921256b178b63f7906f8521d80e0e29c08e4e0f5d77777e3d5b8",
+    "FCPLCN-RLY-1616-1v0/Passive-unification-DRC.json": "530b377159c4d674cc1f57533f975475113c5aa34c283ed929c86706d68c8183"
+  },
+  "finalCaptionAdjustment": {
+    "status": "PASS",
+    "value": "10uF",
+    "fullPurchasingPropertiesPreserved": true,
+    "referenceCount": 10,
+    "references": [
+      "Lower:C2",
+      "Lower:C3",
+      "Upper:C1",
+      "Upper:C11",
+      "Upper:C12",
+      "Upper:C13",
+      "Upper:C38",
+      "Upper:C41",
+      "Upper:C5",
+      "Upper:C8"
+    ],
+    "files": [
+      {
+        "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch",
+        "afterSha256MatchesFinalSource": true,
+        "changedParts": 8
+      },
+      {
+        "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+        "afterSha256MatchesFinalSource": true,
+        "changedParts": 8
+      },
+      {
+        "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+        "afterSha256MatchesFinalSource": true,
+        "changedParts": 2
+      },
+      {
+        "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+        "afterSha256MatchesFinalSource": true,
+        "changedParts": 2
+      }
+    ],
+    "manifestSha256": "895c30755cc6dc8ff4a10a6e1e46d90df27d5c6dfd1434e2392b284c0d16f303"
+  }
+}

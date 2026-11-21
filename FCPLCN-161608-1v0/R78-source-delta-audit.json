@@ -1,0 +1,56 @@
+{
+  "Lower": {
+    "sha256": "8c0d64d1e66b3e4a5f4566498579b89b1ac834b7cd54a5863081cf8fe5f5d500",
+    "footprints": 155,
+    "removed_refs": [],
+    "moved_or_flipped_refs": [],
+    "changed_pad_geometry_or_nets_refs": [
+      "J44"
+    ],
+    "board_size_mm": [
+      101.0,
+      86.0
+    ],
+    "outline_and_copper_layer_count_preserved": true,
+    "project_and_rules_preserved": true
+  },
+  "Upper": {
+    "sha256": "000352a9e2a6e51c3be436edd5af61483475183f996707ad852a84e257117717",
+    "footprints": 107,
+    "removed_refs": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "D8",
+      "L1",
+      "R41",
+      "R42",
+      "R43",
+      "R44",
+      "R45"
+    ],
+    "moved_or_flipped_refs": [
+      "C1",
+      "C13",
+      "C3",
+      "C4",
+      "U3",
+      "U5"
+    ],
+    "changed_pad_geometry_or_nets_refs": [
+      "C1",
+      "C13",
+      "C33",
+      "J6",
+      "U3",
+      "U5"
+    ],
+    "board_size_mm": [
+      89.0,
+      48.44
+    ],
+    "outline_and_copper_layer_count_preserved": true,
+    "project_and_rules_preserved": true
+  }
+}

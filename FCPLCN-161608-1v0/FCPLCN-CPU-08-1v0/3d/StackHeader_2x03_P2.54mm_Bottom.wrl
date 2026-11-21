@@ -1,0 +1,15 @@
+#VRML V2.0 utf8
+# Nominal Samtec TSW-103-07-L-D, body below 1.6 mm PCB.
+Transform { translation 0.50000000 -1.00000000 -1.12992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.05 0.055 0.065 } } geometry Box { size 2.00000000 3.00000000 1.00000000 } } ] }
+Transform { translation 0.00000000 0.00000000 -1.77992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.72 0.55 0.23 } } geometry Box { size 0.25196850 0.25196850 4.30000000 } } ] }
+Transform { translation 0.00000000 0.00000000 -0.12992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.71 0.73 0.74 } } geometry Box { size 0.25196850 0.25196850 1.00000000 } } ] }
+Transform { translation 1.00000000 0.00000000 -1.77992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.72 0.55 0.23 } } geometry Box { size 0.25196850 0.25196850 4.30000000 } } ] }
+Transform { translation 1.00000000 0.00000000 -0.12992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.71 0.73 0.74 } } geometry Box { size 0.25196850 0.25196850 1.00000000 } } ] }
+Transform { translation 0.00000000 -1.00000000 -1.77992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.72 0.55 0.23 } } geometry Box { size 0.25196850 0.25196850 4.30000000 } } ] }
+Transform { translation 0.00000000 -1.00000000 -0.12992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.71 0.73 0.74 } } geometry Box { size 0.25196850 0.25196850 1.00000000 } } ] }
+Transform { translation 1.00000000 -1.00000000 -1.77992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.72 0.55 0.23 } } geometry Box { size 0.25196850 0.25196850 4.30000000 } } ] }
+Transform { translation 1.00000000 -1.00000000 -0.12992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.71 0.73 0.74 } } geometry Box { size 0.25196850 0.25196850 1.00000000 } } ] }
+Transform { translation 0.00000000 -2.00000000 -1.77992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.72 0.55 0.23 } } geometry Box { size 0.25196850 0.25196850 4.30000000 } } ] }
+Transform { translation 0.00000000 -2.00000000 -0.12992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.71 0.73 0.74 } } geometry Box { size 0.25196850 0.25196850 1.00000000 } } ] }
+Transform { translation 1.00000000 -2.00000000 -1.77992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.72 0.55 0.23 } } geometry Box { size 0.25196850 0.25196850 4.30000000 } } ] }
+Transform { translation 1.00000000 -2.00000000 -0.12992126 children [ Shape { appearance Appearance { material Material { diffuseColor 0.71 0.73 0.74 } } geometry Box { size 0.25196850 0.25196850 1.00000000 } } ] }

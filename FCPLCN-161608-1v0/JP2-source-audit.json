@@ -1,0 +1,1259 @@
+{
+  "auditor": "independent read-only source and geometry review",
+  "native_version": "10.0.8",
+  "sources": {
+    "before_cpu_sha256": "dd2678dc7f24703057267fe0a1100e75983b2325da928cea1dc8f16eccf914ed",
+    "stage_cpu_sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7"
+  },
+  "unchanged_files": {
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": {
+      "before_sha256": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      "stage_sha256": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      "unchanged": true
+    },
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": {
+      "before_sha256": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      "stage_sha256": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      "unchanged": true
+    },
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": {
+      "before_sha256": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      "stage_sha256": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      "unchanged": true
+    },
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": {
+      "before_sha256": "85d29fe2cda720f407e26b25b20abe629144e84b5724063b888d8db7f0827bdd",
+      "stage_sha256": "85d29fe2cda720f407e26b25b20abe629144e84b5724063b888d8db7f0827bdd",
+      "unchanged": true
+    },
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": {
+      "before_sha256": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      "stage_sha256": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      "unchanged": true
+    },
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": {
+      "before_sha256": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      "stage_sha256": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      "unchanged": true
+    },
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": {
+      "before_sha256": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      "stage_sha256": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      "unchanged": true
+    },
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": {
+      "before_sha256": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb",
+      "stage_sha256": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb",
+      "unchanged": true
+    },
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": {
+      "before_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      "stage_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      "unchanged": true
+    },
+    "Stack-mechanics.json": {
+      "before_sha256": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+      "stage_sha256": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+      "unchanged": true
+    }
+  },
+  "footprints": {
+    "before_count": 148,
+    "stage_count": 148,
+    "added": [],
+    "removed": [],
+    "changed": [
+      "JP2",
+      "R68"
+    ],
+    "changed_complete_footprint_trees": [
+      "JP2",
+      "R68"
+    ],
+    "all_other_footprints_exact": true,
+    "JP2_before": {
+      "position_iu": [
+        124000000,
+        108500000
+      ],
+      "orientation_deg": 90.0,
+      "layer": "F.Cu",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "TERM / normally open",
+      "attributes": 1,
+      "dnp": false,
+      "properties": {
+        "Reference": "JP2",
+        "Value": "TERM / normally open",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "connector/pin_header_socket"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "position_iu": [
+            124000000,
+            108500000
+          ],
+          "net": "/RS485_TERM",
+          "size_iu": [
+            1700000,
+            1700000
+          ],
+          "drill_iu": [
+            1000000,
+            1000000
+          ],
+          "attribute": 0,
+          "shape": 1,
+          "orientation_deg": 90.0,
+          "layers": "00000000_00000000_55555555_5555555f"
+        },
+        {
+          "number": "2",
+          "position_iu": [
+            126540000,
+            108500000
+          ],
+          "net": "/RS485_B",
+          "size_iu": [
+            1700000,
+            1700000
+          ],
+          "drill_iu": [
+            1000000,
+            1000000
+          ],
+          "attribute": 0,
+          "shape": 0,
+          "orientation_deg": 90.0,
+          "layers": "00000000_00000000_55555555_5555555f"
+        }
+      ]
+    },
+    "JP2_stage": {
+      "position_iu": [
+        109400000,
+        118300000
+      ],
+      "orientation_deg": 90.0,
+      "layer": "F.Cu",
+      "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "TERM / normally open",
+      "attributes": 1,
+      "dnp": false,
+      "properties": {
+        "Reference": "JP2",
+        "Value": "TERM / normally open",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "connector/pin_header_socket"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "position_iu": [
+            109400000,
+            118300000
+          ],
+          "net": "/RS485_TERM",
+          "size_iu": [
+            1700000,
+            1700000
+          ],
+          "drill_iu": [
+            1000000,
+            1000000
+          ],
+          "attribute": 0,
+          "shape": 1,
+          "orientation_deg": 90.0,
+          "layers": "00000000_00000000_55555555_5555555f"
+        },
+        {
+          "number": "2",
+          "position_iu": [
+            111940000,
+            118300000
+          ],
+          "net": "/RS485_B",
+          "size_iu": [
+            1700000,
+            1700000
+          ],
+          "drill_iu": [
+            1000000,
+            1000000
+          ],
+          "attribute": 0,
+          "shape": 0,
+          "orientation_deg": 90.0,
+          "layers": "00000000_00000000_55555555_5555555f"
+        }
+      ]
+    },
+    "R68_before": {
+      "position_iu": [
+        107000000,
+        118300000
+      ],
+      "orientation_deg": 0.0,
+      "layer": "B.Cu",
+      "fp": "Resistor_SMD:R_0805_2012Metric",
+      "value": "100R",
+      "attributes": 2,
+      "dnp": false,
+      "properties": {
+        "Reference": "R68",
+        "Value": "100R",
+        "Datasheet": "https://www.vishay.com/docs/20115/crcwhp.pdf",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "MPN": "CRCW0805100RFKTAHP",
+        "Manufacturer": "Vishay",
+        "Tolerance": "1%",
+        "PowerRating": "0.5 W",
+        "ResistorType": "Pulse-withstanding"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "position_iu": [
+            106087500,
+            118300000
+          ],
+          "net": "/DATA8_ISO",
+          "size_iu": [
+            1025000,
+            1400000
+          ],
+          "drill_iu": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "shape": 4,
+          "orientation_deg": 0.0,
+          "layers": "00000000_00000000_00000000_0000800c"
+        },
+        {
+          "number": "2",
+          "position_iu": [
+            107912500,
+            118300000
+          ],
+          "net": "/DATA8_IC_ISO",
+          "size_iu": [
+            1025000,
+            1400000
+          ],
+          "drill_iu": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "shape": 4,
+          "orientation_deg": 0.0,
+          "layers": "00000000_00000000_00000000_0000800c"
+        }
+      ]
+    },
+    "R68_stage": {
+      "position_iu": [
+        106700000,
+        118300000
+      ],
+      "orientation_deg": 0.0,
+      "layer": "B.Cu",
+      "fp": "Resistor_SMD:R_0805_2012Metric",
+      "value": "100R",
+      "attributes": 2,
+      "dnp": false,
+      "properties": {
+        "Reference": "R68",
+        "Value": "100R",
+        "Datasheet": "https://www.vishay.com/docs/20115/crcwhp.pdf",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "MPN": "CRCW0805100RFKTAHP",
+        "Manufacturer": "Vishay",
+        "Tolerance": "1%",
+        "PowerRating": "0.5 W",
+        "ResistorType": "Pulse-withstanding"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "position_iu": [
+            105787500,
+            118300000
+          ],
+          "net": "/DATA8_ISO",
+          "size_iu": [
+            1025000,
+            1400000
+          ],
+          "drill_iu": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "shape": 4,
+          "orientation_deg": 0.0,
+          "layers": "00000000_00000000_00000000_0000800c"
+        },
+        {
+          "number": "2",
+          "position_iu": [
+            107612500,
+            118300000
+          ],
+          "net": "/DATA8_IC_ISO",
+          "size_iu": [
+            1025000,
+            1400000
+          ],
+          "drill_iu": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "shape": 4,
+          "orientation_deg": 0.0,
+          "layers": "00000000_00000000_00000000_0000800c"
+        }
+      ]
+    }
+  },
+  "copper": {
+    "added": {
+      "02abbcb8-9ddc-49c6-a760-5415fa5a1530": {
+        "class": "PCB_VIA",
+        "net": "/DATA8_IC_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          107800000,
+          117400000
+        ],
+        "end_iu": [
+          107800000,
+          117400000
+        ],
+        "diameter_iu": 900000,
+        "drill_iu": 300000,
+        "layers": "00000000_00000000_00000000_00000005"
+      },
+      "0882ace0-f071-498c-b01d-f703855fad16": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_B",
+        "layer": "F.Cu",
+        "start_iu": [
+          119100000,
+          119400000
+        ],
+        "end_iu": [
+          120500000,
+          118000000
+        ],
+        "width_iu": 180000
+      },
+      "125d507e-39f7-4053-be6c-545e11c85a91": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "B.Cu",
+        "start_iu": [
+          126200000,
+          112000000
+        ],
+        "end_iu": [
+          124000000,
+          109800000
+        ],
+        "width_iu": 180000
+      },
+      "255837f9-b80d-46f7-a9b6-af3893cb6438": {
+        "class": "PCB_TRACK",
+        "net": "/DATA8_IC_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          107612500,
+          118300000
+        ],
+        "end_iu": [
+          107612500,
+          117587500
+        ],
+        "width_iu": 180000
+      },
+      "2ff033dd-4454-472d-bc31-4d815df4c84f": {
+        "class": "PCB_VIA",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          124000000,
+          109800000
+        ],
+        "end_iu": [
+          124000000,
+          109800000
+        ],
+        "diameter_iu": 900000,
+        "drill_iu": 300000,
+        "layers": "00000000_00000000_00000000_00000005"
+      },
+      "34a4adc9-d0f3-49f7-a2c8-17e70eb62ee8": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          114550000,
+          118000000
+        ],
+        "end_iu": [
+          114500000,
+          118000000
+        ],
+        "width_iu": 400000
+      },
+      "382e4c78-d732-472f-8d88-3979ae31d473": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          112800000,
+          119750000
+        ],
+        "end_iu": [
+          114550000,
+          118000000
+        ],
+        "width_iu": 400000
+      },
+      "5eef6831-27cb-435f-b545-7b7991444e53": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_B",
+        "layer": "F.Cu",
+        "start_iu": [
+          114600000,
+          119400000
+        ],
+        "end_iu": [
+          119100000,
+          119400000
+        ],
+        "width_iu": 180000
+      },
+      "81a8c6d9-1385-4261-8ba5-81a057cf24a1": {
+        "class": "PCB_TRACK",
+        "net": "/DATA8_IC_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          107612500,
+          117587500
+        ],
+        "end_iu": [
+          107800000,
+          117400000
+        ],
+        "width_iu": 180000
+      },
+      "864159a6-a05e-499d-92d8-27242268ba69": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          122000000,
+          117200000
+        ],
+        "end_iu": [
+          122000000,
+          116200000
+        ],
+        "width_iu": 180000
+      },
+      "8828be28-529b-4872-b7bb-d27c411cdbbd": {
+        "class": "PCB_TRACK",
+        "net": "/DATA8_IC_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          108575000,
+          116625000
+        ],
+        "end_iu": [
+          109587500,
+          116625000
+        ],
+        "width_iu": 180000
+      },
+      "8e8a684f-793b-4934-bf97-562d441e6c91": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          120600000,
+          119900000
+        ],
+        "end_iu": [
+          121800000,
+          118700000
+        ],
+        "width_iu": 180000
+      },
+      "9406fbb1-635a-4b18-b69f-b975152bdf50": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          122000000,
+          116200000
+        ],
+        "end_iu": [
+          126200000,
+          112000000
+        ],
+        "width_iu": 180000
+      },
+      "941c6886-7255-4abb-a264-9d44128f4008": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          121800000,
+          117400000
+        ],
+        "end_iu": [
+          122000000,
+          117200000
+        ],
+        "width_iu": 180000
+      },
+      "a1406476-6baa-48fe-b78c-9fa08239ac47": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          124000000,
+          109800000
+        ],
+        "end_iu": [
+          124000000,
+          108500000
+        ],
+        "width_iu": 180000
+      },
+      "a67c1abf-49fe-440b-b676-47ff0715e5c1": {
+        "class": "PCB_VIA",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          126200000,
+          112000000
+        ],
+        "end_iu": [
+          126200000,
+          112000000
+        ],
+        "diameter_iu": 900000,
+        "drill_iu": 300000,
+        "layers": "00000000_00000000_00000000_00000005"
+      },
+      "aed4a7df-6458-4a38-b9b5-3a5ec8970f93": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_B",
+        "layer": "F.Cu",
+        "start_iu": [
+          113500000,
+          118300000
+        ],
+        "end_iu": [
+          114600000,
+          119400000
+        ],
+        "width_iu": 180000
+      },
+      "c149d6c6-c484-4c3b-83be-8ff421573731": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          111000000,
+          119900000
+        ],
+        "end_iu": [
+          120600000,
+          119900000
+        ],
+        "width_iu": 180000
+      },
+      "d7b422ee-4816-41bf-84e3-37e22ec83eca": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_B",
+        "layer": "F.Cu",
+        "start_iu": [
+          111900000,
+          118300000
+        ],
+        "end_iu": [
+          113500000,
+          118300000
+        ],
+        "width_iu": 180000
+      },
+      "d9b59bc6-5480-4ab2-9106-5e8d09c9aaae": {
+        "class": "PCB_TRACK",
+        "net": "/DATA8_IC_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          107800000,
+          117400000
+        ],
+        "end_iu": [
+          108575000,
+          116625000
+        ],
+        "width_iu": 180000
+      },
+      "e124fb4c-f139-47f3-818f-0cc8f2bfc33e": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          109400000,
+          118300000
+        ],
+        "end_iu": [
+          111000000,
+          119900000
+        ],
+        "width_iu": 180000
+      },
+      "e46ba90d-1467-4dad-9991-51c238087bb3": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          102500000,
+          119750000
+        ],
+        "end_iu": [
+          112800000,
+          119750000
+        ],
+        "width_iu": 400000
+      },
+      "ec409044-f840-4849-bcce-ffbb57255491": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          101500000,
+          118750000
+        ],
+        "end_iu": [
+          102500000,
+          119750000
+        ],
+        "width_iu": 400000
+      },
+      "f3599bf8-e91f-4452-b99a-6a7ed6f4983a": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_TERM",
+        "layer": "F.Cu",
+        "start_iu": [
+          121800000,
+          118700000
+        ],
+        "end_iu": [
+          121800000,
+          117400000
+        ],
+        "width_iu": 180000
+      }
+    },
+    "removed": {
+      "1ba087f2-0d5a-4e09-9911-e84445f275c0": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          112800000,
+          118000000
+        ],
+        "end_iu": [
+          114500000,
+          118000000
+        ],
+        "width_iu": 300000
+      },
+      "4031332f-84dd-4e4d-b9bf-66b529b7a776": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          111750000,
+          118000000
+        ],
+        "end_iu": [
+          112800000,
+          118000000
+        ],
+        "width_iu": 180000
+      },
+      "4138dc53-4a46-4dd2-a717-02fb943c229a": {
+        "class": "PCB_VIA",
+        "net": "/+5V_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          101500000,
+          118750000
+        ],
+        "end_iu": [
+          101500000,
+          118750000
+        ],
+        "diameter_iu": 600000,
+        "drill_iu": 300000,
+        "layers": "00000000_00000000_00000000_00000005"
+      },
+      "42d3a62a-4da4-45c6-ad57-776689aa250d": {
+        "class": "PCB_VIA",
+        "net": "/DATA8_IC_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          108912500,
+          117300000
+        ],
+        "end_iu": [
+          108912500,
+          117300000
+        ],
+        "diameter_iu": 600000,
+        "drill_iu": 300000,
+        "layers": "00000000_00000000_00000000_00000005"
+      },
+      "4e4a14f1-44d7-455d-84b5-8708e0d10e6d": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_B",
+        "layer": "F.Cu",
+        "start_iu": [
+          125950000,
+          109090000
+        ],
+        "end_iu": [
+          125950000,
+          109100000
+        ],
+        "width_iu": 220000
+      },
+      "7bda979a-ded7-4a97-bc2d-0d7bd52ffb89": {
+        "class": "PCB_VIA",
+        "net": "/GND_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          122300000,
+          116300000
+        ],
+        "end_iu": [
+          122300000,
+          116300000
+        ],
+        "diameter_iu": 800000,
+        "drill_iu": 300000,
+        "layers": "00000000_00000000_00000000_00000005"
+      },
+      "801f6e1b-6d0c-4cf0-8708-f1a4fd24b782": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_B",
+        "layer": "B.Cu",
+        "start_iu": [
+          125950000,
+          109100000
+        ],
+        "end_iu": [
+          123300000,
+          111750000
+        ],
+        "width_iu": 220000
+      },
+      "87c3d113-4314-40a9-bc6a-5b7eba0adbc3": {
+        "class": "PCB_VIA",
+        "net": "/+5V_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          111000000,
+          118750000
+        ],
+        "end_iu": [
+          111000000,
+          118750000
+        ],
+        "diameter_iu": 600000,
+        "drill_iu": 300000,
+        "layers": "00000000_00000000_00000000_00000005"
+      },
+      "b0ac39e9-ac1b-484e-9927-359c9349cfa0": {
+        "class": "PCB_TRACK",
+        "net": "/GND_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          122300000,
+          116300000
+        ],
+        "end_iu": [
+          122300000,
+          114700000
+        ],
+        "width_iu": 180000
+      },
+      "b28ba9ba-c7a6-4109-aad8-54af7357396e": {
+        "class": "PCB_TRACK",
+        "net": "/DATA8_IC_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          108912500,
+          117300000
+        ],
+        "end_iu": [
+          109587500,
+          116625000
+        ],
+        "width_iu": 180000
+      },
+      "b5e5b508-d7bb-4390-af49-88079b8ab313": {
+        "class": "PCB_TRACK",
+        "net": "/DATA8_IC_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          107912500,
+          118300000
+        ],
+        "end_iu": [
+          108912500,
+          117300000
+        ],
+        "width_iu": 180000
+      },
+      "b9b38657-19f4-4df7-878c-f60a735abe55": {
+        "class": "PCB_TRACK",
+        "net": "/GND_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          122225000,
+          114325000
+        ],
+        "end_iu": [
+          123550000,
+          114325000
+        ],
+        "width_iu": 180000
+      },
+      "c409b213-2f68-4018-9e68-6b84632d4b81": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          101500000,
+          118750000
+        ],
+        "end_iu": [
+          111000000,
+          118750000
+        ],
+        "width_iu": 180000
+      },
+      "ce12fc44-e956-4bbd-aef3-8c9bad5a6bb0": {
+        "class": "PCB_TRACK",
+        "net": "/RS485_B",
+        "layer": "F.Cu",
+        "start_iu": [
+          126540000,
+          108500000
+        ],
+        "end_iu": [
+          125950000,
+          109090000
+        ],
+        "width_iu": 220000
+      },
+      "fea976fb-f229-4a44-a4a9-29972f2b2a0e": {
+        "class": "PCB_TRACK",
+        "net": "/GND_ISO",
+        "layer": "F.Cu",
+        "start_iu": [
+          123550000,
+          114325000
+        ],
+        "end_iu": [
+          128100000,
+          109775000
+        ],
+        "width_iu": 180000
+      },
+      "ff6e4fab-8eff-4f21-bd0f-8e816dae9829": {
+        "class": "PCB_TRACK",
+        "net": "/+5V_ISO",
+        "layer": "B.Cu",
+        "start_iu": [
+          111000000,
+          118750000
+        ],
+        "end_iu": [
+          111750000,
+          118000000
+        ],
+        "width_iu": 180000
+      }
+    },
+    "modified": {
+      "a37d060c-8791-4543-aca1-889ab6e45a33": {
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "/DATA8_ISO",
+          "layer": "B.Cu",
+          "start_iu": [
+            104600000,
+            118300000
+          ],
+          "end_iu": [
+            106087500,
+            118300000
+          ],
+          "width_iu": 180000
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "/DATA8_ISO",
+          "layer": "B.Cu",
+          "start_iu": [
+            104600000,
+            118300000
+          ],
+          "end_iu": [
+            105787500,
+            118300000
+          ],
+          "width_iu": 180000
+        }
+      }
+    },
+    "changed_nets": [
+      "/+5V_ISO",
+      "/DATA8_IC_ISO",
+      "/DATA8_ISO",
+      "/GND_ISO",
+      "/RS485_B",
+      "/RS485_TERM"
+    ]
+  },
+  "board_root_other_changes_excluding_zone_fill": [],
+  "board_silk_text_changes": {
+    "added": [
+      [
+        "gr_text",
+        "120R",
+        [
+          "at",
+          "110.4",
+          "113.5",
+          "0"
+        ],
+        [
+          "layer",
+          "F.SilkS"
+        ],
+        [
+          "uuid",
+          "67597bb2-b2ee-46cd-b2e7-d20235872471"
+        ],
+        [
+          "effects",
+          [
+            "font",
+            [
+              "size",
+              "0.85",
+              "0.85"
+            ],
+            [
+              "thickness",
+              "0.13"
+            ]
+          ]
+        ]
+      ]
+    ],
+    "removed": [],
+    "modified": []
+  },
+  "geometry_before": {
+    "counts": {
+      "PCB_TRACK": 2103,
+      "PCB_VIA": 361
+    },
+    "non_45_90_segments": [],
+    "strict_segment_crossings": [],
+    "different_net_centerline_contacts": [],
+    "net_lengths_mm": {
+      "/RS485_VISO": 14.904583,
+      "/GND_ISO": 141.028156,
+      "/+3V3_ISO": 59.52568,
+      "/SDA_ISO": 8.523307,
+      "/SCL_ISO": 9.337237,
+      "/+3V3": 257.210693,
+      "/DATA1_CPU": 15.347729,
+      "/DATA3_ISO": 14.872007,
+      "/DATA3_IC_ISO": 82.820859,
+      "/RS485_A": 17.664883,
+      "/RS485_TERM": 4.136853,
+      "/DATA5_CPU": 30.238443,
+      "/DATA4_CPU": 29.767124,
+      "/GND": 247.083179,
+      "/MOD_VBUS": 87.465743,
+      "/I2C_SDA": 33.980189,
+      "/I2C_SCL": 47.280941,
+      "/+5V_ISO": 119.199224,
+      "/RS485_VISO_OUT": 9.427197,
+      "/DATA4_IC_ISO": 76.770969,
+      "/ISO_SDA_CPU": 24.507141,
+      "/ETH_RST_N": 80.135554,
+      "/ETH_RST_F": 11.347692,
+      "/DATA2_IC_ISO": 91.99106,
+      "/DATA2_CPU": 14.192683,
+      "/ALARM_LED": 76.062435,
+      "/LED_ALARM_BASE": 8.791683,
+      "/+3V3_RS485": 98.271801,
+      "/TVS_I2C_REF_ISO": 1.27,
+      "/DATA7_ISO": 11.493818,
+      "/DATA7_IC_ISO": 86.23974,
+      "/DATA5_ISO": 8.227285,
+      "/DATA5_IC_ISO": 71.240576,
+      "/RS485_B": 21.862508,
+      "/+12V_LOGIC": 151.95762,
+      "/MCP_RESET_N": 62.382515,
+      "/ISO_SCL_CPU": 34.548095,
+      "/SCL_IC_ISO": 32.889049,
+      "/SDA_IC_ISO": 31.983039,
+      "/DATA6_IC_ISO": 79.502342,
+      "/LED_STATUS_BASE": 8.178676,
+      "/LED_STATUS_DRIVE": 25.67446,
+      "/DATA1_ISO": 10.229544,
+      "/DATA2_ISO": 12.437773,
+      "/DATA4_ISO": 8.093067,
+      "/DATA6_ISO": 10.447483,
+      "/DATA8_ISO": 23.052051,
+      "/ESP_EN": 36.855396,
+      "/NET_LED": 47.118323,
+      "/STATUS_LED": 93.976677,
+      "/DATA3_CPU": 30.551579,
+      "/RS485_TX_CPU": 16.042869,
+      "/USB_DN_CPU": 8.473932,
+      "/USB_DP_CPU": 4.314779,
+      "/ETH_CS_CPU": 14.219805,
+      "/ETH_SCK_CPU": 20.464021,
+      "/ETH_MOSI_CPU": 15.894002,
+      "/ETH_MISO_CPU": 15.084954,
+      "/ETH_INT_N": 108.145448,
+      "/USB_VBUS_SENSE": 20.2066,
+      "/RS485_RX_CPU": 34.983245,
+      "/RS485_DIR_CPU": 46.959642,
+      "/ESP_BOOT": 37.571121,
+      "/DATA7_CPU": 20.25984,
+      "/DATA8_CPU": 22.16168,
+      "/DATA6_CPU": 24.962772,
+      "/ETH_MOSI": 11.480955,
+      "/ETH_SCK": 21.71922,
+      "/ETH_CS_N": 11.682583,
+      "/ETH_MISO": 43.757285,
+      "/USB_VBUS": 26.432591,
+      "/USB_CC1": 7.010902,
+      "/USB_DP": 12.646552,
+      "/USB_DN": 15.888723,
+      "/USB_CC2": 6.652691,
+      "/LED_ALARM_DRIVE": 31.564455,
+      "/LED_ALARM_OUT": 24.446819,
+      "/RS485_RX_RAW": 95.588518,
+      "/RS485_RX_BUF": 11.526056,
+      "/LED_NET_BASE": 7.123321,
+      "/DATA1_IC_ISO": 101.980434,
+      "/LED_NET_DRIVE": 28.196969,
+      "/RS485_TX_BUF": 3.051051,
+      "/RS485_DIR_BUF": 5.974653,
+      "/LED_NET_OUT": 9.545432,
+      "/TVS_LED_REF": 0.995355,
+      "/LED_STATUS_OUT": 19.171894,
+      "/LED_PWR_OUT": 19.669916,
+      "/DATA8_IC_ISO": 67.047843,
+      "/RS485_DIR": 64.802251,
+      "/RS485_TX": 58.438814,
+      "/RTC_VCC": 21.436488,
+      "/TVS_DATA14_REF_ISO": 1.27,
+      "/RTC_VBAT": 82.422265,
+      "/TVS_DATA58_REF_ISO": 1.27,
+      "/TVS_USB_REF": 1.27
+    }
+  },
+  "geometry_stage": {
+    "counts": {
+      "PCB_TRACK": 2112,
+      "PCB_VIA": 360
+    },
+    "non_45_90_segments": [],
+    "strict_segment_crossings": [],
+    "different_net_centerline_contacts": [],
+    "net_lengths_mm": {
+      "/RS485_VISO": 14.904583,
+      "/GND_ISO": 131.668484,
+      "/+3V3_ISO": 59.52568,
+      "/SDA_ISO": 8.523307,
+      "/SCL_ISO": 9.337237,
+      "/+3V3": 257.210693,
+      "/DATA1_CPU": 15.347729,
+      "/DATA3_ISO": 14.872007,
+      "/DATA3_IC_ISO": 82.820859,
+      "/RS485_A": 17.664883,
+      "/RS485_TERM": 30.630461,
+      "/DATA5_CPU": 30.238443,
+      "/DATA4_CPU": 29.767124,
+      "/GND": 247.083179,
+      "/MOD_VBUS": 87.465743,
+      "/I2C_SDA": 33.980189,
+      "/I2C_SCL": 47.280941,
+      "/+5V_ISO": 120.127651,
+      "/RS485_VISO_OUT": 9.427197,
+      "/DATA4_IC_ISO": 76.770969,
+      "/ISO_SDA_CPU": 24.507141,
+      "/ETH_RST_N": 80.135554,
+      "/ETH_RST_F": 11.347692,
+      "/DATA2_IC_ISO": 91.99106,
+      "/DATA2_CPU": 14.192683,
+      "/ALARM_LED": 76.062435,
+      "/LED_ALARM_BASE": 8.791683,
+      "/+3V3_RS485": 98.271801,
+      "/TVS_I2C_REF_ISO": 1.27,
+      "/DATA7_ISO": 11.493818,
+      "/DATA7_IC_ISO": 86.23974,
+      "/DATA5_ISO": 8.227285,
+      "/DATA5_IC_ISO": 71.240576,
+      "/RS485_B": 26.90599,
+      "/+12V_LOGIC": 151.95762,
+      "/MCP_RESET_N": 62.382515,
+      "/ISO_SCL_CPU": 34.548095,
+      "/SCL_IC_ISO": 32.889049,
+      "/SDA_IC_ISO": 31.983039,
+      "/DATA6_IC_ISO": 79.502342,
+      "/LED_STATUS_BASE": 8.178676,
+      "/LED_STATUS_DRIVE": 25.67446,
+      "/DATA1_ISO": 10.229544,
+      "/DATA2_ISO": 12.437773,
+      "/DATA4_ISO": 8.093067,
+      "/DATA6_ISO": 10.447483,
+      "/DATA8_ISO": 22.752051,
+      "/ESP_EN": 36.855396,
+      "/NET_LED": 47.118323,
+      "/STATUS_LED": 93.976677,
+      "/DATA3_CPU": 30.551579,
+      "/RS485_TX_CPU": 16.042869,
+      "/USB_DN_CPU": 8.473932,
+      "/USB_DP_CPU": 4.314779,
+      "/ETH_CS_CPU": 14.219805,
+      "/ETH_SCK_CPU": 20.464021,
+      "/ETH_MOSI_CPU": 15.894002,
+      "/ETH_MISO_CPU": 15.084954,
+      "/ETH_INT_N": 108.145448,
+      "/USB_VBUS_SENSE": 20.2066,
+      "/RS485_RX_CPU": 34.983245,
+      "/RS485_DIR_CPU": 46.959642,
+      "/ESP_BOOT": 37.571121,
+      "/DATA7_CPU": 20.25984,
+      "/DATA8_CPU": 22.16168,
+      "/DATA6_CPU": 24.962772,
+      "/ETH_MOSI": 11.480955,
+      "/ETH_SCK": 21.71922,
+      "/ETH_CS_N": 11.682583,
+      "/ETH_MISO": 43.757285,
+      "/USB_VBUS": 26.432591,
+      "/USB_CC1": 7.010902,
+      "/USB_DP": 12.646552,
+      "/USB_DN": 15.888723,
+      "/USB_CC2": 6.652691,
+      "/LED_ALARM_DRIVE": 31.564455,
+      "/LED_ALARM_OUT": 24.446819,
+      "/RS485_RX_RAW": 95.588518,
+      "/RS485_RX_BUF": 11.526056,
+      "/LED_NET_BASE": 7.123321,
+      "/DATA1_IC_ISO": 101.980434,
+      "/LED_NET_DRIVE": 28.196969,
+      "/RS485_TX_BUF": 3.051051,
+      "/RS485_DIR_BUF": 5.974653,
+      "/LED_NET_OUT": 9.545432,
+      "/TVS_LED_REF": 0.995355,
+      "/LED_STATUS_OUT": 19.171894,
+      "/LED_PWR_OUT": 19.669916,
+      "/DATA8_IC_ISO": 67.765216,
+      "/RS485_DIR": 64.802251,
+      "/RS485_TX": 58.438814,
+      "/RTC_VCC": 21.436488,
+      "/TVS_DATA14_REF_ISO": 1.27,
+      "/RTC_VBAT": 82.422265,
+      "/TVS_DATA58_REF_ISO": 1.27,
+      "/TVS_USB_REF": 1.27
+    }
+  },
+  "checks": {
+    "only_approved_footprints_changed": true,
+    "footprint_count_preserved": true,
+    "other_footprints_exact": true,
+    "properties_JP2_preserved": true,
+    "JP2_moved_to_expected_position": true,
+    "JP2_pad_nets_preserved": true,
+    "JP2_identity_attributes_preserved": true,
+    "JP2_pad_geometry_attributes_preserved": true,
+    "R68_exactly_0p3mm_left": true,
+    "R68_identity_attributes_preserved": true,
+    "R68_pad_geometry_net_attributes_preserved": true,
+    "JP2_pads_at_expected_positions": true,
+    "only_approved_copper_nets_changed": true,
+    "all_protected_files_unchanged": true,
+    "other_board_roots_unchanged": true,
+    "120R_front_silk_label_added": true,
+    "no_non45_90_tracks": true,
+    "no_strict_track_crossings": true,
+    "no_different_net_track_centerline_contacts": true
+  },
+  "all_checks_pass": true,
+  "native_checks": {
+    "cpu": {
+      "active_drc_count": 0,
+      "excluded_drc_count": 2,
+      "unconnected_count": 0,
+      "schematic_parity_count": 0,
+      "erc_total_count": 0,
+      "erc_active_count": 0,
+      "drc_violations_identical_to_before": true,
+      "native_drc_report_sha256": "783ac808dfc2015fa3061a9de9e681c5e014cc8184dcb7b8f2294507b191ccad",
+      "native_erc_report_sha256": "a08998a0d0aad3b1c7145b3aaa428a66f9ef6de17c91f00486bb90aff89fab83"
+    },
+    "rly": {
+      "active_drc_count": 0,
+      "excluded_drc_count": 0,
+      "unconnected_count": 0,
+      "schematic_parity_count": 0,
+      "erc_total_count": 0,
+      "erc_active_count": 0,
+      "drc_violations_identical_to_before": true,
+      "native_drc_report_sha256": "950eea75bc533c168b7b9d99d4770921699810a4d10dc40f031803429120fada",
+      "native_erc_report_sha256": "4c1d56437c2f1c4ed8736cd3bf3fd248ce4170c25a994229e305f443999a37c8"
+    }
+  },
+  "all_native_checks_pass": true,
+  "review_summary": {
+    "result": "PASS",
+    "scope": "Read-only independent audit of frozen stage; no board, schematic, project or rule mutations performed.",
+    "unchanged_other_CPU_footprints": 146,
+    "unchanged_lower_footprints": 251,
+    "silkscreen": "Exactly one new front-silkscreen label: 120R; no existing board text removed or modified.",
+    "routing": "All track/via edits are confined to RS485_TERM, RS485_B, +5V_ISO, GND_ISO, DATA8_ISO and DATA8_IC_ISO. Native zone refill and full track DRC report zero active errors and zero unconnected items.",
+    "excluded_violations": "Only the two unchanged BT1 NPTH-inside-U1-courtyard exclusions remain; project/rule files are byte-identical to before."
+  }
+}

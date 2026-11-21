@@ -1,0 +1,49 @@
+{
+  "component": "KEFA KF128-2.54-10P",
+  "source": {
+    "manufacturer": "CIXI KEFA ELECTRONIC CO., LTD.",
+    "drawing_title": "KF128-2.54",
+    "drawing_revision": "A",
+    "drawing_date": "21.03.13",
+    "local_file": "../datasheets/KEFA-KF128-2.54.pdf",
+    "sha256": "e6ecb6a07fc776ca6657c90ce41376bd6ac176cda319539e37f35ea052f5e7cb",
+    "url": "https://shopcdnalpha.grainajz.com/category/348983/2332/c1956744e66148f29d61bba375d3dac9/KF128-2.54.pdf"
+  },
+  "derivation": {
+    "reference_footprint": "KF128-2.54-8P.kicad_mod",
+    "reference_footprint_sha256": "2ca56a7c7142276bece34aaf9f76696e900c4cec774749c4dfb2df1cb6a42156",
+    "unchanged": "First 8 hole positions, pad geometry, drill, orientation, body depth and height. Two pins added at x20.32 and22.86mm.",
+    "body_length_formula": "P * 2.54 +/- 0.40 mm",
+    "pin_span_formula": "(P - 1) * 2.54 mm",
+    "poles": 10,
+    "pitch_mm": 2.54,
+    "nominal_body_length_mm": 25.4,
+    "maximum_body_length_mm": 25.8,
+    "model_body_length_mm": 25.8,
+    "pin_span_mm": 22.86,
+    "nominal_depth_mm": 6.3,
+    "nominal_height_mm": 8.8,
+    "nominal_tail_mm": 3.5,
+    "tail_tolerance_mm": 0.3,
+    "finished_drill_mm": 1.3,
+    "pad_size_mm": [
+      1.9,
+      2.15
+    ],
+    "body_y_relative_pinrow_mm": [
+      -3.0,
+      3.3
+    ],
+    "footprint_courtyard_local_mm": [
+      -1.72,
+      -3.5,
+      24.58,
+      3.6
+    ],
+    "model_note": "Existing source-derived model style retained. Box envelope models maximum length and nominal depth/height; screw/entry details are schematic."
+  },
+  "assets": {
+    "KF128-2.54-10P.kicad_mod": "032e4036190bdfabbcd5baeec9169ba374dec0b79657556d093d67aeb683d9ed",
+    "KF128-10P.wrl": "b7e847cf2313f060d6b121f1b0f114bc8f106bf16695c6b85970ad90e2abd6d3"
+  }
+}

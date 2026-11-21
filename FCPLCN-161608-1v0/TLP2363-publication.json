@@ -1,0 +1,219 @@
+{
+  "checked_at": "2026-11-18T23:38:21.769391+07:00",
+  "guarded_existing_files": 210,
+  "published_files": [
+    {
+      "file": "ASSEMBLY.md",
+      "before_sha256": "486757e67dab4b956a16c3dd9441bf29b0c714c76dee06ba2b9a0d38c7230804",
+      "after_sha256": "4194d43c2f3452f7abebd3d81581a18e1ef4437c24c2fe24a98979f79ae06dc0"
+    },
+    {
+      "file": "BOM-combined.csv",
+      "before_sha256": "d980c068d70622a9a7f62e8c3bb4e899ed3f2425092e7155e495c01b81ad7f94",
+      "after_sha256": "030a964f78076240eeed404639ac5ea641928f4db4ec6e56abcbc006ca501721"
+    },
+    {
+      "file": "DELIVERY.txt",
+      "before_sha256": "87a9d00eabfab1f870445e73b8cdc35e3e72f340035c22210918639dcd87d2bd",
+      "after_sha256": "49d4d353c872efed063730891aeaac8dc6f73bf9360b120faeb2817ac05953f0"
+    },
+    {
+      "file": "EMI-power-review.md",
+      "before_sha256": "6bd971016543b550ff83b83416a91c4af476f967a944e091426b8899d3d625d3",
+      "after_sha256": "7585f977d78c8fc674e8c54c212de4f860e8ab738e9c820daede40386882a948"
+    },
+    {
+      "file": "FCPLCN-CPU-08-1v0/TLP2363-DRC.json",
+      "before_sha256": null,
+      "after_sha256": "5a4338d3adc4078cadbc0b07077d6d67c84e3f59c010b654887f572885910233"
+    },
+    {
+      "file": "FCPLCN-CPU-08-1v0/TLP2363-ERC.json",
+      "before_sha256": null,
+      "after_sha256": "82b97f9041eb0f92068bd0b1132fe680871373992d1e71c89dab9687a5a2c9fe"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/3d/TLP2363-provenance.json",
+      "before_sha256": null,
+      "after_sha256": "a8b82df33df29e2a082852758e304aa5058250c69145b76f12a3d3a7b8781133"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/3d/TLP2363_5pin_SO6.wrl",
+      "before_sha256": null,
+      "after_sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/BOM.csv",
+      "before_sha256": "8781a1687f32bf71c139f18309dabbe56d9d8b038b8e4391abfa61951aec2951",
+      "after_sha256": "77f4973a8655531cd00c419058edc4e2fae10fc7f6521fd3737560b6fe135351"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0-schematic.png",
+      "before_sha256": "9da63936651f8431f8ff77bebd5f4887da47d4b6bf4e7be211dd070b89483290",
+      "after_sha256": "1f6f4b1a5f76bd64af11fc50ffd11ff40490a14510e44f0f7329f7604612edcf"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+      "before_sha256": "bdc71b7db992eb93a951d9b724f633bbe27e79bda40561acdc6740153a0fd3c4",
+      "after_sha256": "2ca12a73ac67e44febe7deca835caaef7aa68fa4d056655796cbc42f942ed805"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+      "before_sha256": "91eaa89745c59d0aba5876bd5e83335a7e7c0191ca38d809dd5546096938d803",
+      "after_sha256": "0108d27e380dc09d2521e429a9312e33c00f670485d69e7b7858cef291e177a6"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml",
+      "before_sha256": "2adabec7cca6edd5f4ab0c779c72284d5f14277f53f1d4e2d08a14f77b7211f8",
+      "after_sha256": "f84c2b329bf61c24e804bf96f71d922eabcd76633788c81b7cfde7de58f344e0"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/RelayBoard.kicad_sym",
+      "before_sha256": "def2747dc8e7359c741db77c0f93bb37d8a3ed6900ecc8c3acfc006703eeabba",
+      "after_sha256": "8b07bda9afa81b56a00280af32f25582c64cab8d73c834d4cc2cb4aa169a70e8"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/TLP2363_5pin_SO6.kicad_mod",
+      "before_sha256": null,
+      "after_sha256": "2b5df0e0bbc5e39641f56413a254f1a9274f185d070d1ca2bd1e6641da900c78"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-DRC.json",
+      "before_sha256": null,
+      "after_sha256": "545dd5a49f8b64db324a069363dca094c66029a58588b6afe5599aba37c5c294"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-ERC.json",
+      "before_sha256": null,
+      "after_sha256": "d0c5e879ba6e18297bff4546616f0c67ffa3a07677a7515a59a7360fb7b8f872"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-GND-stitches.json",
+      "before_sha256": null,
+      "after_sha256": "80cbbd32408eedfa36f03ef0b73f5e84e2b52822d9031df6b755985c848e3490"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-PCB-delta.json",
+      "before_sha256": null,
+      "after_sha256": "83afbcf0c5a3c349cbb6ddbecfc5935a6989aeadc8cc77addc0468858effac32"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-schematic-channel1.png",
+      "before_sha256": null,
+      "after_sha256": "d8a12c08cf753a132644b3e7a2509e677cb95dc9b12b1fa493d0ccf55fad2a22"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-schematic-section.png",
+      "before_sha256": null,
+      "after_sha256": "cd023a7d8f4ec4dab019fccf6d92e0076781e2c689447afe4ab64805eb496eea"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/TLP2363-schematic-validation.json",
+      "before_sha256": null,
+      "after_sha256": "6713e91680260022e465e2d8cc1e1f0560b4a316245ad5c9b4d6b75eb39a9061"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/datasheets/Toshiba-TLP2363-Rev4.0A.pdf",
+      "before_sha256": null,
+      "after_sha256": "7d3f2132ae01436d6bc86dfdd95c32b335ba611ed329d1a634650ed9aff75944"
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/schematic-svg/FCPLCN-RLY-1616-1v0.svg",
+      "before_sha256": "1692fe8a43802a8f22886c4dad76644c3e4e05604276951af4dd9fae0bbf0c90",
+      "after_sha256": "7190529f87423ff6c8709b226ba77a6588a42ac1b3a2d54ed38cf1a3371d67fd"
+    },
+    {
+      "file": "Power-budget.json",
+      "before_sha256": "f0e0ed42a964aa0dba11e7061e5eaa2e02b12052ee75ad60bf32c1087ac7f87b",
+      "after_sha256": "9d45fa7b3f431f44c879613e0a449042adc89f9933a9c141c3e86839b0552232"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "10b5acb76be68b71982824cdc193fb804a19022dbfa7a7c08bf8351c0f418fa0",
+      "after_sha256": "974210d81e583a31291b9b20e331c61a0ad734a766d22447ffc085c8ec37961c"
+    },
+    {
+      "file": "TLP2363-board-check.json",
+      "before_sha256": null,
+      "after_sha256": "3eae1a441c8b2bb031b1782487c51ea13be55c57b2af7eb372179dacea0bd508"
+    },
+    {
+      "file": "TLP2363-design-review.md",
+      "before_sha256": null,
+      "after_sha256": "0d4da998b36123620694f418bcd2bdb4081d7601d306f29a28d5f18498bb8a2a"
+    },
+    {
+      "file": "TLP2363-firmware-build.log",
+      "before_sha256": null,
+      "after_sha256": "06467f78437f4f70c171cc024c6070b99b911aedebdd82ac264551d5d9792202"
+    },
+    {
+      "file": "TLP2363-firmware-tests.log",
+      "before_sha256": null,
+      "after_sha256": "3da16357b9e12b08a361a055d1bd2ced11838dc74d925149e4974a0c6672436a"
+    },
+    {
+      "file": "TLP2363-firmware-validation.json",
+      "before_sha256": null,
+      "after_sha256": "21c68350e60516c54127092f898aabf30c22920bfb48d9277b2af1fb60f50612"
+    },
+    {
+      "file": "TLP2363-power-budget.json",
+      "before_sha256": null,
+      "after_sha256": "680ef6b814ab86a050ba6d627352f3808f1b7bd00c76bb52bb625109f1aa2097"
+    },
+    {
+      "file": "TLP2363-source-audit.json",
+      "before_sha256": null,
+      "after_sha256": "50cc73c290434dbd01ba3427414a79a7acfa7f096b34864e0b52caab8d2b29da"
+    },
+    {
+      "file": "tools/README.md",
+      "before_sha256": "0969f083d052af3300f5c54f3bfc6bc103c590e988cfe22a629829776587e9c3",
+      "after_sha256": "94f538b485e4a25407b2eea873575e1cfe1194b3b7023364a29be5dccd14fb04"
+    },
+    {
+      "file": "tools/audit_tlp2363_revision.py",
+      "before_sha256": null,
+      "after_sha256": "ac9067a8fca57438f5e54ef93993adcabb96c7c5c8dcb50051910e29c27f8163"
+    },
+    {
+      "file": "tools/build_tlp2363_assets.py",
+      "before_sha256": null,
+      "after_sha256": "39043e23671cb7b782ce67c95026fbaef87d5c4afa870c413b7ad8850b482bc6"
+    },
+    {
+      "file": "tools/check_board.py",
+      "before_sha256": "8e22659e5ded0014bb8a4513b121fd9db48841486083f0c379d7ad3f76a88392",
+      "after_sha256": "eb3edd323692e7d362f90dbc54c9512703ed1b914e078950cfa729e250ebdc76"
+    },
+    {
+      "file": "tools/passive_specifications.py",
+      "before_sha256": "236e375e76aa4bac4ffd4a07cec1cf4c9dbcc65cb93e539824441810e9d253bc",
+      "after_sha256": "32edfdbec8317851e8478d2820647d4f6f02bd3ec5c276c5388558f73e8a2c58"
+    },
+    {
+      "file": "tools/replace_lower_tlp2363_schematic.py",
+      "before_sha256": null,
+      "after_sha256": "6ee1c50da80d1f389ae0b8774528532e4e769a72c478b0449b2be8857405aadb"
+    }
+  ],
+  "obsolete_previews_removed": [
+    {
+      "file": "FCPLCN-CPU-08-1v0/schematic-svg/WiFi-Relay-16-Upper.svg",
+      "sha256": "a19b542e633c07bfbe0822c1643dcff80a6b1b365d10072d2172fa1cbdc6eda2",
+      "reason": "Obsolete generated preview; current named schematic SVGs and native top view replace it."
+    },
+    {
+      "file": "FCPLCN-RLY-1616-1v0/schematic-svg/WiFi-Relay-16-Lower.svg",
+      "sha256": "054ca8ebd070cd05168d92f24dce6daa646bfa81497e385a0f3c2f580d54fda5",
+      "reason": "Obsolete generated preview; current named schematic SVGs and native top view replace it."
+    },
+    {
+      "file": "Stack-alignment-top.svg",
+      "sha256": "d7e381487df86ee506ffdecc92165b8a5ac78ca52602591cd080b08ea1bf7509",
+      "reason": "Obsolete generated preview; current named schematic SVGs and native top view replace it."
+    }
+  ],
+  "only_current_two_boards_retained": true
+}

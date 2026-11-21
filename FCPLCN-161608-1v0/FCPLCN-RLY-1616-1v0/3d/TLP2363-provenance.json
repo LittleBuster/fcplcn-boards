@@ -1,0 +1,27 @@
+{
+  "part": "TLP2363",
+  "package": "11-4L1S / 5pin SO6",
+  "source": "https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363",
+  "land_pattern_page": 13,
+  "package_page": 18,
+  "body_max_mm": [
+    4.8,
+    3.95,
+    2.2
+  ],
+  "overall_lead_span_max_mm": 7.4,
+  "land_pad_mm": [
+    1.2,
+    0.8
+  ],
+  "land_row_pitch_mm": 6.3,
+  "lead_pitch_mm": 1.27,
+  "footprint_courtyard_mm": [
+    8,
+    4.5
+  ],
+  "model": "Native VRML geometry based on maximum envelope, not vendor STEP",
+  "model_sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b",
+  "model_maximum_marker_top_mm": 2.2,
+  "pin1_marker": "Visible F.SilkS dot outside pin1 land and flush 3D top marker"
+}

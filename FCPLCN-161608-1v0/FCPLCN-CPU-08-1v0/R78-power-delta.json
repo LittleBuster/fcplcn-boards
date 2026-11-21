@@ -1,0 +1,2635 @@
+{
+  "operation": "Upper R78 main and isolated supply conversion",
+  "before_sha256": "c7de4ac6ca92a84d8f4f738c6539bdf549df805621d1ef72afdfd61a631a0a9a",
+  "after_sha256": "000352a9e2a6e51c3be436edd5af61483475183f996707ad852a84e257117717",
+  "removed_footprints": [
+    "C2",
+    "C30",
+    "C31",
+    "C32",
+    "D8",
+    "L1",
+    "R41",
+    "R42",
+    "R43",
+    "R44",
+    "R45"
+  ],
+  "changed_footprints": {
+    "C13": {
+      "before": {
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          133.0,
+          96.0
+        ],
+        "angle": 90.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/+3V3_ISO",
+          "2": "/GND_ISO"
+        }
+      },
+      "after": {
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          134.2,
+          102.2
+        ],
+        "angle": 90.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/+3V3_ISO",
+          "2": "/GND_ISO"
+        }
+      }
+    },
+    "C4": {
+      "before": {
+        "value": "22uF 35V X5R",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          70.8,
+          82.5
+        ],
+        "angle": -90.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/+3V3",
+          "2": "/GND"
+        }
+      },
+      "after": {
+        "value": "22uF 35V X5R",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          70.8,
+          82.5
+        ],
+        "angle": -90.0,
+        "layer": "B.Cu",
+        "pads": {
+          "1": "/+3V3",
+          "2": "/GND"
+        }
+      }
+    },
+    "J6": {
+      "before": {
+        "value": "RIGHT · POWER / CTRL",
+        "footprint": "RelayStack:StackHeader_2x03_P2.54mm_Bottom",
+        "xy_mm": [
+          129.0,
+          82.0
+        ],
+        "angle": 90.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/GND",
+          "2": "/GND",
+          "3": "/MOD_VBUS",
+          "4": "/MOD_VBUS",
+          "5": "/MCP_RESET_N",
+          "6": "/GND"
+        }
+      },
+      "after": {
+        "value": "RIGHT · 12V / CTRL",
+        "footprint": "RelayStack:StackHeader_2x03_P2.54mm_Bottom",
+        "xy_mm": [
+          129.0,
+          82.0
+        ],
+        "angle": 90.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/GND",
+          "2": "/GND",
+          "3": "/+12V_LOGIC",
+          "4": "/+12V_LOGIC",
+          "5": "/MCP_RESET_N",
+          "6": "/GND"
+        }
+      }
+    },
+    "U3": {
+      "before": {
+        "value": "TPS54231DR",
+        "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+        "xy_mm": [
+          64.599999,
+          78.7
+        ],
+        "angle": 0.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/BUCK_BST",
+          "2": "/MOD_VBUS",
+          "3": "/BUCK_EN",
+          "4": "/BUCK_SS",
+          "5": "/BUCK_FB",
+          "6": "/BUCK_COMP",
+          "7": "/GND",
+          "8": "/BUCK_SW"
+        }
+      },
+      "after": {
+        "value": "R-78K3.3-1.0",
+        "footprint": "RelayStack:RECOM_R-78K3.3-1.0_SIP3_P2.54mm",
+        "xy_mm": [
+          71.4,
+          73.8
+        ],
+        "angle": 180.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/+12V_LOGIC",
+          "2": "/GND",
+          "3": "/+3V3"
+        }
+      }
+    },
+    "U5": {
+      "before": {
+        "value": "TLV1117LV33",
+        "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+        "xy_mm": [
+          127.0,
+          94.0
+        ],
+        "angle": 0.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/GND_ISO",
+          "2": "/+3V3_ISO",
+          "3": "/+5V_ISO"
+        }
+      },
+      "after": {
+        "value": "R-78K3.3-0.5",
+        "footprint": "RelayStack:RECOM_R-78K3.3-0.5_SIP3_P2.54mm",
+        "xy_mm": [
+          125.0,
+          97.0
+        ],
+        "angle": 0.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/+5V_ISO",
+          "2": "/GND_ISO",
+          "3": "/+3V3_ISO"
+        }
+      }
+    },
+    "J1": {
+      "before": {
+        "value": "LEFT · POWER / I2C",
+        "footprint": "RelayStack:StackHeader_2x03_P2.54mm_Bottom",
+        "xy_mm": [
+          55.0,
+          84.3
+        ],
+        "angle": 0.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/GND",
+          "2": "/GND",
+          "3": "/MOD_VBUS",
+          "4": "/MOD_VBUS",
+          "5": "/I2C_SDA",
+          "6": "/I2C_SCL"
+        }
+      },
+      "after": {
+        "value": "LEFT · 5V / I2C",
+        "footprint": "RelayStack:StackHeader_2x03_P2.54mm_Bottom",
+        "xy_mm": [
+          55.0,
+          84.3
+        ],
+        "angle": 0.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/GND",
+          "2": "/GND",
+          "3": "/MOD_VBUS",
+          "4": "/MOD_VBUS",
+          "5": "/I2C_SDA",
+          "6": "/I2C_SCL"
+        }
+      }
+    },
+    "C3": {
+      "before": {
+        "value": "22uF 35V X5R",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          73.5,
+          82.5
+        ],
+        "angle": -90.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/+3V3",
+          "2": "/GND"
+        }
+      },
+      "after": {
+        "value": "22uF 35V X5R",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          73.5,
+          82.5
+        ],
+        "angle": -90.0,
+        "layer": "B.Cu",
+        "pads": {
+          "1": "/+3V3",
+          "2": "/GND"
+        }
+      }
+    },
+    "C1": {
+      "before": {
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          59.3,
+          78.9
+        ],
+        "angle": -90.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/MOD_VBUS",
+          "2": "/GND"
+        }
+      },
+      "after": {
+        "value": "10uF 35V",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "xy_mm": [
+          59.6,
+          79.3
+        ],
+        "angle": 0.0,
+        "layer": "F.Cu",
+        "pads": {
+          "1": "/+12V_LOGIC",
+          "2": "/GND"
+        }
+      }
+    },
+    "C33": {
+      "before": {
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "xy_mm": [
+          66.2,
+          79.4
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": {
+          "1": "/MOD_VBUS",
+          "2": "/GND"
+        }
+      },
+      "after": {
+        "value": "100nF 50V",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "xy_mm": [
+          66.2,
+          79.4
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": {
+          "1": "/+12V_LOGIC",
+          "2": "/GND"
+        }
+      }
+    }
+  },
+  "copper": {
+    "removed": [
+      {
+        "uuid": "d9afe6e8-e395-4312-8f34-bdb4a719d56c",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          56.27,
+          83.0
+        ],
+        "end_mm": [
+          53.9,
+          80.63
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "6be838bd-b64f-4de9-b512-bcee36249e28",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          69.0,
+          73.35
+        ],
+        "end_mm": [
+          69.0,
+          78.3
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "b3c47a35-ace1-4f40-b724-a611a6616b6b",
+        "net": "/BUCK_SW",
+        "layer": "F.Cu",
+        "start_mm": [
+          65.55,
+          75.27
+        ],
+        "end_mm": [
+          67.075,
+          76.795
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "e0422caf-f5f6-4416-8ed3-6154ddc49e24",
+        "net": "/BUCK_COMP",
+        "layer": "F.Cu",
+        "start_mm": [
+          68.285,
+          79.335
+        ],
+        "end_mm": [
+          68.8,
+          79.85
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "61b2f4e3-8592-407f-b66e-910b878f4224",
+        "net": "/BUCK_SW",
+        "layer": "F.Cu",
+        "start_mm": [
+          65.55,
+          74.8
+        ],
+        "end_mm": [
+          65.55,
+          74.8
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "b85583ad-b7fe-4f3f-9bb6-6005ac1974fd",
+        "net": "/BUCK_SS",
+        "layer": "F.Cu",
+        "start_mm": [
+          62.125,
+          80.605
+        ],
+        "end_mm": [
+          63.7,
+          80.605
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "7e518fdf-64e1-4e3b-8743-cf75a42d7ce0",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          59.3,
+          77.9
+        ],
+        "end_mm": [
+          59.465,
+          78.065
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "55760505-44ca-49a1-98be-ef1fd0fa0e2e",
+        "net": "/BUCK_FB",
+        "layer": "F.Cu",
+        "start_mm": [
+          69.25,
+          81.0
+        ],
+        "end_mm": [
+          69.25,
+          81.0
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "0377f2e1-4630-4c5a-a34f-bbf2a90b4413",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          119.5,
+          77.74
+        ],
+        "end_mm": [
+          117.4683,
+          77.74
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "4bd57c15-dc57-456e-8b5b-da1115f59ad7",
+        "net": "/BUCK_COMP",
+        "layer": "F.Cu",
+        "start_mm": [
+          68.8,
+          79.85
+        ],
+        "end_mm": [
+          68.8,
+          79.85
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "a7ed3418-f7fd-4c2c-bc69-40831764af78",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          55.0,
+          86.84
+        ],
+        "end_mm": [
+          57.54,
+          86.84
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "c72971db-cb35-4772-930d-2ed5049365d5",
+        "net": "/BUCK_COMP_Z",
+        "layer": "B.Cu",
+        "start_mm": [
+          66.287499,
+          82.0
+        ],
+        "end_mm": [
+          66.349999,
+          82.0625
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "565f132f-db0b-4234-8244-b14d06a51c8e",
+        "net": "/BUCK_COMP_Z",
+        "layer": "B.Cu",
+        "start_mm": [
+          66.349999,
+          82.0625
+        ],
+        "end_mm": [
+          66.349999,
+          84.0
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "c8957d1b-dd40-471d-b28f-c36fb21027a6",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          64.765,
+          78.3
+        ],
+        "end_mm": [
+          64.2,
+          78.865
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "e7cf8af3-de19-4472-bad7-65db08ce0b60",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          68.515,
+          78.065
+        ],
+        "end_mm": [
+          69.4,
+          78.95
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "9613e9d5-3575-4a3f-ad76-c3dc344f57cb",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          114.3,
+          75.875
+        ],
+        "end_mm": [
+          116.2,
+          77.775
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "05f42272-d1c7-4a78-9f39-5aa7a0000580",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          114.3,
+          73.35
+        ],
+        "end_mm": [
+          114.3,
+          73.35
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "2eb0dd05-eb5c-4050-9417-c44415c032b7",
+        "net": "/BUCK_COMP",
+        "layer": "B.Cu",
+        "start_mm": [
+          70.5,
+          79.85
+        ],
+        "end_mm": [
+          71.25,
+          79.1
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "a5dc9ebc-a417-4e68-9036-a66e931f41a0",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          59.3,
+          80.375
+        ],
+        "end_mm": [
+          60.325,
+          80.375
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "65a57876-ac35-48de-bfc6-fe9123629567",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          73.5,
+          83.975
+        ],
+        "end_mm": [
+          73.975,
+          83.5
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "9119071d-67fc-49bb-a6a8-c553384567cc",
+        "net": "/BUCK_FB",
+        "layer": "B.Cu",
+        "start_mm": [
+          69.25,
+          82.2
+        ],
+        "end_mm": [
+          71.5875,
+          82.2
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "c8d12323-022d-41ee-9c2d-babbf76cbe02",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          74.1125,
+          81.3
+        ],
+        "end_mm": [
+          74.0,
+          81.3
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "918ffdd5-315a-4b15-a073-a69dc5c73f15",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          70.8,
+          83.975
+        ],
+        "end_mm": [
+          70.8,
+          83.975
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "cc263dc6-aca1-46fd-9ceb-8bd7e9097376",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          75.2,
+          79.325
+        ],
+        "end_mm": [
+          73.5,
+          81.025
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "d62b8f6e-c2cf-4391-a17d-37c27133f5f5",
+        "net": "/BUCK_FB",
+        "layer": "B.Cu",
+        "start_mm": [
+          72.2875,
+          81.5
+        ],
+        "end_mm": [
+          72.2875,
+          81.3
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "63b53bb9-1cae-4381-96fc-425ce96b8410",
+        "net": "/BUCK_COMP",
+        "layer": "B.Cu",
+        "start_mm": [
+          68.8,
+          79.85
+        ],
+        "end_mm": [
+          68.1125,
+          80.5375
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "4af093c9-a30d-44cb-bc28-d2df099dc224",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          131.54,
+          79.46
+        ],
+        "end_mm": [
+          131.54,
+          82.0
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "1d5158a7-4c57-4a1b-a2bb-96d9a1048c84",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          58.825,
+          76.95
+        ],
+        "end_mm": [
+          59.3,
+          77.425
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "440574db-e319-48b9-9579-7c8cce3d6f72",
+        "net": "/BUCK_COMP_Z",
+        "layer": "B.Cu",
+        "start_mm": [
+          66.287499,
+          81.6
+        ],
+        "end_mm": [
+          66.287499,
+          82.0
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "af7f38f3-757d-4c41-9036-aa7b436a48e7",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.2,
+          84.4
+        ],
+        "end_mm": [
+          70.6,
+          87.0
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "6671024d-2aa3-45b6-8cef-e3aca2b468c3",
+        "net": "/BUCK_FB",
+        "layer": "B.Cu",
+        "start_mm": [
+          69.25,
+          81.0
+        ],
+        "end_mm": [
+          69.25,
+          82.2
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "ae39d50b-ec87-4eb9-83f7-81d6f2a7f04d",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          59.465,
+          78.065
+        ],
+        "end_mm": [
+          62.125,
+          78.065
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "0b437b80-3cf7-4da2-9c71-0d1660bed6d8",
+        "net": "/BUCK_BST",
+        "layer": "F.Cu",
+        "start_mm": [
+          63.65,
+          74.8
+        ],
+        "end_mm": [
+          63.65,
+          75.27
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "ef229482-3de1-4a45-926d-a4e34fc3758a",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          69.0,
+          73.35
+        ],
+        "end_mm": [
+          114.3,
+          73.35
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "e3a56e95-cdb1-49cc-bf8a-49c58076d209",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          117.4333,
+          77.775
+        ],
+        "end_mm": [
+          117.4683,
+          77.74
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "2448acfa-bbe2-4d11-9f3b-6a1cd0ad7d23",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          69.0,
+          78.3
+        ],
+        "end_mm": [
+          64.765,
+          78.3
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "08ea65e7-35c4-41b1-83a8-33f44ebc1d70",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          57.54,
+          86.84
+        ],
+        "end_mm": [
+          56.27,
+          85.57
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "bf638b06-5f04-4589-988f-20b875163afa",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          74.1125,
+          83.5
+        ],
+        "end_mm": [
+          74.1125,
+          83.5
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "5770e6c3-90f3-4e43-9936-78e923209399",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          130.15,
+          94.625
+        ],
+        "end_mm": [
+          133.0,
+          97.475
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "775a01c4-4ece-4668-b892-c9e70922e975",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          62.125,
+          78.065
+        ],
+        "end_mm": [
+          63.4,
+          78.065
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "3f6ffd03-953f-4bfa-96c5-a05ed6b791b7",
+        "net": "/BUCK_COMP",
+        "layer": "B.Cu",
+        "start_mm": [
+          71.25,
+          79.1
+        ],
+        "end_mm": [
+          72.25,
+          79.1
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "b6597f40-7350-40a7-95ee-d898d39e25f9",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          130.15,
+          94.0
+        ],
+        "end_mm": [
+          130.15,
+          94.625
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "9900fb24-d885-4481-ab43-1f614ec1ab44",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          64.735,
+          79.4
+        ],
+        "end_mm": [
+          65.25,
+          79.4
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "80325917-53a6-4a21-9dc1-3ce64c086231",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          56.27,
+          85.57
+        ],
+        "end_mm": [
+          56.27,
+          83.0
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "782729ce-0cc4-4141-8e11-f98d169d3166",
+        "net": "/BUCK_SS",
+        "layer": "B.Cu",
+        "start_mm": [
+          65.0,
+          77.2
+        ],
+        "end_mm": [
+          65.25,
+          77.2
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "3ebd5160-d750-4b17-ac2b-0542d2861587",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          55.4875,
+          80.2
+        ],
+        "end_mm": [
+          55.4875,
+          80.2
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "2543c6ca-5422-4525-91dd-231ea2bdf2ac",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          116.2,
+          77.775
+        ],
+        "end_mm": [
+          117.4333,
+          77.775
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "34f6579d-ddc5-4337-a923-762de53ee83e",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          64.2,
+          78.865
+        ],
+        "end_mm": [
+          64.735,
+          79.4
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "87799245-a292-4f4b-a4bf-90c894c9ed6e",
+        "net": "/BUCK_SS",
+        "layer": "F.Cu",
+        "start_mm": [
+          65.0,
+          79.305
+        ],
+        "end_mm": [
+          65.0,
+          77.2
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "08cdb3bd-d6af-411e-9e19-0c6dd92cec6c",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          53.9,
+          80.63
+        ],
+        "end_mm": [
+          53.9,
+          79.5875
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "0ad01ce1-5947-47c6-b431-f1b115a61dc1",
+        "net": "/BUCK_COMP",
+        "layer": "F.Cu",
+        "start_mm": [
+          67.075,
+          79.335
+        ],
+        "end_mm": [
+          68.285,
+          79.335
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "2a9a2359-9e24-4dd0-90f4-4dc4a0f06a88",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          74.0,
+          81.3
+        ],
+        "end_mm": [
+          73.5,
+          80.8
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "fc157eb3-1944-4637-be1e-61af28ad538e",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          130.15,
+          94.0
+        ],
+        "end_mm": [
+          123.85,
+          94.0
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "dd77900f-c6bc-4c0a-bd5b-9f53a1522d98",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          63.4,
+          78.065
+        ],
+        "end_mm": [
+          64.2,
+          78.865
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "cc5a090e-b9ba-41d1-a204-eb459ded9351",
+        "net": "/BUCK_BST",
+        "layer": "F.Cu",
+        "start_mm": [
+          63.65,
+          75.27
+        ],
+        "end_mm": [
+          62.125,
+          76.795
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "f920399c-7a4f-4d94-a979-c52e6999d98a",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          67.075,
+          78.065
+        ],
+        "end_mm": [
+          68.515,
+          78.065
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "785ba355-6b3c-4349-9ab9-e1359f75acb4",
+        "net": "/BUCK_SW",
+        "layer": "F.Cu",
+        "start_mm": [
+          65.55,
+          74.8
+        ],
+        "end_mm": [
+          65.55,
+          75.27
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "737062ac-a6e7-4052-8596-886ff2ab5fb5",
+        "net": "/BUCK_EN",
+        "layer": "F.Cu",
+        "start_mm": [
+          61.54,
+          78.75
+        ],
+        "end_mm": [
+          62.125,
+          79.335
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "060e4a5b-523d-43c8-8d5a-755ff192a47e",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          53.9,
+          79.5875
+        ],
+        "end_mm": [
+          55.4875,
+          78.0
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "7cd63e29-7c59-4923-957e-48862a9a5a22",
+        "net": "/BUCK_FB",
+        "layer": "B.Cu",
+        "start_mm": [
+          72.2875,
+          81.5
+        ],
+        "end_mm": [
+          72.2875,
+          83.5
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "5e19c752-579a-4473-bd32-14a14c71803f",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          73.5,
+          81.025
+        ],
+        "end_mm": [
+          70.8,
+          81.025
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "e45257d9-4be9-43ba-94b7-89e19f54c493",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          55.4875,
+          78.0
+        ],
+        "end_mm": [
+          56.5375,
+          76.95
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "63a96637-ddf3-4b90-ad9c-5657799fffb9",
+        "net": "/BUCK_FB",
+        "layer": "F.Cu",
+        "start_mm": [
+          67.075,
+          80.605
+        ],
+        "end_mm": [
+          68.855,
+          80.605
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "ec63c64b-8d1c-48d6-bd49-73483e8f8a4d",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          59.3,
+          77.425
+        ],
+        "end_mm": [
+          59.3,
+          77.9
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "c6cd302a-85b7-4624-9649-938271b3b03e",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          56.5375,
+          76.95
+        ],
+        "end_mm": [
+          58.825,
+          76.95
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "146afc4a-39e4-4e96-bec4-ea78c1180931",
+        "net": "/BUCK_FB",
+        "layer": "F.Cu",
+        "start_mm": [
+          68.855,
+          80.605
+        ],
+        "end_mm": [
+          69.25,
+          81.0
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "acda1fdf-cdf8-4387-87c0-5ebc8cf440d7",
+        "net": "/BUCK_EN",
+        "layer": "F.Cu",
+        "start_mm": [
+          58.0625,
+          78.75
+        ],
+        "end_mm": [
+          61.54,
+          78.75
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "02965c2b-c429-4b07-a54b-f32630b2cb71",
+        "net": "/BUCK_SS",
+        "layer": "F.Cu",
+        "start_mm": [
+          65.0,
+          77.2
+        ],
+        "end_mm": [
+          65.0,
+          77.2
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "85925775-73b8-4ffe-9372-618473a81dfc",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          129.82,
+          77.74
+        ],
+        "end_mm": [
+          131.54,
+          79.46
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "6d50fd73-977f-4280-acc8-3f912f75ba17",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          129.9396,
+          100.5354
+        ],
+        "end_mm": [
+          133.0,
+          97.475
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "64ac0765-03f6-4ac0-8dd7-5e0ae156eb38",
+        "net": "/BUCK_COMP",
+        "layer": "B.Cu",
+        "start_mm": [
+          68.1125,
+          80.5375
+        ],
+        "end_mm": [
+          68.1125,
+          81.6
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "547403dc-f6cf-4c65-9cc5-366a701e7119",
+        "net": "/BUCK_SW",
+        "layer": "F.Cu",
+        "start_mm": [
+          69.755,
+          76.795
+        ],
+        "end_mm": [
+          69.95,
+          76.6
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "151df34f-7b17-4004-ad5b-f6d3c0948874",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          73.975,
+          83.5
+        ],
+        "end_mm": [
+          74.1125,
+          83.5
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "4d00abb5-f849-4012-9efe-9a391fb28c2e",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          119.5,
+          77.74
+        ],
+        "end_mm": [
+          129.82,
+          77.74
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "a486e627-b03b-462f-a931-b0deee2c1149",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          114.3,
+          73.35
+        ],
+        "end_mm": [
+          114.3,
+          75.875
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "7f43ffa9-7755-4769-8157-cae5b6b82138",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          56.27,
+          85.57
+        ],
+        "end_mm": [
+          56.27,
+          85.57
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "961b1797-b3d7-40a7-b21e-942159607be9",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          70.8,
+          83.975
+        ],
+        "end_mm": [
+          73.5,
+          83.975
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "47413bd2-8ee2-4762-9a8c-542173e34ebb",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          74.1125,
+          81.3
+        ],
+        "end_mm": [
+          73.2,
+          81.3
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "6b7e0839-abf6-4658-81c8-9e7c6145ca1a",
+        "net": "/BUCK_FB",
+        "layer": "B.Cu",
+        "start_mm": [
+          71.5875,
+          82.2
+        ],
+        "end_mm": [
+          72.2875,
+          81.5
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "bbe02927-b41a-458e-81a4-e7fcfcd65683",
+        "net": "/BUCK_SW",
+        "layer": "B.Cu",
+        "start_mm": [
+          65.55,
+          74.8
+        ],
+        "end_mm": [
+          66.2,
+          74.15
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "3cd274b1-7ba1-4225-a291-7374fdc2da3a",
+        "net": "/BUCK_EN",
+        "layer": "F.Cu",
+        "start_mm": [
+          57.3125,
+          78.0
+        ],
+        "end_mm": [
+          58.0625,
+          78.75
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "5dc0f600-86a8-4bd7-9ee9-bc4494bd1bca",
+        "net": "/BUCK_COMP",
+        "layer": "B.Cu",
+        "start_mm": [
+          68.8,
+          79.85
+        ],
+        "end_mm": [
+          70.5,
+          79.85
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "498261a5-588a-43d9-8275-5a8c45277036",
+        "net": "/BUCK_SW",
+        "layer": "F.Cu",
+        "start_mm": [
+          67.075,
+          76.795
+        ],
+        "end_mm": [
+          69.755,
+          76.795
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "bc8fbfcb-34a4-4ec4-b6d6-b45fae0af0af",
+        "net": "/BUCK_SW",
+        "layer": "B.Cu",
+        "start_mm": [
+          66.2,
+          74.15
+        ],
+        "end_mm": [
+          66.599999,
+          74.15
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "d17426ce-cef3-4a0c-a10e-1d071aa04875",
+        "net": "/BUCK_EN",
+        "layer": "F.Cu",
+        "start_mm": [
+          57.3125,
+          78.0
+        ],
+        "end_mm": [
+          57.3125,
+          80.2
+        ],
+        "width_mm": 0.22,
+        "via": false
+      },
+      {
+        "uuid": "7a20bc9d-06bf-4a94-806d-779476c60581",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.2,
+          81.3
+        ],
+        "end_mm": [
+          73.2,
+          84.4
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "810ba5de-35c0-402f-ae45-9d6e341a3cf3",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          69.4,
+          78.95
+        ],
+        "end_mm": [
+          69.4,
+          78.95
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "401e1027-1786-488a-8789-0819d5bb8a2e",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          64.2,
+          78.865
+        ],
+        "end_mm": [
+          64.2,
+          78.865
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "88fa4b5b-56ab-43f4-add9-96297fbc5238",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          69.0,
+          73.35
+        ],
+        "end_mm": [
+          69.0,
+          73.35
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "4a599c80-3cfb-4bea-9277-999fbc36f715",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.5,
+          80.8
+        ],
+        "end_mm": [
+          73.5,
+          80.7
+        ],
+        "width_mm": 0.35,
+        "via": false
+      },
+      {
+        "uuid": "f84b86df-07b6-4160-8ff6-9844ef1d9fb3",
+        "net": "/BUCK_SS",
+        "layer": "F.Cu",
+        "start_mm": [
+          63.7,
+          80.605
+        ],
+        "end_mm": [
+          65.0,
+          79.305
+        ],
+        "width_mm": 0.22,
+        "via": false
+      }
+    ],
+    "added": [
+      {
+        "uuid": "c09c016e-0a84-4045-9cf0-a3a34c1728bc",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.2,
+          79.0
+        ],
+        "end_mm": [
+          73.5,
+          79.0
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "21ff8ebf-ae67-4c24-93c8-731a5849a3a9",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          72.1,
+          77.8
+        ],
+        "end_mm": [
+          75.3,
+          74.6
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "b1240b2d-8ad4-4b24-98e2-f2372d9b0428",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          66.32,
+          73.8
+        ],
+        "end_mm": [
+          66.32,
+          76.22
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "cf0799af-ad0c-4a60-8b80-c679b7a92548",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          110.4,
+          74.6
+        ],
+        "end_mm": [
+          111.6,
+          75.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "771c755b-3a17-4c55-9509-eb5ba6ea847f",
+        "net": "/+12V_LOGIC",
+        "layer": "B.Cu",
+        "start_mm": [
+          131.54,
+          79.46
+        ],
+        "end_mm": [
+          129.7,
+          77.62
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "921a510f-48ae-4695-8514-5e3adc29f0bc",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          74.4,
+          79.8
+        ],
+        "end_mm": [
+          74.4,
+          79.8
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "4df44d94-5448-40f7-92a0-822db865ba8a",
+        "net": "/+12V_LOGIC",
+        "layer": "B.Cu",
+        "start_mm": [
+          71.4,
+          73.8
+        ],
+        "end_mm": [
+          70.85,
+          73.8
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "e0e3b393-0243-4d44-8573-a49e9e5ceefb",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          73.8,
+          78.7
+        ],
+        "end_mm": [
+          78.325,
+          78.7
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "4d1b37bb-4e50-4734-be2b-f710a3a6726d",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          66.32,
+          73.8
+        ],
+        "end_mm": [
+          66.32,
+          72.3
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "ceabbb74-bd3e-4d6d-acc1-468df2ebf23c",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.5,
+          81.025
+        ],
+        "end_mm": [
+          70.8,
+          81.025
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "34846751-1246-4600-a59b-6a35d84450ca",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          71.1,
+          76.9
+        ],
+        "end_mm": [
+          73.2,
+          79.0
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "dd699771-621c-4bef-b1f7-980079a31521",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          57.54,
+          86.84
+        ],
+        "end_mm": [
+          58.86,
+          86.84
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "e562c727-1dca-4d2e-95b7-4b37bb410ae9",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          119.5,
+          77.74
+        ],
+        "end_mm": [
+          119.465,
+          77.775
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "d7dbfd79-42d1-4b03-9936-8afe5a7b6a0b",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          130.08,
+          99.555
+        ],
+        "end_mm": [
+          134.2,
+          103.675
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "dfbee4ff-04b6-4a59-a105-909349e1ba7c",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          129.0,
+          76.9
+        ],
+        "end_mm": [
+          129.0,
+          73.2
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "b148abdd-6574-416f-978d-8260a7efa258",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.0,
+          72.3
+        ],
+        "end_mm": [
+          73.5,
+          72.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "d1c52c08-2d3a-45de-ba83-9028156f1968",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          72.2,
+          80.0
+        ],
+        "end_mm": [
+          72.2,
+          80.0
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "69ec5f51-231e-4a0c-9070-77ea7e0f3d96",
+        "net": "/+12V_LOGIC",
+        "layer": "B.Cu",
+        "start_mm": [
+          131.54,
+          79.46
+        ],
+        "end_mm": [
+          131.54,
+          82.0
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "c25f1618-bf50-47fa-8702-029eb513cf9a",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          111.6,
+          75.8
+        ],
+        "end_mm": [
+          112.6,
+          75.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "a45056ee-dbf2-4ebc-b135-87b11feb841c",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          58.86,
+          86.84
+        ],
+        "end_mm": [
+          67.9,
+          77.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "faaed4af-0b46-4d32-818a-38c1a51388ed",
+        "net": "/+12V_LOGIC",
+        "layer": "B.Cu",
+        "start_mm": [
+          70.85,
+          73.8
+        ],
+        "end_mm": [
+          65.25,
+          79.4
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "7410745d-24df-4df0-bf2f-1eb402fb9b81",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          110.0,
+          72.8
+        ],
+        "end_mm": [
+          110.0,
+          75.5
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "6cf3204e-2436-4f44-b9ae-cd85d9349980",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.5,
+          81.025
+        ],
+        "end_mm": [
+          72.1,
+          82.425
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "447903f8-8652-4eba-a092-e87f634cae86",
+        "net": "/+12V_LOGIC",
+        "layer": "B.Cu",
+        "start_mm": [
+          129.7,
+          77.62
+        ],
+        "end_mm": [
+          129.7,
+          77.6
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "4c14dffb-ad37-407a-a5b6-dce61050027e",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          114.54,
+          77.74
+        ],
+        "end_mm": [
+          119.5,
+          77.74
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "7fdc5123-df89-404d-92be-118b22ce1d5e",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          72.1,
+          85.5
+        ],
+        "end_mm": [
+          70.6,
+          87.0
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "487285d1-0aa9-4ba8-a4e6-7454160d3cbf",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          112.6,
+          75.8
+        ],
+        "end_mm": [
+          114.54,
+          77.74
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "2386788f-a8b4-41c0-82ea-ec028447ec89",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.5,
+          79.0
+        ],
+        "end_mm": [
+          73.5,
+          81.025
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "333461e9-f2a9-4378-9725-1be883bb15ff",
+        "net": "/MOD_VBUS",
+        "layer": "B.Cu",
+        "start_mm": [
+          119.465,
+          77.775
+        ],
+        "end_mm": [
+          116.2,
+          77.775
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "093b0b19-9691-49a3-b131-1b4db1baa32c",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          74.2,
+          80.0
+        ],
+        "end_mm": [
+          74.4,
+          79.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "939e54b0-07cd-411a-ad94-fb89af8fae57",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          129.7,
+          77.6
+        ],
+        "end_mm": [
+          129.0,
+          76.9
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "c5f96fc4-e8e1-4bc7-9c5d-cf42427dda3c",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          55.0,
+          86.84
+        ],
+        "end_mm": [
+          57.54,
+          86.84
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "e2536cd9-1295-416c-8fa1-618dde0b8604",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          130.08,
+          97.0
+        ],
+        "end_mm": [
+          130.08,
+          99.555
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "973925f6-4e3c-4d61-a2ac-f62158a615cf",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          129.7,
+          77.6
+        ],
+        "end_mm": [
+          129.7,
+          77.6
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "537a4f7d-9fca-47db-b6ad-afe2d486a80c",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          67.0,
+          76.9
+        ],
+        "end_mm": [
+          71.1,
+          76.9
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "29ff79bc-e1ec-4418-ba8f-c48bbd89c525",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          67.9,
+          77.8
+        ],
+        "end_mm": [
+          72.1,
+          77.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "7bf8a99e-26be-4acf-9771-09e56bf092f8",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          112.6,
+          75.8
+        ],
+        "end_mm": [
+          112.6,
+          75.8
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "87f53901-9b74-4806-b49e-ca67a354b0c0",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          87.0,
+          71.9
+        ],
+        "end_mm": [
+          92.0,
+          71.9
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "ff029452-5ce8-4a8c-b0ee-6be7f31fcc4d",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          66.32,
+          72.3
+        ],
+        "end_mm": [
+          73.0,
+          72.3
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "e25c5d13-3f8e-4bb6-87be-c5e497e8d361",
+        "net": "/GND",
+        "layer": "F.Cu",
+        "start_mm": [
+          72.2,
+          80.0
+        ],
+        "end_mm": [
+          74.2,
+          80.0
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "4fba87e2-912c-48df-b29e-50aea5f631c9",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          65.125,
+          72.3
+        ],
+        "end_mm": [
+          58.125,
+          79.3
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "b371b8cb-1703-4ac4-a1b9-f624ea162ce9",
+        "net": "/MOD_VBUS",
+        "layer": "F.Cu",
+        "start_mm": [
+          75.3,
+          74.6
+        ],
+        "end_mm": [
+          110.4,
+          74.6
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "d0289bd3-8e63-4feb-9d12-332352744104",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          130.08,
+          97.0
+        ],
+        "end_mm": [
+          129.9396,
+          97.1404
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "35d49f32-8211-4edf-9479-4f5cd132c32f",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          72.0,
+          73.2
+        ],
+        "end_mm": [
+          129.0,
+          73.2
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "ee3fffdb-5050-445b-bde5-c6dfbc4cd00e",
+        "net": "/+3V3_ISO",
+        "layer": "F.Cu",
+        "start_mm": [
+          129.9396,
+          97.1404
+        ],
+        "end_mm": [
+          129.9396,
+          100.5354
+        ],
+        "width_mm": 0.45,
+        "via": false
+      },
+      {
+        "uuid": "ff903bad-2510-426b-b383-d5cd5fbdccd6",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          71.4,
+          73.8
+        ],
+        "end_mm": [
+          69.9,
+          72.3
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "1b8e49d1-b24d-413c-84b3-a6f389367ce4",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          86.1,
+          72.8
+        ],
+        "end_mm": [
+          87.0,
+          71.9
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "b8fb4289-151c-4ff5-ae5c-53e71d8a62e4",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          92.0,
+          71.9
+        ],
+        "end_mm": [
+          92.9,
+          72.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "fe8e8016-a8cc-4d04-acc6-1b9c150030fc",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          72.1,
+          82.425
+        ],
+        "end_mm": [
+          72.1,
+          85.5
+        ],
+        "width_mm": 0.3,
+        "via": false
+      },
+      {
+        "uuid": "9f6cbcd4-301c-4763-a1d4-fd256bb7fd52",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          71.1,
+          76.9
+        ],
+        "end_mm": [
+          71.1,
+          76.9
+        ],
+        "width_mm": 0.8,
+        "via": true
+      },
+      {
+        "uuid": "d8d7e704-9a1d-41f5-9bcd-d63a4b223d3d",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          71.4,
+          73.8
+        ],
+        "end_mm": [
+          72.0,
+          73.2
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "de248d6d-2093-48a9-bcd6-fad02908bc3c",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          73.5,
+          72.8
+        ],
+        "end_mm": [
+          86.1,
+          72.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "cdb73442-2d90-4001-853b-c5a12f9b3011",
+        "net": "/+12V_LOGIC",
+        "layer": "F.Cu",
+        "start_mm": [
+          69.9,
+          72.3
+        ],
+        "end_mm": [
+          65.125,
+          72.3
+        ],
+        "width_mm": 0.5,
+        "via": false
+      },
+      {
+        "uuid": "861901ae-e49b-448c-b8d7-adfd348017db",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          73.5,
+          79.0
+        ],
+        "end_mm": [
+          73.8,
+          78.7
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "27da9971-6d11-4c9a-ab36-e586973f27c2",
+        "net": "/+3V3",
+        "layer": "F.Cu",
+        "start_mm": [
+          66.32,
+          76.22
+        ],
+        "end_mm": [
+          67.0,
+          76.9
+        ],
+        "width_mm": 0.65,
+        "via": false
+      },
+      {
+        "uuid": "fb4b7638-a888-4ae7-805b-6631c3c9e823",
+        "net": "/+3V3",
+        "layer": "B.Cu",
+        "start_mm": [
+          92.9,
+          72.8
+        ],
+        "end_mm": [
+          110.0,
+          72.8
+        ],
+        "width_mm": 0.5,
+        "via": false
+      }
+    ],
+    "modified": {
+      "ef652d51-9b6c-4174-a23d-8a7eedcc46c0": {
+        "before": {
+          "net": "/GND",
+          "layer": "F.Cu",
+          "start_mm": [
+            70.0,
+            71.8
+          ],
+          "end_mm": [
+            70.0,
+            71.8
+          ],
+          "width_mm": 0.8,
+          "via": true
+        },
+        "after": {
+          "net": "/GND",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.0,
+            71.8
+          ],
+          "end_mm": [
+            74.0,
+            71.8
+          ],
+          "width_mm": 0.8,
+          "via": true
+        }
+      },
+      "87ab1789-c30d-4acc-b6eb-b86d0bc821cc": {
+        "before": {
+          "net": "/+3V3",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.2,
+            77.35
+          ],
+          "end_mm": [
+            75.2,
+            79.325
+          ],
+          "width_mm": 0.65,
+          "via": false
+        },
+        "after": {
+          "net": "/+3V3",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.2,
+            77.35
+          ],
+          "end_mm": [
+            75.2,
+            78.7
+          ],
+          "width_mm": 0.65,
+          "via": false
+        }
+      },
+      "f65137b2-fe10-4997-bef6-af2afcca4ee9": {
+        "before": {
+          "net": "/+3V3",
+          "layer": "F.Cu",
+          "start_mm": [
+            73.5,
+            80.7
+          ],
+          "end_mm": [
+            73.5,
+            80.7
+          ],
+          "width_mm": 0.8,
+          "via": true
+        },
+        "after": {
+          "net": "/+3V3",
+          "layer": "F.Cu",
+          "start_mm": [
+            73.5,
+            79.0
+          ],
+          "end_mm": [
+            73.5,
+            79.0
+          ],
+          "width_mm": 0.8,
+          "via": true
+        }
+      }
+    }
+  },
+  "validation": {
+    "native_erc_violations": 0,
+    "native_drc_violations": 0,
+    "native_unconnected_items": 0,
+    "native_schematic_parity": 0,
+    "strict_crossings": 0,
+    "non_45_90": 0,
+    "copper_layers": 2
+  },
+  "notes": [
+    "Main U3 is R-78K3.3-1.0 powered by protected +12V_LOGIC on right stack pins3/4.",
+    "Isolated U5 is R-78K3.3-0.5 powered by +5V_ISO; ground domains remain separate.",
+    "C3/C4 output MLCCs moved to B.Cu at unchanged XY to clear maximum module body; no via in their pads.",
+    "C1 now explicitly10uF35V and C33 100nF50V.",
+    "5V remains on left stack pins3/4 for TMR-1-0511.",
+    "Power routing uses normal0.2mm clearance, standard0.8/0.3mm vias,45/90-degree segments; new power routes simplified to remove grid jogs."
+  ]
+}

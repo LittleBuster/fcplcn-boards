@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "render_engine": "Native KiCad pcb export vrml + pcb render; no image-generation or image-editing postprocessing",
+  "source_files_preserved": true,
+  "renderer_manifest": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/3D-render-validation.json",
+  "source_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "d81498f71022ca1f942df70da954d846e54012d6cf7ddeec27a39aa6dbe32d95",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "582bc9ef1c622f850fe10d0003a8f2d132e9072f960d98f3c7749ed950fc07bd",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "d3d44cb511be23a925795c674c17d145b8cb6cd267b6d15ab6041fd66010a0a4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "b5635554fc8ff19e1013d3eb3e013aaffb88c1816694acc6b47046ad1abafb71",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/APAQ_350ARHA101M06X8P00_H9max.wrl": "b9854934d71e6db2476d3cc82713bb347a19ed3eae790fd65537bdd4f30e7d2e",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/C1-D8H12.wrl": "3661cad8c040d3ef81301e1ec000bece2b90293c061671ed3d902c9f4d6ffff0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/ESP32-C3_Super_Mini-assembly.wrl": "68b783b6e316c1879c710b0251ad29fcec33f34083d4b1e4f97af821420ef848",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/HF49FD-1H11.step": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/KF128-2P.wrl": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/KF128-8P.wrl": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/LTV847S.wrl": "6c916c5190b3409f646ea676eb07092ccc6e8412ae7c0f68ef8b3a46e4affb44",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step": "05ad7d4945131c76ec7b9448dd9cbb5376b56adcd564c58d93e50ca7870fab1f",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/3d/W5500_Lite_2x6-assembly.wrl": "c9787e50d7d567ad870ee4e7197a75ca693504010d8962b1c6694c6b0b85f401",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/ADM2687E_RI-16-2.wrl": "78fc299a8ac88660ba08bae32433f784902a2909bfde543b50c066a11472949a",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/BatteryHolder_QJ_CR1220-2_C70381.wrl": "6a8f69ef759bfe98e390059fb8392cab30b2e60e72088d1eeec473e298456e6b",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/D_SMA.step": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/KF128-3P.wrl": "d598b818b6fe9eca2051874c6661f19e053543e199034fe5eecf61662048aaa0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/KF128-4P.wrl": "b46d141ae4db1b0ac8d0a6e152699a60f02ef2aca8210554447655b4d5e09add",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/KF128-8P.wrl": "226920cce14c85ceafed0cc79e470a41856c8e9ccba1ca4d9fddca7caf89ed54",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-1.0.wrl": "84767b8854cd9aa834ef1a710195fd4a307f97a455acd26208a391a5edb8ed69",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/SOIC-8_3.9x4.9mm_P1.27mm.step": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/SW_SPST_TS-1088-xR020.step": "ebfe1a50181c9a502cd98b44b03a5ce8568ff7c77d4fd5906caaef4b9a290da8",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/StackHeader_2x03_P2.54mm_Bottom.wrl": "90a23b38676afc3a6bbe0071635019a0dda159b4a15868bde79be88ad7b0c82b",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_GCT_USB4120_Vertical.wrl": "53776f37f82434833b6b0d3ace5e82c7069dd3517b7bb6e2c218d8238f85ec85",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.wrl": "64226a267ab1e0680d23f4ad7f3dfbc8b032d718c3cae9e3c309e01a29d314b1",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/W5500_Lite_2x6-assembly.wrl": "2f1c19b8a6bcd1400b4f38ad26e18ff8607c7ae4f48a0dcc40fb25064aaf8a91"
+  },
+  "views": [
+    {
+      "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Stack-3D-preview.png",
+      "sha256": "8b49f4882bdbd65b505d4ddf4656bff20b96e6d0d70f3b9b6b3081c01e6b54c1",
+      "pixels": [
+        1712,
+        1232
+      ],
+      "visually_inspected": true,
+      "observation": "Viewed full image: both boards assembled, front-facing RJ45 opening visible toward lower input terminals, U12 black R78 case visibly raised above Upper with its feet seated; 16 relays and all terminal groups rendered."
+    },
+    {
+      "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Stack-3D-top.png",
+      "sha256": "fde57473f3b60a53a3d392d9cd2b588a307096982e851075f2d5de0b8de556ee",
+      "pixels": [
+        1712,
+        1232
+      ],
+      "visually_inspected": true,
+      "observation": "Viewed full image: top registration and 16 relays clear; U12 present beside DATA terminal, controller centered, W5500 left; RS485 and I2C groups visible with pin legends."
+    },
+    {
+      "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Base-3D-preview.png",
+      "sha256": "25a402e8997b9773ca6f64d5081d815fe2f53cc860d99f96689b3c2906f14ed9",
+      "pixels": [
+        1712,
+        1232
+      ],
+      "visually_inspected": true,
+      "observation": "Viewed full image: FCPLCN-RLY-1616-1v0-only render has no obsolete MCU/W5500 module; two female interboard connectors and three low-profile bulk capacitors visible; driver/expander models present."
+    },
+    {
+      "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Base-3D-top.png",
+      "sha256": "9030b62f2ad9e83e3cfb1fd8d18595d023f9fe6cd75a59e4a4a68e68d7ec751d",
+      "pixels": [
+        1712,
+        1232
+      ],
+      "visually_inspected": true,
+      "observation": "Viewed full image: relay COM labels and all 16 input pairs visible; lower input terminals align at bottom edge; lower R78 5V body and retained LDO present."
+    },
+    {
+      "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0-3D-bottom.png",
+      "sha256": "d2ce91927ac4a2253d0d6e1e303987ca29a2e0a8ed17bceb3d4448b5d59e14a1",
+      "pixels": [
+        1712,
+        1232
+      ],
+      "visually_inspected": true,
+      "observation": "Viewed full image: RTC holder/battery, ADM2687E, underside passives, USB DIP holes and interboard header models all present; no missing major component models noticed."
+    },
+    {
+      "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0-3D-bottom-preview.png",
+      "sha256": "f3711b2b05c76631e62c44b34db52f1d016263b699a70b5c5967b80634c701f7",
+      "pixels": [
+        1712,
+        1232
+      ],
+      "visually_inspected": true,
+      "observation": "Viewed full image: underside component heights and male interboard pins visible; R78 through-hole tails visible; front RJ45 mouth and upper terminal bodies rendered below the flipped board."
+    }
+  ],
+  "mechanics": {
+    "upper_top_above_lower_top_mm": 12.65,
+    "board_to_board_clearance_mm": 11.05,
+    "socket_height_mm": 8.51,
+    "header_body_height_mm": 2.54
+  },
+  "U12_model_check": {
+    "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl",
+    "nominal_case_height_including_feet_mm": 10.2,
+    "max_height_from_provenance_mm": 10.7,
+    "nominal_tail_below_Upper_F_mm": 4.1,
+    "visual_body_present_and_seated": true
+  },
+  "scope": "Visual inspection and immutable-source native-render verification; component maximum-envelope/native electrical checks are separate release reports.",
+  "additional_lower_underside": {
+    "file": "FCPLCN-RLY-1616-1v0-3D-bottom-preview.png",
+    "sha256": "aa2e7e362aa0396b0f61e057af0c015b8c9760b92a5ecdce9ffc690d7ebaa907",
+    "lower_pcb_sha256": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+    "inspected": true,
+    "visible_new_parts": [
+      "R12 CRM2512 1ohm",
+      "C13 100nF"
+    ],
+    "D3_existing_large_package_visible": true
+  }
+}

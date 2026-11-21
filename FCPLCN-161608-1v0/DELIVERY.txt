@@ -1,0 +1,30 @@
+FCPLCn — Future City PLC Next
+Hardware: FCPLCN-161608-1v0 / STACK / DATA8 + FRAM + 16 TLP2363 + input RC + accessible JP2
+
+Open FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro
+or FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro.
+Both boards: 2 copper layers, nominal thickness 1.6 mm.
+RLY: 101 x 86 mm; CPU: 89 x 49.44 mm; nominal board gap 11.05 mm.
+8 direct-CPU isolated DATA ports, J3 10P; separate I2C and RS485.
+Purchasing BOM: 396 parts/modules (CPU148 + RLY248); one CR1220 cell is separate.
+Current release: Support-removal-validation.json / Support-removal-source-audit.json.
+Both extra support pairs removed; original two interboard connections and front JP2 remain.
+JP2 120-ohm RS485 termination jumper moved to front edge beside J8, 120R legend.
+Current input verification: Input-RC-validation.json / Input-RC-source-audit.json.
+Lower 3.3V: 82.5mA component estimate, 100mA supply allocation; input RC uses 12V.
+Lower 5V-to-3.3V LDO: about 0.17W at nominal rails and allocated load.
+Per input: 1.2k LED resistor, 220R/1uF prefilter, 4.7k LED shunt, existing output RC.
+Existing button startup/glitch handling: 51 host tests passed; firmware unchanged this operation.
+Previous labeling/D3 verification: Labels-validation.json / Labels-source-audit.json.
+Both front silkscreens carry board names and Denisov Foundation Ltd.
+CPU I2C terminal legend: 3V3, SDA, SCL, G; D3 moved inward 2.5 mm.
+FRAM: U9 on RLY, 8192 bytes, internal I2C address 0x50, 3.3 V.
+MCP GPPUA/GPPUB must stay zero for the TLP2363 RC circuit.
+Firmware initialization, readback and reset recovery updated; 22 tests and ESP-IDF build passed.
+Historical audit reports certify only their own input hashes.
+27 native 3D views: Previews/native-all-views/index.html.
+Local libraries/custom models included; standard KiCad 10 libraries required.
+Mechanical assembly and prototype limitations: ASSEMBLY.md.
+Physical EMC/ESD/surge, USB signal and thermal qualification remain pending.
+USB-only programming power has not been added.
+Install/remove the upper PCB with power off.

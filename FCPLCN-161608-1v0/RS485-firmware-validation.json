@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-11-13T03:10:37.788663+00:00",
+  "source_sha256": {
+    "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/firmware/base/main/board_profile.cpp": "60bcd97c989b0ff55eeaf18ad4629efcc1bd31a215fb1e5ed7240f5c2592f7a4",
+    "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/firmware/base/main/board_profile.h": "d2271d9fda7d8724f1acf6c2fdaa93f33d7a8470ecb4bc2ddf7cee0a5cfb79a0",
+    "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/firmware/base/tests/browser/ui_test.cjs": "9abfc3602981e78fa76f7a583505613d75867b649b334eff6f11d3019f38c5fa"
+  },
+  "profile_rs485": {
+    "uart": 1,
+    "tx_gpio": 8,
+    "rx_gpio": 47,
+    "direction_gpio": 48,
+    "isolated": true,
+    "driver_implemented": false
+  },
+  "safe_boot": {
+    "GPIO8_TX": true,
+    "GPIO48_DIR": false
+  },
+  "checks": {
+    "tools/firmware/test-base-config": "passed 1/1",
+    "tools/firmware/test-base-ui": "passed browser and hardware selection checks",
+    "tools/firmware/build-base": "passed ESP-IDF6.1, ESP32S3 N16R8"
+  },
+  "firmware_flashed": false,
+  "protocol_communication_on_hardware_tested": false,
+  "artifact_sha256": {
+    "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/firmware/base/dist/FCPLCn.bin": "af5ed9c4f329d0f6cbf3f9772aede35e01ec11c4e26ca7580164214de1c695dd",
+    "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/firmware/base/dist/FCPLCn-full.bin": "fc5c207f528669d22dba33e9aabda027100fc8fffb5b372c3aab3e3b67d99759"
+  }
+}

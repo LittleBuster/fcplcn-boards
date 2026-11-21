@@ -1,0 +1,633 @@
+{
+  "upper_path": ".work/data8-expansion/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+  "upper_sha256": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+  "lower_sha256": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+  "method": "R78Ktail length4.6maxinclmanufacturerx.x\u00b10.5;0.74squareleadmaxcircumscribedradius; capmaxcircularbodyplanform",
+  "tail_max_mm": 4.6,
+  "tail_minimum_height_above_lower_f_mm": 8.05,
+  "caps": [
+    {
+      "ref": "C1",
+      "center_mm": [
+        66.1,
+        83.6
+      ],
+      "radius_max_mm": 3.4,
+      "height_max_mm": 9.0
+    },
+    {
+      "ref": "C11",
+      "center_mm": [
+        60.2,
+        79.0
+      ],
+      "radius_max_mm": 3.4,
+      "height_max_mm": 9.0
+    },
+    {
+      "ref": "C12",
+      "center_mm": [
+        52.6,
+        77.4
+      ],
+      "radius_max_mm": 3.4,
+      "height_max_mm": 9.0
+    },
+    {
+      "ref": "C8",
+      "center_mm": [
+        141.2,
+        75.05
+      ],
+      "radius_max_mm": 4.0,
+      "height_max_mm": 12.073
+    }
+  ],
+  "checks": [
+    {
+      "upper_ref": "U3",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        71.4,
+        73.8
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 7.2181,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        71.4,
+        73.8
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 8.425,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        71.4,
+        73.8
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 15.2183,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        71.4,
+        73.8
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 65.2879,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        68.86,
+        73.8
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 6.258,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        68.86,
+        73.8
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 6.178,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        68.86,
+        73.8
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 12.7305,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        68.86,
+        73.8
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 67.8275,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        66.32,
+        73.8
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 5.8792,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        66.32,
+        73.8
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 4.1076,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        66.32,
+        73.8
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 10.2612,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U3",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        66.32,
+        73.8
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 70.3672,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        96.2,
+        111.0
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 36.7802,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        96.2,
+        111.0
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 44.2431,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        96.2,
+        111.0
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 51.1215,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        96.2,
+        111.0
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 53.0736,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        98.74,
+        111.0
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 38.6928,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        98.74,
+        111.0
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 46.17,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        98.74,
+        111.0
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 53.1544,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        98.74,
+        111.0
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 51.1117,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        101.28,
+        111.0
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 40.6681,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        101.28,
+        111.0
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 48.1494,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        101.28,
+        111.0
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 55.2266,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U12",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        101.28,
+        111.0
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 49.1983,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        125.0,
+        97.0
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 56.4818,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        125.0,
+        97.0
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 63.3303,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        125.0,
+        97.0
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 71.0829,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "1",
+      "pin_xy_mm": [
+        125.0,
+        97.0
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 22.7575,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        127.54,
+        97.0
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 58.961,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        127.54,
+        97.0
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 65.7809,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        127.54,
+        97.0
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 73.5375,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "2",
+      "pin_xy_mm": [
+        127.54,
+        97.0
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 21.3301,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        130.08,
+        97.0
+      ],
+      "lower_ref": "C1",
+      "xy_clearance_mm": 61.4449,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        130.08,
+        97.0
+      ],
+      "lower_ref": "C11",
+      "xy_clearance_mm": 68.2378,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        130.08,
+        97.0
+      ],
+      "lower_ref": "C12",
+      "xy_clearance_mm": 75.9974,
+      "vertical_clearance_if_xy_overlap_mm": -0.95,
+      "collision": false
+    },
+    {
+      "upper_ref": "U5",
+      "upper_pad": "3",
+      "pin_xy_mm": [
+        130.08,
+        97.0
+      ],
+      "lower_ref": "C8",
+      "xy_clearance_mm": 20.0828,
+      "vertical_clearance_if_xy_overlap_mm": -4.023,
+      "collision": false
+    }
+  ],
+  "mlcc_checks": [
+    {
+      "upper_ref": "C4",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        70.8,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C1",
+      "xy_clearance_mm": 0.4,
+      "vertical_clearance_without_solder_standoff_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper_ref": "C4",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        70.8,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C11",
+      "xy_clearance_mm": 6.4656,
+      "vertical_clearance_without_solder_standoff_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper_ref": "C4",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        70.8,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C12",
+      "xy_clearance_mm": 14.2309,
+      "vertical_clearance_without_solder_standoff_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper_ref": "C4",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        70.8,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C8",
+      "xy_clearance_mm": 65.7375,
+      "vertical_clearance_without_solder_standoff_mm": -2.823,
+      "collision": false
+    },
+    {
+      "upper_ref": "C3",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        73.5,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C1",
+      "xy_clearance_mm": 3.1,
+      "vertical_clearance_without_solder_standoff_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper_ref": "C3",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        73.5,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C11",
+      "xy_clearance_mm": 9.13,
+      "vertical_clearance_without_solder_standoff_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper_ref": "C3",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        73.5,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C12",
+      "xy_clearance_mm": 16.8869,
+      "vertical_clearance_without_solder_standoff_mm": 0.25,
+      "collision": false
+    },
+    {
+      "upper_ref": "C3",
+      "mpn": "C3216X5R1V226M160AC",
+      "max_body_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "center_mm": [
+        73.5,
+        82.5
+      ],
+      "rotation_deg": -90.0,
+      "lower_ref": "C8",
+      "xy_clearance_mm": 63.047,
+      "vertical_clearance_without_solder_standoff_mm": -2.823,
+      "collision": false
+    }
+  ],
+  "collision_count": 0,
+  "minimum_xy_gap_mm": 4.1076,
+  "checked_regulators": [
+    "U12",
+    "U3",
+    "U5"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-18T23:03:24.840755+07:00",
+  "passed": true,
+  "change": "MCP23017 internal GPPUA/GPPUB pullups disabled for TLP2363 RAW->470R->IN filters; initialization, readback and reset recovery use zero",
+  "source_sha256": {
+    "firmware/base/main/hardware/hardware_io.cpp": "c22fb65f10b2f029241094b17b8e6104f7fb9d4438da1fd39f6219fa89ea8a46",
+    "firmware/base/main/hardware/board_profile.h": "b317e9fd78be1b2e7a0d1d9fba0ef0fc5632cffea616b69a574cf5355bf9ae6b",
+    "firmware/base/tests/hardware_io/io_test.cpp": "ee8471ae25926cf3b538aa2ec11812ab024785a6273fbee4c56f5e26cabf9699",
+    "firmware/base/tests/hardware_io/README.md": "9fbe068cb80c55bac15d166e7545031a1df11aa77527f75aa5b4f37ac191d24d"
+  },
+  "host_tests": {
+    "command": "tools/firmware/test-base-hardware-io",
+    "passed": 22,
+    "total": 22,
+    "ASan": true,
+    "UBSan": true,
+    "regression": "GPPU zero after initialization/reset recovery; injected unwanted GPPU removed by ordinary register repair"
+  },
+  "esp_idf_build": {
+    "command": "tools/firmware/build-base",
+    "ESP_IDF": "6.1",
+    "target": "ESP32-S3 N16R8",
+    "ASCII_build_path": "/Users/sergey/esp/build/fcplcn/base",
+    "merge_bin": true,
+    "bundle": "firmware/base/dist",
+    "artifact_sha256": {
+      "firmware/base/dist/FCPLCn.bin": "cbf1adae2726ee39753d61e8368ab16889c6aaf48afb1e5fa18e82f95b019d86",
+      "firmware/base/dist/flasher_args.json": "4e577ac19dc1e726682767695d186efa15e15ca1d4f8102e8cbf8c72cafbf840",
+      "firmware/base/dist/ota_data_initial.bin": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+      "firmware/base/dist/SHA256SUMS": "bcbae9b4a1ee1020a7950cf540e3fdbc738b9ac32e58cfef6400652446cb16e0",
+      "firmware/base/dist/FCPLCn-full.bin": "52ac387c0ebbab21633c5475357a4ed476e54f2883ee91cfe3baf7c1a2bf6af2"
+    }
+  },
+  "physical_board_tested": false,
+  "clang_format_check": true,
+  "log_sha256": {
+    "TLP2363-firmware-build.log": "06467f78437f4f70c171cc024c6070b99b911aedebdd82ac264551d5d9792202",
+    "TLP2363-firmware-tests.log": "3da16357b9e12b08a361a055d1bd2ced11838dc74d925149e4974a0c6672436a"
+  }
+}

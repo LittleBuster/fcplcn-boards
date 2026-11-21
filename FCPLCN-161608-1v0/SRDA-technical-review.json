@@ -1,0 +1,105 @@
+{
+  "revision": "SRDA05 protection review for FCPLCn DATA8, 2026-11-14",
+  "status": "engineering_prototype_scheme_reviewed; physical EMC/USB tests pending",
+  "CAD_not_modified_by_this_review": true,
+  "scope": "Five SRDA05-4BTG arrays replace eight PESD packages; ten100R resistors only on FIELD side. Lower15VTVS andRS485SM712 unchanged. Upper148/Lower154/combined302.",
+  "pin_topology": {
+    "IO1": 1,
+    "IO2": 4,
+    "IO3": 6,
+    "IO4": 7,
+    "REF1": [
+      2,
+      3
+    ],
+    "REF2": [
+      5,
+      8
+    ],
+    "REF1_connection": "Unique floating local node per array; no power rail, local ground or other array connection. This standalone internal-TVS arrangement is inferred from the manufacturer functional diagram.",
+    "REF2_connection": "Both pins directly to local ground, short low-inductance copper. D1/D4 MAIN; D2/D3/D6 FIELD.",
+    "unused_IO": "D1pins6/7 toGND; D3pins6/7 toGND_ISO. Inference from steering diode polarity: does not short positiveREF1 toground. No separate manufacturer unused-pin textual recommendation found.",
+    "series_location": "Connector/TVS node ->100R->ISO side2. Existing4.7k pullup remains onISO side of resistor. CPUside unchanged.",
+    "USB": "D+/- connector ->D1 shunt ->existingR11/R12 22R->CPU. No extra100R or shunt capacitor.",
+    "LED": "D4 shunts connector-side LED outputs; existing470R/PNP remain. PWR470R andother IC paths still can inject residual current into a supply; floatingREF1 does not eliminate every injection path."
+  },
+  "calculations": {
+    "Rpullup_ohm_min": 4465.0,
+    "Rpullup_ohm_max": 4935.0,
+    "Rseries_ohm_min": 99.0,
+    "Rseries_ohm_max": 101.0,
+    "external_VOL_assumption_V": 0.4,
+    "additional_leakage_allowance_V": 0.002,
+    "DATA_5p5V_ISO_input_LOW_V": 0.5148120893561103,
+    "I2C_3p5475V_ISO_input_LOW_V": 0.4716227551467368,
+    "DATA_conservative_VIL_threshold_V": 1.3499999999999999,
+    "I2C_conservative_VIL_threshold_V": 0.9157500000000001,
+    "DATA_LOW_margin_V": 0.8351879106438895,
+    "I2C_LOW_margin_V": 0.44412724485326327,
+    "terminal_LOW_with_2p2k5pct_external_pullup_at5p5V_V": 0.6370981287083524,
+    "DS18B20_terminal_LOW_margin_V": 0.16290187129164768,
+    "DS18B20_sink_current_with_board_and2p2k_pullup_mA": 3.55763222892703,
+    "DS18B20_rated_sink_mA_at0p4V": 4,
+    "CPU_existing_LOW_margin_V": 0.05312500000000009,
+    "CPU_extra_series_ohm": 0,
+    "ISO_min_sink_with_I2C_low_rail_mA": 0.5274873353596758,
+    "rise_30_70_us_at200pF": 0.8533984049819915,
+    "rise_30_70_us_at400pF": 1.706796809963983,
+    "I2C100k_1us_RCrise_cap_ceiling_pF": 234.35712890068078,
+    "I2C400k_300ns_RCrise_cap_ceiling_pF": 70.30713867020424,
+    "USB_22R_8pF_typical_RC_ns": 0.176,
+    "USB_22R_8pF_typical_10_90_step_ns": 0.3867115256111746,
+    "FIELD_added_typical_TVS_dynamic_current_mA_10lines_100k_5p5V": 0.044,
+    "FIELD_total200pF_dynamic_current_mA_10lines_100k_5p5V": 1.1,
+    "illustrative_used16line_leakage_mA_at5V25C": 0.16,
+    "transient_illustration_only": {
+      "SRDA_typ_clamp_at1A_V": 9.2,
+      "SRDA_typ_clamp_at25A_V": 21,
+      "assumed_IC_clamp_3p3_plus0p5_V": 3.8,
+      "residual_mA_1A_event_100R": 53.99999999999999,
+      "residual_mA_25A_event_100R": 172.0,
+      "not_proven_by_abs_IO_current_rating": true
+    }
+  },
+  "normal_logic_conditions": [
+    "The .4V externalLOW assumption requires the selected sensor to sink the calculated current. DS18B20 specifies at least4mA at.4V.",
+    "External additional pullups, if fitted, must have equivalent resistance>=2.2k5%; do not parallel arbitrarily many sensor-board pullups.",
+    "Use3-wire externally powered standard-speed1-Wire; parasite power andoverdrive are not qualified. DHT22-like protocol timing must be tested with implemented driver.",
+    "Initial isolatedI2C100kHz andeach external line total capacitance<=200pF. This includes sensor/cable/PCB/TVS/isolator and must be measured; SRDA8pF is typical only.",
+    "CPUside LOW budget remains only53.125mV at the25C static rail estimate; no added CPUseriesR. Supply ripple/temperature remain separate prototype constraints."
+  ],
+  "leakage_and_power": {
+    "SRDA_VRWM_V": 5,
+    "leakage_max_uA_at5V25C": 10,
+    "above5V_or_temperature_maximum_not_given": true,
+    "internal_suballocation_MAIN_mA": 0.5,
+    "internal_suballocation_FIELD_mA": 1,
+    "existing_design_totals_MAIN_TMR_mA": [
+      890,
+      175
+    ],
+    "existing_EXTERNAL_combined_limit_mA": 120,
+    "R12_budget_unchanged": true,
+    "note": "The suballocations are engineering reserves inside existing70mA MAIN and55mA FIELD electronics allocations.16x10uA and8pF CVf are illustrative at stated characterization conditions, not guaranteed temperature/5.5V corner bounds. Verify actual leakage/current at maximum TMR voltage andtemperature."
+  },
+  "prototype_release_limits": [
+    "SRDA typical line-ground clamp9.2V@1A and21V@25A exceeds normalISO input absolute limitVCC+0.5V.100R limits current but cannot establish absolute-maximum compliance; input-output current rating is not permission for ESD injection.",
+    "Need powered/unpowered ESD atDATA/I2C/USB/LED connectors, actualIC pin voltage/current andrail overshoot measurements. Component IEC rating is not board certification.",
+    "USB12Mbps functional andsignal-quality validation required.22R*8pF RC is only an incremental first-order illustration; no guarantee from8pFtyp withoutmaximum.",
+    "No sustained12V/24V miswiring protection. No poweredUpper mating/unmating.",
+    "Vishay CRCW0805100RFKTAHP is a pulse-proof0805,1%,0.5W family part; current09-Jun-2026 document identifieslead-bearing construction. NoRoHS claim. Pulse selection does not qualify wholeboard transient behavior."
+  ],
+  "primary_sources": {
+    "SRDA": "https://www.littelfuse.com/assetdocs/tvs-diode-array-spa-srda05-datasheet?assetguid=5e6854f4-4140-4034-b7b2-d3793470da22",
+    "ISO1640": "https://www.ti.com/lit/ds/symlink/iso1640.pdf",
+    "I2C": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "DS18B20": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS18B20.pdf",
+    "ESP_USB": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html",
+    "pulse_resistor": "https://www.vishay.com/docs/20115/crcwhp.pdf"
+  },
+  "USB_channel_assignment": {
+    "D1_pin1": "USB_DP",
+    "D1_pin4": "USB_DN",
+    "reason": "Explicitly approved swap of electrically symmetric SRDA IO1/IO2 for local routing; connector and CPU USB polarity unchanged."
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "product": {
+    "name": "FCPLCn",
+    "fullName": "Future City PLC Next",
+    "id": "fcplcn"
+  },
+  "current_revision": "data8_srda_revision",
+  "checked_at": "2026-11-14",
+  "status": "CAD_verified; prototype qualification pending",
+  "data_ports": [
+    {
+      "connector": "J3",
+      "gpio": 39,
+      "port": 1
+    },
+    {
+      "connector": "J3",
+      "gpio": 40,
+      "port": 2
+    },
+    {
+      "connector": "J3",
+      "gpio": 17,
+      "port": 3
+    },
+    {
+      "connector": "J3",
+      "gpio": 18,
+      "port": 4
+    },
+    {
+      "connector": "J3",
+      "gpio": 1,
+      "port": 5
+    },
+    {
+      "connector": "J3",
+      "gpio": 2,
+      "port": 6
+    },
+    {
+      "connector": "J3",
+      "gpio": 38,
+      "port": 7
+    },
+    {
+      "connector": "J3",
+      "gpio": 44,
+      "port": 8
+    }
+  ],
+  "i2c_gpio": [
+    41,
+    42
+  ],
+  "bidirectional_isolators": 5,
+  "matched_stack_contacts": 12,
+  "board_dimensions_mm": {
+    "Lower": [
+      101,
+      86
+    ],
+    "Upper": [
+      89,
+      49.44
+    ]
+  },
+  "board_thickness_mm": 1.6,
+  "geometry": {
+    "Lower": {
+      "copper_layers": 2,
+      "footprints": 157,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {}
+    },
+    "Upper": {
+      "copper_layers": 2,
+      "footprints": 148,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {
+        "/USB_DN_CPU": 8.474,
+        "/USB_DP_CPU": 4.315,
+        "/USB_DP": 12.647,
+        "/USB_DN": 15.889
+      }
+    }
+  },
+  "sha256": {
+    "Upper": {
+      ".kicad_pcb": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+      ".kicad_sch": "d10c754428b478b8b7dc91f67be994803eff7a6b87875e034810671939a2193a",
+      ".xml": "5c7a4f46a6312a2da50d5bf206508f7c7f289ea148d0d84917b215278b6b2d6f",
+      ".kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+      ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4"
+    },
+    "Lower": {
+      ".kicad_pcb": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+      ".kicad_sch": "b5635554fc8ff19e1013d3eb3e013aaffb88c1816694acc6b47046ad1abafb71",
+      ".xml": "26a31bc54de222e2743e2efde3698994ae6347a023c4287460fb0232eed58811",
+      ".kicad_pro": "d3d44cb511be23a925795c674c17d145b8cb6cd267b6d15ab6041fd66010a0a4",
+      ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645"
+    }
+  },
+  "native_checks": {
+    "Upper": {
+      "drc_active": 0,
+      "opens": 0,
+      "schematic_parity": 0,
+      "erc": 0,
+      "excluded_mechanical_npth_checks": 2,
+      "electrical_violations_excluded": 0,
+      "full_report": "FCPLCN-CPU-08-1v0/DRC-with-exclusions.json"
+    },
+    "Lower": {
+      "drc_active": 0,
+      "opens": 0,
+      "schematic_parity": 0,
+      "erc": 0,
+      "excluded_mechanical_npth_checks": 0,
+      "electrical_violations_excluded": 0,
+      "full_report": "FCPLCN-RLY-1616-1v0/DRC-with-exclusions.json"
+    }
+  },
+  "bom_counts": {
+    "Upper": 148,
+    "Lower_purchased": 154,
+    "Lower_PCB_refs": 157,
+    "combined_purchased": 302,
+    "CR1220_cell_separate_qty": 1
+  },
+  "mcp23017": {
+    "physical_gpio_pin_names": {
+      "1": "GPB0",
+      "2": "GPB1",
+      "3": "GPB2",
+      "4": "GPB3",
+      "5": "GPB4",
+      "6": "GPB5",
+      "7": "GPB6",
+      "8": "GPB7",
+      "21": "GPA0",
+      "22": "GPA1",
+      "23": "GPA2",
+      "24": "GPA3",
+      "25": "GPA4",
+      "26": "GPA5",
+      "27": "GPA6",
+      "28": "GPA7"
+    },
+    "output_only_pins": [
+      "GPA7",
+      "GPB7"
+    ],
+    "input_mask_hex": "0x7f01",
+    "relay_mask_hex": "0x80fe",
+    "existing_gpio_wiring_preserved": true
+  },
+  "power": {
+    "Upper.U3": "R-78K3.3-1.0 / +12V_LOGIC",
+    "Upper.U5": "R-78K3.3-0.5 / +5V_ISO",
+    "Upper.U12": "R-78K3.3-0.5 / +12V_LOGIC",
+    "Lower.U8": "TLV1117LV33DCYR / MOD_VBUS",
+    "left_stack_supply_v": 5,
+    "right_stack_supply_v": 12,
+    "Lower.F1": "Littelfuse 045201.5MRL / 1.5A Slo-Blo"
+  },
+  "rs485": {
+    "mpn": "ADM2687EBRIZ",
+    "uart": 1,
+    "tx_gpio": 8,
+    "rx_gpio": 47,
+    "direction_gpio": 48,
+    "half_duplex": true,
+    "connector": "J8",
+    "pin_order": [
+      "5V_ISO",
+      "A",
+      "B",
+      "GND_ISO"
+    ],
+    "buffers": "2x Nexperia 74LVC125AD,118; Ioff",
+    "primary_supply": "U12 / +12V_LOGIC to +3V3_RS485",
+    "field_power_from_TMR": true,
+    "isoPower_output_not_paralleled": true,
+    "sensor_ports_share_GND_ISO": true,
+    "switchable_120ohm_termination": true
+  },
+  "rtc": {
+    "mpn": "DS3231MZ+",
+    "i2c_address": "0x68",
+    "cpu_gpio": [
+      4,
+      5
+    ],
+    "holder": "Q&J CR1220-2 / C70381",
+    "board": "Upper",
+    "side": "B.Cu",
+    "additional_gpio": 0,
+    "external_charger": false
+  },
+  "data8_srda_revision": {
+    "verified_at_sha256": {
+      "Upper": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+      "Lower": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337"
+    },
+    "DATA7_GPIO": 38,
+    "DATA8_GPIO": 44,
+    "J3": {
+      "part": "KF128-2.54-10P",
+      "pin_order": [
+        "DATA1",
+        "DATA2",
+        "DATA3",
+        "DATA4",
+        "DATA5",
+        "DATA6",
+        "DATA7",
+        "DATA8",
+        "5V_ISO",
+        "GND_ISO"
+      ]
+    },
+    "TVS": {
+      "part": "SRDA05-4BTG",
+      "package": "SOIC-8",
+      "refs": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D6"
+      ],
+      "qty": 5,
+      "REF1": "Unique floating node per device; no supply-rail tie",
+      "REF2": "Local GND or GND_ISO"
+    },
+    "FIELD_series": {
+      "refs": "R61-R70",
+      "qty": 10,
+      "ohm": 100,
+      "tolerance_pct": 1,
+      "package": "0805",
+      "MPN": "CRCW0805100RFKTAHP"
+    },
+    "Lower_CAD_unchanged": true,
+    "copper_layers_per_board": 2,
+    "Upper_bottom_edge_Y_before_after_mm": [
+      119.4,
+      120.4
+    ],
+    "J8_origin_mm": [
+      115.45,
+      118
+    ],
+    "R68_side": "B.Cu",
+    "new_zero_ohm_jumper_added": false,
+    "source_gates_passed": 671,
+    "negative_controls_detected": 9,
+    "physical_nets_verified": 247,
+    "PCB_XML_metadata_fields_verified": 1406,
+    "power_budget": {
+      "passed": 39,
+      "total": 39,
+      "main_ma": 890,
+      "local_RS485_ma": 201,
+      "isolated_total_equivalent5V_ma": 175,
+      "isolated_external_design_limit_ma": 120,
+      "R12_current_A": 0.5572520882411753,
+      "R12_heat_W": 0.31052988984915064,
+      "filtered12V_V": 10.642747911758825
+    },
+    "actual_ADM_bypass": {
+      "all_six_at_most10mm": true,
+      "constructed_external_lead_totals_mm": {
+        "C39": 5.2106581934930745,
+        "C45": 9.913446933442042,
+        "C40": 8.47541409693377,
+        "C42": 9.578168688976824,
+        "C43": 7.562649919265073,
+        "C44": 9.735597110604171
+      },
+      "maximum_mm": 9.913446933442042
+    },
+    "ISO_engineering_target": {
+      "target_combined_lead_mm": 10,
+      "is_claimed_mandatory_manufacturer_limit": false,
+      "target_demonstrated_for_all_four": false,
+      "constructed_external_lead_totals_mm": {
+        "C14": 15.238898484134978,
+        "C15": 15.08534509354169,
+        "C48": 10.94895623633816,
+        "C49": 21.589440947310088
+      },
+      "interpretation": "Constructed copper-path upper bounds; the10mm engineering target is not demonstrated. These are documented layout limits for prototype switching/noise tests, not EM simulation or a fabricatedPASS."
+    },
+    "mechanical": {
+      "component_carrier_tail_collisions": 0,
+      "R78_and_lowstack_cap_collisions": 0,
+      "nominal_added_strip_vertical_clearance_mm": 1.900000000000001,
+      "lower_terminal_axis_distance_from_upper_edge_mm": 2.299999999999997,
+      "actual_upper_dimensions_mm": [
+        89.0,
+        49.44000000000001
+      ],
+      "full3Dboolean_or_stack_tolerance_signoff": false
+    },
+    "source_audit": "SRDA-source-delta-audit.json",
+    "independent_connectivity": "SRDA-electrical-connectivity.json",
+    "final_evidence": "SRDA-final-evidence.json"
+  },
+  "manufacturing": {
+    "actual_copper_counts": {
+      "Upper": {
+        "tracks": 2096,
+        "vias": 361,
+        "track_min_mm": 0.18,
+        "via_min_OD_mm": 0.6,
+        "via_min_drill_mm": 0.3,
+        "via_min_annulus_mm": 0.15
+      },
+      "Lower": {
+        "tracks": 1447,
+        "vias": 110,
+        "track_min_mm": 0.22,
+        "via_min_OD_mm": 0.8,
+        "via_min_drill_mm": 0.3,
+        "via_min_annulus_mm": 0.25
+      }
+    },
+    "different_net_shape_spacing_threshold_mm": 0.175,
+    "Upper_spacing_report": "FCPLCN-CPU-08-1v0/SRDA-copper-spacing.json",
+    "Lower_spacing_report": "FCPLCN-RLY-1616-1v0/SRDA-copper-spacing.json",
+    "minimum_Upper_via_annulus_mm": 0.15,
+    "via_annulus_note": "0.15mm uses the factory limit; the documented standard annulus is0.20mm."
+  },
+  "previews": {
+    "views": 27,
+    "renderer": "Native KiCad",
+    "gallery": "Previews/native-all-views/index.html",
+    "QA": "SRDA-render-QA.json"
+  },
+  "firmware": {
+    "report": "DATA8-firmware-profile.json",
+    "hardware_flashed": false,
+    "sensor_drivers_implemented": false
+  },
+  "history": {
+    "previous_validation": "History/Validation-before-DATA8-SRDA.json",
+    "scope": "Older Power-EMI, R78, RS485 and DATA8-only records apply only to their recorded hashes."
+  },
+  "limits": [
+    "No hardware, thermal, surge, ESD or EMC qualification performed.",
+    "No physical USB FullSpeed waveform or cable interoperability qualification performed.",
+    "TVS plus100ohmFIELDseries is not proof of compliance with every ISO1640 absolute-maximum transient condition and is not12/24V miswire protection.",
+    "Mechanical envelopes use nominal mating height and stated conservative body allowances; verify vendor clones and tool access on the assembled sample.",
+    "Full source manifests, DRC reports and actual contour connectivity are separate linked evidence, not replaced by this summary."
+  ]
+}

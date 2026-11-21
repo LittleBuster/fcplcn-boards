@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-11-18T05:29:02.784506+07:00",
+  "scope": "Independent baseline-to-current schematic/XML and baseline-to-staged PCB source audit; canonical PCB not published by this audit.",
+  "before_root": "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-fram-rvkdpq1k",
+  "lower_schematic_before_sha256": "d5cb48f2b655797fc50de3ee929d97933de923ff25d44679bc00602053a1756d",
+  "lower_schematic_after_sha256": "91eaa89745c59d0aba5876bd5e83335a7e7c0191ca38d809dd5546096938d803",
+  "before_xml_sha256": "7ae86e0107d7429c2d50844060b765d4abc0eeeddaecef6fd6984f734a174acd",
+  "after_xml_sha256": "2adabec7cca6edd5f4ab0c779c72284d5f14277f53f1d4e2d08a14f77b7211f8",
+  "old_component_count": 157,
+  "new_component_count": 159,
+  "added_components": [
+    "U9",
+    "C14"
+  ],
+  "removed_components": [],
+  "all_previous_component_properties_and_uuid_stamps_unchanged": true,
+  "all_previous_pin_net_assignments_unchanged": true,
+  "old_uuid_count": 1792,
+  "all_old_UUIDs_preserved_in_order": true,
+  "old_top_level_source_blocks_preserved": 1264,
+  "new_pin_connections": {
+    "C14.1": "/+3V3",
+    "U9.8": "/+3V3",
+    "C14.2": "/GND",
+    "U9.1": "/GND",
+    "U9.2": "/GND",
+    "U9.3": "/GND",
+    "U9.4": "/GND",
+    "U9.7": "/GND",
+    "U9.6": "/I2C_SCL",
+    "U9.5": "/I2C_SDA"
+  },
+  "new_U9_BOMGroup": "IC-FRAM-FM24CL64B-GTR-SOIC8",
+  "new_U9_address_7bit": "0x50",
+  "new_U9_write_protect": "WP grounded; writes enabled",
+  "native_erc": {
+    "report": "FCPLCN-RLY-1616-1v0/FRAM-ERC.json",
+    "sha256": "533362c41d2e2ac7bb07c931de6eb76f0d05e6fbc32981dbc47223b769b7212f",
+    "violations": 0
+  },
+  "staged_pcb_audit": {
+    "staged_pcb_sha256": "769fc110602d5671d57dfad71f77acf7b662edb44282a13528ea614883aeb4d7",
+    "staged_path": "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-fram-rvkdpq1k/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+    "added_components": [
+      "U9",
+      "C14"
+    ],
+    "all_157_previous_footprint_poses_fields_UUIDs_and_pads_unchanged": true,
+    "all_previous_tracks_and_vias_preserved": true,
+    "added_tracks_and_vias": 33,
+    "added_net_names": [
+      "/+3V3",
+      "/GND",
+      "/I2C_SCL",
+      "/I2C_SDA"
+    ],
+    "new_pad_nets_and_fields_match_native_XML": true,
+    "new_track_angles_45_90_only": true,
+    "copper_layers": 2,
+    "new_component_placements": {
+      "U9": [
+        96.0,
+        81.3,
+        0.0,
+        "top_layer"
+      ],
+      "C14": [
+        98.7,
+        76.5,
+        90.0,
+        "top_layer"
+      ]
+    },
+    "new_via_geometry_mm": [
+      [
+        0.9,
+        0.3
+      ]
+    ]
+  },
+  "staged_native_drc": {
+    "report": "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-fram-rvkdpq1k/stage/FCPLCN-RLY-1616-1v0/FRAM-DRC.json",
+    "sha256": "a4228260fed334461ea9376c75c195c0540555ac7fc5b63a7fdef3fb135646f0",
+    "active_violations": 0,
+    "unconnected": 0,
+    "schematic_parity": 0
+  },
+  "upper_native_sources_unchanged": {
+    "kicad_pcb": true,
+    "kicad_sch": true,
+    "kicad_pro": true,
+    "kicad_dru": true
+  },
+  "lower_project_and_design_rules_unchanged": true,
+  "mechanical": {
+    "board_gap_mm": 11.05,
+    "U9_body_height_max_mm": 1.75,
+    "C14_standard_KiCad_model_height_mm": 1.25,
+    "nearby_upper_back_BT1_nominal_body_height_mm": 4.0,
+    "U9_to_BT1_nominal_vertical_clearance_mm": 5.3,
+    "note": "BT1 can overlap U9 in plan. 5.30mm subtracts U9 maximum package height and BT1 nominal height from nominal board gap; this is a nominal geometry check, not a manufactured assembly tolerance guarantee. C14 standard model is illustrative; actual capacitor must fit assembly envelope."
+  },
+  "GND_bridge": {
+    "before_sha256": "e2c12d923c975e8737f26ce9f078233b8b3b9c88fed196047a46d65f1eb3089f",
+    "after_sha256": "e82e3b5cd4a4656d9193702a0f595133e282a1af1d5e51273776ba3cb9095b6c",
+    "new_segments": [
+      {
+        "uuid": "c1c20c18-d7c5-4735-bcd6-0e311f871c16",
+        "layer": "F.Cu",
+        "start_mm": [
+          98.2437,
+          99.6658
+        ],
+        "end_mm": [
+          98.9779,
+          100.4
+        ],
+        "width_mm": 0.22,
+        "net": "/GND"
+      },
+      {
+        "uuid": "02370084-c954-4c7c-8e9e-817e7e6377fd",
+        "layer": "F.Cu",
+        "start_mm": [
+          98.9779,
+          100.4
+        ],
+        "end_mm": [
+          101.68,
+          100.4
+        ],
+        "width_mm": 0.22,
+        "net": "/GND"
+      },
+      {
+        "uuid": "4a450760-1603-4879-8955-38b74517a587",
+        "layer": "F.Cu",
+        "start_mm": [
+          101.68,
+          100.4
+        ],
+        "end_mm": [
+          102.67,
+          99.41
+        ],
+        "width_mm": 0.22,
+        "net": "/GND"
+      }
+    ],
+    "existing_tracks_or_parts_modified": false,
+    "purpose": "Restore functional C110 GND island after added FRAM power/data branches and zone refill; bridge existing GND via to C110 pad2 using top layer between R130 pads."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "generator": "tools/build_rs485_assets.py",
+  "four_assets_byte_reproducible": true,
+  "validated_generated_assets_sha256": {
+    "KF128-2.54-8P.kicad_mod": "2ca56a7c7142276bece34aaf9f76696e900c4cec774749c4dfb2df1cb6a42156",
+    "KF128-8P.wrl": "226920cce14c85ceafed0cc79e470a41856c8e9ccba1ca4d9fddca7caf89ed54",
+    "ADM2687E_RI-16-2.wrl": "78fc299a8ac88660ba08bae32433f784902a2909bfde543b50c066a11472949a",
+    "ADM2687E_SOIC_IC_16_7.5x12.75mm_P1.27mm.kicad_mod": "af6955d9ea14b4e36e477478399f95bdbe5deb2fd8293fadee71e4dfbb4fa4f1"
+  },
+  "RI16_source_sha256": "0dddc46f2070b4e4803d64899d2b139cba33003d575425e61751efee6ece3917",
+  "scope": "All four canonical asset files match a fresh canonical generator run byte-for-byte.",
+  "canonical_assets_match_regeneration": true,
+  "canonical_assets_sha256": {
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-8P.kicad_mod": "2ca56a7c7142276bece34aaf9f76696e900c4cec774749c4dfb2df1cb6a42156",
+    "FCPLCN-CPU-08-1v0/3d/KF128-8P.wrl": "226920cce14c85ceafed0cc79e470a41856c8e9ccba1ca4d9fddca7caf89ed54",
+    "FCPLCN-CPU-08-1v0/3d/ADM2687E_RI-16-2.wrl": "78fc299a8ac88660ba08bae32433f784902a2909bfde543b50c066a11472949a",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/ADM2687E_SOIC_IC_16_7.5x12.75mm_P1.27mm.kicad_mod": "af6955d9ea14b4e36e477478399f95bdbe5deb2fd8293fadee71e4dfbb4fa4f1"
+  },
+  "generator_sha256": "fd33d5d9b12b137038c5f53396122672c0ed634f55ec12530e1e356a084c967f"
+}

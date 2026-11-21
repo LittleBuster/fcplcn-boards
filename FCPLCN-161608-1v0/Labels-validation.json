@@ -1,0 +1,86 @@
+{
+  "product": "FCPLCn",
+  "model": "FCPLCN-161608-1v0",
+  "checked_at": "2026-11-18T21:30:15.523314+07:00",
+  "passed": true,
+  "native_checks": {
+    "FCPLCN-CPU-08-1v0": {
+      "active_drc": 0,
+      "excluded_drc": 2,
+      "unconnected": 0,
+      "schematic_parity": 0,
+      "pcb_sha256": "dd2678dc7f24703057267fe0a1100e75983b2325da928cea1dc8f16eccf914ed"
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "active_drc": 0,
+      "excluded_drc": 0,
+      "unconnected": 0,
+      "schematic_parity": 0,
+      "pcb_sha256": "bdc71b7db992eb93a951d9b724f633bbe27e79bda40561acdc6740153a0fd3c4"
+    }
+  },
+  "independent_source_audit": "Labels-source-audit.json",
+  "independent_source_audit_sha256": "d2dbf97067a75ee07ad855dbc4703586d45cc701185ba2c07f377ce164e0010c",
+  "lower_source_audit": "Labels-lower-source-audit.json",
+  "board_pin_and_geometry_check": "Labels-board-check.json",
+  "CPU": {
+    "D3_before_mm": [
+      131.25,
+      110.75
+    ],
+    "D3_after_mm": [
+      131.25,
+      108.25
+    ],
+    "D3_displacement_mm": [
+      0,
+      -2.5
+    ],
+    "D3_reference_position_mm": [
+      135.1,
+      108.25
+    ],
+    "I2C_pin_legend": [
+      "3V3",
+      "SDA",
+      "SCL",
+      "G"
+    ],
+    "I2C_pin_label_y_mm": 113.95,
+    "I2C_title": "I2C ISO",
+    "unchanged_netlist": true,
+    "changed_copper_nets": [
+      "TVS_I2C_REF_ISO",
+      "SCL_IC_ISO",
+      "SDA_ISO",
+      "SCL_ISO"
+    ],
+    "copper_layers": 2
+  },
+  "RLY": {
+    "only_two_front_silkscreen_texts_added": true,
+    "copper_components_and_zones_unchanged": true,
+    "copper_layers": 2
+  },
+  "branding": {
+    "front_silkscreen_names": [
+      "FCPLCN-CPU-08-1v0",
+      "FCPLCN-RLY-1616-1v0"
+    ],
+    "company_text": "Denisov Foundation Ltd.",
+    "native_top_views_visually_checked": true
+  },
+  "schematics_projects_rules_XML_unchanged": true,
+  "purchased_BOM_unchanged": 304,
+  "gallery": {
+    "standard_native_views": 27,
+    "native_detail_views": 2,
+    "source_and_image_hashes_verified": true,
+    "index": "Previews/native-all-views/index.html",
+    "details": {
+      "I2C-labels-closeup.png": "15e55a64bda5d84babf3896b1efcc7676dceabf97d55a9988297fb7283a98d08",
+      "FRAM-3D-closeup.png": "40b85b724b2bc83da2b76317a238e9cde81bde5e30268fbfabb8363aed8aeff7"
+    }
+  },
+  "prototype_qualification_pending": true
+}

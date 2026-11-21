@@ -1,0 +1,19 @@
+{
+  "original_component_instances": 162,
+  "current_component_instances": 206,
+  "original_quad_optocouplers": 4,
+  "TLP2363": 16,
+  "new_bypass_capacitors": 16,
+  "new_output_series_resistors": 16,
+  "unrelated_components_preserved": 78,
+  "channel_pin_net_checks": 208,
+  "wetting_resistor_specifications_checked": 16,
+  "erc_violations": 0,
+  "helper_first_run_from_canonical": true,
+  "helper_idempotent": true,
+  "helper_first_run_full_netlist_equals_stage": true,
+  "full_sheet_png_reviewed": true,
+  "sixteen_channel_section_png_reviewed": true,
+  "channel1_detail_png_reviewed": true,
+  "visual_result": "16 blocks readable; no unintended wire crossings; 470R, pull-up and input-filter labels separated; local bypass supply and pins 1/3/4/5/6 visible."
+}

@@ -1,0 +1,17 @@
+(version 1)
+
+(rule "Minimum production pad annular ring"
+    (constraint annular_width (min 0.15mm))
+)
+
+(rule "Standard via annular ring"
+    (condition "A.Type == 'Via'")
+    (constraint annular_width (min 0.15mm))
+)
+(rule "USB DN CPU corner clearance"
+ (condition "A.NetName == '/USB_DN' && A.insideArea('USB_DN_CPU_NECK') && B.Type == 'Pad' && B.memberOfFootprint('U1') && (B.Pad_Number == '26' || B.Pad_Number == '27')")
+ (constraint clearance (min 0.19mm)))
+
+(rule "Galvanic domain same-layer clearance"
+ (condition "(A.NetName == '/*_ISO' || A.NetName == '/RS485_A' || A.NetName == '/RS485_B' || A.NetName == '/RS485_TERM' || A.NetName == '/RS485_VISO' || A.NetName == '/RS485_VISO_OUT') && !(B.NetName == '/*_ISO' || B.NetName == '/RS485_A' || B.NetName == '/RS485_B' || B.NetName == '/RS485_TERM' || B.NetName == '/RS485_VISO' || B.NetName == '/RS485_VISO_OUT')")
+ (constraint clearance (min 1.5mm)))

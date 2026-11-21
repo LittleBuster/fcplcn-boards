@@ -1,0 +1,124 @@
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/sergey/esp/build/fcplcn/base-sockets
+[1/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/hardware/board_profile.cpp.o'
+[2/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/config/model.cpp.o'
+[3/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/controller_status.cpp.o'
+[4/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/network/socket_mqtt.cpp.o'
+[5/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/controller_model.cpp.o'
+[6/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/controller_switches.cpp.o'
+[7/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/controller_states.cpp.o'
+[8/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/controller_meteo.cpp.o'
+[9/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/socket_controller.cpp.o'
+[10/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/controller_storage.cpp.o'
+[11/14] Building CXX object 'CMakeFiles/fcplcn_socket_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/controllers/controller_thermostat.cpp.o'
+[12/14] Building CXX object CMakeFiles/fcplcn_socket_tests.dir/stubs/platform.cpp.o
+[13/14] Building CXX object CMakeFiles/fcplcn_socket_tests.dir/socket_test.cpp.o
+[14/14] Linking CXX executable fcplcn_socket_tests
+Test project /Users/sergey/esp/build/fcplcn/base-sockets
+      Start  1: fcplcn_sockets_defaults
+ 1/51 Test  #1: fcplcn_sockets_defaults ..........................   Passed    1.42 sec
+      Start  2: fcplcn_sockets_persistence
+ 2/51 Test  #2: fcplcn_sockets_persistence .......................   Passed    0.01 sec
+      Start  3: fcplcn_sockets_edges
+ 3/51 Test  #3: fcplcn_sockets_edges .............................   Passed    0.01 sec
+      Start  4: fcplcn_sockets_exclusive_inputs
+ 4/51 Test  #4: fcplcn_sockets_exclusive_inputs ..................   Passed    0.01 sec
+      Start  5: fcplcn_sockets_validation
+ 5/51 Test  #5: fcplcn_sockets_validation ........................   Passed    0.01 sec
+      Start  6: fcplcn_sockets_reconfigure
+ 6/51 Test  #6: fcplcn_sockets_reconfigure .......................   Passed    0.01 sec
+      Start  7: fcplcn_sockets_disable
+ 7/51 Test  #7: fcplcn_sockets_disable ...........................   Passed    0.01 sec
+      Start  8: fcplcn_sockets_storage_failure
+ 8/51 Test  #8: fcplcn_sockets_storage_failure ...................   Passed    0.01 sec
+      Start  9: fcplcn_sockets_hardware_failure
+ 9/51 Test  #9: fcplcn_sockets_hardware_failure ..................   Passed    0.01 sec
+      Start 10: fcplcn_sockets_recovery
+10/51 Test #10: fcplcn_sockets_recovery ..........................   Passed    0.01 sec
+      Start 11: fcplcn_sockets_concurrent
+11/51 Test #11: fcplcn_sockets_concurrent ........................   Passed    0.01 sec
+      Start 12: fcplcn_sockets_corrupt_storage
+12/51 Test #12: fcplcn_sockets_corrupt_storage ...................   Passed    0.01 sec
+      Start 13: fcplcn_sockets_mqtt_set
+13/51 Test #13: fcplcn_sockets_mqtt_set ..........................   Passed    0.01 sec
+      Start 14: fcplcn_sockets_mqtt_replay
+14/51 Test #14: fcplcn_sockets_mqtt_replay .......................   Passed    0.01 sec
+      Start 15: fcplcn_sockets_startup_low
+15/51 Test #15: fcplcn_sockets_startup_low .......................   Passed    0.01 sec
+      Start 16: fcplcn_sockets_input_failure
+16/51 Test #16: fcplcn_sockets_input_failure .....................   Passed    0.01 sec
+      Start 17: fcplcn_sockets_mqtt_snapshot
+17/51 Test #17: fcplcn_sockets_mqtt_snapshot .....................   Passed    0.02 sec
+      Start 18: fcplcn_sockets_lights_basic
+18/51 Test #18: fcplcn_sockets_lights_basic ......................   Passed    0.01 sec
+      Start 19: fcplcn_sockets_resource_exclusivity
+19/51 Test #19: fcplcn_sockets_resource_exclusivity ..............   Passed    0.01 sec
+      Start 20: fcplcn_sockets_concurrent_claims
+20/51 Test #20: fcplcn_sockets_concurrent_claims .................   Passed    0.01 sec
+      Start 21: fcplcn_sockets_lights_mqtt
+21/51 Test #21: fcplcn_sockets_lights_mqtt .......................   Passed    0.01 sec
+      Start 22: fcplcn_sockets_meteo_basic
+22/51 Test #22: fcplcn_sockets_meteo_basic .......................   Passed    0.01 sec
+      Start 23: fcplcn_sockets_meteo_resources
+23/51 Test #23: fcplcn_sockets_meteo_resources ...................   Passed    0.01 sec
+      Start 24: fcplcn_sockets_meteo_readings
+24/51 Test #24: fcplcn_sockets_meteo_readings ....................   Passed    0.01 sec
+      Start 25: fcplcn_sockets_meteo_scan
+25/51 Test #25: fcplcn_sockets_meteo_scan ........................   Passed    0.01 sec
+      Start 26: fcplcn_sockets_thermostat_heating
+26/51 Test #26: fcplcn_sockets_thermostat_heating ................   Passed    0.03 sec
+      Start 27: fcplcn_sockets_thermostat_cooling_shared
+27/51 Test #27: fcplcn_sockets_thermostat_cooling_shared .........   Passed    0.01 sec
+      Start 28: fcplcn_sockets_thermostat_faults
+28/51 Test #28: fcplcn_sockets_thermostat_faults .................   Passed    0.01 sec
+      Start 29: fcplcn_sockets_thermostat_source_binding
+29/51 Test #29: fcplcn_sockets_thermostat_source_binding .........   Passed    0.01 sec
+      Start 30: fcplcn_sockets_thermostat_validation
+30/51 Test #30: fcplcn_sockets_thermostat_validation .............   Passed    0.01 sec
+      Start 31: fcplcn_sockets_thermostat_safe_config
+31/51 Test #31: fcplcn_sockets_thermostat_safe_config ............   Passed    0.01 sec
+      Start 32: fcplcn_sockets_thermostat_hardware_recovery
+32/51 Test #32: fcplcn_sockets_thermostat_hardware_recovery ......   Passed    0.01 sec
+      Start 33: fcplcn_sockets_thermostat_expiry
+33/51 Test #33: fcplcn_sockets_thermostat_expiry .................   Passed    0.01 sec
+      Start 34: fcplcn_sockets_thermostat_failed_update_expiry
+34/51 Test #34: fcplcn_sockets_thermostat_failed_update_expiry ...   Passed    0.01 sec
+      Start 35: fcplcn_sockets_thermostat_item_switch
+35/51 Test #35: fcplcn_sockets_thermostat_item_switch ............   Passed    0.01 sec
+      Start 36: fcplcn_sockets_thermostat_item_buttons
+36/51 Test #36: fcplcn_sockets_thermostat_item_buttons ...........   Passed    0.01 sec
+      Start 37: fcplcn_sockets_thermostat_item_input_fault
+37/51 Test #37: fcplcn_sockets_thermostat_item_input_fault .......   Passed    0.01 sec
+      Start 38: fcplcn_sockets_thermostat_item_claims_config
+38/51 Test #38: fcplcn_sockets_thermostat_item_claims_config .....   Passed    0.01 sec
+      Start 39: fcplcn_sockets_thermostat_item_storage_inhibit
+39/51 Test #39: fcplcn_sockets_thermostat_item_storage_inhibit ...   Passed    0.01 sec
+      Start 40: fcplcn_sockets_thermostat_item_expiry
+40/51 Test #40: fcplcn_sockets_thermostat_item_expiry ............   Passed    0.01 sec
+      Start 41: fcplcn_sockets_thermostat_item_mqtt
+41/51 Test #41: fcplcn_sockets_thermostat_item_mqtt ..............   Passed    0.01 sec
+      Start 42: fcplcn_sockets_thermostat_recovery_policy
+42/51 Test #42: fcplcn_sockets_thermostat_recovery_policy ........   Passed    0.01 sec
+      Start 43: fcplcn_sockets_thermostat_dwell
+43/51 Test #43: fcplcn_sockets_thermostat_dwell ..................   Passed    0.01 sec
+      Start 44: fcplcn_sockets_thermostat_dwell_defaults
+44/51 Test #44: fcplcn_sockets_thermostat_dwell_defaults .........   Passed    0.01 sec
+      Start 45: fcplcn_sockets_thermostat_cached_sample
+45/51 Test #45: fcplcn_sockets_thermostat_cached_sample ..........   Passed    0.01 sec
+      Start 46: fcplcn_sockets_button_confirmation
+46/51 Test #46: fcplcn_sockets_button_confirmation ...............   Passed    0.01 sec
+      Start 47: fcplcn_sockets_fram_states
+47/51 Test #47: fcplcn_sockets_fram_states .......................   Passed    0.01 sec
+      Start 48: fcplcn_sockets_fram_safe_boot
+48/51 Test #48: fcplcn_sockets_fram_safe_boot ....................   Passed    0.01 sec
+      Start 49: fcplcn_sockets_fram_config_transaction
+49/51 Test #49: fcplcn_sockets_fram_config_transaction ...........   Passed    0.01 sec
+      Start 50: fcplcn_sockets_fram_thermostat_flags
+50/51 Test #50: fcplcn_sockets_fram_thermostat_flags .............   Passed    0.01 sec
+      Start 51: fcplcn_sockets_fram_diagnostics
+51/51 Test #51: fcplcn_sockets_fram_diagnostics ..................   Passed    0.01 sec
+
+100% tests passed out of 51
+
+Total Test time (real) =   2.06 sec

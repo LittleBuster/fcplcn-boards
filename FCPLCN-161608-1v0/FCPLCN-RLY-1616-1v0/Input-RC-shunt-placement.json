@@ -1,0 +1,254 @@
+{
+  "shunts": [
+    {
+      "reference": "R181",
+      "xy_mm": [
+        51.04,
+        112.0
+      ],
+      "score": 1.6292554960831724,
+      "foreign_copper_hits": [
+        [
+          "1",
+          "/+12V_SYS",
+          0.075,
+          "14927d92-aba9-4ee7-9647-ea39c4314497"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.075,
+          "14927d92-aba9-4ee7-9647-ea39c4314497"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.0869,
+          "ef7cc3fe-c324-41b8-a661-dec26336a4b0"
+        ]
+      ]
+    },
+    {
+      "reference": "R182",
+      "xy_mm": [
+        56.84,
+        112.3
+      ],
+      "score": 0.01200000000000017,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R183",
+      "xy_mm": [
+        62.34,
+        112.3
+      ],
+      "score": 0.01200000000000017,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R184",
+      "xy_mm": [
+        67.84,
+        112.1
+      ],
+      "score": 0.018000000000000255,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R185",
+      "xy_mm": [
+        73.34,
+        112.3
+      ],
+      "score": 0.01200000000000017,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R186",
+      "xy_mm": [
+        78.84,
+        112.3
+      ],
+      "score": 0.01200000000000017,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R187",
+      "xy_mm": [
+        84.34,
+        112.8
+      ],
+      "score": 6.146999999999999,
+      "foreign_copper_hits": [
+        [
+          "1",
+          "/+12V_SYS",
+          0.0,
+          "9ba12f74-d036-4f9b-bb9b-56abb1d2a9ff"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.0,
+          "4131ae0f-09b9-4d94-9866-accbf2c897cd"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.0,
+          "9ba12f74-d036-4f9b-bb9b-56abb1d2a9ff"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.0,
+          "c31d1402-00e9-41d4-86f4-4ae678d809ef"
+        ]
+      ]
+    },
+    {
+      "reference": "R188",
+      "xy_mm": [
+        89.84,
+        112.3
+      ],
+      "score": 0.01200000000000017,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R189",
+      "xy_mm": [
+        95.34,
+        112.7
+      ],
+      "score": 0.0,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R190",
+      "xy_mm": [
+        100.84,
+        112.7
+      ],
+      "score": 0.0,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R191",
+      "xy_mm": [
+        106.34,
+        112.3
+      ],
+      "score": 0.01200000000000017,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R192",
+      "xy_mm": [
+        111.84,
+        112.3
+      ],
+      "score": 0.01200000000000017,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R193",
+      "xy_mm": [
+        117.04,
+        112.0
+      ],
+      "score": 4.119570468526199,
+      "foreign_copper_hits": [
+        [
+          "1",
+          "/+12V_SYS",
+          0.022,
+          "22a044c7-a90e-4c14-8bf8-1e7243ff56ae"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.065,
+          "b46b78c0-8385-4811-8ac3-c994d39df19b"
+        ]
+      ]
+    },
+    {
+      "reference": "R194",
+      "xy_mm": [
+        122.54,
+        112.0
+      ],
+      "score": 4.471353912079584,
+      "foreign_copper_hits": [
+        [
+          "1",
+          "/+12V_SYS",
+          0.1062,
+          "8da7d93b-d483-4931-bad0-0c6c14134a30"
+        ],
+        [
+          "1",
+          "/+12V_SYS",
+          0.065,
+          "b46b78c0-8385-4811-8ac3-c994d39df19b"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.1865,
+          "8da7d93b-d483-4931-bad0-0c6c14134a30"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.065,
+          "cde917d5-f1f2-472d-ad00-38ad5a936b7a"
+        ]
+      ]
+    },
+    {
+      "reference": "R195",
+      "xy_mm": [
+        128.34,
+        112.1
+      ],
+      "score": 0.018000000000000255,
+      "foreign_copper_hits": []
+    },
+    {
+      "reference": "R196",
+      "xy_mm": [
+        134.04,
+        112.3
+      ],
+      "score": 1.7709999999999935,
+      "foreign_copper_hits": [
+        [
+          "1",
+          "/+12V_SYS",
+          0.0,
+          "2bb285f1-62da-405e-a3ff-4a32dc043548"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.0,
+          "2bb285f1-62da-405e-a3ff-4a32dc043548"
+        ],
+        [
+          "2",
+          "/+12V_SYS",
+          0.185,
+          "8548fe40-13c4-4614-822b-fb74a7b2bbe4"
+        ]
+      ]
+    }
+  ],
+  "technical_revision_text": "1v0 RC IN",
+  "technical_revision_xy_mm": [
+    95.0,
+    73.0
+  ]
+}

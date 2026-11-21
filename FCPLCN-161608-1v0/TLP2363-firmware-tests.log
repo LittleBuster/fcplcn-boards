@@ -1,0 +1,57 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/sergey/esp/build/fcplcn/base-hardware-io
+[1/5] Building CXX object 'CMakeFiles/fcplcn_io_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/hardware/fram.cpp.o'
+[2/5] Building CXX object 'CMakeFiles/fcplcn_io_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/hardware/board_profile.cpp.o'
+[3/5] Building CXX object 'CMakeFiles/fcplcn_io_tests.dir/Users/sergey/Documents/ChatGPT/УмныйДом/firmware/base/main/hardware/hardware_io.cpp.o'
+[4/5] Building CXX object CMakeFiles/fcplcn_io_tests.dir/io_test.cpp.o
+[5/5] Linking CXX executable fcplcn_io_tests
+Test project /Users/sergey/esp/build/fcplcn/base-hardware-io
+      Start  1: fcplcn_io_fake_map
+ 1/22 Test  #1: fcplcn_io_fake_map ...............   Passed    1.89 sec
+      Start  2: fcplcn_io_safe_init
+ 2/22 Test  #2: fcplcn_io_safe_init ..............   Passed    0.01 sec
+      Start  3: fcplcn_io_relay_rmw
+ 3/22 Test  #3: fcplcn_io_relay_rmw ..............   Passed    0.01 sec
+      Start  4: fcplcn_io_raw_inputs
+ 4/22 Test  #4: fcplcn_io_raw_inputs .............   Passed    0.01 sec
+      Start  5: fcplcn_io_failures
+ 5/22 Test  #5: fcplcn_io_failures ...............   Passed    0.01 sec
+      Start  6: fcplcn_io_missing_recovery
+ 6/22 Test  #6: fcplcn_io_missing_recovery .......   Passed    0.01 sec
+      Start  7: fcplcn_io_scans
+ 7/22 Test  #7: fcplcn_io_scans ..................   Passed    0.01 sec
+      Start  8: fcplcn_io_concurrent
+ 8/22 Test  #8: fcplcn_io_concurrent .............   Passed    0.19 sec
+      Start  9: fcplcn_io_emi_reset
+ 9/22 Test  #9: fcplcn_io_emi_reset ..............   Passed    0.01 sec
+      Start 10: fcplcn_io_emi_layout
+10/22 Test #10: fcplcn_io_emi_layout .............   Passed    0.03 sec
+      Start 11: fcplcn_io_emi_fields
+11/22 Test #11: fcplcn_io_emi_fields .............   Passed    0.04 sec
+      Start 12: fcplcn_io_emi_readback
+12/22 Test #12: fcplcn_io_emi_readback ...........   Passed    0.02 sec
+      Start 13: fcplcn_io_emi_repair_faults
+13/22 Test #13: fcplcn_io_emi_repair_faults ......   Passed    0.03 sec
+      Start 14: fcplcn_io_off_revocation
+14/22 Test #14: fcplcn_io_off_revocation .........   Passed    0.02 sec
+      Start 15: fcplcn_io_failed_on
+15/22 Test #15: fcplcn_io_failed_on ..............   Passed    0.02 sec
+      Start 16: fcplcn_io_recovery_visibility
+16/22 Test #16: fcplcn_io_recovery_visibility ....   Passed    0.04 sec
+      Start 17: fcplcn_io_controller_policy
+17/22 Test #17: fcplcn_io_controller_policy ......   Passed    0.02 sec
+      Start 18: fcplcn_io_json_stale
+18/22 Test #18: fcplcn_io_json_stale .............   Passed    0.01 sec
+      Start 19: fcplcn_io_fram_transfer
+19/22 Test #19: fcplcn_io_fram_transfer ..........   Passed    0.01 sec
+      Start 20: fcplcn_io_fram_bounds
+20/22 Test #20: fcplcn_io_fram_bounds ............   Passed    0.01 sec
+      Start 21: fcplcn_io_fram_failures
+21/22 Test #21: fcplcn_io_fram_failures ..........   Passed    0.01 sec
+      Start 22: fcplcn_io_fram_concurrent
+22/22 Test #22: fcplcn_io_fram_concurrent ........   Passed    0.11 sec
+
+100% tests passed out of 22
+
+Total Test time (real) =   2.55 sec

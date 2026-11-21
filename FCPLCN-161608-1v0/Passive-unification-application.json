@@ -1,0 +1,1640 @@
+{
+  "scope": "Approved passive specification unification; metadata only",
+  "files": [
+    {
+      "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch",
+      "parts_changed": 0,
+      "changes": [],
+      "before_sha256": "6caca5d9a24dcad491758b9da6d587c1279ab5c603d9fb59e81a8233d5fd20d5",
+      "after_sha256": "6caca5d9a24dcad491758b9da6d587c1279ab5c603d9fb59e81a8233d5fd20d5"
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+      "parts_changed": 73,
+      "changes": [
+        {
+          "reference": "C43",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C42",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R36",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R4",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R18",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C21",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R29",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C38",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "R40",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C29",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C10",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R28",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R26",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C28",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R22",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C13",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "R27",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C12",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "C1",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "R39",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C8",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "R21",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C9",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R35",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C44",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R23",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R24",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R25",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C45",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C15",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R60",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C46",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R47",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C26",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R46",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R52",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C51",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R49",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C27",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C24",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R51",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C6",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R48",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R2",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C18",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C14",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C17",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R11",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C23",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C22",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C39",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R6",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R1",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C40",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R5",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R17",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R8",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C19",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C16",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C41",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "C33",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C50",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R7",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C48",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R12",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C11",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "R59",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C25",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C20",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C5",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "C49",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C47",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C35",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        }
+      ],
+      "before_sha256": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+      "after_sha256": "61a938e4301b3507092a1aec02b2ddecb3a42d10671d786e7bc24efa22d43e0a"
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+      "parts_changed": 44,
+      "changes": [
+        {
+          "reference": "C2",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "C3",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "R2",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R3",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R4",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C4",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C5",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R121",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C101",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R122",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C102",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R123",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C103",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R124",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C104",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R125",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C105",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R126",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C106",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R127",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C107",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R128",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C108",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R129",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C109",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R130",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C110",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R131",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C111",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R132",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C112",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R133",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C113",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R134",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C114",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R135",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C115",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R136",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C116",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R10",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C9",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R11",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C10",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C13",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage"
+          ]
+        }
+      ],
+      "before_sha256": "b5635554fc8ff19e1013d3eb3e013aaffb88c1816694acc6b47046ad1abafb71",
+      "after_sha256": "adebf5279c6512faf436c3a1ca102e3c48f43220412015f8e523434d8b39a9cf"
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+      "parts_changed": 44,
+      "changes": [
+        {
+          "reference": "R126",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R130",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R134",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C110",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C114",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R133",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C101",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R131",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C104",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R121",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C106",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C112",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C113",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R127",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R125",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R2",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R122",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C3",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "C111",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R136",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R128",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C5",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C116",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C105",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R4",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C4",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R132",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R3",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R135",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C115",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C109",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "R123",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R129",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "R124",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C108",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C102",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C107",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C103",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C2",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "MPN",
+            "Manufacturer",
+            "Tolerance",
+            "Voltage",
+            "Dielectric",
+            "Height_Max",
+            "Datasheet"
+          ]
+        },
+        {
+          "reference": "R10",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C10",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        },
+        {
+          "reference": "C13",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage"
+          ]
+        },
+        {
+          "reference": "R11",
+          "fields": [
+            "Value",
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "PowerRating"
+          ]
+        },
+        {
+          "reference": "C9",
+          "fields": [
+            "BOMGroup",
+            "BOMPackage",
+            "Tolerance",
+            "Voltage",
+            "Dielectric"
+          ]
+        }
+      ],
+      "before_sha256": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+      "after_sha256": "cb3c21233f63fc6f4be2323660c8841dcb6b0536cd9466c578cc417044d8ad5a"
+    }
+  ]
+}

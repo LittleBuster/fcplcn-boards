@@ -1,0 +1,71 @@
+{
+  "source": "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-jp2-edge-f6ru5gkh/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+  "source_sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+  "method": "Read-only native pcbnew positions and F.Fab/F.Courtyard body bounds; nominal XY checks and existing lower terminal maximum envelope. No 3D boolean or hardware fit test.",
+  "JP2": {
+    "position_mm": [
+      109.4,
+      118.3
+    ],
+    "orientation_deg": 90,
+    "pad_centers_mm": [
+      [
+        109.4,
+        118.3
+      ],
+      [
+        111.94,
+        118.3
+      ]
+    ],
+    "fab_body_aabb_mm": [
+      108.13,
+      117.03,
+      113.21,
+      119.57
+    ],
+    "courtyard_aabb_mm": [
+      107.63,
+      116.53,
+      113.72,
+      120.07
+    ],
+    "front_board_edge_y_mm": 120.4,
+    "body_to_front_edge_mm": 0.83,
+    "courtyard_to_front_edge_mm": 0.33,
+    "body_to_J3_body_mm": 6.91,
+    "body_to_J8_body_mm": 0.72,
+    "courtyard_to_J8_courtyard_mm": 0.11,
+    "access": "Upper face exposed; front channel between J3 and J8 is open. Shunt approached from front/top and its left side. Right-side finger clearance is limited; use tweezers if required. No unstacking needed by this geometry."
+  },
+  "R68": {
+    "position_mm": [
+      106.7,
+      118.3
+    ],
+    "side": "B.Cu",
+    "courtyard_aabb_mm": [
+      105.02,
+      117.35,
+      108.38,
+      119.25
+    ],
+    "nearest_JP2_pad_to_R68_pad_copper_x_clearance_mm": 0.425,
+    "courtyard_gap_to_lower_J29_max_envelope_mm": 0.25,
+    "gap_to_U11_total_footprint_bbox_mm": 2.575
+  },
+  "stack": {
+    "board_gap_mm": 11.05,
+    "Lower_J29_max_body_aabb_mm": [
+      93.77,
+      119.5,
+      114.69,
+      126.5
+    ],
+    "JP2_solder_tail_xy_radius_from_existing_audit_mm": 0.65,
+    "JP2_tail_xy_gap_to_lower_J29_mm": 0.55,
+    "JP2_tail_xy_gap_to_lower_J33_mm": 4.46,
+    "note": "JP2 tail envelope does not overlap either lower front terminal envelope. R68 bottom courtyard also remains short of lower J29. Existing envelopes and nominal stack gap reused."
+  },
+  "result": "PASS with narrow 0.72 mm nominal right-side body gap to J8; assembled access is from front/top or wider left side. Final part and enclosure sample fit remains beyond this geometric check."
+}

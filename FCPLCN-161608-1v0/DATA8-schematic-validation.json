@@ -1,0 +1,310 @@
+{
+  "result": "PASS",
+  "upper_components": 141,
+  "net_nodes": 460,
+  "nets": 99,
+  "combined_purchased": 295,
+  "native_erc_violations": 0,
+  "all_131_existing_component_uuids_preserved": true,
+  "all_130_nonJ3_existing_metadata_exact": true,
+  "all_existing_connections_except_explicit_U1_J3_changes_exact": true,
+  "fresh_directory_byte_exact": {
+    "FCPLCN-CPU-08-1v0.kicad_sch": true,
+    "RelayStack.kicad_sym": true,
+    "sym-lib-table": true,
+    "fp-lib-table": true
+  },
+  "fresh_XML_components_nets_exact": true,
+  "canonical_PCBS_unchanged": {
+    "Upper": true,
+    "Lower": true
+  },
+  "new_ref_pinmaps": {
+    "U15": {
+      "1": "+3V3",
+      "2": "DATA7_CPU",
+      "3": "DATA8_CPU",
+      "4": "GND",
+      "5": "GND_ISO",
+      "6": "DATA8_ISO",
+      "7": "DATA7_ISO",
+      "8": "+5V_ISO"
+    },
+    "D10": {
+      "1": "DATA7_ISO",
+      "2": "DATA8_ISO",
+      "3": "GND_ISO"
+    },
+    "R57": {
+      "1": "+3V3",
+      "2": "DATA7_CPU"
+    },
+    "R58": {
+      "1": "+3V3",
+      "2": "DATA8_CPU"
+    },
+    "R59": {
+      "1": "+5V_ISO",
+      "2": "DATA7_ISO"
+    },
+    "R60": {
+      "1": "+5V_ISO",
+      "2": "DATA8_ISO"
+    },
+    "C48": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "C49": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "C50": {
+      "1": "+5V_ISO",
+      "2": "GND_ISO"
+    },
+    "C51": {
+      "1": "+5V_ISO",
+      "2": "GND_ISO"
+    },
+    "J3": {
+      "1": "DATA1_ISO",
+      "2": "DATA2_ISO",
+      "3": "DATA3_ISO",
+      "4": "DATA4_ISO",
+      "5": "DATA5_ISO",
+      "6": "DATA6_ISO",
+      "7": "DATA7_ISO",
+      "8": "DATA8_ISO",
+      "9": "+5V_ISO",
+      "10": "GND_ISO"
+    }
+  },
+  "changed_connections": [
+    {
+      "ref": "C48",
+      "pin": "1",
+      "before": null,
+      "after": "/+3V3"
+    },
+    {
+      "ref": "C48",
+      "pin": "2",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "C49",
+      "pin": "1",
+      "before": null,
+      "after": "/+3V3"
+    },
+    {
+      "ref": "C49",
+      "pin": "2",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "C50",
+      "pin": "1",
+      "before": null,
+      "after": "/+5V_ISO"
+    },
+    {
+      "ref": "C50",
+      "pin": "2",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "C51",
+      "pin": "1",
+      "before": null,
+      "after": "/+5V_ISO"
+    },
+    {
+      "ref": "C51",
+      "pin": "2",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "D10",
+      "pin": "1",
+      "before": null,
+      "after": "/DATA7_ISO"
+    },
+    {
+      "ref": "D10",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA8_ISO"
+    },
+    {
+      "ref": "D10",
+      "pin": "3",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "J3",
+      "pin": "10",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "J3",
+      "pin": "7",
+      "before": "/+5V_ISO",
+      "after": "/DATA7_ISO"
+    },
+    {
+      "ref": "J3",
+      "pin": "8",
+      "before": "/GND_ISO",
+      "after": "/DATA8_ISO"
+    },
+    {
+      "ref": "J3",
+      "pin": "9",
+      "before": null,
+      "after": "/+5V_ISO"
+    },
+    {
+      "ref": "R57",
+      "pin": "1",
+      "before": null,
+      "after": "/+3V3"
+    },
+    {
+      "ref": "R57",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA7_CPU"
+    },
+    {
+      "ref": "R58",
+      "pin": "1",
+      "before": null,
+      "after": "/+3V3"
+    },
+    {
+      "ref": "R58",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA8_CPU"
+    },
+    {
+      "ref": "R59",
+      "pin": "1",
+      "before": null,
+      "after": "/+5V_ISO"
+    },
+    {
+      "ref": "R59",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA7_ISO"
+    },
+    {
+      "ref": "R60",
+      "pin": "1",
+      "before": null,
+      "after": "/+5V_ISO"
+    },
+    {
+      "ref": "R60",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA8_ISO"
+    },
+    {
+      "ref": "U1",
+      "pin": "31",
+      "before": "unconnected-(U1-IO38-Pad31)",
+      "after": "/DATA7_CPU"
+    },
+    {
+      "ref": "U1",
+      "pin": "36",
+      "before": "unconnected-(U1-RXD0-Pad36)",
+      "after": "/DATA8_CPU"
+    },
+    {
+      "ref": "U15",
+      "pin": "1",
+      "before": null,
+      "after": "/+3V3"
+    },
+    {
+      "ref": "U15",
+      "pin": "2",
+      "before": null,
+      "after": "/DATA7_CPU"
+    },
+    {
+      "ref": "U15",
+      "pin": "3",
+      "before": null,
+      "after": "/DATA8_CPU"
+    },
+    {
+      "ref": "U15",
+      "pin": "4",
+      "before": null,
+      "after": "/GND"
+    },
+    {
+      "ref": "U15",
+      "pin": "5",
+      "before": null,
+      "after": "/GND_ISO"
+    },
+    {
+      "ref": "U15",
+      "pin": "6",
+      "before": null,
+      "after": "/DATA8_ISO"
+    },
+    {
+      "ref": "U15",
+      "pin": "7",
+      "before": null,
+      "after": "/DATA7_ISO"
+    },
+    {
+      "ref": "U15",
+      "pin": "8",
+      "before": null,
+      "after": "/+5V_ISO"
+    }
+  ],
+  "artifacts": {
+    "tools/build_upper_schema.py": "dcd438069bfac027607f19da0a120e06e36be487943d048248580013e6cd738f",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "60aea56bbfd6e62c8512062640dd6818d57cf5cb343f5082f5d0f41f9eab967b",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "22144a66be40fd481c8f6c2001a1088f6fbe003a5dabb9c9a1e0308ead9b7844",
+    "FCPLCN-CPU-08-1v0/RelayStack.kicad_sym": "d1bd3b645dcec8972a474f4347a19f9c71cea285d4e13920004b6affaec7ee1e",
+    "FCPLCN-CPU-08-1v0/ERC.json": "4cb0eeadc9f7a02ba7dad2d1730d7309fc716ee51e23f10b1a7c58722e84b71b",
+    "FCPLCN-CPU-08-1v0/BOM.csv": "3a429f7fef9f69a97822e21336ad02b0c6d803d493d19f543d4ad2dc843eec82",
+    "BOM-combined.csv": "b05ca2808dbb7f6c52d85cba5f9d57f4ba851ca8a1138921d0ded9f7ac5f447e",
+    "FCPLCN-CPU-08-1v0/schematic-svg/FCPLCN-CPU-08-1v0.svg": "0b6e6e636eb7cb76a91f75c6a2644423f9ff56984e43afa780988a42e3978353",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0-schematic.png": "4feddc1ec2f39a3d9ae3e34e9fd405df1ae78210ee0739a114ed47d27f227af9",
+    "FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-10P.kicad_mod": "032e4036190bdfabbcd5baeec9169ba374dec0b79657556d093d67aeb683d9ed",
+    "FCPLCN-CPU-08-1v0/3d/KF128-10P.wrl": "b7e847cf2313f060d6b121f1b0f114bc8f106bf16695c6b85970ad90e2abd6d3",
+    "FCPLCN-CPU-08-1v0/3d/KF128-10P-provenance.json": "d9ce152f2d3a0405d26c909ad195f4725d0454eb96a1a207b4fcc39898507bfe"
+  },
+  "fresh_directory_native_ERC_violations": 0,
+  "visual_inspection": {
+    "full_schematic_inspected": true,
+    "DATA7_DATA8_focus_inspected": true,
+    "new_block_coordinate_range_mm": [
+      425.45,
+      343,
+      577.85,
+      405
+    ],
+    "no_heading_or_note_overlap": true,
+    "GPIO44_UART0_note": true
+  }
+}

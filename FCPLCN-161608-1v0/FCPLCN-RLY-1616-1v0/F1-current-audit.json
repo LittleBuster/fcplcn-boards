@@ -1,0 +1,166 @@
+{
+  "date": "2026-11-13",
+  "change": {
+    "ref": "F1",
+    "before": "0452001.MRL",
+    "after": "045201.5MRL",
+    "manufacturer": "Littelfuse",
+    "rated_current_before_A": 1,
+    "rated_current_after_A": 1.5,
+    "series": "452 NANO2 Slo-Blo time-delay",
+    "voltage_rating_VAC_VDC": 125,
+    "same_physical_package": true,
+    "body_nominal_mm": [
+      6.1,
+      2.69,
+      2.69
+    ],
+    "footprint_preserved": "RelayBoard:Fuse_Littelfuse-NANO2-451_453",
+    "model_preserved": true
+  },
+  "sources": {
+    "relay": {
+      "url": "https://source.hongfa.com//Uploads/Product/PDF/HF49FD_en.pdf",
+      "manufacturer_product_url": "https://www.hongfa.com/product/industrial-relay/HF49FD",
+      "local_verified_pdf": "datasheets/Hongfa-HF49FD-2024-Rev1.00.pdf",
+      "page": 1,
+      "revision": "2024 Rev1.00",
+      "coil_power_5_to_18V_mW": 120,
+      "coil_resistance_12V_ohm": 1200,
+      "coil_resistance_tolerance_percent": 10,
+      "resistance_reference_temperature_C": 23,
+      "local_pdf_sha256": "6e373c161e018188a3211f714678ad4b8ce3020179e3bd54b0e3bd80fb47f568",
+      "local_copy_origin": "Direct download from official manufacturer URL",
+      "path_base": "Lower directory containing this report"
+    },
+    "fuse": {
+      "url": "https://www.littelfuse.com/assetdocs/littelfuse_fuse_452_454_datasheet?assetguid=8c87aa93-80a7-4ea8-8749-a19ba03901c2",
+      "official_version_reviewed": "Revised 10/16/25",
+      "page_electrical_and_derating": 2,
+      "page_dimensions_and_part_numbering": 4,
+      "continuous_current_derating_factor_at_25C": 0.75,
+      "temperature_curve_is_additional_derating": true,
+      "same_manufacturer_document_visual_crosscheck_mirror": "https://pdf.digi-electronics.com/pdf/2801/0452005MRL-datasheet.pdf",
+      "mirror_revision": "GD.06/26/24; PDF page4 is manufacturer page2",
+      "nominal_cold_resistance_before_ohm": 0.225,
+      "nominal_cold_resistance_after_ohm": 0.093,
+      "melting_I2t_before_A2s": 1.98,
+      "melting_I2t_after_A2s": 3.65,
+      "official_pdf_local_copy_available": false,
+      "official_pdf_download_note": "Official assetdocs URL and official legacy paths could not be downloaded in this session (HTTP/SSL access failures). Official URL/revision were reviewed via the web; the archived binary below is a separately identified manufacturer-authored 2024 mirror, not a claimed 2025 official binary.",
+      "local_verified_mirror_pdf": "datasheets/Littelfuse-452-454-GD-20240626-mirror.pdf",
+      "local_mirror_sha256": "997a39af48c3f45d5a6bf4b7b7bd8d21bcba2e29d3d87b8b82248ab9932a14b7",
+      "path_base": "Lower directory containing this report",
+      "local_mirror_page_mapping": {
+        "manufacturer_page1": 3,
+        "manufacturer_page2_electrical_derating": 4,
+        "manufacturer_page4_dimensions_part_numbering": 6
+      },
+      "local_mirror_contains_distributor_cover_pages": 2
+    }
+  },
+  "current_estimate": {
+    "scope": "Engineering simultaneous-load design budget, not a guaranteed device worst-case or a measured operating current.",
+    "assumptions": {
+      "external_input_V": 12,
+      "relay_and_DI_rail_after_D1_V": 11.6,
+      "logic_converter_input_after_D1_D3_V": 11.2,
+      "assumed_converter_efficiency": 0.85,
+      "assumed_opto_LED_forward_voltage_V": 1.2,
+      "all_16_relays_energized": true,
+      "all_16_DI_contacts_closed": true,
+      "relay_driver_voltage_drop_neglected_for_current_estimate": true
+    },
+    "loads": {
+      "main_3V3_budget_A": 0.875,
+      "common_5V_budget_A": 0.48915800000000004,
+      "common_5V_breakdown_A": {
+        "Lower_logic": 0.025,
+        "TMR_full_load_input_budget": 0.263158,
+        "ADM_local_supply_and_buffers_budget": 0.201
+      },
+      "logic_total_output_power_W": 5.33329,
+      "logic_12V_input_estimate_A": 0.560219537815126,
+      "coil_12V_nominal_A": 0.16,
+      "coil_12V_minus10percent_resistance_A": 0.17777777777777778,
+      "coil_after_D1_nominal_A": 0.15466666666666667,
+      "coil_after_D1_minus10percent_resistance_A": 0.17185185185185184,
+      "DI_series_resistance_each_ohm": 1800,
+      "DI_after_D1_assumed_LED1V2_total_A": 0.09244444444444445
+    },
+    "total_A_nominal_coils": 0.8073306489262372,
+    "total_A_minus10percent_coil_resistance": 0.8245158341114223,
+    "nominal_total_if_all_12V_rails_ideal_V12_A": 0.778871568627451,
+    "increment_from_new_ADM_local_201mA_5V_budget_A": 0.10556722689075632,
+    "old_fuse_recommended_continuous_A_at25C": 0.75,
+    "new_fuse_recommended_continuous_A_at25C": 1.125,
+    "reason": "Simultaneous-load estimate exceeds old 0.75A continuous engineering recommendation even at 25C. This does not mean the 1A fuse opens immediately; 100% rated-current minimum opening time is four hours. The same-package 1.5A part restores design margin without moving copper.",
+    "temperature_limitation": "Apply the additional Littelfuse ambient-temperature re-rating curve for the intended enclosure temperature. No full-board high-temperature qualification is claimed; prototype input-current, inrush and thermal measurements remain necessary.",
+    "power_budget_crosscheck": {
+      "path": "../Power-budget.json",
+      "sha256": "6a959baab7763f6c698c4015d1cc2eb5e86890840d791646f501ac3b26b6691f",
+      "read_only_source": true,
+      "main_3v3_ma": 875.0,
+      "common_5v_ma": 489.158,
+      "prior_common_5v_rounded_ma": 489.0,
+      "rounding_correction_ma": 0.158000000000047,
+      "matches_current_root_budget": true
+    }
+  },
+  "structural_validation": {
+    "FCPLCN-RLY-1616-1v0.kicad_sch": {
+      "only_F1_value_and_hidden_MPN_Manufacturer_fields_changed": true,
+      "all_other_file_bytes_unchanged": true,
+      "all_F1_non_property_children_unchanged": true
+    },
+    "FCPLCN-RLY-1616-1v0.kicad_pcb": {
+      "only_F1_value_and_hidden_MPN_Manufacturer_fields_changed": true,
+      "all_other_file_bytes_unchanged": true,
+      "all_F1_non_property_children_unchanged": true
+    }
+  },
+  "preserved": {
+    "all_footprint_poses": true,
+    "all_pads_and_pin_nets": true,
+    "all_tracks_vias_zones_and_fills": true,
+    "outline": true,
+    "models": true,
+    "Lower_U8_TLV1117LV33DCYR": true,
+    "project_and_rules": true,
+    "XML_net_topology": true
+  },
+  "validation": {
+    "native_ERC_violations": 0,
+    "native_DRC_violations": 0,
+    "opens": 0,
+    "schematic_parity": 0,
+    "purchased_components": 152,
+    "BOM_grouped_rows": 47
+  },
+  "sources_sha256": {
+    "FCPLCN-RLY-1616-1v0.kicad_pcb": {
+      "before": "8c0d64d1e66b3e4a5f4566498579b89b1ac834b7cd54a5863081cf8fe5f5d500",
+      "after": "7f4ab4870b80d78a587cc2cbf8250e25e9b9bcd77daaa74ddc1fc91c5cc7582c"
+    },
+    "FCPLCN-RLY-1616-1v0.kicad_sch": {
+      "before": "17670e7524c1eea293702bac9a8cb80b3ce8db6177b6d807de5040f899844bab",
+      "after": "bf44fee193804e58379e704fdc6fbb9362d513c1fba2adfca1e643a8ac4ef014"
+    },
+    "FCPLCN-RLY-1616-1v0.kicad_pro": {
+      "before": "c0a0ce019fb532301d8564e5e21f9e0cdfad2cb0577ab8cca0b3b7204fdf1418",
+      "after": "c0a0ce019fb532301d8564e5e21f9e0cdfad2cb0577ab8cca0b3b7204fdf1418"
+    },
+    "FCPLCN-RLY-1616-1v0.kicad_dru": {
+      "before": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      "after": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645"
+    }
+  },
+  "export_sha256": {
+    "FCPLCN-RLY-1616-1v0.xml": "effa5736073f0627e1faf5bb4e5ed8e0f896b90bd38bc0998ca165580ee292de",
+    "BOM.csv": "a9fa144339903aadc11c53bdd66cdda5c00649ce4e82195ba0bd5356640aaf85",
+    "schematic-svg/FCPLCN-RLY-1616-1v0.svg": "2142acfee769c0b881ae88e62a8b4ed89baa26b9e9a66a44d9fccda3b40d1858",
+    "FCPLCN-RLY-1616-1v0-schematic.png": "0c225ee8be838c84e87a83bbac8550549f51cf04605017a9e8deb85349cdd260",
+    "ERC.json": "594bf9b870dcfd62a453bf51a855d81262d620c5eee8203b89e089d6676f7e8b",
+    "DRC.json": "36ce2822b221f286e7a28876d19a2353b4a5281cf5864bef4f37e3a9a7924286"
+  }
+}

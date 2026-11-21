@@ -1,0 +1,255 @@
+{
+  "revision": "2026-11-13 lift protected12V to Upper, retain Lower5V LDO",
+  "baseline_pcb_sha256": "634b819d81c53667ba517716bec0650c2f0ba93a258c0531b81a36ec94437e57",
+  "pcb_sha256": "8c0d64d1e66b3e4a5f4566498579b89b1ac834b7cd54a5863081cf8fe5f5d500",
+  "all_155_footprint_positions_orientations_preserved": true,
+  "pad_net_changes": [
+    [
+      "J44",
+      "3",
+      "/MOD_VBUS",
+      "/+12V_LOGIC"
+    ],
+    [
+      "J44",
+      "4",
+      "/MOD_VBUS",
+      "/+12V_LOGIC"
+    ]
+  ],
+  "removed_copper": {
+    "0c5640ac-ad0d-4d82-841f-d52cc4a54dd7": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        80280000,
+        88320000
+      ],
+      "end": [
+        89320000,
+        79280000
+      ],
+      "layer": 2,
+      "width": 650000
+    },
+    "46e04c51-e861-4e92-905a-dd9d2bc1f77e": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        110360000,
+        79280000
+      ],
+      "end": [
+        123920000,
+        79280000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "4b38538f-8041-4aab-83a4-5fc05e287855": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        77310000,
+        88240000
+      ],
+      "end": [
+        80200000,
+        88240000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "50773a27-e393-4809-bc38-c37bf668c7c3": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        89320000,
+        79280000
+      ],
+      "end": [
+        110360000,
+        79280000
+      ],
+      "layer": 2,
+      "width": 650000
+    },
+    "92833578-c5be-45c6-96a2-70efdf5fe996": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        130100000,
+        83440000
+      ],
+      "end": [
+        131540000,
+        82000000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "973cefb0-c17c-4555-856e-d1bde576ebe6": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        80200000,
+        88240000
+      ],
+      "end": [
+        80280000,
+        88320000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "b73d91df-880e-4956-abdc-1ee608f86d4c": {
+      "class": "PCB_VIA",
+      "net": "/MOD_VBUS",
+      "start": [
+        110360000,
+        79280000
+      ],
+      "end": [
+        110360000,
+        79280000
+      ],
+      "layer": 0,
+      "width": 800000
+    },
+    "bb08782e-e30a-4292-8a1e-b834134eb607": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        76050000,
+        89500000
+      ],
+      "end": [
+        77310000,
+        88240000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "bc7715b5-545c-4512-a7cf-92a17e186b38": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        128080000,
+        83440000
+      ],
+      "end": [
+        130100000,
+        83440000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "d55c7e0b-f5a5-4fc2-afc6-4a72a234c62d": {
+      "class": "PCB_TRACK",
+      "net": "/MOD_VBUS",
+      "start": [
+        123920000,
+        79280000
+      ],
+      "end": [
+        128080000,
+        83440000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "e1a9e072-ee30-4453-8a06-f73a176405cd": {
+      "class": "PCB_VIA",
+      "net": "/MOD_VBUS",
+      "start": [
+        80280000,
+        88320000
+      ],
+      "end": [
+        80280000,
+        88320000
+      ],
+      "layer": 0,
+      "width": 800000
+    }
+  },
+  "changed_copper": {
+    "8970380a-c0d9-4892-8545-0977e37b84d5": {
+      "old": {
+        "class": "PCB_TRACK",
+        "net": "/MOD_VBUS",
+        "start": [
+          131540000,
+          79460000
+        ],
+        "end": [
+          131540000,
+          82000000
+        ],
+        "layer": 2,
+        "width": 650000
+      },
+      "new": {
+        "class": "PCB_TRACK",
+        "net": "/+12V_LOGIC",
+        "start": [
+          131540000,
+          79460000
+        ],
+        "end": [
+          131540000,
+          82000000
+        ],
+        "layer": 2,
+        "width": 650000
+      }
+    }
+  },
+  "added_copper": {
+    "60d6202d-e7c4-4c7a-9446-00853db78da7": {
+      "class": "PCB_TRACK",
+      "net": "/+12V_LOGIC",
+      "start": [
+        134200000,
+        76800000
+      ],
+      "end": [
+        131540000,
+        79460000
+      ],
+      "layer": 0,
+      "width": 650000
+    },
+    "bf671023-a0cc-443d-8a76-ca2a3bf8ae10": {
+      "class": "PCB_TRACK",
+      "net": "/+12V_LOGIC",
+      "start": [
+        141200000,
+        76800000
+      ],
+      "end": [
+        134200000,
+        76800000
+      ],
+      "layer": 0,
+      "width": 650000
+    }
+  },
+  "lower_regulator": "U8 TLV1117LV33 retained; MOD_VBUS input; no additional R78 on Lower",
+  "stack_left_J43": {
+    "1": "GND",
+    "2": "GND",
+    "3": "5V MOD_VBUS",
+    "4": "5V MOD_VBUS",
+    "5": "I2C_SDA",
+    "6": "I2C_SCL"
+  },
+  "stack_right_J44": {
+    "1": "GND",
+    "2": "GND",
+    "3": "+12V_LOGIC",
+    "4": "+12V_LOGIC",
+    "5": "MCP_RESET_N",
+    "6": "GND"
+  }
+}

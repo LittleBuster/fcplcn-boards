@@ -1,0 +1,76 @@
+{
+  "product": "FCPLCn",
+  "model": "FCPLCN-161608-1v0",
+  "date": "2026-11-18",
+  "passed": true,
+  "change": "FM24CL64B-GTR FRAM on lower PCB",
+  "pcb_sha256": "769fc110602d5671d57dfad71f77acf7b662edb44282a13528ea614883aeb4d7",
+  "source_audit_sha256": "d553fab64a09293b26ae177956ca288fe6269ccfb5775cae2d37902582f0e67a",
+  "native_erc": 0,
+  "native_drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "source_audit": "FRAM-source-audit.json",
+  "board_check": "FRAM-board-check.json",
+  "power_budget": "FRAM-power-budget.json",
+  "added_components": {
+    "U9": {
+      "mpn": "FM24CL64B-GTR",
+      "package": "SOIC-8, 1.27 mm pitch",
+      "position_mm": [
+        96.0,
+        81.3
+      ],
+      "supply": "lower +3V3",
+      "capacity_bytes": 8192,
+      "i2c_bus": "internal GPIO4/5",
+      "i2c_address_7bit": "0x50",
+      "write_protect": "WP tied to GND; writes enabled"
+    },
+    "C14": {
+      "value": "100nF",
+      "package": "0805",
+      "voltage": "50 V",
+      "dielectric": "X7R",
+      "tolerance": "10%",
+      "position_mm": [
+        98.7,
+        76.5
+      ]
+    }
+  },
+  "routing": {
+    "added_track_and_via_items": 33,
+    "new_vias_mm": {
+      "diameter": 0.9,
+      "drill": 0.3
+    },
+    "old_tracks_and_vias_preserved": true,
+    "GND_C110_return_restored_with_three_front_tracks": true,
+    "strict_crossings": 0,
+    "non_45_90_segments": 0,
+    "copper_layers": 2
+  },
+  "mechanical": {
+    "board_gap_mm": 11.05,
+    "U9_max_height_mm": 1.75,
+    "overlapping_upper_battery_holder_nominal_height_mm": 4.0,
+    "nominal_vertical_clearance_mm": 5.3,
+    "physical_fit_test_pending": true
+  },
+  "BOM_purchased": {
+    "CPU": 148,
+    "RLY": 156,
+    "total": 304
+  },
+  "gallery": {
+    "images": 27,
+    "hashes_verified": true,
+    "index": "Previews/native-all-views/index.html",
+    "native_closeup": "FRAM-3D-closeup.png"
+  },
+  "upper_native_sources_unchanged": true,
+  "lower_project_and_rules_unchanged": true,
+  "firmware_integration_added": false,
+  "prototype_qualification_pending": true
+}

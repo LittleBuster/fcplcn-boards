@@ -1,0 +1,157 @@
+{
+  "scope": "Shorten visible capacitor Value to 10uF; full purchasing properties unchanged",
+  "files": [
+    {
+      "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch",
+      "parts_changed": 8,
+      "changes": [
+        {
+          "reference": "C5",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C8",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C1",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C11",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C12",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C13",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C38",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C41",
+          "fields": [
+            "Value"
+          ]
+        }
+      ],
+      "before_sha256": "6caca5d9a24dcad491758b9da6d587c1279ab5c603d9fb59e81a8233d5fd20d5",
+      "after_sha256": "e7689580f16a62b2ab0bf3cd38b011ad11671141465f1249f7c1a02ce06f28a0"
+    },
+    {
+      "path": "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+      "parts_changed": 8,
+      "changes": [
+        {
+          "reference": "C38",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C13",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C12",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C1",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C8",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C41",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C11",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C5",
+          "fields": [
+            "Value"
+          ]
+        }
+      ],
+      "before_sha256": "61a938e4301b3507092a1aec02b2ddecb3a42d10671d786e7bc24efa22d43e0a",
+      "after_sha256": "1cf36ff0412b3bf563635dbfe7ad512737435fae7364c25e5fbb8a01cd1aa52f"
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+      "parts_changed": 2,
+      "changes": [
+        {
+          "reference": "C2",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C3",
+          "fields": [
+            "Value"
+          ]
+        }
+      ],
+      "before_sha256": "adebf5279c6512faf436c3a1ca102e3c48f43220412015f8e523434d8b39a9cf",
+      "after_sha256": "7f9ed5eb6784af66e2d9bebc5b6f864f97224225f0b4e1abd56d2be0152cfa78"
+    },
+    {
+      "path": "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+      "parts_changed": 2,
+      "changes": [
+        {
+          "reference": "C3",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "reference": "C2",
+          "fields": [
+            "Value"
+          ]
+        }
+      ],
+      "before_sha256": "cb3c21233f63fc6f4be2323660c8841dcb6b0536cd9466c578cc417044d8ad5a",
+      "after_sha256": "1bfe5b167c3534736eed53252d5c476a67aa97faa132bbab1f496cc39e18e59e"
+    }
+  ]
+}

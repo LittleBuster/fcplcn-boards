@@ -1,0 +1,248 @@
+{
+  "product": {
+    "name": "FCPLCn",
+    "fullName": "Future City PLC Next",
+    "id": "fcplcn"
+  },
+  "model": "FCPLCN-161608-1v0",
+  "current_revision": "1v0 / extra supports removed",
+  "architecture": "STACK / 16 relay / 16 digital input / 8 isolated DATA",
+  "checked_at": "2026-11-19T04:59:28.100574+07:00",
+  "status": "Extra supports removed; exact baseline, native and source checks passed",
+  "board_names": {
+    "Upper": "FCPLCN-CPU-08-1v0",
+    "Lower": "FCPLCN-RLY-1616-1v0"
+  },
+  "sha256": {
+    "Upper": {
+      ".kicad_pcb": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      ".kicad_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      ".kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      ".xml": "85d29fe2cda720f407e26b25b20abe629144e84b5724063b888d8db7f0827bdd"
+    },
+    "Lower": {
+      ".kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      ".kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      ".kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      ".xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb"
+    }
+  },
+  "native_checks": {
+    "FCPLCN-CPU-08-1v0": {
+      "pcb_sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "active_drc": 0,
+      "excluded_drc": 2,
+      "unconnected": 0,
+      "parity": 0,
+      "ERC": 0,
+      "local_models": 15,
+      "standard_models": 133,
+      "missing_models": []
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "pcb_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "active_drc": 0,
+      "excluded_drc": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "ERC": 0,
+      "local_models": 61,
+      "standard_models": 187,
+      "missing_models": [
+        "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse-NANO2-451_453.step"
+      ]
+    }
+  },
+  "data_ports": [
+    {
+      "connector": "J3",
+      "gpio": 39,
+      "port": 1
+    },
+    {
+      "connector": "J3",
+      "gpio": 40,
+      "port": 2
+    },
+    {
+      "connector": "J3",
+      "gpio": 17,
+      "port": 3
+    },
+    {
+      "connector": "J3",
+      "gpio": 18,
+      "port": 4
+    },
+    {
+      "connector": "J3",
+      "gpio": 1,
+      "port": 5
+    },
+    {
+      "connector": "J3",
+      "gpio": 2,
+      "port": 6
+    },
+    {
+      "connector": "J3",
+      "gpio": 38,
+      "port": 7
+    },
+    {
+      "connector": "J3",
+      "gpio": 44,
+      "port": 8
+    }
+  ],
+  "i2c_gpio": [
+    41,
+    42
+  ],
+  "bidirectional_isolators": 5,
+  "matched_stack_contacts": 12,
+  "board_dimensions_mm": {
+    "Lower": [
+      101,
+      86
+    ],
+    "Upper": [
+      89,
+      49.44
+    ]
+  },
+  "geometry": {
+    "Lower": {
+      "copper_layers": 2,
+      "footprints": 251,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {}
+    },
+    "Upper": {
+      "copper_layers": 2,
+      "footprints": 148,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {
+        "/USB_DN_CPU": 8.474,
+        "/USB_DP_CPU": 4.315,
+        "/USB_DP": 12.647,
+        "/USB_DN": 15.889
+      }
+    }
+  },
+  "bom_purchased": {
+    "Upper": 148,
+    "Lower": 248,
+    "total": 396
+  },
+  "checks": {
+    "current_revision": "Support-removal-validation.json",
+    "independent_source_delta": "Support-removal-source-audit.json",
+    "native_erc_schematics": {
+      "FCPLCN-CPU-08-1v0": "FCPLCN-CPU-08-1v0/Support-removal-ERC.json",
+      "FCPLCN-RLY-1616-1v0": "FCPLCN-RLY-1616-1v0/Support-removal-ERC.json"
+    },
+    "native_pcb_drc": {
+      "FCPLCN-CPU-08-1v0": "FCPLCN-CPU-08-1v0/Support-removal-DRC.json",
+      "FCPLCN-RLY-1616-1v0": "FCPLCN-RLY-1616-1v0/Support-removal-DRC.json"
+    },
+    "board_pin_geometry_and_property_check": "JP2-board-check.json",
+    "BOM_updated": true,
+    "firmware_unchanged_this_operation": true,
+    "firmware_validation": "Input-RC-firmware-qualification.json"
+  },
+  "notes": [
+    "Prior reports certify only their own input hashes.",
+    "USB-only programming power has not been added.",
+    "Two pre-existing CPU BT1 DRC exclusions retained.",
+    "One pre-existing standard fuse STEP model is absent from installed standard KiCad library; all local project models resolve.",
+    "16 TLP2363 inputs require zero MCP GPPUA/GPPUB; initialization/readback/recovery updated and tested.",
+    "Input RC uses 12V; lower 3V3 component envelope82.5mA, supply allocation100mA. Firmware button startup/glitch qualification verified, raw diagnostic inputs retain physical levels."
+  ],
+  "fram": {
+    "mpn": "FM24CL64B-GTR",
+    "package": "SOIC-8, 1.27 mm pitch",
+    "position_mm": [
+      96.0,
+      81.3
+    ],
+    "supply": "lower +3V3",
+    "capacity_bytes": 8192,
+    "i2c_bus": "internal GPIO4/5",
+    "i2c_address_7bit": "0x50",
+    "write_protect": "WP tied to GND; writes enabled"
+  },
+  "board_markings": {
+    "front_silkscreen_names": [
+      "FCPLCN-CPU-08-1v0",
+      "FCPLCN-RLY-1616-1v0"
+    ],
+    "company_text": "Denisov Foundation Ltd.",
+    "native_top_views_visually_checked": true
+  },
+  "input_optocouplers": {
+    "mpn": "TLP2363(TPL,E",
+    "count": 16,
+    "input_resistor": "1.2k + 220R; 1% 0.5W0805",
+    "input_pre_filter": "220R / 1uF; TVS on terminal DI",
+    "input_LED_shunt": "4.7k in parallel with LED",
+    "output_pullup": "10k on RAW",
+    "output_filter": "470R / 100nF",
+    "local_bypass": "100nF each",
+    "bypass_pad_distance_mm": {
+      "U21": 2.223,
+      "U22": 2.223,
+      "U23": 2.223,
+      "U24": 2.223,
+      "U25": 2.223,
+      "U26": 2.223,
+      "U27": 2.223,
+      "U28": 2.223,
+      "U29": 2.223,
+      "U30": 2.223,
+      "U31": 2.223,
+      "U32": 2.223,
+      "U33": 2.223,
+      "U34": 2.223,
+      "U35": 2.223,
+      "U36": 2.223
+    }
+  },
+  "lower3v3": {
+    "component_envelope_ma": 82.5,
+    "supply_allocation_ma": 100,
+    "nominal_LDO_loss_W": 0.1705,
+    "new_prefilter_supply": "12V"
+  },
+  "rs485_termination": {
+    "header": "JP2",
+    "resistor": "R53",
+    "ohm": 120,
+    "installed_enables_termination": true,
+    "pad1_mm": [
+      109.4,
+      118.3
+    ],
+    "pad2_mm": [
+      111.94,
+      118.3
+    ],
+    "body_to_front_edge_mm": 0.83,
+    "access": "front/top, beside J8; wider clearance on left"
+  },
+  "support_points": 2,
+  "functional_stack_contacts": 12,
+  "mechanical_stack_contacts": 0
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "profile_id": "wifi-relay-16-r2-stack",
+  "scope": "Current unreleased board design; direct GPIO wiring metadata updated. Sensor drivers still marked unimplemented. No physical controller flashed.",
+  "ports": {
+    "DATA1": 39,
+    "DATA2": 40,
+    "DATA3": 17,
+    "DATA4": 18,
+    "DATA5": 1,
+    "DATA6": 2,
+    "DATA7": 38,
+    "DATA8": 44
+  },
+  "GPIO44_Uart0_RX_not_assigned": true,
+  "console": "USB Serial/JTAG",
+  "source_sha256": {
+    "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/firmware/base/main/board_profile.cpp": "816ec9ca1e227682c3694a7abe5728e63cc079b9e4244397ae75b8f58c79eb1a",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "5c7a4f46a6312a2da50d5bf206508f7c7f289ea148d0d84917b215278b6b2d6f"
+  },
+  "existing_config_test": "tools/firmware/test-base-config: 1/1 passed; compiled actual board_profile.cpp",
+  "ESP_IDF_build": "tools/firmware/build-base: PASS; ESP-IDF6.1, ESP32-S3 N16R8; ASCII build path",
+  "artifacts_sha256": {
+    "FCPLCn.bin": "8aa146b5a12c45b11b76208f57e3bdb20d0f1b7aaf1a07b94edcdaafb19a6e98",
+    "flasher_args.json": "4e577ac19dc1e726682767695d186efa15e15ca1d4f8102e8cbf8c72cafbf840",
+    "ota_data_initial.bin": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+    "SHA256SUMS": "24855f7d5413fec4f7fda63b5b8db76a497418b1d09a733c307f2927a04147f8",
+    "FCPLCn-full.bin": "8311386b688a5c23942a78bd886eb6b73c9dfc841b81f0e1b1f3f40a06a2e245"
+  },
+  "hardware_execution_tested": false,
+  "native_schematic_pinmap_checked_against_firmware": true,
+  "revision": "DATA8 + SRDA05-4BTG"
+}

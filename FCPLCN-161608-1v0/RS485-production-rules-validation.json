@@ -1,0 +1,124 @@
+{
+  "approved_exact_guard": {
+    "project_changed_paths": {
+      "board.design_settings.rules.min_via_diameter": [
+        0.8,
+        0.6
+      ],
+      "board.design_settings.rules.min_via_annular_width": [
+        0.25,
+        0.15
+      ]
+    },
+    "minimum_through_hole_diameter_mm_unchanged": 0.3,
+    "standard_via_annular_rule_mm": [
+      0.25,
+      0.15
+    ],
+    "added_exact_galvanic_domain_clearance_mm": 1.5,
+    "all_other_project_settings_and_existing_DRC_rules_exact": true
+  },
+  "negative_guard_cases": {
+    "unapproved_min_clearance": {
+      "rejected": true,
+      "reason": "Project differs beyond the two approved via minima"
+    },
+    "unapproved_min_track_width": {
+      "rejected": true,
+      "reason": "Project differs beyond the two approved via minima"
+    },
+    "unapproved_min_through_hole_diameter": {
+      "rejected": true,
+      "reason": "Project differs beyond the two approved via minima"
+    },
+    "unapproved_min_via_diameter": {
+      "rejected": true,
+      "reason": "Project differs beyond the two approved via minima"
+    },
+    "unapproved_min_via_annular_width": {
+      "rejected": true,
+      "reason": "Project differs beyond the two approved via minima"
+    },
+    "only_one_approved_project_change": {
+      "rejected": true,
+      "reason": "Project differs beyond the two approved via minima"
+    },
+    "weakened_isolation": {
+      "rejected": true,
+      "reason": "DRC rules differ beyond the approved via annulus and exact isolation rule"
+    },
+    "weakened_PTH_annulus": {
+      "rejected": true,
+      "reason": "DRC rules differ beyond the approved via annulus and exact isolation rule"
+    },
+    "changed_USB_exception": {
+      "rejected": true,
+      "reason": "DRC rules differ beyond the approved via annulus and exact isolation rule"
+    },
+    "removed_isolation": {
+      "rejected": true,
+      "reason": "DRC rules differ beyond the approved via annulus and exact isolation rule"
+    },
+    "additional_override_rule": {
+      "rejected": true,
+      "reason": "DRC rules differ beyond the approved via annulus and exact isolation rule"
+    },
+    "old_rules700": {
+      "rejected": true,
+      "reason": "Project differs beyond the two approved via minima"
+    }
+  },
+  "native_acceptance": {
+    "valid_vias_mm": {
+      "diameter": 0.6,
+      "drill": 0.3,
+      "annulus": 0.15
+    },
+    "valid_via_ids": [
+      "86928106-896a-4f1c-ae57-15ec4d1d46d7",
+      "ad7d1ce6-09de-43d5-a914-e4d43809b1a9"
+    ],
+    "physical_error_count": 0,
+    "isolated_fixture_only_warnings": {
+      "track_dangling": 2,
+      "via_dangling": 2
+    },
+    "PCB": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/rs485-recovery/rules600/acceptance-control.kicad_pcb",
+    "PCB_sha256": "66d8dc70d5dcadd6ff74be70a36cefd562817394875b93e570ac64cb96e1004f",
+    "report": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/rs485-recovery/rules600/acceptance-control.native-drc.json"
+  },
+  "native_rejection": {
+    "valid_via_still_passes": "86928106-896a-4f1c-ae57-15ec4d1d46d7",
+    "undersized_via": {
+      "id": "ad7d1ce6-09de-43d5-a914-e4d43809b1a9",
+      "detected": [
+        "annular_width",
+        "via_dangling",
+        "via_diameter"
+      ]
+    },
+    "insufficient_annulus": {
+      "id": "8f23eb28-6964-42f5-85ef-d43b907e3642",
+      "detected": [
+        "annular_width",
+        "via_dangling"
+      ]
+    },
+    "undersized_drill": {
+      "id": "a16312ff-6856-47c9-8985-d0b654d8b2d6",
+      "detected": [
+        "drill_out_of_range",
+        "via_dangling"
+      ]
+    },
+    "isolation_1_5mm_enforced": true,
+    "PCB": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/rs485-recovery/rules600/rejection-control.kicad_pcb",
+    "PCB_sha256": "87f6611020927012b9abd9e0914f8b8e1d7b73b82c5d96b36faf04934eeb7bf1",
+    "report": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/rs485-recovery/rules600/rejection-control.native-drc.json"
+  },
+  "rules_files_sha256": {
+    ".kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+    ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4"
+  },
+  "passed": true
+}

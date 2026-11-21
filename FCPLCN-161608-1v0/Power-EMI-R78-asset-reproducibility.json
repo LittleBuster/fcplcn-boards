@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "assets": [
+    {
+      "asset": "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl",
+      "sha256": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+      "byte_exact_reproducible": true
+    },
+    {
+      "asset": "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-1.0.wrl",
+      "sha256": "84767b8854cd9aa834ef1a710195fd4a307f97a455acd26208a391a5edb8ed69",
+      "byte_exact_reproducible": true
+    },
+    {
+      "asset": "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-0.5_SIP3_P2.54mm.kicad_mod",
+      "sha256": "ce2ae5174b49a01dd0cb3a7678443c7e300ab8befca9313bc33d9520a8eb17d2",
+      "byte_exact_reproducible": true
+    },
+    {
+      "asset": "FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-1.0_SIP3_P2.54mm.kicad_mod",
+      "sha256": "ba1df257f23ad41bec8efec61072b6f83cdc08b7d04f60babde989bf7fedb0f5",
+      "byte_exact_reproducible": true
+    }
+  ],
+  "used_by": {
+    "Upper.U3": "R-78K3.3-1.0",
+    "Upper.U5": "R-78K3.3-0.5",
+    "Upper.U12": "R-78K3.3-0.5"
+  },
+  "CAD_geometry_unchanged": true
+}

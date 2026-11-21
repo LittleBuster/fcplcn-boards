@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "scope": "Nine deliberately corrupt scratch copies rejected; positive source audit passed. No CAD source was written. Not a DRC or electrical connectivity test.",
+  "frozen_PCB_sha256": "c9a7cbe08f812e2ce2c9469176646d118347bbdd33be58e48a8594f39d3fae1b",
+  "positive_gates": 671,
+  "source_PCB_unchanged": true,
+  "controls": [
+    {
+      "mutation": "R61_MPN",
+      "detected": true,
+      "errors": [
+        "SRDA physical pin and part contract",
+        "full final XML PCB metadata parity"
+      ],
+      "mutated_PCB_sha256": "0f85b931ab8e3ce996b9be7bb8f7552dda368e1abae6c5bd89b07e1f5156f718"
+    },
+    {
+      "mutation": "C14_1206_ID_ONLY",
+      "detected": true,
+      "errors": [
+        "C14 all non-net footprint content exact except approved rigid pose",
+        "full final XML PCB metadata parity"
+      ],
+      "mutated_PCB_sha256": "2b2248975b97475f1eb5fde31fec75d30317e1c189a505ba506091e1a316129f"
+    },
+    {
+      "mutation": "C50_PAD_SIZE",
+      "detected": true,
+      "errors": [
+        "C50 physical pads match approved library template"
+      ],
+      "mutated_PCB_sha256": "be70dc06672b983f6313340ce04bd1940630bbaddb8921d7ba071a19c629bd16"
+    },
+    {
+      "mutation": "J8_POSE",
+      "detected": true,
+      "errors": [
+        "J8 exact approved final rigid pose"
+      ],
+      "mutated_PCB_sha256": "86126676bce2576a25b180a8e6aff65c2249def08ccadb83f7ac8d8510f72d77"
+    },
+    {
+      "mutation": "DATA1_CPU_COPPER",
+      "detected": true,
+      "errors": [
+        "only explicitly authorized copper nets edited",
+        "all non-allowed copper geometries exact",
+        "all protected USB internalI2C CPU sensor Ethernet LED-control and other nets exact except exact manifested permissions"
+      ],
+      "mutated_PCB_sha256": "9ce64ee0c0bf913e5e499c598de2822d2ab16e78a7b40d2a172b6b4d577e6ee4"
+    },
+    {
+      "mutation": "ESP_EN_COPPER",
+      "detected": true,
+      "errors": [
+        "only explicitly authorized copper nets edited",
+        "all non-allowed copper geometries exact",
+        "all protected USB internalI2C CPU sensor Ethernet LED-control and other nets exact except exact manifested permissions"
+      ],
+      "mutated_PCB_sha256": "a0728763cefc0fadc8db25104aae1b0c92a5f81e48c143b8d0c651006960d194"
+    },
+    {
+      "mutation": "KEEPOUT_COORDINATE",
+      "detected": true,
+      "errors": [
+        "exact approved keepout delta ab36f18f-12dd-48d5-a979-4a59cc99ddf3"
+      ],
+      "mutated_PCB_sha256": "a01af845c4bb3bd0a786757ad564ca367298271d6a52959a480ad80ee9295cee"
+    },
+    {
+      "mutation": "EDGE_END_Y",
+      "detected": true,
+      "errors": [
+        "exact approved single Edge.Cuts rectangle extension endY119.4 to120.4",
+        "all other outline layers setup and non-text board objects exact"
+      ],
+      "mutated_PCB_sha256": "c19a53276e3cc73acee1d089f5f216210cd231c21316575eedac21dfe75aea85"
+    },
+    {
+      "mutation": "EDGE_STROKE",
+      "detected": true,
+      "errors": [
+        "exact approved single Edge.Cuts rectangle extension endY119.4 to120.4",
+        "all other outline layers setup and non-text board objects exact"
+      ],
+      "mutated_PCB_sha256": "30e43ce8cc74c6d53a611aab66c7a539ebe401a03fdfa5fb4b700ebd975e4ae4"
+    }
+  ]
+}

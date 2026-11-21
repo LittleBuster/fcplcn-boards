@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "revision": "1v0 / accessible RS485 termination jumper",
+  "checked_at": "2026-11-19T03:06:34.885770+07:00",
+  "sha256": {
+    "Upper": {
+      ".kicad_pcb": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      ".kicad_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      ".kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      ".xml": "85d29fe2cda720f407e26b25b20abe629144e84b5724063b888d8db7f0827bdd"
+    },
+    "Lower": {
+      ".kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      ".kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      ".kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      ".xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb"
+    }
+  },
+  "source_audit": "JP2-source-audit.json",
+  "mechanics": "JP2-mechanical-check.json",
+  "native_checks": {
+    "cpu": {
+      "active_drc_count": 0,
+      "excluded_drc_count": 2,
+      "unconnected_count": 0,
+      "schematic_parity_count": 0,
+      "erc_total_count": 0,
+      "erc_active_count": 0,
+      "drc_violations_identical_to_before": true,
+      "native_drc_report_sha256": "783ac808dfc2015fa3061a9de9e681c5e014cc8184dcb7b8f2294507b191ccad",
+      "native_erc_report_sha256": "a08998a0d0aad3b1c7145b3aaa428a66f9ef6de17c91f00486bb90aff89fab83"
+    },
+    "rly": {
+      "active_drc_count": 0,
+      "excluded_drc_count": 0,
+      "unconnected_count": 0,
+      "schematic_parity_count": 0,
+      "erc_total_count": 0,
+      "erc_active_count": 0,
+      "drc_violations_identical_to_before": true,
+      "native_drc_report_sha256": "950eea75bc533c168b7b9d99d4770921699810a4d10dc40f031803429120fada",
+      "native_erc_report_sha256": "4c1d56437c2f1c4ed8736cd3bf3fd248ce4170c25a994229e305f443999a37c8"
+    }
+  },
+  "geometry": {
+    "Lower": {
+      "copper_layers": 2,
+      "footprints": 251,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {}
+    },
+    "Upper": {
+      "copper_layers": 2,
+      "footprints": 148,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {
+        "/USB_DN_CPU": 8.474,
+        "/USB_DP_CPU": 4.315,
+        "/USB_DP": 12.647,
+        "/USB_DN": 15.889
+      }
+    }
+  },
+  "termination": {
+    "header": "JP2",
+    "resistor": "R53",
+    "ohm": 120,
+    "installed_enables_termination": true,
+    "pad1_mm": [
+      109.4,
+      118.3
+    ],
+    "pad2_mm": [
+      111.94,
+      118.3
+    ],
+    "body_to_front_edge_mm": 0.83,
+    "access": "front/top, beside J8; wider clearance on left"
+  },
+  "schematics_and_BOM_unchanged": true,
+  "lower_3v3_budget_unchanged": true,
+  "gallery": "JP2-render-validation.json",
+  "prototype_fit_check_pending": true
+}

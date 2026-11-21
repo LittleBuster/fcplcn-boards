@@ -1,0 +1,56 @@
+{
+  "project": "FCPLCN-161608-1v0",
+  "boards": [
+    "FCPLCN-CPU-08-1v0",
+    "FCPLCN-RLY-1616-1v0"
+  ],
+  "passed": true,
+  "canonical_board_files": [
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb"
+  ],
+  "canonical_projects": [
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro"
+  ],
+  "source_delta": "Rename-source-delta.json",
+  "native_checks": {
+    "FCPLCN-CPU-08-1v0": {
+      "pcb_sha256": "25c97070dc6feb11dfc259f8289a4f86a5a9200aa5e138a6a2195e96ebf8ce0b",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "local_models": 15,
+      "standard_models": 133,
+      "missing_models": [],
+      "active_drc": 0,
+      "excluded_drc": 2,
+      "unconnected": 0,
+      "parity": 0
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "pcb_sha256": "c419dd4425b9e8cf1d0cf1842b6ba9bf91c229632bd608483e4e93767223f210",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "local_models": 49,
+      "standard_models": 105,
+      "missing_models": [
+        "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse-NANO2-451_453.step"
+      ],
+      "active_drc": 0,
+      "excluded_drc": 0,
+      "unconnected": 0,
+      "parity": 0
+    }
+  },
+  "current_validation": "Validation.json",
+  "gallery_images": 27,
+  "gallery_source_hashes_verified": true,
+  "old_projects_remaining_in_workspace": false,
+  "previous_versions_in_trash": true,
+  "firmware_persisted_board_id_preserved": true,
+  "electrical_and_layout_changes": false
+}

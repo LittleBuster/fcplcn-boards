@@ -1,0 +1,45 @@
+{
+  "board": "FCPLCN-RLY-1616-1v0",
+  "before_sha256": "769fc110602d5671d57dfad71f77acf7b662edb44282a13528ea614883aeb4d7",
+  "after_sha256": "bdc71b7db992eb93a951d9b724f633bbe27e79bda40561acdc6740153a0fd3c4",
+  "exact_old_source_prefix_preserved": true,
+  "only_added_objects": "2 F.SilkS gr_text objects",
+  "native_drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "source_project_rules_schematic_xml_preserved": true,
+  "canonical_not_modified": true,
+  "text": [
+    {
+      "text": "FCPLCN-RLY-1616-1v0",
+      "position_mm": [
+        86.5,
+        71.1
+      ],
+      "size_mm": [
+        1.3,
+        1.3
+      ],
+      "stroke_mm": 0.15
+    },
+    {
+      "text": "Denisov Foundation Ltd.",
+      "position_mm": [
+        86.5,
+        72.8
+      ],
+      "size_mm": [
+        1.3,
+        1.3
+      ],
+      "stroke_mm": 0.15
+    }
+  ],
+  "physical_visibility": "Native 3D top checked, both labels clear of component bodies, RN1 left of text; final render updated separately.",
+  "final_native_3D_top": {
+    "file": "Lower-branding-top.png",
+    "sha256": "3f8bee24db0f7bdc6def9d73522e10040844b6688cf9f48998a297862238f37d",
+    "source_sha256": "bdc71b7db992eb93a951d9b724f633bbe27e79bda40561acdc6740153a0fd3c4",
+    "both_texts_visible_clear_of_component_bodies": true
+  }
+}

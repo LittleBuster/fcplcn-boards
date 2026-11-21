@@ -1,0 +1,221 @@
+{
+  "revision": "Separate MAIN R78 1.0 A and LOCAL R78 0.5 A supplies; Nexperia buffers; 1% output biases and series resistors",
+  "sources": {
+    "ADM2687E": {
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf",
+      "revision": "D,2025",
+      "pages": {
+        "thresholds_current": "3",
+        "physical_pins_decoupling": "8",
+        "isolation_power_and_EMI": "18"
+      }
+    },
+    "Nexperia_74LVC125A": {
+      "url": "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf",
+      "revision": "12,2025-05-02",
+      "pages": {
+        "pinmap": "3",
+        "VIH_VIL_VOH_VOL": "5",
+        "IOFF": "6"
+      }
+    },
+    "ESP32_S3_module": {
+      "url": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "parameters_used": "VOH>=0.8VDD,VOL<=0.1VDD,VIH>=0.75VDD,VIL<=0.25VDD; input absolute limit VDD+0.3"
+    },
+    "RECOM_R78K_0p5": {
+      "url": "https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf",
+      "revision": "5-2025",
+      "pages": {
+        "accuracy_line_load": "5",
+        "input_slew_hard_plug": "2",
+        "derating": "6"
+      }
+    },
+    "RECOM_R78K_1p0": {
+      "url": "https://recom-power.com/pdf/Innoline/R-78K-1.0.pdf",
+      "scope": "MAIN rail only; do not use the 1 A tolerance for the 0.5 A LOCAL regulator"
+    }
+  },
+  "parts": {
+    "U13": "Nexperia74LVC125AD,118; VCC=3V3_RS485_LOCAL",
+    "U14": "Nexperia74LVC125AD,118; VCC=MAIN3V3",
+    "not_approved_substitution": "TI SN74LVC125AD has no Ioff specification in RevT and is not an equivalent for this purpose"
+  },
+  "operation_scope": {
+    "reason": "ADM2687E limit and Nexperia 85 C parameter column; this is not a full-system temperature rating.",
+    "main3v3_static_at25C_V": [
+      3.0525,
+      3.5475
+    ],
+    "all_rail_ramp_decay_transients_require_prototype_validation": true,
+    "RS485_component_static_parameter_scope_C": [
+      -40,
+      85
+    ],
+    "ESP32_N16R8_temperature_note": "Module N16R8 is specified to 65 C with default octal PSRAM operation; the documented ECC option permits 85 C with reduced usable PSRAM. Firmware, enclosure and all other components require a separate system limit.",
+    "local3v3_static_at25C_V": [
+      3.1118999999999994,
+      3.4880999999999998
+    ],
+    "local_R78_additive_tolerance_pct": {
+      "accuracy": 2.7,
+      "line_regulation": 0.3,
+      "load_regulation_0_to100pct": 2.7,
+      "total": 5.7
+    },
+    "local_rail_scope": "Conservative addition of full 0..100% load specs at 25 C. Temperature coefficient, PCB drops, ripple and dynamic excursions excluded; not a guaranteed full-temperature envelope.",
+    "illustrative_local_minus40_to85C_static_V": [
+      3.0904499999999997,
+      3.5095499999999995
+    ],
+    "temperature_coefficient_note": "Adding 65 K times stated 0.01%/K is illustrative: coefficient is not identified as a guaranteed maximum."
+  },
+  "Nexperia_limits": {
+    "VCC_operating_V": [
+      1.65,
+      3.6
+    ],
+    "VIH_min_V_at2p7to3p6": 2.0,
+    "VIL_max_V_at2p7to3p6": 0.8,
+    "input_voltage_V_at_operating_or_partial_poweroff": [
+      0,
+      5.5
+    ],
+    "IOFF_max_uA_at85C": 10,
+    "IOFF_max_uA_at125C": 20,
+    "Iinput_max_uA_at85C": 5,
+    "VOH_min_drop_V_at100uA_upTo85C": 0.2,
+    "VOL_max_V_at100uA_upTo85C": 0.2,
+    "VOL_max_V_at3V24mA_upTo85C": 0.55
+  },
+  "U13_channel_assignment": {
+    "1OE_pin1": "GND",
+    "1A_pin2": "CPU UART TX",
+    "1Y_pin3": "ADM TxD pin6",
+    "2OE_pin4": "GND",
+    "2A_pin5": "CPU DIR",
+    "2Y_pin6": "ADM DE pin5 and RE_N pin4",
+    "GND_pin7": "mainGND",
+    "VCC_pin14": "3V3_RS485_LOCAL",
+    "unused_OE_pins10_13": "ownVCC",
+    "unused_A_pins9_12": "GND",
+    "unused_Y_pins8_11": "NC"
+  },
+  "U14_channel_assignment": {
+    "1OE_pin1": "GND",
+    "1A_pin2": "ADM RxD pin3",
+    "1Y_pin3": "22ohm then CPU UART RX",
+    "GND_pin7": "mainGND",
+    "VCC_pin14": "MAIN3V3",
+    "unused_OE_pins4_10_13": "ownVCC",
+    "unused_A_pins5_9_12": "GND",
+    "unused_Y_pins6_8_11": "NC"
+  },
+  "bias_resistors": {
+    "tolerance_pct": 1,
+    "CPU_TX_pullup_ohm_toMAIN": 47000,
+    "CPU_DIR_pulldown_ohm": 10000,
+    "U13_TX_output_pullup_ohm_toLOCAL": 47000,
+    "U13_DIR_output_pulldown_ohm": 47000,
+    "ADM_RxD_pullup_ohm_toLOCAL": 47000,
+    "CPU_RX_pullup_ohm_toMAIN": 10000,
+    "series_output_RX_ohm": 22
+  },
+  "normal_powered_checks": {
+    "CPU_to_U13_HIGH_min_V": 2.442,
+    "CPU_to_U13_HIGH_required_V": 2.0,
+    "CPU_to_U13_HIGH_margin_V": 0.44200000000000017,
+    "CPU_to_U13_LOW_max_V": 0.35475,
+    "CPU_to_U13_LOW_limit_V": 0.8,
+    "CPU_to_U13_LOW_margin_V": 0.44525000000000003,
+    "CPU_to_U13_path": "Direct CPU output to U13 input; R47/R48 are after U13, not in this path.",
+    "ADM_RxD_to_U14_HIGH_min_V": 2.8118999999999996,
+    "ADM_RxD_to_U14_HIGH_margin_V": 0.8118999999999996,
+    "ADM_RxD_to_U14_LOW_max_V": 0.4,
+    "ADM_RxD_to_U14_LOW_margin_V": 0.4,
+    "ADM_RxD_to_U14_path": "Direct ADM RxD to U14 input; R49 is after U14.",
+    "ADM_RxD_LOW_sink_current_uA": 79.9645390070922,
+    "U13_DIR_HIGH_source_current_uA": 94.9645390070922,
+    "U13_TX_LOW_sink_current_uA": 84.9645390070922,
+    "U13_outputs_within_100uA_spec": true,
+    "U13_to_ADM_HIGH_min_V": 2.9097898879432615,
+    "ADM_HIGH_required_max_V": 2.44167,
+    "U13_to_ADM_HIGH_margin_V": 0.46811988794326176,
+    "U13_to_ADM_LOW_max_V": 0.2018879120567376,
+    "ADM_LOW_limit_min_V": 0.8402129999999999,
+    "U13_to_ADM_LOW_margin_V": 0.6383250879432623,
+    "U13_to_ADM_scope": "Includes conservative full output-load drop across 22 ohm at +1%; combines opposite LOCAL rail corners conservatively although U13 and ADM share the same rail.",
+    "U14_to_CPU_HIGH_margin_V_sameMAINrail": 0.5629028000000001,
+    "U14_to_CPU_LOW_max_V_including22ohm_and10kPU": 0.5569343584399459,
+    "CPU_LOW_limit_min_V": 0.763125,
+    "U14_to_CPU_LOW_margin_V": 0.20619064156005418,
+    "CPU_input_leakage_design_allowance_uA": 10.0,
+    "CPU_input_leakage_scope": "Explicit engineering allowance, not a claimed guaranteed ESP32 leakage maximum; verify the complete receiver load on prototype.",
+    "U14_LOW_current_spec": "RX 10k pullup exceeds 100 uA; use Nexperia VOL <=0.55 V at VCC=3.0 V/IOL=24 mA through 85 C. MAIN static minimum exceeds 3.0 V."
+  },
+  "one_rail_off_checks": {
+    "LOCAL0_MAINon": "U13 input3V3 accepted with VCC0, Ioff disablesoutputs; local47k biases bound residualoutput offset",
+    "U13_output_abs_offset_atIoff85C_V": 0.47492220000000007,
+    "ADM_unpowered_input_positive_limit_V": 0.5,
+    "ADM_unpowered_positive_margin_V": 0.025077799999999928,
+    "MAIN0_LOCALon": "U14 inputfrom3V3RS485 accepted with VCC0; outputHighZ; RX10k tiedtoMAIN tracks unpoweredMCUrail",
+    "U14_RX_abs_offset_atIoff85C_V": 0.1012222,
+    "U14_RX_abs_offset_atIoff125C_V_optional_component_corner": 0.2024444,
+    "ESP_unpowered_input_positive_limit_V": 0.3,
+    "ESP_unpowered_positive_margin_at85C_V": 0.1987778,
+    "note": "Ioff guarantees and these offset calculations apply with the corresponding rail held at VCC=0 V. They do not establish that an unpowered R78 rail remains at zero, nor guarantee high impedance during intermediate ramps with OE tied LOW. Reverse-current/back-power and startup/shutdown require prototype verification."
+  },
+  "ADM_decoupling": {
+    "VCC_pin2_GNDpin1_uF": [
+      0.1,
+      0.01
+    ],
+    "VCC_pin7_GNDpin8_uF": [
+      0.1,
+      10
+    ],
+    "VISOOUT_pin10_GNDpin9_uF": [
+      0.1,
+      10
+    ],
+    "VISOIN_pin15_GNDpin16_uF": [
+      0.1,
+      0.01
+    ],
+    "buffers_each_VCC14_GND7_uF": 0.1
+  },
+  "isolation": {
+    "GND2": "GND_ISO common sensorfield",
+    "VISOOUT_pin10": "Own isolated3V3 output, connect externallytoVISOIN15 only",
+    "must_not_parallel_existing_3V3_ISO": true,
+    "port_not_isolated_from_other_sensor_ports": true
+  },
+  "remaining_measurements": [
+    "Power-rail startup/shutdown and brownout region with OE permanentlylow",
+    "Actual rail tolerances and logic levels with WiFi/Ethernet/RS485 TX and relay switching",
+    "R78 U12 and ADM thermal rise in actual assembly",
+    "EMI and bus surge immunity are not established by schematic checks",
+    "U12 VIN slew, local rail ripple/undershoot and any back-power with independently supplied MAIN/LOCAL rails; powered stack mating is prohibited"
+  ],
+  "bias_and_buffer_current_budget": {
+    "LOCAL_voltage_range_at25C_V": [
+      3.1118999999999994,
+      3.4880999999999998
+    ],
+    "MAIN_voltage_range_at25C_V": [
+      3.0525,
+      3.5475
+    ],
+    "LOCAL_47k_branch_current_max_uA": 74.9645390070922,
+    "MAIN_TX_47k_branch_current_max_uA": 76.24113475177305,
+    "MAIN_DIR_or_RX_10k_branch_current_max_uA": 358.3333333333333,
+    "LOCAL_three_bias_branch_overestimate_uA": 224.89361702127658,
+    "U13_static_ICC_max_uA_at_rail_inputs_85C": 10,
+    "Nexperia_delta_ICC_per_input_max_uA_test_condition": 500,
+    "delta_ICC_condition": "VI=VCC-0.6 V, VCC 2.7..3.6 V, up to 85 C. This single condition does not bound arbitrary intermediate inputs during independent rail ramps.",
+    "LOCAL_buffer_and_bias_allocation_ma": 1,
+    "allocation_scope": "Engineering allowance, not an independently guaranteed total buffer current in all rail combinations/ramp states. U12 has 299 mA nominal reserve beyond the combined 201 mA design allocation; verify current and temperature during sequencing.",
+    "MAIN_buffer_allocation_ma": 5
+  }
+}

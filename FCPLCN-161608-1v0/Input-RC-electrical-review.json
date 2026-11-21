@@ -1,0 +1,1043 @@
+{
+  "revision": "INPUT RC + LED shunts + detailedLower3V3: CPU148/RLY248 purchased,total396;16x220R+1uF field prefilters and16x4.7k LED shunts;LED resistors1.2k;Lower3V3 envelope82.5mA,allocation100mA plusLDO input allowance0.1mA",
+  "status": "Calculated electrical design review; prototype current/thermal/EMI measurements pending",
+  "counts": {
+    "CPU_purchased": 148,
+    "RLY_purchased": 248,
+    "combined_purchased": 396,
+    "RLY_physical_with_TP": 251,
+    "new_R_series": 16,
+    "new_C_input": 16,
+    "new_R_LED_shunt": 16,
+    "new_total_purchased": 48,
+    "old_R_LED_values_changed": 16
+  },
+  "source_sha256": {
+    "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-input-rc-d8gm6qjd/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb",
+    "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-input-rc-d8gm6qjd/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+    "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-input-rc-d8gm6qjd/stage/Power-budget.json": "ff8374467f3da5eeeba649695463c5819a8376d872d4676a0c2a7ca1b2d6e4dc",
+    "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-input-rc-d8gm6qjd/stage/Input-RC-firmware-qualification.json": "cd9080ad3ac44275235e35c6fcd48df00fbb3588ce2717e3e06df4872226de6f"
+  },
+  "XML_channel_topology_checks": [
+    {
+      "channel": 1,
+      "pin_maps": {
+        "U21": {
+          "1": "Net-(D101-K)",
+          "3": "DIF1",
+          "4": "GND",
+          "5": "OPTO1_RAW",
+          "6": "+3V3"
+        },
+        "R101": {
+          "1": "+12V_SYS",
+          "2": "Net-(D101-K)"
+        },
+        "R161": {
+          "1": "DIF1",
+          "2": "DI1"
+        },
+        "R181": {
+          "1": "Net-(D101-K)",
+          "2": "DIF1"
+        },
+        "C141": {
+          "1": "DIF1",
+          "2": "GND"
+        },
+        "D101": {
+          "1": "Net-(D101-K)",
+          "2": "DIF1"
+        },
+        "D121": {
+          "1": "DI1",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 2,
+      "pin_maps": {
+        "U22": {
+          "1": "Net-(D102-K)",
+          "3": "DIF2",
+          "4": "GND",
+          "5": "OPTO2_RAW",
+          "6": "+3V3"
+        },
+        "R102": {
+          "1": "+12V_SYS",
+          "2": "Net-(D102-K)"
+        },
+        "R162": {
+          "1": "DIF2",
+          "2": "DI2"
+        },
+        "R182": {
+          "1": "Net-(D102-K)",
+          "2": "DIF2"
+        },
+        "C142": {
+          "1": "DIF2",
+          "2": "GND"
+        },
+        "D102": {
+          "1": "Net-(D102-K)",
+          "2": "DIF2"
+        },
+        "D122": {
+          "1": "DI2",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 3,
+      "pin_maps": {
+        "U23": {
+          "1": "Net-(D103-K)",
+          "3": "DIF3",
+          "4": "GND",
+          "5": "OPTO3_RAW",
+          "6": "+3V3"
+        },
+        "R103": {
+          "1": "+12V_SYS",
+          "2": "Net-(D103-K)"
+        },
+        "R163": {
+          "1": "DIF3",
+          "2": "DI3"
+        },
+        "R183": {
+          "1": "Net-(D103-K)",
+          "2": "DIF3"
+        },
+        "C143": {
+          "1": "DIF3",
+          "2": "GND"
+        },
+        "D103": {
+          "1": "Net-(D103-K)",
+          "2": "DIF3"
+        },
+        "D123": {
+          "1": "DI3",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 4,
+      "pin_maps": {
+        "U24": {
+          "1": "Net-(D104-K)",
+          "3": "DIF4",
+          "4": "GND",
+          "5": "OPTO4_RAW",
+          "6": "+3V3"
+        },
+        "R104": {
+          "1": "+12V_SYS",
+          "2": "Net-(D104-K)"
+        },
+        "R164": {
+          "1": "DIF4",
+          "2": "DI4"
+        },
+        "R184": {
+          "1": "Net-(D104-K)",
+          "2": "DIF4"
+        },
+        "C144": {
+          "1": "DIF4",
+          "2": "GND"
+        },
+        "D104": {
+          "1": "Net-(D104-K)",
+          "2": "DIF4"
+        },
+        "D124": {
+          "1": "DI4",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 5,
+      "pin_maps": {
+        "U25": {
+          "1": "Net-(D105-K)",
+          "3": "DIF5",
+          "4": "GND",
+          "5": "OPTO5_RAW",
+          "6": "+3V3"
+        },
+        "R105": {
+          "1": "+12V_SYS",
+          "2": "Net-(D105-K)"
+        },
+        "R165": {
+          "1": "DIF5",
+          "2": "DI5"
+        },
+        "R185": {
+          "1": "Net-(D105-K)",
+          "2": "DIF5"
+        },
+        "C145": {
+          "1": "DIF5",
+          "2": "GND"
+        },
+        "D105": {
+          "1": "Net-(D105-K)",
+          "2": "DIF5"
+        },
+        "D125": {
+          "1": "DI5",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 6,
+      "pin_maps": {
+        "U26": {
+          "1": "Net-(D106-K)",
+          "3": "DIF6",
+          "4": "GND",
+          "5": "OPTO6_RAW",
+          "6": "+3V3"
+        },
+        "R106": {
+          "1": "+12V_SYS",
+          "2": "Net-(D106-K)"
+        },
+        "R166": {
+          "1": "DIF6",
+          "2": "DI6"
+        },
+        "R186": {
+          "1": "Net-(D106-K)",
+          "2": "DIF6"
+        },
+        "C146": {
+          "1": "DIF6",
+          "2": "GND"
+        },
+        "D106": {
+          "1": "Net-(D106-K)",
+          "2": "DIF6"
+        },
+        "D126": {
+          "1": "DI6",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 7,
+      "pin_maps": {
+        "U27": {
+          "1": "Net-(D107-K)",
+          "3": "DIF7",
+          "4": "GND",
+          "5": "OPTO7_RAW",
+          "6": "+3V3"
+        },
+        "R107": {
+          "1": "+12V_SYS",
+          "2": "Net-(D107-K)"
+        },
+        "R167": {
+          "1": "DIF7",
+          "2": "DI7"
+        },
+        "R187": {
+          "1": "Net-(D107-K)",
+          "2": "DIF7"
+        },
+        "C147": {
+          "1": "DIF7",
+          "2": "GND"
+        },
+        "D107": {
+          "1": "Net-(D107-K)",
+          "2": "DIF7"
+        },
+        "D127": {
+          "1": "DI7",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 8,
+      "pin_maps": {
+        "U28": {
+          "1": "Net-(D108-K)",
+          "3": "DIF8",
+          "4": "GND",
+          "5": "OPTO8_RAW",
+          "6": "+3V3"
+        },
+        "R108": {
+          "1": "+12V_SYS",
+          "2": "Net-(D108-K)"
+        },
+        "R168": {
+          "1": "DIF8",
+          "2": "DI8"
+        },
+        "R188": {
+          "1": "Net-(D108-K)",
+          "2": "DIF8"
+        },
+        "C148": {
+          "1": "DIF8",
+          "2": "GND"
+        },
+        "D108": {
+          "1": "Net-(D108-K)",
+          "2": "DIF8"
+        },
+        "D128": {
+          "1": "DI8",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 9,
+      "pin_maps": {
+        "U29": {
+          "1": "Net-(D109-K)",
+          "3": "DIF9",
+          "4": "GND",
+          "5": "OPTO9_RAW",
+          "6": "+3V3"
+        },
+        "R109": {
+          "1": "+12V_SYS",
+          "2": "Net-(D109-K)"
+        },
+        "R169": {
+          "1": "DIF9",
+          "2": "DI9"
+        },
+        "R189": {
+          "1": "Net-(D109-K)",
+          "2": "DIF9"
+        },
+        "C149": {
+          "1": "DIF9",
+          "2": "GND"
+        },
+        "D109": {
+          "1": "Net-(D109-K)",
+          "2": "DIF9"
+        },
+        "D129": {
+          "1": "DI9",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 10,
+      "pin_maps": {
+        "U30": {
+          "1": "Net-(D110-K)",
+          "3": "DIF10",
+          "4": "GND",
+          "5": "OPTO10_RAW",
+          "6": "+3V3"
+        },
+        "R110": {
+          "1": "+12V_SYS",
+          "2": "Net-(D110-K)"
+        },
+        "R170": {
+          "1": "DIF10",
+          "2": "DI10"
+        },
+        "R190": {
+          "1": "Net-(D110-K)",
+          "2": "DIF10"
+        },
+        "C150": {
+          "1": "DIF10",
+          "2": "GND"
+        },
+        "D110": {
+          "1": "Net-(D110-K)",
+          "2": "DIF10"
+        },
+        "D130": {
+          "1": "DI10",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 11,
+      "pin_maps": {
+        "U31": {
+          "1": "Net-(D111-K)",
+          "3": "DIF11",
+          "4": "GND",
+          "5": "OPTO11_RAW",
+          "6": "+3V3"
+        },
+        "R111": {
+          "1": "+12V_SYS",
+          "2": "Net-(D111-K)"
+        },
+        "R171": {
+          "1": "DIF11",
+          "2": "DI11"
+        },
+        "R191": {
+          "1": "Net-(D111-K)",
+          "2": "DIF11"
+        },
+        "C151": {
+          "1": "DIF11",
+          "2": "GND"
+        },
+        "D111": {
+          "1": "Net-(D111-K)",
+          "2": "DIF11"
+        },
+        "D131": {
+          "1": "DI11",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 12,
+      "pin_maps": {
+        "U32": {
+          "1": "Net-(D112-K)",
+          "3": "DIF12",
+          "4": "GND",
+          "5": "OPTO12_RAW",
+          "6": "+3V3"
+        },
+        "R112": {
+          "1": "+12V_SYS",
+          "2": "Net-(D112-K)"
+        },
+        "R172": {
+          "1": "DIF12",
+          "2": "DI12"
+        },
+        "R192": {
+          "1": "Net-(D112-K)",
+          "2": "DIF12"
+        },
+        "C152": {
+          "1": "DIF12",
+          "2": "GND"
+        },
+        "D112": {
+          "1": "Net-(D112-K)",
+          "2": "DIF12"
+        },
+        "D132": {
+          "1": "DI12",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 13,
+      "pin_maps": {
+        "U33": {
+          "1": "Net-(D113-K)",
+          "3": "DIF13",
+          "4": "GND",
+          "5": "OPTO13_RAW",
+          "6": "+3V3"
+        },
+        "R113": {
+          "1": "+12V_SYS",
+          "2": "Net-(D113-K)"
+        },
+        "R173": {
+          "1": "DIF13",
+          "2": "DI13"
+        },
+        "R193": {
+          "1": "Net-(D113-K)",
+          "2": "DIF13"
+        },
+        "C153": {
+          "1": "DIF13",
+          "2": "GND"
+        },
+        "D113": {
+          "1": "Net-(D113-K)",
+          "2": "DIF13"
+        },
+        "D133": {
+          "1": "DI13",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 14,
+      "pin_maps": {
+        "U34": {
+          "1": "Net-(D114-K)",
+          "3": "DIF14",
+          "4": "GND",
+          "5": "OPTO14_RAW",
+          "6": "+3V3"
+        },
+        "R114": {
+          "1": "+12V_SYS",
+          "2": "Net-(D114-K)"
+        },
+        "R174": {
+          "1": "DIF14",
+          "2": "DI14"
+        },
+        "R194": {
+          "1": "Net-(D114-K)",
+          "2": "DIF14"
+        },
+        "C154": {
+          "1": "DIF14",
+          "2": "GND"
+        },
+        "D114": {
+          "1": "Net-(D114-K)",
+          "2": "DIF14"
+        },
+        "D134": {
+          "1": "DI14",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 15,
+      "pin_maps": {
+        "U35": {
+          "1": "Net-(D115-K)",
+          "3": "DIF15",
+          "4": "GND",
+          "5": "OPTO15_RAW",
+          "6": "+3V3"
+        },
+        "R115": {
+          "1": "+12V_SYS",
+          "2": "Net-(D115-K)"
+        },
+        "R175": {
+          "1": "DIF15",
+          "2": "DI15"
+        },
+        "R195": {
+          "1": "Net-(D115-K)",
+          "2": "DIF15"
+        },
+        "C155": {
+          "1": "DIF15",
+          "2": "GND"
+        },
+        "D115": {
+          "1": "Net-(D115-K)",
+          "2": "DIF15"
+        },
+        "D135": {
+          "1": "DI15",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "channel": 16,
+      "pin_maps": {
+        "U36": {
+          "1": "Net-(D116-K)",
+          "3": "DIF16",
+          "4": "GND",
+          "5": "OPTO16_RAW",
+          "6": "+3V3"
+        },
+        "R116": {
+          "1": "+12V_SYS",
+          "2": "Net-(D116-K)"
+        },
+        "R176": {
+          "1": "DIF16",
+          "2": "DI16"
+        },
+        "R196": {
+          "1": "Net-(D116-K)",
+          "2": "DIF16"
+        },
+        "C156": {
+          "1": "DIF16",
+          "2": "GND"
+        },
+        "D116": {
+          "1": "Net-(D116-K)",
+          "2": "DIF16"
+        },
+        "D136": {
+          "1": "DI16",
+          "2": "GND"
+        }
+      }
+    }
+  ],
+  "input_prefilter": {
+    "channels": 16,
+    "new_refs": {
+      "series": "R161..R176",
+      "capacitors": "C141..C156",
+      "LED_shunts": "R181..R196"
+    },
+    "topology": "+12V_SYS -> R101(1.2k) -> LED_A(TLP1); LED_K(TLP3)=DIFi -> R161(220R) -> DIi terminal; C141(1uF) DIFi to GND. R181(4.7k) and reverseD101 both parallel toLED, withR181pin1=LED_A andpin2=DIFi. Existing15V TVS remains externalDIi toGND.",
+    "R_LED": {
+      "refs": "R101..R116",
+      "ohm": 1200,
+      "tolerance_pct": 1,
+      "power_W_P70": 0.5,
+      "MPN": "CRCW08051K20FKTAHP",
+      "manufacturer": "Vishay",
+      "package": "0805",
+      "source": "https://www.vishay.com/docs/20115/crcwhp.pdf"
+    },
+    "R_line": {
+      "refs": "R161..R176",
+      "ohm": 220,
+      "tolerance_pct": 1,
+      "power_W_P70": 0.5,
+      "MPN": "CRCW0805220RFKTAHP",
+      "manufacturer": "Vishay",
+      "package": "0805",
+      "source": "https://www.vishay.com/docs/20115/crcwhp.pdf"
+    },
+    "C": {
+      "refs": "C141..C156",
+      "nominal_uF": 1,
+      "voltage_V": 50,
+      "tolerance_pct": 10,
+      "dielectric": "X7R",
+      "manufacturer": "TDK",
+      "MPN": "C2012X7R1H105K125AB",
+      "package": "0805",
+      "height_max_mm": 1.45,
+      "IR_min_Mohm_at_stated_test_conditions": 500,
+      "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1H105K125AB",
+      "characterization_source": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c2012x7r1h105k125ab.pdf",
+      "DC_bias_reference_at12p5V_cap_change_pct_approx": -25,
+      "DC_bias_reference_effective_uF_approx": 0.75,
+      "DC_bias_scope": "Read approximately from manufacturer reference-only2016 characterization curve; not a guaranteed minimum capacitance. Open-input node approaches12V and loses capacitance; closed DIF atabout1.5..2V has much smaller bias loss. Effective C varies during the transition.",
+      "Cmax_uF_engineering_before_DC_bias": 1.265,
+      "Cmax_scope": "1uF*1.10 initial tolerance*1.15 temperature allowance; intentionally does not take credit for DC-bias reduction. This is an engineering envelope, not an aggregate guaranteed corner including all ageing/manufacturing interactions."
+    },
+    "steady_LED": {
+      "R_total_nominal_ohm": 1420,
+      "external_supply_envelope_V": [
+        10.8,
+        13.2
+      ],
+      "D1_drop_max_assumption_V": 0.6,
+      "LED_VFmax_engineering_V": 2,
+      "VF_scope": "Engineering cold/current allowance; datasheet1.65V max is at2.6mA25C only.",
+      "IFmin_ma_initial_tolerance": 5.28764293870202,
+      "IFmin_ma_with_100ppm_65K_engineering_TCR": 5.2482418395345505,
+      "IFmax_ma_no_D1_or_LED_drop_bound": 9.389671361502348,
+      "required_general_IF_ma": 5,
+      "extra_cable_contact_resistance_headroom_ohm_at_initial_tol": 75.97613299030263,
+      "DC_R_LED_upper_power_W_assuming_zero_drops": 0.10474112279309662,
+      "DC_R_line_upper_power_W_assuming_zero_drops": 0.019468410561695477,
+      "line_current_minimum_ma_initial_tolerance_without_LED_shunt_subtraction": 5.71747315576628,
+      "shunt_current_max_at_VF2V_ma": 0.4298302170642596,
+      "closed_total12V_current_scope": "For the retained VF assumption, adding the parallel shunt diverts current from LED but does not change total current throughR101+R161. Actual VF/current shifts are prototype parameters."
+    },
+    "contact_transient": {
+      "charged_C_voltage_envelope_V": 13.2,
+      "peak_contact_current_mA_simple_RC": 60.6060606060606,
+      "R_line_peak_power_W": 0.7999999999999998,
+      "C_energy_max_uJ": 110.20679999999997,
+      "discharge_tau_max_ms": 0.28108299999999997,
+      "scope": "Simple monotonic local-RC bound before cable inductance/surge; Rline limits discharge that would otherwise be contact/ESR limited.0.8W initial pulse and about0.11mJ are compared with the CRCW-HP pulse curves, not mistaken for continuous power. Repetitive/hot-contact/cable surge qualification remains pending."
+    },
+    "timing": {
+      "nominal_Rline_C_ms": 0.22,
+      "nominal_Rparallel_C_with_LED_conducting_ms": 0.18591549295774645,
+      "open_contact_charge_tau_ms_at_declared_Rmax_Cmax": 7.538135,
+      "startup_open_contact_LED_current_upper_mA": 11.111111111111109,
+      "startup_scope": "On power-up with an open contact, C charges throughLED/Rshunt and1.2k;220R is outside this open-contact charging branch. Raw activeLOW can occur. Rshunt provides defined charging after LED current becomes small. Simple initialLED bound11.11mA is below15mA derated absolute limit at105C. Button/action qualification remains required.",
+      "TLP_input_hysteresis_scope": "Datasheet does not specify an IFHL/IFLH hysteresis pair. Toshiba application note nevertheless shows clean slow-edge operation of TLP2363; do not claim it necessarily chatters on slow edges.",
+      "LED_conducting_charge_RLED_C_ms_reference": 1.5331799999999998,
+      "defined_OFF_model": {
+        "model": "Remove the LED, retainingR_LED+Rshunt chargingC. The real forward-conducting LED only accelerates charging compared with this conservative passive comparison model.",
+        "formula": "VF_upper(t)=Ileak*Rshunt+[Vs*Rshunt/(R_LED+Rshunt)-Ileak*Rshunt]*exp[-t/((R_LED+Rshunt)*C)]",
+        "R_LED_max_ohm": 1212,
+        "Rshunt_max_ohm": 4747,
+        "Cmax_uF": 1.265,
+        "Vs_max_V": 13.2,
+        "initial_VF_upper_V_LED_removed": 10.515254237288135,
+        "OFF_VF_target_V": 0.8,
+        "tau_max_ms": 7.538135,
+        "input_time_to_VF0p8_ms_zero_leak": 19.418013676825293,
+        "input_time_to_VF0p8_ms_1uA_leak": 19.459472539804285,
+        "declared_open_node_sink_leakage_ceiling_uA": 100,
+        "leakage_scope": "Combined capacitor/TVS/PCB/cable leakage sinking the openDIF node.100uA is a declared design/test envelope, not a claim that all unspecified field wiring and15V TVS variants guarantee it across temperature.",
+        "steady_VF_upper_V_at100uA": 0.4747,
+        "input_time_to_VF0p8_ms_at100uA": 25.853087520991338,
+        "absolute_model_leakage_limit_uA_for_VF_below0p8": 168.52749104697705,
+        "postfilter_release_corner_ms": 4.223593446663164,
+        "postfilter_scope": "Uses3V3-5%,10k/470R+1%,100nF+10%+15%temperature allowance,TLP50uA output leakage andMCP1uA input leakage; initialIN0V andMCP VIH0.8VDD. Geometric/input timing and resistor-temperature assumptions remain engineering envelopes.",
+        "total_zero_leak_ms": 23.64160712348846,
+        "total_at100uA_ms": 30.0766809676545,
+        "qualification_comparison": "About23.64ms without leak or30.08ms at the declared100uA leak corner, below40ms between three distinct20ms observations under these model assumptions. This is not a guaranteed all-EMI pulse cutoff or an unconditional assembled-board startup timing guarantee.",
+        "temperature_resistor_scope": "Timing calculation above uses initial resistor tolerance; generic4.7k TCR,ageing,cable effects and capacitance interactions remain prototype checks. The separate DC IF calculation also gives a100ppm/K*65K engineering corner."
+      }
+    },
+    "bipolar_noise_scope": "TVS stays at connector with a short return. Rline decouples external cable and limits local C current; reverse D protects LED reverse voltage. C filters both polarities of short node-voltage disturbance, while long or high-energy faults remain TVS/resistor/layout limits. No12/24V sustained-wiring-fault or completed EFT/surge qualification is claimed.",
+    "firmware_qualification": {
+      "source_changed_for_this_RC_revision": false,
+      "parent_reported_existing_controller_tests": "51/51 host controller cases including startup_low,button_confirmation,hardware_recovery",
+      "behavior": "BaselineLOW disarmed;3 distinctLOW observations; worker20ms; rearmHIGH>=50ms; lockout300ms. Raw DI APIs intentionally expose electrical levels, including startup transients; every consumer requiring debounced actions must qualify them.",
+      "validation_scope": "Reported by parent; no firmware changed or tests rerun by this electrical-review agent.",
+      "validation_record": "Input-RC-firmware-qualification.json"
+    },
+    "source_report": "Input-RC-electrical-review.json",
+    "R_LED_shunt": {
+      "refs": "R181..R196",
+      "ohm": 4700,
+      "tolerance_pct": 1,
+      "power_W": 0.125,
+      "package": "0805",
+      "MPN": null,
+      "BOMGroup": "R-0805-4.7k-1pct-125mW",
+      "pins": "1=LED_A Net-(D101-K),2=DIFi; parallel to LED and reverse diode",
+      "role": "Charges the cathode capacitor even below LED conduction, eliminating reliance on an unspecified low-current LED turn-off tail. No3V3 load.",
+      "max_shunt_current_ma_at_VF2V": 0.4298302170642596,
+      "max_shunt_power_W_at_VF2V": 0.0008596604341285192
+    }
+  },
+  "lower3v3": {
+    "rail": "+3V3 on FCPLCN-RLY-1616-1v0",
+    "source": "U8 TLV1117LV33DCYR from MOD_VBUS5V",
+    "actual_measured_current_ma": null,
+    "full_typical_current_ma": null,
+    "typical_current_scope": "A defensible complete typical sum at the actual3.3V/load/temperature cannot be derived from the published tables alone. TLP typical detector subtotal25.6/28.8mA is quoted at5V25C; MCP/TBD applicable typical entries are absent. No invented measured or guaranteed typical total.",
+    "datasheet_IC_subtotal_ma_at_listed_max_test_conditions": 66.3,
+    "engineering_component_envelope_ma": 82.5,
+    "engineering_allocation_ma": 100.0,
+    "reserve_over_component_envelope_ma": 17.5,
+    "envelope_scope": "82.5mA combines published component limits with explicitly labelled rail/tolerance and driver-current assumptions. It is not a guaranteed assembled-board all-temperature maximum.100mA is the approved supply allocation; verify the prototype.",
+    "review_rail_V": [
+      3.135,
+      3.465
+    ],
+    "rail_scope": "Declared3.3V +/-5% review envelope; not a guaranteed all-temperature TLV1117LV accuracy specification.",
+    "temperature_scope_C": [
+      -40,
+      85
+    ],
+    "TCR_corner_K_from25C": 65,
+    "rows": [
+      {
+        "refs": "U21..U36",
+        "consumer": "16 TLP2363 detector supplies",
+        "quantity": 16,
+        "datasheet_typical_ma_each": {
+          "LED_OFF": 1.6,
+          "LED_ON": 1.8
+        },
+        "typical_scope": "Toshiba table typicals are at VCC5V25C; not an exact3.3V rail prediction.",
+        "datasheet_max_ma_each": 4,
+        "datasheet_max_scope": "ICCH with IF0 and ICCL with IF5mA over the listed supply/temperature conditions. Application LED current5.7..9.4mA is not a new independently guaranteed test condition.",
+        "component_allocation_ma": 64.0,
+        "source": "https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363"
+      },
+      {
+        "refs": "U5,U6",
+        "consumer": "MCP23017 own VDD current",
+        "quantity": 2,
+        "datasheet_typical_ma_each": null,
+        "datasheet_max_ma_each": 1,
+        "datasheet_max_scope": "D004 at SCL/SCK1MHz; GPIO sourced loads and external pull-ups accounted separately. GPPU=0. Standby1uA/device is not used for active load budgeting.",
+        "component_allocation_ma": 2.0,
+        "source": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf"
+      },
+      {
+        "refs": "U9",
+        "consumer": "FM24CL64B F-RAM VDD",
+        "quantity": 1,
+        "datasheet_typical_ma_each": {
+          "standby": 0.003,
+          "active_table": null
+        },
+        "datasheet_max_ma_each": {
+          "100kHz": 0.1,
+          "400kHz": 0.17,
+          "1MHz": 0.3,
+          "standby": 0.006
+        },
+        "datasheet_max_scope": "0.300mA allocation keeps full1MHz device-current allowance; bus pull-up currents accounted separately. A0/A1/A2/WP tied GND.",
+        "component_allocation_ma": 0.3,
+        "source": "https://www.infineon.com/assets/row/public/documents/10/49/infineon-fm24cl64b-64-kbit-8-k-8-serial-i2c-f-ram-datasheet-en.pdf"
+      },
+      {
+        "refs": "R121..R136",
+        "consumer": "16 external optocoupler RAW10k pull-ups",
+        "quantity": 16,
+        "nominal_all_LOW_zero_VOL_bound_ma": 5.28,
+        "initial_tolerance_only_all_LOW_bound_ma": 5.6,
+        "engineering_tol_plus_TCR_bound_ma": 5.637010676156583,
+        "calculation": "16*3.465V/[10k*(1-0.01-0.0065)], rounded up.0.0065 assumes100ppm/K across65K; generic resistor TCR is not separately specified in current CAD.",
+        "component_allocation_ma": 5.7,
+        "no_double_count": "Do not add16*50uA TLP OFF leakage on top of the all-LOW pull-up bound: it is another state of these same branches. Filtering-capacitor charge current flows through these same10k branches.",
+        "source": "https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363"
+      },
+      {
+        "refs": "RN1,RN2",
+        "consumer": "16 external relay-drive10k pulldowns, sourced through MCP HIGH GPIO",
+        "quantity": 16,
+        "nominal_all_HIGH_zero_VOH_drop_bound_ma": 5.28,
+        "initial_tolerance_only_bound_ma": 5.6571428571428575,
+        "datasheet_TCR_ppm_per_K": 100,
+        "datasheet_resistor_tolerance_pct": 2,
+        "engineering_rail_and_tol_plus_TCR_bound_ma": 5.694915254237287,
+        "component_allocation_ma": 5.7,
+        "source": "https://www.bourns.com/data/global/pdfs/4600X.pdf",
+        "scope": "Symbol libsource4609X-101-103LF identifies bussed8x10k.2% initial tolerance and100ppm/K are from Bourns.65K TCR corner plus declared3V3+5% used; resistor ageing/PCB heating still need enclosure validation."
+      },
+      {
+        "refs": "U3,U4 input pins1..8",
+        "consumer": "16 TBD62083AFWG logic-input currents, sourced through MCP HIGH GPIO",
+        "quantity": 16,
+        "datasheet_typical_ma_each": null,
+        "datasheet_max_at_test_point_ma_each": 0.1,
+        "datasheet_test_point": "VIN2.5V,Ta25C. This is not a guaranteed all-temperature maximum at3.3V.",
+        "engineering_allowance_ma_each": 0.2,
+        "component_allocation_ma": 3.2,
+        "scope": "Twice the specified2.5V input-current limit is a deliberate engineering allowance for3.3V drive/temperature, not a new Toshiba guarantee. No separate3.3V supply pin; COM10 is +12V clamp return.",
+        "source": "https://toshiba.semicon-storage.com/info/datasheet_en_20160511.pdf?did=29893"
+      },
+      {
+        "refs": "R2,R3",
+        "consumer": "Lower-board4.7k internal I2C pull-ups",
+        "quantity": 2,
+        "nominal_both_LOW_zero_VOL_bound_ma": 1.4042553191489362,
+        "initial_tolerance_only_both_LOW_bound_ma": 1.4893617021276595,
+        "engineering_tol_plus_TCR_bound_ma": 1.499204967062921,
+        "component_allocation_ma": 1.5,
+        "scope": "Only Lower R2/R3 source current belongs to this rail. Upper-board parallel pull-ups belong to Upper main3V3. Both lines LOW is a conservative simultaneous branch bound, not normal100%duty bus operation.100ppm/K for generic resistors is an engineering assumption."
+      },
+      {
+        "refs": "other local input/capacitor leakage",
+        "consumer": "Small leakage and rounding allowance",
+        "quantity": null,
+        "guaranteed_maximum_ma": null,
+        "component_allocation_ma": 0.1,
+        "scope": "Engineering allowance for passive leakage, address/input bias and rounding; no invented maximum for unspecified generic capacitor insulation. Does not add a second full TLP OFF-leakage or I2C load."
+      }
+    ],
+    "not_lower3v3_loads": [
+      {
+        "refs": "K1..K16 and U3/U4 output/clamp stage",
+        "source": "+12V_SYS",
+        "reason": "Relay coils do not use3V3. Driver input currents and RN pulldowns are separately included above."
+      },
+      {
+        "refs": "R101..R116,opto LEDs,R161..R176,C141..C156,TVS input side",
+        "source": "+12V_SYS",
+        "reason": "New prefilter draws field12V and transient capacitor current, no direct3V3 steady increment."
+      },
+      {
+        "refs": "R4 MCP_RESET_N pulldown10k and reset drive",
+        "source": "Upper main3V3 through CPU GPIO/J44.5",
+        "nominal_resistor_current_ma": 0.33,
+        "reason": "Physical location on Lower does not make it a Lower3V3 load. R10/R11 reset470R and reset capacitors do not create another DC3V3 branch. Main890mA budget already includes reset/control allowance."
+      },
+      {
+        "refs": "PWR/NET/STATUS/ALARM LED header",
+        "source": "Upper circuitry",
+        "reason": "No LED loads on Lower3V3."
+      }
+    ],
+    "double_count_guards": [
+      "MCP own VDD current is separated from GPIO source current to RN and TBD inputs.",
+      "TLP detector supply and external RAW output pull-up current are distinct; OFF leakage is not an extra branch in addition to the all-LOW bound.",
+      "Only actual Lower I2C pull-ups are counted on Lower3V3; foreign rail pull-ups are not copied into this total.",
+      "GPPU remains zero; do not add hypothetical internal pull-ups.",
+      "Decoupling capacitors do not consume their charging current as a steady DC load; bypass/transition dynamics require measurement."
+    ],
+    "LDO": {
+      "part": "TLV1117LV33DCYR",
+      "output_allocation_ma": 100.0,
+      "ground_current_allowance_ma": 0.1,
+      "ground_current_scope": "TI table gives100uA maximum atIOUT0; used here as a small engineering input-current allowance at the working load, not a new full-load/all-temperature guarantee.",
+      "input_current_allocation_ma": 100.1,
+      "loss_W_nominal5V3p3V_at_component_envelope": 0.14075000000000004,
+      "loss_W_nominal5V3p3V_at100mA_allocation": 0.17050000000000004,
+      "loss_scope": "Includes5V*Iq allowance. Approximately0.17W at nominal rails, not a measured enclosure temperature."
+    }
+  },
+  "common5v": {
+    "source": "Lower.U2 R-78E5.0-1.0",
+    "input_net": "+12V_LOGIC",
+    "output_net": "MOD_VBUS",
+    "rated_current_ma": 1000,
+    "Lower.U8": "TLV1117LV33DCYR retained; no new tall regulator under Upper",
+    "lower_design_current_ma": 100.1,
+    "TMR_at_full_output_1w_typical_efficiency_pct": 76,
+    "TMR_at_full_output_typical_input_ma": 263.158,
+    "combined_full_load_design_estimate_ma": 363.258,
+    "TMR_no_load_input_typical_ma": 40,
+    "full_load_efficiency_must_not_be_applied_at_no_load": true,
+    "main_Upper_3v3_not_supplied_by_5v": true,
+    "RS485_design_current_removed_from_5v_ma": 201,
+    "RS485_Upper_3v3_not_supplied_by_5v": true,
+    "lower_design_current_before_FRAM_ma": 25,
+    "FRAM_U9_design_increment_ma": 0.3,
+    "nominal_current_reserve_ma_at_full_TMR_output": 636.742,
+    "FRAM_scope": "U9 FM24CL64B-GTR0.3mA maximum device-current allowance is included in the current100mA Lower3V3 allocation. Do not add it again. TMR full-load efficiency remains a typical engineering assumption.",
+    "lower_design_current_before_TLP2363_ma": 25.3,
+    "TLP2363_detector_supply_increment_ma": 64,
+    "TLP2363_scope": "16 detector supply allowances at4mA each are included in the itemized Lower3V3 component envelope, not added on top of100mA. External pull-ups, RN and driver input currents are counted separately once. New field RC capacitors are on12V and do not directly increase3V3 DC load.",
+    "lower3v3_output_allocation_ma": 100.0,
+    "lower_LDO_input_ground_current_allowance_ma": 0.1,
+    "lower3v3_component_envelope_ma": 82.5,
+    "lower3v3_review_report": "Input-RC-electrical-review.json",
+    "legacy_budget_fields_scope": "lower_design_current_before_FRAM_ma25 and lower_design_current_before_TLP2363_ma25.3 are historical allocations only. Current load is itemized in Lower3V3_current_review; these old blocks are not added again."
+  },
+  "input12v": {
+    "fuse": "Lower.F1 Littelfuse 045201.5MRL, 1.5A Slo-Blo",
+    "current_budget_a_nominal_coils": 0.8730957409371914,
+    "current_budget_a_minus10percent_coil_resistance": 0.8902809261223765,
+    "fuse_recommended_continuous_current_a_at25c": 1.125,
+    "additional_ambient_temperature_derating_required": true,
+    "audit": "Power-budget.json input_12v.calculation and Input-RC-electrical-review.json are current. F1-current-audit.json,FRAM-power-budget.json andTLP2363-power-budget.json are historical revision records.",
+    "design_estimate_not_measured": true,
+    "historical_fuse_audit_not_current_budget": true,
+    "calculation": {
+      "external_input_v": 12,
+      "relay_and_DI_supply_after_D1_v": 11.6,
+      "logic_supply_before_R12_v": 11.2,
+      "logic_supply_after_R12_v": 10.598754024321025,
+      "all_switching_regulators_efficiency_assumption": 0.85,
+      "TMR_full_load_typical_efficiency": 0.76,
+      "main3v3_output_power_w": 2.937,
+      "common5v_output_power_w": 1.8162894736842103,
+      "RS485_local3v3_output_power_w": 0.6633,
+      "logic_input_current_a": 0.6012459756789754,
+      "coil_current_a_nominal": 0.15466666666666667,
+      "coil_current_a_minus10percent_resistance": 0.17185185185185184,
+      "DI_current_a_all16_closed": 0.1171830985915493,
+      "DI_series_ohm": 1420,
+      "opto_LED_drop_assumption_v": 1.2,
+      "R12_included": true,
+      "series_resistor_power_W": 0.3614967232701631,
+      "U12_conversion_only_reduction_a_without_RC_vs_5v_LDO": 0.03589285714285715,
+      "scope": "Simultaneous100mA Lower3V3 design allocation plus0.1mA LDO input allowance,1W TMR output at76%typ efficiency,other existing allocations and85% converter efficiency assumption. DI drop1.2V is an engineering current-budget assumption; IFminimum instead uses2.0V. Not measured peak/inrush or guaranteed all-temperature PSU/efficiency maximum.",
+      "FRAM_increment_ma_on_lower3v3_and_5v": 0.3,
+      "TLP2363_detector_increment_ma_on_lower3v3_and_5v": 64,
+      "DI_LED_resistor_ohm": 1200,
+      "DI_terminal_series_ohm": 220,
+      "Lower3V3_current_allocation_ma": 100.0,
+      "Lower_LDO_ground_current_allowance_ma": 0.1
+    },
+    "nominal_25c_fuse_current_reserve_a_at_minus10percent_coil_resistance": 0.23471907387762347
+  },
+  "protected12v_RC": {
+    "topology": "Lower D3 cathode -> +12V_LOGIC_RAW -> R12 -> +12V_LOGIC; C8/C2/C13 and all regulator inputs remain after R12",
+    "series_ref": "Lower.R12",
+    "series_MPN": "CRM2512-FX-1R00ELF",
+    "series_manufacturer": "Bourns",
+    "R_ohm": 1,
+    "resistance_tolerance_pct": 1,
+    "manufacturer_power_rating_W": 2,
+    "manufacturer_full_power_condition": "300 mm2 total solder pad and trace area at 70 C; 2 W is not a demonstrated PCB assembly thermal rating",
+    "bulk_ref": "Lower.C8",
+    "bulk_nominal_uF": 220,
+    "HF_ref": "Lower.C13",
+    "HF_uF": 0.1,
+    "HF_voltage_V": 50,
+    "HF_dielectric": "X7R",
+    "upstream_design_voltage_V": 11.2,
+    "upstream_voltage_scope": "Engineering 12 V source minus assumed D1/D3 drops, not a guaranteed minimum for every PSU/diode/temperature",
+    "converter_input_power_W_assuming85pct_efficiency": 6.372458204334365,
+    "self_consistent_current_A": 0.6012459756789754,
+    "voltage_drop_V": 0.6012459756789754,
+    "protected_voltage_V": 10.598754024321025,
+    "resistor_dissipation_W": 0.3614967232701631,
+    "formula": "I*(11.2-I*R)=P; choose the low-current stable operating root",
+    "at_resistance_plus1pct": {
+      "R_ohm": 1.01,
+      "I_A": 0.6016080112025829,
+      "protected_voltage_V": 10.59237590868539,
+      "resistor_dissipation_W": 0.36555152113455835,
+      "headroom_to_Lower_R78E5_min8V": 2.5923759086853906,
+      "headroom_to_Upper_R78K_min4p5V": 6.092375908685391
+    },
+    "R_TCR_ppm_per_K": 100,
+    "temperature_scope": "Above corner is resistor initial tolerance at the assumed input/load. TCR, diode drop, supply tolerance and converter efficiency vary with temperature; actual enclosure validation required.",
+    "at_0p6A": {
+      "drop_V": 0.6,
+      "resistor_dissipation_W": 0.36
+    },
+    "bulk_only_ideal_time_constant_us": 220,
+    "bulk_only_ideal_cutoff_Hz": 723.4315595086151,
+    "filter_scope": "First-order unloaded RC estimate only; actual ESR, wiring inductance, converter input impedance and local decoupling change the response. RC does not clamp sustained overvoltage or guarantee EMC/reset immunity.",
+    "startup_pulse": {
+      "supply_step_envelope_V": 13.2,
+      "downstream_capacitance_design_ceiling_uF": 400,
+      "capacitance_scope": "Engineering ceiling including tolerances and module input capacitance; listed external nominal capacitors sum262.2uF. Unknown module internal capacitance and actual PSU startup must be verified.",
+      "nominal_R_peak_W": 174.23999999999998,
+      "minus1pct_R_peak_W": 175.99999999999997,
+      "minus1pct_R_peak_A": 13.333333333333332,
+      "pure_capacitive_charge_energy_J": 0.034848,
+      "nominal_R_voltage_tau_us": 400,
+      "manufacturer_curve_category": "Nominal resistance >=1 ohm; CRM datasheet page3",
+      "approximate_graph_limit_W_at1ms": 220,
+      "first1ms_peak_bound_W": 175.99999999999997,
+      "comparison": "The first1ms instantaneous bound176W is below the approximate220W rectangular-pulse graph. This is an engineering comparison, not repetitive/hot-start/surge qualification.",
+      "pure_RC_power_at1ms_W": 1.1740198851206516,
+      "tail_scope": "The pure-RC tail excludes running converter load. Actual startup and repeated restart waveform/temperature remain prototype checks; do not infer full-circuit tail power from the unloaded RC formula."
+    }
+  },
+  "firmware_qualification": {
+    "source_changed_for_this_RC_revision": false,
+    "parent_reported_existing_controller_tests": "51/51 host controller cases including startup_low,button_confirmation,hardware_recovery",
+    "behavior": "BaselineLOW disarmed;3 distinctLOW observations; worker20ms; rearmHIGH>=50ms; lockout300ms. Raw DI APIs intentionally expose electrical levels, including startup transients; every consumer requiring debounced actions must qualify them.",
+    "validation_scope": "Reported by parent; no firmware changed or tests rerun by this electrical-review agent.",
+    "validation_record": "Input-RC-firmware-qualification.json"
+  },
+  "historical_records_preserved": [
+    "TLP2363-power-budget.json",
+    "TLP2363-design-review.md",
+    "TLP2363-source-audit.json",
+    "FRAM-power-budget.json",
+    "SRDA-budget-audit.json",
+    "FCPLCN-RLY-1616-1v0/F1-current-audit.json"
+  ],
+  "scope": "This agent edited onlyPower-budget.json and the newInput-RC-electrical-review JSON/MD. No CAD,firmware or historical report was changed. XML topology checks are not nativePCB DRC or physical EMC validation.",
+  "sources": {
+    "TLP2363": "https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363",
+    "TLP2363_application_note": "https://toshiba.semicon-storage.com/info/TLP2363_application_note_en_20210325_AKX00763.pdf?did=70620&prodName=TLP2363",
+    "MCP23017": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf",
+    "TBD62083A": "https://toshiba.semicon-storage.com/info/datasheet_en_20160511.pdf?did=29893",
+    "FM24CL64B": "https://www.infineon.com/assets/row/public/documents/10/49/infineon-fm24cl64b-64-kbit-8-k-8-serial-i2c-f-ram-datasheet-en.pdf",
+    "Bourns4600X": "https://www.bourns.com/data/global/pdfs/4600X.pdf",
+    "CRCW_HP": "https://www.vishay.com/docs/20115/crcwhp.pdf",
+    "TDK_C2012X7R1H105K125AB": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1H105K125AB",
+    "TDK_capacitor_characterization": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c2012x7r1h105k125ab.pdf",
+    "TDK_capacitor_specification": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/specification/mlccspec_commercial_general_midvoltage_en.pdf",
+    "TLV1117LV": "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "generator": "tools/build_upper_schema.py",
+  "generator_sha256": "5512a98b23845ce05ffd2614a4cd72663131ae7ded9403842b60b87941ce2ab9",
+  "component_count": 131,
+  "unique_pin_net_count": 431,
+  "only_later_schematic_change": "C34 0805\u21921206",
+  "fresh_directory_byte_reproduction": {
+    "FCPLCN-CPU-08-1v0.kicad_sch": "cf1c7d75abe0bd37ea548fa5183ee7196b226036f324c0d9b1b4a8ce22fc61f0",
+    "RelayStack.kicad_sym": "77935c848db909c06a7662f986d4486353743d0749fb0338b89712222f69222f",
+    "sym-lib-table": "c861dd52ecd5efba05043798e5d0c8b96edb09a240a21ab63916ddc4bed35c60",
+    "fp-lib-table": "02ff5395a7f27ac712d45bb665cf3bc52799448b8713ca9780bfd62a09245064"
+  },
+  "current_canonical_files_match": {
+    "FCPLCN-CPU-08-1v0.kicad_sch": true,
+    "RelayStack.kicad_sym": true,
+    "sym-lib-table": true,
+    "fp-lib-table": true
+  },
+  "proof": ".work/rs485-recovery/review/C34-source-proof/C34-source-consistency.json"
+}

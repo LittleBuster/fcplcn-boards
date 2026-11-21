@@ -1,0 +1,6494 @@
+{
+  "revision": "R78 RS485 supply and Lower protected12V RC",
+  "result": "PASS",
+  "scope": "Read-only source delta and selected maximum-envelope checks. Final native ERC/DRC, actual copper continuity and conducted/radiated EMC measurements remain separate gates.",
+  "source_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "2592644c74a39559e2b532ddc4e1c992a71a0071a535deb9cfa6d8d727480d27",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "cf1c7d75abe0bd37ea548fa5183ee7196b226036f324c0d9b1b4a8ce22fc61f0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "1759118d9e806128c3c548b6a5b7c7f60371050b8487fac048ff950e16d52a49",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "7f4ab4870b80d78a587cc2cbf8250e25e9b9bcd77daaa74ddc1fc91c5cc7582c",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "c0a0ce019fb532301d8564e5e21f9e0cdfad2cb0577ab8cca0b3b7204fdf1418",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "bf44fee193804e58379e704fdc6fbb9362d513c1fba2adfca1e643a8ac4ef014",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "effa5736073f0627e1faf5bb4e5ed8e0f896b90bd38bc0998ca165580ee292de",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "d81498f71022ca1f942df70da954d846e54012d6cf7ddeec27a39aa6dbe32d95",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "582bc9ef1c622f850fe10d0003a8f2d132e9072f960d98f3c7749ed950fc07bd",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "d54cb92563d4825a00d5a7f27def0308938afc064bf9593854bb250b258ab3e7",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "d3d44cb511be23a925795c674c17d145b8cb6cd267b6d15ab6041fd66010a0a4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "b5635554fc8ff19e1013d3eb3e013aaffb88c1816694acc6b47046ad1abafb71",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "26a31bc54de222e2743e2efde3698994ae6347a023c4287460fb0232eed58811",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/before/Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Power-EMI-approved-poses.json": "5d28abc65599a291ee441d20568c369105a077e6588f7bfc85376f8cf809b29f"
+  },
+  "Stack_mechanics_byte_exact": true,
+  "Lower": {
+    "before_pcb_sha256": "7f4ab4870b80d78a587cc2cbf8250e25e9b9bcd77daaa74ddc1fc91c5cc7582c",
+    "pcb_sha256": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+    "footprints": 157,
+    "outline_layers_setup_exact": true,
+    "zone_definitions_keepouts_exact": true,
+    "allowed_changed_existing_refs": [
+      "D3"
+    ],
+    "changed_existing_poses": {},
+    "all_other_footprint_normalized_AST_exact": true,
+    "project_rules": {
+      "numeric_rules_and_all_other_project_settings_exact": true,
+      "custom_rules_byte_exact": true,
+      "new_net_class_pattern": {
+        "netclass": "Board_Power",
+        "pattern": "/+12V_LOGIC_RAW"
+      }
+    },
+    "all_six_USB_data_CC_geometry_exact_from_current_before": true,
+    "copper_delta": {
+      "allowed_nets": [
+        "/+12V_LOGIC",
+        "/+12V_LOGIC_RAW",
+        "/+12V_SYS",
+        "/GND"
+      ],
+      "changed_nets": [
+        "/+12V_LOGIC",
+        "/+12V_LOGIC_RAW",
+        "/+12V_SYS",
+        "/GND"
+      ],
+      "removed": [
+        {
+          "uuid": "03bc5c2a-0eae-4a9f-9a12-230a07b3c653",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            138750000,
+            97901700,
+            139240000,
+            97411700,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "233df1ba-8d0b-4ad6-8113-4ba8e9a02300",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            138750000,
+            97901700,
+            143500000,
+            93151700,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "4f7dac63-b5f3-4aad-a3a8-b393c201d44a",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            143500000,
+            92814900,
+            143500000,
+            93151700,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "ba91a63c-17ed-4e06-b8a7-82641746ddc7",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            138750000,
+            97901700,
+            138750000,
+            98500000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "d1596d88-5aa4-4711-ab22-cfbb28d85545",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            139240000,
+            96040000,
+            139240000,
+            97411700,
+            2,
+            650000
+          ]
+        }
+      ],
+      "added": [
+        {
+          "uuid": "025be54b-6963-5161-b9ba-35fd5ca8f272",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            135162500,
+            93200000,
+            137850000,
+            93200000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "034c2c52-4a70-4d94-bd5c-f5e34d16a57a",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            139450000,
+            91600000,
+            140114900,
+            91600000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "1bb17042-0706-4ce9-9425-e80dde5d4a14",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            113200000,
+            77500000,
+            113600000,
+            77100000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "2144c4ce-f72d-4a72-a001-0d74a21875e4",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            114080000,
+            76075000,
+            114080000,
+            76120000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "2820c270-9a40-4d1b-b0f4-2117b49b4cb7",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            140114900,
+            91600000,
+            141200000,
+            90514900,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "2c1c0ec5-79a2-53ab-a41b-cd96215194bc",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            135000000,
+            93037500,
+            135162500,
+            93200000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "3509dd9c-ce1c-5896-9b87-e4ac9a1c292f",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            139240000,
+            94590000,
+            139240000,
+            96040000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "39da445b-16e8-4a6c-bf4c-f2801ea7db38",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            113600000,
+            76600000,
+            113600000,
+            77100000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "4ce123f7-80eb-5f42-b012-b29a1cf23e24",
+          "net": "/+12V_LOGIC_RAW",
+          "geometry_nm": [
+            "track",
+            135462500,
+            98500000,
+            138750000,
+            98500000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "4da2fe95-1f85-5999-b6e6-955eca9bbfd5",
+          "net": "/+12V_LOGIC_RAW",
+          "geometry_nm": [
+            "track",
+            135000000,
+            98962500,
+            135462500,
+            98500000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "62e237d8-84ec-4b9f-9a56-ba8f61762e04",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            107300000,
+            73900000,
+            110900000,
+            77500000,
+            2,
+            450000
+          ]
+        },
+        {
+          "uuid": "654f6195-f0ba-49c8-aa67-e6fd504cf760",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            97980000,
+            68650000,
+            98100000,
+            68770000,
+            2,
+            450000
+          ]
+        },
+        {
+          "uuid": "6993174d-1449-4b1b-87c2-ef457d693574",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            98100000,
+            68770000,
+            98100000,
+            69000000,
+            2,
+            450000
+          ]
+        },
+        {
+          "uuid": "6ae60787-39e8-47da-9afd-02084e6c4836",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "via",
+            110900000,
+            77500000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "78a0c572-90aa-432d-be94-8cbfcb94d073",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            113600000,
+            76600000,
+            114080000,
+            76120000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "88c2ab3f-5901-4eae-afc3-344ba3b741c2",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            98100000,
+            69000000,
+            103000000,
+            73900000,
+            2,
+            450000
+          ]
+        },
+        {
+          "uuid": "c41c734e-fdd0-5bea-a787-76e3add7a467",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            137850000,
+            93200000,
+            139240000,
+            94590000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "d5058016-bc3e-460d-8752-d9bdb595725a",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            110900000,
+            77500000,
+            113200000,
+            77500000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "d54ab605-0cda-53fc-b1ae-0bc002d25bc7",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            137850000,
+            93200000,
+            139450000,
+            91600000,
+            2,
+            650000
+          ]
+        },
+        {
+          "uuid": "d9073c0e-5700-445b-bb14-07efea8f8db9",
+          "net": "/+12V_SYS",
+          "geometry_nm": [
+            "track",
+            103000000,
+            73900000,
+            107300000,
+            73900000,
+            2,
+            450000
+          ]
+        }
+      ],
+      "mutated": [
+        {
+          "uuid": "acf72dba-f763-442a-8fb8-31f1d4e8fce0",
+          "before": {
+            "net": "/GND",
+            "geometry_nm": [
+              "track",
+              103440000,
+              90640000,
+              106120000,
+              90640000,
+              0,
+              220000
+            ]
+          },
+          "after": {
+            "net": "/GND",
+            "geometry_nm": [
+              "track",
+              103440000,
+              90640000,
+              106120000,
+              90640000,
+              0,
+              650000
+            ]
+          }
+        },
+        {
+          "uuid": "d9e9d458-2896-4331-9c3f-4293aae0b98e",
+          "before": {
+            "net": "/GND",
+            "geometry_nm": [
+              "track",
+              100160000,
+              93920000,
+              103440000,
+              90640000,
+              0,
+              220000
+            ]
+          },
+          "after": {
+            "net": "/GND",
+            "geometry_nm": [
+              "track",
+              100160000,
+              93920000,
+              103440000,
+              90640000,
+              0,
+              650000
+            ]
+          }
+        }
+      ],
+      "counts": {
+        "removed": 5,
+        "added": 20,
+        "mutated": 2
+      },
+      "by_net": {
+        "/+12V_LOGIC": {
+          "before_items": 22,
+          "after_items": 24,
+          "geometry_exact": false
+        },
+        "/+12V_LOGIC_RAW": {
+          "before_items": 0,
+          "after_items": 2,
+          "geometry_exact": false
+        },
+        "/+12V_SYS": {
+          "before_items": 126,
+          "after_items": 137,
+          "geometry_exact": false
+        },
+        "/+3V3": {
+          "before_items": 100,
+          "after_items": 100,
+          "geometry_exact": true
+        },
+        "/DC12_IN": {
+          "before_items": 3,
+          "after_items": 3,
+          "geometry_exact": true
+        },
+        "/DI1": {
+          "before_items": 13,
+          "after_items": 13,
+          "geometry_exact": true
+        },
+        "/DI10": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI11": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI12": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI13": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/DI14": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI15": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI16": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/DI2": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI3": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI4": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI5": {
+          "before_items": 13,
+          "after_items": 13,
+          "geometry_exact": true
+        },
+        "/DI6": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI7": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI8": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DI9": {
+          "before_items": 13,
+          "after_items": 13,
+          "geometry_exact": true
+        },
+        "/DRV1": {
+          "before_items": 17,
+          "after_items": 17,
+          "geometry_exact": true
+        },
+        "/DRV10": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DRV11": {
+          "before_items": 10,
+          "after_items": 10,
+          "geometry_exact": true
+        },
+        "/DRV12": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DRV13": {
+          "before_items": 13,
+          "after_items": 13,
+          "geometry_exact": true
+        },
+        "/DRV14": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DRV15": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/DRV16": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/DRV2": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "/DRV3": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/DRV4": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/DRV5": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/DRV6": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/DRV7": {
+          "before_items": 6,
+          "after_items": 6,
+          "geometry_exact": true
+        },
+        "/DRV8": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/DRV9": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/GND": {
+          "before_items": 175,
+          "after_items": 175,
+          "geometry_exact": false
+        },
+        "/I2C_SCL": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/I2C_SDA": {
+          "before_items": 24,
+          "after_items": 24,
+          "geometry_exact": true
+        },
+        "/IN1": {
+          "before_items": 17,
+          "after_items": 17,
+          "geometry_exact": true
+        },
+        "/IN10": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/IN11": {
+          "before_items": 20,
+          "after_items": 20,
+          "geometry_exact": true
+        },
+        "/IN12": {
+          "before_items": 19,
+          "after_items": 19,
+          "geometry_exact": true
+        },
+        "/IN13": {
+          "before_items": 16,
+          "after_items": 16,
+          "geometry_exact": true
+        },
+        "/IN14": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/IN15": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/IN16": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/IN2": {
+          "before_items": 20,
+          "after_items": 20,
+          "geometry_exact": true
+        },
+        "/IN3": {
+          "before_items": 18,
+          "after_items": 18,
+          "geometry_exact": true
+        },
+        "/IN4": {
+          "before_items": 17,
+          "after_items": 17,
+          "geometry_exact": true
+        },
+        "/IN5": {
+          "before_items": 18,
+          "after_items": 18,
+          "geometry_exact": true
+        },
+        "/IN6": {
+          "before_items": 27,
+          "after_items": 27,
+          "geometry_exact": true
+        },
+        "/IN7": {
+          "before_items": 16,
+          "after_items": 16,
+          "geometry_exact": true
+        },
+        "/IN8": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/IN9": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/K10_LO": {
+          "before_items": 3,
+          "after_items": 3,
+          "geometry_exact": true
+        },
+        "/K11_LO": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "/K12_LO": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "/K13_LO": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/K14_LO": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/K15_LO": {
+          "before_items": 10,
+          "after_items": 10,
+          "geometry_exact": true
+        },
+        "/K16_LO": {
+          "before_items": 6,
+          "after_items": 6,
+          "geometry_exact": true
+        },
+        "/K1_LO": {
+          "before_items": 3,
+          "after_items": 3,
+          "geometry_exact": true
+        },
+        "/K2_LO": {
+          "before_items": 6,
+          "after_items": 6,
+          "geometry_exact": true
+        },
+        "/K3_LO": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "/K4_LO": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "/K5_LO": {
+          "before_items": 2,
+          "after_items": 2,
+          "geometry_exact": true
+        },
+        "/K6_LO": {
+          "before_items": 2,
+          "after_items": 2,
+          "geometry_exact": true
+        },
+        "/K7_LO": {
+          "before_items": 2,
+          "after_items": 2,
+          "geometry_exact": true
+        },
+        "/K8_LO": {
+          "before_items": 2,
+          "after_items": 2,
+          "geometry_exact": true
+        },
+        "/K9_LO": {
+          "before_items": 3,
+          "after_items": 3,
+          "geometry_exact": true
+        },
+        "/MCP1_RST_F": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/MCP2_RST_F": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/MCP_RESET_N": {
+          "before_items": 27,
+          "after_items": 27,
+          "geometry_exact": true
+        },
+        "/MOD_VBUS": {
+          "before_items": 37,
+          "after_items": 37,
+          "geometry_exact": true
+        },
+        "Net-(D1-A)": {
+          "before_items": 3,
+          "after_items": 3,
+          "geometry_exact": true
+        },
+        "Net-(D101-K)": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "Net-(D102-K)": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "Net-(D103-K)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(D104-K)": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "Net-(D105-K)": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "Net-(D106-K)": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "Net-(D107-K)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(D108-K)": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "Net-(D109-K)": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "Net-(D110-K)": {
+          "before_items": 7,
+          "after_items": 7,
+          "geometry_exact": true
+        },
+        "Net-(D111-K)": {
+          "before_items": 6,
+          "after_items": 6,
+          "geometry_exact": true
+        },
+        "Net-(D112-K)": {
+          "before_items": 7,
+          "after_items": 7,
+          "geometry_exact": true
+        },
+        "Net-(D113-K)": {
+          "before_items": 7,
+          "after_items": 7,
+          "geometry_exact": true
+        },
+        "Net-(D114-K)": {
+          "before_items": 7,
+          "after_items": 7,
+          "geometry_exact": true
+        },
+        "Net-(D115-K)": {
+          "before_items": 6,
+          "after_items": 6,
+          "geometry_exact": true
+        },
+        "Net-(D116-K)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J10-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J10-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J11-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J11-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J12-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J12-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J13-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J13-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J14-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J14-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J15-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J15-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J16-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J16-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J17-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J17-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J2-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J2-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J3-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J3-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J4-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J4-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J5-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J5-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J6-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J6-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J7-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J7-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J8-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J8-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "Net-(J9-COM)": {
+          "before_items": 4,
+          "after_items": 4,
+          "geometry_exact": true
+        },
+        "Net-(J9-NO)": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        }
+      },
+      "all_other_net_geometry_exact": true
+    },
+    "xml": {
+      "components": 157,
+      "pin_nodes": 531,
+      "only_approved_pin_changes": true,
+      "all_other_component_records_exact": true
+    }
+  },
+  "Upper": {
+    "before_pcb_sha256": "2592644c74a39559e2b532ddc4e1c992a71a0071a535deb9cfa6d8d727480d27",
+    "pcb_sha256": "d81498f71022ca1f942df70da954d846e54012d6cf7ddeec27a39aa6dbe32d95",
+    "footprints": 131,
+    "outline_layers_setup_exact": true,
+    "zone_definitions_keepouts_exact": true,
+    "allowed_changed_existing_refs": [
+      "C37",
+      "R55",
+      "R56",
+      "U12"
+    ],
+    "changed_existing_poses": {
+      "U12": {
+        "before": [
+          100.5,
+          109.3,
+          90.0,
+          "F.Cu"
+        ],
+        "after": [
+          96.2,
+          111.0,
+          0.0,
+          "F.Cu"
+        ]
+      },
+      "R55": {
+        "before": [
+          101.0,
+          110.6,
+          90.0,
+          "B.Cu"
+        ],
+        "after": [
+          96.3,
+          103.4,
+          180.0,
+          "B.Cu"
+        ]
+      },
+      "R56": {
+        "before": [
+          105.2,
+          111.0,
+          90.0,
+          "F.Cu"
+        ],
+        "after": [
+          100.8,
+          113.0,
+          0.0,
+          "B.Cu"
+        ]
+      }
+    },
+    "all_other_footprint_normalized_AST_exact": true,
+    "project_rules": {
+      "numeric_rules_and_all_other_project_settings_exact": true,
+      "custom_rules_byte_exact": true,
+      "new_net_class_pattern": null
+    },
+    "all_six_USB_data_CC_geometry_exact_from_current_before": true,
+    "copper_delta": {
+      "allowed_nets": [
+        "/+12V_LOGIC",
+        "/+3V3",
+        "/+3V3_RS485",
+        "/DATA6_CPU",
+        "/ESP_BOOT",
+        "/GND",
+        "/MOD_VBUS",
+        "/RS485_DIR",
+        "/RS485_RX_RAW",
+        "/RS485_TX",
+        "/USB_VBUS_SENSE"
+      ],
+      "changed_nets": [
+        "/+12V_LOGIC",
+        "/+3V3",
+        "/+3V3_RS485",
+        "/DATA6_CPU",
+        "/ESP_BOOT",
+        "/GND",
+        "/MOD_VBUS",
+        "/RS485_DIR",
+        "/RS485_RX_RAW",
+        "/RS485_TX",
+        "/USB_VBUS_SENSE"
+      ],
+      "removed": [
+        {
+          "uuid": "0165d9a2-b0d1-4b45-a9c9-c3157e4ad643",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "via",
+            97250000,
+            104400000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "0287ea7a-dc4f-4140-b0bf-17c52d47efa3",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            92800000,
+            89400000,
+            92800000,
+            92500000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "0550b02b-9d9d-45b8-a3c6-87aec0f3df72",
+          "net": "/ESP_BOOT",
+          "geometry_nm": [
+            "track",
+            94850000,
+            103250000,
+            95300000,
+            102800000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "06f13f67-e25a-4211-94b1-40d878678611",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98200000,
+            108475000,
+            98200000,
+            108800000,
+            2,
+            220000
+          ]
+        },
+        {
+          "uuid": "0766615d-53fe-415f-95b7-7dee07d58389",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            102592800,
+            95680800,
+            103912000,
+            97000000,
+            0,
+            220000
+          ]
+        },
+        {
+          "uuid": "07f8fe8d-32eb-417e-b4e7-4af3fe619304",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            100687500,
+            111200000,
+            101000000,
+            111512500,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "08f56177-ff1c-4538-85b3-602be39aa256",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            97850000,
+            105650000,
+            97850000,
+            108650000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "0cf23906-67cb-4a31-8c8f-0c612ea855a7",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            98100000,
+            110100000,
+            99500000,
+            110100000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "120356ca-566a-4f6f-a332-49f45932074a",
+          "net": "/ESP_BOOT",
+          "geometry_nm": [
+            "track",
+            92850000,
+            103250000,
+            94850000,
+            103250000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "1254fce6-096b-4bc3-a392-d6dfa0a1f7e6",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            96200000,
+            98300000,
+            96200000,
+            102500000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "1355b3d7-7407-47e4-a2d5-3a798b23129e",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "via",
+            94561300,
+            102520000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "16714f47-e814-4c82-9556-b612fad9fadd",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            92600000,
+            103650000,
+            95000000,
+            103650000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "1d7b1927-688e-45b5-b2fd-a8defe39999c",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102088000,
+            97000000,
+            103688000,
+            98600000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "1fb2f7ff-6f15-455d-81d2-13c70adb6e70",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98300000,
+            109300000,
+            98400000,
+            109400000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "2abd1fc0-a116-4e9e-83d9-7b3ab350af17",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "via",
+            102400000,
+            111125000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "2ba4a9cc-7014-4d7d-9f41-2133f5ef6494",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            102400000,
+            111125000,
+            102400000,
+            112050000,
+            0,
+            220000
+          ]
+        },
+        {
+          "uuid": "2d064e0d-1599-4972-a2d7-5961c34f93e2",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            103688000,
+            98600000,
+            105030000,
+            98600000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "2d21c10e-e188-4d66-9d3d-0aa96d2fc35d",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "via",
+            103550000,
+            95700000,
+            700000,
+            700000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "35586f84-1da2-421f-ba3e-56198b4ab874",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "via",
+            100100000,
+            110700000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "38c92f90-1136-4694-a7fc-00eca68f2bc9",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            92800000,
+            92500000,
+            97400000,
+            97100000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "4d4210b8-3059-470e-8a0a-c90ffbe69dbb",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            102200000,
+            103700000,
+            102200000,
+            104300000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "50a14b0c-3ee7-4909-a245-777f490f0a39",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            97850000,
+            108650000,
+            98250000,
+            109050000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "551d8241-1cff-4c03-879b-9c203e21287f",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            99550000,
+            111650000,
+            99700000,
+            111650000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "577226e1-3dfa-4fbb-9aac-f7cec9f066de",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            99500000,
+            110100000,
+            100100000,
+            110700000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "5c60e589-d47f-4349-86dc-8bc919a7bf61",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            98900000,
+            97600000,
+            101950000,
+            97600000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "5e771297-a248-4202-bda9-8904995dfb2b",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            102200000,
+            103700000,
+            102900000,
+            103000000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "5ffdc089-2d3d-4803-954f-821f06d0ac68",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "via",
+            92800000,
+            89400000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "604e7eb1-998e-459d-a0f2-23e9a33c09d0",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            100923000,
+            95680800,
+            102592800,
+            95680800,
+            0,
+            220000
+          ]
+        },
+        {
+          "uuid": "6517837c-e4f0-4824-88d8-a0a34cd7fad6",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98200000,
+            109200000,
+            98250000,
+            109150000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "65a513c7-d9ff-4efc-83fe-91c25f1df11e",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            98100000,
+            103900000,
+            102350000,
+            103900000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "69e6797a-f076-4cd9-af72-c17ef6da7fe0",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "track",
+            94561300,
+            102520000,
+            95066300,
+            103025000,
+            2,
+            220000
+          ]
+        },
+        {
+          "uuid": "69fa498b-a5af-4e55-8838-f7ab1374e57e",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102600000,
+            94750000,
+            103550000,
+            95700000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "6ce384bd-9d5d-4223-b000-fb353229ced8",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            100100000,
+            110700000,
+            100600000,
+            111200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "75f7d810-495d-4920-a879-5148cd16f4f8",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            102400000,
+            108800000,
+            102400000,
+            111125000,
+            2,
+            220000
+          ]
+        },
+        {
+          "uuid": "77103622-a200-4505-89a2-03375291f393",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            115200000,
+            78700000,
+            115800000,
+            78100000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "77447945-4323-4266-984b-4e66d80f00b3",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            99700000,
+            111650000,
+            100500000,
+            112450000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "783664b8-573a-49a3-8d53-22b5ed33a9c3",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            103919700,
+            93031700,
+            105261700,
+            93031700,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "79df2700-a0ee-49bb-b8b5-c8da8e616bbd",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "track",
+            95066300,
+            103025000,
+            99387500,
+            103025000,
+            2,
+            220000
+          ]
+        },
+        {
+          "uuid": "7bc8bba8-b09f-444f-b4f2-584a0b07479c",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98200000,
+            108800000,
+            98200000,
+            109200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "802ce70a-a963-4dee-9c2e-b947a5b29836",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            106900000,
+            78700000,
+            106900000,
+            100200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "86751095-1c0b-436e-ad23-4cd9c5555d57",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            97291400,
+            102800000,
+            102088000,
+            102800000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "8aac9d76-24ec-4e87-b665-26b416b3a98b",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "via",
+            92600000,
+            87400000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "8f629be1-579e-4db2-9f4c-b4db281e2bee",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "via",
+            101950000,
+            104550000,
+            700000,
+            700000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "937e9bb8-c564-4c6b-b635-dc07aad8523d",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            97850000,
+            105650000,
+            98950000,
+            104550000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "939112a5-42bc-4da7-83e5-05ba72d3e0a9",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            97900000,
+            104100000,
+            98100000,
+            103900000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "9501e213-47b2-43e4-9530-a3b691ec5495",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98800000,
+            104800000,
+            101700000,
+            104800000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "95c654c1-a827-4554-94b2-4ab55ed3cf9c",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            73450000,
+            104400000,
+            96150000,
+            104400000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "96678f39-a8be-495c-843e-b2871e2a41c5",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            96200000,
+            98300000,
+            97400000,
+            97100000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "96f8d297-c2af-4e1e-8032-cb1c1980beea",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            92600000,
+            89200000,
+            92800000,
+            89400000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "97d84192-c86d-40ea-af1f-c23e0b648bec",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            98250000,
+            101750000,
+            102550000,
+            101750000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "9d536bb4-4883-40eb-a14e-8d23767ed7da",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            97500000,
+            103700000,
+            97900000,
+            104100000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "a67d9240-448a-4ff2-b72e-be76ea3c1fd4",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            101950000,
+            97600000,
+            103550000,
+            99200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "a69855b4-880b-46c7-9954-c11c4bfb5860",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            97200000,
+            109200000,
+            98100000,
+            110100000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "a8d5ea56-1fc0-4b01-8fed-8e6e2d3f87e5",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            104100000,
+            103000000,
+            106900000,
+            100200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "aa6eec0d-eb03-4fcd-b28e-6e71b681861b",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            81800000,
+            103650000,
+            96050000,
+            103650000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "ad8a817c-36c0-492b-91eb-58b2d7813310",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            90000000,
+            84800000,
+            92600000,
+            87400000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "b0ee0bc9-d947-4f6a-bbbe-096471ca5ccd",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            97200000,
+            112450000,
+            700000,
+            700000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "b38b9e67-c8be-4f27-a57c-856828c81e43",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            106900000,
+            78700000,
+            115200000,
+            78700000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "b687583e-592d-4cd3-99de-3c6e8e7630fa",
+          "net": "/ESP_BOOT",
+          "geometry_nm": [
+            "track",
+            91800000,
+            102200000,
+            92850000,
+            103250000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "b6e7e787-c369-4da5-be60-4e29590426f8",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "via",
+            96050000,
+            103650000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "b78afb38-8c9a-4c67-bb7f-452f8a122ebe",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "via",
+            97400000,
+            97100000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "b81f757a-d9ac-465f-ad55-4b72c6205ba0",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98200000,
+            108800000,
+            102400000,
+            108800000,
+            2,
+            220000
+          ]
+        },
+        {
+          "uuid": "bd5eeca2-fc5e-49e6-811b-78287402a941",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            96200000,
+            102500000,
+            97400000,
+            103700000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "bdb4065b-6a6a-41df-aff9-2b34a5d0e6fa",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            97200000,
+            112450000,
+            98200000,
+            112450000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "bf0b40c3-e4b1-4a0f-9bf5-00f9ed5a6761",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            97200000,
+            104400000,
+            97200000,
+            109200000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "c13b2e92-875a-41a4-9e8d-b996a7bfec41",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            97400000,
+            103700000,
+            97500000,
+            103700000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "c56e53c6-53f8-44c4-bae1-8c89d6ae404d",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            101950000,
+            104550000,
+            102200000,
+            104300000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "ca7d4a4b-94c4-41c8-a6a9-102d51d7ae98",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            100600000,
+            111200000,
+            100687500,
+            111200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "d94a121b-e426-4af2-a7ef-85f623082c1f",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            103400000,
+            92450000,
+            700000,
+            700000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "da1634d7-225a-4d7f-a1cd-0d232fcbd90d",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            92600000,
+            87400000,
+            92600000,
+            89200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "dc484842-b610-4445-be2f-7846cffc2c48",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            99236300,
+            93994100,
+            100923000,
+            95680800,
+            2,
+            220000
+          ]
+        },
+        {
+          "uuid": "dd5da826-0169-4e54-baea-edcc74c1432c",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95000000,
+            103650000,
+            95700000,
+            102950000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "df40616d-cf29-4dfc-a3c6-98c7a5e5bba9",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            102900000,
+            103000000,
+            104100000,
+            103000000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "e0eeca9b-75cd-4bc4-972c-b6275b5fb6f0",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98200000,
+            109200000,
+            98400000,
+            109400000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "e4e8618c-380c-4998-bf82-e5a048c29862",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "via",
+            100923000,
+            95680800,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "eb11769a-1ad0-4793-8338-8ab082a41100",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            102400000,
+            112050000,
+            102800000,
+            112450000,
+            0,
+            220000
+          ]
+        },
+        {
+          "uuid": "f158e2dc-185e-4275-9d27-b0859e87f593",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            101700000,
+            104800000,
+            102200000,
+            104300000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "f1a605ab-53b2-4f77-81fc-e3ea42e43126",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98250000,
+            109050000,
+            98250000,
+            109150000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "f1cec9ef-2b26-4540-8f9a-dc0539a446b1",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "track",
+            98950000,
+            104550000,
+            101950000,
+            104550000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "f29e00d8-513a-421e-8f3c-050a7a287624",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            105030000,
+            98600000,
+            106025000,
+            99595000,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "f8d13583-3a20-4edb-82b9-c23c67622e68",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            97763700,
+            98681200,
+            100178600,
+            98681200,
+            0,
+            450000
+          ]
+        },
+        {
+          "uuid": "fe2a1a88-e4aa-4d35-be9e-cf9e4524dfc6",
+          "net": "/MOD_VBUS",
+          "geometry_nm": [
+            "via",
+            98400000,
+            109400000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "ffaeedaf-7876-4aaf-a287-ee3784e1a957",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "via",
+            92800000,
+            92500000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        }
+      ],
+      "added": [
+        {
+          "uuid": "00ade830-beca-41c2-a641-6253ae91d0d8",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95387500,
+            103400000,
+            95737500,
+            103050000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "010a357b-90b7-4946-b229-a07b18956860",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            103825000,
+            79000000,
+            106725000,
+            81900000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "017a40bb-d931-4894-9873-841a0b555740",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95500000,
+            77700000,
+            95900000,
+            78100000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "0287098a-df5b-48f4-9500-9c2739a7bd4b",
+          "net": "/RS485_DIR",
+          "geometry_nm": [
+            "track",
+            73500000,
+            104400000,
+            96150000,
+            104400000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "02a43303-e1f5-4512-b182-3c6fce1d5c26",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            101550000,
+            97100000,
+            101650000,
+            97000000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "02adbcbe-a88b-410f-adc0-d3ebd5b129ea",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            102550000,
+            95400000,
+            103912000,
+            96762000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "05769205-ca07-44cb-b096-132b53557b54",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "via",
+            103700000,
+            95625000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "06012079-6e8d-45a5-b39c-872848908f5c",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            102950000,
+            103725000,
+            106725000,
+            99950000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "083fd411-a7a6-48cb-9727-4a05c54f6783",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            99700000,
+            112300000,
+            99900000,
+            112500000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "0a140018-8f41-40c0-8fbd-0eaa7bb7139f",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101350000,
+            92250000,
+            103200000,
+            92250000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "0ac3a8d9-de87-4f02-aba4-a9958ecfb718",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "via",
+            88100000,
+            76000000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "0b3e00e8-b782-48a7-b685-59dd33abe9be",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            101700000,
+            94050000,
+            103650000,
+            92100000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "0b6f192a-1d88-42fc-b9a0-7a883f11b060",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            102600000,
+            96000000,
+            102900000,
+            96300000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "0dbe702a-5616-475f-b405-df1600eb3f1b",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "track",
+            94450000,
+            102325000,
+            94525000,
+            102400000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "0f544ad1-8140-4334-8238-739728b4c772",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            102800000,
+            110900000,
+            103950000,
+            110900000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "1312ae4c-82d4-45fe-bca3-0015d22dbf2d",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            97000000,
+            89700000,
+            103300000,
+            89700000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "170c0543-1f75-4487-b8ad-0ff4b11a942e",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102300000,
+            102750000,
+            102500000,
+            102550000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "179bbc0d-eaad-40ba-adaa-02528897b92b",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "via",
+            100800000,
+            94850000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "1875bd97-ab0c-43ee-b999-1023e16236be",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "via",
+            78000000,
+            74300000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "19928d2e-7bc0-46fb-a1e8-cbe278cc3d35",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            101350000,
+            95400000,
+            102550000,
+            95400000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "1b625531-6582-4f3e-b8f3-3eb8f85a4c52",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102087500,
+            102800000,
+            102137500,
+            102750000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "1d1a8e45-3d22-4adb-b1eb-0a7605bb47c3",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99350000,
+            98700000,
+            99350000,
+            99050000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "1d1d1589-8e3b-455c-9c13-c5d3daf8b707",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95737500,
+            103050000,
+            95850000,
+            103050000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "21a46bb2-13b9-4957-8e27-94c74e4989e3",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            104850000,
+            110000000,
+            104900000,
+            110000000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "2204b1b8-12c3-497d-bced-3306799640fb",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            93475000,
+            81400000,
+            95875000,
+            79000000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "2511bca8-3fcd-4f1e-a717-27ea5d0475ac",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            98800000,
+            96650000,
+            98800000,
+            103950000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "25a31729-30fc-4e48-9d26-733f1459c189",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            102450000,
+            106650000,
+            103100000,
+            107300000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "2604acd1-7947-4cbb-bbf6-3ada2bdac808",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "via",
+            94450000,
+            102325000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "27f2a42b-a32c-4b7a-b37c-62c639057bd3",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            100250000,
+            83000000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "2a7760e4-93ae-485e-9ac9-ed2bc754969d",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            98000000,
+            104750000,
+            98000000,
+            107650000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "2abcea07-87a7-451e-837a-24a3103d5d4d",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "via",
+            103550000,
+            89950000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "2c918bb2-9892-4b58-8adf-839ecec921a9",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99000000,
+            107500000,
+            99000000,
+            107800000,
+            0,
+            350000
+          ]
+        },
+        {
+          "uuid": "2e81968e-3783-4acb-ad75-6fac1eb8670a",
+          "net": "/ESP_BOOT",
+          "geometry_nm": [
+            "track",
+            92800000,
+            103200000,
+            94900000,
+            103200000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "326e8cba-b8f9-4ea1-b8b5-05d0dc88493e",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            100000000,
+            94850000,
+            100800000,
+            94850000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "342075d0-ae7c-43c2-a2db-ebfa72ac89c4",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            101650000,
+            97000000,
+            102087500,
+            97000000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "358254e5-9b9c-4fa5-a87c-758969a7c45c",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            100250000,
+            83000000,
+            102750000,
+            83000000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "35abd269-7da2-4bf9-aa3d-fc79851d410a",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            99500000,
+            99300000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "35de59a2-239b-4b8e-8388-efec96692a65",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            103200000,
+            92250000,
+            103400000,
+            92450000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "35ea442a-d27d-447a-b519-32dbb84c7fa6",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            100400000,
+            106400000,
+            102450000,
+            106400000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "36b9ca37-6cbe-42c9-abd3-4943fb3bf7b7",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            100500000,
+            111000000,
+            101280000,
+            111000000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "3820ed71-2820-49b1-baab-2dbbe8841c26",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99550000,
+            93750000,
+            100000000,
+            93300000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "382e4a5f-ab48-41d1-a6a0-5378af5d9d72",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            102475000,
+            104000000,
+            102750000,
+            103725000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "3af5a9cd-8738-464e-9082-1a2ad9b201fc",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            98750000,
+            107250000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "3b7133c3-61c8-4c2f-b1f5-10dc521aaa67",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            103550000,
+            89950000,
+            103650000,
+            90050000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "3c84ec3a-bfe8-4eb1-8d4a-3b9784166b61",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            96532500,
+            98117500,
+            96600000,
+            98050000,
+            2,
+            450000
+          ]
+        },
+        {
+          "uuid": "3e022618-1747-4064-8a04-fd408a94b385",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            100800000,
+            96450000,
+            101250000,
+            96000000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "40258524-fec7-4f22-bb7b-b5a654dbed46",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            102900000,
+            97650000,
+            103450000,
+            98200000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "407c92cf-4f61-43ae-9c42-0b7d1b2ad82b",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            102750000,
+            103725000,
+            102950000,
+            103725000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "4211c1fa-eeb7-4c73-b299-6ab02030adc1",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            100938000,
+            99062000,
+            101550000,
+            98450000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "439cc20a-4c69-4c22-8157-5b50ea77a2e5",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            101700000,
+            110200000,
+            102900000,
+            109000000,
+            2,
+            450000
+          ]
+        },
+        {
+          "uuid": "4421399b-962a-4344-9834-c561c3ec6db3",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95900000,
+            78100000,
+            95900000,
+            79050000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "45904e47-34f9-419b-bf74-71ddac278bf8",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            102550000,
+            111150000,
+            102800000,
+            110900000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "46d8238b-b752-46b6-91da-3279243248a8",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            101250000,
+            92150000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "48e73db0-12b7-4264-ab94-43cefe6b2450",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            101000000,
+            103100000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "4a7fc5ed-f4e2-436e-8322-a30a5840767e",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "via",
+            98800000,
+            96650000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "4e7500e2-b87a-40f3-86ba-e851dadfbc7e",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "via",
+            94350000,
+            103800000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "4ebfdcdd-16ce-4dad-bba1-d56a07885e2d",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            102900000,
+            96300000,
+            102900000,
+            97650000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "4f49db7a-85e2-483a-b391-fe538268d193",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            105000000,
+            100600000,
+            105000000,
+            100750000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "4fc30b22-e431-4213-8cf8-d6868d3ffc98",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            91100000,
+            79050000,
+            91100000,
+            82500000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "5386dbf4-da3e-4ccc-a5c9-95ad811d4c7e",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95750000,
+            102950000,
+            95850000,
+            103050000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "5829e203-95a9-42b9-85c6-fbb309e39be4",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            101250000,
+            96000000,
+            102600000,
+            96000000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "5953e7ad-d577-4c27-9ade-b5387ccc5edf",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            89500000,
+            78100000,
+            90150000,
+            78100000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "599829e3-7755-4dfe-93a9-b0f1a9203aa2",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            93400000,
+            81400000,
+            93475000,
+            81400000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "5a5d61f3-2316-4fde-85e4-76fc43694748",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            98200000,
+            112250000,
+            99250000,
+            112250000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "5b6bb2e8-5eab-479f-8c90-90016e3a7dcb",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            96600000,
+            104450000,
+            96600000,
+            109150000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "5dcbd8e1-db4a-4b3e-8fc0-402495ff068d",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "via",
+            97500000,
+            98050000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "5de5bddb-57ae-458b-ae2b-b30db5748915",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            88100000,
+            76000000,
+            88100000,
+            76700000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "5f1f5606-546a-4e8e-901d-22d5fba70547",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            95875000,
+            79000000,
+            103825000,
+            79000000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "5f2e8bfa-e3e0-4472-9ef1-1ba244f91a0a",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99350000,
+            99450000,
+            99350000,
+            100300000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "5fe024cf-4f19-48b6-a8a7-1e510d5e2c0f",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            102450000,
+            106400000,
+            102450000,
+            106650000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "62447f74-cca0-4971-b78b-1e79df8fca0b",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            78000000,
+            74300000,
+            79000000,
+            73300000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "6279d3bd-5dea-4f4a-95f1-425d42601e33",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            101550000,
+            97100000,
+            101550000,
+            98450000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "6548c10a-52da-45bf-9b21-11b7dad433f7",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            106725000,
+            81900000,
+            106725000,
+            99950000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "6789ca36-bfb8-45c1-a1a7-0d504e8637a7",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            103200000,
+            102550000,
+            105000000,
+            100750000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "6870923c-9751-4321-9546-1dac1249c863",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            103750000,
+            93150000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "68dec176-983c-4e41-8225-d20f7f5393a9",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            103100000,
+            107300000,
+            104550000,
+            107300000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "6c5a00f6-4520-40ad-94f4-28f7ba97aae5",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95900000,
+            79050000,
+            99850000,
+            83000000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "6d00ce14-07de-4cc5-a130-0f8d8232f966",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            94500000,
+            77640000,
+            94500000,
+            77650000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "6e0f1c5a-4831-4b2d-9bae-c51143faf01c",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            99150000,
+            96300000,
+            99800000,
+            96300000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "6e43467f-741f-4ec0-a801-7c9effd531b2",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99250000,
+            99550000,
+            99500000,
+            99300000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "6e76210e-45a0-4e11-9645-726bd7a3ded0",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99550000,
+            93750000,
+            99550000,
+            96750000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "6e87c828-6cd2-4dc5-a5fa-d758283f9a2a",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            97450000,
+            111500000,
+            98200000,
+            112250000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "70ad9529-66e3-4bb9-b86f-799d4f619594",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101250000,
+            92150000,
+            101350000,
+            92250000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "75f5e28d-0fc9-4302-ac01-d6115f58b8b5",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            102550000,
+            111150000,
+            102550000,
+            112100000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "771ae97c-6ae3-4a1e-a26b-2558be207a91",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102137500,
+            102750000,
+            102300000,
+            102750000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "7a8c961b-b339-4f36-99ea-f398dac860d2",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            100600000,
+            98100000,
+            100750000,
+            98100000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "7aa50fff-02c2-4883-bdb1-11332d823a74",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            100800000,
+            101750000,
+            102550000,
+            101750000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "7ae02544-5410-463d-b6a3-398a1e8b9383",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            101000000,
+            93450000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "7af2504e-1139-4ad0-94d9-b75578864b28",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            103450000,
+            98200000,
+            103450000,
+            99100000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "7d84e46a-2ff6-4022-8b17-cd63a244e5cf",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            91100000,
+            82500000,
+            96750000,
+            88150000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "7f620c6a-c3b6-4004-9478-6b45534a9e86",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            98000000,
+            107650000,
+            98000000,
+            107900000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "8179deb7-05fc-46bd-abd5-bb1e93797ac9",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            100850000,
+            93300000,
+            101000000,
+            93450000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "8258c7f9-203f-4fb9-b833-587d3ff89d6f",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            104550000,
+            107300000,
+            106400000,
+            105450000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "82bc9b8b-b5f6-4904-9407-57ca6e84b769",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            104930000,
+            110000000,
+            105150000,
+            109780000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "858932b9-af23-454c-a8f4-5c6e7ad343ee",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            104550000,
+            107300000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "898f7acc-d182-42b4-b166-ea5c1e47526d",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            98200000,
+            105525000,
+            98550000,
+            105875000,
+            2,
+            350000
+          ]
+        },
+        {
+          "uuid": "8a4a5cb2-4667-46b3-bc6e-501050fad8fe",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            103750000,
+            92500000,
+            103750000,
+            93150000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "8b12b900-4a75-4529-ab92-448737d0cb26",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "via",
+            103450000,
+            98200000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "8e1b54b7-e6e3-462c-a0e1-b2d8dfc55e53",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            95800000,
+            103650000,
+            96600000,
+            104450000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "8e280153-7e0e-472b-be5d-135d2a82ba45",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "track",
+            98575000,
+            102400000,
+            98950000,
+            102775000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "909cf828-a560-4e6c-b628-9f11cd4a5f5f",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            96700000,
+            109975000,
+            98200000,
+            108475000,
+            2,
+            350000
+          ]
+        },
+        {
+          "uuid": "918cb8d3-2765-4700-abf4-6f05b5fe122c",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "via",
+            102475000,
+            104000000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "91cb7d39-ccfc-4565-930d-1179ec20176a",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            103300000,
+            89700000,
+            103550000,
+            89950000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "929f8c57-d2b9-4668-98a2-485a41046092",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            85400000,
+            73300000,
+            88100000,
+            76000000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "9322a2e9-cf03-49bb-bf47-ddd5a875f298",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99850000,
+            83000000,
+            100250000,
+            83000000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "93518114-b133-4df4-a70b-33420e274012",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101250000,
+            92150000,
+            101350000,
+            92250000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "93b0ace6-e53f-4013-94d3-eb377a21827e",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99350000,
+            99450000,
+            99500000,
+            99300000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "9613a7fe-daf7-49fc-a071-5eed7b58391b",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            88100000,
+            76700000,
+            89500000,
+            78100000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "9784e52d-20ba-4dc7-a135-e2f56de7e10f",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            101700000,
+            94050000,
+            101700000,
+            96000000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "9859c6a0-94ad-4487-bfa6-285ac3dd8cc2",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            100800000,
+            96450000,
+            100800000,
+            96600000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "99273ada-e41a-444c-9c04-c4ec13a33664",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "via",
+            96650000,
+            89350000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "99a63d94-9473-4b18-92a5-9734ef3c1706",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            99250000,
+            112250000,
+            100450000,
+            111050000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "99ecb81f-1200-499e-8fc3-15b325c53c14",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99350000,
+            100300000,
+            100800000,
+            101750000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "9d627b67-9f57-49e7-9a10-15c6832e7ae3",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            102200000,
+            112450000,
+            102550000,
+            112100000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "9e29169b-438c-4bb3-99ae-9aef41d94f49",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101000000,
+            103187500,
+            101212500,
+            103400000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "9e343f39-adc4-4cbe-bf2e-1f7a2307f578",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            96750000,
+            88150000,
+            96750000,
+            89250000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "9f53eddc-a481-4390-a4ac-0ec786fcf682",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99350000,
+            98700000,
+            99950000,
+            98100000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "9f96cc83-1437-4e5a-82b0-b088dc8c06c2",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            98800000,
+            96650000,
+            99150000,
+            96300000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "a11f74f9-7c6a-483b-bbc2-2a8a6aacc5be",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            100450000,
+            111050000,
+            100500000,
+            111000000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "a147cffa-5612-4725-9a69-bd9f93974cae",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "via",
+            102300000,
+            102750000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "a26e8623-453b-4e94-9d96-09db142cc1cd",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "via",
+            102800000,
+            110900000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "a355b079-64d6-41c8-a95d-64b1cf628277",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            90350000,
+            81350000,
+            90800000,
+            81350000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "a3c189d6-467a-4175-b5db-459b011414a4",
+          "net": "/ESP_BOOT",
+          "geometry_nm": [
+            "track",
+            91800000,
+            102200000,
+            92800000,
+            103200000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "a3cf5e6e-2f8b-46cb-a858-8dd8f0bf877f",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            79000000,
+            73300000,
+            85400000,
+            73300000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "a3cffb0b-f35b-42cd-98f6-2b0f356b3e18",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            98750000,
+            106075000,
+            98750000,
+            107250000,
+            2,
+            350000
+          ]
+        },
+        {
+          "uuid": "a748a9cc-e35c-4277-b740-4e386924c601",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            94350000,
+            103800000,
+            95950000,
+            103800000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "ac9ade5f-7d51-43c6-bfd8-435ef1b1f1c6",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "via",
+            101550000,
+            97100000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "aef6fc12-94db-407c-b9d1-9cfc4a585dfd",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            98000000,
+            104750000,
+            98800000,
+            103950000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "af07736e-4040-4aed-927e-51a6fa1f3e04",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            100800000,
+            94850000,
+            101350000,
+            95400000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "af6530b2-e0da-4f2e-a664-7bc7bc3994d6",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            74500000,
+            74300000,
+            78000000,
+            74300000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "af93974e-4bfc-41b2-bc1b-db366c639995",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            95700000,
+            102950000,
+            95750000,
+            102950000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "afcb21e4-9e08-472b-885c-5df31f0b2308",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            81850000,
+            103650000,
+            94200000,
+            103650000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "b019c481-b324-4136-8559-04e23a82c6cb",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            96650000,
+            89350000,
+            96750000,
+            89250000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "b100029a-70ca-4058-847f-16e46c2c729b",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101000000,
+            92750000,
+            101000000,
+            93450000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "b4a99d53-e27c-45be-8079-e3e9e4fa62e7",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            98550000,
+            105875000,
+            98750000,
+            106075000,
+            2,
+            350000
+          ]
+        },
+        {
+          "uuid": "b4b4b025-aeb1-4a62-9369-3fe9dcd4f258",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            102450000,
+            106400000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "b583338d-d5cf-45c4-9c1a-df6a77cf89c7",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            102750000,
+            96800000,
+            102750000,
+            99900000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "b5935b2c-c69a-4918-88ee-5df819222a89",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "track",
+            94450000,
+            102325000,
+            94450000,
+            102408700,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "b62337c3-891d-4ad2-8d1d-279678215be1",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            99875000,
+            96175000,
+            100350000,
+            95700000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "b6df89b0-bccd-4a6f-b1bf-b312d08f8d39",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            96700000,
+            109975000,
+            96700000,
+            110050000,
+            2,
+            350000
+          ]
+        },
+        {
+          "uuid": "b84a9d3a-d657-4444-9b69-9cce8aad8495",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            100350000,
+            95700000,
+            101400000,
+            95700000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "b877cc78-acc4-4b62-9289-ce05b6d1bca7",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            99850000,
+            111650000,
+            99850000,
+            112250000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "ba9d5997-99d0-44f1-9802-62ef8098c43d",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            92250000,
+            79900000,
+            94500000,
+            77650000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "bc761da4-8f0b-4c13-803c-7ba368b656ab",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            103650000,
+            90050000,
+            103650000,
+            92100000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "bdd71586-4047-4f99-8232-0312004ef4d7",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            96650000,
+            89350000,
+            97000000,
+            89700000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "be120927-3737-446b-b215-92a649e3b1ce",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            103950000,
+            110900000,
+            104850000,
+            110000000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "c0b165c8-e2eb-4818-95e1-e4ca015c761e",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101000000,
+            101850000,
+            101000000,
+            103100000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "c2a21495-6d87-4fd7-880f-8d45915338c0",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99000000,
+            107800000,
+            100400000,
+            106400000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "c3b0edd5-9d66-48d3-aff4-84a4149701f6",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            90150000,
+            78100000,
+            91100000,
+            79050000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "c637516f-fd3a-42a0-976f-b9a25e1feef7",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "track",
+            101400000,
+            95700000,
+            101700000,
+            96000000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "c6389cf9-d49f-4738-a0c1-ac0e6180327c",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            97050000,
+            109600000,
+            97150000,
+            109600000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "c825127e-9071-4123-86a8-3f9cbd679e96",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102600000,
+            94825000,
+            103400000,
+            95625000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "cb53ff7f-e133-4eee-81c6-6410fbb2c5f4",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            92250000,
+            79900000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "ceab0b66-4858-465a-92ce-6b905bcb0248",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "via",
+            93475000,
+            81400000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "cf071abd-9111-4ead-bd36-7a04f3345af8",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            103912000,
+            96762000,
+            103912000,
+            97000000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "d21b7d2e-568c-4ebf-8599-be4b06680143",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            99800000,
+            97600000,
+            100800000,
+            96600000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "d5f58e74-fa57-4e8c-90ad-2aeb131ccc91",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            97450000,
+            109900000,
+            97450000,
+            111500000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "d63a3ca1-bb2f-4346-a801-01c4b9c6f281",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99950000,
+            98100000,
+            100600000,
+            98100000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "d65db4d6-160d-49ac-809a-aff5baa856e5",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            99850000,
+            111650000,
+            100450000,
+            111050000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "d6722c2a-7e86-4c0c-af97-b0b5ea4baa86",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            103625000,
+            95625000,
+            103700000,
+            95625000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "d9011f43-555f-4142-8bcb-a2710b371c1b",
+          "net": "/DATA6_CPU",
+          "geometry_nm": [
+            "track",
+            99250000,
+            94100000,
+            100000000,
+            94850000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "d927113f-fdf2-4444-be6a-2caae2b94531",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "track",
+            94450000,
+            102408700,
+            94561300,
+            102520000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "db48f83c-d20e-44dc-8213-b8f329374e70",
+          "net": "/GND",
+          "geometry_nm": [
+            "via",
+            95850000,
+            103050000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "dd8d1433-d304-4063-bbcb-ab0d11c53f6b",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            90000000,
+            84800000,
+            93400000,
+            81400000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "de5ef560-2d3a-4063-aa9b-2fca75c2d5ca",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "via",
+            100800000,
+            96450000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        },
+        {
+          "uuid": "dfb0b43a-7812-4516-8678-d2d2a74c0c07",
+          "net": "/USB_VBUS_SENSE",
+          "geometry_nm": [
+            "track",
+            94525000,
+            102400000,
+            98575000,
+            102400000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "e1548372-542d-48df-b3a9-34a62926d0ba",
+          "net": "/ESP_BOOT",
+          "geometry_nm": [
+            "track",
+            94900000,
+            103200000,
+            95300000,
+            102800000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "e5d3595c-d1d1-45c6-b309-988d2b0a6cc5",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            96600000,
+            109150000,
+            97050000,
+            109600000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "e656d7e2-f5e9-4fc6-9664-1330569aa913",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            103550000,
+            95700000,
+            103625000,
+            95625000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "e6708f0e-32a8-444b-8a76-e80f3cde4ca2",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101000000,
+            103100000,
+            101000000,
+            103187500,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "e6c8e366-dc4d-407b-9ae8-d196e2fe13d9",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            96600000,
+            98050000,
+            97500000,
+            98050000,
+            2,
+            450000
+          ]
+        },
+        {
+          "uuid": "e9064efd-e769-44e1-ba03-2d1e4175c58d",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102500000,
+            102550000,
+            103200000,
+            102550000,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "ea944295-2eb1-4098-beb4-c302aaf8880e",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            103200000,
+            98900000,
+            104100000,
+            98900000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "ea9d0b60-85e0-4d0b-8a78-7c7191b4344c",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            98750000,
+            107250000,
+            99000000,
+            107500000,
+            0,
+            350000
+          ]
+        },
+        {
+          "uuid": "ec3709ce-6e91-46ca-973a-c49cc03becfc",
+          "net": "/RS485_RX_RAW",
+          "geometry_nm": [
+            "track",
+            104900000,
+            110000000,
+            104930000,
+            110000000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "eef23a14-1e29-4c11-b6e0-2afae32768c9",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            98950000,
+            97600000,
+            99800000,
+            97600000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "efc595de-189a-4aba-ae1e-62a6f6fd86bd",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            94500000,
+            77640000,
+            94750000,
+            77390000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "f0c94041-0690-414c-a13a-4dbce3318c98",
+          "net": "/RS485_TX",
+          "geometry_nm": [
+            "track",
+            103450000,
+            99100000,
+            103550000,
+            99200000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "f1693be0-fd76-4c6c-9fed-c39b05ecb636",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            99000000,
+            107800000,
+            99000000,
+            110100000,
+            0,
+            350000
+          ]
+        },
+        {
+          "uuid": "f3744339-c743-4fd1-b821-a382d89a28c5",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            97850000,
+            99550000,
+            99250000,
+            99550000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "f42a24cb-f51c-47d5-a2cb-e1c2fb39d37c",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            101000000,
+            92750000,
+            102750000,
+            91000000,
+            2,
+            250000
+          ]
+        },
+        {
+          "uuid": "f496c954-8414-4bfe-8700-69b89106d502",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            100000000,
+            93300000,
+            100850000,
+            93300000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "f6b744aa-5d96-4f5e-8e94-f5acc1821e01",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            94200000,
+            103650000,
+            94350000,
+            103800000,
+            2,
+            180000
+          ]
+        },
+        {
+          "uuid": "f76e31a8-174b-4bfa-b819-d26c7ec95db5",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            100938000,
+            99062000,
+            100938000,
+            99440600,
+            2,
+            300000
+          ]
+        },
+        {
+          "uuid": "f812e0dd-d071-496a-9f74-2a305f796b4f",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102088000,
+            97788000,
+            103200000,
+            98900000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "f815a616-df17-41ff-a54d-b06668e4b409",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            102088000,
+            97000000,
+            102088000,
+            97788000,
+            0,
+            300000
+          ]
+        },
+        {
+          "uuid": "f922421b-cecc-4822-bb2f-277663bb39a1",
+          "net": "/+3V3",
+          "geometry_nm": [
+            "track",
+            103400000,
+            95625000,
+            103700000,
+            95625000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "fae7396d-a12b-4dd0-bdb9-a4eb3180ad08",
+          "net": "/+3V3_RS485",
+          "geometry_nm": [
+            "track",
+            97150000,
+            109600000,
+            97450000,
+            109900000,
+            0,
+            180000
+          ]
+        },
+        {
+          "uuid": "fc5e91b3-2c36-40fd-a52d-2f4b5c40c9e9",
+          "net": "/GND",
+          "geometry_nm": [
+            "track",
+            90800000,
+            81350000,
+            92250000,
+            79900000,
+            0,
+            250000
+          ]
+        },
+        {
+          "uuid": "ff01b708-209b-4a06-b265-023e41656c4d",
+          "net": "/+12V_LOGIC",
+          "geometry_nm": [
+            "via",
+            98000000,
+            107650000,
+            600000,
+            600000,
+            300000,
+            0,
+            2
+          ]
+        }
+      ],
+      "mutated": [],
+      "counts": {
+        "removed": 83,
+        "added": 190,
+        "mutated": 0
+      },
+      "by_net": {
+        "/+12V_LOGIC": {
+          "before_items": 14,
+          "after_items": 50,
+          "geometry_exact": false
+        },
+        "/+3V3": {
+          "before_items": 170,
+          "after_items": 186,
+          "geometry_exact": false
+        },
+        "/+3V3_ISO": {
+          "before_items": 21,
+          "after_items": 21,
+          "geometry_exact": true
+        },
+        "/+3V3_RS485": {
+          "before_items": 68,
+          "after_items": 83,
+          "geometry_exact": false
+        },
+        "/+5V_ISO": {
+          "before_items": 53,
+          "after_items": 53,
+          "geometry_exact": true
+        },
+        "/ALARM_LED": {
+          "before_items": 36,
+          "after_items": 36,
+          "geometry_exact": true
+        },
+        "/DATA1_CPU": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/DATA1_ISO": {
+          "before_items": 22,
+          "after_items": 22,
+          "geometry_exact": true
+        },
+        "/DATA2_CPU": {
+          "before_items": 10,
+          "after_items": 10,
+          "geometry_exact": true
+        },
+        "/DATA2_ISO": {
+          "before_items": 27,
+          "after_items": 27,
+          "geometry_exact": true
+        },
+        "/DATA3_CPU": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/DATA3_ISO": {
+          "before_items": 34,
+          "after_items": 34,
+          "geometry_exact": true
+        },
+        "/DATA4_CPU": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/DATA4_ISO": {
+          "before_items": 40,
+          "after_items": 40,
+          "geometry_exact": true
+        },
+        "/DATA5_CPU": {
+          "before_items": 13,
+          "after_items": 13,
+          "geometry_exact": true
+        },
+        "/DATA5_ISO": {
+          "before_items": 22,
+          "after_items": 22,
+          "geometry_exact": true
+        },
+        "/DATA6_CPU": {
+          "before_items": 14,
+          "after_items": 17,
+          "geometry_exact": false
+        },
+        "/DATA6_ISO": {
+          "before_items": 33,
+          "after_items": 33,
+          "geometry_exact": true
+        },
+        "/ESP_BOOT": {
+          "before_items": 22,
+          "after_items": 22,
+          "geometry_exact": false
+        },
+        "/ESP_EN": {
+          "before_items": 36,
+          "after_items": 36,
+          "geometry_exact": true
+        },
+        "/ETH_CS_CPU": {
+          "before_items": 10,
+          "after_items": 10,
+          "geometry_exact": true
+        },
+        "/ETH_CS_N": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "/ETH_INT_N": {
+          "before_items": 42,
+          "after_items": 42,
+          "geometry_exact": true
+        },
+        "/ETH_MISO": {
+          "before_items": 10,
+          "after_items": 10,
+          "geometry_exact": true
+        },
+        "/ETH_MISO_CPU": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/ETH_MOSI": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/ETH_MOSI_CPU": {
+          "before_items": 23,
+          "after_items": 23,
+          "geometry_exact": true
+        },
+        "/ETH_RST_F": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "/ETH_RST_N": {
+          "before_items": 35,
+          "after_items": 35,
+          "geometry_exact": true
+        },
+        "/ETH_SCK": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/ETH_SCK_CPU": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/GND": {
+          "before_items": 199,
+          "after_items": 255,
+          "geometry_exact": false
+        },
+        "/GND_ISO": {
+          "before_items": 52,
+          "after_items": 52,
+          "geometry_exact": true
+        },
+        "/I2C_SCL": {
+          "before_items": 29,
+          "after_items": 29,
+          "geometry_exact": true
+        },
+        "/I2C_SDA": {
+          "before_items": 16,
+          "after_items": 16,
+          "geometry_exact": true
+        },
+        "/ISO_SCL_CPU": {
+          "before_items": 37,
+          "after_items": 37,
+          "geometry_exact": true
+        },
+        "/ISO_SDA_CPU": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/LED_ALARM_BASE": {
+          "before_items": 11,
+          "after_items": 11,
+          "geometry_exact": true
+        },
+        "/LED_ALARM_DRIVE": {
+          "before_items": 16,
+          "after_items": 16,
+          "geometry_exact": true
+        },
+        "/LED_ALARM_OUT": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/LED_NET_BASE": {
+          "before_items": 7,
+          "after_items": 7,
+          "geometry_exact": true
+        },
+        "/LED_NET_DRIVE": {
+          "before_items": 17,
+          "after_items": 17,
+          "geometry_exact": true
+        },
+        "/LED_NET_OUT": {
+          "before_items": 6,
+          "after_items": 6,
+          "geometry_exact": true
+        },
+        "/LED_PWR_OUT": {
+          "before_items": 17,
+          "after_items": 17,
+          "geometry_exact": true
+        },
+        "/LED_STATUS_BASE": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/LED_STATUS_DRIVE": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/LED_STATUS_OUT": {
+          "before_items": 5,
+          "after_items": 5,
+          "geometry_exact": true
+        },
+        "/MCP_RESET_N": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/MOD_VBUS": {
+          "before_items": 46,
+          "after_items": 19,
+          "geometry_exact": false
+        },
+        "/NET_LED": {
+          "before_items": 30,
+          "after_items": 30,
+          "geometry_exact": true
+        },
+        "/RS485_A": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/RS485_B": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/RS485_DIR": {
+          "before_items": 52,
+          "after_items": 43,
+          "geometry_exact": false
+        },
+        "/RS485_DIR_BUF": {
+          "before_items": 12,
+          "after_items": 12,
+          "geometry_exact": true
+        },
+        "/RS485_DIR_CPU": {
+          "before_items": 42,
+          "after_items": 42,
+          "geometry_exact": true
+        },
+        "/RS485_RX_BUF": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/RS485_RX_CPU": {
+          "before_items": 31,
+          "after_items": 31,
+          "geometry_exact": true
+        },
+        "/RS485_RX_RAW": {
+          "before_items": 45,
+          "after_items": 49,
+          "geometry_exact": false
+        },
+        "/RS485_TERM": {
+          "before_items": 3,
+          "after_items": 3,
+          "geometry_exact": true
+        },
+        "/RS485_TX": {
+          "before_items": 32,
+          "after_items": 42,
+          "geometry_exact": false
+        },
+        "/RS485_TX_BUF": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/RS485_TX_CPU": {
+          "before_items": 15,
+          "after_items": 15,
+          "geometry_exact": true
+        },
+        "/RS485_VISO": {
+          "before_items": 16,
+          "after_items": 16,
+          "geometry_exact": true
+        },
+        "/RS485_VISO_OUT": {
+          "before_items": 10,
+          "after_items": 10,
+          "geometry_exact": true
+        },
+        "/RTC_VBAT": {
+          "before_items": 50,
+          "after_items": 50,
+          "geometry_exact": true
+        },
+        "/RTC_VCC": {
+          "before_items": 13,
+          "after_items": 13,
+          "geometry_exact": true
+        },
+        "/SCL_ISO": {
+          "before_items": 20,
+          "after_items": 20,
+          "geometry_exact": true
+        },
+        "/SDA_ISO": {
+          "before_items": 21,
+          "after_items": 21,
+          "geometry_exact": true
+        },
+        "/STATUS_LED": {
+          "before_items": 53,
+          "after_items": 53,
+          "geometry_exact": true
+        },
+        "/USB_CC1": {
+          "before_items": 9,
+          "after_items": 9,
+          "geometry_exact": true
+        },
+        "/USB_CC2": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "/USB_DN": {
+          "before_items": 27,
+          "after_items": 27,
+          "geometry_exact": true
+        },
+        "/USB_DN_CPU": {
+          "before_items": 8,
+          "after_items": 8,
+          "geometry_exact": true
+        },
+        "/USB_DP": {
+          "before_items": 13,
+          "after_items": 13,
+          "geometry_exact": true
+        },
+        "/USB_DP_CPU": {
+          "before_items": 7,
+          "after_items": 7,
+          "geometry_exact": true
+        },
+        "/USB_VBUS": {
+          "before_items": 14,
+          "after_items": 14,
+          "geometry_exact": true
+        },
+        "/USB_VBUS_SENSE": {
+          "before_items": 15,
+          "after_items": 18,
+          "geometry_exact": false
+        }
+      },
+      "all_other_net_geometry_exact": true
+    },
+    "xml": {
+      "components": 131,
+      "pin_nodes": 431,
+      "only_approved_pin_changes": true,
+      "all_other_component_records_exact": true
+    },
+    "ESP_BOOT_copper_exception": {
+      "exact_approved_geometry": true,
+      "net": "/ESP_BOOT",
+      "R2_SW2_U1_full_footprints_and_pad_nets_exact": true,
+      "ESP_EN_reset_geometry_exact": true
+    },
+    "USB_VBUS_SENSE_copper_only_exception": {
+      "net": "/USB_VBUS_SENSE",
+      "R13_R14_U1_full_footprints_pad_nets_and_poses_exact": true,
+      "USB_VBUS_power_geometry_exact": true,
+      "USB_data_and_CC_six_net_geometry_exact": true
+    }
+  },
+  "mechanical_envelopes": {
+    "C37_pose": [
+      98.2,
+      107.0,
+      90.0,
+      "B.Cu"
+    ],
+    "C37_max_body_mm": [
+      3.4,
+      1.8,
+      1.8
+    ],
+    "C37_max_body_xy_mm": [
+      97.3,
+      105.3,
+      99.10000000000001,
+      108.7
+    ],
+    "C37_ordinary_lower_vertical_clearance_mm": 2.25,
+    "U12_pose": [
+      96.2,
+      111.0,
+      0.0,
+      "F.Cu"
+    ],
+    "U12_tail_max_length_from_upper_F_mm": 4.6,
+    "U12_tail_bottom_above_lower_F_mm": 8.05,
+    "U12_max_square_lead_mm": 0.74,
+    "checks": [
+      {
+        "Upper": "C37",
+        "Lower": "C1",
+        "xy_gap_mm": 34.6043,
+        "z_gap_if_xy_overlap_mm": 0.25,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "C11",
+        "xy_gap_mm": 42.0764,
+        "z_gap_if_xy_overlap_mm": 0.25,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "C12",
+        "xy_gap_mm": 49.2925,
+        "z_gap_if_xy_overlap_mm": 0.25,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "C8",
+        "xy_gap_mm": 47.5408,
+        "z_gap_if_xy_overlap_mm": -3.75,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J43",
+        "xy_gap_mm": 40.9583,
+        "z_gap_if_xy_overlap_mm": 0.5,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J44",
+        "xy_gap_mm": 35.7445,
+        "z_gap_if_xy_overlap_mm": 0.5,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "Lower U2 R78E",
+        "xy_gap_mm": 37.419,
+        "z_gap_if_xy_overlap_mm": -1.95,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "Lower relay stripe",
+        "xy_gap_mm": 35.2,
+        "z_gap_if_xy_overlap_mm": -10.75,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J15",
+        "xy_gap_mm": 62.6866,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J6",
+        "xy_gap_mm": 60.4589,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J33",
+        "xy_gap_mm": 20.9486,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J17",
+        "xy_gap_mm": 68.8675,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J5",
+        "xy_gap_mm": 62.8762,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J10",
+        "xy_gap_mm": 56.65,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J13",
+        "xy_gap_mm": 58.4812,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J1",
+        "xy_gap_mm": 41.5482,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J2",
+        "xy_gap_mm": 72.8231,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J25",
+        "xy_gap_mm": 12.3017,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J9",
+        "xy_gap_mm": 56.7115,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J8",
+        "xy_gap_mm": 57.3294,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J11",
+        "xy_gap_mm": 56.6927,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J4",
+        "xy_gap_mm": 65.7834,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J7",
+        "xy_gap_mm": 58.592,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J12",
+        "xy_gap_mm": 57.2635,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J3",
+        "xy_gap_mm": 69.1186,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J21",
+        "xy_gap_mm": 31.1051,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J16",
+        "xy_gap_mm": 65.5608,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J14",
+        "xy_gap_mm": 60.3066,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "C37",
+        "Lower": "J29",
+        "xy_gap_mm": 10.8,
+        "z_gap_if_xy_overlap_mm": 0.15,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "C1",
+        "xy_gap_mm": 36.5643,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "C11",
+        "xy_gap_mm": 44.0277,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "C12",
+        "xy_gap_mm": 50.9109,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "C8",
+        "xy_gap_mm": 52.5615,
+        "z_gap_if_xy_overlap_mm": -4.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J43",
+        "xy_gap_mm": 41.5898,
+        "z_gap_if_xy_overlap_mm": -0.7,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J44",
+        "xy_gap_mm": 40.8833,
+        "z_gap_if_xy_overlap_mm": -0.7,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "Lower U2 R78E",
+        "xy_gap_mm": 41.0202,
+        "z_gap_if_xy_overlap_mm": -3.15,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "Lower relay stripe",
+        "xy_gap_mm": 40.3767,
+        "z_gap_if_xy_overlap_mm": -11.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J15",
+        "xy_gap_mm": 68.3825,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J6",
+        "xy_gap_mm": 64.828,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J33",
+        "xy_gap_mm": 21.8359,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J17",
+        "xy_gap_mm": 74.4839,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J5",
+        "xy_gap_mm": 66.9389,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J10",
+        "xy_gap_mm": 61.8267,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J13",
+        "xy_gap_mm": 64.094,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J1",
+        "xy_gap_mm": 43.2389,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J2",
+        "xy_gap_mm": 75.9645,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J25",
+        "xy_gap_mm": 9.0462,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J9",
+        "xy_gap_mm": 61.8351,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J8",
+        "xy_gap_mm": 62.2419,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J11",
+        "xy_gap_mm": 61.9959,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J4",
+        "xy_gap_mm": 69.5331,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J7",
+        "xy_gap_mm": 63.2488,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J12",
+        "xy_gap_mm": 62.7521,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J3",
+        "xy_gap_mm": 72.5588,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J21",
+        "xy_gap_mm": 28.6784,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J16",
+        "xy_gap_mm": 71.2324,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J14",
+        "xy_gap_mm": 65.9861,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.1",
+        "Lower": "J29",
+        "xy_gap_mm": 7.9767,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "C1",
+        "xy_gap_mm": 38.4789,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "C11",
+        "xy_gap_mm": 45.9564,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "C12",
+        "xy_gap_mm": 52.9468,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "C8",
+        "xy_gap_mm": 50.5976,
+        "z_gap_if_xy_overlap_mm": -4.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J43",
+        "xy_gap_mm": 43.8522,
+        "z_gap_if_xy_overlap_mm": -0.7,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J44",
+        "xy_gap_mm": 39.0191,
+        "z_gap_if_xy_overlap_mm": -0.7,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "Lower U2 R78E",
+        "xy_gap_mm": 38.6083,
+        "z_gap_if_xy_overlap_mm": -3.15,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "Lower relay stripe",
+        "xy_gap_mm": 40.3767,
+        "z_gap_if_xy_overlap_mm": -11.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J15",
+        "xy_gap_mm": 67.3364,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J6",
+        "xy_gap_mm": 65.6366,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J33",
+        "xy_gap_mm": 19.4935,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J17",
+        "xy_gap_mm": 73.0978,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J5",
+        "xy_gap_mm": 67.9529,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J10",
+        "xy_gap_mm": 61.8267,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J13",
+        "xy_gap_mm": 63.4717,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J1",
+        "xy_gap_mm": 40.7452,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J2",
+        "xy_gap_mm": 77.4678,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J25",
+        "xy_gap_mm": 10.4862,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J9",
+        "xy_gap_mm": 61.929,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J8",
+        "xy_gap_mm": 62.5856,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J11",
+        "xy_gap_mm": 61.8603,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J4",
+        "xy_gap_mm": 70.7314,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J7",
+        "xy_gap_mm": 63.8327,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J12",
+        "xy_gap_mm": 62.3677,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J3",
+        "xy_gap_mm": 73.9199,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J21",
+        "xy_gap_mm": 31.1262,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J16",
+        "xy_gap_mm": 70.0057,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J14",
+        "xy_gap_mm": 65.142,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.2",
+        "Lower": "J29",
+        "xy_gap_mm": 7.9767,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "C1",
+        "xy_gap_mm": 40.4571,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "C11",
+        "xy_gap_mm": 47.9384,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "C12",
+        "xy_gap_mm": 55.0221,
+        "z_gap_if_xy_overlap_mm": -0.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "C8",
+        "xy_gap_mm": 48.6826,
+        "z_gap_if_xy_overlap_mm": -4.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J43",
+        "xy_gap_mm": 46.1435,
+        "z_gap_if_xy_overlap_mm": -0.7,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J44",
+        "xy_gap_mm": 37.2349,
+        "z_gap_if_xy_overlap_mm": -0.7,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "Lower U2 R78E",
+        "xy_gap_mm": 36.2139,
+        "z_gap_if_xy_overlap_mm": -3.15,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "Lower relay stripe",
+        "xy_gap_mm": 40.3767,
+        "z_gap_if_xy_overlap_mm": -11.95,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J15",
+        "xy_gap_mm": 66.3711,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J6",
+        "xy_gap_mm": 66.5324,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J33",
+        "xy_gap_mm": 17.2073,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J17",
+        "xy_gap_mm": 71.7749,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J5",
+        "xy_gap_mm": 69.0456,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J10",
+        "xy_gap_mm": 61.8267,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J13",
+        "xy_gap_mm": 62.9459,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J1",
+        "xy_gap_mm": 38.2576,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J2",
+        "xy_gap_mm": 79.0243,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J25",
+        "xy_gap_mm": 12.2878,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J9",
+        "xy_gap_mm": 62.1266,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J8",
+        "xy_gap_mm": 63.0299,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J11",
+        "xy_gap_mm": 61.8267,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J4",
+        "xy_gap_mm": 71.9994,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J7",
+        "xy_gap_mm": 64.5114,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J12",
+        "xy_gap_mm": 62.085,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J3",
+        "xy_gap_mm": 75.3421,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J21",
+        "xy_gap_mm": 33.5877,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J16",
+        "xy_gap_mm": 68.8508,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J14",
+        "xy_gap_mm": 64.3872,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      },
+      {
+        "Upper": "U12.3",
+        "Lower": "J29",
+        "xy_gap_mm": 7.9767,
+        "z_gap_if_xy_overlap_mm": -1.05,
+        "collision": false
+      }
+    ],
+    "collision_count": 0,
+    "scope": "Conservative actual-pose envelope calculation with nominal stack height; native DRC/courtyard and assembled sample checks are separate. No EMC certification claim."
+  },
+  "approved_resistor_pose_manifest": {
+    "path": "/Users/sergey/Documents/ChatGPT/УмныйДом/FCPLCN-161608-1v0/.work/r78-rs485/stage/Power-EMI-approved-poses.json",
+    "sha256": "5d28abc65599a291ee441d20568c369105a077e6588f7bfc85376f8cf809b29f",
+    "exact_approved_delta": {
+      "version": 1,
+      "before_upper_pcb_sha256": "2592644c74a39559e2b532ddc4e1c992a71a0071a535deb9cfa6d8d727480d27",
+      "footprints": {
+        "R55": {
+          "before_pose": [
+            101.0,
+            110.6,
+            90.0,
+            "B.Cu"
+          ],
+          "after_pose": [
+            96.3,
+            103.4,
+            180.0,
+            "B.Cu"
+          ],
+          "before_normalized_ast_sha256": "47e301f236b90d4a0af16e7a0876e5bbb9cf95e273c2bb58a024492a4129c241",
+          "after_normalized_ast_sha256": "dff7be106a36fa556cc21579d3eea3b69eb0d09905ff48b254263e5d9a8ba391"
+        },
+        "R56": {
+          "before_pose": [
+            105.2,
+            111.0,
+            90.0,
+            "F.Cu"
+          ],
+          "after_pose": [
+            100.8,
+            113.0,
+            0.0,
+            "B.Cu"
+          ],
+          "before_normalized_ast_sha256": "7730982cbf2dcec71cd08b2b438dd61d49c36445718ae46b686adcf1725cb99a",
+          "after_normalized_ast_sha256": "a232119e8a8e8e2bfdf3e7f6f1cdf6f9958f5167b5c5f8e4f5e14958e2d6f04e",
+          "approved_layer_change": "F.Cu->B.Cu"
+        }
+      },
+      "approved_boot_copper": {
+        "net": "/ESP_BOOT",
+        "before_geometry_nm": [
+          [
+            "track",
+            91800000,
+            97300000,
+            91800000,
+            102200000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            91800000,
+            97300000,
+            92650000,
+            97300000,
+            2,
+            180000
+          ],
+          [
+            "track",
+            91800000,
+            102200000,
+            92850000,
+            103250000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            92650000,
+            97300000,
+            94550000,
+            95400000,
+            2,
+            180000
+          ],
+          [
+            "track",
+            92850000,
+            103250000,
+            94850000,
+            103250000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            93800000,
+            100750000,
+            95300000,
+            102250000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            94550000,
+            94100000,
+            94550000,
+            95400000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            94550000,
+            94100000,
+            94750000,
+            93900000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            94750000,
+            93900000,
+            98494700,
+            93900000,
+            0,
+            220000
+          ],
+          [
+            "track",
+            94850000,
+            103250000,
+            95300000,
+            102800000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            95300000,
+            102250000,
+            95300000,
+            102800000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            98494700,
+            82108800,
+            98494700,
+            93900000,
+            2,
+            220000
+          ],
+          [
+            "track",
+            98494700,
+            82108800,
+            99267900,
+            81335600,
+            2,
+            220000
+          ],
+          [
+            "track",
+            99267900,
+            81335600,
+            99298500,
+            81305000,
+            0,
+            220000
+          ],
+          [
+            "track",
+            99298500,
+            81305000,
+            102280000,
+            81305000,
+            0,
+            220000
+          ],
+          [
+            "track",
+            101412000,
+            80000000,
+            102280000,
+            80868000,
+            2,
+            220000
+          ],
+          [
+            "track",
+            102280000,
+            80868000,
+            102280000,
+            81305000,
+            2,
+            220000
+          ],
+          [
+            "via",
+            91800000,
+            97300000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            94550000,
+            95400000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            98494700,
+            93900000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            99267900,
+            81335600,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            102280000,
+            81305000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        ],
+        "after_geometry_nm": [
+          [
+            "track",
+            91800000,
+            97300000,
+            91800000,
+            102200000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            91800000,
+            97300000,
+            92650000,
+            97300000,
+            2,
+            180000
+          ],
+          [
+            "track",
+            91800000,
+            102200000,
+            92800000,
+            103200000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            92650000,
+            97300000,
+            94550000,
+            95400000,
+            2,
+            180000
+          ],
+          [
+            "track",
+            92800000,
+            103200000,
+            94900000,
+            103200000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            93800000,
+            100750000,
+            95300000,
+            102250000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            94550000,
+            94100000,
+            94550000,
+            95400000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            94550000,
+            94100000,
+            94750000,
+            93900000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            94750000,
+            93900000,
+            98494700,
+            93900000,
+            0,
+            220000
+          ],
+          [
+            "track",
+            94900000,
+            103200000,
+            95300000,
+            102800000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            95300000,
+            102250000,
+            95300000,
+            102800000,
+            0,
+            180000
+          ],
+          [
+            "track",
+            98494700,
+            82108800,
+            98494700,
+            93900000,
+            2,
+            220000
+          ],
+          [
+            "track",
+            98494700,
+            82108800,
+            99267900,
+            81335600,
+            2,
+            220000
+          ],
+          [
+            "track",
+            99267900,
+            81335600,
+            99298500,
+            81305000,
+            0,
+            220000
+          ],
+          [
+            "track",
+            99298500,
+            81305000,
+            102280000,
+            81305000,
+            0,
+            220000
+          ],
+          [
+            "track",
+            101412000,
+            80000000,
+            102280000,
+            80868000,
+            2,
+            220000
+          ],
+          [
+            "track",
+            102280000,
+            80868000,
+            102280000,
+            81305000,
+            2,
+            220000
+          ],
+          [
+            "via",
+            91800000,
+            97300000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            94550000,
+            95400000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            98494700,
+            93900000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            99267900,
+            81335600,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ],
+          [
+            "via",
+            102280000,
+            81305000,
+            800000,
+            800000,
+            300000,
+            0,
+            2
+          ]
+        ]
+      }
+    }
+  },
+  "CAD_files_not_written": true
+}

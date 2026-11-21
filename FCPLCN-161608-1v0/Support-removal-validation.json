@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "product": "FCPLCn",
+  "revision": "1v0 / extra supports removed",
+  "checked_at": "2026-11-19T04:59:28.100574+07:00",
+  "sha256": {
+    "Upper": {
+      ".kicad_pcb": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      ".kicad_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      ".kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+      ".xml": "85d29fe2cda720f407e26b25b20abe629144e84b5724063b888d8db7f0827bdd"
+    },
+    "Lower": {
+      ".kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      ".kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      ".kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      ".xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb"
+    }
+  },
+  "native_checks": {
+    "FCPLCN-CPU-08-1v0": {
+      "pcb_sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "active_drc": 0,
+      "excluded_drc": 2,
+      "unconnected": 0,
+      "parity": 0,
+      "ERC": 0,
+      "local_models": 15,
+      "standard_models": 133,
+      "missing_models": []
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "pcb_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      "copper_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "active_drc": 0,
+      "excluded_drc": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "ERC": 0,
+      "local_models": 61,
+      "standard_models": 187,
+      "missing_models": [
+        "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse-NANO2-451_453.step"
+      ]
+    }
+  },
+  "restored_exact_baseline": "/var/folders/00/wvdby9ln3x7fjshyq8d6y6r80000gn/T/fcplcn-front-support-p0jxgo34/before",
+  "removed_supports": [
+    "Upper.J13",
+    "Upper.J14",
+    "Lower.J45",
+    "Lower.J46"
+  ],
+  "functional_pin_maps_unchanged": true,
+  "original_interboard_pairs_preserved": [
+    "Upper.J1/Lower.J43",
+    "Upper.J6/Lower.J44"
+  ],
+  "support_points": 2,
+  "matched_stack_contacts": 12,
+  "bom_purchased": {
+    "Upper": 148,
+    "Lower": 248,
+    "total": 396
+  },
+  "gallery": {
+    "standard_views": 27,
+    "detail_views": 5,
+    "reused_exact_source_verified_renders": true
+  },
+  "physical_prototype_qualification_pending": true
+}

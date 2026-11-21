@@ -1,0 +1,16 @@
+{
+  "source_sha256": {
+    "FCPLCN-RLY-1616-1v0.kicad_pcb": "7f4ab4870b80d78a587cc2cbf8250e25e9b9bcd77daaa74ddc1fc91c5cc7582c",
+    "FCPLCN-RLY-1616-1v0.kicad_pro": "c0a0ce019fb532301d8564e5e21f9e0cdfad2cb0577ab8cca0b3b7204fdf1418",
+    "FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "FCPLCN-RLY-1616-1v0.kicad_sch": "bf44fee193804e58379e704fdc6fbb9362d513c1fba2adfca1e643a8ac4ef014"
+  },
+  "checks": [
+    "ERC",
+    "DRC",
+    "DRC-with-exclusions"
+  ],
+  "nonzero_violations": false,
+  "source_files_unchanged": true,
+  "refilled_for_drc_in_memory": true
+}

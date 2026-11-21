@@ -1,0 +1,37 @@
+{
+  "mpn": "SSW-103-01-L-D",
+  "manufacturer": "Samtec",
+  "source_url": "https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf",
+  "body_height_mm": 8.51,
+  "body_xy_mm": [
+    4.95,
+    8.13
+  ],
+  "pitch_mm": 2.54,
+  "tail_length_mm": 2.64,
+  "tail_cross_section_mm": [
+    0.79,
+    0.41
+  ],
+  "mating_post": "TSW-103-07-L-D",
+  "mating_post_length_mm": 5.842,
+  "allowed_insertion_depth_mm": [
+    3.68,
+    6.35
+  ],
+  "male_insulator_height_mm": 2.54,
+  "fully_seated_board_gap_mm": 11.05,
+  "upper_board_top_above_lower_top_mm": 12.65,
+  "pcb_thickness_mm": 1.6,
+  "socket_tail_projection_below_lower_bottom_mm": 1.04,
+  "model_height_is_not_two_stacked_housings": true,
+  "visual_only_dimensions": [
+    "1.0mm mouth",
+    "0.7mm bore floor",
+    "contact spring shape"
+  ],
+  "generator": "tools/build_ssw_socket.py",
+  "model_sha256": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c",
+  "local_source_print": "FCPLCN-RLY-1616-1v0/datasheets/Samtec-SSW-series-print.pdf",
+  "source_print_sha256": "890f20796637b7947c7655aabf919d055b56988a01c20338b635f2daf35b051f"
+}

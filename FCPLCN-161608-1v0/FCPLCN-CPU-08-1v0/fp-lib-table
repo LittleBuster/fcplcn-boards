@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "RelayStack")(type "KiCad")(uri "${KIPRJMOD}/RelayStack.pretty")(options "")(descr "Stack interconnect and field connectors"))
+)

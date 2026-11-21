@@ -1,0 +1,114 @@
+{
+  "stack": {
+    "socket_mpn": "SSW-103-01-L-D",
+    "socket_height_mm": 8.51,
+    "male_mpn": "TSW-103-07-L-D",
+    "male_insulator_height_mm": 2.54,
+    "board_gap_mm": 11.05,
+    "upper_top_above_lower_top_mm": 12.65,
+    "male_post_length_mm": 5.842,
+    "socket_insertion_range_mm": [
+      3.68,
+      6.35
+    ],
+    "male_tip_above_lower_top_mm": 2.668,
+    "socket_tail_below_lower_bottom_mm": 1.04
+  },
+  "upper_edge_y_mm": 70.96,
+  "relay_front_y_mm": 69.62,
+  "upper_edge_to_relay_front_mm": 1.34,
+  "C8_outside_upper": true,
+  "C8_upper_xy_gap_mm": 1.2,
+  "old_C1_model_height_mm": 12.073,
+  "new_capacitor_envelopes": [
+    {
+      "ref": "C1",
+      "body_center_mm": [
+        66.1,
+        83.6
+      ],
+      "max_diameter_mm": 6.8,
+      "max_height_mm": 9,
+      "pitch_mm": 2.5,
+      "plus_pad_mm": [
+        64.85,
+        83.6
+      ]
+    },
+    {
+      "ref": "C11",
+      "body_center_mm": [
+        60.2,
+        79
+      ],
+      "max_diameter_mm": 6.8,
+      "max_height_mm": 9,
+      "pitch_mm": 2.5,
+      "plus_pad_mm": [
+        58.95,
+        79
+      ]
+    },
+    {
+      "ref": "C12",
+      "body_center_mm": [
+        52.6,
+        77.4
+      ],
+      "max_diameter_mm": 6.8,
+      "max_height_mm": 9,
+      "pitch_mm": 2.5,
+      "plus_pad_mm": [
+        51.35,
+        77.4
+      ]
+    }
+  ],
+  "upper_bottom_to_new_caps": [
+    {
+      "lower": "C11",
+      "upper": "D4",
+      "vertical_gap_mm": 0.85
+    },
+    {
+      "lower": "C11",
+      "upper": "D5",
+      "vertical_gap_mm": 0.85
+    },
+    {
+      "lower": "C1",
+      "upper": "C30",
+      "vertical_gap_mm": 0.8
+    },
+    {
+      "lower": "C1",
+      "upper": "D5",
+      "vertical_gap_mm": 0.85
+    },
+    {
+      "lower": "C1",
+      "upper": "R43",
+      "vertical_gap_mm": 1.6
+    }
+  ],
+  "minimum_new_cap_to_upper_component_vertical_gap_mm": 0.8,
+  "nominal_bounds_method": "FreeCAD STEP full-component AABBs + VRML vertices/boxes, circle planform for new capacitors; native PCB copper/courtyard verification separate",
+  "source_files_written_by_this_agent": [
+    "FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/StackSocket_2x03_P2.54mm.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/3d/StackSocket-SSW103-provenance.json",
+    "FCPLCN-RLY-1616-1v0/datasheets/Samtec-SSW-series-print.pdf",
+    "FCPLCN-RLY-1616-1v0/datasheets/Samtec-SSW-catalog.pdf",
+    "tools/build_ssw_socket.py"
+  ],
+  "native_model_qa_preview": "/tmp/fcplcn-ssw-model-qa/SSW.png",
+  "C1_courtyard_clearance_adjustment": {
+    "body_center_mm": [
+      66.1,
+      83.6
+    ],
+    "lower_U8_body_gap_mm": 1.5,
+    "paired_C11_centre_distance_mm": 7.481,
+    "native_courtyard_verification_owner": "lower_terminals"
+  }
+}

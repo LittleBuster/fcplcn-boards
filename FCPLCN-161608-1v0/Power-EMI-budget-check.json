@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "checks": {
+    "201mA_allocation_plus299mA_reserve_equals500mA": true,
+    "common5v_relieved_by201mA": true,
+    "reported_logic_margins_positive": true,
+    "U13_100uA_output_spec_applicable": true,
+    "ADM_RO_1500uA_output_spec_applicable": true,
+    "Ioff_positive_limits_respected": true,
+    "LOCAL_static25C_inside_ADM_and_buffer_range": true,
+    "C37_is35V_and_C38_is25V": true,
+    "RC_power_balance": true,
+    "RC_has_voltage_headroom_at_plus1pct_R": true,
+    "startup_peak_below_approximate1ms_curve": true,
+    "budget_includes_RC_current": true,
+    "U12_direct_input_without_R57": true,
+    "historical_lower_fuse_report_preserved": true
+  },
+  "source_sha256": {
+    "Power-budget.json": "87ddfff74b36ffaefbe369fd88a4edceefa55919e14f46b00b62fd8c5579567d",
+    "RS485-logic-budget.json": "1460cdf9e263f3c08e1e8d5f83b75d6b62abdabe792c08f0c238a1d88a201116",
+    "ASSEMBLY.md": "02e71f7407d54c9150bb29c65d2422e2482cf732c968aec044e210b2e012c8d5",
+    "tools/check_board.py": "c99e08bdc018e35c5a9ff436dc5c687c7dc9e63aa2988401f6be989d7eda2e4b",
+    "tools/check_r78_clearance.py": "2e2183a6f6668e6951785a9b6f10745251b555c3363f5d5f7b1052afb347c8ff",
+    "tools/check_rs485_clearance.py": "b6d2d30fdd0b9fd1c80978a68f55984217cc8818a95ee6d41320463e0469318e",
+    "tools/electrical_audit.py": "b122fc557afd0cef78fdd830debae21a50321968386260f4a2bb3fadf58880c0"
+  },
+  "scope": "Static engineering calculations and historical Lower record only. Physical PCB validation, input transients and prototype electrical/thermal tests are separate.",
+  "checker_source_sha256": "fbf3166419f3d5b25a78557aa58a794be3f931da687938420a0dd967a651e63a",
+  "input_project_root": "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/FCPLCN-161608-1v0/.work/r78-rs485/stage",
+  "final_pcb_sha256": {
+    "Upper": "d81498f71022ca1f942df70da954d846e54012d6cf7ddeec27a39aa6dbe32d95",
+    "Lower": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337"
+  }
+}

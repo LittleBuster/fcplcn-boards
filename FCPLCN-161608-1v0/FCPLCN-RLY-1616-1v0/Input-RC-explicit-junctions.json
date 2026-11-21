@@ -1,0 +1,37 @@
+{
+  "junctions": [
+    {
+      "net": "/+12V_SYS",
+      "layer": "top_layer",
+      "xy_mm": [
+        57.67415,
+        113.88335
+      ]
+    },
+    {
+      "net": "/DIF15",
+      "layer": "bottom_layer",
+      "xy_mm": [
+        129.29,
+        117.2625
+      ]
+    },
+    {
+      "net": "/DIF3",
+      "layer": "bottom_layer",
+      "xy_mm": [
+        63.29,
+        117.2625
+      ]
+    },
+    {
+      "net": "/DIF4",
+      "layer": "bottom_layer",
+      "xy_mm": [
+        68.79,
+        117.26249999999999
+      ]
+    }
+  ],
+  "new_segment_count": 8
+}

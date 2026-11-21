@@ -1,0 +1,12 @@
+{
+  "method": "Native KiCad synthetic rejection fixture bound to the exact final project/rules. Valid .6/.3 via passes separate acceptance control; undersized vias/drills and a1.5mm isolation violation are rejected. Full product PCB uses the same rules and passes native DRC.",
+  "kicad_version": "10.0.8",
+  "positive_control_triggered_1p5mm_rule": true,
+  "native_description": "\u041d\u0430\u0440\u0443\u0448\u0435\u043d\u0438\u0435 \u0437\u0430\u0437\u043e\u0440\u0430 (\u043f\u0440\u0430\u0432\u0438\u043b\u043e 'Galvanic domain same-layer clearance' \u0437\u0430\u0437\u043e\u0440 1.5000 mm; \u0442\u0435\u043a\u0443\u0449\u0438\u0439 0.8000 mm)",
+  "rule_file_sha256": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
+  "project_file_sha256": "688074f2e92f5340d2060cf19223d746a8a9161179fa28c42a449a740f1dabdb",
+  "fixture_sha256": "87f6611020927012b9abd9e0914f8b8e1d7b73b82c5d96b36faf04934eeb7bf1",
+  "fixture_report_sha256": "0010ef6cc3033346b283eeb7fa1620d4db79b67f971c69709737eb26a6cfccd3",
+  "full_production_rule_proof": "RS485-production-rules-validation.json",
+  "whole_board_isolation_rating_claimed": false
+}

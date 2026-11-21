@@ -1,0 +1,2878 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-18T21:57:59.670562+00:00",
+  "native_tool": "KiCad 10.0.8",
+  "DRC_options": [
+    "--refill-zones",
+    "--all-track-errors",
+    "--schematic-parity",
+    "--severity-all",
+    "--exit-code-violations",
+    "--format json"
+  ],
+  "ERC_options": [
+    "--severity-all",
+    "--exit-code-violations",
+    "--format json"
+  ],
+  "native_sources_saved": false,
+  "boards": {
+    "Upper": {
+      "board": "FCPLCN-CPU-08-1v0",
+      "pcb_sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      "active_drc_count": 0,
+      "excluded_drc_count": 2,
+      "unconnected_count": 0,
+      "schematic_parity_count": 0,
+      "erc_total_count": 0,
+      "erc_active_count": 0,
+      "drc_violations_identical_to_baseline": true,
+      "native_drc_report": "FCPLCN-CPU-08-1v0/Support-removal-DRC.json",
+      "native_erc_report": "FCPLCN-CPU-08-1v0/Support-removal-ERC.json",
+      "native_drc_report_sha256": "2b6adc2c2a1c62c9dbb52bdbcd610ec35306bc2d7a7d2789d879da93dc428dac",
+      "native_erc_report_sha256": "9c854aa8a35bfba803fd9e6d1e7a42b9fd89084d88c104774a459aa61665ea89",
+      "local_models": 15,
+      "standard_models": 133,
+      "missing_models": [],
+      "all_local_models_resolve": true,
+      "model_sources": [
+        {
+          "ref": "C43",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "J5",
+          "model": "${KIPRJMOD}/3d/KF128-4P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "b46d141ae4db1b0ac8d0a6e152699a60f02ef2aca8210554447655b4d5e09add"
+        },
+        {
+          "ref": "R15",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R63",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R53",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc"
+        },
+        {
+          "ref": "R37",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R34",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "J1",
+          "model": "${KIPRJMOD}/3d/StackHeader_2x03_P2.54mm_Bottom.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "90a23b38676afc3a6bbe0071635019a0dda159b4a15868bde79be88ad7b0c82b"
+        },
+        {
+          "ref": "U4",
+          "model": "${KICAD10_3DMODEL_DIR}/Converter_DCDC.3dshapes/Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT.step",
+          "local": false,
+          "exists": true,
+          "sha256": "5c108483481774d711b40913b4ea47c7615a131f429f80d13b8312ce0526831f"
+        },
+        {
+          "ref": "C42",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R36",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R19",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R4",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R18",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R16",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C21",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R29",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C38",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "D3",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R67",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R65",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "JP2",
+          "model": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41"
+        },
+        {
+          "ref": "J6",
+          "model": "${KIPRJMOD}/3d/StackHeader_2x03_P2.54mm_Bottom.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "90a23b38676afc3a6bbe0071635019a0dda159b4a15868bde79be88ad7b0c82b"
+        },
+        {
+          "ref": "U7",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R40",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "Q2",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "local": false,
+          "exists": true,
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+        },
+        {
+          "ref": "J3",
+          "model": "${KIPRJMOD}/3d/KF128-10P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "b7e847cf2313f060d6b121f1b0f114bc8f106bf16695c6b85970ad90e2abd6d3"
+        },
+        {
+          "ref": "C29",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U1",
+          "model": "${KIPRJMOD}/3d/ESP32-S3-WROOM-1U.step",
+          "local": true,
+          "exists": true,
+          "sha256": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb"
+        },
+        {
+          "ref": "U2",
+          "model": "${KIPRJMOD}/3d/W5500_Lite_2x6-assembly.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "2f1c19b8a6bcd1400b4f38ad26e18ff8607c7ae4f48a0dcc40fb25064aaf8a91"
+        },
+        {
+          "ref": "R20",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C10",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "J2",
+          "model": "${KIPRJMOD}/3d/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "64226a267ab1e0680d23f4ad7f3dfbc8b032d718c3cae9e3c309e01a29d314b1"
+        },
+        {
+          "ref": "R64",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R28",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U3",
+          "model": "${KIPRJMOD}/3d/RECOM_R-78K3.3-1.0.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "84767b8854cd9aa834ef1a710195fd4a307f97a455acd26208a391a5edb8ed69"
+        },
+        {
+          "ref": "R62",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R26",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C28",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U14",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "3b9a775da256c8afcc28dcddfbc2eb3f266107fe61ce8446d96f2c52b6f44a70"
+        },
+        {
+          "ref": "R22",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C13",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "R57",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R27",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R38",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "SW2",
+          "model": "${KIPRJMOD}/3d/SW_SPST_TS-1088-xR020.step",
+          "local": true,
+          "exists": true,
+          "sha256": "ebfe1a50181c9a502cd98b44b03a5ce8568ff7c77d4fd5906caaef4b9a290da8"
+        },
+        {
+          "ref": "C12",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "R61",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U8",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R58",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "Q1",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "local": false,
+          "exists": true,
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+        },
+        {
+          "ref": "C1",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "R39",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C8",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "R33",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R21",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U12",
+          "model": "${KIPRJMOD}/3d/RECOM_R-78K3.3-0.5.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4"
+        },
+        {
+          "ref": "U13",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "3b9a775da256c8afcc28dcddfbc2eb3f266107fe61ce8446d96f2c52b6f44a70"
+        },
+        {
+          "ref": "R66",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C9",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D4",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "U6",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R35",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R3",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C44",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R9",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "SW1",
+          "model": "${KIPRJMOD}/3d/SW_SPST_TS-1088-xR020.step",
+          "local": true,
+          "exists": true,
+          "sha256": "ebfe1a50181c9a502cd98b44b03a5ce8568ff7c77d4fd5906caaef4b9a290da8"
+        },
+        {
+          "ref": "R23",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U9",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "J7",
+          "model": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+          "local": false,
+          "exists": true,
+          "sha256": "f03b716e453f6d4f2a111a227c671d96f92708e72a5a663cd4889296d021f4c3"
+        },
+        {
+          "ref": "R24",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "Q3",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "local": false,
+          "exists": true,
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+        },
+        {
+          "ref": "R25",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "J8",
+          "model": "${KIPRJMOD}/3d/KF128-4P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "b46d141ae4db1b0ac8d0a6e152699a60f02ef2aca8210554447655b4d5e09add"
+        },
+        {
+          "ref": "C45",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U5",
+          "model": "${KIPRJMOD}/3d/RECOM_R-78K3.3-0.5.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4"
+        },
+        {
+          "ref": "C15",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R60",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U11",
+          "model": "${KIPRJMOD}/3d/ADM2687E_RI-16-2.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "78fc299a8ac88660ba08bae32433f784902a2909bfde543b50c066a11472949a"
+        },
+        {
+          "ref": "C46",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R47",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C26",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R46",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R52",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C34",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "R30",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C51",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R49",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C27",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C24",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R51",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C6",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R14",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R48",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R2",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C18",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D2",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R50",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C14",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R32",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C17",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R11",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R10",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C23",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "BT1",
+          "model": "${KIPRJMOD}/3d/BatteryHolder_QJ_CR1220-2_C70381.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6a8f69ef759bfe98e390059fb8392cab30b2e60e72088d1eeec473e298456e6b"
+        },
+        {
+          "ref": "C22",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C39",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R6",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R1",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C40",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R68",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D9",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "local": false,
+          "exists": true,
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+        },
+        {
+          "ref": "R5",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R54",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R17",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R8",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R13",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U10",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "FB1",
+          "model": "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425"
+        },
+        {
+          "ref": "D6",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R55",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C19",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C16",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R31",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C41",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "C4",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "C33",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C50",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D1",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R69",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R7",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C7",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R56",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C48",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R70",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R12",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C11",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "C37",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "U15",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R59",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C25",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C20",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C36",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "C5",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "C49",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C47",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C3",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "C35",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        }
+      ],
+      "all_used_footprints_resolve": true,
+      "missing_footprints": []
+    },
+    "Lower": {
+      "board": "FCPLCN-RLY-1616-1v0",
+      "pcb_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      "active_drc_count": 0,
+      "excluded_drc_count": 0,
+      "unconnected_count": 0,
+      "schematic_parity_count": 0,
+      "erc_total_count": 0,
+      "erc_active_count": 0,
+      "drc_violations_identical_to_baseline": true,
+      "native_drc_report": "FCPLCN-RLY-1616-1v0/Support-removal-DRC.json",
+      "native_erc_report": "FCPLCN-RLY-1616-1v0/Support-removal-ERC.json",
+      "native_drc_report_sha256": "68a19254b5b0977c2486aa2a16db103debad6f658cfda5e71ad19d4809c913d1",
+      "native_erc_report_sha256": "4a482e4fea695cb67e807be9a53b028d8b9bc2c403584922113fea23039cc003",
+      "local_models": 61,
+      "standard_models": 187,
+      "missing_models": [
+        {
+          "ref": "F1",
+          "model": "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse-NANO2-451_453.step",
+          "local": false,
+          "exists": false
+        }
+      ],
+      "all_local_models_resolve": true,
+      "model_sources": [
+        {
+          "ref": "R126",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U27",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "D1",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.step",
+          "local": false,
+          "exists": true,
+          "sha256": "30dab4c2e22239b7e3694a4d45304e04255c6b70a79d28e9c34c6072ba647991"
+        },
+        {
+          "ref": "C136",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "J15",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "K8",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "R130",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R112",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "K13",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "C8",
+          "model": "${KIPRJMOD}/3d/C1-D8H12.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "3661cad8c040d3ef81301e1ec000bece2b90293c061671ed3d902c9f4d6ffff0"
+        },
+        {
+          "ref": "D102",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "D107",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "U26",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "D115",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "J6",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "J43",
+          "model": "${KIPRJMOD}/3d/StackSocket_2x03_P2.54mm.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c"
+        },
+        {
+          "ref": "D116",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "R101",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C14",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C121",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "K11",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "C130",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "K10",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "R134",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "K6",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "D106",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "U32",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "J33",
+          "model": "${KIPRJMOD}/3d/KF128-8P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1"
+        },
+        {
+          "ref": "D103",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "C110",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C114",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "J17",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "D109",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "C132",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "RN1",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Array_SIP9.step",
+          "local": false,
+          "exists": true,
+          "sha256": "87ae884abaf6d145dc7c3f42181fb51358736caa8b35917fccc6be4843c94510"
+        },
+        {
+          "ref": "J5",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "U21",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "R133",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U23",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "D101",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "U30",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "C11",
+          "model": "${KIPRJMOD}/3d/APAQ_350ARHA101M06X8P00_H9max.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "b9854934d71e6db2476d3cc82713bb347a19ed3eae790fd65537bdd4f30e7d2e"
+        },
+        {
+          "ref": "C101",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C131",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R131",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D108",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "C125",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C133",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C129",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U5",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-28W_7.5x17.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b889a13dbe9ec59e79fa9f1b5118b00bfa54f9582392335ff3365b64afc264b1"
+        },
+        {
+          "ref": "C104",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R121",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D104",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "R110",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C127",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R109",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "K1",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "C106",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U31",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "K4",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "U28",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "U36",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "R104",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "K14",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "C112",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "J10",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "C113",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "K2",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "R115",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R127",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U29",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "U6",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-28W_7.5x17.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b889a13dbe9ec59e79fa9f1b5118b00bfa54f9582392335ff3365b64afc264b1"
+        },
+        {
+          "ref": "R125",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R2",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R122",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "J13",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "C3",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "K15",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "C124",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "RN2",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Array_SIP9.step",
+          "local": false,
+          "exists": true,
+          "sha256": "87ae884abaf6d145dc7c3f42181fb51358736caa8b35917fccc6be4843c94510"
+        },
+        {
+          "ref": "J1",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "C126",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U3",
+          "model": "${KIPRJMOD}/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step",
+          "local": true,
+          "exists": true,
+          "sha256": "05ad7d4945131c76ec7b9448dd9cbb5376b56adcd564c58d93e50ca7870fab1f"
+        },
+        {
+          "ref": "K3",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "J2",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "U22",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "R113",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C111",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R136",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R128",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R103",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C7",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U35",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "D111",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "C5",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R107",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U34",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "C116",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "J25",
+          "model": "${KIPRJMOD}/3d/KF128-8P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1"
+        },
+        {
+          "ref": "C122",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D105",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "C105",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "J9",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "K9",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "F1",
+          "model": "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse-NANO2-451_453.step",
+          "local": false,
+          "exists": false
+        },
+        {
+          "ref": "R4",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C4",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R116",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C12",
+          "model": "${KIPRJMOD}/3d/APAQ_350ARHA101M06X8P00_H9max.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "b9854934d71e6db2476d3cc82713bb347a19ed3eae790fd65537bdd4f30e7d2e"
+        },
+        {
+          "ref": "J8",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "R132",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C128",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U9",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "local": false,
+          "exists": true,
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a"
+        },
+        {
+          "ref": "R108",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R3",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "J11",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "D113",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "J4",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "D2",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
+          "local": false,
+          "exists": true,
+          "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4"
+        },
+        {
+          "ref": "R114",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "J7",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "K16",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "R105",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U25",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "U8",
+          "model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step",
+          "local": false,
+          "exists": true,
+          "sha256": "77ad6dbacc493cb619c728f26d2ddcf461eb0feb6b977b47d01d51e67016f654"
+        },
+        {
+          "ref": "R135",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C135",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C123",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "K5",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "D110",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "R106",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "U33",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "C134",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C115",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C6",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D112",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "R111",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C109",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R123",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R129",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "K7",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "J12",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "J3",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "R124",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "J21",
+          "model": "${KIPRJMOD}/3d/KF128-8P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1"
+        },
+        {
+          "ref": "J16",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "C108",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D114",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+        },
+        {
+          "ref": "U4",
+          "model": "${KIPRJMOD}/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step",
+          "local": true,
+          "exists": true,
+          "sha256": "05ad7d4945131c76ec7b9448dd9cbb5376b56adcd564c58d93e50ca7870fab1f"
+        },
+        {
+          "ref": "K12",
+          "model": "${KIPRJMOD}/3d/HF49FD-1H11.step",
+          "local": true,
+          "exists": true,
+          "sha256": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a"
+        },
+        {
+          "ref": "C102",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C107",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U24",
+          "model": "${KIPRJMOD}/3d/TLP2363_5pin_SO6.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b"
+        },
+        {
+          "ref": "R102",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "J14",
+          "model": "${KIPRJMOD}/3d/KF128-2P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81"
+        },
+        {
+          "ref": "J44",
+          "model": "${KIPRJMOD}/3d/StackSocket_2x03_P2.54mm.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c"
+        },
+        {
+          "ref": "J29",
+          "model": "${KIPRJMOD}/3d/KF128-8P.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1"
+        },
+        {
+          "ref": "C103",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "U2",
+          "model": "${KICAD10_3DMODEL_DIR}/Converter_DCDC.3dshapes/Converter_DCDC_RECOM_R-78E-0.5_THT.step",
+          "local": false,
+          "exists": true,
+          "sha256": "6ce2185347486b68c044e112844dba9adfd679e43a3f61faaa745c77b3bb7129"
+        },
+        {
+          "ref": "C1",
+          "model": "${KIPRJMOD}/3d/APAQ_350ARHA101M06X8P00_H9max.wrl",
+          "local": true,
+          "exists": true,
+          "sha256": "b9854934d71e6db2476d3cc82713bb347a19ed3eae790fd65537bdd4f30e7d2e"
+        },
+        {
+          "ref": "C2",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        },
+        {
+          "ref": "R154",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R141",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D133",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "C144",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C142",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R147",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D123",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "R142",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C150",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R185",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R162",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R196",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R174",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R191",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R181",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R192",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R169",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D125",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "C147",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C155",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R10",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R184",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R171",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C141",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R146",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R12",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27"
+        },
+        {
+          "ref": "D127",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "C149",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C151",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C153",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R172",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C10",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D129",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "C145",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "C152",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R148",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R170",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D134",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "R161",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D136",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "D122",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "R167",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R151",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D130",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "R145",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C146",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D128",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "R165",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R190",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R187",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R173",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R189",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R168",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R155",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C13",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R188",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R186",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C156",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R182",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R11",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R194",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R143",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C9",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D121",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "D131",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "D126",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "C148",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R193",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R163",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R152",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R144",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R153",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D132",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "R166",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R195",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R164",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D3",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
+          "local": false,
+          "exists": true,
+          "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4"
+        },
+        {
+          "ref": "C143",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "R176",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R175",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "C154",
+          "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        },
+        {
+          "ref": "D135",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        },
+        {
+          "ref": "R183",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R149",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R156",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "R150",
+          "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "local": false,
+          "exists": true,
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+        },
+        {
+          "ref": "D124",
+          "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+          "local": false,
+          "exists": true,
+          "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+        }
+      ],
+      "all_used_footprints_resolve": true,
+      "missing_footprints": []
+    }
+  },
+  "board_check": {
+    "command": "KiCad Python tools/check_board.py <stage>",
+    "exit_code": 0,
+    "all_assertions_passed": true,
+    "checks_include": [
+      "all 16 input RC circuits and LED shunts",
+      "FRAM U9/C14 pins and properties",
+      "all retained functional pin maps and purchasing fields",
+      "two original six-pin connector pairs align",
+      "two copper layers",
+      "45/90 degree traces and no strict crossings"
+    ],
+    "geometry": {
+      "Upper": {
+        "footprints": 148,
+        "copper_layers": 2,
+        "non_45_90_segments": 0,
+        "strict_track_crossings": 0,
+        "usb_trace_lengths_mm": {
+          "/USB_DN_CPU": 8.474,
+          "/USB_DP_CPU": 4.315,
+          "/USB_DP": 12.647,
+          "/USB_DN": 15.889
+        }
+      },
+      "Lower": {
+        "footprints": 251,
+        "copper_layers": 2,
+        "non_45_90_segments": 0,
+        "strict_track_crossings": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "pcb_sha256": {
+    "Upper": "d81498f71022ca1f942df70da954d846e54012d6cf7ddeec27a39aa6dbe32d95",
+    "Lower": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337"
+  },
+  "CAD_immutable_during_checks": true,
+  "reports_sha256": {
+    "Power-EMI-electrical-audit.json": "beb63935b8cc55699b01f36959265660354c06052ccb904efd1f3945571479ef",
+    "Power-EMI-bypass-copper.json": "c5787d039170823aff9df364021e4eac0f83c53da133058635eee042c986ed90",
+    "R78-mechanical-audit.json": "dc27e55cad75755dde077acdd3adbcd63719b69c5c4b68123c45f262514c4a17",
+    "Power-EMI-budget-check.json": "8ae53fa6c08f3f238c735e1787aae62ad89110df8e915d120dff67fbb4acbd13"
+  },
+  "ADM2687E_bypass_external_lead_constructed_path_mm": {
+    "C39": 5.2106581934930745,
+    "C45": 9.913446933442042,
+    "C40": 8.47541409693377,
+    "C42": 9.578168688976824,
+    "C43": 7.562649919265073,
+    "C44": 9.735597110604171
+  },
+  "bypass_limit_mm": 10,
+  "bypass_pass": true,
+  "R78_checked": [
+    "U12",
+    "U3",
+    "U5"
+  ],
+  "R78_collision_count": 0,
+  "budget_checks_passed": 14,
+  "U12_design_current_mA": 201,
+  "U12_rated_current_mA": 500,
+  "U12_reserve_mA": 299,
+  "C37": "22uF 35V X5R / C3216X5R1V226M160AC",
+  "limits": [
+    "No thermal, transient, EMC or physical prototype tests performed.",
+    "Bypass values are explicit paths in actual filled copper using 0.1mm grid and <=0.04mm segment samples; not electromagnetic inductance simulation.",
+    "Powered Upper board mating remains prohibited."
+  ]
+}

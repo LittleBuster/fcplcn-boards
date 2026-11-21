@@ -1,0 +1,375 @@
+{
+  "status": "FINAL_FULL_NEW_VIA_INVENTORY",
+  "new_ground_vias": [
+    {
+      "net": "/GND",
+      "xy_mm": [
+        74.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        64.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        80.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        118.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        102.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        124.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        63.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        70.9,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        125.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        85.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        92.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        73.6,
+        102.6
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        69.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        129.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        70.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        108.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        84.34,
+        111.6
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        66.75,
+        99.41
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        119.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        96.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        114.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        136.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        49.29,
+        99.41
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        91.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        81.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        75.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        97.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        86.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        135.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        103.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        52.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        107.61,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        58.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        53.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        59.04,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        113.11,
+        106.3
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    },
+    {
+      "net": "/GND",
+      "xy_mm": [
+        130.54,
+        103.35
+      ],
+      "diameter_mm": 0.9,
+      "drill_mm": 0.3,
+      "annular_ring_mm": 0.3
+    }
+  ]
+}

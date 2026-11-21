@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "lower_pcb_sha256": "2a56e136b4ce4d115cb48b419a28f73fd18d330313a269209082fe5df8b0d337",
+  "basis": "Final independent full native/metadata/physical connectivity audit; replaces earlier intermediate summary.",
+  "source_report": "../Power-EMI-electrical-connectivity.json",
+  "source_report_sha256": "46e635f331dc64e31ba0b97844d8572cc5af799c7f46d09fbf255f31f90706c7",
+  "native": {
+    "active_violations": 0,
+    "opens": 0,
+    "schematic_parity": 0,
+    "ERC_violations": 0,
+    "documented_exclusions": []
+  },
+  "components": 157,
+  "XML_nodes": 531,
+  "metadata_fields_checked": 662,
+  "all_pad_nets_match": true,
+  "all_XML_metadata_matches": true,
+  "all_physical_nets_one_pad_group": true,
+  "purchased_components": 154,
+  "all_BOM_rows_match_XML": true
+}

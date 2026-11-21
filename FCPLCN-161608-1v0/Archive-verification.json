@@ -1,0 +1,14 @@
+{
+  "FCPLCN-161608-1v0-KiCad.zip": {
+    "sha256": "1e814d326e2f60b436f430de10072fdf9c09ba8a471a4d8729add9578034bebe",
+    "files": 442,
+    "size_bytes": 41190506,
+    "verified_against_current_workspace": true
+  },
+  "FCPLCN-161608-1v0-3D-views.zip": {
+    "sha256": "dedae75e6c925b9115a982d0bdb5144617cd1291fcef9066e9ec2573d888d67a",
+    "files": 36,
+    "size_bytes": 16134709,
+    "verified_against_current_workspace": true
+  }
+}

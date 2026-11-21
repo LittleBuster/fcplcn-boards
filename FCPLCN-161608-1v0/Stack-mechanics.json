@@ -1,0 +1,28 @@
+{
+  "description": "FCPLCn two-board assembly: actual mating connector dimensions",
+  "socket": {
+    "refs": [
+      "Lower.J43",
+      "Lower.J44"
+    ],
+    "manufacturer": "Samtec",
+    "mpn": "SSW-103-01-L-D",
+    "body_height_mm": 8.51,
+    "solder_tail_mm": 2.64,
+    "source": "https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf"
+  },
+  "header": {
+    "refs": [
+      "Upper.J1",
+      "Upper.J6"
+    ],
+    "manufacturer": "Samtec",
+    "mpn": "TSW-103-07-L-D",
+    "body_height_mm": 2.54,
+    "mating_post_mm": 5.842
+  },
+  "upper_pcb_thickness_mm": 1.6,
+  "lower_pcb_thickness_mm": 1.6,
+  "board_to_board_clearance_mm": 11.05,
+  "upper_top_above_lower_top_mm": 12.65
+}

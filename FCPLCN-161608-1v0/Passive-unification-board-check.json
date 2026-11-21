@@ -1,0 +1,142 @@
+{
+  "data_ports": [
+    {
+      "connector": "J3",
+      "gpio": 39,
+      "port": 1
+    },
+    {
+      "connector": "J3",
+      "gpio": 40,
+      "port": 2
+    },
+    {
+      "connector": "J3",
+      "gpio": 17,
+      "port": 3
+    },
+    {
+      "connector": "J3",
+      "gpio": 18,
+      "port": 4
+    },
+    {
+      "connector": "J3",
+      "gpio": 1,
+      "port": 5
+    },
+    {
+      "connector": "J3",
+      "gpio": 2,
+      "port": 6
+    },
+    {
+      "connector": "J3",
+      "gpio": 38,
+      "port": 7
+    },
+    {
+      "connector": "J3",
+      "gpio": 44,
+      "port": 8
+    }
+  ],
+  "i2c_gpio": [
+    41,
+    42
+  ],
+  "uart0_rx_gpio44_reserved_for_DATA8": true,
+  "bidirectional_isolators": 5,
+  "matched_stack_contacts": 12,
+  "geometry": {
+    "Lower": {
+      "copper_layers": 2,
+      "footprints": 157,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {}
+    },
+    "Upper": {
+      "copper_layers": 2,
+      "footprints": 148,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "usb_trace_lengths_mm": {
+        "/USB_DN_CPU": 8.474,
+        "/USB_DP_CPU": 4.315,
+        "/USB_DP": 12.647,
+        "/USB_DN": 15.889
+      }
+    }
+  },
+  "mcp23017": {
+    "physical_gpio_pin_names": {
+      "1": "GPB0",
+      "2": "GPB1",
+      "3": "GPB2",
+      "4": "GPB3",
+      "5": "GPB4",
+      "6": "GPB5",
+      "7": "GPB6",
+      "8": "GPB7",
+      "21": "GPA0",
+      "22": "GPA1",
+      "23": "GPA2",
+      "24": "GPA3",
+      "25": "GPA4",
+      "26": "GPA5",
+      "27": "GPA6",
+      "28": "GPA7"
+    },
+    "output_only_pins": [
+      "GPA7",
+      "GPB7"
+    ],
+    "input_mask_hex": "0x7f01",
+    "relay_mask_hex": "0x80fe",
+    "existing_gpio_wiring_preserved": true
+  },
+  "power": {
+    "Upper.U3": "R-78K3.3-1.0 / +12V_LOGIC",
+    "Upper.U5": "R-78K3.3-0.5 / +5V_ISO",
+    "Upper.U12": "R-78K3.3-0.5 / +12V_LOGIC",
+    "Lower.U8": "TLV1117LV33DCYR / MOD_VBUS",
+    "left_stack_supply_v": 5,
+    "right_stack_supply_v": 12,
+    "Lower.F1": "Littelfuse 045201.5MRL / 1.5A Slo-Blo"
+  },
+  "rs485": {
+    "mpn": "ADM2687EBRIZ",
+    "uart": 1,
+    "tx_gpio": 8,
+    "rx_gpio": 47,
+    "direction_gpio": 48,
+    "half_duplex": true,
+    "connector": "J8",
+    "pin_order": [
+      "5V_ISO",
+      "A",
+      "B",
+      "GND_ISO"
+    ],
+    "buffers": "2x Nexperia 74LVC125AD,118; Ioff",
+    "primary_supply": "U12 / +12V_LOGIC to +3V3_RS485",
+    "field_power_from_TMR": true,
+    "isoPower_output_not_paralleled": true,
+    "sensor_ports_share_GND_ISO": true,
+    "switchable_120ohm_termination": true
+  },
+  "rtc": {
+    "mpn": "DS3231MZ+",
+    "i2c_address": "0x68",
+    "cpu_gpio": [
+      4,
+      5
+    ],
+    "holder": "Q&J CR1220-2 / C70381",
+    "board": "Upper",
+    "side": "B.Cu",
+    "additional_gpio": 0,
+    "external_charger": false
+  }
+}
