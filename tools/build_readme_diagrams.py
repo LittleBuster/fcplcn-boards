@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate the documentation's functional diagrams without changing KiCad files."""
+"""Generate functional SVG diagrams without changing KiCad files.
+
+The power diagram also has a PNG preview. After regenerating its SVG, render it
+with rsvg-convert or the existing FCPLCN-161608-1v0/tools/svg_to_png.swift helper.
+"""
 from pathlib import Path
 import re
 from xml.sax.saxutils import escape
@@ -47,11 +51,11 @@ def arrow(path, color="blue", both=False):
     return "".join(parts)
 
 
-def save(name, height, title, description, content):
+def save(name, height, title, description, content, radius=28):
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="{height}" '
            f'viewBox="0 0 1600 {height}" role="img" aria-labelledby="title desc">'
            f'<title id="title">{escape(title)}</title><desc id="desc">{escape(description)}</desc>'
-           f'<rect width="1600" height="{height}" rx="28" fill="{COLORS["background"]}"/>'
+           f'<rect width="1600" height="{height}" rx="{radius}" fill="{COLORS["background"]}"/>'
            f'<g font-family="Inter,Segoe UI,Arial,sans-serif">{content}</g></svg>')
     DESTINATION.mkdir(parents=True, exist_ok=True)
     (DESTINATION / name).write_text(svg + "\n", encoding="utf-8")
@@ -102,6 +106,65 @@ def input_channel():
          "Цепочка сухой контакт, входной RC, TLP2363, выходной RC, MCP23017. Земля общая; замыкание соответствует LOW.", "".join(parts))
 
 
+def power_domains():
+    parts = [text(60, 62, "FCPLCn / ПИТАНИЕ", 20, "blue", 700),
+             text(60, 115, "От 12 В до полевых портов", 40, weight=700),
+             text(60, 153, "Источники питания двух плат и граница общей GND_ISO", 22, "muted"),
+             '<rect x="525" y="785" width="1050" height="455" rx="24" '
+             'fill="#102826" stroke="#88ddba" stroke-opacity=".6" stroke-dasharray="8 8"/>']
+
+    def wire(path, color="amber"):
+        return f'<path d="{path}" fill="none" stroke="{COLORS[color]}" stroke-width="3"/>'
+
+    # Branches are placed in the gaps between panels, before their labels.
+    parts += [arrow("M460 285 H560", "amber"),
+              wire("M510 285 V185 H1315"), arrow("M1315 185 V215", "amber"),
+              wire("M770 355 V430 M260 430 H1315"),
+              arrow("M260 430 V480", "amber"),
+              arrow("M770 430 V480", "amber"),
+              arrow("M1315 430 V480", "amber"),
+              wire("M770 640 V750 H260"),
+              arrow("M260 750 V835", "amber"),
+              wire("M770 750 V785"), arrow("M770 785 V835", "green"),
+              arrow("M980 907 H1090", "green"),
+              arrow("M770 980 V1070", "green"),
+              arrow("M980 1142 H1090", "green")]
+    parts += [box(60, 215, 400, 140, "12 В DC · RLY J1",
+                  ["F1 1,5 А → D1 SS34", "+12V_SYS · TVS D2 SMBJ15A"], "amber"),
+              box(560, 215, 420, 140, "Ветка логики",
+                  ["D3 B340B + R12 1 Ом / 2 Вт", "+12V_LOGIC"], "amber"),
+              box(1090, 215, 450, 140, "Нагрузки 12 В",
+                  ["Катушки K1…K16", "Входные цепи LED TLP2363"], "amber"),
+              text(60, 405, "+12V_LOGIC → три источника", 22, "amber"),
+              box(60, 480, 400, 160, "+3V3 · CPU U3",
+                  ["R-78K3.3-1.0 · 1 А", "ESP32-S3, W5500 и RTC"]),
+              box(560, 480, 420, 160, "MOD_VBUS · 5 В",
+                  ["RLY U2 · R-78E5.0-1.0", "Общий источник 5 В · 1 А"]),
+              box(1090, 480, 450, 160, "+3V3_RS485 · CPU U12",
+                  ["R-78K3.3-0.5 · 500 мА", "Основная сторона ADM2687E"]),
+              text(60, 705, "ОСНОВНАЯ GND", 22, "blue", 700),
+              text(60, 737, "CPU, реле, DI и память", 20, "muted"),
+              text(1090, 705, "isoPower ADM2687E", 22, "blue", 700),
+              text(1090, 737, "Питает сам трансивер, не порт J8", 20, "muted"),
+              box(60, 835, 400, 145, "3,3 В · RLY U8",
+                  ["TLV1117LV33", "MCP23017 и FRAM"]),
+              text(1090, 814, "ПОЛЕВОЙ ДОМЕН · GND_ISO", 20, "green", 700),
+              box(560, 835, 420, 145, "5V_ISO · CPU U4",
+                  ["TMR-1-0511 · 1 Вт / 200 мА", "Изолированный источник 5 В"], "green"),
+              box(1090, 835, 450, 145, "Питание внешних портов",
+                  ["DATA: J3, контакт 9", "RS-485: J8, контакт 1"], "green", 24),
+              box(560, 1070, 420, 145, "3V3_ISO · CPU U5",
+                  ["R-78K3.3-0.5 · 500 мА", "Мощность ограничена TMR"], "green"),
+              box(1090, 1070, 450, 145, "Внешняя I²C · J5",
+                  ["Контакт 1: 3V3_ISO", "SDA / SCL: подтяжки к 3,3 В"], "green"),
+              text(60, 1300, "DATA, внешняя I²C и RS-485 используют одну общую GND_ISO.", 24, "green", 700),
+              text(60, 1342, "Внешние полевые устройства: 120 мА суммарно, с учётом обеих шин питания.", 23, "muted"),
+              text(60, 1384, "Основная GND и GND_ISO — разные домены; дискретные входы относятся к основной GND.", 23, "muted")]
+    save("power-domains.svg", 1435, "Питание и домены земли FCPLCn",
+         "12 В после защиты питают реле и ветку логики. Три преобразователя питают CPU, общие 5 В и RS485. От 5 В питаются нижние 3,3 В и изолированный TMR. TMR питает DATA, контакт питания RS485 и преобразователь внешней I2C. Полевые порты имеют общую GND_ISO.", "".join(parts), radius=0)
+
+
 if __name__ == "__main__":
     architecture()
     input_channel()
+    power_domains()

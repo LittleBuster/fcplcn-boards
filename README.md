@@ -260,20 +260,9 @@ PWR показывает основное питание 3,3 В. GPIO35–37 о�
 
 ## Питание и домены земли
 
-```mermaid
-flowchart TD
-    DC["J1 нижней платы · 12 В DC"] --> PROTECT["F1 + D1 + TVS · +12V_SYS"]
-    PROTECT --> LOAD["Катушки 16 реле и входные LED"]
-    PROTECT --> LOGIC["D3 + R12 · +12V_LOGIC"]
-    LOGIC --> CPU["CPU U3 · R-78K3.3-1.0 → +3V3"]
-    LOGIC --> FIVE["RLY U2 · R-78E5.0-1.0 → MOD_VBUS 5 В"]
-    LOGIC --> SERIAL["CPU U12 · R-78K3.3-0.5 → +3V3_RS485"]
-    FIVE --> LOWER["RLY U8 · TLV1117LV33 → нижние +3V3"]
-    FIVE --> ISO["CPU U4 · TMR-1-0511 → 5V_ISO / GND_ISO"]
-    ISO --> FIELD["CPU U5 · R-78K3.3-0.5 → 3V3_ISO"]
-    ISO --> DATA["Питание DATA и контакт 1 RS-485"]
-    FIELD --> I2C["Питание внешней I²C J5"]
-```
+[![Схема питания двух плат FCPLCn: источники напряжения и домены земли](docs/readme/power-domains.png)](docs/readme/power-domains.svg)
+
+[Открыть векторную схему SVG](docs/readme/power-domains.svg).
 
 На вводе установлены предохранитель **1,5 А**, диод SS34 и TVS SMBJ15A.
 Ветка логики отделена D3 и R12 от питания катушек.
