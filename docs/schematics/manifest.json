@@ -1,0 +1,85 @@
+{
+  "generator": "KiCad CLI",
+  "version": "10.0.8",
+  "sources": {
+    "cpu-schematic": {
+      "source": "FCPLCN-161608-1v0/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch",
+      "sha256": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      "pageMillimeters": [
+        594.0,
+        630.0
+      ],
+      "pageCount": 1,
+      "exports": [
+        {
+          "file": "cpu-schematic.svg",
+          "bytes": 4268914
+        },
+        {
+          "file": "cpu-schematic.pdf",
+          "bytes": 209982
+        },
+        {
+          "file": "cpu-schematic.png",
+          "bytes": 562051
+        }
+      ]
+    },
+    "relay-schematic": {
+      "source": "FCPLCN-161608-1v0/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+      "sha256": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      "pageMillimeters": [
+        594.0,
+        558.0
+      ],
+      "pageCount": 1,
+      "exports": [
+        {
+          "file": "relay-schematic.svg",
+          "bytes": 4984771
+        },
+        {
+          "file": "relay-schematic.pdf",
+          "bytes": 261499
+        },
+        {
+          "file": "relay-schematic.png",
+          "bytes": 489033
+        }
+      ]
+    },
+    "cpu-pcb": {
+      "source": "FCPLCN-161608-1v0/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+      "sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      "frontLayers": [
+        "F.Cu",
+        "F.SilkS",
+        "Edge.Cuts"
+      ],
+      "bottomLayers": [
+        "B.Cu",
+        "B.SilkS",
+        "Edge.Cuts"
+      ],
+      "bottomMirrored": true,
+      "exports": [
+        {
+          "file": "cpu-pcb.svg",
+          "bytes": 537437
+        },
+        {
+          "file": "cpu-pcb.png",
+          "bytes": 1373943
+        },
+        {
+          "file": "cpu-pcb-bottom.svg",
+          "bytes": 473789
+        },
+        {
+          "file": "cpu-pcb-bottom.png",
+          "bytes": 1360506
+        }
+      ]
+    }
+  }
+}

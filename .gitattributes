@@ -1,0 +1,4 @@
+# KiCad exports are generated assets; review their sources and manifest instead.
+docs/schematics/*.svg -diff linguist-generated=true
+docs/schematics/*.png linguist-generated=true
+docs/schematics/*.pdf linguist-generated=true
