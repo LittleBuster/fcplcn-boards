@@ -1,18 +1,25 @@
+CURRENT VALIDATION: Power-split-validation.json
+CPU PCB SHA256: efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08
+RLY PCB SHA256: 15ab3935683fea5c40f0f1efeb9c5d5e8f763ca321789e3e115367d0fb38f096
+Power split: Lower3.3V500mA; Upper5V1A beside TMR. No interboard5V.
+Retained previous Lower legend observations are explicit in Power-split-lower-geometry-delta.json.
+
 FCPLCn — Future City PLC Next
-Hardware: FCPLCN-161608-1v0 / STACK / DATA8 + FRAM + 16 TLP2363 + input RC + accessible JP2
+Hardware: FCPLCN-161608-1v0 / STACK / DATA8 + FRAM + 16 TLP2363 + input RC + iButton panel outputs
 
 Open FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro
 or FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro.
 Both boards: 2 copper layers, nominal thickness 1.6 mm.
-RLY: 101 x 86 mm; CPU: 89 x 49.44 mm; nominal board gap 11.05 mm.
+RLY: 101 x 86 mm; CPU: 90.5 x 49.44 mm; nominal board gap 11.05 mm.
 8 direct-CPU isolated DATA ports, J3 10P; separate I2C and RS485.
-Purchasing BOM: 396 parts/modules (CPU148 + RLY248); one CR1220 cell is separate.
-Current release: Support-removal-validation.json / Support-removal-source-audit.json.
+Purchasing BOM: 412 parts/modules (CPU164 + RLY248); one CR1220 cell is separate.
+Current release: Power-split-validation.json / Power-split-source-audit.json.
 Both extra support pairs removed; original two interboard connections and front JP2 remain.
 JP2 120-ohm RS485 termination jumper moved to front edge beside J8, 120R legend.
-Current input verification: Input-RC-validation.json / Input-RC-source-audit.json.
-Lower 3.3V: 82.5mA component estimate, 100mA supply allocation; input RC uses 12V.
-Lower 5V-to-3.3V LDO: about 0.17W at nominal rails and allocated load.
+Historical input verification: Input-RC-validation.json / Input-RC-source-audit.json.
+Lower3V3: U2 R-78K3.3-0.5 -> FB1 -> local3V3; 82.9mA component estimate,100mA allocation.
+Lower U8 removed. Upper U17 R-78E5.0-1.0 supplies local5V_TMR only;300mA engineering allocation.
+Left interboard pins1..4 GND;5/6 SDA/SCL. Right12V/RESET unchanged. No interboard5V or3V3.
 Per input: 1.2k LED resistor, 220R/1uF prefilter, 4.7k LED shunt, existing output RC.
 Existing button startup/glitch handling: 51 host tests passed; firmware unchanged this operation.
 Previous labeling/D3 verification: Labels-validation.json / Labels-source-audit.json.
@@ -28,3 +35,9 @@ Mechanical assembly and prototype limitations: ASSEMBLY.md.
 Physical EMC/ESD/surge, USB signal and thermal qualification remain pending.
 USB-only programming power has not been added.
 Install/remove the upper PCB with power off.
+
+iButton J9 at the exposed lower/front edge between Ethernet and DATA, left to right: LED- / BUZZER- / nominal12V, GPIO43/45, ULN2001D1013TR; LED resistor on board.
+GPIO43 is ROM UART0 TX: LED may blink or stay on until application GPIO initialization.
+GPIO3 remains NC. Buzzer allocation100mA; expected full-load buzzer voltage about8.5-9V.
+Main3V3 allocation902mA; panel108mA; full12V input estimate up to1.012A.
+Current supply calculations: Power-split-design-review.json. Earlier Manufacturing reports refer only to their own previous hashes.

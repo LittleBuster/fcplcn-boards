@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "checks": {
+    "Lower_current_sum82p9": true,
+    "unchanged_CPU_and_RS485": true,
+    "Lower100mA_on500mA_regulator": true,
+    "bead_drop5mV": true,
+    "no_double_count_bead_loss": true,
+    "raw_K_25C_voltage_bounds": true,
+    "illustrative_rail_low": true,
+    "illustrative_rail_high": true,
+    "TLP_MCP_LOW_calculation": true,
+    "positive_static_LOW_and_HIGH_margins": true,
+    "TMR_input_typical_math": true,
+    "5V_engineering_budget300": true,
+    "TMR1W_external120mA_unchanged": true,
+    "Lower_LDO_removed_from_current_budget": true,
+    "input_power_allocation": true,
+    "protected_voltage": true,
+    "self_consistent_RC_load": true,
+    "R12_dissipation": true,
+    "Lower_BOM_full_metadata": true,
+    "Upper_BOM_full_metadata": true,
+    "combined_full_metadata_and_all_refs": true,
+    "exact_inventory164_248_412": true
+  },
+  "sources_sha256": {
+    "Power-budget.json": "5fd870d96717dad8f465e0f1a1366374acbe587b16486d2a2a1605a5db93f4af",
+    "Power-split-design-review.json": "4c9c441cb5170e93a31a0ff46a948fc9d1aa8fea0055906ced9b8255fe08feb1",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "f42f441650edb5869786c9fb362c36beb5cd79479f0dd7437da4349cca79994c",
+    "FCPLCN-RLY-1616-1v0/BOM.csv": "530fd0a6bf89f98017f2a58f2691f545a5262e112eec89519df1c543dd2a068b",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "2252c36d3092a415da608608fb8fb9e1d0e5c616e6c596adfa7036b0ccb87e07",
+    "FCPLCN-CPU-08-1v0/BOM.csv": "6028a55ec45c3f822e2eaa4e7657a757c5344a8bd227028738a23458cc707413",
+    "BOM-combined.csv": "7581f4dd6e6c7c861f1d8937ba1fe3497a419cbbc929e269df6277673c54abd9"
+  },
+  "Lower_component_envelope_ma": 82.9,
+  "Lower_allocation_ma": 100,
+  "Upper_TMR_5V_engineering_budget_ma": 300,
+  "LOW_static_margin_V": 0.01061224500000002,
+  "HIGH_static_margin_V": 0.09219724499999993,
+  "limits": "Checks arithmetic and current CAD/BOM metadata. Does not guarantee supply transients, all-temperature bounds, EMI immunity or physical prototype performance."
+}

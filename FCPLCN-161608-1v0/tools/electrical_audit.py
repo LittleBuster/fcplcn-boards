@@ -5,7 +5,9 @@ The geometric terminal-loop metrics are explicitly placement lower bounds, not
 fabricated full electromagnetic/copper return-path verification.
 """
 from pathlib import Path
+from datetime import datetime, timezone
 from board_paths import board_dir
+from passive_specifications import component_spec, TDK_10UF_MPN
 import argparse,ast,hashlib,json,math,xml.etree.ElementTree as ET
 import wx
 app=wx.App(False);wx.Log.EnableLogging(False)
@@ -24,9 +26,10 @@ root=a.project_root.resolve()
 a.pcb=(a.pcb or root/'FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb').resolve()
 a.xml=(a.xml or root/'FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml').resolve()
 a.sch=(a.sch or root/'FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch').resolve()
-a.output=(a.output or root/'SRDA-electrical-audit.json').resolve()
+a.output=(a.output or root/'iButton-electrical-audit.json').resolve()
 a.output.parent.mkdir(parents=True,exist_ok=True)
 tracked=[a.pcb,a.xml,a.sch,root/'tools/check_board.py',root/'Power-budget.json',root/'RS485-logic-budget.json',root/'tools/srda_contract.py']
+tracked.extend([root/'tools/electrical_audit.py',root/'tools/passive_specifications.py'])
 tracked.append(root/'FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb')
 if a.lead_audit:tracked.append(a.lead_audit)
 sha=lambda file:hashlib.sha256(file.read_bytes()).hexdigest()
@@ -72,13 +75,13 @@ for ref in sorted(set(fp)&set(co)):
   if actual!=expected:metadata_mismatches.append({'ref':ref,'field':name,'PCB':actual,'XML':expected})
 require(not metadata_mismatches,'XML/PCB component metadata mismatch')
 from srda_contract import check_srda_contract
-srda_errors=check_srda_contract(set(fp),nets,lambda r:fp[r].GetValue(),field,lambda r:fp[r].GetFPIDAsString())
+srda_errors=check_srda_contract(set(fp),nets,lambda r:fp[r].GetValue(),field,lambda r:fp[r].GetFPIDAsString(),inventory_count=164)
 for message in srda_errors:require(False,'SRDA: '+message)
 
 expected={
 'U11':{'1':'GND','2':'+3V3_RS485','3':'RS485_RX_RAW','4':'RS485_DIR','5':'RS485_DIR','6':'RS485_TX','7':'+3V3_RS485','8':'GND','9':'GND_ISO','10':'RS485_VISO_OUT','11':'RS485_A','12':'RS485_B','13':'RS485_B','14':'RS485_A','15':'RS485_VISO','16':'GND_ISO'},
 'U12':{'1':'+12V_LOGIC','2':'GND','3':'+3V3_RS485'},
-'U13':{'1':'GND','2':'RS485_TX_CPU','3':'RS485_TX_BUF','4':'GND','5':'RS485_DIR_CPU','6':'RS485_DIR_BUF','7':'GND','8':'unconnected-(U13-3Y-Pad8)','9':'GND','10':'+3V3_RS485','11':'unconnected-(U13-4Y-Pad11)','12':'GND','13':'+3V3_RS485','14':'+3V3_RS485'},
+'U13':{'1': '+3V3_RS485', '2': 'GND', '3': 'unconnected-(U13-1Y-Pad3)', '4': 'GND', '5': 'GND', '6': 'unconnected-(U13-2Y-Pad6)', '7': 'GND', '8': 'RS485_DIR_BUF', '9': 'RS485_DIR_CPU', '10': 'GND', '11': 'RS485_TX_BUF', '12': 'RS485_TX_CPU', '13': 'GND', '14': '+3V3_RS485'},
 'U14':{'1':'GND','2':'RS485_RX_RAW','3':'RS485_RX_BUF','4':'+3V3','5':'GND','6':'unconnected-(U14-2Y-Pad6)','7':'GND','8':'unconnected-(U14-3Y-Pad8)','9':'GND','10':'+3V3','11':'unconnected-(U14-4Y-Pad11)','12':'GND','13':'+3V3','14':'+3V3'},
 'FB1':{'1':'RS485_VISO_OUT','2':'RS485_VISO'},
 'D9':{'1':'RS485_A','2':'RS485_B','3':'GND_ISO'},
@@ -97,6 +100,7 @@ for ref,pins in expected.items():
 for ref in ['R47','R48','R49','R50','R51','R52','R54','R55','R56']:require(field(ref,'Tolerance')=='1%',ref+' requires1%')
 for pin,net in [('12','RS485_TX_CPU'),('24','RS485_RX_CPU'),('25','RS485_DIR_CPU')]:require(nets('U1')[pin]==net,'ESP32S3 module pin'+pin+' wrong signal')
 mpns={'U11':('ADM2687EBRIZ','Analog Devices'),'U12':('R-78K3.3-0.5','RECOM'),'U13':('74LVC125AD,118','Nexperia'),'U14':('74LVC125AD,118','Nexperia'),'FB1':('BLM21PG221SN1D','Murata'),'D9':('CDSOT23-SM712','Bourns'),'C37':('C3216X5R1V226M160AC','TDK'),'C38':('C3216X7R1E106K160AB','TDK')}
+mpns['C38']=(TDK_10UF_MPN,'TDK')
 for ref,(mpn,manufacturer) in mpns.items():
  require(field(ref,'MPN')==mpn,ref+' wrong/missing exact MPN')
  require(field(ref,'Manufacturer')==manufacturer,ref+' wrong/missing manufacturer')
@@ -111,19 +115,46 @@ require('R57' in fp and fp['R57'].GetValue()=='4.3k' and nets('R57')=={'1':'+3V3
 require('/+12V_RS485' not in b.GetNetsByName(),'Abandoned +12V_RS485 net definition must not remain in PCB')
 require(not any(net.get('name').removeprefix('/')=='+12V_RS485' for net in xml.findall('nets/net')),'Abandoned +12V_RS485 net must not remain in XML')
 require(not any(q.GetNetname().removeprefix('/')=='+12V_RS485' for f in fp.values() for q in f.Pads()),'Abandoned +12V_RS485 branch must not remain')
-require(len(fp)==len(co)==148,'DATA8/SRDA Upper inventory must include148 components')
+require(len(fp)==len(co)==164,'Upper inventory must equal164 components after local5V supply addition')
 require(b.GetCopperLayerCount()==2,'Board copper layers not2')
 # The shared protected 12 V filter must exist on the actual Lower PCB too.
 lower_board=p.LoadBoard(str(root/'FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb'))
 lower_fp={f.GetReference():f for f in lower_board.GetFootprints()}
 lower_expected={'D3':{'1':'+12V_LOGIC_RAW','2':'+12V_SYS'},'R12':{'1':'+12V_LOGIC_RAW','2':'+12V_LOGIC'},'C13':{'1':'+12V_LOGIC','2':'GND'},'C8':{'1':'+12V_LOGIC','2':'GND'}}
+# Independently validate the separated local supplies and ground-only left power contacts.
+power_expected={
+ 'U17':{'1':'+12V_LOGIC','2':'GND','3':'+5V_TMR'},
+ 'C54':{'1':'+12V_LOGIC','2':'GND'},'C55':{'1':'+12V_LOGIC','2':'GND'},
+ 'C56':{'1':'+5V_TMR','2':'GND'},'C11':{'1':'+5V_TMR','2':'GND'},
+ 'J1':{'1':'GND','2':'GND','3':'GND','4':'GND','5':'I2C_SDA','6':'I2C_SCL'}}
+for ref,pins in power_expected.items():require(ref in fp and nets(ref)==pins,ref+' local power map mismatch')
+require(nets('U4')['2']=='+5V_TMR','TMR input must use local Upper5V')
+require(field('U17','MPN')=='R-78E5.0-1.0' and field('U17','Manufacturer')=='RECOM','Upper5V exact part mismatch')
+require(fp['U17'].GetFPIDAsString()=='RelayStack:RECOM_R-78E_PSE','Upper5V footprint mismatch')
+require(all(q.GetAttribute()==p.PAD_ATTRIB_PTH for q in fp['U17'].Pads()),'U17 requires through-hole leads')
+require('U8' not in lower_fp,'Lower LDO U8 must be removed')
+lower_power_expected={
+ 'U2':{'1':'+12V_LOGIC','2':'GND','3':'+3V3_DCDC'},
+ 'FB1':{'1':'+3V3_DCDC','2':'+3V3'},
+ 'C3':{'1':'+3V3_DCDC','2':'GND'},'C6':{'1':'+3V3_DCDC','2':'GND'},
+ 'C7':{'1':'+3V3','2':'GND'},
+ 'J43':{'1':'GND','2':'GND','3':'GND','4':'GND','5':'I2C_SDA','6':'I2C_SCL'},
+ 'J44':{'1':'GND','2':'GND','3':'+12V_LOGIC','4':'+12V_LOGIC','5':'MCP_RESET_N','6':'GND'}}
+for ref,pins in lower_power_expected.items():
+ require(ref in lower_fp and {q.GetNumber():q.GetNetname().removeprefix('/') for q in lower_fp[ref].Pads() if q.GetNumber()}==pins,'Lower '+ref+' local power map mismatch')
+require(lower_fp['U2'].GetValue()==lower_fp['U2'].GetFieldText('MPN')=='R-78K3.3-0.5','Lower exact3V3 converter mismatch')
+require(lower_fp['U2'].GetFPIDAsString()=='RelayBoard:RECOM_R-78K3.3-0.5_SIP3_P2.54mm','Lower3V3 converter footprint mismatch')
+require(lower_fp['FB1'].GetFieldText('MPN')=='BLM21PG221SN1D','Lower filter bead part mismatch')
+require(lower_fp['FB1'].GetFPIDAsString()=='RelayBoard:L_0805_PowerFilter','Lower filter bead footprint mismatch')
+require(all(q.GetNetname().removeprefix('/') not in ('MOD_VBUS','+5V_TMR','+5V') for f in lower_fp.values() for q in f.Pads()),'Lower must have no5V supply rail')
+require(all(q.GetNetname().removeprefix('/')!='MOD_VBUS' for f in fp.values() for q in f.Pads()),'Obsolete interboard5V rail remains')
 lower_actual={ref:{q.GetNumber():q.GetNetname().removeprefix('/') for q in lower_fp[ref].Pads() if q.GetNumber()} for ref in lower_expected if ref in lower_fp}
 require(lower_actual==lower_expected,'Lower damping filter D3/R12/C13/C8 pin map differs from reviewed topology')
 if 'R12' in lower_fp:
  require(lower_fp['R12'].GetFieldText('MPN')=='CRM2512-FX-1R00ELF','Lower R12 must be the reviewed pulse-rated Bourns part')
  require(lower_fp['R12'].GetFieldText('Tolerance')=='1%','Lower R12 requires 1%')
 if 'C13' in lower_fp:
- require(lower_fp['C13'].GetValue()=='100nF / 50V X7R','Lower C13 value/rating differs from reviewed bypass')
+ require(lower_fp['C13'].GetValue()=='100nF' and lower_fp['C13'].GetFieldText('Voltage')=='50 V' and lower_fp['C13'].GetFieldText('Dielectric')=='X7R','Lower C13 value/rating differs from reviewed bypass')
 raw_pins={(f.GetReference(),q.GetNumber()) for f in lower_fp.values() for q in f.Pads() if q.GetNetname().removeprefix('/')=='+12V_LOGIC_RAW'}
 require(raw_pins=={('D3','1'),('R12','1')},'RAW net must end only at D3 cathode and R12 input')
 lower_filter={'expected_pin_map':lower_expected,'actual_pin_map':lower_actual,'RAW_pad_inventory':sorted(raw_pins),'scope':'Independent physical-pad topology check; native clearances and connectivity must separately prove that no copper bypass remains around R12.'}
@@ -131,7 +162,10 @@ lower_filter={'expected_pin_map':lower_expected,'actual_pin_map':lower_actual,'R
 # keeping this check separate from the independent expected datasheet map.
 checker=root/'tools/check_board.py';text=checker.read_text();start=text.index("assert nets('J8') ==");end=text.index("assert fp['U10'].GetValue()",start);snippet=text[start:end]
 root_compare='pass'
-try:exec(compile(snippet,str(checker)+'::RS485', 'exec'),{'fp':fp,'nets':nets,'cpu':nets('U1'),'upper':b})
+def expected_value(reference,previous):
+ specification=component_spec('Upper',reference)
+ return specification['value'] if specification else previous
+try:exec(compile(snippet,str(checker)+'::RS485', 'exec'),{'fp':fp,'nets':nets,'cpu':nets('U1'),'upper':b,'p':p,'expected_value':expected_value,'TDK_10UF_MPN':TDK_10UF_MPN})
 except Exception as e:root_compare=repr(e);errors.append('Root RS485 assertions failed: '+repr(e))
 # Geometric bypass metrics; independent regulator supply and package checks follow.
 mm=lambda v:[round(v.x/1e6,6),round(v.y/1e6,6)]
@@ -149,7 +183,7 @@ for cref,power,ground in [('C39',2,1),('C45',2,1),('C40',7,8),('C42',10,9),('C43
  if lead_xy+vertical>=10:notes.append(cref+' two-external-lead placement lower bound exceeds10mm; final routing/bypass return requires review.')
 power_budget=json.loads((root/'Power-budget.json').read_text())
 budget=power_budget['RS485']['local_regulator']
-require(power_budget['main_3v3']['design_total_ma']==890,'DATA8 main3V3 allocation must be890mA')
+require(power_budget['main_3v3']['design_total_ma']==902,'iButton main3V3 allocation must be902mA')
 require(power_budget['isolated_3v3']['own_electronics_5v_equivalent_reserve_ma']==55,'DATA8 isolated electronics reserve must be55mA')
 require(power_budget['isolated_3v3']['external_sensor_current_design_limit_ma_combined']==120,'Combined external sensor limit must remain120mA')
 require(budget['MPN']=='R-78K3.3-0.5' and budget['input_net']=='+12V_LOGIC','Power budget does not describe the fitted U12 supply')
@@ -183,7 +217,7 @@ if not a.stage:
    report=board_dir(root,board)/(kind+'.json')
    doc=json.loads(report.read_text());reports[board+'.'+kind]={'sha256':sha(report)}
    if kind=='DRC':
-    counts={key:len(doc[key]) for key in ['violations','unconnected_items','schematic_parity']};reports[board+'.'+kind].update(counts)
+    counts={key:sum(not item.get('excluded',False) for item in doc[key]) for key in ['violations','unconnected_items','schematic_parity']};reports[board+'.'+kind].update(counts)
     require(not any(counts.values()),board+' native DRC/opens/parity not zero')
    else:
     count=sum(len(s.get('violations',[])) for s in doc.get('sheets',[]));reports[board+'.'+kind]['violations']=count;require(count==0,board+' native ERC not zero')
@@ -195,7 +229,7 @@ if a.lead_audit:
   require(q['constructed_lead_path_at_most10mm'],q['capacitor']+' lacks demonstrated two-external-lead copper path at most10mm')
 final_hashes={str(f):sha(f) for f in tracked if f.exists()}
 require(hashes==final_hashes,'Source changed while audit was reading it; rerun from stable final files')
-result={'date':'2026-11-14','status':'pass' if not errors else 'fail','stage_only':a.stage,'sources_sha256':hashes,'native_reports':reports,'errors':errors,'notes':notes,'XML_PCB_full_parity':{'component_count':len(co),'footprint_count':len(fp),'XML_pin_count':len(xmlpins),'PCB_unique_pin_count':len(pcbpins),'refs_unique':len(cs)==len(co) and len(fps)==len(fp),'full_pin_net_match':xmlpins==pcbpins,'duplicate_physical_pad_numbers':duplicate_physical_pads,'metadata_mismatches':metadata_mismatches},'independent_RS485_pin_map':expected,'critical_MPNs':{ref:{'MPN':field(ref,'MPN'),'Manufacturer':field(ref,'Manufacturer'),'footprint':fp[ref].GetFPIDAsString()} for ref in mpns},'SRDA_pin_part_contract':{'status':'pass' if not srda_errors else 'fail','errors':srda_errors,'scope':'Pin topology and component contract; no transient/USB qualification inferred.'},'root_check_board_RS485_comparison':{'status':root_compare,'assertion_statements':sum(isinstance(x,ast.Assert) for x in ast.walk(ast.parse(snippet)))},'bypass_placement':loops,'bypass_actual_copper_leads':copper_leads,'local_regulator_power':regulator_power,'ADM_ground_copper':adm_ground_copper,'poweroff_logic':{'buffers':'Nexperia74LVC125AD,118; U13 local3V3_RS485 / U14 main3V3','ADM_input_biases':'TX47kPUlocal; DIR47kPD; localRO47kPU','CPU_side_biases':'TX47kPUmain; DIR10kPD; RX10kPUmain','Ioff_10uA_scope':'VCC=0V, -40..85C; not an intermediate-ramp guarantee','prototype_required':['Independent main/local rail on/off order and slow ramps','ADM transmit/receive under load54ohm and120ohm','R78 U12 heat, VIN slew and main/local rail ripple/undershoot during relay switching','Actual total input current and fuse/inrush margin']},'dangerous_connections_checked':{'ADM_primary_power_is_dedicated_3V3_from_12V_R78':nets('U12')==expected['U12'] and nets('U11')['2']==nets('U11')['7']=='+3V3_RS485','no_5V_RxD_direct_into_ESP32':nets('U14')==expected['U14'] and nets('U11')['3']=='RS485_RX_RAW','no_internal_ADM_isoPower_parallel_with_external3V3ISO':'+3V3_ISO' not in nets('U11').values() and nets('FB1')==expected['FB1'],'half_duplex_A_Y_and_B_Z_joined_correctly':nets('U11')['11']==nets('U11')['14']=='RS485_A' and nets('U11')['12']==nets('U11')['13']=='RS485_B','all_bus_ground_refs_GND_ISO':nets('U11')['9']==nets('U11')['16']==nets('J8')['4']=='GND_ISO','bus_supply_pin_5V_from_TMR_domain':nets('J8')['1']=='+5V_ISO','sensor_and_RS485_ground_domain_shared_not_port_isolated':nets('J3')['10']==nets('J5')['4']==nets('J8')['4']=='GND_ISO'},'primary_sources':{'ADM2687E':'https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf','buffer':'https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf','U12_R78':'https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf','C37':'https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1V226M160AC','C38':'https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X7R1E106K160AB','C38_characterization':'https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c3216x7r1e106k160ab_200122.pdf'},'limits':'XML/PCB physical pin topology, part metadata, placement lower bounds, regulator pin map and filled copper inventory. Not EMC certification, high-voltage isolation qualification, full EM return-path extraction or physical prototype validation.'}
+result={'date':datetime.now(timezone.utc).date().isoformat(),'status':'pass' if not errors else 'fail','stage_only':a.stage,'sources_sha256':hashes,'native_reports':reports,'errors':errors,'notes':notes,'XML_PCB_full_parity':{'component_count':len(co),'footprint_count':len(fp),'XML_pin_count':len(xmlpins),'PCB_unique_pin_count':len(pcbpins),'refs_unique':len(cs)==len(co) and len(fps)==len(fp),'full_pin_net_match':xmlpins==pcbpins,'duplicate_physical_pad_numbers':duplicate_physical_pads,'metadata_mismatches':metadata_mismatches},'independent_RS485_pin_map':expected,'separated_local_power_pin_maps':{'Upper':power_expected,'Lower':lower_power_expected},'critical_MPNs':{ref:{'MPN':field(ref,'MPN'),'Manufacturer':field(ref,'Manufacturer'),'footprint':fp[ref].GetFPIDAsString()} for ref in mpns},'SRDA_pin_part_contract':{'status':'pass' if not srda_errors else 'fail','errors':srda_errors,'scope':'Pin topology and component contract; no transient/USB qualification inferred.'},'root_check_board_RS485_comparison':{'status':root_compare,'assertion_statements':sum(isinstance(x,ast.Assert) for x in ast.walk(ast.parse(snippet)))},'bypass_placement':loops,'bypass_actual_copper_leads':copper_leads,'local_regulator_power':regulator_power,'ADM_ground_copper':adm_ground_copper,'poweroff_logic':{'buffers':'Nexperia74LVC125AD,118; U13 local3V3_RS485 / U14 main3V3','ADM_input_biases':'TX47kPUlocal; DIR47kPD; localRO47kPU','CPU_side_biases':'TX47kPUmain; DIR10kPD; RX10kPUmain','Ioff_10uA_scope':'VCC=0V, -40..85C; not an intermediate-ramp guarantee','prototype_required':['Independent main/local rail on/off order and slow ramps','ADM transmit/receive under load54ohm and120ohm','R78 U12 heat, VIN slew and main/local rail ripple/undershoot during relay switching','Actual total input current and fuse/inrush margin']},'dangerous_connections_checked':{'ADM_primary_power_is_dedicated_3V3_from_12V_R78':nets('U12')==expected['U12'] and nets('U11')['2']==nets('U11')['7']=='+3V3_RS485','no_5V_RxD_direct_into_ESP32':nets('U14')==expected['U14'] and nets('U11')['3']=='RS485_RX_RAW','no_internal_ADM_isoPower_parallel_with_external3V3ISO':'+3V3_ISO' not in nets('U11').values() and nets('FB1')==expected['FB1'],'half_duplex_A_Y_and_B_Z_joined_correctly':nets('U11')['11']==nets('U11')['14']=='RS485_A' and nets('U11')['12']==nets('U11')['13']=='RS485_B','all_bus_ground_refs_GND_ISO':nets('U11')['9']==nets('U11')['16']==nets('J8')['4']=='GND_ISO','bus_supply_pin_5V_from_TMR_domain':nets('J8')['1']=='+5V_ISO','sensor_and_RS485_ground_domain_shared_not_port_isolated':nets('J3')['10']==nets('J5')['4']==nets('J8')['4']=='GND_ISO'},'primary_sources':{'ADM2687E':'https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf','buffer':'https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf','U12_R78':'https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf','C37':'https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1V226M160AC','C38':'https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X7R1V106K160AC','C38_characterization':'https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c3216x7r1v106k160ac.pdf'},'limits':'XML/PCB physical pin topology, part metadata, placement lower bounds, regulator pin map and filled copper inventory. Not EMC certification, high-voltage isolation qualification, full EM return-path extraction or physical prototype validation.'}
 result['Lower_RC_filter']=lower_filter
 a.output.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
 print(json.dumps({'output':str(a.output),'status':result['status'],'errors':errors,'notes':notes,'component_count':len(co),'full_pin_net_match':xmlpins==pcbpins,'root_RS485_assertions':root_compare},indent=2,ensure_ascii=False))

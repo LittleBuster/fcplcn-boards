@@ -70,10 +70,20 @@ assert 'JP1' not in lower_fp
 assert not any(item.GetNetname() == '/+5V'
                for item in list(boards['Lower'].GetTracks())
                + [pad for f in lower_fp.values() for pad in f.Pads()])
-assert lower_nets('U2') == {'1': '+12V_LOGIC', '2': 'GND', '3': 'MOD_VBUS'}
-assert lower_nets('C3')['1'] == lower_nets('U8')['3'] == 'MOD_VBUS'
-assert lower_fp['U8'].GetValue() == 'TLV1117LV33DCYR'
-assert lower_nets('U8')['2'] == '+3V3'
+assert lower_nets('U2') == {'1': '+12V_LOGIC', '2': 'GND', '3': '+3V3_DCDC'}
+assert lower_fp['U2'].GetValue() == lower_fp['U2'].GetFieldText('MPN') == 'R-78K3.3-0.5'
+assert lower_fp['U2'].GetFPIDAsString() == 'RelayBoard:RECOM_R-78K3.3-0.5_SIP3_P2.54mm'
+assert all(pad.GetAttribute() == p.PAD_ATTRIB_PTH for pad in lower_fp['U2'].Pads())
+assert 'U8' not in lower_fp
+assert lower_nets('FB1') == {'1': '+3V3_DCDC', '2': '+3V3'}
+assert lower_fp['FB1'].GetValue() == '220R @100MHz / 2A'
+assert lower_fp['FB1'].GetFieldText('MPN') == 'BLM21PG221SN1D'
+assert lower_fp['FB1'].GetFieldText('Manufacturer') == 'Murata'
+assert lower_fp['FB1'].GetFPIDAsString() == 'RelayBoard:L_0805_PowerFilter'
+assert lower_nets('C3') == lower_nets('C6') == {'1': '+3V3_DCDC', '2': 'GND'}
+assert lower_nets('C7') == {'1': '+3V3', '2': 'GND'}
+assert all(pad.GetNetname().removeprefix('/') not in ('MOD_VBUS', '+5V_TMR', '+5V')
+           for part in lower_fp.values() for pad in part.Pads())
 assert lower_fp['F1'].GetValue() == '045201.5MRL'
 assert lower_fp['F1'].GetFieldText('MPN') == '045201.5MRL'
 assert lower_fp['F1'].GetFieldText('Manufacturer') == 'Littelfuse'
@@ -116,7 +126,7 @@ raw_pins={(f.GetReference(),pad.GetNumber()) for f in lower_fp.values() for pad 
 assert raw_pins=={('D3','1'),('R12','1')}
 for ref in ('J43', 'J44'):
     assert lower_fp[ref].GetFieldText('MPN') == 'SSW-103-01-L-D'
-    supply = 'MOD_VBUS' if ref == 'J43' else '+12V_LOGIC'
+    supply = 'GND' if ref == 'J43' else '+12V_LOGIC'
     assert lower_nets(ref)['3'] == lower_nets(ref)['4'] == supply
 
 # SOIC-28 physical pin numbers, not symbol display order. GPA7 and GPB7
@@ -136,18 +146,28 @@ for ref, offset in [('U5', 0), ('U6', 8)]:
 def nets(ref):
     return {s.GetNumber(): s.GetNetname().removeprefix('/') for s in fp[ref].Pads() if s.GetNumber()}
 
+
 for ref, mpn, input_net, output_net, ground in [
         ('U3', 'R-78K3.3-1.0', '+12V_LOGIC', '+3V3', 'GND'),
         ('U5', 'R-78K3.3-0.5', '+5V_ISO', '+3V3_ISO', 'GND_ISO'),
-        ('U12', 'R-78K3.3-0.5', '+12V_LOGIC', '+3V3_RS485', 'GND')]:
+        ('U12', 'R-78K3.3-0.5', '+12V_LOGIC', '+3V3_RS485', 'GND'),
+        ('U17', 'R-78E5.0-1.0', '+12V_LOGIC', '+5V_TMR', 'GND')]:
     assert fp[ref].GetValue() == mpn and fp[ref].GetFieldText('MPN') == mpn
     assert nets(ref) == {'1': input_net, '2': ground, '3': output_net}
     assert all(pad.GetAttribute() == p.PAD_ATTRIB_PTH for pad in fp[ref].Pads())
 for ref in ('L1', 'D8', 'C2', 'C30', 'C31', 'C32', 'R41', 'R42', 'R43', 'R44', 'R45'):
     assert ref not in fp, (ref, 'obsolete TPS54231 component')
-assert nets('J1')['3'] == nets('J1')['4'] == 'MOD_VBUS'
+assert nets('J1') == {'1':'GND', '2':'GND', '3':'GND', '4':'GND', '5':'I2C_SDA', '6':'I2C_SCL'}
+assert len(fp) == 164
+assert fp['U17'].GetFPIDAsString() == 'RelayStack:RECOM_R-78E_PSE'
+assert fp['U17'].GetFieldText('Manufacturer') == 'RECOM'
+assert fp['U17'].GetFieldText('OutputCurrent') == '1 A'
+for ref in ('C54', 'C55'):
+    assert nets(ref) == {'1': '+12V_LOGIC', '2': 'GND'}
+assert nets('C56') == nets('C11') == {'1': '+5V_TMR', '2': 'GND'}
+assert all(pad.GetNetname().removeprefix('/') != 'MOD_VBUS' for part in fp.values() for pad in part.Pads())
 assert nets('J6')['3'] == nets('J6')['4'] == '+12V_LOGIC'
-assert nets('U4')['2'] == 'MOD_VBUS'
+assert nets('U4')['2'] == '+5V_TMR'
 
 ports = [('J3', 1, 39, '32'), ('J3', 2, 40, '33'), ('J3', 3, 17, '10'),
          ('J3', 4, 18, '11'), ('J3', 5, 1, '39'), ('J3', 6, 2, '38'),
@@ -156,7 +176,7 @@ cpu = nets('U1')
 assert nets('J3') == {**{str(i): f'DATA{i}_ISO' for i in range(1, 9)},
                       '9': '+5V_ISO', '10': 'GND_ISO'}
 assert 'KF128-2.54-10P' in fp['J3'].GetFPIDAsString()
-assert all(ref not in fp for ref in ('J4', 'J9', 'J10', 'J11'))
+assert all(ref not in fp for ref in ('J4', 'J10', 'J11'))
 for ref, number, gpio, cpu_pad in ports:
     assert nets(ref)[str(number)] == f'DATA{number}_ISO', (ref, nets(ref))
     assert cpu[cpu_pad] == f'DATA{number}_CPU', (ref, cpu_pad, cpu[cpu_pad])
@@ -177,7 +197,30 @@ assert nets('U11') == {
 assert fp['U12'].GetFieldText('MPN') == 'R-78K3.3-0.5'
 assert nets('U12') == {'1': '+12V_LOGIC', '2': 'GND', '3': '+3V3_RS485'}
 # R57 is now the DATA7 4.3k pullup, not the abandoned VIN zero-ohm bridge.
-assert len(fp) == 148
+assert len(fp) == 164
+
+# iButton panel: direct CPU GPIO, bare LED current limit and protected 12 V.
+assert cpu['37'] == 'IB_LED_CPU' and cpu['26'] == 'IB_BUZZ_CPU'
+assert cpu['15'] == 'unconnected-(U1-IO3-Pad15)'
+assert nets('J9') == {'1':'IB_LED_OUT','2':'IB_BUZZ_OUT','3':'+12V_PANEL'}
+# The rear edge is inaccessible inside the enclosure: panel wires exit forward.
+assert fp['J9'].GetLayer() == p.F_Cu and abs(fp['J9'].GetOrientationDegrees()) < 1e-6
+assert abs(fp['J9'].GetPosition().y - fp['J3'].GetPosition().y) <= p.FromMM(0.01)
+assert abs(fp['J9'].GetPosition().y - p.FromMM(118.0)) <= p.FromMM(0.01)
+assert fp['U2'].GetPosition().x < fp['J9'].GetPosition().x < fp['J3'].GetPosition().x
+assert fp['U16'].GetFieldText('MPN') == 'ULN2001D1013TR'
+assert nets('U16') == {**{str(i):'GND' for i in [1,2,3,4,5,8]},
+    **{str(17-i):f'unconnected-(U16-OUT{i}-Pad{17-i})' for i in range(1,6)},
+    '7':'IB_LED_BASE','6':'IB_BUZZ_BASE','9':'+12V_PANEL','11':'IB_BUZZ_OUT','10':'IB_LED_SINK'}
+for ref,value,a,z in [('R71','680R','IB_LED_CPU','IB_LED_BASE'),('R72','680R','IB_BUZZ_CPU','IB_BUZZ_BASE'),
+                       ('R73','10k','IB_LED_CPU','GND'),('R74','10k','IB_BUZZ_BASE','GND'),('R75','1k / 0.5W','IB_LED_OUT','IB_LED_SINK')]:
+    assert fp[ref].GetValue() == value and nets(ref) == {'1':a,'2':z}
+assert nets('F2') == {'1':'+12V_LOGIC','2':'IB_12V_FUSED'}
+assert nets('D11') == {'1':'+12V_PANEL','2':'IB_12V_FUSED'}
+assert nets('D12') == {'1':'+12V_PANEL','2':'GND'}
+for ref in ('C52','C53'):
+    assert nets(ref) == {'1':'+12V_PANEL','2':'GND'}
+
 assert '/+12V_RS485' not in upper.GetNetsByName()
 assert not any(pad.GetNetname().removeprefix('/') == '+12V_RS485'
                for f in fp.values() for pad in f.Pads())
@@ -193,11 +236,7 @@ for ref in ('U13', 'U14'):
     assert fp[ref].GetFieldText('MPN') == '74LVC125AD,118'
     assert fp[ref].GetFieldText('Manufacturer') == 'Nexperia'
     assert fp[ref].GetFPIDAsString() == 'Package_SO:SOIC-14_3.9x8.7mm_P1.27mm'
-assert nets('U13') == {
-    '1':'GND', '2':'RS485_TX_CPU', '3':'RS485_TX_BUF', '4':'GND',
-    '5':'RS485_DIR_CPU', '6':'RS485_DIR_BUF', '7':'GND',
-    '8':'unconnected-(U13-3Y-Pad8)', '9':'GND', '10':'+3V3_RS485',
-    '11':'unconnected-(U13-4Y-Pad11)', '12':'GND', '13':'+3V3_RS485', '14':'+3V3_RS485'}
+assert nets('U13') == {'1': '+3V3_RS485', '2': 'GND', '3': 'unconnected-(U13-1Y-Pad3)', '4': 'GND', '5': 'GND', '6': 'unconnected-(U13-2Y-Pad6)', '7': 'GND', '8': 'RS485_DIR_BUF', '9': 'RS485_DIR_CPU', '10': 'GND', '11': 'RS485_TX_BUF', '12': 'RS485_TX_CPU', '13': 'GND', '14': '+3V3_RS485'}
 assert nets('U14') == {
     '1':'GND', '2':'RS485_RX_RAW', '3':'RS485_RX_BUF', '4':'+3V3', '5':'GND',
     '6':'unconnected-(U14-2Y-Pad6)', '7':'GND', '8':'unconnected-(U14-3Y-Pad8)',
@@ -281,7 +320,7 @@ for ref, value, rail, ground in [('C48','100nF','+3V3','GND'),('C49','1nF','+3V3
 # SRDA pin ordering, floating references and FIELD-only 100R resistors.
 from srda_contract import check_srda_contract
 srda_errors = check_srda_contract(set(fp), nets, lambda r: fp[r].GetValue(),
-    lambda r, k: fp[r].GetFieldText(k), lambda r: fp[r].GetFPIDAsString())
+    lambda r, k: fp[r].GetFieldText(k), lambda r: fp[r].GetFPIDAsString(), inventory_count=164)
 assert not srda_errors, srda_errors
 # GPIO44 is the default UART0 RX pad, assigned exclusively to DATA8 here.
 assert cpu['36'] == 'DATA8_CPU'
@@ -313,11 +352,18 @@ geometry = {}
 for k, board in boards.items():
     layers = defaultdict(list)
     lengths = defaultdict(float)
+    widths = []
     for t in board.GetTracks():
         if isinstance(t, p.PCB_VIA):
+            assert t.GetDrillValue() >= p.FromMM(0.3), (k, 'via drill below factory limit')
+            assert t.GetWidth(p.F_Cu)-t.GetDrillValue() >= p.FromMM(0.3), (k, 'via annulus below 0.15 mm')
             continue
         a, b = t.GetStart(), t.GetEnd()
         dx, dy = abs(a.x-b.x), abs(a.y-b.y)
+        if k == 'Upper':
+            minimum_width = .175 if str(t.GetNetname()) in {'/ETH_CS_N','/ETH_SCK','/ETH_MOSI','/ETH_MISO'} else .18
+            assert t.GetWidth() >= p.FromMM(minimum_width), (t.GetNetname(), 'track below documented signal-class width')
+        widths.append(p.ToMM(t.GetWidth()))
         assert dx <= 20 or dy <= 20 or abs(dx-dy) <= 20, (k, t.GetNetname(), a, b)
         layers[t.GetLayer()].append((a.x, a.y, b.x, b.y, t.GetNetname()))
         lengths[t.GetNetname()] += math.hypot(dx,dy) / 1e6
@@ -334,9 +380,15 @@ for k, board in boards.items():
     assert not crossings, (k, crossings[:5])
     geometry[k] = {'copper_layers': board.GetCopperLayerCount(), 'footprints': len(board.GetFootprints()),
                    'non_45_90_segments': 0, 'strict_track_crossings': 0,
+                   'minimum_track_width_mm': min(widths),
                    'usb_trace_lengths_mm': {n: round(v,3) for n,v in lengths.items() if n.startswith('/USB_D')}}
 result = {'data_ports': [{'connector': ref, 'gpio': gpio, 'port': number} for ref,number,gpio,_ in ports],
           'i2c_gpio': [41,42], 'uart0_rx_gpio44_reserved_for_DATA8': True, 'bidirectional_isolators': 5, 'matched_stack_contacts': 12, 'geometry': geometry,
+          'ibutton_panel': {'LED_gpio':43, 'BUZZER_gpio':45, 'GPIO3_NC':True,
+                            'J9_location':'exposed lower/front edge between Ethernet and DATA',
+                            'J9_position_mm':[p.ToMM(fp['J9'].GetPosition().x),p.ToMM(fp['J9'].GetPosition().y)],
+                            'wire_entry':'+Y, aligned with J3/J8/J5',
+                            'ROM_UART_LED_possible_until_GPIO_initialization':True},
           'mcp23017': {'physical_gpio_pin_names': mcp_pin_names,
                       'output_only_pins': ['GPA7', 'GPB7'],
                       'input_mask_hex': '0x7f01', 'relay_mask_hex': '0x80fe',
@@ -353,8 +405,9 @@ result = {'data_ports': [{'connector': ref, 'gpio': gpio, 'port': number} for re
           'power': {'Upper.U3': 'R-78K3.3-1.0 / +12V_LOGIC',
                     'Upper.U5': 'R-78K3.3-0.5 / +5V_ISO',
                     'Upper.U12': 'R-78K3.3-0.5 / +12V_LOGIC',
-                    'Lower.U8': 'TLV1117LV33DCYR / MOD_VBUS',
-                    'left_stack_supply_v': 5, 'right_stack_supply_v': 12,
+                    'Lower.U2': 'R-78K3.3-0.5 / +12V_LOGIC; FB1 to local +3V3',
+                    'Upper.U17': 'R-78E5.0-1.0 / +12V_LOGIC to local +5V_TMR',
+                    'left_stack_pins3_4': 'GND', 'left_stack_supply_v': 0, 'right_stack_supply_v': 12,
                     'Lower.F1': 'Littelfuse 045201.5MRL / 1.5A Slo-Blo'},
           'rs485': {'mpn': 'ADM2687EBRIZ', 'uart': 1, 'tx_gpio': 8, 'rx_gpio': 47,
                     'direction_gpio': 48, 'half_duplex': True,

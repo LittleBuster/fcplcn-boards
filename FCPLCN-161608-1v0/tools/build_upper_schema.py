@@ -25,7 +25,7 @@ CAP = "Capacitor_SMD:C_0805_2012Metric"
 CAP_LARGE = "Capacitor_SMD:C_1206_3216Metric"
 G = "GND"
 GI = "GND_ISO"
-V5 = "MOD_VBUS"
+V5 = "+5V_TMR"
 V12 = "+12V_LOGIC"
 V3 = "+3V3"
 VI5 = "+5V_ISO"
@@ -199,7 +199,7 @@ def field_series(ref, net, x, y):
     passive("R",ref,"100R",x,y,net,ic_field(net),
             fields={"MPN":"CRCW0805100RFKTAHP","Manufacturer":"Vishay","Tolerance":"1%","PowerRating":"0.5 W","ResistorType":"Pulse-withstanding"},
             datasheet="https://www.vishay.com/docs/20115/crcwhp.pdf")
-srda("D1",(373.38,46.99),("USB_DP","USB_DN",G,G),G,"TVS_USB_REF")
+srda("D1",(373.38,46.99),(G,G,"USB_DN","USB_DP"),G,"TVS_USB_REF")
 for ref,val,x,y,a,b in [
     ("R9","5.1k",298.45,67.31,"USB_CC1",G),("R10","5.1k",298.45,76.2,"USB_CC2",G),
     ("R11","22",298.45,85.09,"USB_DN","USB_DN_CPU"),("R12","22",298.45,93.98,"USB_DP","USB_DP_CPU"),
@@ -213,6 +213,19 @@ r78_footprint = f"{namespace}:RECOM_R-78K3.3-1.0_SIP3_P2.54mm"
 r78_datasheet = "https://recom-power.com/pdf/Innoline/R-78K-1.0.pdf"
 h_r78=box("R-78K","U",[("1","VIN","power_in"),("2","GND","power_in")],
           [("3","VOUT","power_out")],r78_footprint,width=25.4,datasheet=r78_datasheet)
+# Local, nonisolated 5 V supply feeds the TMR input only. No 5 V stack rail.
+h_r78e=box("R-78E5V","U",[("1","VIN","power_in"),("2","GND","power_in")],
+           [("3","VOUT","power_out")],f"{namespace}:RECOM_R-78E_PSE",width=25.4,
+           datasheet="https://recom-power.com/pdf/Innoline/R-78E-1.0.pdf")
+heading("Local TMR supply · protected 12 V to 5 V / 1 A",425.45,810.96,152.4)
+component("R-78E5V","U17",(499.11,833.12),{"1":V12,"2":G,"3":V5},height=h_r78e,
+          value="R-78E5.0-1.0",fields={"MPN":"R-78E5.0-1.0","Manufacturer":"RECOM",
+          "InputVoltage":"8–28 V", "OutputCurrent":"1 A"})
+power_passive("C","C54","10uF",447.04,857.25,V12,G,footprint=CAP_LARGE)
+power_passive("C","C55","100nF",497.84,857.25,V12,G)
+power_passive("C","C56","100nF",548.64,857.25,V5,G)
+schema.text("C11 is the local 5 V bulk bypass at TMR input U4.", (425.45,880.11), size=1.1)
+schema.text("Left stack pins 1–4 are GND; 5 V and 3.3 V stay local.", (425.45,887.73), size=1.1)
 heading("Main power · protected 12 V to 3.3 V / 1 A",425.45,218.44,152.4)
 component("R-78K","U3",(499.11,240.03),{"1":V12,"2":G,"3":V3},height=h_r78,
           value="R-78K3.3-1.0",fields={"MPN":"R-78K3.3-1.0","Manufacturer":"RECOM",
@@ -227,8 +240,7 @@ for cref, x in [("C3",447.04),("C4",497.84)]:
 power_passive("C","C33","100nF 50V",548.64,261.62,V12,G,fields={"Voltage":"50 V"})
 schema.text("Independent 12 V main and RS-485 branches; 5 V feeds TMR.", (425.45,304.8), size=1.1)
 schema.text("Keep input / output decoupling close to the R-78K module.", (425.45,312.42), size=1.1)
-schema.text("Budget: main 3.3 V 890 mA; module output rated 1 A.", (425.45,320.04), size=1.1)
-flag("#FLG01",447.04,337.82,V5)
+schema.text("Budget: main 3.3 V 902 mA; module output rated 1 A.", (425.45,320.04), size=1.1)
 flag("#FLG02",497.84,337.82,G)
 flag("#FLG03",548.64,337.82,V12)
 
@@ -238,8 +250,8 @@ h=box("StackBus-2x3","J",
       f"{namespace}:StackHeader_2x03_P2.54mm_Bottom",width=25.4)
 heading("Main board interface · reset and boot",125.73,115,129)
 component("StackBus-2x3","J1",(166.37,132.08),
-          {"1":G,"2":G,"3":V5,"4":V5,"5":"I2C_SDA","6":"I2C_SCL"},
-          height=h,value="LEFT · 5V / I2C")
+          {"1":G,"2":G,"3":G,"4":G,"5":"I2C_SDA","6":"I2C_SCL"},
+          height=h,value="LEFT · GND / I2C")
 component("StackBus-2x3","J6",(166.37,154.94),
           {"1":G,"2":G,"3":V12,"4":V12,"5":"MCP_RESET_N","6":G},
           height=h,value="RIGHT · 12V / CTRL")
@@ -401,7 +413,7 @@ component("R-78K","U12",(267.97,445.77),{"1":V12,"2":G,"3":V485},height=h_r78,
 h_buf=box("74LVC125AD","U",[("1","1OE_N","input"),("2","1A","input"),("4","2OE_N","input"),("5","2A","input"),("7","GND","power_in"),("9","3A","input"),("12","4A","input")],
  [("14","VCC","power_in"),("3","1Y","tri_state"),("6","2Y","tri_state"),("8","3Y","tri_state"),("10","3OE_N","input"),("11","4Y","tri_state"),("13","4OE_N","input")],
  "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",width=25.4,datasheet="https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf")
-component("74LVC125AD","U13",(201.93,445.77),{"1":G,"2":"RS485_TX_CPU","3":"RS485_TX_BUF","4":G,"5":"RS485_DIR_CPU","6":"RS485_DIR_BUF","7":G,"9":G,"10":V485,"12":G,"13":V485,"14":V485},height=h_buf,value="74LVC125AD,118",fields={"MPN":"74LVC125AD,118","Manufacturer":"Nexperia"})
+component("74LVC125AD","U13",(201.93,445.77),{'1': '+3V3_RS485', '2': 'GND', '4': 'GND', '5': 'GND', '7': 'GND', '8': 'RS485_DIR_BUF', '9': 'RS485_DIR_CPU', '10': 'GND', '11': 'RS485_TX_BUF', '12': 'RS485_TX_CPU', '13': 'GND', '14': '+3V3_RS485'},height=h_buf,value="74LVC125AD,118",fields={"MPN":"74LVC125AD,118","Manufacturer":"Nexperia"})
 component("74LVC125AD","U14",(345.44,445.77),{"1":G,"2":"RS485_RX_RAW","3":"RS485_RX_BUF","4":V3,"5":G,"7":G,"9":G,"10":V3,"12":G,"13":V3,"14":V3},height=h_buf,value="74LVC125AD,118",fields={"MPN":"74LVC125AD,118","Manufacturer":"Nexperia"})
 h_j485=box("RS485-Terminal-4P","J",rows([("1","5V_ISO"),("2","A / D+"),("3","B / D-"),("4","GND_ISO")]),[],f"{namespace}:KF128-2.54-4P",width=27.94)
 component("RS485-Terminal-4P","J8",(537.21,445.77),{"1":VI5,"2":"RS485_A","3":"RS485_B","4":GI},height=h_j485,value="RS-485 / 5V A B G")
@@ -438,6 +450,7 @@ schema.text("Nexperia Ioff buffers prevent backfeed between independent 3.3V rai
 
 flag("#FLG05",516.89,548.64,"RS485_VISO")
 
+
 library = folder / "sym-lib-table"
 if library.exists():
     library.unlink()
@@ -447,3 +460,10 @@ schema.write(folder/f"{project}.kicad_sch")
 
 path = folder / f"{project}.kicad_sch"
 path.write_text(path.read_text().replace('(paper "A2")', '(paper "User" 594 630)'))
+
+# Preserve the added iButton panel circuit on regeneration.
+from add_ibutton_panel_schematic import apply as add_ibutton_panel
+add_ibutton_panel(project_root)
+
+# Keep the local 5 V block below the existing iButton circuit.
+path.write_text(path.read_text().replace('(paper "User" 594 800)', '(paper "User" 594 920)'))

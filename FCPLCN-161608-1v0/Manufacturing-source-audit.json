@@ -1,0 +1,1452 @@
+{
+  "passed": true,
+  "generated_utc": "2026-11-22T23:10:14.324628+00:00",
+  "project_root": "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage",
+  "before_root": "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before",
+  "source_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/validation/source_inventory_current.py": "932d29e0d92950e97e2adcc891c7f27fe3e2f96ac21095a0174c0c817a4c3657",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/validation/routing_bridges.py": "c98facc59dfc018e6b1932426eb74a6fb7ea05f6d52f3781c9b419100d73c3cd",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "5ba899b9cd5b072e638b1ceb481c4a628a6e8daf56c6ec7268fc0e4c67ee2efa",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "919e6198bc2c02624845d498dcc73268aa3cd97f5e32c693879c08cf7f2b36b8",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "2223affe2822f402633c6735dd74e85addd42dd97609766290d5abadeb922d92",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "5dc607b650c870a38e91fe83ff6ae62dfc9ac11bfbab659f13338bcefac285c9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "305b8ada853a93b0f7638ef2c2566700f00cf4b3321c46c7744e9e9287e2d216",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/BOM.csv": "86665ce479c79d58698067d73c6556684082cf292b99064d3b06d7a128c9ff46",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-RLY-1616-1v0/BOM.csv": "fae8ca63fa685d892e2170b83e63c3aaf7fdeb639645341c64d3a58bbcc04353",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/BOM-combined.csv": "a2c12a4e31cb6d0343bce5f2eb7e1535e884ba7f25431ef6de31fc7f683cbafa",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "0efdcadaed2ec397c7fc961e87189f18f0722bb4f4a87aebfe581897daf7e0f9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "407871dc833fa66be65b9a5a114eeb9ab3051d48c1f09f46b22717695de4edaa",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "f5b3d63f170cb83c307720b1ff884f1a2be448961dacde0cbf3041994bf17377",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "72611f1ec4712b853e048cfdb6d8cb67e9352b8fd493d517afede175efde5a65",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-CPU-08-1v0/BOM.csv": "86665ce479c79d58698067d73c6556684082cf292b99064d3b06d7a128c9ff46",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/FCPLCN-RLY-1616-1v0/BOM.csv": "fae8ca63fa685d892e2170b83e63c3aaf7fdeb639645341c64d3a58bbcc04353",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/BOM-combined.csv": "a2c12a4e31cb6d0343bce5f2eb7e1535e884ba7f25431ef6de31fc7f683cbafa",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/before/Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17"
+  },
+  "source_unchanged": true,
+  "checks": [
+    {
+      "kind": "output_is_not_a_source",
+      "passed": true
+    },
+    {
+      "kind": "native_schematic_export",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "exit_code": 0,
+      "diagnostic": "rning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 204: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 205: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 208: invalid constant used : fangsong\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-spacing.conf\", line 14: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 10: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 18: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 26: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 34: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 42: invalid constant used : math"
+    },
+    {
+      "kind": "physical_inventory_count",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "actual": 160,
+      "baseline": 160,
+      "expected": 160
+    },
+    {
+      "kind": "only_documented_reference_additions",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "added": [],
+      "removed": []
+    },
+    {
+      "kind": "zero_ohm_bridge_contract",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "kind": "XML_unique_references_and_pin_bindings",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "duplicate_refs": [],
+      "pin_conflicts": []
+    },
+    {
+      "kind": "XML_component_inventory_matches_PCB",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "XML_only": [],
+      "PCB_only": []
+    },
+    {
+      "kind": "fresh_SCH_export_matches_published_XML_components",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "fresh_SCH_export_matches_published_XML_pin_nets",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "mismatches": []
+    },
+    {
+      "kind": "footprint_UUID_value_MPN_fields_pad_inventory_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "changes": []
+    },
+    {
+      "kind": "only_explicit_D1_and_equivalent_U13_pin_changes",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "unexpected": [],
+      "allowed_D1": [
+        {
+          "ref": "D1",
+          "pin": "1",
+          "before": [
+            "USB_DP"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "4",
+          "before": [
+            "USB_DN"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "6",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "USB_DN"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "7",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "USB_DP"
+          ]
+        }
+      ],
+      "allowed_bridge_changes": []
+    },
+    {
+      "kind": "all_four_explicit_D1_corrections_present",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "actual": [
+        {
+          "ref": "D1",
+          "pin": "1",
+          "before": [
+            "USB_DP"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "4",
+          "before": [
+            "USB_DN"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "6",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "USB_DN"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "7",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "USB_DP"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "all_eleven_equivalent_U13_gate_role_changes_present",
+      "passed": true,
+      "changes": [
+        {
+          "ref": "U13",
+          "pin": "1",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "+3V3_RS485"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "10",
+          "before": [
+            "+3V3_RS485"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "11",
+          "before": [
+            "unconnected-(U13-4Y-Pad11)"
+          ],
+          "after": [
+            "RS485_TX_BUF"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "12",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "RS485_TX_CPU"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "13",
+          "before": [
+            "+3V3_RS485"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "2",
+          "before": [
+            "RS485_TX_CPU"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "3",
+          "before": [
+            "RS485_TX_BUF"
+          ],
+          "after": [
+            "unconnected-(U13-1Y-Pad3)"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "5",
+          "before": [
+            "RS485_DIR_CPU"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "6",
+          "before": [
+            "RS485_DIR_BUF"
+          ],
+          "after": [
+            "unconnected-(U13-2Y-Pad6)"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "8",
+          "before": [
+            "unconnected-(U13-3Y-Pad8)"
+          ],
+          "after": [
+            "RS485_DIR_BUF"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "9",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "RS485_DIR_CPU"
+          ]
+        }
+      ],
+      "source": "Nexperia74LVC125A Rev12 Tables2/3; Manufacturing-U13-channel-review.json"
+    },
+    {
+      "kind": "physical_duplicate_pad_numbers_have_consistent_nets",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "problems": []
+    },
+    {
+      "kind": "PCB_metadata_and_pin_nets_match_XML",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "mismatches": []
+    },
+    {
+      "kind": "SCH_metadata_matches_XML",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "mismatches": []
+    },
+    {
+      "kind": "XML_component_metadata_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "changes": []
+    },
+    {
+      "kind": "SCH_component_metadata_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "changes": []
+    },
+    {
+      "kind": "retained_original_track_and_via_UUID_net_names_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "changes": []
+    },
+    {
+      "kind": "retained_original_zone_UUID_net_names_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "changes": []
+    },
+    {
+      "kind": "all_straight_tracks_45_or_90_degrees",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "tolerance_mm": 0.001,
+      "violations": [],
+      "arcs_requiring_review": []
+    },
+    {
+      "kind": "approved_upper_via_geometry_at_least_0p6_0p3_ring_0p15",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "violations": []
+    },
+    {
+      "kind": "approved_U2_PTH_pads_1p95_by_1p5_drill_1p1",
+      "passed": true,
+      "pads": [
+        {
+          "pin": "1.1",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "1.2",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "1.3",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "1.4",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "1.5",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "1.6",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "2.1",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "2.2",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "2.3",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "2.4",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "2.5",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "pin": "2.6",
+          "size_mm": [
+            1.95,
+            1.5
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "approved_U1_EP_PTH_0p7_drill_0p3",
+      "passed": true,
+      "pads": [
+        {
+          "uuid": "c580cf90-18d7-4b1d-bfab-586cb7860f26",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "e5ecd160-3bcc-4c7e-b929-029228626312",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "2366b4f4-026c-4ef4-83d9-0e591903ab54",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "9c7884ce-1c9f-4c4e-85cc-dd58a27968c3",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "0b5f0438-fc70-4410-8bdd-f21ab0cb6d3e",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "5604dbb6-42af-41a0-b286-2892b2554404",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "51f4ba44-f26e-464e-869e-17af7a30314e",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "c2c0c756-58d0-433a-b14c-74242f4b8504",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "601c75fa-b919-41c1-a198-2caef576b572",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "b16e0783-a4e1-4a89-8af4-e2c0808aa6f7",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "99887a92-bff9-49cb-8140-e2202a6b5f9b",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "uuid": "e77f3a1b-b2ba-4704-87e6-7caa5719ae01",
+          "pin": "41",
+          "size_mm": [
+            0.7,
+            0.7
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ],
+          "net": "/GND"
+        }
+      ]
+    },
+    {
+      "kind": "purchased_BOM_quantity_and_references",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "purchased_XML": 160,
+      "BOM_quantity": 160,
+      "expected": 160
+    },
+    {
+      "kind": "original_BOM_entries_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "board_BOM_bytes_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "native_schematic_export",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "exit_code": 0,
+      "diagnostic": "rning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 204: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 205: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 208: invalid constant used : fangsong\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-spacing.conf\", line 14: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 10: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 18: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 26: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 34: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 42: invalid constant used : math"
+    },
+    {
+      "kind": "physical_inventory_count",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "actual": 251,
+      "baseline": 251,
+      "expected": 251
+    },
+    {
+      "kind": "only_documented_reference_additions",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "added": [],
+      "removed": []
+    },
+    {
+      "kind": "XML_unique_references_and_pin_bindings",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "duplicate_refs": [],
+      "pin_conflicts": []
+    },
+    {
+      "kind": "XML_component_inventory_matches_PCB",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "XML_only": [],
+      "PCB_only": []
+    },
+    {
+      "kind": "fresh_SCH_export_matches_published_XML_components",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "fresh_SCH_export_matches_published_XML_pin_nets",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "mismatches": []
+    },
+    {
+      "kind": "footprint_UUID_value_MPN_fields_pad_inventory_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "changes": []
+    },
+    {
+      "kind": "only_explicit_D1_and_equivalent_U13_pin_changes",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "unexpected": [],
+      "allowed_D1": [],
+      "allowed_bridge_changes": []
+    },
+    {
+      "kind": "physical_duplicate_pad_numbers_have_consistent_nets",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "problems": []
+    },
+    {
+      "kind": "PCB_metadata_and_pin_nets_match_XML",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "mismatches": []
+    },
+    {
+      "kind": "SCH_metadata_matches_XML",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "mismatches": []
+    },
+    {
+      "kind": "XML_component_metadata_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "changes": []
+    },
+    {
+      "kind": "SCH_component_metadata_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "changes": []
+    },
+    {
+      "kind": "retained_original_track_and_via_UUID_net_names_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "changes": []
+    },
+    {
+      "kind": "retained_original_zone_UUID_net_names_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "changes": []
+    },
+    {
+      "kind": "all_straight_tracks_45_or_90_degrees",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "tolerance_mm": 0.001,
+      "violations": [],
+      "arcs_requiring_review": []
+    },
+    {
+      "kind": "purchased_BOM_quantity_and_references",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "purchased_XML": 248,
+      "BOM_quantity": 248,
+      "expected": 248
+    },
+    {
+      "kind": "original_BOM_entries_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "board_BOM_bytes_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "lower_source_bytes_unchanged",
+      "passed": true,
+      "extension": ".kicad_pcb"
+    },
+    {
+      "kind": "lower_source_bytes_unchanged",
+      "passed": true,
+      "extension": ".kicad_sch"
+    },
+    {
+      "kind": "lower_source_bytes_unchanged",
+      "passed": true,
+      "extension": ".kicad_pro"
+    },
+    {
+      "kind": "lower_source_bytes_unchanged",
+      "passed": true,
+      "extension": ".kicad_dru"
+    },
+    {
+      "kind": "stack_mechanics_bytes_unchanged",
+      "passed": true
+    },
+    {
+      "kind": "combined_purchased_BOM_quantity",
+      "passed": true,
+      "actual": 408
+    },
+    {
+      "kind": "combined_BOM_exact_reference_inventory",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "combined_BOM_exact_reference_inventory",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "combined_BOM_bytes_unchanged",
+      "passed": true
+    },
+    {
+      "kind": "all_bound_inputs_unchanged_during_read_only_audit",
+      "passed": true,
+      "changed": []
+    }
+  ],
+  "errors": [],
+  "boards": {
+    "FCPLCN-CPU-08-1v0": {
+      "physical_footprints": 160,
+      "purchased_quantity": 160,
+      "excluded_from_BOM": [],
+      "footprint_UUID_digest": "26d9e73dba08fe87b77d4989583957f6064312f52803a824c1b2ec3051b5b8d4",
+      "pose_changes": [
+        {
+          "ref": "C4",
+          "uuid": "addc526e-faf4-4853-81c1-24cfe09ed0af",
+          "before": [
+            70.8,
+            82.5,
+            -90.0,
+            "B.Cu"
+          ],
+          "after": [
+            71.1,
+            82.5,
+            -90.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "C46",
+          "uuid": "0a0bbecc-5224-5eb6-9be5-c957e875b7b3",
+          "before": [
+            72.0,
+            86.0,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            66.9,
+            94.8,
+            180.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "D1",
+          "uuid": "b2e2b6fc-8a79-4d58-8486-52322b073ed2",
+          "before": [
+            88.75,
+            96.0,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            73.0,
+            106.9,
+            90.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "D9",
+          "uuid": "76484315-74e1-52d4-a4f8-97694f754408",
+          "before": [
+            124.3,
+            113.0,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            124.35,
+            113.0,
+            0.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "J2",
+          "uuid": "73f18796-be3a-4f49-a3d4-e00ff6ad2f65",
+          "before": [
+            86.0,
+            101.6,
+            0.0,
+            "F.Cu"
+          ],
+          "after": [
+            75.5,
+            100.2,
+            0.0,
+            "F.Cu"
+          ]
+        },
+        {
+          "ref": "R10",
+          "uuid": "576915b2-412f-463c-82ac-e16c5fd2f5ef",
+          "before": [
+            92.5,
+            101.5,
+            180.0,
+            "B.Cu"
+          ],
+          "after": [
+            80.0,
+            93.8,
+            -90.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R11",
+          "uuid": "57585551-21f7-497b-bd2e-fc465ed7ca4d",
+          "before": [
+            79.5,
+            92.63,
+            180.0,
+            "B.Cu"
+          ],
+          "after": [
+            75.3,
+            94.4,
+            90.0,
+            "F.Cu"
+          ]
+        },
+        {
+          "ref": "R12",
+          "uuid": "d3426946-3744-4871-bb3e-802f2847ab21",
+          "before": [
+            79.5,
+            94.9,
+            180.0,
+            "B.Cu"
+          ],
+          "after": [
+            73.3,
+            94.4,
+            90.0,
+            "F.Cu"
+          ]
+        },
+        {
+          "ref": "R5",
+          "uuid": "7ab41105-eb66-4417-900b-d5d42ba73b69",
+          "before": [
+            74.2,
+            94.0,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            84.0,
+            96.5,
+            180.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R50",
+          "uuid": "4cf1b3c0-152c-5d4e-8633-8b7a4b0561e3",
+          "before": [
+            76.5,
+            85.7,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            76.5,
+            85.0,
+            90.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R51",
+          "uuid": "3ce008ce-29ec-50d2-a92f-0da0a4419021",
+          "before": [
+            76.5,
+            88.1,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            88.75,
+            95.0,
+            -90.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R56",
+          "uuid": "c2c1370a-301c-5815-bb30-90166628bc2c",
+          "before": [
+            98.8,
+            112.75,
+            180.0,
+            "B.Cu"
+          ],
+          "after": [
+            98.74,
+            112.775,
+            180.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R6",
+          "uuid": "7458e4ce-2dc5-4f6d-bc5d-7509e0eea37a",
+          "before": [
+            74.2,
+            96.5,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            84.0,
+            98.7,
+            180.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R7",
+          "uuid": "badf8449-8fca-4272-bb75-70292c493872",
+          "before": [
+            74.2,
+            99.0,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            84.0,
+            100.9,
+            180.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R72",
+          "uuid": "7452058e-49fe-47ec-a280-c393763f5819",
+          "before": [
+            79.0125,
+            73.575,
+            180.0,
+            "B.Cu"
+          ],
+          "after": [
+            50.25,
+            108.2,
+            0.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R74",
+          "uuid": "86be447a-f4b8-4ce3-b493-ca6b5fbd0817",
+          "before": [
+            64.0,
+            118.1,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            49.5,
+            105.0,
+            90.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R8",
+          "uuid": "82f0b35b-df90-41f3-ba74-8808188c230a",
+          "before": [
+            74.2,
+            101.5,
+            0.0,
+            "B.Cu"
+          ],
+          "after": [
+            84.0,
+            103.1,
+            0.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "R9",
+          "uuid": "d38f415c-689e-420d-a2cb-d1c21ad2f903",
+          "before": [
+            79.2,
+            97.3,
+            180.0,
+            "F.Cu"
+          ],
+          "after": [
+            80.5,
+            97.5,
+            0.0,
+            "B.Cu"
+          ]
+        },
+        {
+          "ref": "SW1",
+          "uuid": "d5a39ffe-acfd-4965-96bd-86b7dc4afe17",
+          "before": [
+            77.7,
+            101.2,
+            0.0,
+            "F.Cu"
+          ],
+          "after": [
+            86.0,
+            101.6,
+            0.0,
+            "F.Cu"
+          ]
+        }
+      ],
+      "allowed_D1_pin_changes": [
+        {
+          "ref": "D1",
+          "pin": "1",
+          "before": [
+            "USB_DP"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "4",
+          "before": [
+            "USB_DN"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "6",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "USB_DN"
+          ]
+        },
+        {
+          "ref": "D1",
+          "pin": "7",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "USB_DP"
+          ]
+        }
+      ],
+      "allowed_bridge_pin_changes": [],
+      "allowed_U13_channel_changes": [
+        {
+          "ref": "U13",
+          "pin": "1",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "+3V3_RS485"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "10",
+          "before": [
+            "+3V3_RS485"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "11",
+          "before": [
+            "unconnected-(U13-4Y-Pad11)"
+          ],
+          "after": [
+            "RS485_TX_BUF"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "12",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "RS485_TX_CPU"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "13",
+          "before": [
+            "+3V3_RS485"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "2",
+          "before": [
+            "RS485_TX_CPU"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "3",
+          "before": [
+            "RS485_TX_BUF"
+          ],
+          "after": [
+            "unconnected-(U13-1Y-Pad3)"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "5",
+          "before": [
+            "RS485_DIR_CPU"
+          ],
+          "after": [
+            "GND"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "6",
+          "before": [
+            "RS485_DIR_BUF"
+          ],
+          "after": [
+            "unconnected-(U13-2Y-Pad6)"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "8",
+          "before": [
+            "unconnected-(U13-3Y-Pad8)"
+          ],
+          "after": [
+            "RS485_DIR_BUF"
+          ]
+        },
+        {
+          "ref": "U13",
+          "pin": "9",
+          "before": [
+            "GND"
+          ],
+          "after": [
+            "RS485_DIR_CPU"
+          ]
+        }
+      ],
+      "retained_original_copper_objects": 1814,
+      "removed_original_copper_objects": 930,
+      "new_copper_objects": 1197,
+      "removed_original_zone_UUIDs": [
+        "ab36f18f-12dd-48d5-a979-4a59cc99ddf3",
+        "e62c2fef-3f4e-49a9-8076-03f7cd89f3a7"
+      ],
+      "new_zone_UUIDs": [
+        "0d8885c0-86d6-4b48-81cf-dc24b19edcb7",
+        "0dec31a7-ef32-4b7b-9181-8a4788282aa1",
+        "162780b4-40d8-4c82-87a1-af5d907d1e86",
+        "170542cd-0727-4fd9-be41-d981c266f306",
+        "22267d65-6ee8-4afd-aaa9-233e785d2348",
+        "27cdfce6-2997-4628-9092-1c0e972a6fbd",
+        "2a3ba78e-7adf-4429-a067-4ee60c16abfa",
+        "2d9b3f29-1545-48ca-836c-3f842e027246",
+        "4b953aef-54f7-473c-9966-4ae64481d162",
+        "64c63dde-b92d-4f5c-86e1-45e6aef09391",
+        "6784fdca-e982-462c-aa84-b15070077470",
+        "745ecc37-02d0-4444-9919-366883e45573",
+        "7e995f22-3c96-4f75-91e9-7b83d5ce6d38",
+        "882d15da-036a-45f7-9212-b718a376ab2e",
+        "a23933f5-e6d3-4f26-9735-53dac45b1c2c",
+        "c1939528-3d7b-4eb8-8790-ad592ba40979",
+        "db597a39-9265-4f5c-a5f3-b660276cdc30"
+      ],
+      "straight_track_count": 2618,
+      "via_sizes_mm": [
+        {
+          "diameter": 0.6,
+          "drill": 0.3,
+          "quantity": 73
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3,
+          "quantity": 226
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.3,
+          "quantity": 91
+        },
+        {
+          "diameter": 0.9,
+          "drill": 0.3,
+          "quantity": 3
+        }
+      ],
+      "fresh_schematic_XML_sha256": "34c9b964a99ff9a444a723723a2237cf25dc893f6565fb68d141655fd12575b4",
+      "native_schematic_export_tool": "Eeschema 10.0.8"
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "physical_footprints": 251,
+      "purchased_quantity": 248,
+      "excluded_from_BOM": [
+        "TP5",
+        "TP6",
+        "TP7"
+      ],
+      "footprint_UUID_digest": "3e754af97a9cd9abeca56087ccb8f5f1079fbf1a90f775a00954972075332ffd",
+      "pose_changes": [],
+      "allowed_D1_pin_changes": [],
+      "allowed_bridge_pin_changes": [],
+      "allowed_U13_channel_changes": [],
+      "retained_original_copper_objects": 2235,
+      "removed_original_copper_objects": 0,
+      "new_copper_objects": 0,
+      "removed_original_zone_UUIDs": [],
+      "new_zone_UUIDs": [],
+      "straight_track_count": 1988,
+      "via_sizes_mm": [
+        {
+          "diameter": 0.8,
+          "drill": 0.3,
+          "quantity": 71
+        },
+        {
+          "diameter": 0.85,
+          "drill": 0.3,
+          "quantity": 1
+        },
+        {
+          "diameter": 0.9,
+          "drill": 0.3,
+          "quantity": 175
+        }
+      ],
+      "fresh_schematic_XML_sha256": "3aa1f4f5b28e8c90deb29eb09a393b6ec966614312e2f5d01f8ed29c6f3240e4",
+      "native_schematic_export_tool": "Eeschema 10.0.8"
+    }
+  },
+  "purchased_expected": {
+    "upper": 160,
+    "lower": 248,
+    "combined": 408
+  },
+  "approved_geometry": {
+    "upper_vias_minimum_diameter_drill_ring_mm": [
+      0.6,
+      0.3,
+      0.15
+    ],
+    "U2_PTH_size_drill_mm": [
+      1.95,
+      1.5,
+      1.1
+    ],
+    "U1_EP_PTH_size_drill_mm": [
+      0.7,
+      0.7,
+      0.3
+    ]
+  },
+  "scope": "Source/inventory and stated nominal geometry only. Connectivity, clearance, normal zone fill, EMC, assembly qualification and overall production readiness require final native and independent checks.",
+  "native_KiCad_version": "10.0.8",
+  "kicad_cli": "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli"
+}

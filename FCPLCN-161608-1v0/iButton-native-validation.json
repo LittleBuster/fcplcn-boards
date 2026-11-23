@@ -1,0 +1,255 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-22T09:07:25.563749+00:00",
+  "native_checks": {
+    "FCPLCN-CPU-08-1v0": {
+      "DRC": {
+        "active_violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0,
+        "baseline_excluded": 2
+      },
+      "ERC": {
+        "violations": 0
+      }
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "DRC": {
+        "active_violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0,
+        "baseline_excluded": 0
+      },
+      "ERC": {
+        "violations": 0
+      }
+    }
+  },
+  "geometry": {
+    "Lower": {
+      "copper_layers": 2,
+      "footprints": 251,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "minimum_track_width_mm": 0.22,
+      "usb_trace_lengths_mm": {}
+    },
+    "Upper": {
+      "copper_layers": 2,
+      "footprints": 160,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "minimum_track_width_mm": 0.18,
+      "usb_trace_lengths_mm": {
+        "/USB_DN_CPU": 8.474,
+        "/USB_DP_CPU": 4.315,
+        "/USB_DP": 12.997,
+        "/USB_DN": 16.596
+      }
+    }
+  },
+  "board_contract": {
+    "data_ports": [
+      {
+        "connector": "J3",
+        "gpio": 39,
+        "port": 1
+      },
+      {
+        "connector": "J3",
+        "gpio": 40,
+        "port": 2
+      },
+      {
+        "connector": "J3",
+        "gpio": 17,
+        "port": 3
+      },
+      {
+        "connector": "J3",
+        "gpio": 18,
+        "port": 4
+      },
+      {
+        "connector": "J3",
+        "gpio": 1,
+        "port": 5
+      },
+      {
+        "connector": "J3",
+        "gpio": 2,
+        "port": 6
+      },
+      {
+        "connector": "J3",
+        "gpio": 38,
+        "port": 7
+      },
+      {
+        "connector": "J3",
+        "gpio": 44,
+        "port": 8
+      }
+    ],
+    "i2c_gpio": [
+      41,
+      42
+    ],
+    "uart0_rx_gpio44_reserved_for_DATA8": true,
+    "bidirectional_isolators": 5,
+    "matched_stack_contacts": 12,
+    "geometry": {
+      "Lower": {
+        "copper_layers": 2,
+        "footprints": 251,
+        "non_45_90_segments": 0,
+        "strict_track_crossings": 0,
+        "minimum_track_width_mm": 0.22,
+        "usb_trace_lengths_mm": {}
+      },
+      "Upper": {
+        "copper_layers": 2,
+        "footprints": 160,
+        "non_45_90_segments": 0,
+        "strict_track_crossings": 0,
+        "minimum_track_width_mm": 0.18,
+        "usb_trace_lengths_mm": {
+          "/USB_DN_CPU": 8.474,
+          "/USB_DP_CPU": 4.315,
+          "/USB_DP": 12.997,
+          "/USB_DN": 16.596
+        }
+      }
+    },
+    "ibutton_panel": {
+      "LED_gpio": 43,
+      "BUZZER_gpio": 45,
+      "GPIO3_NC": true,
+      "J9_location": "exposed lower/front edge between Ethernet and DATA",
+      "J9_position_mm": [
+        71.15,
+        118.0
+      ],
+      "wire_entry": "+Y, aligned with J3/J8/J5",
+      "ROM_UART_LED_possible_until_GPIO_initialization": true
+    },
+    "mcp23017": {
+      "physical_gpio_pin_names": {
+        "1": "GPB0",
+        "2": "GPB1",
+        "3": "GPB2",
+        "4": "GPB3",
+        "5": "GPB4",
+        "6": "GPB5",
+        "7": "GPB6",
+        "8": "GPB7",
+        "21": "GPA0",
+        "22": "GPA1",
+        "23": "GPA2",
+        "24": "GPA3",
+        "25": "GPA4",
+        "26": "GPA5",
+        "27": "GPA6",
+        "28": "GPA7"
+      },
+      "output_only_pins": [
+        "GPA7",
+        "GPB7"
+      ],
+      "input_mask_hex": "0x7f01",
+      "relay_mask_hex": "0x80fe",
+      "internal_pullup_mask_hex": "0x0000",
+      "existing_gpio_wiring_preserved": true
+    },
+    "input_optocouplers": {
+      "mpn": "TLP2363(TPL,E",
+      "count": 16,
+      "input_resistor": "1.2k + 220R; 1% 0.5W0805",
+      "input_pre_filter": "220R / 1uF; TVS on terminal DI",
+      "input_LED_shunt": "4.7k in parallel with LED",
+      "output_pullup": "10k on RAW",
+      "output_filter": "470R / 100nF",
+      "local_bypass": "100nF each",
+      "bypass_pad_distance_mm": {
+        "U21": 2.223,
+        "U22": 2.223,
+        "U23": 2.223,
+        "U24": 2.223,
+        "U25": 2.223,
+        "U26": 2.223,
+        "U27": 2.223,
+        "U28": 2.223,
+        "U29": 2.223,
+        "U30": 2.223,
+        "U31": 2.223,
+        "U32": 2.223,
+        "U33": 2.223,
+        "U34": 2.223,
+        "U35": 2.223,
+        "U36": 2.223
+      }
+    },
+    "power": {
+      "Upper.U3": "R-78K3.3-1.0 / +12V_LOGIC",
+      "Upper.U5": "R-78K3.3-0.5 / +5V_ISO",
+      "Upper.U12": "R-78K3.3-0.5 / +12V_LOGIC",
+      "Lower.U8": "TLV1117LV33DCYR / MOD_VBUS",
+      "left_stack_supply_v": 5,
+      "right_stack_supply_v": 12,
+      "Lower.F1": "Littelfuse 045201.5MRL / 1.5A Slo-Blo"
+    },
+    "rs485": {
+      "mpn": "ADM2687EBRIZ",
+      "uart": 1,
+      "tx_gpio": 8,
+      "rx_gpio": 47,
+      "direction_gpio": 48,
+      "half_duplex": true,
+      "connector": "J8",
+      "pin_order": [
+        "5V_ISO",
+        "A",
+        "B",
+        "GND_ISO"
+      ],
+      "buffers": "2x Nexperia 74LVC125AD,118; Ioff",
+      "primary_supply": "U12 / +12V_LOGIC to +3V3_RS485",
+      "field_power_from_TMR": true,
+      "isoPower_output_not_paralleled": true,
+      "sensor_ports_share_GND_ISO": true,
+      "switchable_120ohm_termination": true
+    },
+    "rtc": {
+      "mpn": "DS3231MZ+",
+      "i2c_address": "0x68",
+      "cpu_gpio": [
+        4,
+        5
+      ],
+      "holder": "Q&J CR1220-2 / C70381",
+      "board": "Upper",
+      "side": "B.Cu",
+      "additional_gpio": 0,
+      "external_charger": false
+    }
+  },
+  "source_sha256": {
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "0efdcadaed2ec397c7fc961e87189f18f0722bb4f4a87aebfe581897daf7e0f9",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "407871dc833fa66be65b9a5a114eeb9ab3051d48c1f09f46b22717695de4edaa",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "f5b3d63f170cb83c307720b1ff884f1a2be448961dacde0cbf3041994bf17377",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "72611f1ec4712b853e048cfdb6d8cb67e9352b8fd493d517afede175efde5a65",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb",
+    "Power-budget.json": "6cbc9d9f2b5eaed8c7ee7d70c105d802d1647045e83c8e110b7abb1b4f842077",
+    "tools/check_board.py": "e3bbf1d86f72fe3b4912660530cd302967987867452b23d418ba099914ed0e28",
+    "tools/srda_contract.py": "e5bdd6b591912333c008386066588b792716031e32be31f3df075b28f2887051",
+    "FCPLCN-CPU-08-1v0/iButton-DRC.json": "c71fc47912b614bd83b465870705108c145616648e2e7aedc217b145f996d2c0",
+    "FCPLCN-CPU-08-1v0/iButton-ERC.json": "a909924adcdeb606a5e05b0df6a148c0152023a70abfcdf3dbffc9b232d6f1e6",
+    "FCPLCN-RLY-1616-1v0/iButton-DRC.json": "4b98b779be0d3a26994a7eee9114d9afcd404aa86a04beeb9905fe0dfba3b71a",
+    "FCPLCN-RLY-1616-1v0/iButton-ERC.json": "d9d4376fe4baf9bbf42efb17afb28f83f28066cb6a838315f5d1c12a22d2764c"
+  }
+}

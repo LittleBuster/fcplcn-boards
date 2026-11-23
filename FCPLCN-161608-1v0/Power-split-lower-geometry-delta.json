@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "new_findings": [],
+  "retained_existing_legend_findings": 233,
+  "previous_legend_findings": 239,
+  "scope": "All copper/holes/annuli/edge/mask checks pass; unchanged earlier legend advisories remain explicitly visible in raw report. This operation adds no legend finding.",
+  "raw_report_sha256": "fb3581985ccab34f8f1a60eeac347add251e3ef6011e02875903d052642f0c46",
+  "baseline_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/before/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645"
+  }
+}

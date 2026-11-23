@@ -1,0 +1,810 @@
+{
+  "source_pcb": "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+  "source_pcb_sha256": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
+  "profile": "Explicit reviewed factory-limit0.6/0.3 vias,0.15mm nominal annulus; ordinary vias remain0.7/0.3 with0.20mm annulus. Copper clearances unchanged.",
+  "vias": [
+    {
+      "uuid": "e4cdfbb9-a543-4129-986a-9dc3807368de",
+      "net": "/+3V3",
+      "xy_mm": [
+        79.05,
+        85.55
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "6319c0ca-34e7-4311-8e9a-c4eca07cd801",
+      "net": "/+3V3_RS485",
+      "xy_mm": [
+        68.45,
+        91.175
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "e6bde408-d468-4785-b995-8505c3d08e12",
+      "net": "/+3V3_RS485",
+      "xy_mm": [
+        69.4,
+        105.2
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "715a7cae-ace4-4797-aa62-0b04ff2d13ea",
+      "net": "/ALARM_LED",
+      "xy_mm": [
+        73.35,
+        90.45
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "c3f3ca7e-555d-4854-8a4b-56c849f1c22b",
+      "net": "/ALARM_LED",
+      "xy_mm": [
+        80.63,
+        86.8475
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "57fd60ea-60ec-4f5c-8166-17993d90dee0",
+      "net": "/ESP_EN",
+      "xy_mm": [
+        78.85,
+        80.05
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "0488cd84-3294-4f39-8b9f-864689f356f9",
+      "net": "/ESP_EN",
+      "xy_mm": [
+        81.9,
+        85.6
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "542123b3-bb96-4086-ae33-86ce5df84dc5",
+      "net": "/ESP_EN",
+      "xy_mm": [
+        92.2,
+        96.9
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "0a21e9a5-b8ef-408c-af3c-bd43f4fa0cb5",
+      "net": "/ETH_CS_N",
+      "xy_mm": [
+        69.7,
+        101.6
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "735a4596-8025-44b6-be41-3d7b782519e5",
+      "net": "/ETH_CS_N",
+      "xy_mm": [
+        80.4,
+        101.8
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "ac9bb4e7-401c-4fd9-9a58-26bb0be787b4",
+      "net": "/ETH_CS_N",
+      "xy_mm": [
+        81.1,
+        99.075
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "c0a3c16c-1c20-410e-abbc-35c046c66ee4",
+      "net": "/ETH_CS_N",
+      "xy_mm": [
+        82.8,
+        96.5
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "f1d87ac1-7c25-4937-ac44-ca4e0a41be7d",
+      "net": "/ETH_INT_N",
+      "xy_mm": [
+        74.15,
+        90.5
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "497388b8-0a97-4a54-9f32-54e9473cb57d",
+      "net": "/ETH_INT_N",
+      "xy_mm": [
+        75.95,
+        90.0
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "ac11f55e-e633-409c-9b91-ab92721b7cda",
+      "net": "/ETH_INT_N",
+      "xy_mm": [
+        75.95,
+        91.5
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "84e9db44-d1cd-4749-bde1-97b51327e08a",
+      "net": "/ETH_INT_N",
+      "xy_mm": [
+        78.8,
+        92.15
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "4ab03529-80bd-4a92-86b8-67ad03fb70b8",
+      "net": "/ETH_MISO",
+      "xy_mm": [
+        49.4,
+        99.8
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "4d71f72b-6df5-4e74-8b98-b7994f074427",
+      "net": "/ETH_MISO",
+      "xy_mm": [
+        53.35,
+        99.05
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "535aa5a3-4e0f-4fef-b8c1-892e74c180be",
+      "net": "/ETH_MISO",
+      "xy_mm": [
+        69.0,
+        102.0
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "cdf66999-a63b-4fbf-aee1-26246e7cddeb",
+      "net": "/ETH_MISO",
+      "xy_mm": [
+        81.1,
+        103.1
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "421abf04-82f4-44c7-92f9-d256d7b76152",
+      "net": "/ETH_MISO_CPU",
+      "xy_mm": [
+        85.5,
+        99.8
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "9d9bf514-0315-4818-b461-dfa0d8aee7e0",
+      "net": "/ETH_MOSI",
+      "xy_mm": [
+        68.0,
+        105.05
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "230f0a98-3d05-4e59-b9cb-fe5452488bd1",
+      "net": "/ETH_MOSI",
+      "xy_mm": [
+        82.65,
+        101.1
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "e0f7f5f3-c1f6-479f-9881-3e955210049c",
+      "net": "/ETH_MOSI_CPU",
+      "xy_mm": [
+        84.15,
+        99.7
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "24f7d30d-cbb1-4150-b2f4-c788664e811a",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        51.4,
+        93.35
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "1923285e-4188-4ed7-9ff4-6a9afaa6aaf1",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        51.4,
+        95.05
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "5306b4b1-a3fb-4004-b574-7abc33968558",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        54.15,
+        82.25
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "db362f27-6d3e-4c73-872f-7c36d4ca73d4",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        54.6,
+        81.0
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "74c54c98-9cfc-4385-825c-7b68ccc8131c",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        61.3,
+        81.0
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "0f3d6ace-4c65-40a8-b777-14680e6ff9f1",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        67.15,
+        75.75
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "b8d66d86-48cf-4f08-997c-9dac9a1a6d5f",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        67.6,
+        73.1
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "ca6488b1-9277-4f11-b93f-b92a40359557",
+      "net": "/ETH_RST_N",
+      "xy_mm": [
+        86.55,
+        92.1
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "be2ce173-1961-44ec-aa56-dd98cf45e5dc",
+      "net": "/ETH_SCK",
+      "xy_mm": [
+        81.8,
+        99.425
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "0ef41a9a-36de-4c8d-9c11-69f98eafcd8c",
+      "net": "/ETH_SCK",
+      "xy_mm": [
+        81.8,
+        102.4
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "6703af39-21b1-4f20-a3b3-5cafdc619ee3",
+      "net": "/ETH_SCK",
+      "xy_mm": [
+        82.8,
+        98.7
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "7f343232-494f-4e8b-8f9d-0d7bf1cd7ef1",
+      "net": "/ETH_SCK_CPU",
+      "xy_mm": [
+        82.95,
+        95.3
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "1fdd4ed9-67ea-42f7-8230-330a17fa6d09",
+      "net": "/GND",
+      "xy_mm": [
+        69.03,
+        83.375
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "4911b4da-330c-4149-9fa4-3bad41d2c6a8",
+      "net": "/GND",
+      "xy_mm": [
+        70.7,
+        86.5
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "de1fe4ec-3932-4fd2-87be-36162b683550",
+      "net": "/GND",
+      "xy_mm": [
+        71.095,
+        105.1
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "4c5079fa-a526-485f-93ec-4dbc04ecd3df",
+      "net": "/GND",
+      "xy_mm": [
+        71.095,
+        106.4
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "eb30e07b-7f8a-4bd5-8945-459f3bcc2eae",
+      "net": "/GND",
+      "xy_mm": [
+        71.3,
+        88.975
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "fb2ae51e-a8b6-49ea-b96d-757ede0cab9e",
+      "net": "/GND",
+      "xy_mm": [
+        72.57,
+        88.35
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "3060f6b9-4105-4459-bd9c-2fe0487263f7",
+      "net": "/GND",
+      "xy_mm": [
+        72.9,
+        84.0
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "a5981622-5924-4edd-a894-6eb26504a459",
+      "net": "/I2C_SCL",
+      "xy_mm": [
+        69.1351,
+        82.2
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "9ad58de5-1f85-4388-9158-0b221a5db6be",
+      "net": "/IB_LED_CPU",
+      "xy_mm": [
+        59.65,
+        99.85
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "28b2ef34-a4a2-4ea2-ae56-4a7f3bf02b07",
+      "net": "/IB_LED_CPU",
+      "xy_mm": [
+        67.2,
+        81.65
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "cfd161e6-50b7-46b3-bdfa-5f7d5c7e337b",
+      "net": "/IB_LED_CPU",
+      "xy_mm": [
+        67.25,
+        86.9
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "c1e52321-5691-4c8c-a60f-d9d3b46cf288",
+      "net": "/IB_LED_CPU",
+      "xy_mm": [
+        85.9,
+        76.65
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "01cda418-e2a7-484e-a430-0b61b0c399f8",
+      "net": "/IB_LED_CPU",
+      "xy_mm": [
+        86.25,
+        77.8
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "434061ae-ae35-44c7-b324-2d7846ae7fa8",
+      "net": "/NET_LED",
+      "xy_mm": [
+        67.8,
+        85.55
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "2537f9a3-7033-49ae-a284-3ce76927fc89",
+      "net": "/RS485_DIR",
+      "xy_mm": [
+        93.525,
+        93.425
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "f9d023dd-718f-4f65-8599-e0edc3095c8d",
+      "net": "/RS485_DIR",
+      "xy_mm": [
+        95.225,
+        98.075
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "c475200b-7159-40ce-aa14-da7df09a10ef",
+      "net": "/RS485_DIR",
+      "xy_mm": [
+        96.45,
+        103.25
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "13911587-795d-46df-90bb-dc01dbd95d22",
+      "net": "/RS485_DIR_BUF",
+      "xy_mm": [
+        73.85,
+        87.5
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "92bf2a60-c971-4a46-8669-761eae9027be",
+      "net": "/RS485_DIR_CPU",
+      "xy_mm": [
+        75.275,
+        87.52
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "1bac232a-a330-4db2-ab10-057a7fdf30e6",
+      "net": "/RS485_DIR_CPU",
+      "xy_mm": [
+        84.2,
+        91.8
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "a07974ae-a136-4f03-bb09-d2ceb8a1636e",
+      "net": "/RS485_RX_CPU",
+      "xy_mm": [
+        71.9,
+        85.4
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "3aef63c3-5040-4bf8-b939-adc93d942dd2",
+      "net": "/RS485_RX_CPU",
+      "xy_mm": [
+        71.9,
+        86.65
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "5404c3ab-0f66-4b37-bda5-d403d5e4821b",
+      "net": "/RS485_RX_CPU",
+      "xy_mm": [
+        74.55,
+        85.95
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "9a4ef3b0-231a-4bce-8ce1-53da22901113",
+      "net": "/RS485_RX_CPU",
+      "xy_mm": [
+        76.0,
+        88.1
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "dac8c551-f5e1-42ce-994c-7b9c8046f725",
+      "net": "/RS485_TX",
+      "xy_mm": [
+        74.95,
+        90.45
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "a1fde4d2-aeea-4ee6-8ee6-7eaf2bc091d3",
+      "net": "/RS485_TX",
+      "xy_mm": [
+        80.4,
+        91.7
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "bde1d6a9-fb0d-4247-b532-35f5fa9fdaac",
+      "net": "/RS485_TX",
+      "xy_mm": [
+        93.5,
+        90.3
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "8c8b149a-ac87-4b6b-b5ce-e50e06e3d65f",
+      "net": "/RS485_TX",
+      "xy_mm": [
+        96.7,
+        95.675
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "53cd1a34-9f9b-4b56-b4be-eecff0814f35",
+      "net": "/RS485_TX",
+      "xy_mm": [
+        100.375,
+        104.775
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "ac347909-69b3-428c-be50-9830cf6fe237",
+      "net": "/RS485_TX_CPU",
+      "xy_mm": [
+        69.7,
+        80.55
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "4766cb56-2b94-4b7e-bc94-48367ffd6444",
+      "net": "/RS485_TX_CPU",
+      "xy_mm": [
+        74.9,
+        80.55
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "0dc78555-9518-4012-9989-0fa90371aa81",
+      "net": "/RS485_TX_CPU",
+      "xy_mm": [
+        83.525,
+        88.325
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "e8392e54-85bb-4212-8a44-942bd4061c86",
+      "net": "/RS485_TX_CPU",
+      "xy_mm": [
+        84.675,
+        88.325
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "13576b9c-7875-42f8-96bd-644df7851900",
+      "net": "/RS485_TX_CPU",
+      "xy_mm": [
+        84.675,
+        90.125
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "a55a2ce1-0c8d-47b1-b42d-476ad85d4d6f",
+      "net": "/USB_CC2",
+      "xy_mm": [
+        80.3,
+        99.2
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "353b07ed-7575-4254-b5f1-eee076e1c734",
+      "net": "/USB_CC2",
+      "xy_mm": [
+        80.5,
+        96.4
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    },
+    {
+      "uuid": "23420f5a-c889-4638-8148-3ad532fb7f2c",
+      "net": "/USB_DN",
+      "xy_mm": [
+        71.8,
+        102.9
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "nominal_annulus_mm": 0.15
+    }
+  ]
+}

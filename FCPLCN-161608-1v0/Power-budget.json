@@ -1,5 +1,5 @@
 {
-  "revision": "INPUT RC + LED shunts + detailedLower3V3: CPU148/RLY248 purchased,total396;16x220R+1uF field prefilters and16x4.7k LED shunts;LED resistors1.2k;Lower3V3 envelope82.5mA,allocation100mA plusLDO input allowance0.1mA",
+  "revision": "Local supplies split: CPU164/RLY248 total412; Lower3V3 K0.5 plus bead; Upper5V E1.0 for TMR",
   "main_3v3": {
     "source": "Upper.U3 R-78K3.3-1.0",
     "input_net": "+12V_LOGIC",
@@ -11,10 +11,11 @@
       "W5500-Lite": 300,
       "ISO1640_CPU_sides_LEDs_RTC_pullups_and_reset": 70,
       "UART_RX_buffer_bias_and_dynamic_reserve": 5,
-      "U15_DATA7_DATA8_isolator_pullups_and_dynamic_reserve": 15
+      "U15_DATA7_DATA8_isolator_pullups_and_dynamic_reserve": 15,
+      "iButton_ULN_inputs_and_GPIO_pulldowns": 12
     },
-    "design_total_ma": 890,
-    "nominal_current_reserve_ma": 110,
+    "design_total_ma": 902,
+    "nominal_current_reserve_ma": 98,
     "is_design_budget_not_measured_maximum": true,
     "thermal_note": "At 12V input the manufacturer derating graph allows full 1A to approximately80C ambient; respect graph and actual enclosure temperature."
   },
@@ -41,37 +42,47 @@
     "budget_scope": "120mA combined external current retained. Reserve55mA at5V for five isolators, pullups, U5 overhead and dynamics; prototype must verify total5V_ISO input<=175mA at intended loads. The3.3V branch is counted at its actual5V input including losses; regulator rating alone does not enlarge TMR power."
   },
   "common_5v": {
-    "source": "Lower.U2 R-78E5.0-1.0",
+    "source": "Upper.U17 R-78E5.0-1.0",
     "input_net": "+12V_LOGIC",
-    "output_net": "MOD_VBUS",
+    "output_net": "+5V_TMR",
     "rated_current_ma": 1000,
-    "Lower.U8": "TLV1117LV33DCYR retained; no new tall regulator under Upper",
-    "lower_design_current_ma": 100.1,
+    "loads": [
+      "Upper.U4 TMR-1-0511 input pin2; C11 and C56 local bypass"
+    ],
+    "lower_design_current_ma": 0,
     "TMR_at_full_output_1w_typical_efficiency_pct": 76,
     "TMR_at_full_output_typical_input_ma": 263.158,
-    "combined_full_load_design_estimate_ma": 363.258,
+    "combined_full_load_design_estimate_ma": 263.158,
+    "engineering_allocation_ma": 300,
+    "nominal_current_reserve_ma": 700,
     "TMR_no_load_input_typical_ma": 40,
     "full_load_efficiency_must_not_be_applied_at_no_load": true,
     "main_Upper_3v3_not_supplied_by_5v": true,
-    "RS485_design_current_removed_from_5v_ma": 201,
     "RS485_Upper_3v3_not_supplied_by_5v": true,
-    "lower_design_current_before_FRAM_ma": 25,
-    "FRAM_U9_design_increment_ma": 0.3,
-    "nominal_current_reserve_ma_at_full_TMR_output": 636.742,
-    "FRAM_scope": "U9 FM24CL64B-GTR0.3mA maximum device-current allowance is included in the current100mA Lower3V3 allocation. Do not add it again. TMR full-load efficiency remains a typical engineering assumption.",
-    "lower_design_current_before_TLP2363_ma": 25.3,
-    "TLP2363_detector_supply_increment_ma": 64,
-    "TLP2363_scope": "16 detector supply allowances at4mA each are included in the itemized Lower3V3 component envelope, not added on top of100mA. External pull-ups, RN and driver input currents are counted separately once. New field RC capacitors are on12V and do not directly increase3V3 DC load.",
-    "lower3v3_output_allocation_ma": 100.0,
-    "lower_LDO_input_ground_current_allowance_ma": 0.1,
-    "lower3v3_component_envelope_ma": 82.5,
-    "lower3v3_review_report": "Input-RC-electrical-review.json",
-    "legacy_budget_fields_scope": "lower_design_current_before_FRAM_ma25 and lower_design_current_before_TLP2363_ma25.3 are historical allocations only. Current load is itemized in Lower3V3_current_review; these old blocks are not added again."
+    "interboard_5v": false,
+    "Lower_no_5v_loads": true,
+    "scope": "263.158mA is the 1W TMR input estimate at typical76% efficiency.300mA is a rounded engineering allocation, not a guaranteed maximum input current across startup/load/temperature. Isolated output remains1W and external sensor budget remains120mA combined.",
+    "voltage_review": {
+      "additive_static_25C_V": [
+        4.625,
+        5.375
+      ],
+      "including_half_120mVpp_reference_ripple_V": [
+        4.565,
+        5.435
+      ],
+      "TMR_input_operating_range_V": [
+        4.5,
+        5.5
+      ],
+      "scope": "Illustrative25C accuracy/line/load corner; reference ripple is not a guaranteed all-temperature/transient envelope. Verify at U4 pins, particularly startup and no-load."
+    }
   },
   "stack_power_pins": {
-    "LEFT_J43_J1_pins_3_4": "MOD_VBUS 5 V",
+    "LEFT_J43_J1_pins_3_4": "GND; left header1..4 all GND,5SDA,6SCL",
     "RIGHT_J44_J6_pins_3_4": "+12V_LOGIC 12 V",
-    "unchanged_coordinates_and_connector_types": true
+    "unchanged_coordinates_and_connector_types": true,
+    "no_interboard_5v_or_3v3": true
   },
   "main_3v3_voltage_estimate": {
     "at_25c_accuracy_plus_line_plus_load_pct": 7.5,
@@ -122,7 +133,8 @@
     "CRCW_HP": "https://www.vishay.com/docs/20115/crcwhp.pdf",
     "TDK_C2012X7R1H105K125AB": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1H105K125AB",
     "TDK_capacitor_characterization": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c2012x7r1h105k125ab.pdf",
-    "TDK_capacitor_specification": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/specification/mlccspec_commercial_general_midvoltage_en.pdf"
+    "TDK_capacitor_specification": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/specification/mlccspec_commercial_general_midvoltage_en.pdf",
+    "Murata_BLM21PG221SN1D": "https://www.murata.com/en-eu/api/pdfdownloadapi?cate=cgsubChipFerriBead&partno=BLM21PG221SN1D"
   },
   "RS485": {
     "part": "ADM2687EBRIZ",
@@ -174,48 +186,48 @@
       "hard_plug_input_requirement": "Manufacturer calls for a 27 uF input electrolytic when hard plugging or exceeding input slew limit; especially important above 18 V. Remote Lower C8 is not proof of compliance at U12 pins.",
       "assembly_power_off_required": true,
       "local_input_capacitor": "C37 22 uF / 35 V X5R 20% 1206, TDK C3216X5R1V226M160AC; not a substitute for the manufacturer hard-plug electrolytic requirement",
-      "local_output_capacitor": "C38 10 uF / 25 V X7R 1206",
+      "local_output_capacitor": "C38 10uF / 35V X7R1206, TDK C3216X7R1V106K160AC",
       "full_current_temperature_scope": "Manufacturer 3.3 V / 0.5 A derating curve allows full current to 90 C under its convection conditions; this is not the allowable temperature of the whole assembly.",
-      "input_current_ma_at_filtered_design_voltage_estimate": 73.62685645744679
+      "input_current_ma_at_filtered_design_voltage_estimate": 74.53118995698972
     }
   },
   "input_12v": {
     "fuse": "Lower.F1 Littelfuse 045201.5MRL, 1.5A Slo-Blo",
-    "current_budget_a_nominal_coils": 0.8730957409371914,
-    "current_budget_a_minus10percent_coil_resistance": 0.8902809261223765,
+    "current_budget_a_nominal_coils": 0.9944708355819575,
+    "current_budget_a_minus10percent_coil_resistance": 1.0116560207671426,
     "fuse_recommended_continuous_current_a_at25c": 1.125,
     "additional_ambient_temperature_derating_required": true,
-    "audit": "Power-budget.json input_12v.calculation and Input-RC-electrical-review.json are current. F1-current-audit.json,FRAM-power-budget.json andTLP2363-power-budget.json are historical revision records.",
+    "audit": "Power-split-design-review.json; historical fuse/input reports validate their own earlier budgets only.",
     "design_estimate_not_measured": true,
     "historical_fuse_audit_not_current_budget": true,
     "calculation": {
       "external_input_v": 12,
       "relay_and_DI_supply_after_D1_v": 11.6,
       "logic_supply_before_R12_v": 11.2,
-      "logic_supply_after_R12_v": 10.598754024321025,
+      "logic_supply_after_R12_v": 10.47015271897302,
       "all_switching_regulators_efficiency_assumption": 0.85,
       "TMR_full_load_typical_efficiency": 0.76,
-      "main3v3_output_power_w": 2.937,
-      "common5v_output_power_w": 1.8162894736842103,
+      "main3v3_output_power_w": 2.9766,
+      "common5v_output_power_w": 1.5,
       "RS485_local3v3_output_power_w": 0.6633,
-      "logic_input_current_a": 0.6012459756789754,
+      "logic_input_current_a": 0.7226210703237416,
       "coil_current_a_nominal": 0.15466666666666667,
       "coil_current_a_minus10percent_resistance": 0.17185185185185184,
       "DI_current_a_all16_closed": 0.1171830985915493,
       "DI_series_ohm": 1420,
       "opto_LED_drop_assumption_v": 1.2,
       "R12_included": true,
-      "series_resistor_power_W": 0.3614967232701631,
-      "U12_conversion_only_reduction_a_without_RC_vs_5v_LDO": 0.03589285714285715,
-      "scope": "Simultaneous100mA Lower3V3 design allocation plus0.1mA LDO input allowance,1W TMR output at76%typ efficiency,other existing allocations and85% converter efficiency assumption. DI drop1.2V is an engineering current-budget assumption; IFminimum instead uses2.0V. Not measured peak/inrush or guaranteed all-temperature PSU/efficiency maximum.",
-      "FRAM_increment_ma_on_lower3v3_and_5v": 0.3,
-      "TLP2363_detector_increment_ma_on_lower3v3_and_5v": 64,
+      "series_resistor_power_W": 0.5274030233885881,
+      "scope": "Simultaneous902mA UpperMAIN3V3,201mA RS485,100mA Lower3V3 at nominal raw3.3V; bead loss is already inside the raw output power,300mA local5V TMR input and108mA panel; all regulators85% illustrative efficiency. Full1W TMR at76%typ would instead require263.158mA at5V. Not measured peak/inrush or guaranteed PSU/efficiency maximum.",
       "DI_LED_resistor_ohm": 1200,
       "DI_terminal_series_ohm": 220,
       "Lower3V3_current_allocation_ma": 100.0,
-      "Lower_LDO_ground_current_allowance_ma": 0.1
+      "R12_review_ohm": 1.01,
+      "panel_design_current_a": 0.108,
+      "logic_converter_power_before_R12_w": 6.435176470588235,
+      "lower3v3_output_power_w": 0.33
     },
-    "nominal_25c_fuse_current_reserve_a_at_minus10percent_coil_resistance": 0.23471907387762347
+    "nominal_25c_fuse_current_reserve_a_at_minus10percent_coil_resistance": 0.11334397923285744
   },
   "protected_12v_RC": {
     "topology": "Lower D3 cathode -> +12V_LOGIC_RAW -> R12 -> +12V_LOGIC; C8/C2/C13 and all regulator inputs remain after R12",
@@ -234,19 +246,19 @@
     "HF_dielectric": "X7R",
     "upstream_design_voltage_V": 11.2,
     "upstream_voltage_scope": "Engineering 12 V source minus assumed D1/D3 drops, not a guaranteed minimum for every PSU/diode/temperature",
-    "converter_input_power_W_assuming85pct_efficiency": 6.372458204334365,
-    "self_consistent_current_A": 0.6012459756789754,
-    "voltage_drop_V": 0.6012459756789754,
-    "protected_voltage_V": 10.598754024321025,
-    "resistor_dissipation_W": 0.3614967232701631,
-    "formula": "I*(11.2-I*R)=P; choose the low-current stable operating root",
+    "converter_input_power_W_assuming85pct_efficiency": 6.435176470588235,
+    "self_consistent_current_A": 0.7221707724808875,
+    "voltage_drop_V": 0.7221707724808875,
+    "protected_voltage_V": 10.477829227519113,
+    "resistor_dissipation_W": 0.5215306246256417,
+    "formula": "(I-Ipanel)*(11.2-I*R)=Pconverter; Ipanel=0.108A; choose the low-current stable operating root",
     "at_resistance_plus1pct": {
       "R_ohm": 1.01,
-      "I_A": 0.6016080112025829,
-      "protected_voltage_V": 10.59237590868539,
-      "resistor_dissipation_W": 0.36555152113455835,
-      "headroom_to_Lower_R78E5_min8V": 2.5923759086853906,
-      "headroom_to_Upper_R78K_min4p5V": 6.092375908685391
+      "I_A": 0.7226210703237416,
+      "protected_voltage_V": 10.47015271897302,
+      "resistor_dissipation_W": 0.5274030233885881,
+      "headroom_to_Upper_R78E5_min8V": 2.4701527189730204,
+      "headroom_to_R78K_min4p5V": 5.97015271897302
     },
     "R_TCR_ppm_per_K": 100,
     "temperature_scope": "Above corner is resistor initial tolerance at the assumed input/load. TCR, diode drop, supply tolerance and converter efficiency vary with temperature; actual enclosure validation required.",
@@ -260,7 +272,7 @@
     "startup_pulse": {
       "supply_step_envelope_V": 13.2,
       "downstream_capacitance_design_ceiling_uF": 400,
-      "capacitance_scope": "Engineering ceiling including tolerances and module input capacitance; listed external nominal capacitors sum262.2uF. Unknown module internal capacitance and actual PSU startup must be verified.",
+      "capacitance_scope": "Engineering ceiling including tolerances and module input capacitance; listed external nominal capacitors sum284.3uF after adding C52/C53. Unknown module internal capacitance and actual PSU startup must be verified.",
       "nominal_R_peak_W": 174.23999999999998,
       "minus1pct_R_peak_W": 175.99999999999997,
       "minus1pct_R_peak_A": 13.333333333333332,
@@ -272,7 +284,8 @@
       "comparison": "The first1ms instantaneous bound176W is below the approximate220W rectangular-pulse graph. This is an engineering comparison, not repetitive/hot-start/surge qualification.",
       "pure_RC_power_at1ms_W": 1.1740198851206516,
       "tail_scope": "The pure-RC tail excludes running converter load. Actual startup and repeated restart waveform/temperature remain prototype checks; do not infer full-circuit tail power from the unloaded RC formula."
-    }
+    },
+    "panel_current_allocation_A": 0.108
   },
   "DATA8_expansion": {
     "isolator": "U15 ISO1640BDR",
@@ -316,14 +329,14 @@
       "Use open-drain GPIO; no push-pull HIGH into ISO1640 side1.",
       "Native USB Serial/JTAG service remains on GPIO19/20; RS485 UART1 remains8/47/48."
     ],
-    "historical_report_scope": "DATA8-budget-audit and Power-EMI reports retain their original hashes and cover preceding sources only; current SRDA-budget-audit is separate. Native final SRDA routing checks are required."
+    "historical_report_scope": "DATA8-budget-audit, Power-EMI and SRDA-budget-audit retain their original hashes and cover preceding sources only; current iButton validation is separate."
   },
   "SRDA_protection": {
     "arrays": 5,
     "series_field_resistors": 10,
-    "Upper_components": 148,
+    "Upper_components": 164,
     "Lower_components": 248,
-    "combined_components": 396,
+    "combined_components": 412,
     "parts": "SRDA05-4BTG Littelfuse SOIC8; CRCW0805100RFKTAHP Vishay100ohm1%0805 pulse proof",
     "ground_domains": "D1/D4 MAIN GND; D2/D3/D6 GND_ISO; no inter-domain REF1 connection",
     "REF1_floating_per_array": true,
@@ -352,12 +365,12 @@
       "LOW margins and timing at longest intended cable with all sensors powered",
       "USB Full Speed enumeration, sustained transfer and flashing with representative cables/hosts",
       "Powered/unpowered ESD at external connectors, residual voltage at IC pins and rail overshoot",
-      "Total5V_ISO <=175mA and main3V3 <=890mA at intended loads"
+      "Total5V_ISO <=175mA and main3V3 <=902mA at intended loads"
     ],
     "limits": "100R does not prove ISO input remains within VCC+0.5V during surge. No12V/24V sustained wiring-fault protection, no completed EMC qualification, no powered Upper hot-swap. SRDA no longer steers directly into supply viaREF1, but other IC/output paths may still inject residual current.",
     "technical_review": "SRDA-technical-review.json",
     "current_budget_audit": "SRDA-budget-audit.json",
-    "historical_budget_audit_scope": "Earlier SRDA/FRAM/TLP2363 reports preserve original source hashes and revisions. Current RC,LED-shunt,Lower3V3 and count calculations are inInput-RC-electrical-review.json. Counts148CPU+248RLY=396 purchased. Historical audits do not certify the changed RC routing."
+    "historical_budget_audit_scope": "SRDA-budget-audit.json describes the preceding protection revision. Input-RC then had148CPU+248RLY=396 components. Current iButton has160CPU+248RLY=408; current counts, power and source hashes are in iButton-validation.json."
   },
   "FRAM": {
     "ref": "Lower.U9",
@@ -416,8 +429,6 @@
     "preserved_filter": "C101..C116100nF from INi to GND; all DI reverse diodes and TVS retained",
     "firmware_requirement": "MCP GPPUA/GPPUB=0: initialization, readback and reset recovery updated; 22/22 host driver tests and ESP-IDF6.1 build passed. See TLP2363-firmware-validation.json. Physical board validation pending.",
     "lower_logic_current_allocation_ma": 100.0,
-    "common5v_design_current_ma": 363.258,
-    "lower_LDO_dissipation_W_at5V_and3p3V": 0.1705,
     "engineering_input_envelope_V": [
       10.8,
       13.2
@@ -428,26 +439,27 @@
     "input_resistor_upper_power_W_no_D1_or_LED_drop_bound": 0.10474112279309662,
     "input_current_upper_mA_no_D1_or_LED_drop_bound": 9.389671361502348,
     "engineering_lower3v3_envelope_V": [
-      3.135,
-      3.465
+      3.05545,
+      3.5395499999999998
     ],
-    "lower3v3_envelope_scope": "3.3V +/-5% is an engineering review envelope, not a guaranteed all-temperature TLV1117LV accuracy claim. Full assembled-rail transient/temperature validation remains necessary.",
+    "lower3v3_envelope_scope": "Engineering envelope:25C additive accuracy/line/load, stated temperature coefficient over65K,5mV bead DC drop at100mA, plus half the60mVp-p reference ripple in each direction. Coefficient/ripple are not guaranteed worst-case limits; trace drops, startup and transients remain unbounded by this estimate.",
     "logic_margins_with_GPPU_disabled": {
-      "pullup_initial_tolerance_pct": 1,
-      "series_initial_tolerance_pct": 1,
-      "TLP_VOLmax_V": 0.6,
-      "TLP_IOHmax_uA": 50,
+      "GPPUA_GPPUB": 0,
+      "TLP_VOLmax_at_listed_test_point_V": 0.6,
+      "TLP_OFF_leakage_at_listed_limit_uA": 50,
       "MCP_input_leakage_uA": 1,
-      "MCP_VILmax_factor": 0.2,
-      "MCP_VIHmin_factor": 0.8,
-      "Vin_LOWmax_V": 0.6004747,
-      "LOW_margin_V": 0.026525299999999974,
-      "Vin_HIGHmin_V": 2.6194253,
-      "HIGH_margin_V": 0.11142530000000006,
-      "HIGH_margin_V_with_5pct_existing_pullups": 0.09102530000000003,
-      "required_steady_lower_VDD_for_LOW_V": 3.0023735,
-      "maximum_C_discharge_and_pullup_current_mA": 7.796808510638297,
-      "TLP_VOL_test_sink_current_mA": 13
+      "pullup_max_engineering_ohm": 10165.0,
+      "series_max_engineering_ohm": 477.755,
+      "review_min_rail_V": 3.05545,
+      "Vin_LOWmax_V": 0.600477755,
+      "MCP_VIL_limit_V": 0.61109,
+      "LOW_margin_V": 0.01061224500000002,
+      "Vin_HIGHmin_V": 2.536557245,
+      "MCP_VIH_required_V": 2.44436,
+      "HIGH_margin_V": 0.09219724499999993,
+      "required_minimum_VDD_for_LOW_V": 3.002388775,
+      "rail_headroom_above_LOW_requirement_V": 0.05306122499999999,
+      "scope": "Reuses existing TLP/MCP published test-condition limits; calculated after new supply engineering envelope. Positive static margins do not guarantee startup, hot-plug, EFT or surge performance."
     },
     "nominal_RC_time_constants_us": {
       "asserted_LOW": 47,
@@ -468,26 +480,26 @@
     },
     "historical_original_source": "TLP2363-power-budget.json",
     "historical_design_review": "TLP2363-design-review.md",
-    "lower_LDO_loss_includes_0p1mA_ground_current_allowance": true,
     "field_prefilter_report": "Input-RC-electrical-review.json",
-    "field_prefilter_startup_scope": "On power-up with an open contact, C charges throughLED/Rshunt and1.2k;220R is outside this open-contact charging branch. Raw activeLOW can occur. Rshunt provides defined charging after LED current becomes small. Simple initialLED bound11.11mA is below15mA derated absolute limit at105C. Button/action qualification remains required."
+    "field_prefilter_startup_scope": "On power-up with an open contact, C charges throughLED/Rshunt and1.2k;220R is outside this open-contact charging branch. Raw activeLOW can occur. Rshunt provides defined charging after LED current becomes small. Simple initialLED bound11.11mA is below15mA derated absolute limit at105C. Button/action qualification remains required.",
+    "historical_budget_note": "Original LDO/5V numbers are retained in historical_5v_LDO_budget and prior SHA-bound reports only."
   },
   "Lower3V3_current_review": {
     "rail": "+3V3 on FCPLCN-RLY-1616-1v0",
-    "source": "U8 TLV1117LV33DCYR from MOD_VBUS5V",
+    "source": "Lower.U2 R-78K3.3-0.5 from +12V_LOGIC; +3V3_DCDC through FB1 to +3V3",
     "actual_measured_current_ma": null,
     "full_typical_current_ma": null,
     "typical_current_scope": "A defensible complete typical sum at the actual3.3V/load/temperature cannot be derived from the published tables alone. TLP typical detector subtotal25.6/28.8mA is quoted at5V25C; MCP/TBD applicable typical entries are absent. No invented measured or guaranteed typical total.",
     "datasheet_IC_subtotal_ma_at_listed_max_test_conditions": 66.3,
-    "engineering_component_envelope_ma": 82.5,
+    "engineering_component_envelope_ma": 82.9,
     "engineering_allocation_ma": 100.0,
-    "reserve_over_component_envelope_ma": 17.5,
-    "envelope_scope": "82.5mA combines published component limits with explicitly labelled rail/tolerance and driver-current assumptions. It is not a guaranteed assembled-board all-temperature maximum.100mA is the approved supply allocation; verify the prototype.",
+    "reserve_over_component_envelope_ma": 17.099999999999994,
+    "envelope_scope": "82.9mA combines published component limits with labelled rail/resistor/driver assumptions;100mA is the approved allocation. Neither is a measured full-board or guaranteed all-temperature maximum.",
     "review_rail_V": [
-      3.135,
-      3.465
+      3.05545,
+      3.5395499999999998
     ],
-    "rail_scope": "Declared3.3V +/-5% review envelope; not a guaranteed all-temperature TLV1117LV accuracy specification.",
+    "rail_scope": "Engineering envelope:25C additive accuracy/line/load, stated temperature coefficient over65K,5mV bead DC drop at100mA, plus half the60mVp-p reference ripple in each direction. Coefficient/ripple are not guaranteed worst-case limits; trace drops, startup and transients remain unbounded by this estimate.",
     "temperature_scope_C": [
       -40,
       85
@@ -541,10 +553,10 @@
         "consumer": "16 external optocoupler RAW10k pull-ups",
         "quantity": 16,
         "nominal_all_LOW_zero_VOL_bound_ma": 5.28,
-        "initial_tolerance_only_all_LOW_bound_ma": 5.6,
-        "engineering_tol_plus_TCR_bound_ma": 5.637010676156583,
-        "calculation": "16*3.465V/[10k*(1-0.01-0.0065)], rounded up.0.0065 assumes100ppm/K across65K; generic resistor TCR is not separately specified in current CAD.",
-        "component_allocation_ma": 5.7,
+        "initial_tolerance_only_all_LOW_bound_ma": 5.637333333333332,
+        "engineering_tol_plus_TCR_bound_ma": 5.7582918149466185,
+        "calculation": "16*3.53955V/[10k*(1-0.01-0.0065)]; rounded up. Generic resistor100ppm/K across65K remains an engineering assumption.",
+        "component_allocation_ma": 5.8,
         "no_double_count": "Do not add16*50uA TLP OFF leakage on top of the all-LOW pull-up bound: it is another state of these same branches. Filtering-capacitor charge current flows through these same10k branches.",
         "source": "https://toshiba.semicon-storage.com/info/TLP2363_datasheet_en_20251218.pdf?did=67887&prodName=TLP2363"
       },
@@ -553,13 +565,13 @@
         "consumer": "16 external relay-drive10k pulldowns, sourced through MCP HIGH GPIO",
         "quantity": 16,
         "nominal_all_HIGH_zero_VOH_drop_bound_ma": 5.28,
-        "initial_tolerance_only_bound_ma": 5.6571428571428575,
+        "initial_tolerance_only_bound_ma": 5.694857142857142,
         "datasheet_TCR_ppm_per_K": 100,
         "datasheet_resistor_tolerance_pct": 2,
-        "engineering_rail_and_tol_plus_TCR_bound_ma": 5.694915254237287,
-        "component_allocation_ma": 5.7,
+        "engineering_rail_and_tol_plus_TCR_bound_ma": 5.817442218798151,
+        "component_allocation_ma": 5.9,
         "source": "https://www.bourns.com/data/global/pdfs/4600X.pdf",
-        "scope": "Symbol libsource4609X-101-103LF identifies bussed8x10k.2% initial tolerance and100ppm/K are from Bourns.65K TCR corner plus declared3V3+5% used; resistor ageing/PCB heating still need enclosure validation."
+        "scope": "Bourns2% initial tolerance and100ppm/K with65K allowance; new3.53955V engineering upper rail. Resistor ageing and PCB heating require validation."
       },
       {
         "refs": "U3,U4 input pins1..8",
@@ -578,9 +590,9 @@
         "consumer": "Lower-board4.7k internal I2C pull-ups",
         "quantity": 2,
         "nominal_both_LOW_zero_VOL_bound_ma": 1.4042553191489362,
-        "initial_tolerance_only_both_LOW_bound_ma": 1.4893617021276595,
-        "engineering_tol_plus_TCR_bound_ma": 1.499204967062921,
-        "component_allocation_ma": 1.5,
+        "initial_tolerance_only_both_LOW_bound_ma": 1.4992907801418438,
+        "engineering_tol_plus_TCR_bound_ma": 1.5314605890815476,
+        "component_allocation_ma": 1.6,
         "scope": "Only Lower R2/R3 source current belongs to this rail. Upper-board parallel pull-ups belong to Upper main3V3. Both lines LOW is a conservative simultaneous branch bound, not normal100%duty bus operation.100ppm/K for generic resistors is an engineering assumption."
       },
       {
@@ -607,7 +619,7 @@
         "refs": "R4 MCP_RESET_N pulldown10k and reset drive",
         "source": "Upper main3V3 through CPU GPIO/J44.5",
         "nominal_resistor_current_ma": 0.33,
-        "reason": "Physical location on Lower does not make it a Lower3V3 load. R10/R11 reset470R and reset capacitors do not create another DC3V3 branch. Main890mA budget already includes reset/control allowance."
+        "reason": "Physical location on Lower does not make it a Lower3V3 load. R10/R11 reset470R and reset capacitors do not create another DC3V3 branch. Main902mA budget already includes reset/control allowance."
       },
       {
         "refs": "PWR/NET/STATUS/ALARM LED header",
@@ -621,17 +633,7 @@
       "Only actual Lower I2C pull-ups are counted on Lower3V3; foreign rail pull-ups are not copied into this total.",
       "GPPU remains zero; do not add hypothetical internal pull-ups.",
       "Decoupling capacitors do not consume their charging current as a steady DC load; bypass/transition dynamics require measurement."
-    ],
-    "LDO": {
-      "part": "TLV1117LV33DCYR",
-      "output_allocation_ma": 100.0,
-      "ground_current_allowance_ma": 0.1,
-      "ground_current_scope": "TI table gives100uA maximum atIOUT0; used here as a small engineering input-current allowance at the working load, not a new full-load/all-temperature guarantee.",
-      "input_current_allocation_ma": 100.1,
-      "loss_W_nominal5V3p3V_at_component_envelope": 0.14075000000000004,
-      "loss_W_nominal5V3p3V_at100mA_allocation": 0.17050000000000004,
-      "loss_scope": "Includes5V*Iq allowance. Approximately0.17W at nominal rails, not a measured enclosure temperature."
-    }
+    ]
   },
   "Input_RC_prefilter": {
     "channels": 16,
@@ -763,5 +765,146 @@
       "max_shunt_current_ma_at_VF2V": 0.4298302170642596,
       "max_shunt_power_W_at_VF2V": 0.0008596604341285192
     }
+  },
+  "ibutton_panel": {
+    "connector": "Upper.J9",
+    "pins": {
+      "1": "LED-",
+      "2": "BUZZER-",
+      "3": "+12V_PANEL nominal"
+    },
+    "gpio": {
+      "LED": 43,
+      "BUZZER": 45
+    },
+    "active_level": "HIGH",
+    "common_ground": "MAIN GND internally; not brought to J9",
+    "bare_led_resistor_ohm": 1000,
+    "bare_led_resistor_power_w": 0.5,
+    "buzzer_current_allocation_ma": 100,
+    "led_current_allocation_ma": 8,
+    "main3v3_added_allocation_ma": 12,
+    "nominal_12v_panel_total_ma": 108,
+    "branch": "12V_LOGIC -> MF-NSMF020X-2 -> SS14 -> PANEL12; 22uF + 100nF + SMAJ15A to MAIN GND; ULN COM=PANEL12",
+    "filtered_logic_rail_at_full_budget_v": 10.47015271897302,
+    "buzzer_voltage_estimate_v": [
+      8.5,
+      9
+    ],
+    "gpio_strap_assumption": "Default eFuses for GPIO45; R74 10k pulls IB_BUZZ_BASE toGND, so GPIO45 sees R72+R74=10.68k when high-impedance. GPIO45 LOW selects3V3 VDD_SPI unless forced by eFuses. GPIO3 is NC.",
+    "prototype_qualification_required": true,
+    "socket_isolation": "iButton DATA/GND_ISO stays separate from LED and buzzer circuits.",
+    "nominal_system_voltage_v": 12,
+    "buzzer_voltage_estimate_scope": "Approximate voltage across the buzzer at full simultaneous design budget, including protected-rail drop, F2, D11 and U16 saturation; not a guaranteed minimum and not12V. Measure the actual selected buzzer and board at load/temperature.",
+    "GPIO43_boot_UART_note": "GPIO43 is ROM UART0 TX: LED may blink or remain on until application configures GPIO43 as GPIO output and drives the desired level. Do not use UART0 TX for runtime logging; use native USB console. External pull-down cannot override an actively driven UART pin.",
+    "buzzer_base_pulldown_ohm": 10000,
+    "gpio45_resistive_reset_path_to_ground_ohm": 10680
+  },
+  "historical_5v_LDO_budget": {
+    "status": "history, superseded by local supply split",
+    "common_5v": {
+      "source": "Lower.U2 R-78E5.0-1.0",
+      "input_net": "+12V_LOGIC",
+      "output_net": "MOD_VBUS",
+      "rated_current_ma": 1000,
+      "Lower.U8": "TLV1117LV33DCYR retained; no new tall regulator under Upper",
+      "lower_design_current_ma": 100.1,
+      "TMR_at_full_output_1w_typical_efficiency_pct": 76,
+      "TMR_at_full_output_typical_input_ma": 263.158,
+      "combined_full_load_design_estimate_ma": 363.258,
+      "TMR_no_load_input_typical_ma": 40,
+      "full_load_efficiency_must_not_be_applied_at_no_load": true,
+      "main_Upper_3v3_not_supplied_by_5v": true,
+      "RS485_design_current_removed_from_5v_ma": 201,
+      "RS485_Upper_3v3_not_supplied_by_5v": true,
+      "lower_design_current_before_FRAM_ma": 25,
+      "FRAM_U9_design_increment_ma": 0.3,
+      "nominal_current_reserve_ma_at_full_TMR_output": 636.742,
+      "FRAM_scope": "U9 FM24CL64B-GTR0.3mA maximum device-current allowance is included in the current100mA Lower3V3 allocation. Do not add it again. TMR full-load efficiency remains a typical engineering assumption.",
+      "lower_design_current_before_TLP2363_ma": 25.3,
+      "TLP2363_detector_supply_increment_ma": 64,
+      "TLP2363_scope": "16 detector supply allowances at4mA each are included in the itemized Lower3V3 component envelope, not added on top of100mA. External pull-ups, RN and driver input currents are counted separately once. New field RC capacitors are on12V and do not directly increase3V3 DC load.",
+      "lower3v3_output_allocation_ma": 100.0,
+      "lower_LDO_input_ground_current_allowance_ma": 0.1,
+      "lower3v3_component_envelope_ma": 82.5,
+      "lower3v3_review_report": "Input-RC-electrical-review.json",
+      "legacy_budget_fields_scope": "lower_design_current_before_FRAM_ma25 and lower_design_current_before_TLP2363_ma25.3 are historical allocations only. Current load is itemized in Lower3V3_current_review; these old blocks are not added again."
+    },
+    "lower_LDO": {
+      "part": "TLV1117LV33DCYR",
+      "output_allocation_ma": 100.0,
+      "ground_current_allowance_ma": 0.1,
+      "ground_current_scope": "TI table gives100uA maximum atIOUT0; used here as a small engineering input-current allowance at the working load, not a new full-load/all-temperature guarantee.",
+      "input_current_allocation_ma": 100.1,
+      "loss_W_nominal5V3p3V_at_component_envelope": 0.14075000000000004,
+      "loss_W_nominal5V3p3V_at100mA_allocation": 0.17050000000000004,
+      "loss_scope": "Includes5V*Iq allowance. Approximately0.17W at nominal rails, not a measured enclosure temperature."
+    }
+  },
+  "lower_3v3": {
+    "source": "Lower.U2 R-78K3.3-0.5",
+    "input_net": "+12V_LOGIC",
+    "raw_output_net": "+3V3_DCDC",
+    "output_net": "+3V3",
+    "rated_current_ma": 500,
+    "engineering_allocation_ma": 100,
+    "engineering_component_envelope_ma": 82.9,
+    "nominal_current_reserve_ma": 400,
+    "ferrite": {
+      "ref": "FB1",
+      "MPN": "BLM21PG221SN1D",
+      "DCR_max_ohm": 0.05,
+      "current_rating_ma": 2000,
+      "DC_drop_V_at100mA": 0.005000000000000001,
+      "power_W_at100mA": 0.0005000000000000001,
+      "DC_loss_already_inside_U2_raw_output_power": true,
+      "scope": "220ohm is its100MHz impedance, not DC resistance. Attenuation at converter ripple frequency or cable disturbances is not inferred from that number."
+    },
+    "accuracy_max_pct_at25C": 2.7,
+    "line_regulation_max_pct": 0.3,
+    "load_regulation_max_pct_0_to100percent": 2.7,
+    "additive_static_corner_at25C_V": [
+      3.1119,
+      3.4880999999999998
+    ],
+    "filtered_min_static_at25C_V": 3.1069,
+    "reference_ripple_pp_V": 0.06,
+    "temperature_coefficient_pct_per_K": 0.01,
+    "temperature_delta_K_assumption": 65,
+    "engineering_rail_V": [
+      3.05545,
+      3.5395499999999998
+    ],
+    "logic_review": {
+      "GPPUA_GPPUB": 0,
+      "TLP_VOLmax_at_listed_test_point_V": 0.6,
+      "TLP_OFF_leakage_at_listed_limit_uA": 50,
+      "MCP_input_leakage_uA": 1,
+      "pullup_max_engineering_ohm": 10165.0,
+      "series_max_engineering_ohm": 477.755,
+      "review_min_rail_V": 3.05545,
+      "Vin_LOWmax_V": 0.600477755,
+      "MCP_VIL_limit_V": 0.61109,
+      "LOW_margin_V": 0.01061224500000002,
+      "Vin_HIGHmin_V": 2.536557245,
+      "MCP_VIH_required_V": 2.44436,
+      "HIGH_margin_V": 0.09219724499999993,
+      "required_minimum_VDD_for_LOW_V": 3.002388775,
+      "rail_headroom_above_LOW_requirement_V": 0.05306122499999999,
+      "scope": "Reuses existing TLP/MCP published test-condition limits; calculated after new supply engineering envelope. Positive static margins do not guarantee startup, hot-plug, EFT or surge performance."
+    },
+    "efficiency_assumption_pct": 85,
+    "output_power_W_at100mA": 0.33,
+    "dissipation_W_at100mA_estimate": 0.05823529411764705,
+    "scope": "Engineering envelope:25C additive accuracy/line/load, stated temperature coefficient over65K,5mV bead DC drop at100mA, plus half the60mVp-p reference ripple in each direction. Coefficient/ripple are not guaranteed worst-case limits; trace drops, startup and transients remain unbounded by this estimate.",
+    "removed_LDO_U8": true,
+    "filter_caps": "C3/C6 raw side; C7 and IC100nF bypass filtered side",
+    "prototype_checks": [
+      "U2 input/output startup and load steps",
+      "Local3V3 at the furthest TLP/MCP under all inputs and relays",
+      "Temperature and converter ripple in enclosure",
+      "Independent rail sequencing/I2C partial-power behaviour"
+    ],
+    "review_report": "Power-split-design-review.json"
   }
 }

@@ -1,0 +1,2342 @@
+{
+  "source": "/Users/sergey/Documents/ChatGPT/\u0423\u043c\u043d\u044b\u0439\u0414\u043e\u043c/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+  "source_sha256": "5ba899b9cd5b072e638b1ceb481c4a628a6e8daf56c6ec7268fc0e4c67ee2efa",
+  "method": "Saved native 0.5um-inscribed filled copper polygons; plated GND pad/via continuity across both layers. No refill or CAD mutation. Centerline support and full strip support are separate metrics. Coplanar sampled straight-section rays at 0.025 mm.",
+  "limitations": [
+    "Geometry only, not measured or fabricated impedance, EMC qualification or USB compliance.",
+    "Saved filled zones must be freshly refilled by final native validation before this audit.",
+    "Coupled 0.4 mm main pair excludes connector PTH duplicate-pin crosslinks and ESD branches; CPU launch is separately quantified.",
+    "Nominal dielectric assumption requires confirmation of factory finished stackup: core 1.51 mm, copper 0.035 mm, mask 0.01 mm, FR4 er 4.2."
+  ],
+  "ground_reference_anchor": "U1 ground pads; a port-only island is not treated as grounded",
+  "ground_components": [
+    {
+      "anchored": true,
+      "records": 603,
+      "pads": [
+        {
+          "uuid": "ce7f9368-b10f-4754-87a6-58c4156accae",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J1",
+          "pin": "1",
+          "xy_mm": [
+            55.0,
+            84.3
+          ]
+        },
+        {
+          "uuid": "d24142a3-8b51-4e68-8d92-30904037fcac",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J1",
+          "pin": "2",
+          "xy_mm": [
+            57.54,
+            84.3
+          ]
+        },
+        {
+          "uuid": "0e12c4b2-611e-4509-a7e9-4d79fe663fb4",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U4",
+          "pin": "1",
+          "xy_mm": [
+            119.5,
+            75.2
+          ]
+        },
+        {
+          "uuid": "5d9f1ac5-4c87-45ef-9cfa-33cee57e4279",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C38",
+          "pin": "2",
+          "xy_mm": [
+            107.3,
+            105.725
+          ]
+        },
+        {
+          "uuid": "12c96e7a-d5a5-4a6d-a3ad-d22740ab930f",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J6",
+          "pin": "1",
+          "xy_mm": [
+            129.0,
+            82.0
+          ]
+        },
+        {
+          "uuid": "9b1783ad-a53f-4dac-a372-73b95fa63752",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J6",
+          "pin": "2",
+          "xy_mm": [
+            129.0,
+            79.46
+          ]
+        },
+        {
+          "uuid": "f35d728e-0a2f-4daa-be54-3dede2e4c498",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J6",
+          "pin": "6",
+          "xy_mm": [
+            134.08,
+            79.46
+          ]
+        },
+        {
+          "uuid": "3d5bed3f-7ae7-4d70-a1f4-0b2a7b3baae9",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U7",
+          "pin": "4",
+          "xy_mm": [
+            106.025,
+            103.405
+          ]
+        },
+        {
+          "uuid": "17315aa7-fce5-4e28-99ce-1863a6f0a2c1",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "1",
+          "xy_mm": [
+            77.25,
+            77.39
+          ]
+        },
+        {
+          "uuid": "87853e65-9ce9-4c06-89e9-2c7880215f0c",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "40",
+          "xy_mm": [
+            94.75,
+            77.39
+          ]
+        },
+        {
+          "uuid": "c580cf90-18d7-4b1d-bfab-586cb7860f26",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            83.1,
+            84.41
+          ]
+        },
+        {
+          "uuid": "e5ecd160-3bcc-4c7e-b929-029228626312",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            83.1,
+            85.81
+          ]
+        },
+        {
+          "uuid": "2366b4f4-026c-4ef4-83d9-0e591903ab54",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            83.8,
+            83.71
+          ]
+        },
+        {
+          "uuid": "9c7884ce-1c9f-4c4e-85cc-dd58a27968c3",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            83.8,
+            85.11
+          ]
+        },
+        {
+          "uuid": "0b5f0438-fc70-4410-8bdd-f21ab0cb6d3e",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            83.8,
+            86.51
+          ]
+        },
+        {
+          "uuid": "5604dbb6-42af-41a0-b286-2892b2554404",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            84.5,
+            84.41
+          ]
+        },
+        {
+          "uuid": "aaf592a3-61a4-4a75-8b09-2a63c9b9495f",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            84.5,
+            85.11
+          ]
+        },
+        {
+          "uuid": "51f4ba44-f26e-464e-869e-17af7a30314e",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            84.5,
+            85.81
+          ]
+        },
+        {
+          "uuid": "c2c0c756-58d0-433a-b14c-74242f4b8504",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            85.2,
+            83.71
+          ]
+        },
+        {
+          "uuid": "601c75fa-b919-41c1-a198-2caef576b572",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            85.2,
+            85.11
+          ]
+        },
+        {
+          "uuid": "b16e0783-a4e1-4a89-8af4-e2c0808aa6f7",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            85.2,
+            86.51
+          ]
+        },
+        {
+          "uuid": "99887a92-bff9-49cb-8140-e2202a6b5f9b",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            85.9,
+            84.41
+          ]
+        },
+        {
+          "uuid": "e77f3a1b-b2ba-4704-87e6-7caa5719ae01",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U1",
+          "pin": "41",
+          "xy_mm": [
+            85.9,
+            85.81
+          ]
+        },
+        {
+          "uuid": "6649c249-a06b-49d8-af1f-fa6919418d11",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U2",
+          "pin": "1.1",
+          "xy_mm": [
+            67.76,
+            111.4
+          ]
+        },
+        {
+          "uuid": "16fa34a7-5b27-4d2f-a16d-2dc740a6591f",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U2",
+          "pin": "1.2",
+          "xy_mm": [
+            67.76,
+            108.86
+          ]
+        },
+        {
+          "uuid": "90291cfe-0e81-4984-a657-2009a80e99cf",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U2",
+          "pin": "2.1",
+          "xy_mm": [
+            47.44,
+            111.4
+          ]
+        },
+        {
+          "uuid": "b888c91a-3d9b-4947-a7a6-2990c2f885c9",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C10",
+          "pin": "2",
+          "xy_mm": [
+            53.85,
+            101.2
+          ]
+        },
+        {
+          "uuid": "a54c8d59-bbd3-4367-9af1-7963678037f8",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "A1",
+          "xy_mm": [
+            71.65,
+            99.4
+          ]
+        },
+        {
+          "uuid": "ad386953-b7c0-448b-8e38-d41c7ab84e62",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "A12",
+          "xy_mm": [
+            79.35,
+            99.4
+          ]
+        },
+        {
+          "uuid": "d1c13ea8-8408-4d58-8332-78ba41203ba8",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "B1",
+          "xy_mm": [
+            79.35,
+            101.0
+          ]
+        },
+        {
+          "uuid": "8a6e9675-d9a1-4b24-a8af-3f3941204939",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "B12",
+          "xy_mm": [
+            71.65,
+            101.0
+          ]
+        },
+        {
+          "uuid": "d559bb3c-0a1e-4524-80e1-3ffe8b0e4969",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "SH",
+          "xy_mm": [
+            73.0,
+            98.0
+          ]
+        },
+        {
+          "uuid": "32886c4b-339d-484e-8de8-e03316c5d7be",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "SH",
+          "xy_mm": [
+            73.0,
+            102.4
+          ]
+        },
+        {
+          "uuid": "c58cd641-2e38-4f64-9350-1c56d79c0fc6",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "SH",
+          "xy_mm": [
+            78.0,
+            98.0
+          ]
+        },
+        {
+          "uuid": "54b9b996-e72f-41b2-8111-2e335fca85d6",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J2",
+          "pin": "SH",
+          "xy_mm": [
+            78.0,
+            102.4
+          ]
+        },
+        {
+          "uuid": "27c55029-e4dc-4113-9b46-3dded627db12",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U3",
+          "pin": "2",
+          "xy_mm": [
+            68.86,
+            73.8
+          ]
+        },
+        {
+          "uuid": "74fecc4c-b916-4b72-b38a-eed6d35d8a46",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U14",
+          "pin": "1",
+          "xy_mm": [
+            60.025,
+            81.79
+          ]
+        },
+        {
+          "uuid": "30a8e49d-b94a-45a1-8de9-a3a9a794b82e",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U14",
+          "pin": "5",
+          "xy_mm": [
+            60.025,
+            86.87
+          ]
+        },
+        {
+          "uuid": "24095916-9d9d-4c2c-bd86-eb9eb5f3f1bf",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U14",
+          "pin": "7",
+          "xy_mm": [
+            60.025,
+            89.41
+          ]
+        },
+        {
+          "uuid": "099b815f-6a93-4d94-96b1-b87be10587ea",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U14",
+          "pin": "9",
+          "xy_mm": [
+            64.975,
+            88.14
+          ]
+        },
+        {
+          "uuid": "ec246583-eed5-4ae4-913c-6b572f3a5244",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U14",
+          "pin": "12",
+          "xy_mm": [
+            64.975,
+            84.33
+          ]
+        },
+        {
+          "uuid": "998b52bc-0add-43bd-a5d3-28d8f150bf1a",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "SW2",
+          "pin": "2",
+          "xy_mm": [
+            97.725,
+            101.2
+          ]
+        },
+        {
+          "uuid": "24fbfe05-340f-46bc-bcbd-304b845858ac",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U8",
+          "pin": "4",
+          "xy_mm": [
+            106.025,
+            91.805
+          ]
+        },
+        {
+          "uuid": "f844ef8c-3c1f-4ad2-b88d-95f2f098b733",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C1",
+          "pin": "2",
+          "xy_mm": [
+            61.075,
+            79.3
+          ]
+        },
+        {
+          "uuid": "3facca84-d60a-4ed7-be07-f28fda6c1813",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C8",
+          "pin": "2",
+          "xy_mm": [
+            63.175,
+            107.65
+          ]
+        },
+        {
+          "uuid": "4933a2e3-3810-4781-808e-7c8591b7fc52",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U12",
+          "pin": "2",
+          "xy_mm": [
+            98.74,
+            111.0
+          ]
+        },
+        {
+          "uuid": "45da3d2b-670d-481a-86f5-7781ec7f3de4",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U13",
+          "pin": "2",
+          "xy_mm": [
+            68.76,
+            88.975
+          ]
+        },
+        {
+          "uuid": "4ab47f24-b042-428d-b8ea-ea6b607ff5d7",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U13",
+          "pin": "4",
+          "xy_mm": [
+            71.3,
+            88.975
+          ]
+        },
+        {
+          "uuid": "4d18b0d1-a2c3-4608-be97-544d751d8992",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U13",
+          "pin": "5",
+          "xy_mm": [
+            72.57,
+            88.975
+          ]
+        },
+        {
+          "uuid": "d0227ae8-7c83-4f57-b4aa-4f3acd0c7f7f",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U13",
+          "pin": "7",
+          "xy_mm": [
+            75.11,
+            88.975
+          ]
+        },
+        {
+          "uuid": "ec72fef3-b996-4b93-842c-164ebf0c55ce",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U13",
+          "pin": "10",
+          "xy_mm": [
+            72.57,
+            84.025
+          ]
+        },
+        {
+          "uuid": "a155f512-a4c0-44da-8c06-2e8daff53e95",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U13",
+          "pin": "13",
+          "xy_mm": [
+            68.76,
+            84.025
+          ]
+        },
+        {
+          "uuid": "b697e848-843a-4c13-a387-74be94d21b2d",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C9",
+          "pin": "2",
+          "xy_mm": [
+            53.85,
+            103.8
+          ]
+        },
+        {
+          "uuid": "995bd920-bc06-42df-96c1-466922dc0143",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "D4",
+          "pin": "5",
+          "xy_mm": [
+            55.875,
+            80.305
+          ]
+        },
+        {
+          "uuid": "56c24f9d-1762-46c4-b68a-dd3fd1adde1a",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "D4",
+          "pin": "8",
+          "xy_mm": [
+            55.875,
+            76.495
+          ]
+        },
+        {
+          "uuid": "ccd5400e-5fad-4e0c-bf2d-699caa980e1e",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U6",
+          "pin": "4",
+          "xy_mm": [
+            106.025,
+            86.005
+          ]
+        },
+        {
+          "uuid": "d914385a-7060-4b65-a0fe-24cb5e81408d",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R3",
+          "pin": "2",
+          "xy_mm": [
+            56.0125,
+            97.6
+          ]
+        },
+        {
+          "uuid": "cf1aa2b2-c467-4f5e-b376-aac8a58e885a",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "SW1",
+          "pin": "2",
+          "xy_mm": [
+            88.225,
+            101.6
+          ]
+        },
+        {
+          "uuid": "fa6ef95d-f165-4b84-b052-63f4fbe45cb9",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U9",
+          "pin": "4",
+          "xy_mm": [
+            106.025,
+            97.605
+          ]
+        },
+        {
+          "uuid": "b196ca2b-aa01-4be9-a952-224ab69b8bef",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "J7",
+          "pin": "5",
+          "xy_mm": [
+            60.16,
+            73.0
+          ]
+        },
+        {
+          "uuid": "cc2b6f71-bc47-4b78-b40e-62d73b05f7a2",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C45",
+          "pin": "2",
+          "xy_mm": [
+            107.3,
+            112.35
+          ]
+        },
+        {
+          "uuid": "98e71abe-b501-47be-921d-f837f88e5f83",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C15",
+          "pin": "2",
+          "xy_mm": [
+            101.75,
+            85.2
+          ]
+        },
+        {
+          "uuid": "4dbabd22-50ee-4a46-a944-aa25cb595145",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U11",
+          "pin": "1",
+          "xy_mm": [
+            105.85,
+            112.445
+          ]
+        },
+        {
+          "uuid": "c6fd43fd-e358-4fcc-a02e-300e26714351",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U11",
+          "pin": "8",
+          "xy_mm": [
+            105.85,
+            103.555
+          ]
+        },
+        {
+          "uuid": "c2235196-dd23-438a-b580-eb91ce8e63c9",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C46",
+          "pin": "2",
+          "xy_mm": [
+            65.95,
+            94.8
+          ]
+        },
+        {
+          "uuid": "cbb4429a-2f2f-4cad-9e47-bc7fa5aaeb82",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C26",
+          "pin": "2",
+          "xy_mm": [
+            102.75,
+            94.6
+          ]
+        },
+        {
+          "uuid": "9e55858f-790b-4233-925b-ce3f1e8ce542",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C34",
+          "pin": "2",
+          "xy_mm": [
+            52.0,
+            99.75
+          ]
+        },
+        {
+          "uuid": "a25f70ca-5a2e-424f-b920-8414f1c83a61",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C27",
+          "pin": "2",
+          "xy_mm": [
+            102.75,
+            96.8
+          ]
+        },
+        {
+          "uuid": "08df94df-7292-4193-95c7-629c66132467",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R51",
+          "pin": "2",
+          "xy_mm": [
+            88.75,
+            95.9125
+          ]
+        },
+        {
+          "uuid": "86234a0c-0d67-4c9e-b32f-015d5b798815",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C6",
+          "pin": "2",
+          "xy_mm": [
+            79.05,
+            76.2
+          ]
+        },
+        {
+          "uuid": "bb1d4607-e5cc-4434-bbc5-c2c0ad21dd9c",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R14",
+          "pin": "2",
+          "xy_mm": [
+            101.2125,
+            103.4
+          ]
+        },
+        {
+          "uuid": "a61a0312-b005-447e-afce-d19b4acd9300",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C18",
+          "pin": "2",
+          "xy_mm": [
+            102.75,
+            99.9
+          ]
+        },
+        {
+          "uuid": "aca3e524-40ba-49ed-8e4a-be5e8a547226",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C14",
+          "pin": "2",
+          "xy_mm": [
+            102.05,
+            83.0
+          ]
+        },
+        {
+          "uuid": "c0b6c71c-5542-4800-b98f-ac66a0e9262b",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R10",
+          "pin": "2",
+          "xy_mm": [
+            80.0,
+            94.7125
+          ]
+        },
+        {
+          "uuid": "2988a507-6052-4227-ace6-5f8f0c25f6e2",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C23",
+          "pin": "2",
+          "xy_mm": [
+            102.75,
+            91.0
+          ]
+        },
+        {
+          "uuid": "af0ad283-f0b0-4c8b-aa03-45dc1fed5c9c",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "BT1",
+          "pin": "2",
+          "xy_mm": [
+            89.8,
+            74.7
+          ]
+        },
+        {
+          "uuid": "b02d066a-1d06-450d-ae96-bb9a4c668b5d",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C22",
+          "pin": "2",
+          "xy_mm": [
+            104.65,
+            88.5
+          ]
+        },
+        {
+          "uuid": "893031e9-7d4b-4908-80ba-d326383cee53",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C39",
+          "pin": "2",
+          "xy_mm": [
+            103.6,
+            111.85
+          ]
+        },
+        {
+          "uuid": "056d571a-44d3-4b24-91a4-9b9a654be285",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C53",
+          "pin": "2",
+          "xy_mm": [
+            69.2,
+            113.45
+          ]
+        },
+        {
+          "uuid": "4a9abc7c-a0ac-4bb1-a936-499ef21665ab",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C40",
+          "pin": "2",
+          "xy_mm": [
+            103.7,
+            104.45
+          ]
+        },
+        {
+          "uuid": "5af754de-8946-447f-ac48-912986d5c4ac",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R74",
+          "pin": "2",
+          "xy_mm": [
+            49.5,
+            104.0875
+          ]
+        },
+        {
+          "uuid": "535e3e12-6ae2-4ab8-a6e5-22ebb1bdb28f",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U10",
+          "pin": "5",
+          "xy_mm": [
+            59.475,
+            91.945
+          ]
+        },
+        {
+          "uuid": "d36ca731-6900-462f-9dfa-39aa52f47125",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R55",
+          "pin": "2",
+          "xy_mm": [
+            95.3875,
+            103.4
+          ]
+        },
+        {
+          "uuid": "f0cec32f-3f48-45d4-beb5-96b9ed1f2912",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C19",
+          "pin": "2",
+          "xy_mm": [
+            97.25,
+            99.3
+          ]
+        },
+        {
+          "uuid": "186c668f-11a0-4928-a961-ec1e29eba088",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C4",
+          "pin": "2",
+          "xy_mm": [
+            71.1,
+            83.975
+          ]
+        },
+        {
+          "uuid": "db5d191a-8fb6-4afd-b4a5-7022566e5362",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C33",
+          "pin": "2",
+          "xy_mm": [
+            74.5,
+            76.2
+          ]
+        },
+        {
+          "uuid": "a88a2034-1043-4e8b-b78c-b2baff90bce9",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R73",
+          "pin": "2",
+          "xy_mm": [
+            61.3125,
+            118.1
+          ]
+        },
+        {
+          "uuid": "1e779ae4-3ba3-499a-ba25-8a9564f39e8a",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "D1",
+          "pin": "1",
+          "xy_mm": [
+            74.905,
+            109.375
+          ]
+        },
+        {
+          "uuid": "cc0b315a-9dc3-4b3e-bf16-8df6b89caf54",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "D1",
+          "pin": "4",
+          "xy_mm": [
+            71.095,
+            109.375
+          ]
+        },
+        {
+          "uuid": "753794c9-7c4f-43ac-977d-fafb0bf27ec6",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "D1",
+          "pin": "5",
+          "xy_mm": [
+            71.095,
+            104.425
+          ]
+        },
+        {
+          "uuid": "3ae6f888-f2da-48ae-9d03-1f9cff577e83",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "D1",
+          "pin": "8",
+          "xy_mm": [
+            74.905,
+            104.425
+          ]
+        },
+        {
+          "uuid": "f9512076-efbb-467b-b542-195d096fb1b9",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C7",
+          "pin": "2",
+          "xy_mm": [
+            80.95,
+            81.0
+          ]
+        },
+        {
+          "uuid": "2e4c19ed-7f9e-4f59-8936-c2a163d837c1",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "D12",
+          "pin": "2",
+          "xy_mm": [
+            65.25,
+            110.2
+          ]
+        },
+        {
+          "uuid": "6bc278e9-09a3-4c7e-95a9-892c48c0f921",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C48",
+          "pin": "2",
+          "xy_mm": [
+            106.5,
+            89.7
+          ]
+        },
+        {
+          "uuid": "03cbf75b-3512-4268-88ee-8ba83edbf5b9",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "R9",
+          "pin": "2",
+          "xy_mm": [
+            81.4125,
+            97.5
+          ]
+        },
+        {
+          "uuid": "66b30979-af11-4e96-8bb1-64f6dc2e2ed3",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C11",
+          "pin": "2",
+          "xy_mm": [
+            116.2,
+            74.825
+          ]
+        },
+        {
+          "uuid": "872ee25c-bcc1-4baf-b152-681330a43517",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C37",
+          "pin": "2",
+          "xy_mm": [
+            98.2,
+            105.525
+          ]
+        },
+        {
+          "uuid": "8ac6f800-d68e-42a8-9396-abc6b900e40a",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U16",
+          "pin": "1",
+          "xy_mm": [
+            53.325,
+            114.545
+          ]
+        },
+        {
+          "uuid": "880d29f5-6253-4e0e-b6c1-c7a006fefbc7",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U16",
+          "pin": "2",
+          "xy_mm": [
+            53.325,
+            113.275
+          ]
+        },
+        {
+          "uuid": "a31e42cb-875f-4629-a988-e17aac2409c5",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U16",
+          "pin": "3",
+          "xy_mm": [
+            53.325,
+            112.005
+          ]
+        },
+        {
+          "uuid": "b13c5202-ec28-45cc-ba63-bc851a417048",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U16",
+          "pin": "4",
+          "xy_mm": [
+            53.325,
+            110.735
+          ]
+        },
+        {
+          "uuid": "561f20c7-213b-4089-b548-f1613d98cc16",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U16",
+          "pin": "5",
+          "xy_mm": [
+            53.325,
+            109.465
+          ]
+        },
+        {
+          "uuid": "8243b26a-491e-443f-9793-df41734ffbd2",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U16",
+          "pin": "8",
+          "xy_mm": [
+            53.325,
+            105.655
+          ]
+        },
+        {
+          "uuid": "77cfbeda-b799-4eb3-9518-3712e2f550a1",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "U15",
+          "pin": "4",
+          "xy_mm": [
+            106.025,
+            82.195
+          ]
+        },
+        {
+          "uuid": "cce48bcb-f4df-4961-85d5-9aa15922f970",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C36",
+          "pin": "2",
+          "xy_mm": [
+            57.725,
+            98.7
+          ]
+        },
+        {
+          "uuid": "498f5c63-75e7-417d-b1a0-4c573289eaec",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C5",
+          "pin": "2",
+          "xy_mm": [
+            81.275,
+            78.7
+          ]
+        },
+        {
+          "uuid": "aa368308-4ddc-4e09-bab2-3645e9bc27bf",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C49",
+          "pin": "2",
+          "xy_mm": [
+            105.45,
+            80.25
+          ]
+        },
+        {
+          "uuid": "f31550b9-7d3a-446f-b1b3-16d9754ecd22",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C52",
+          "pin": "2",
+          "xy_mm": [
+            62.0,
+            113.025
+          ]
+        },
+        {
+          "uuid": "0fead750-c9a7-4fba-b6c3-3dd619bad065",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C47",
+          "pin": "2",
+          "xy_mm": [
+            63.45,
+            88.0
+          ]
+        },
+        {
+          "uuid": "50352fb3-1651-4af4-8df9-5c0b6cb0e981",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C3",
+          "pin": "2",
+          "xy_mm": [
+            73.5,
+            83.975
+          ]
+        },
+        {
+          "uuid": "8759b54f-1afe-402c-a5ba-74086909b651",
+          "kind": "PAD",
+          "net": "/GND",
+          "ref": "C35",
+          "pin": "2",
+          "xy_mm": [
+            61.75,
+            91.315
+          ]
+        }
+      ],
+      "area_mm2_by_layer": {
+        "F.Cu": 269.4881554898654,
+        "B.Cu": 1415.8058026380277
+      }
+    }
+  ],
+  "ground_components_count": 1,
+  "unanchored_ground_components": 0,
+  "sections": {
+    "main_0p4_pair": {
+      "track_count": 13,
+      "length_mm": 10.011143571373747,
+      "opposite_connected_ground_centerline_covered_mm": 8.73681927338646,
+      "opposite_connected_ground_centerline_covered_percent": 87.27094173705451,
+      "opposite_connected_ground_body_covered_percent": 85.3701584827202,
+      "opposite_floating_ground_overlap_mm2": 0.0,
+      "minimum_same_layer_ground_gap_mm": 0.20050000000000523,
+      "segments": [
+        {
+          "uuid": "2c4e281c-6bac-4a88-b634-14f99935b93e",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.7875,
+            97.380914
+          ],
+          "end_mm": [
+            75.7875,
+            98.65
+          ],
+          "width_mm": 0.4,
+          "length_mm": 1.2690860000000015,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0004960959476157604,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "36242db6-3b20-4fd6-9099-116bf1e98ab9",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.6875,
+            96.280914
+          ],
+          "end_mm": [
+            75.7875,
+            97.380914
+          ],
+          "width_mm": 0.4,
+          "length_mm": 1.5556349186104066,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "65a459bf-c6f0-43d0-9e9c-771aa963d508",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.7875,
+            98.65
+          ],
+          "end_mm": [
+            76.05,
+            98.9125
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.3712310601229314,
+          "opposite_ground_centerline_uncovered_mm": 0.14966217518605548,
+          "max_uncovered_piece_in_segment_mm": 0.1496621751860555,
+          "opposite_ground_body_uncovered_mm2": 0.11368475377097331,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "8f486c95-03c7-4b6e-97df-17f0bf76ae5d",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.6875,
+            95.925
+          ],
+          "end_mm": [
+            74.6875,
+            96.280914
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.3559139999999985,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "c5f9fa55-a01b-42f4-91f2-1b72eae1b38b",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            76.05,
+            98.9125
+          ],
+          "end_mm": [
+            76.05,
+            99.4
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.48750000000001137,
+          "opposite_ground_centerline_uncovered_mm": 0.48750000000001137,
+          "max_uncovered_piece_in_segment_mm": 0.48750000000001137,
+          "opposite_ground_body_uncovered_mm2": 0.2979100830558654,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "eb572083-2c08-401a-a8e2-9358bbf1eeac",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.3,
+            95.3125
+          ],
+          "end_mm": [
+            74.6875,
+            95.925
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.8662058069535167,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "1aa874ab-1e06-434a-9589-20ef92ba74d2",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.1125,
+            95.925
+          ],
+          "end_mm": [
+            74.1125,
+            96.519086
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.5940860000000043,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "742db87a-6e93-4871-b038-1ae37768b7aa",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            73.5,
+            95.3125
+          ],
+          "end_mm": [
+            74.1125,
+            95.925
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.8662058069535167,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "a464e34b-e42e-4348-90a4-7047b004ce1c",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            73.3,
+            95.3125
+          ],
+          "end_mm": [
+            73.5,
+            95.3125
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.20000000000000284,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "b0d2c4ff-6e2d-49f9-8c2a-05315610560a",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.95,
+            98.9125
+          ],
+          "end_mm": [
+            74.95,
+            99.4
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.48750000000001137,
+          "opposite_ground_centerline_uncovered_mm": 0.48750000000001137,
+          "max_uncovered_piece_in_segment_mm": 0.48750000000001137,
+          "opposite_ground_body_uncovered_mm2": 0.2979100830558654,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "c64bbabd-8cfb-47b2-9a57-4c7f4975a7ab",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.1125,
+            96.519086
+          ],
+          "end_mm": [
+            75.2125,
+            97.619086
+          ],
+          "width_mm": 0.4,
+          "length_mm": 1.5556349186104066,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "cee4019c-5137-49bb-95a1-4a317adeeea1",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.2125,
+            97.619086
+          ],
+          "end_mm": [
+            75.2125,
+            98.65
+          ],
+          "width_mm": 0.4,
+          "length_mm": 1.0309140000000099,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0004960814767577268,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "e7c83509-dfc6-4d76-a999-98eb7fbbac68",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.2125,
+            98.65
+          ],
+          "end_mm": [
+            74.95,
+            98.9125
+          ],
+          "width_mm": 0.4,
+          "length_mm": 0.3712310601229314,
+          "opposite_ground_centerline_uncovered_mm": 0.14966212280120933,
+          "max_uncovered_piece_in_segment_mm": 0.14966212280120936,
+          "opposite_ground_body_uncovered_mm2": 0.11368484684418935,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        }
+      ]
+    },
+    "CPU_launch": {
+      "track_count": 9,
+      "length_mm": 10.339214062350102,
+      "opposite_connected_ground_centerline_covered_mm": 10.339214062350102,
+      "opposite_connected_ground_centerline_covered_percent": 100.0,
+      "opposite_connected_ground_body_covered_percent": 100.0,
+      "opposite_floating_ground_overlap_mm2": 0.0,
+      "minimum_same_layer_ground_gap_mm": 0.20049999999999102,
+      "segments": [
+        {
+          "uuid": "0914106c-2ae0-4200-948e-b777d79e9464",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            77.25,
+            92.63
+          ],
+          "end_mm": [
+            76.2,
+            92.63
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.0499999999999972,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "18c5bff4-3a8c-49a9-8d76-0ebef013a879",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.52,
+            91.707342
+          ],
+          "end_mm": [
+            74.52,
+            92.8
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.0926580000000001,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "4c49a01b-f6bc-488f-b663-acd43082149b",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.2075,
+            93.4875
+          ],
+          "end_mm": [
+            75.3,
+            93.4875
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.09250000000000114,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "4fa0f50d-3610-49a3-9e72-a1b7e3f8aee5",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            75.277342,
+            91.707342
+          ],
+          "end_mm": [
+            74.52,
+            91.707342
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.7573420000000084,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "67c76024-8727-45b6-a58f-ed12fc22293d",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.52,
+            92.8
+          ],
+          "end_mm": [
+            75.2075,
+            93.4875
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.9722718241315028,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "e609ac35-12e4-4581-8cb9-00c8f87d1e57",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            76.2,
+            92.63
+          ],
+          "end_mm": [
+            75.277342,
+            91.707342
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.3048354570320329,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "2b1e5e4f-d108-43c6-afef-5a672816a8db",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            76.75,
+            94.4
+          ],
+          "end_mm": [
+            73.3,
+            94.4
+          ],
+          "width_mm": 0.22,
+          "length_mm": 3.450000000000003,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "418f90ac-b5a2-44c0-bcd5-833e2c59dec4",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            77.25,
+            93.9
+          ],
+          "end_mm": [
+            76.75,
+            94.4
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.7071067811865476,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "c7655d37-7483-49c0-8b9d-1b2864ee831d",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP_CPU",
+          "layer": "F.Cu",
+          "start_mm": [
+            73.3,
+            94.4
+          ],
+          "end_mm": [
+            73.3,
+            93.4875
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.9125000000000085,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        }
+      ]
+    },
+    "connector_crosslinks_and_ESD_stubs": {
+      "track_count": 17,
+      "length_mm": 18.93056528654848,
+      "opposite_connected_ground_centerline_covered_mm": 3.7300399533896718,
+      "opposite_connected_ground_centerline_covered_percent": 19.70379593492716,
+      "opposite_connected_ground_body_covered_percent": 18.64102131029306,
+      "opposite_floating_ground_overlap_mm2": 0.0,
+      "minimum_same_layer_ground_gap_mm": 0.18999999999999773,
+      "segments": [
+        {
+          "uuid": "40dfbb92-115a-49d0-89e6-09430fc44c1b",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.95,
+            101.0
+          ],
+          "end_mm": [
+            74.15,
+            100.2
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.131370849898472,
+          "opposite_ground_centerline_uncovered_mm": 1.131370849898472,
+          "max_uncovered_piece_in_segment_mm": 1.131370849898472,
+          "opposite_ground_body_uncovered_mm2": 0.2867655771639973,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "42a721b6-d401-4358-9c38-a8f943f782f7",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.15,
+            100.2
+          ],
+          "end_mm": [
+            70.9,
+            100.2
+          ],
+          "width_mm": 0.22,
+          "length_mm": 3.25,
+          "opposite_ground_centerline_uncovered_mm": 1.7505000000000024,
+          "max_uncovered_piece_in_segment_mm": 1.7505000000000024,
+          "opposite_ground_body_uncovered_mm2": 0.40404152379499725,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "5e1e992d-0707-4ef7-a8f5-4af5c1746119",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            70.9,
+            102.0
+          ],
+          "end_mm": [
+            71.8,
+            102.9
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.2727922061357835,
+          "opposite_ground_centerline_uncovered_mm": 1.0222522527461133,
+          "max_uncovered_piece_in_segment_mm": 1.0222522527461133,
+          "opposite_ground_body_uncovered_mm2": 0.24382769574599744,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "93a7fc16-54bc-44b3-aefc-d9a97e150cd2",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "F.Cu",
+          "start_mm": [
+            70.9,
+            100.2
+          ],
+          "end_mm": [
+            70.9,
+            102.0
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.7999999999999972,
+          "opposite_ground_centerline_uncovered_mm": 0,
+          "max_uncovered_piece_in_segment_mm": 0.0,
+          "opposite_ground_body_uncovered_mm2": 0.0,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "040ac5ca-ce1e-4de4-a972-15ac6f09e082",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "B.Cu",
+          "start_mm": [
+            71.75,
+            104.425
+          ],
+          "end_mm": [
+            72.365,
+            104.425
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.6149999999999949,
+          "opposite_ground_centerline_uncovered_mm": 0.6149999999999949,
+          "max_uncovered_piece_in_segment_mm": 0.6149999999999949,
+          "opposite_ground_body_uncovered_mm2": 0.17316304758999873,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "70294564-9fc3-4f0a-8251-a3abac5edd69",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "B.Cu",
+          "start_mm": [
+            71.75,
+            102.95
+          ],
+          "end_mm": [
+            71.75,
+            104.425
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.4749999999999943,
+          "opposite_ground_centerline_uncovered_mm": 1.4749999999999943,
+          "max_uncovered_piece_in_segment_mm": 1.4749999999999943,
+          "opposite_ground_body_uncovered_mm2": 0.36236304758999716,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "9f4b230a-dca4-4a11-b12c-58c0e1129462",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "B.Cu",
+          "start_mm": [
+            74.95,
+            100.5
+          ],
+          "end_mm": [
+            74.95,
+            101.0
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.5,
+          "opposite_ground_centerline_uncovered_mm": 0.5,
+          "max_uncovered_piece_in_segment_mm": 0.5,
+          "opposite_ground_body_uncovered_mm2": 0.147863047589999,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "a82ef78c-ac43-41b7-b7c7-f5f76467bfe8",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "B.Cu",
+          "start_mm": [
+            71.8,
+            102.9
+          ],
+          "end_mm": [
+            71.75,
+            102.95
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.07071067811865074,
+          "opposite_ground_centerline_uncovered_mm": 0.07071067811865074,
+          "max_uncovered_piece_in_segment_mm": 0.07071067811865074,
+          "opposite_ground_body_uncovered_mm2": 0.05341957716399985,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "f44c53dd-4744-48f0-a572-a3d30e3f3bf6",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DN",
+          "layer": "B.Cu",
+          "start_mm": [
+            76.05,
+            99.4
+          ],
+          "end_mm": [
+            74.95,
+            100.5
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.5556349186103966,
+          "opposite_ground_centerline_uncovered_mm": 1.5556349186103966,
+          "max_uncovered_piece_in_segment_mm": 1.5556349186103966,
+          "opposite_ground_body_uncovered_mm2": 0.38010398519799565,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "06171c8e-bcbb-485e-a53f-0a1ffc810e6e",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            76.05,
+            100.5
+          ],
+          "end_mm": [
+            76.05,
+            101.0
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.5,
+          "opposite_ground_centerline_uncovered_mm": 0.5,
+          "max_uncovered_piece_in_segment_mm": 0.5,
+          "opposite_ground_body_uncovered_mm2": 0.14786304758999902,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "b0fc9ea5-10ef-43dd-a486-f9f2fdde12aa",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "F.Cu",
+          "start_mm": [
+            74.95,
+            99.4
+          ],
+          "end_mm": [
+            76.05,
+            100.5
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.5556349186103966,
+          "opposite_ground_centerline_uncovered_mm": 1.5556349186103966,
+          "max_uncovered_piece_in_segment_mm": 1.5556349186103966,
+          "opposite_ground_body_uncovered_mm2": 0.38010398519799604,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "2a3b625b-fa76-457c-9ceb-47abf43996b5",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "B.Cu",
+          "start_mm": [
+            76.05,
+            101.0
+          ],
+          "end_mm": [
+            76.05,
+            102.7
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.7000000000000028,
+          "opposite_ground_centerline_uncovered_mm": 1.519999999999996,
+          "max_uncovered_piece_in_segment_mm": 0.9350000000000023,
+          "opposite_ground_body_uncovered_mm2": 0.37226304758999695,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "3bc35dea-dfa3-4126-b387-f577bfbc79d9",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "B.Cu",
+          "start_mm": [
+            73.635,
+            104.185
+          ],
+          "end_mm": [
+            73.635,
+            104.425
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.23999999999999488,
+          "opposite_ground_centerline_uncovered_mm": 0.23999999999999488,
+          "max_uncovered_piece_in_segment_mm": 0.23999999999999488,
+          "opposite_ground_body_uncovered_mm2": 0.09066304758999863,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "5ca84c13-c3d5-45af-aa54-08bb94f617b0",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "B.Cu",
+          "start_mm": [
+            74.27,
+            103.15
+          ],
+          "end_mm": [
+            74.27,
+            103.55
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.3999999999999915,
+          "opposite_ground_centerline_uncovered_mm": 0.3999999999999915,
+          "max_uncovered_piece_in_segment_mm": 0.3999999999999915,
+          "opposite_ground_body_uncovered_mm2": 0.12586304758999967,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "6836c34b-060a-4b9d-9428-c7f6b2eef1b3",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "B.Cu",
+          "start_mm": [
+            75.6,
+            103.15
+          ],
+          "end_mm": [
+            74.27,
+            103.15
+          ],
+          "width_mm": 0.22,
+          "length_mm": 1.3299999999999983,
+          "opposite_ground_centerline_uncovered_mm": 1.3299999999999983,
+          "max_uncovered_piece_in_segment_mm": 1.3299999999999983,
+          "opposite_ground_body_uncovered_mm2": 0.3304630475899998,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "e1940b3d-c6c5-493a-b786-81bbe429172f",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "B.Cu",
+          "start_mm": [
+            74.27,
+            103.55
+          ],
+          "end_mm": [
+            73.635,
+            104.185
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.8980256121069126,
+          "opposite_ground_centerline_uncovered_mm": 0.8980256121069126,
+          "max_uncovered_piece_in_segment_mm": 0.8980256121069126,
+          "opposite_ground_body_uncovered_mm2": 0.23542881630099963,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        },
+        {
+          "uuid": "e759393e-2ccf-4a55-9b57-ed0b271a52ce",
+          "kind": "PCB_TRACK",
+          "net": "/USB_DP",
+          "layer": "B.Cu",
+          "start_mm": [
+            76.05,
+            102.7
+          ],
+          "end_mm": [
+            75.6,
+            103.15
+          ],
+          "width_mm": 0.22,
+          "length_mm": 0.6363961030678968,
+          "opposite_ground_centerline_uncovered_mm": 0.6363961030678968,
+          "max_uncovered_piece_in_segment_mm": 0.6363961030678968,
+          "opposite_ground_body_uncovered_mm2": 0.17787071826899808,
+          "opposite_floating_ground_overlap_mm2": 0.0
+        }
+      ]
+    }
+  },
+  "coplanar_outer_ground": [
+    {
+      "uuid": "2c4e281c-6bac-4a88-b634-14f99935b93e",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DN",
+      "eligible_length_approx_mm": 1.0202456078431386,
+      "samples": 41,
+      "opposite_ground_covered_samples": 41,
+      "opposite_ground_covered_percent": 100.0,
+      "min_outer_ground_gap_mm": 0.20050000000000523,
+      "max_outer_ground_gap_within_2mm_mm": 0.353951165967473,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "36242db6-3b20-4fd6-9099-116bf1e98ab9",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DN",
+      "eligible_length_approx_mm": 1.3087087410531992,
+      "samples": 53,
+      "opposite_ground_covered_samples": 53,
+      "opposite_ground_covered_percent": 100.0,
+      "min_outer_ground_gap_mm": 0.2005003311165861,
+      "max_outer_ground_gap_within_2mm_mm": 1.8584110165034922,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "65a459bf-c6f0-43d0-9e9c-771aa963d508",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DN",
+      "eligible_length_approx_mm": 0.0,
+      "samples": 0,
+      "opposite_ground_covered_samples": 0,
+      "opposite_ground_covered_percent": null,
+      "min_outer_ground_gap_mm": null,
+      "max_outer_ground_gap_within_2mm_mm": null,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "8f486c95-03c7-4b6e-97df-17f0bf76ae5d",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DN",
+      "eligible_length_approx_mm": 0.3559139999999985,
+      "samples": 15,
+      "opposite_ground_covered_samples": 15,
+      "opposite_ground_covered_percent": 100.0,
+      "min_outer_ground_gap_mm": 0.23924858165472074,
+      "max_outer_ground_gap_within_2mm_mm": 1.1308394088959943,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "c5f9fa55-a01b-42f4-91f2-1b72eae1b38b",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DN",
+      "eligible_length_approx_mm": 0.0,
+      "samples": 0,
+      "opposite_ground_covered_samples": 0,
+      "opposite_ground_covered_percent": null,
+      "min_outer_ground_gap_mm": null,
+      "max_outer_ground_gap_within_2mm_mm": null,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "eb572083-2c08-401a-a8e2-9358bbf1eeac",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DN",
+      "eligible_length_approx_mm": 0.0,
+      "samples": 0,
+      "opposite_ground_covered_samples": 0,
+      "opposite_ground_covered_percent": null,
+      "min_outer_ground_gap_mm": null,
+      "max_outer_ground_gap_within_2mm_mm": null,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "1aa874ab-1e06-434a-9589-20ef92ba74d2",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DP",
+      "eligible_length_approx_mm": 0.3465501666666692,
+      "samples": 14,
+      "opposite_ground_covered_samples": 14,
+      "opposite_ground_covered_percent": 100.0,
+      "min_outer_ground_gap_mm": 1.5641556249999837,
+      "max_outer_ground_gap_within_2mm_mm": 1.7804488913488825,
+      "no_outer_ground_within_2mm_samples": 5,
+      "examples_no_ground": [
+        [
+          74.1125,
+          95.93737679166667
+        ],
+        [
+          74.1125,
+          95.962130375
+        ],
+        [
+          74.1125,
+          95.98688395833334
+        ],
+        [
+          74.1125,
+          96.01163754166666
+        ],
+        [
+          74.1125,
+          96.036391125
+        ]
+      ],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "742db87a-6e93-4871-b038-1ae37768b7aa",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DP",
+      "eligible_length_approx_mm": 0.0,
+      "samples": 0,
+      "opposite_ground_covered_samples": 0,
+      "opposite_ground_covered_percent": null,
+      "min_outer_ground_gap_mm": null,
+      "max_outer_ground_gap_within_2mm_mm": null,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "a464e34b-e42e-4348-90a4-7047b004ce1c",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DP",
+      "eligible_length_approx_mm": 0.0,
+      "samples": 0,
+      "opposite_ground_covered_samples": 0,
+      "opposite_ground_covered_percent": null,
+      "min_outer_ground_gap_mm": null,
+      "max_outer_ground_gap_within_2mm_mm": null,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "b0d2c4ff-6e2d-49f9-8c2a-05315610560a",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DP",
+      "eligible_length_approx_mm": 0.0,
+      "samples": 0,
+      "opposite_ground_covered_samples": 0,
+      "opposite_ground_covered_percent": null,
+      "min_outer_ground_gap_mm": null,
+      "max_outer_ground_gap_within_2mm_mm": null,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "c64bbabd-8cfb-47b2-9a57-4c7f4975a7ab",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DP",
+      "eligible_length_approx_mm": 1.3087087410531992,
+      "samples": 53,
+      "opposite_ground_covered_samples": 53,
+      "opposite_ground_covered_percent": 100.0,
+      "min_outer_ground_gap_mm": 0.8283050867930525,
+      "max_outer_ground_gap_within_2mm_mm": 0.8678873135068226,
+      "no_outer_ground_within_2mm_samples": 11,
+      "examples_no_ground": [
+        [
+          75.02916666666667,
+          97.43575266666666
+        ],
+        [
+          75.04662698412699,
+          97.45321298412698
+        ],
+        [
+          75.0640873015873,
+          97.4706733015873
+        ],
+        [
+          75.08154761904763,
+          97.48813361904762
+        ],
+        [
+          75.09900793650795,
+          97.50559393650794
+        ]
+      ],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "cee4019c-5137-49bb-95a1-4a317adeeea1",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DP",
+      "eligible_length_approx_mm": 1.0309140000000099,
+      "samples": 42,
+      "opposite_ground_covered_samples": 42,
+      "opposite_ground_covered_percent": 100.0,
+      "min_outer_ground_gap_mm": 0.7545617114894725,
+      "max_outer_ground_gap_within_2mm_mm": 1.2419702142857147,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    },
+    {
+      "uuid": "e7c83509-dfc6-4d76-a999-98eb7fbbac68",
+      "kind": "PCB_TRACK",
+      "net": "/USB_DP",
+      "eligible_length_approx_mm": 0.0,
+      "samples": 0,
+      "opposite_ground_covered_samples": 0,
+      "opposite_ground_covered_percent": null,
+      "min_outer_ground_gap_mm": null,
+      "max_outer_ground_gap_within_2mm_mm": null,
+      "no_outer_ground_within_2mm_samples": 0,
+      "examples_no_ground": [],
+      "below_0p2mm_samples": 0
+    }
+  ],
+  "minimum_pair_body_gap_mm": 0.17499999999999716,
+  "minimum_pair_body_gap_items": [
+    "1aa874ab-1e06-434a-9589-20ef92ba74d2",
+    "8f486c95-03c7-4b6e-97df-17f0bf76ae5d"
+  ],
+  "opposite_layer_foreign_copper_within_0p2mm_of_all_F_USB_tracks": [
+    {
+      "uuid": "1968f479-009e-4421-bad9-a4f957b330a0",
+      "kind": "PCB_TRACK",
+      "net": "/USB_VBUS",
+      "distance_to_F_USB_body_mm": 0.0,
+      "affected_sections": [
+        "connector_crosslinks_and_ESD_stubs"
+      ]
+    },
+    {
+      "uuid": "3750f1bd-4d48-4030-a114-3ed7842fd835",
+      "kind": "PCB_TRACK",
+      "net": "/USB_VBUS",
+      "distance_to_F_USB_body_mm": 0.0,
+      "affected_sections": [
+        "connector_crosslinks_and_ESD_stubs"
+      ]
+    }
+  ],
+  "conductors": [
+    {
+      "net": "/USB_DP",
+      "track_length_mm": 12.365628419472078,
+      "via_count": 0
+    },
+    {
+      "net": "/USB_DN",
+      "track_length_mm": 16.576080438450155,
+      "via_count": 1
+    },
+    {
+      "net": "/USB_DP_CPU",
+      "track_length_mm": 5.069606781186559,
+      "via_count": 0
+    },
+    {
+      "net": "/USB_DN_CPU",
+      "track_length_mm": 5.269607281163543,
+      "via_count": 0
+    }
+  ],
+  "stackup_nominal": {
+    "core_mm": 1.51,
+    "copper_mm": 0.035,
+    "mask_mm": 0.01,
+    "FR4_er_assumed": 4.2
+  },
+  "source_unchanged": true
+}

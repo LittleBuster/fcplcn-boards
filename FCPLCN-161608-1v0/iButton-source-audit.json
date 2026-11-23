@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-21T22:11:25.353064+00:00",
+  "scope": "Independent baseline/schema/XML comparison and power arithmetic; PCB routing certification is separate.",
+  "source_sha256": {
+    "before_upper_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+    "stage_upper_sch": "407871dc833fa66be65b9a5a114eeb9ab3051d48c1f09f46b22717695de4edaa",
+    "stage_upper_xml": "72611f1ec4712b853e048cfdb6d8cb67e9352b8fd493d517afede175efde5a65",
+    "stage_power_budget": "6cbc9d9f2b5eaed8c7ee7d70c105d802d1647045e83c8e110b7abb1b4f842077",
+    "stage_upper_symbol_library": "2c1f9bcdc4b3eb7526573d5daabd80e967a80e04b7da42f9678994592cfe2dca"
+  },
+  "new_components": [
+    "C52",
+    "C53",
+    "D11",
+    "D12",
+    "F2",
+    "J9",
+    "R71",
+    "R72",
+    "R73",
+    "R74",
+    "R75",
+    "U16"
+  ],
+  "existing_components_preserved": 148,
+  "existing_pin_changes": [
+    {
+      "ref": "U1",
+      "pin": "26",
+      "before": "unconnected-(U1-IO45-Pad26)",
+      "after": "IB_BUZZ_CPU"
+    },
+    {
+      "ref": "U1",
+      "pin": "37",
+      "before": "unconnected-(U1-TXD0-Pad37)",
+      "after": "IB_LED_CPU"
+    }
+  ],
+  "fresh_export_pinmap_matches_delivered_xml": true,
+  "old_schematic_blocks_preserved_except_paper_library_append_and_two_NC": true,
+  "GPIO3_original_NC_restored": true,
+  "old_local_library_definitions_preserved": true,
+  "preserved_top_level_blocks": 1189,
+  "lower_immutable_asset_count": 49,
+  "lower_immutable_assets": [
+    "FCPLCN-RLY-1616-1v0/3d/APAQ_350ARHA101M06X8P00_H9max.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/C1-D8H12.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/ESP32-C3_Super_Mini-assembly.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/HF49FD-1H11.step",
+    "FCPLCN-RLY-1616-1v0/3d/KF128-2P.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/KF128-8P.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/LTV847S.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step",
+    "FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/TLP2363_5pin_SO6.wrl",
+    "FCPLCN-RLY-1616-1v0/3d/W5500_Lite_2x6-assembly.wrl",
+    "FCPLCN-RLY-1616-1v0/BOM.csv",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.kicad_sym",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_Radial_D8.0mm_P3.50mm.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_0805_2012Metric.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_1206_3216Metric.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMB.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMC.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SOD-123.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/ESP32-C3_Super_Mini.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-2P.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-8P.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LOLIN_S2_mini_V1.0.0.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LTV-847S.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Nexperia_CFP3_SOD-123W.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/RECOM_R-78E_PSE.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_2012Metric.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_Wetting.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_1206_3216Metric.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_2512_6332Metric.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_Array_SIP9.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Relay_SPST_Hongfa_HF49FD-1H11.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOIC-28W_7.5x17.9mm_P1.27mm.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOP-18_7.495x11.515mm_P1.27mm.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOT-223-3_TabPin2.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/StackSocket_2x03_P2.54mm.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/TLP2363_5pin_SO6.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.pretty/W5500_Lite_2x6.kicad_mod",
+    "FCPLCN-RLY-1616-1v0/fp-lib-table",
+    "FCPLCN-RLY-1616-1v0/sym-lib-table"
+  ],
+  "new_pinmaps": {
+    "C52": {
+      "1": "+12V_PANEL",
+      "2": "GND"
+    },
+    "C53": {
+      "1": "+12V_PANEL",
+      "2": "GND"
+    },
+    "D11": {
+      "1": "+12V_PANEL",
+      "2": "IB_12V_FUSED"
+    },
+    "D12": {
+      "1": "+12V_PANEL",
+      "2": "GND"
+    },
+    "F2": {
+      "1": "+12V_LOGIC",
+      "2": "IB_12V_FUSED"
+    },
+    "J9": {
+      "3": "+12V_PANEL",
+      "2": "IB_BUZZ_OUT",
+      "1": "IB_LED_OUT"
+    },
+    "R71": {
+      "2": "IB_LED_BASE",
+      "1": "IB_LED_CPU"
+    },
+    "R72": {
+      "2": "IB_BUZZ_BASE",
+      "1": "IB_BUZZ_CPU"
+    },
+    "R73": {
+      "2": "GND",
+      "1": "IB_LED_CPU"
+    },
+    "R74": {
+      "2": "GND",
+      "1": "IB_BUZZ_BASE"
+    },
+    "R75": {
+      "1": "IB_LED_OUT",
+      "2": "IB_LED_SINK"
+    },
+    "U16": {
+      "9": "+12V_PANEL",
+      "1": "GND",
+      "2": "GND",
+      "3": "GND",
+      "4": "GND",
+      "5": "GND",
+      "8": "GND",
+      "6": "IB_BUZZ_BASE",
+      "11": "IB_BUZZ_OUT",
+      "7": "IB_LED_BASE",
+      "10": "IB_LED_SINK",
+      "16": "unconnected-(U16-OUT1-Pad16)",
+      "15": "unconnected-(U16-OUT2-Pad15)",
+      "14": "unconnected-(U16-OUT3-Pad14)",
+      "13": "unconnected-(U16-OUT4-Pad13)",
+      "12": "unconnected-(U16-OUT5-Pad12)"
+    }
+  },
+  "native_ERC_violations": 0,
+  "power_check": {
+    "main3v3_design_ma": 902,
+    "panel_current_a": 0.108,
+    "logic_input_current_a": 0.7209836764790015,
+    "logic_rail_v": 10.471806486756208,
+    "R12_dissipation_w": 0.5250156363666694,
+    "input_total_a_minus10percent_coil_resistance": 1.0100186269224025,
+    "design_assumptions_not_measured": true
+  },
+  "limitations": [
+    "GPIO43 is ROM UART0 TX: LED may blink or remain on until application initializes GPIO43. No firmware files changed.",
+    "GPIO45 LOW/default eFuses assumed for3V3 VDD_SPI.",
+    "Buzzer unspecified, <=100mA engineering allocation; full-load voltage approximately8.5-9V.",
+    "iButton DATA/GND_ISO must stay separate from LED/buzzer MAIN domain.",
+    "PTC does not guarantee uninterrupted MCU supply under a panel short.",
+    "Fresh PCB DRC/connectivity/mechanical checks are separate."
+  ]
+}

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1510" viewBox="0 0 1800 1510" role="img" aria-labelledby="title desc">
+<title id="title">FCPLCn — питание обеих плат</title>
+<desc id="desc">Вход 12 В на RLY, защита и фильтр логики. Четыре независимых R78 от защищённых 12 В: нижняя логика, основная CPU, ADM2687E и местные 5 В для TMR. TMR питает общую изолированную ветку датчиков. Межплатные разъёмы передают только 12 В и основную землю; USB служит для данных и контроля VBUS.</desc>
+<rect width="1800" height="1510" fill="#0c1522"/>
+<defs><marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#f4ce86"/></marker><marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#88ddba"/></marker></defs>
+<g font-family="Arial,Segoe UI,sans-serif">
+<text x="60" y="55" fill="#8ab9ff" font-size="22" font-weight="700">FCPLCn · Future City PLC Next</text>
+<text x="60" y="107" fill="#edf3fc" font-size="43" font-weight="700">Питание RLY и CPU</text>
+<text x="60" y="143" fill="#adbed3" font-size="23" font-weight="400">Цепи питания, расчётные бюджеты и граница гальванической развязки</text>
+<rect x="40" y="1035" width="1720" height="395" rx="20" fill="#102826" stroke="#88ddba" stroke-opacity=".6"/>
+<path d="M520 279 H650" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M646 279 L634 284 L634 274Z" fill="#f4ce86"/>
+<path d="M580 279 V170 H1445 V205" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M1445 201 L1440 189 L1450 189Z" fill="#f4ce86"/>
+<path d="M1715 355 V470 H255 V520" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M255 516 L250 504 L260 504Z" fill="#f4ce86"/>
+<path d="M685 470 V520" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M685 516 L680 504 L690 504Z" fill="#f4ce86"/>
+<path d="M1115 470 V520" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M1115 516 L1110 504 L1120 504Z" fill="#f4ce86"/>
+<path d="M1545 470 V520" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M1545 516 L1540 504 L1550 504Z" fill="#f4ce86"/>
+<path d="M1140 279 H1110 V410 H1080" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M1084 410 L1096 405 L1096 415Z" fill="#f4ce86"/>
+<rect x="60" y="205" width="460" height="150" rx="16" fill="#152235" stroke="#f4ce86" stroke-opacity=".75"/>
+<text x="82" y="244" fill="#f4ce86" font-size="26" font-weight="700">Ввод 12 В DC · RLY J1</text>
+<text x="82" y="281" fill="#adbed3" font-size="22" font-weight="400">F1 1,5 А → D1 SS34 → +12V_SYS</text>
+<text x="82" y="312" fill="#adbed3" font-size="22" font-weight="400">D2 SMBJ15A: ограничение выбросов</text>
+<rect x="650" y="205" width="430" height="150" rx="16" fill="#152235" stroke="#f4ce86" stroke-opacity=".75"/>
+<text x="672" y="244" fill="#f4ce86" font-size="26" font-weight="700">Нагрузки +12V_SYS</text>
+<text x="672" y="281" fill="#adbed3" font-size="22" font-weight="400">Катушки реле K1…K16</text>
+<text x="672" y="312" fill="#adbed3" font-size="22" font-weight="400">Входные LED TLP2363 и RC</text>
+<rect x="1140" y="205" width="600" height="150" rx="16" fill="#152235" stroke="#f4ce86" stroke-opacity=".75"/>
+<text x="1162" y="244" fill="#f4ce86" font-size="26" font-weight="700">Фильтр логики · RLY</text>
+<text x="1162" y="281" fill="#adbed3" font-size="22" font-weight="400">D3 B340B → R12 1 Ом / 2 Вт → +12V_LOGIC</text>
+<text x="1162" y="312" fill="#adbed3" font-size="22" font-weight="400">C8 220 мкФ и местные конденсаторы</text>
+<rect x="650" y="367" width="430" height="87" rx="16" fill="#152235" stroke="#f4ce86" stroke-opacity=".75"/>
+<text x="672" y="406" fill="#f4ce86" font-size="26" font-weight="700">Панель J9 · CPU</text>
+<text x="672" y="443" fill="#adbed3" font-size="21" font-weight="400">LED + буззер: бюджет 108 мА</text>
+<text x="60" y="415" fill="#f4ce86" font-size="24" font-weight="700">Четыре источника от +12V_LOGIC</text>
+<text x="1140" y="402" fill="#adbed3" font-size="21" font-weight="400">J44 RLY ↔ J6 CPU: +12V_LOGIC / GND</text>
+<text x="1140" y="432" fill="#adbed3" font-size="21" font-weight="400">5 В и 3,3 В между платами не передаются</text>
+<rect x="60" y="520" width="390" height="185" rx="16" fill="#152235" stroke="#8ab9ff" stroke-opacity=".75"/>
+<text x="82" y="559" fill="#8ab9ff" font-size="26" font-weight="700">RLY U2 → FB1</text>
+<text x="82" y="596" fill="#adbed3" font-size="21" font-weight="400">R-78K3.3-0.5 · 3,3 В / 500 мА</text>
+<text x="82" y="627" fill="#adbed3" font-size="21" font-weight="400">MCP23017, FRAM, TLP2363</text>
+<text x="82" y="658" fill="#adbed3" font-size="21" font-weight="400">Бюджет 100 мА · оценка 82,9 мА</text>
+<rect x="490" y="520" width="390" height="185" rx="16" fill="#152235" stroke="#8ab9ff" stroke-opacity=".75"/>
+<text x="512" y="559" fill="#8ab9ff" font-size="26" font-weight="700">CPU U3 · +3V3</text>
+<text x="512" y="596" fill="#adbed3" font-size="21" font-weight="400">R-78K3.3-1.0 · 3,3 В / 1 А</text>
+<text x="512" y="627" fill="#adbed3" font-size="21" font-weight="400">ESP32-S3, W5500, RTC, логика</text>
+<text x="512" y="658" fill="#adbed3" font-size="21" font-weight="400">Расчётный бюджет: 902 мА</text>
+<rect x="920" y="520" width="390" height="185" rx="16" fill="#152235" stroke="#8ab9ff" stroke-opacity=".75"/>
+<text x="942" y="559" fill="#8ab9ff" font-size="26" font-weight="700">CPU U12 · +3V3_RS485</text>
+<text x="942" y="596" fill="#adbed3" font-size="21" font-weight="400">R-78K3.3-0.5 · 3,3 В / 500 мА</text>
+<text x="942" y="627" fill="#adbed3" font-size="21" font-weight="400">ADM2687E: основная сторона</text>
+<text x="942" y="658" fill="#adbed3" font-size="21" font-weight="400">Расчётный бюджет: 201 мА</text>
+<rect x="1350" y="520" width="390" height="185" rx="16" fill="#152235" stroke="#8ab9ff" stroke-opacity=".75"/>
+<text x="1372" y="559" fill="#8ab9ff" font-size="26" font-weight="700">CPU U17 · +5V_TMR</text>
+<text x="1372" y="596" fill="#adbed3" font-size="21" font-weight="400">R-78E5.0-1.0 · 5 В / 1 А</text>
+<text x="1372" y="627" fill="#adbed3" font-size="21" font-weight="400">Только вход TMR на CPU</text>
+<text x="1372" y="658" fill="#adbed3" font-size="21" font-weight="400">Расчётный бюджет: 300 мА</text>
+<rect x="60" y="755" width="820" height="130" rx="16" fill="#152235" stroke="#adbed3" stroke-opacity=".75"/>
+<text x="82" y="794" fill="#adbed3" font-size="26" font-weight="700">USB-C · CPU J2</text>
+<text x="82" y="831" fill="#adbed3" font-size="21" font-weight="400">Данные USB и контроль VBUS. Питание логики от USB не заведено.</text>
+<text x="82" y="862" fill="#adbed3" font-size="21" font-weight="400">Для прошивки контроллера требуется внешний источник 12 В.</text>
+<rect x="920" y="755" width="390" height="213" rx="16" fill="#152235" stroke="#8ab9ff" stroke-opacity=".75"/>
+<text x="942" y="794" fill="#8ab9ff" font-size="26" font-weight="700">Встроенный isoPower ADM</text>
+<text x="942" y="831" fill="#adbed3" font-size="20" font-weight="400">+3V3_RS485 → RS485_VISO_OUT</text>
+<text x="942" y="862" fill="#adbed3" font-size="20" font-weight="400">→ FB1 CPU → RS485_VISO</text>
+<text x="942" y="893" fill="#adbed3" font-size="20" font-weight="400">Питает только шинную часть ADM.</text>
+<text x="942" y="924" fill="#adbed3" font-size="20" font-weight="400">С 5V_ISO / 3V3_ISO не соединён.</text>
+<text x="942" y="955" fill="#adbed3" font-size="20" font-weight="400">Выход относительно GND_ISO.</text>
+<path d="M1545 705 V810" fill="none" stroke="#f4ce86" stroke-width="3" stroke-linejoin="round"/><path d="M1545 806 L1540 794 L1550 794Z" fill="#f4ce86"/>
+<rect x="1350" y="810" width="390" height="165" rx="16" fill="#152235" stroke="#88ddba" stroke-opacity=".75"/>
+<text x="1372" y="849" fill="#88ddba" font-size="26" font-weight="700">CPU U4 · TMR-1-0511</text>
+<text x="1372" y="886" fill="#adbed3" font-size="21" font-weight="400">Вход: +5V_TMR / GND</text>
+<text x="1372" y="917" fill="#adbed3" font-size="21" font-weight="400">Изолированный выход: 5V_ISO</text>
+<text x="1372" y="948" fill="#adbed3" font-size="21" font-weight="400">Номинал: 1 Вт · 5 В / 200 мА</text>
+<text x="60" y="927" fill="#8ab9ff" font-size="25" font-weight="700">ОСНОВНАЯ GND</text>
+<text x="60" y="964" fill="#adbed3" font-size="22" font-weight="400">RLY, CPU, внутренняя I²C, дискретные входы и панель J9</text>
+<path d="M60 1010H1740" stroke="#88ddba" stroke-width="2" stroke-dasharray="9 9"/>
+<text x="60" y="1004" fill="#88ddba" font-size="20" font-weight="400">Граница между основной GND и GND_ISO</text>
+<path d="M1545 975 V1100 H255 V1160" fill="none" stroke="#88ddba" stroke-width="3" stroke-linejoin="round"/><path d="M255 1156 L250 1144 L260 1144Z" fill="#88ddba"/>
+<path d="M685 1100 V1160" fill="none" stroke="#88ddba" stroke-width="3" stroke-linejoin="round"/><path d="M685 1156 L680 1144 L690 1144Z" fill="#88ddba"/>
+<path d="M1115 1100 V1160" fill="none" stroke="#88ddba" stroke-width="3" stroke-linejoin="round"/><path d="M1115 1156 L1110 1144 L1120 1144Z" fill="#88ddba"/>
+<text x="60" y="1075" fill="#88ddba" font-size="25" font-weight="700">ПОЛЕВОЙ ДОМЕН · ОБЩАЯ GND_ISO</text>
+<rect x="60" y="1160" width="390" height="165" rx="16" fill="#152235" stroke="#88ddba" stroke-opacity=".75"/>
+<text x="82" y="1199" fill="#88ddba" font-size="26" font-weight="700">DATA · J3</text>
+<text x="82" y="1236" fill="#adbed3" font-size="22" font-weight="400">Контакт 9: 5V_ISO</text>
+<text x="82" y="1267" fill="#adbed3" font-size="22" font-weight="400">DATA1…8: подтяжки к 5 В</text>
+<text x="82" y="1298" fill="#adbed3" font-size="22" font-weight="400">Контакт 10: GND_ISO</text>
+<rect x="490" y="1160" width="390" height="165" rx="16" fill="#152235" stroke="#88ddba" stroke-opacity=".75"/>
+<text x="512" y="1199" fill="#88ddba" font-size="26" font-weight="700">RS-485 · J8</text>
+<text x="512" y="1236" fill="#adbed3" font-size="21" font-weight="400">Контакт 1: 5V_ISO для устройств</text>
+<text x="512" y="1267" fill="#adbed3" font-size="21" font-weight="400">A / B: трансивер ADM2687E</text>
+<text x="512" y="1298" fill="#adbed3" font-size="21" font-weight="400">Контакт 4: GND_ISO</text>
+<rect x="920" y="1160" width="390" height="165" rx="16" fill="#152235" stroke="#88ddba" stroke-opacity=".75"/>
+<text x="942" y="1199" fill="#88ddba" font-size="26" font-weight="700">CPU U5 · 3V3_ISO</text>
+<text x="942" y="1236" fill="#adbed3" font-size="21" font-weight="400">R-78K3.3-0.5 · 3,3 В / 500 мА</text>
+<text x="942" y="1267" fill="#adbed3" font-size="21" font-weight="400">Вход: 5V_ISO; общий: GND_ISO</text>
+<text x="942" y="1298" fill="#adbed3" font-size="21" font-weight="400">Доступная мощность задана TMR</text>
+<path d="M1310 1240 H1350" fill="none" stroke="#88ddba" stroke-width="3" stroke-linejoin="round"/><path d="M1346 1240 L1334 1245 L1334 1235Z" fill="#88ddba"/>
+<rect x="1350" y="1160" width="390" height="165" rx="16" fill="#152235" stroke="#88ddba" stroke-opacity=".75"/>
+<text x="1372" y="1199" fill="#88ddba" font-size="26" font-weight="700">Внешняя I²C · J5</text>
+<text x="1372" y="1236" fill="#adbed3" font-size="22" font-weight="400">Контакт 1: 3V3_ISO</text>
+<text x="1372" y="1267" fill="#adbed3" font-size="22" font-weight="400">SDA / SCL: подтяжки к 3,3 В</text>
+<text x="1372" y="1298" fill="#adbed3" font-size="22" font-weight="400">Контакт 4: GND_ISO</text>
+<text x="60" y="1374" fill="#88ddba" font-size="22" font-weight="700">TMR: 200 мА всего. Внешним устройствам — 120 мА суммарно; своей электронике — резерв 55 мА.</text>
+<text x="60" y="1407" fill="#adbed3" font-size="21" font-weight="400">DATA, внешняя I²C и RS-485 имеют общую GND_ISO. Отдельной изоляции между этими портами нет.</text>
+<text x="60" y="1470" fill="#adbed3" font-size="22" font-weight="400">Токи — расчётные бюджеты. Номинал U5 на 500 мА не увеличивает мощность TMR выше 1 Вт.</text>
+</g></svg>

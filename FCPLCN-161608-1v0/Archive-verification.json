@@ -1,14 +1,14 @@
 {
   "FCPLCN-161608-1v0-KiCad.zip": {
-    "sha256": "1e814d326e2f60b436f430de10072fdf9c09ba8a471a4d8729add9578034bebe",
-    "files": 442,
-    "size_bytes": 41190506,
-    "verified_against_current_workspace": true
+    "sha256": "07711336e0e6333408bc5012e8c8c3129f4ec4cc6fd6f72245baed3adb84f741",
+    "files": 514,
+    "size_bytes": 45389877,
+    "CRC_and_every_member_sha256_verified": true
   },
   "FCPLCN-161608-1v0-3D-views.zip": {
-    "sha256": "dedae75e6c925b9115a982d0bdb5144617cd1291fcef9066e9ec2573d888d67a",
-    "files": 36,
-    "size_bytes": 16134709,
-    "verified_against_current_workspace": true
+    "sha256": "ec31d01c6a7a9f041bd38508f24c1c3bbd8d4a68c60f1bdaad984fce09007626",
+    "files": 33,
+    "size_bytes": 12479687,
+    "CRC_and_every_member_sha256_verified": true
   }
 }

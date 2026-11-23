@@ -1,17 +1,164 @@
 (version 1)
-
-(rule "Minimum production pad annular ring"
-    (constraint annular_width (min 0.15mm))
-)
-
-(rule "Standard via annular ring"
-    (condition "A.Type == 'Via'")
-    (constraint annular_width (min 0.15mm))
-)
-(rule "USB DN CPU corner clearance"
- (condition "A.NetName == '/USB_DN' && A.insideArea('USB_DN_CPU_NECK') && B.Type == 'Pad' && B.memberOfFootprint('U1') && (B.Pad_Number == '26' || B.Pad_Number == '27')")
- (constraint clearance (min 0.19mm)))
-
-(rule "Galvanic domain same-layer clearance"
- (condition "(A.NetName == '/*_ISO' || A.NetName == '/RS485_A' || A.NetName == '/RS485_B' || A.NetName == '/RS485_TERM' || A.NetName == '/RS485_VISO' || A.NetName == '/RS485_VISO_OUT') && !(B.NetName == '/*_ISO' || B.NetName == '/RS485_A' || B.NetName == '/RS485_B' || B.NetName == '/RS485_TERM' || B.NetName == '/RS485_VISO' || B.NetName == '/RS485_VISO_OUT')")
+(rule "35um production copper clearance" (constraint clearance (min 0.175mm)))
+(rule "35um production track width" (constraint track_width (min 0.18mm)))
+(rule "35um production annular ring" (constraint annular_width (min 0.2mm)))
+(rule "35um zone clearance" (condition "A.Type == 'Zone' || B.Type == 'Zone'") (constraint clearance (min 0.2mm)))
+(rule "DIP USB-C J2 manufacturer limit annulus" (condition "A.Type == 'Pad' && A.memberOfFootprint('J2')") (constraint annular_width (min 0.15mm)))
+(rule "Galvanic domain clearance"
+ (condition "(A.NetName == '/*_ISO' || A.NetName == '/RS485_A' || A.NetName == '/RS485_B' || A.NetName == '/RS485_TERM' || A.NetName == '/RS485_VISO' || A.NetName == '/RS485_VISO_OUT') != (B.NetName == '/*_ISO' || B.NetName == '/RS485_A' || B.NetName == '/RS485_B' || B.NetName == '/RS485_TERM' || B.NetName == '/RS485_VISO' || B.NetName == '/RS485_VISO_OUT')")
  (constraint clearance (min 1.5mm)))
+
+(rule "Four Ethernet signals35um standard width"
+ (condition "A.NetName == '/ETH_CS_N' || A.NetName == '/ETH_SCK' || A.NetName == '/ETH_MOSI' || A.NetName == '/ETH_MISO'")
+ (constraint track_width (min 0.175mm)))
+
+# BEGIN REVIEWED LOCAL FACTORY VIAS
+# Ordinary vias remain0.7/0.3 with0.20mm nominal annulus. Only listed net+coordinate sites use the explicit factory limit.
+(rule "Ordinary production via diameter" (condition "A.Type == 'Via'") (constraint via_diameter (min 0.7mm)) (constraint annular_width (min 0.2mm)))
+# Reviewed UUID e4cdfbb9-a543-4129-986a-9dc3807368de; /+3V3 at 79.05,85.55 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via e4cdfbb9" (condition "A.Type == 'Via' && A.NetName == '/+3V3' && A.Position_X == 79.05mm && A.Position_Y == 85.55mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 6319c0ca-34e7-4311-8e9a-c4eca07cd801; /+3V3_RS485 at 68.45,91.175 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 6319c0ca" (condition "A.Type == 'Via' && A.NetName == '/+3V3_RS485' && A.Position_X == 68.45mm && A.Position_Y == 91.175mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID e6bde408-d468-4785-b995-8505c3d08e12; /+3V3_RS485 at 69.4,105.2 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via e6bde408" (condition "A.Type == 'Via' && A.NetName == '/+3V3_RS485' && A.Position_X == 69.4mm && A.Position_Y == 105.2mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 715a7cae-ace4-4797-aa62-0b04ff2d13ea; /ALARM_LED at 73.35,90.45 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 715a7cae" (condition "A.Type == 'Via' && A.NetName == '/ALARM_LED' && A.Position_X == 73.35mm && A.Position_Y == 90.45mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID c3f3ca7e-555d-4854-8a4b-56c849f1c22b; /ALARM_LED at 80.63,86.8475 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via c3f3ca7e" (condition "A.Type == 'Via' && A.NetName == '/ALARM_LED' && A.Position_X == 80.63mm && A.Position_Y == 86.8475mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 57fd60ea-60ec-4f5c-8166-17993d90dee0; /ESP_EN at 78.85,80.05 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 57fd60ea" (condition "A.Type == 'Via' && A.NetName == '/ESP_EN' && A.Position_X == 78.85mm && A.Position_Y == 80.05mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 0488cd84-3294-4f39-8b9f-864689f356f9; /ESP_EN at 81.9,85.6 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 0488cd84" (condition "A.Type == 'Via' && A.NetName == '/ESP_EN' && A.Position_X == 81.9mm && A.Position_Y == 85.6mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 542123b3-bb96-4086-ae33-86ce5df84dc5; /ESP_EN at 92.2,96.9 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 542123b3" (condition "A.Type == 'Via' && A.NetName == '/ESP_EN' && A.Position_X == 92.2mm && A.Position_Y == 96.9mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 0a21e9a5-b8ef-408c-af3c-bd43f4fa0cb5; /ETH_CS_N at 69.7,101.6 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 0a21e9a5" (condition "A.Type == 'Via' && A.NetName == '/ETH_CS_N' && A.Position_X == 69.7mm && A.Position_Y == 101.6mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 735a4596-8025-44b6-be41-3d7b782519e5; /ETH_CS_N at 80.4,101.8 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 735a4596" (condition "A.Type == 'Via' && A.NetName == '/ETH_CS_N' && A.Position_X == 80.4mm && A.Position_Y == 101.8mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID ac9bb4e7-401c-4fd9-9a58-26bb0be787b4; /ETH_CS_N at 81.1,99.075 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via ac9bb4e7" (condition "A.Type == 'Via' && A.NetName == '/ETH_CS_N' && A.Position_X == 81.1mm && A.Position_Y == 99.075mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID c0a3c16c-1c20-410e-abbc-35c046c66ee4; /ETH_CS_N at 82.8,96.5 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via c0a3c16c" (condition "A.Type == 'Via' && A.NetName == '/ETH_CS_N' && A.Position_X == 82.8mm && A.Position_Y == 96.5mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID f1d87ac1-7c25-4937-ac44-ca4e0a41be7d; /ETH_INT_N at 74.15,90.5 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via f1d87ac1" (condition "A.Type == 'Via' && A.NetName == '/ETH_INT_N' && A.Position_X == 74.15mm && A.Position_Y == 90.5mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 497388b8-0a97-4a54-9f32-54e9473cb57d; /ETH_INT_N at 75.95,90 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 497388b8" (condition "A.Type == 'Via' && A.NetName == '/ETH_INT_N' && A.Position_X == 75.95mm && A.Position_Y == 90mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID ac11f55e-e633-409c-9b91-ab92721b7cda; /ETH_INT_N at 75.95,91.5 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via ac11f55e" (condition "A.Type == 'Via' && A.NetName == '/ETH_INT_N' && A.Position_X == 75.95mm && A.Position_Y == 91.5mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 84e9db44-d1cd-4749-bde1-97b51327e08a; /ETH_INT_N at 78.8,92.15 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 84e9db44" (condition "A.Type == 'Via' && A.NetName == '/ETH_INT_N' && A.Position_X == 78.8mm && A.Position_Y == 92.15mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 4ab03529-80bd-4a92-86b8-67ad03fb70b8; /ETH_MISO at 49.4,99.8 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 4ab03529" (condition "A.Type == 'Via' && A.NetName == '/ETH_MISO' && A.Position_X == 49.4mm && A.Position_Y == 99.8mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 4d71f72b-6df5-4e74-8b98-b7994f074427; /ETH_MISO at 53.35,99.05 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 4d71f72b" (condition "A.Type == 'Via' && A.NetName == '/ETH_MISO' && A.Position_X == 53.35mm && A.Position_Y == 99.05mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 535aa5a3-4e0f-4fef-b8c1-892e74c180be; /ETH_MISO at 69,102 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 535aa5a3" (condition "A.Type == 'Via' && A.NetName == '/ETH_MISO' && A.Position_X == 69mm && A.Position_Y == 102mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID cdf66999-a63b-4fbf-aee1-26246e7cddeb; /ETH_MISO at 81.1,103.1 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via cdf66999" (condition "A.Type == 'Via' && A.NetName == '/ETH_MISO' && A.Position_X == 81.1mm && A.Position_Y == 103.1mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 421abf04-82f4-44c7-92f9-d256d7b76152; /ETH_MISO_CPU at 85.5,99.8 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 421abf04" (condition "A.Type == 'Via' && A.NetName == '/ETH_MISO_CPU' && A.Position_X == 85.5mm && A.Position_Y == 99.8mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 9d9bf514-0315-4818-b461-dfa0d8aee7e0; /ETH_MOSI at 68,105.05 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 9d9bf514" (condition "A.Type == 'Via' && A.NetName == '/ETH_MOSI' && A.Position_X == 68mm && A.Position_Y == 105.05mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 230f0a98-3d05-4e59-b9cb-fe5452488bd1; /ETH_MOSI at 82.65,101.1 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 230f0a98" (condition "A.Type == 'Via' && A.NetName == '/ETH_MOSI' && A.Position_X == 82.65mm && A.Position_Y == 101.1mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID e0f7f5f3-c1f6-479f-9881-3e955210049c; /ETH_MOSI_CPU at 84.15,99.7 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via e0f7f5f3" (condition "A.Type == 'Via' && A.NetName == '/ETH_MOSI_CPU' && A.Position_X == 84.15mm && A.Position_Y == 99.7mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 24f7d30d-cbb1-4150-b2f4-c788664e811a; /ETH_RST_N at 51.4,93.35 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 24f7d30d" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 51.4mm && A.Position_Y == 93.35mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 1923285e-4188-4ed7-9ff4-6a9afaa6aaf1; /ETH_RST_N at 51.4,95.05 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 1923285e" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 51.4mm && A.Position_Y == 95.05mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 5306b4b1-a3fb-4004-b574-7abc33968558; /ETH_RST_N at 54.15,82.25 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 5306b4b1" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 54.15mm && A.Position_Y == 82.25mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID db362f27-6d3e-4c73-872f-7c36d4ca73d4; /ETH_RST_N at 54.6,81 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via db362f27" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 54.6mm && A.Position_Y == 81mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 74c54c98-9cfc-4385-825c-7b68ccc8131c; /ETH_RST_N at 61.3,81 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 74c54c98" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 61.3mm && A.Position_Y == 81mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 0f3d6ace-4c65-40a8-b777-14680e6ff9f1; /ETH_RST_N at 67.15,75.75 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 0f3d6ace" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 67.15mm && A.Position_Y == 75.75mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID b8d66d86-48cf-4f08-997c-9dac9a1a6d5f; /ETH_RST_N at 67.6,73.1 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via b8d66d86" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 67.6mm && A.Position_Y == 73.1mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID ca6488b1-9277-4f11-b93f-b92a40359557; /ETH_RST_N at 86.55,92.1 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via ca6488b1" (condition "A.Type == 'Via' && A.NetName == '/ETH_RST_N' && A.Position_X == 86.55mm && A.Position_Y == 92.1mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID be2ce173-1961-44ec-aa56-dd98cf45e5dc; /ETH_SCK at 81.8,99.425 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via be2ce173" (condition "A.Type == 'Via' && A.NetName == '/ETH_SCK' && A.Position_X == 81.8mm && A.Position_Y == 99.425mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 0ef41a9a-36de-4c8d-9c11-69f98eafcd8c; /ETH_SCK at 81.8,102.4 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 0ef41a9a" (condition "A.Type == 'Via' && A.NetName == '/ETH_SCK' && A.Position_X == 81.8mm && A.Position_Y == 102.4mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 6703af39-21b1-4f20-a3b3-5cafdc619ee3; /ETH_SCK at 82.8,98.7 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 6703af39" (condition "A.Type == 'Via' && A.NetName == '/ETH_SCK' && A.Position_X == 82.8mm && A.Position_Y == 98.7mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 7f343232-494f-4e8b-8f9d-0d7bf1cd7ef1; /ETH_SCK_CPU at 82.95,95.3 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 7f343232" (condition "A.Type == 'Via' && A.NetName == '/ETH_SCK_CPU' && A.Position_X == 82.95mm && A.Position_Y == 95.3mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 1fdd4ed9-67ea-42f7-8230-330a17fa6d09; /GND at 69.03,83.375 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 1fdd4ed9" (condition "A.Type == 'Via' && A.NetName == '/GND' && A.Position_X == 69.03mm && A.Position_Y == 83.375mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 4911b4da-330c-4149-9fa4-3bad41d2c6a8; /GND at 70.7,86.5 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 4911b4da" (condition "A.Type == 'Via' && A.NetName == '/GND' && A.Position_X == 70.7mm && A.Position_Y == 86.5mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID de1fe4ec-3932-4fd2-87be-36162b683550; /GND at 71.095,105.1 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via de1fe4ec" (condition "A.Type == 'Via' && A.NetName == '/GND' && A.Position_X == 71.095mm && A.Position_Y == 105.1mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 4c5079fa-a526-485f-93ec-4dbc04ecd3df; /GND at 71.095,106.4 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 4c5079fa" (condition "A.Type == 'Via' && A.NetName == '/GND' && A.Position_X == 71.095mm && A.Position_Y == 106.4mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID eb30e07b-7f8a-4bd5-8945-459f3bcc2eae; /GND at 71.3,88.975 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via eb30e07b" (condition "A.Type == 'Via' && A.NetName == '/GND' && A.Position_X == 71.3mm && A.Position_Y == 88.975mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID fb2ae51e-a8b6-49ea-b96d-757ede0cab9e; /GND at 72.57,88.35 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via fb2ae51e" (condition "A.Type == 'Via' && A.NetName == '/GND' && A.Position_X == 72.57mm && A.Position_Y == 88.35mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 3060f6b9-4105-4459-bd9c-2fe0487263f7; /GND at 72.9,84 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 3060f6b9" (condition "A.Type == 'Via' && A.NetName == '/GND' && A.Position_X == 72.9mm && A.Position_Y == 84mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID a5981622-5924-4edd-a894-6eb26504a459; /I2C_SCL at 69.1351,82.2 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via a5981622" (condition "A.Type == 'Via' && A.NetName == '/I2C_SCL' && A.Position_X == 69.1351mm && A.Position_Y == 82.2mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 9ad58de5-1f85-4388-9158-0b221a5db6be; /IB_LED_CPU at 59.65,99.85 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 9ad58de5" (condition "A.Type == 'Via' && A.NetName == '/IB_LED_CPU' && A.Position_X == 59.65mm && A.Position_Y == 99.85mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 28b2ef34-a4a2-4ea2-ae56-4a7f3bf02b07; /IB_LED_CPU at 67.2,81.65 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 28b2ef34" (condition "A.Type == 'Via' && A.NetName == '/IB_LED_CPU' && A.Position_X == 67.2mm && A.Position_Y == 81.65mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID cfd161e6-50b7-46b3-bdfa-5f7d5c7e337b; /IB_LED_CPU at 67.25,86.9 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via cfd161e6" (condition "A.Type == 'Via' && A.NetName == '/IB_LED_CPU' && A.Position_X == 67.25mm && A.Position_Y == 86.9mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID c1e52321-5691-4c8c-a60f-d9d3b46cf288; /IB_LED_CPU at 85.9,76.65 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via c1e52321" (condition "A.Type == 'Via' && A.NetName == '/IB_LED_CPU' && A.Position_X == 85.9mm && A.Position_Y == 76.65mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 01cda418-e2a7-484e-a430-0b61b0c399f8; /IB_LED_CPU at 86.25,77.8 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 01cda418" (condition "A.Type == 'Via' && A.NetName == '/IB_LED_CPU' && A.Position_X == 86.25mm && A.Position_Y == 77.8mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 434061ae-ae35-44c7-b324-2d7846ae7fa8; /NET_LED at 67.8,85.55 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 434061ae" (condition "A.Type == 'Via' && A.NetName == '/NET_LED' && A.Position_X == 67.8mm && A.Position_Y == 85.55mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 2537f9a3-7033-49ae-a284-3ce76927fc89; /RS485_DIR at 93.525,93.425 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 2537f9a3" (condition "A.Type == 'Via' && A.NetName == '/RS485_DIR' && A.Position_X == 93.525mm && A.Position_Y == 93.425mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID f9d023dd-718f-4f65-8599-e0edc3095c8d; /RS485_DIR at 95.225,98.075 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via f9d023dd" (condition "A.Type == 'Via' && A.NetName == '/RS485_DIR' && A.Position_X == 95.225mm && A.Position_Y == 98.075mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID c475200b-7159-40ce-aa14-da7df09a10ef; /RS485_DIR at 96.45,103.25 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via c475200b" (condition "A.Type == 'Via' && A.NetName == '/RS485_DIR' && A.Position_X == 96.45mm && A.Position_Y == 103.25mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 13911587-795d-46df-90bb-dc01dbd95d22; /RS485_DIR_BUF at 73.85,87.5 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 13911587" (condition "A.Type == 'Via' && A.NetName == '/RS485_DIR_BUF' && A.Position_X == 73.85mm && A.Position_Y == 87.5mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 92bf2a60-c971-4a46-8669-761eae9027be; /RS485_DIR_CPU at 75.275,87.52 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 92bf2a60" (condition "A.Type == 'Via' && A.NetName == '/RS485_DIR_CPU' && A.Position_X == 75.275mm && A.Position_Y == 87.52mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 1bac232a-a330-4db2-ab10-057a7fdf30e6; /RS485_DIR_CPU at 84.2,91.8 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 1bac232a" (condition "A.Type == 'Via' && A.NetName == '/RS485_DIR_CPU' && A.Position_X == 84.2mm && A.Position_Y == 91.8mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID a07974ae-a136-4f03-bb09-d2ceb8a1636e; /RS485_RX_CPU at 71.9,85.4 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via a07974ae" (condition "A.Type == 'Via' && A.NetName == '/RS485_RX_CPU' && A.Position_X == 71.9mm && A.Position_Y == 85.4mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 3aef63c3-5040-4bf8-b939-adc93d942dd2; /RS485_RX_CPU at 71.9,86.65 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 3aef63c3" (condition "A.Type == 'Via' && A.NetName == '/RS485_RX_CPU' && A.Position_X == 71.9mm && A.Position_Y == 86.65mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 5404c3ab-0f66-4b37-bda5-d403d5e4821b; /RS485_RX_CPU at 74.55,85.95 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 5404c3ab" (condition "A.Type == 'Via' && A.NetName == '/RS485_RX_CPU' && A.Position_X == 74.55mm && A.Position_Y == 85.95mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 9a4ef3b0-231a-4bce-8ce1-53da22901113; /RS485_RX_CPU at 76,88.1 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 9a4ef3b0" (condition "A.Type == 'Via' && A.NetName == '/RS485_RX_CPU' && A.Position_X == 76mm && A.Position_Y == 88.1mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID dac8c551-f5e1-42ce-994c-7b9c8046f725; /RS485_TX at 74.95,90.45 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via dac8c551" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX' && A.Position_X == 74.95mm && A.Position_Y == 90.45mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID a1fde4d2-aeea-4ee6-8ee6-7eaf2bc091d3; /RS485_TX at 80.4,91.7 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via a1fde4d2" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX' && A.Position_X == 80.4mm && A.Position_Y == 91.7mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID bde1d6a9-fb0d-4247-b532-35f5fa9fdaac; /RS485_TX at 93.5,90.3 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via bde1d6a9" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX' && A.Position_X == 93.5mm && A.Position_Y == 90.3mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 8c8b149a-ac87-4b6b-b5ce-e50e06e3d65f; /RS485_TX at 96.7,95.675 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 8c8b149a" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX' && A.Position_X == 96.7mm && A.Position_Y == 95.675mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 53cd1a34-9f9b-4b56-b4be-eecff0814f35; /RS485_TX at 100.375,104.775 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 53cd1a34" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX' && A.Position_X == 100.375mm && A.Position_Y == 104.775mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID ac347909-69b3-428c-be50-9830cf6fe237; /RS485_TX_CPU at 69.7,80.55 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via ac347909" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX_CPU' && A.Position_X == 69.7mm && A.Position_Y == 80.55mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 4766cb56-2b94-4b7e-bc94-48367ffd6444; /RS485_TX_CPU at 74.9,80.55 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 4766cb56" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX_CPU' && A.Position_X == 74.9mm && A.Position_Y == 80.55mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 0dc78555-9518-4012-9989-0fa90371aa81; /RS485_TX_CPU at 83.525,88.325 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 0dc78555" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX_CPU' && A.Position_X == 83.525mm && A.Position_Y == 88.325mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID e8392e54-85bb-4212-8a44-942bd4061c86; /RS485_TX_CPU at 84.675,88.325 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via e8392e54" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX_CPU' && A.Position_X == 84.675mm && A.Position_Y == 88.325mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 13576b9c-7875-42f8-96bd-644df7851900; /RS485_TX_CPU at 84.675,90.125 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 13576b9c" (condition "A.Type == 'Via' && A.NetName == '/RS485_TX_CPU' && A.Position_X == 84.675mm && A.Position_Y == 90.125mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID a55a2ce1-0c8d-47b1-b42d-476ad85d4d6f; /USB_CC2 at 80.3,99.2 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via a55a2ce1" (condition "A.Type == 'Via' && A.NetName == '/USB_CC2' && A.Position_X == 80.3mm && A.Position_Y == 99.2mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 353b07ed-7575-4254-b5f1-eee076e1c734; /USB_CC2 at 80.5,96.4 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 353b07ed" (condition "A.Type == 'Via' && A.NetName == '/USB_CC2' && A.Position_X == 80.5mm && A.Position_Y == 96.4mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# Reviewed UUID 23420f5a-c889-4638-8148-3ad532fb7f2c; /USB_DN at 71.8,102.9 mm; keep0.175mm copper clearance.
+(rule "Reviewed factory via 23420f5a" (condition "A.Type == 'Via' && A.NetName == '/USB_DN' && A.Position_X == 71.8mm && A.Position_Y == 102.9mm") (constraint via_diameter (min 0.6mm)) (constraint annular_width (min 0.15mm)))
+# END REVIEWED LOCAL FACTORY VIAS

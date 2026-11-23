@@ -5,62 +5,48 @@
     "id": "fcplcn"
   },
   "model": "FCPLCN-161608-1v0",
-  "current_revision": "1v0 / extra supports removed",
+  "current_revision": "Independent local Lower3V3 and Upper5V power",
   "architecture": "STACK / 16 relay / 16 digital input / 8 isolated DATA",
-  "checked_at": "2026-11-19T04:59:28.100574+07:00",
-  "status": "Extra supports removed; exact baseline, native and source checks passed",
+  "checked_at": "2026-11-23T15:13:35.562467+00:00",
+  "status": "Power revision native connectivity/parity, mechanical and manufacturing-delta checks passed; retained legend/library advisories documented",
   "board_names": {
     "Upper": "FCPLCN-CPU-08-1v0",
     "Lower": "FCPLCN-RLY-1616-1v0"
   },
   "sha256": {
     "Upper": {
-      ".kicad_pcb": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
-      ".kicad_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
-      ".kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
-      ".kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
-      ".xml": "85d29fe2cda720f407e26b25b20abe629144e84b5724063b888d8db7f0827bdd"
+      ".kicad_pcb": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
+      ".kicad_sch": "4a322497816aa3b2461070c6b17fd2565bb98bd875e60493105f437079b08eb5",
+      ".kicad_pro": "50e215d35a5b607c17f890e7e22da80796f0a34633cd87eb35c359d4bcb62f71",
+      ".kicad_dru": "5dc607b650c870a38e91fe83ff6ae62dfc9ac11bfbab659f13338bcefac285c9",
+      ".xml": "2252c36d3092a415da608608fb8fb9e1d0e5c616e6c596adfa7036b0ccb87e07"
     },
     "Lower": {
-      ".kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
-      ".kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      ".kicad_pcb": "15ab3935683fea5c40f0f1efeb9c5d5e8f763ca321789e3e115367d0fb38f096",
+      ".kicad_sch": "ab8cd2f8e957d8c99af90c91478e194d544c5baa88663d9fbca6414ba6e58aaf",
       ".kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
       ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
-      ".xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb"
+      ".xml": "f42f441650edb5869786c9fb362c36beb5cd79479f0dd7437da4349cca79994c"
     }
   },
   "native_checks": {
     "FCPLCN-CPU-08-1v0": {
-      "pcb_sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
-      "copper_layers": [
-        "F.Cu",
-        "B.Cu"
-      ],
-      "active_drc": 0,
-      "excluded_drc": 2,
-      "unconnected": 0,
-      "parity": 0,
-      "ERC": 0,
-      "local_models": 15,
-      "standard_models": 133,
-      "missing_models": []
+      "physical_or_unreviewed_findings": [],
+      "unconnected_items": [],
+      "schematic_parity": [],
+      "erc_violations": [],
+      "visible_library_advisories": 152,
+      "retained_courtyard_exclusions": 2,
+      "advisories_proved_by": "Power-split-library-CPU.json"
     },
     "FCPLCN-RLY-1616-1v0": {
-      "pcb_sha256": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
-      "copper_layers": [
-        "F.Cu",
-        "B.Cu"
-      ],
-      "active_drc": 0,
-      "excluded_drc": 0,
-      "unconnected": 0,
-      "parity": 0,
-      "ERC": 0,
-      "local_models": 61,
-      "standard_models": 187,
-      "missing_models": [
-        "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse-NANO2-451_453.step"
-      ]
+      "physical_or_unreviewed_findings": [],
+      "unconnected_items": [],
+      "schematic_parity": [],
+      "erc_violations": [],
+      "visible_library_advisories": 0,
+      "retained_courtyard_exclusions": 0,
+      "advisories_proved_by": "Power-split-library-RLY.json"
     }
   },
   "data_ports": [
@@ -127,41 +113,52 @@
       "footprints": 251,
       "non_45_90_segments": 0,
       "strict_track_crossings": 0,
+      "minimum_track_width_mm": 0.22,
       "usb_trace_lengths_mm": {}
     },
     "Upper": {
       "copper_layers": 2,
-      "footprints": 148,
+      "footprints": 164,
       "non_45_90_segments": 0,
       "strict_track_crossings": 0,
+      "minimum_track_width_mm": 0.175,
       "usb_trace_lengths_mm": {
-        "/USB_DN_CPU": 8.474,
-        "/USB_DP_CPU": 4.315,
-        "/USB_DP": 12.647,
-        "/USB_DN": 15.889
+        "/USB_DN": 16.576,
+        "/USB_DN_CPU": 5.27,
+        "/USB_DP_CPU": 5.07,
+        "/USB_DP": 12.366
       }
     }
   },
   "bom_purchased": {
-    "Upper": 148,
-    "Lower": 248,
-    "total": 396
+    "CPU": 164,
+    "RLY": 248,
+    "total": 412
   },
   "checks": {
-    "current_revision": "Support-removal-validation.json",
-    "independent_source_delta": "Support-removal-source-audit.json",
+    "current_revision": "Power-split-validation.json",
+    "independent_source_delta": "Power-split-source-audit.json",
     "native_erc_schematics": {
-      "FCPLCN-CPU-08-1v0": "FCPLCN-CPU-08-1v0/Support-removal-ERC.json",
-      "FCPLCN-RLY-1616-1v0": "FCPLCN-RLY-1616-1v0/Support-removal-ERC.json"
+      "FCPLCN-CPU-08-1v0": "FCPLCN-CPU-08-1v0/Power-split-ERC.json",
+      "FCPLCN-RLY-1616-1v0": "FCPLCN-RLY-1616-1v0/Power-split-ERC.json"
     },
     "native_pcb_drc": {
-      "FCPLCN-CPU-08-1v0": "FCPLCN-CPU-08-1v0/Support-removal-DRC.json",
-      "FCPLCN-RLY-1616-1v0": "FCPLCN-RLY-1616-1v0/Support-removal-DRC.json"
+      "FCPLCN-CPU-08-1v0": "FCPLCN-CPU-08-1v0/Power-split-DRC.json",
+      "FCPLCN-RLY-1616-1v0": "FCPLCN-RLY-1616-1v0/Power-split-DRC.json"
     },
-    "board_pin_geometry_and_property_check": "JP2-board-check.json",
+    "board_pin_geometry_and_property_check": "Power-split-board-check.json",
     "BOM_updated": true,
     "firmware_unchanged_this_operation": true,
-    "firmware_validation": "Input-RC-firmware-qualification.json"
+    "firmware_validation": "Input-RC-firmware-qualification.json",
+    "mechanical": "Power-split-mechanical-audit.json",
+    "electrical": "Power-split-electrical.json",
+    "renders": "README-render-validation.json",
+    "manufacturing": {
+      "CPU": "Power-split-geometry-CPU.json",
+      "RLY": "Power-split-geometry-RLY.json",
+      "RLY_delta": "Power-split-lower-geometry-delta.json"
+    },
+    "USB_reference": "Power-split-usb-reference.json"
   },
   "notes": [
     "Prior reports certify only their own input hashes.",
@@ -169,7 +166,7 @@
     "Two pre-existing CPU BT1 DRC exclusions retained.",
     "One pre-existing standard fuse STEP model is absent from installed standard KiCad library; all local project models resolve.",
     "16 TLP2363 inputs require zero MCP GPPUA/GPPUB; initialization/readback/recovery updated and tested.",
-    "Input RC uses 12V; lower 3V3 component envelope82.5mA, supply allocation100mA. Firmware button startup/glitch qualification verified, raw diagnostic inputs retain physical levels."
+    "Input RC uses 12V; lower 3V3 component envelope82.9mA, supply allocation100mA. Firmware button startup/glitch qualification verified, raw diagnostic inputs retain physical levels."
   ],
   "fram": {
     "mpn": "FM24CL64B-GTR",
@@ -221,9 +218,11 @@
     }
   },
   "lower3v3": {
-    "component_envelope_ma": 82.5,
+    "component_envelope_ma": 82.9,
     "supply_allocation_ma": 100,
-    "nominal_LDO_loss_W": 0.1705,
+    "source": "R-78K3.3-0.5 + FB1",
+    "rated_current_ma": 500,
+    "linear_regulator_removed": true,
     "new_prefilter_supply": "12V"
   },
   "rs485_termination": {
@@ -244,5 +243,45 @@
   },
   "support_points": 2,
   "functional_stack_contacts": 12,
-  "mechanical_stack_contacts": 0
+  "mechanical_stack_contacts": 0,
+  "ibutton_panel": {
+    "connector": "Upper.J9",
+    "pins": {
+      "1": "LED-",
+      "2": "BUZZER-",
+      "3": "+12V_PANEL nominal"
+    },
+    "gpio": {
+      "LED": 43,
+      "BUZZER": 45
+    },
+    "active_level": "HIGH",
+    "common_ground": "MAIN GND internally; not brought to J9",
+    "bare_led_resistor_ohm": 1000,
+    "bare_led_resistor_power_w": 0.5,
+    "buzzer_current_allocation_ma": 100,
+    "led_current_allocation_ma": 8,
+    "main3v3_added_allocation_ma": 12,
+    "nominal_12v_panel_total_ma": 108,
+    "branch": "12V_LOGIC -> MF-NSMF020X-2 -> SS14 -> PANEL12; 22uF + 100nF + SMAJ15A to MAIN GND; ULN COM=PANEL12",
+    "filtered_logic_rail_at_full_budget_v": 10.47015271897302,
+    "buzzer_voltage_estimate_v": [
+      8.5,
+      9
+    ],
+    "gpio_strap_assumption": "Default eFuses for GPIO45; R74 10k pulls IB_BUZZ_BASE toGND, so GPIO45 sees R72+R74=10.68k when high-impedance. GPIO45 LOW selects3V3 VDD_SPI unless forced by eFuses. GPIO3 is NC.",
+    "prototype_qualification_required": true,
+    "socket_isolation": "iButton DATA/GND_ISO stays separate from LED and buzzer circuits.",
+    "nominal_system_voltage_v": 12,
+    "buzzer_voltage_estimate_scope": "Approximate voltage across the buzzer at full simultaneous design budget, including protected-rail drop, F2, D11 and U16 saturation; not a guaranteed minimum and not12V. Measure the actual selected buzzer and board at load/temperature.",
+    "GPIO43_boot_UART_note": "GPIO43 is ROM UART0 TX: LED may blink or remain on until application configures GPIO43 as GPIO output and drives the desired level. Do not use UART0 TX for runtime logging; use native USB console. External pull-down cannot override an actively driven UART pin.",
+    "buzzer_base_pulldown_ohm": 10000,
+    "gpio45_resistive_reset_path_to_ground_ohm": 10680
+  },
+  "current_validation": "Power-split-validation.json",
+  "documentation_update": {
+    "at_utc": "2026-11-23T15:37:50.471257+00:00",
+    "report": "README-render-validation.json",
+    "CAD_unchanged": true
+  }
 }

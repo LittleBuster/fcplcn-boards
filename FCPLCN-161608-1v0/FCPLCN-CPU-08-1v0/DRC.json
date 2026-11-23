@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-11-19T04:55:52",
+    "date": "2026-11-23T22:12:41",
     "ignored_checks": [
         {
             "description": "Footprint has no courtyard defined",
@@ -34,6 +34,2286 @@
     "source": "FCPLCN-CPU-08-1v0.kicad_pcb",
     "unconnected_items": [],
     "violations": [
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C43",
+                    "pos": {
+                        "x": 116.2,
+                        "y": 112.4
+                    },
+                    "uuid": "0075c6db-54ca-5256-b9e8-ee5d7e11e0d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R15",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 82.8
+                    },
+                    "uuid": "0dc20020-af18-4f06-a5d9-be3a688e3d14"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R63",
+                    "pos": {
+                        "x": 82.4,
+                        "y": 107.8
+                    },
+                    "uuid": "0e469476-940b-4826-97d8-00508bb241ff"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_1206_3216Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R53",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 112.0
+                    },
+                    "uuid": "0fb7244d-c757-5fe6-9167-73b18ac98fad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R37",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 94.4
+                    },
+                    "uuid": "17ef64ae-173b-4d78-8f93-18a978fdde96"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R34",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 91.2
+                    },
+                    "uuid": "1e1a4142-b7ae-4e47-babe-4edbd0da726b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C42",
+                    "pos": {
+                        "x": 115.6,
+                        "y": 106.05
+                    },
+                    "uuid": "26201f53-8515-563a-8342-f90997c0b615"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R36",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 93.8
+                    },
+                    "uuid": "262c6567-9611-4649-9f22-d2de53114f60"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R19",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 100.2
+                    },
+                    "uuid": "2fe4d76f-f4fe-49af-b90c-1d235734abd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R4",
+                    "pos": {
+                        "x": 54.9,
+                        "y": 95.2
+                    },
+                    "uuid": "35d3ed7d-4784-4d2f-bbae-66e1d92c07f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R18",
+                    "pos": {
+                        "x": 114.8,
+                        "y": 91.8
+                    },
+                    "uuid": "369fe1a6-c61f-4214-9201-2c7808b16db3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R16",
+                    "pos": {
+                        "x": 102.9,
+                        "y": 85.8
+                    },
+                    "uuid": "3c9ce2e7-87cf-44c4-92b1-41a6b9a6f02f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C21",
+                    "pos": {
+                        "x": 114.8,
+                        "y": 103.0
+                    },
+                    "uuid": "3fa1b045-2fed-4f19-96ee-a47748c5f398"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R29",
+                    "pos": {
+                        "x": 60.4,
+                        "y": 103.2
+                    },
+                    "uuid": "447bb699-6a56-457e-93b3-5c0b17fc3200"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C38",
+                    "pos": {
+                        "x": 107.3,
+                        "y": 107.2
+                    },
+                    "uuid": "46e6c5eb-9f93-58b2-be73-0fe40a052847"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место D3",
+                    "pos": {
+                        "x": 131.25,
+                        "y": 108.25
+                    },
+                    "uuid": "482b1a5b-96c1-4dd9-8c4a-41a063baacf8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R67",
+                    "pos": {
+                        "x": 90.2,
+                        "y": 107.8
+                    },
+                    "uuid": "4abd4b7b-04ec-40aa-ac3f-d2ddb2b8c8a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R65",
+                    "pos": {
+                        "x": 85.3,
+                        "y": 112.3
+                    },
+                    "uuid": "511242b8-9301-4a32-9bf4-33ec02152da1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R11",
+                    "pos": {
+                        "x": 75.3,
+                        "y": 94.4
+                    },
+                    "uuid": "57585551-21f7-497b-bd2e-fc465ed7ca4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U7",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 101.5
+                    },
+                    "uuid": "58cb75bd-01a2-4983-82a3-75adeda34bac"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R40",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 98.8
+                    },
+                    "uuid": "6136354a-0892-4fce-b9cc-3edd067fd5e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOT-23' не соответствует копии в библиотеке 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место Q2",
+                    "pos": {
+                        "x": 64.2,
+                        "y": 96.8
+                    },
+                    "uuid": "652a9583-1b51-4d95-a6a5-f3ebe03bbb9b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'KF128-2.54-10P' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место J3",
+                    "pos": {
+                        "x": 80.09,
+                        "y": 118.0
+                    },
+                    "uuid": "67098628-a464-41c0-8dbf-e52dbe9728a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C29",
+                    "pos": {
+                        "x": 114.8,
+                        "y": 98.5
+                    },
+                    "uuid": "69b6d066-c0bb-47ac-b55b-90fec209ec32"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'ESP32-S3-WROOM-1U_PTH030' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место U1",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 85.8
+                    },
+                    "uuid": "6a493495-c56d-4501-8f7f-147d4db3b495"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R20",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 102.8
+                    },
+                    "uuid": "6d9bf0e5-55b9-48ba-b8d5-5f7647fce9a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C10",
+                    "pos": {
+                        "x": 52.9,
+                        "y": 101.2
+                    },
+                    "uuid": "6f1f7023-b6d8-4021-854c-594f44a5d5c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место J2",
+                    "pos": {
+                        "x": 75.5,
+                        "y": 100.2
+                    },
+                    "uuid": "73f18796-be3a-4f49-a3d4-e00ff6ad2f65"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R64",
+                    "pos": {
+                        "x": 82.4,
+                        "y": 110.0
+                    },
+                    "uuid": "7df7b423-c95f-4c4d-a44c-9a20fa8f4402"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R28",
+                    "pos": {
+                        "x": 60.3,
+                        "y": 96.8
+                    },
+                    "uuid": "80e12581-4d8b-4942-97fd-ee99e133171a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'RECOM_R-78K3.3-1.0_SIP3_P2.54mm' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место U3",
+                    "pos": {
+                        "x": 71.4,
+                        "y": 73.8
+                    },
+                    "uuid": "875bea85-1005-4cae-b1f7-4dc873502d15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R62",
+                    "pos": {
+                        "x": 78.5,
+                        "y": 110.0
+                    },
+                    "uuid": "87a95c3f-d8b8-4966-b9f1-c4a8e83f976f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R26",
+                    "pos": {
+                        "x": 50.3,
+                        "y": 90.9
+                    },
+                    "uuid": "8a6f7df3-f066-4b28-a79c-042e4b14c1f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C28",
+                    "pos": {
+                        "x": 114.8,
+                        "y": 95.8
+                    },
+                    "uuid": "8c6a18b4-af43-408b-ac07-dc77989d5ce8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-14_3.9x8.7mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U14",
+                    "pos": {
+                        "x": 62.5,
+                        "y": 85.6
+                    },
+                    "uuid": "8cb49251-2193-5b54-8c75-277db7beedc2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R22",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 104.0
+                    },
+                    "uuid": "8d040e3f-708f-4648-8bfe-500bf39be379"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C13",
+                    "pos": {
+                        "x": 134.2,
+                        "y": 102.2
+                    },
+                    "uuid": "8df48c12-b688-4004-950a-0d5d4bc3783d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R57",
+                    "pos": {
+                        "x": 98.5,
+                        "y": 91.25
+                    },
+                    "uuid": "900017ff-5eba-4935-812e-47696b7948dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R27",
+                    "pos": {
+                        "x": 60.3,
+                        "y": 92.3
+                    },
+                    "uuid": "929c4953-fe86-4baf-ab94-4de5c9f1b652"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R38",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 97.0
+                    },
+                    "uuid": "936a8f79-aec5-4871-93e1-734df183ab3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SW_SPST_TS-1088-xR020' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место SW2",
+                    "pos": {
+                        "x": 95.5,
+                        "y": 101.2
+                    },
+                    "uuid": "9557b204-68a0-42e9-8182-814f7c900c62"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C12",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 87.0
+                    },
+                    "uuid": "990a75a1-13bd-48f9-9f6c-3a6ebf59ef58"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R61",
+                    "pos": {
+                        "x": 78.5,
+                        "y": 107.8
+                    },
+                    "uuid": "9b5559ab-598d-4643-850e-12d301428ab6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U8",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 89.9
+                    },
+                    "uuid": "9bedb7df-0e4c-455c-a454-211881903938"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R58",
+                    "pos": {
+                        "x": 98.25,
+                        "y": 78.75
+                    },
+                    "uuid": "9fcc4c6c-1a03-4223-9fbf-ad593e805860"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOT-23' не соответствует копии в библиотеке 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место Q1",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 92.3
+                    },
+                    "uuid": "a3b93f4c-e7ea-42bc-a222-e2789715570a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C1",
+                    "pos": {
+                        "x": 59.6,
+                        "y": 79.3
+                    },
+                    "uuid": "ac99044a-20c6-4778-aac3-6da276aef0e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R39",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 96.3
+                    },
+                    "uuid": "b4995f5d-1240-4cf6-b0a0-9b7ffae6f18a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C8",
+                    "pos": {
+                        "x": 61.7,
+                        "y": 107.65
+                    },
+                    "uuid": "b71e8e45-c894-44bd-8d25-dfd6266ce79b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R33",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 88.6
+                    },
+                    "uuid": "b74d5b6a-6a2b-4715-be98-24a2e39f9f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R21",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 101.7
+                    },
+                    "uuid": "ba105c4f-2a81-47e7-89db-3f73311db166"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'RECOM_R-78K3.3-0.5_SIP3_P2.54mm' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место U12",
+                    "pos": {
+                        "x": 96.2,
+                        "y": 111.0
+                    },
+                    "uuid": "bdd5747e-6c91-5edb-8079-20c2fe96ff06"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-14_3.9x8.7mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U13",
+                    "pos": {
+                        "x": 71.3,
+                        "y": 86.5
+                    },
+                    "uuid": "c4fe1beb-a959-565c-9b56-a055f4b3f85b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R66",
+                    "pos": {
+                        "x": 86.3,
+                        "y": 107.8
+                    },
+                    "uuid": "c705f55f-8a22-430c-9818-064bd0d9184b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C9",
+                    "pos": {
+                        "x": 52.9,
+                        "y": 103.8
+                    },
+                    "uuid": "c96f0446-e7ce-40b6-9ed4-209693ce5979"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место D4",
+                    "pos": {
+                        "x": 53.4,
+                        "y": 78.4
+                    },
+                    "uuid": "ca2e85f5-2c21-40f8-aa79-54f3a85d76d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U6",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 84.1
+                    },
+                    "uuid": "cb11f4c0-ec5e-4de6-9296-daa31493ea5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R35",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 91.3
+                    },
+                    "uuid": "cb7e2bd7-a278-489c-907d-0c92c901e8d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R3",
+                    "pos": {
+                        "x": 55.1,
+                        "y": 97.6
+                    },
+                    "uuid": "cd08d387-2d8e-42bc-a025-db725b463677"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C44",
+                    "pos": {
+                        "x": 116.2,
+                        "y": 110.2
+                    },
+                    "uuid": "d32ae0ed-4954-5a67-8680-a84b11bc287d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R12",
+                    "pos": {
+                        "x": 73.3,
+                        "y": 94.4
+                    },
+                    "uuid": "d3426946-3744-4871-bb3e-802f2847ab21"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SW_SPST_TS-1088-xR020' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место SW1",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 101.6
+                    },
+                    "uuid": "d5a39ffe-acfd-4965-96bd-86b7dc4afe17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R23",
+                    "pos": {
+                        "x": 50.3,
+                        "y": 82.5
+                    },
+                    "uuid": "db5573be-9317-4f0d-8a3c-7edad0559d9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U9",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 95.7
+                    },
+                    "uuid": "e135fbd9-6aca-4afa-a6da-c258587d6a37"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'PinHeader_1x05_P2.54mm_Vertical' не соответствует копии в библиотеке 'Connector_PinHeader_2.54mm'",
+            "items": [
+                {
+                    "description": "Посад. место J7",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 73.0
+                    },
+                    "uuid": "e9b42712-7bbc-46cf-8fd9-04ffc93a679d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R24",
+                    "pos": {
+                        "x": 50.3,
+                        "y": 85.3
+                    },
+                    "uuid": "e9d88921-44c7-4c2c-a7cf-6815116f57f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOT-23' не соответствует копии в библиотеке 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место Q3",
+                    "pos": {
+                        "x": 64.2,
+                        "y": 101.3
+                    },
+                    "uuid": "ee6d85db-b976-440e-a1a3-4cfe9554a9b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R25",
+                    "pos": {
+                        "x": 50.3,
+                        "y": 88.1
+                    },
+                    "uuid": "f031b1e8-63d7-4f63-b8e4-590525fd9fad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C45",
+                    "pos": {
+                        "x": 107.3,
+                        "y": 111.4
+                    },
+                    "uuid": "fc52e750-b1f8-549f-8993-ffdeabfc114d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C15",
+                    "pos": {
+                        "x": 102.7,
+                        "y": 85.2
+                    },
+                    "uuid": "0121ffaf-9e07-4be2-a2a2-32897e9758a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R60",
+                    "pos": {
+                        "x": 118.3,
+                        "y": 93.1
+                    },
+                    "uuid": "068d4415-ab64-4f8a-85a6-aa0ac35d70a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C46",
+                    "pos": {
+                        "x": 66.9,
+                        "y": 94.8
+                    },
+                    "uuid": "0a0bbecc-5224-5eb6-9be5-c957e875b7b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R47",
+                    "pos": {
+                        "x": 69.6,
+                        "y": 92.9
+                    },
+                    "uuid": "0acbd60e-f34e-53ce-96c9-a941ba8de74e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C26",
+                    "pos": {
+                        "x": 103.7,
+                        "y": 94.6
+                    },
+                    "uuid": "12715af9-3097-4388-89d7-bb728bf84f17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R46",
+                    "pos": {
+                        "x": 59.75,
+                        "y": 103.1
+                    },
+                    "uuid": "14418901-78df-497b-b0a7-e345de25a1b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R52",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 89.4
+                    },
+                    "uuid": "1e772237-7eba-5d3e-8f8a-e2a6836f2161"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C34",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 98.275
+                    },
+                    "uuid": "1ff6920b-8b6e-4486-970a-043659347338"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R30",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 92.3
+                    },
+                    "uuid": "22453688-6975-4c7c-ad09-875878ea5c70"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C51",
+                    "pos": {
+                        "x": 117.9,
+                        "y": 89.3
+                    },
+                    "uuid": "28620975-e332-4551-8e62-701a67d60ecc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R49",
+                    "pos": {
+                        "x": 66.5,
+                        "y": 88.3
+                    },
+                    "uuid": "28d973b5-d0ee-599f-9aac-ef93c9e686a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C27",
+                    "pos": {
+                        "x": 103.7,
+                        "y": 96.8
+                    },
+                    "uuid": "37aec8ba-78a4-42a9-b7e0-41d8a7c505ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C24",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 89.6
+                    },
+                    "uuid": "3b2a48fd-2a50-4955-939d-a104b80e79a5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R51",
+                    "pos": {
+                        "x": 88.75,
+                        "y": 95.0
+                    },
+                    "uuid": "3ce008ce-29ec-50d2-a92f-0da0a4419021"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C6",
+                    "pos": {
+                        "x": 78.1,
+                        "y": 76.2
+                    },
+                    "uuid": "3d718bcc-a624-4b58-ad06-a7985d3706ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R14",
+                    "pos": {
+                        "x": 100.3,
+                        "y": 103.4
+                    },
+                    "uuid": "40a8db40-e13d-4f7e-b50b-f11d336d4e2a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R48",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 92.0
+                    },
+                    "uuid": "41887614-8374-5132-810b-e73c1db01a00"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R2",
+                    "pos": {
+                        "x": 100.5,
+                        "y": 80.0
+                    },
+                    "uuid": "424f5511-7f8c-4f45-a756-f5bf6e00078d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C18",
+                    "pos": {
+                        "x": 103.7,
+                        "y": 99.9
+                    },
+                    "uuid": "44e49d0a-df49-4af8-a6d1-319cdf1122c0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место D2",
+                    "pos": {
+                        "x": 80.6,
+                        "y": 109.8
+                    },
+                    "uuid": "4aa931d1-b026-4f23-8089-e0abf60ab56a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R50",
+                    "pos": {
+                        "x": 76.5,
+                        "y": 85.0
+                    },
+                    "uuid": "4cf1b3c0-152c-5d4e-8633-8b7a4b0561e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C14",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 83.0
+                    },
+                    "uuid": "4da6a3b8-c230-4337-8374-9c81cbe5d40e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C56",
+                    "pos": {
+                        "x": 106.3,
+                        "y": 76.7
+                    },
+                    "uuid": "4de3c74c-cfff-5378-ba96-61080d5941e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R32",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 101.3
+                    },
+                    "uuid": "4f8442ab-505d-4816-874a-d270b809c5e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C17",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 85.2
+                    },
+                    "uuid": "56553d63-686b-4e44-991b-1ae916240133"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R10",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 93.8
+                    },
+                    "uuid": "576915b2-412f-463c-82ac-e16c5fd2f5ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C23",
+                    "pos": {
+                        "x": 103.7,
+                        "y": 91.0
+                    },
+                    "uuid": "57f24b04-e88b-4ac1-8a35-0eee3092b890"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C22",
+                    "pos": {
+                        "x": 103.7,
+                        "y": 88.5
+                    },
+                    "uuid": "658ecd7e-c07a-4aca-8b5a-6894bdc1c51d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C39",
+                    "pos": {
+                        "x": 103.6,
+                        "y": 110.9
+                    },
+                    "uuid": "6b021c88-50c2-565b-80fb-fa551b38fd48"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C53",
+                    "pos": {
+                        "x": 69.2,
+                        "y": 114.4
+                    },
+                    "uuid": "7022a0c1-17c5-4525-866d-b283cbe18b5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R72",
+                    "pos": {
+                        "x": 50.25,
+                        "y": 108.2
+                    },
+                    "uuid": "7452058e-49fe-47ec-a280-c393763f5819"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R6",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 98.7
+                    },
+                    "uuid": "7458e4ce-2dc5-4f6d-bc5d-7509e0eea37a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R1",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 83.2
+                    },
+                    "uuid": "75772b9d-a99b-4b8c-89fe-ce335c300109"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C40",
+                    "pos": {
+                        "x": 103.7,
+                        "y": 105.4
+                    },
+                    "uuid": "75a12568-9dc7-5e10-8a68-328393ed935a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R68",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 118.3
+                    },
+                    "uuid": "7601e7c2-1c2a-4f27-971b-9bc4111685e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOT-23' не соответствует копии в библиотеке 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место D9",
+                    "pos": {
+                        "x": 124.35,
+                        "y": 113.0
+                    },
+                    "uuid": "76484315-74e1-52d4-a4f8-97694f754408"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R5",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 96.5
+                    },
+                    "uuid": "7ab41105-eb66-4417-900b-d5d42ba73b69"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R54",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 106.4
+                    },
+                    "uuid": "7ea1aaec-f46b-5ba1-9bf7-e680aab61fbc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R17",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 87.4
+                    },
+                    "uuid": "7ff4fd28-d914-4676-91f4-93bdc0b03dfc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R8",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 103.1
+                    },
+                    "uuid": "82f0b35b-df90-41f3-ba74-8808188c230a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R13",
+                    "pos": {
+                        "x": 100.3,
+                        "y": 101.2
+                    },
+                    "uuid": "83042784-892e-49c5-9727-708a099e2c64"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R74",
+                    "pos": {
+                        "x": 49.5,
+                        "y": 105.0
+                    },
+                    "uuid": "86be447a-f4b8-4ce3-b493-ca6b5fbd0817"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U10",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 93.85
+                    },
+                    "uuid": "950e9576-2a08-4b04-afac-e5bd4eaa1e16"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'L_0805_2012Metric' не соответствует копии в библиотеке 'Inductor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место FB1",
+                    "pos": {
+                        "x": 122.7,
+                        "y": 106.7
+                    },
+                    "uuid": "96b06908-235e-5a74-ba68-d335288621ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место D6",
+                    "pos": {
+                        "x": 89.2,
+                        "y": 109.8
+                    },
+                    "uuid": "9e792479-ac14-43a0-9232-df6aff803a73"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R55",
+                    "pos": {
+                        "x": 96.3,
+                        "y": 103.4
+                    },
+                    "uuid": "9f5c58cb-b67e-586c-8791-486c5fb4f5bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C19",
+                    "pos": {
+                        "x": 96.3,
+                        "y": 99.3
+                    },
+                    "uuid": "a1ad78dd-12bf-42d6-8d1d-c28975afc2df"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C16",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 83.0
+                    },
+                    "uuid": "a47e7b3c-456c-44a0-872c-0c5ece2939e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R71",
+                    "pos": {
+                        "x": 53.2,
+                        "y": 118.1
+                    },
+                    "uuid": "a8d446c1-f3ec-436b-80bb-97ac55fd3146"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R31",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 96.8
+                    },
+                    "uuid": "a9848bdb-b918-4618-91d3-bb5ca08e250c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C41",
+                    "pos": {
+                        "x": 119.2,
+                        "y": 106.1
+                    },
+                    "uuid": "a9ea5b3b-b567-55c8-b5a7-ce72073d19dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C55",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 72.0
+                    },
+                    "uuid": "aad6ebde-66a9-5fce-9cd8-d44ca6a5ffd7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C4",
+                    "pos": {
+                        "x": 71.1,
+                        "y": 82.5
+                    },
+                    "uuid": "addc526e-faf4-4853-81c1-24cfe09ed0af"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C33",
+                    "pos": {
+                        "x": 74.5,
+                        "y": 75.25
+                    },
+                    "uuid": "af5bd2e2-984e-494c-9aad-8f96e34f78ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R73",
+                    "pos": {
+                        "x": 60.4,
+                        "y": 118.1
+                    },
+                    "uuid": "af78c861-3eb0-49bd-98d0-1a2ada4b912b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C0805_C50_Clearance' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место C50",
+                    "pos": {
+                        "x": 117.3,
+                        "y": 83.4
+                    },
+                    "uuid": "b06477b6-5585-4fa9-8c7e-bb246e7914e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC8_SRDA_USB_Clearance' не соответствует копии в библиотеке 'RelayStack'",
+            "items": [
+                {
+                    "description": "Посад. место D1",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 106.9
+                    },
+                    "uuid": "b2e2b6fc-8a79-4d58-8486-52322b073ed2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R69",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 110.4
+                    },
+                    "uuid": "ba1859fc-111c-48df-97ad-7cc132a9ab1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R7",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 100.9
+                    },
+                    "uuid": "badf8449-8fca-4272-bb75-70292c493872"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C7",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 81.0
+                    },
+                    "uuid": "bcfebdc3-fa10-4cd6-a8f1-138927e7111d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'D_SMA' не соответствует копии в библиотеке 'Diode_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место D11",
+                    "pos": {
+                        "x": 63.25,
+                        "y": 106.0
+                    },
+                    "uuid": "bf7a75c1-e752-44ae-b5cc-ff13f539f438"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R56",
+                    "pos": {
+                        "x": 98.74,
+                        "y": 112.775
+                    },
+                    "uuid": "c2c1370a-301c-5815-bb30-90166628bc2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'D_SMA' не соответствует копии в библиотеке 'Diode_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место D12",
+                    "pos": {
+                        "x": 63.25,
+                        "y": 110.2
+                    },
+                    "uuid": "c48721b7-ab28-4784-92a9-a5a3684a70a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C48",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 88.75
+                    },
+                    "uuid": "c6bb06b3-9e36-49c7-8217-81f9531916f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R70",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 110.4
+                    },
+                    "uuid": "d0563cc5-56b7-4551-8b84-6eb7c9336709"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R9",
+                    "pos": {
+                        "x": 80.5,
+                        "y": 97.5
+                    },
+                    "uuid": "d38f415c-689e-420d-a2cb-d1c21ad2f903"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C11",
+                    "pos": {
+                        "x": 116.2,
+                        "y": 76.3
+                    },
+                    "uuid": "d4e32199-b0e1-470c-9fa8-7413aee042ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C37",
+                    "pos": {
+                        "x": 98.2,
+                        "y": 107.0
+                    },
+                    "uuid": "d6b362a7-d32e-563d-9587-b7699c47e49a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'Fuse_1206_3216Metric' не соответствует копии в библиотеке 'Fuse'",
+            "items": [
+                {
+                    "description": "Посад. место F2",
+                    "pos": {
+                        "x": 65.7,
+                        "y": 114.5
+                    },
+                    "uuid": "da76d32a-c4d7-43dc-8199-2dc87f6e3c99"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R75",
+                    "pos": {
+                        "x": 67.6,
+                        "y": 118.1
+                    },
+                    "uuid": "dc6321f5-55a5-47b5-bc22-26bd3224c417"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-16_3.9x9.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U16",
+                    "pos": {
+                        "x": 55.8,
+                        "y": 110.1
+                    },
+                    "uuid": "e152a8c6-fffe-46bf-8cc4-98a6632eb83d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'SOIC-8_3.9x4.9mm_P1.27mm' не соответствует копии в библиотеке 'Package_SO'",
+            "items": [
+                {
+                    "description": "Посад. место U15",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 84.1
+                    },
+                    "uuid": "e21bc250-715f-4232-bd11-5ab7b1bbd900"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место R59",
+                    "pos": {
+                        "x": 120.2,
+                        "y": 86.2
+                    },
+                    "uuid": "eddbd215-cae7-475c-871d-23d8fe765329"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C25",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 91.8
+                    },
+                    "uuid": "f0f74f32-bc77-4d94-961f-4512e4142d58"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C20",
+                    "pos": {
+                        "x": 113.9,
+                        "y": 99.7
+                    },
+                    "uuid": "f12d8959-3fbd-4f9c-b8bf-4ab42059a986"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C36",
+                    "pos": {
+                        "x": 56.25,
+                        "y": 98.7
+                    },
+                    "uuid": "f272529d-4c3b-4c6d-a5cc-4494972caee5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C5",
+                    "pos": {
+                        "x": 79.8,
+                        "y": 78.7
+                    },
+                    "uuid": "f2f30fe9-f3da-440c-bff1-3a1c8d11f2c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C49",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 80.25
+                    },
+                    "uuid": "f3dbc287-7713-489a-9ca3-ea39540e1704"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C52",
+                    "pos": {
+                        "x": 62.0,
+                        "y": 114.5
+                    },
+                    "uuid": "f6db494a-6baa-462b-b291-88fbf2645cba"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C47",
+                    "pos": {
+                        "x": 62.5,
+                        "y": 88.0
+                    },
+                    "uuid": "f7957b58-8c16-5542-9596-a2f75f71cbda"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C3",
+                    "pos": {
+                        "x": 73.5,
+                        "y": 82.5
+                    },
+                    "uuid": "f9b139d7-3870-4374-a06f-a95672325249"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C35",
+                    "pos": {
+                        "x": 61.75,
+                        "y": 92.265
+                    },
+                    "uuid": "fd18796f-cc47-4647-b1e4-1cb78e737074"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Посад. место 'C_1206_3216Metric' не соответствует копии в библиотеке 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Посад. место C54",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 74.4
+                    },
+                    "uuid": "ffeae272-7f07-5c8b-8032-0a40795a7701"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
         {
             "comment": "BT1 locating hole under U1 body; clears module pads and thermal copper; holder peg clearance requires sample fit check",
             "description": "NPTH inside courtyard",

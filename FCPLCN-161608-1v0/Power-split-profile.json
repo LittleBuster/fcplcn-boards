@@ -1,0 +1,58 @@
+{
+  "board": "FCPLCN-CPU-08-1v0 and FCPLCN-RLY-1616-1v0",
+  "factory": "https://pselectro.ru/tehnologiceskie-vozmoznosti-izgotovlenia-pecatnyh-plat-77980/",
+  "copper_layers": 2,
+  "nominal_total_thickness_mm": 1.6,
+  "nominal_copper_thickness_mm_each_face": 0.035,
+  "nominal_core_thickness_mm": 1.51,
+  "nominal_mask_thickness_mm_each_face": 0.01,
+  "nominal_core_epsilon_r": 4.2,
+  "epsilon_is_design_assumption_requires_factory_material_confirmation": true,
+  "minimum_track_width_mm": 0.175,
+  "minimum_signal_clearance_mm": 0.175,
+  "minimum_zone_clearance_mm": 0.2,
+  "minimum_via_mm": [
+    0.6,
+    0.3
+  ],
+  "minimum_annular_ring_mm": 0.15,
+  "minimum_hole_to_copper_mm": 0.25,
+  "minimum_hole_to_hole_mm": 0.3,
+  "minimum_milled_edge_clearance_mm": 0.3,
+  "minimum_main_field_clearance_mm": 1.5,
+  "mask_expansion_mm": 0.05,
+  "minimum_mask_web_mm": 0.15,
+  "minimum_legend_height_mm": 1,
+  "minimum_legend_stroke_mm": 0.15,
+  "minimum_legend_to_aperture_mm": 0.2,
+  "explicit_factory_limit_concessions": {
+    "J2": "Unchanged purchased DIP USB-C footprint requires0.15mmannuli and0.025mm maskexpansion;publishedfactorylimits35um. Full0.2mmringatfixedholeswouldviolateforeigncopperclearance.",
+    "reviewed_vias": "Only exact UUID/net/coordinate entries in the reviewed-via manifest may use0.60/0.30mm,0.15mm nominal annulus. All ordinary sites retain0.70/0.30mm and0.20mm annulus."
+  },
+  "manufacturing_assumptions": [
+    "Milledboardoutline;notV-score.",
+    "Noresin-filledviasassumed;manuallyprefillflushonlytheexposedvia-in-padlocationsdocumentedinassemblyreport.",
+    "USBimpedanceestimateisbasedonnominalstackup;finishedboard90ohmcontrolrequiresfactorymaterialandCAMconfirmation."
+  ],
+  "lower_board_changed": true,
+  "ordinary_signal_width_mm": 0.18,
+  "four_W5500_SPI_width_mm": 0.175,
+  "ordinary_via_mm": [
+    0.7,
+    0.3
+  ],
+  "ordinary_annular_ring_mm": 0.2,
+  "reviewed_via_manifest": "FCPLCN-CPU-08-1v0/reviewed-local-vias.json",
+  "revision": "Independent local power supplies",
+  "lower_rules": {
+    "minimum_track_width_mm": 0.2,
+    "minimum_signal_clearance_mm": 0.2,
+    "minimum_via_mm": [
+      0.8,
+      0.3
+    ],
+    "minimum_via_annulus_mm": 0.25,
+    "minimum_edge_clearance_mm": 0.3
+  },
+  "lower_legend_scope": "All copper/holes/annuli/edge/mask checks pass; unchanged earlier legend advisories remain explicitly visible in raw report. This operation adds no legend finding."
+}

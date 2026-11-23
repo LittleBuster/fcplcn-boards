@@ -1,12 +1,12 @@
 {
   "renderer": "KiCad pcb export vrml + pcb render",
   "source_sha256": {
-    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
-    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
-    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
-    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "3bf7628bab0c0ded115fc2d5b02a5742aaaca11400f7c68ed79838d91916a6b4",
-    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
-    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "4a322497816aa3b2461070c6b17fd2565bb98bd875e60493105f437079b08eb5",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "50e215d35a5b607c17f890e7e22da80796f0a34633cd87eb35c359d4bcb62f71",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "5dc607b650c870a38e91fe83ff6ae62dfc9ac11bfbab659f13338bcefac285c9",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "15ab3935683fea5c40f0f1efeb9c5d5e8f763ca321789e3e115367d0fb38f096",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "ab8cd2f8e957d8c99af90c91478e194d544c5baa88663d9fbca6414ba6e58aaf",
     "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
     "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
     "Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
@@ -33,6 +33,7 @@
     "FCPLCN-RLY-1616-1v0/3d/KF128-2P.wrl": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81",
     "FCPLCN-RLY-1616-1v0/3d/KF128-8P.wrl": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1",
     "FCPLCN-RLY-1616-1v0/3d/LTV847S.wrl": "6c916c5190b3409f646ea676eb07092ccc6e8412ae7c0f68ef8b3a46e4affb44",
+    "FCPLCN-RLY-1616-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
     "FCPLCN-RLY-1616-1v0/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step": "05ad7d4945131c76ec7b9448dd9cbb5376b56adcd564c58d93e50ca7870fab1f",
     "FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c",
     "FCPLCN-RLY-1616-1v0/3d/TLP2363_5pin_SO6.wrl": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b",
@@ -52,7 +53,7 @@
         0
       ],
       "file": "FCPLCN-CPU-08-1v0-top.png",
-      "sha256": "b75169dbbf0c9d585ba2e02a5f78446a439725ff2b8260c74f4612d73c9ae044",
+      "sha256": "f50edc1b15fd7c07382c4e3ba2cdb8edc0665a4827d60680535ff25b29533baf",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -68,7 +69,7 @@
         0
       ],
       "file": "FCPLCN-CPU-08-1v0-bottom.png",
-      "sha256": "22f558cb499183cfcd22b134b88ba7f5f09f4e1d054ce330230fce80584d3258",
+      "sha256": "3c77e880509f0a004867f131c6856c85d76c43ad1c377d8722725cfdd75cd5a4",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -84,7 +85,7 @@
         0
       ],
       "file": "FCPLCN-CPU-08-1v0-front.png",
-      "sha256": "61545e956a847a1945e91862ebc1a18001b96fd13b86ee9390c25688e895e409",
+      "sha256": "63c7559d32b8c96080149c56be2f323859e2905a20f4e74b01d27196250cf2cf",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -100,7 +101,7 @@
         0
       ],
       "file": "FCPLCN-CPU-08-1v0-back.png",
-      "sha256": "83adc9f9308c90969c0d3e8c1171bc7a13b41cb209119235ab84240b622ae0d3",
+      "sha256": "5c7a22f9e58944dcf6c43aaf1565fb2106f6327ddf886e24c8c195c3e7795b0d",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -116,7 +117,7 @@
         0
       ],
       "file": "FCPLCN-CPU-08-1v0-left.png",
-      "sha256": "0575415c6c3b74f64426ded8918cb5f671e46a120e993457a742186535e93bfd",
+      "sha256": "21f648b6a2a581fb9ab9fe083d95a78d799fae6d60e4536abbe845325f4728b8",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -132,7 +133,7 @@
         0
       ],
       "file": "FCPLCN-CPU-08-1v0-right.png",
-      "sha256": "54732742d27ded9b168e1e5e916674d7eb5a77a23ba7a998c4616d7d20fbf17d",
+      "sha256": "a3e75ce42490aa4f4ebe4b7b5ab2d508d60f2f108f00c4baacc978ebb1709fd4",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -148,7 +149,7 @@
         -8.0
       ],
       "file": "FCPLCN-CPU-08-1v0-angled-front.png",
-      "sha256": "38f7047a2e381916d9ceb8df63ccc0f5aa90b78dfa40b77844dc5962e0a553cf",
+      "sha256": "c01b9f3c47917e5b744af3f595b05297cf70a7776f9da2a4471395176341cd51",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -164,7 +165,7 @@
         8.0
       ],
       "file": "FCPLCN-CPU-08-1v0-angled-back.png",
-      "sha256": "f697312dca73db0ca319bc7f26159beda88ac016f40addde19a5c3cbfe80b958",
+      "sha256": "7520b656dbd582133fe2d65c8f68ac31bebf87301d8d445d3f4a6cec2fe77f5b",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,
@@ -180,7 +181,7 @@
         -8.0
       ],
       "file": "FCPLCN-CPU-08-1v0-angled-bottom.png",
-      "sha256": "80e6853fbdfde6bf6b4cde9ad26a53681144385b86abe25ff84159212ccab480",
+      "sha256": "3a4faca6577126ed8e239832995adab8d36de687dcc4a74337b49a5369119ebb",
       "width": 1712,
       "height": 1232,
       "requested_width": 1736,

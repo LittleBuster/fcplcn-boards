@@ -1,0 +1,629 @@
+{
+  "passed": true,
+  "generated_utc": "2026-11-23T15:12:33.720977+00:00",
+  "source_pcb": "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
+  "source_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/validation/projected_isolation_current.py": "0c6f8e4a62ed1434a10a6a0e7e77bd054beda792cf5b206f0158b1269d9d17ac",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "50e215d35a5b607c17f890e7e22da80796f0a34633cd87eb35c359d4bcb62f71",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "5dc607b650c870a38e91fe83ff6ae62dfc9ac11bfbab659f13338bcefac285c9"
+  },
+  "source_unchanged": true,
+  "scope": "Upper PCB only; both-face XY projection of every native pad/track/via outer copper envelope and every saved ordinary-zone FILLED copper polygon.",
+  "required_projected_clearance_mm": 1.5,
+  "native_polygon_comparison_epsilon_mm": 0.0011,
+  "native_polygon_max_error_nm": 500,
+  "native_KiCad_version": "10.0.8",
+  "Shapely_version": "2.0.7",
+  "FIELD_definition": "Net name without leading slash ends with _ISO, or is RS485_A/RS485_B/RS485_TERM/RS485_VISO/RS485_VISO_OUT. This includes floating TVS*_REF_ISO.",
+  "MAIN_definition": "Every other net, including empty/unnamed copper. No net/reference/object exceptions.",
+  "minimum_projected_gap": {
+    "MAIN": {
+      "uuid": "3dee04bb-bb12-4a61-ac8c-3f0ed5de3b2b",
+      "kind": "ZONE",
+      "net": "/+3V3_RS485",
+      "domain": "MAIN",
+      "zone_name": ""
+    },
+    "FIELD": {
+      "uuid": "694e83b5-d60f-4934-b497-9823ed23913c",
+      "kind": "PCB_TRACK",
+      "net": "/DATA2_IC_ISO",
+      "domain": "FIELD",
+      "start_mm": [
+        109.7,
+        104.0
+      ],
+      "end_mm": [
+        112.8,
+        107.1
+      ],
+      "width_mm": 0.18
+    },
+    "gap_mm": 1.5004989744541481,
+    "threshold_mm": 1.5,
+    "native_polygon_uncertainty_mm": 0.0011,
+    "distance_interval_mm": [
+      1.499398974454148,
+      1.5015989744541482
+    ],
+    "closest_projected_points_mm": [
+      [
+        108.592509,
+        105.141815
+      ],
+      [
+        109.653522,
+        104.080802
+      ]
+    ],
+    "layer_pairs_below_threshold_plus_epsilon": [
+      {
+        "MAIN_layer": "F.Cu",
+        "FIELD_layer": "F.Cu",
+        "gap_mm": 1.5004989744541481,
+        "same_face": true
+      }
+    ]
+  },
+  "conservative_lower_bound_passed": false,
+  "violating_UUID_pairs": [],
+  "near_threshold_UUID_pairs": [
+    {
+      "MAIN": {
+        "uuid": "3dee04bb-bb12-4a61-ac8c-3f0ed5de3b2b",
+        "kind": "ZONE",
+        "net": "/+3V3_RS485",
+        "domain": "MAIN",
+        "zone_name": ""
+      },
+      "FIELD": {
+        "uuid": "694e83b5-d60f-4934-b497-9823ed23913c",
+        "kind": "PCB_TRACK",
+        "net": "/DATA2_IC_ISO",
+        "domain": "FIELD",
+        "start_mm": [
+          109.7,
+          104.0
+        ],
+        "end_mm": [
+          112.8,
+          107.1
+        ],
+        "width_mm": 0.18
+      },
+      "gap_mm": 1.5004989744541481,
+      "threshold_mm": 1.5,
+      "native_polygon_uncertainty_mm": 0.0011,
+      "distance_interval_mm": [
+        1.499398974454148,
+        1.5015989744541482
+      ],
+      "closest_projected_points_mm": [
+        [
+          108.592509,
+          105.141815
+        ],
+        [
+          109.653522,
+          104.080802
+        ]
+      ],
+      "layer_pairs_below_threshold_plus_epsilon": [
+        {
+          "MAIN_layer": "F.Cu",
+          "FIELD_layer": "F.Cu",
+          "gap_mm": 1.5004989744541481,
+          "same_face": true
+        }
+      ]
+    },
+    {
+      "MAIN": {
+        "uuid": "b0852fae-db2d-43ee-80bf-53ccfbed921a",
+        "kind": "ZONE",
+        "net": "/GND",
+        "domain": "MAIN",
+        "zone_name": ""
+      },
+      "FIELD": {
+        "uuid": "59bb262f-5f6a-46ce-b8e4-cc0e8c06bd3c",
+        "kind": "ZONE",
+        "net": "/GND_ISO",
+        "domain": "FIELD",
+        "zone_name": ""
+      },
+      "gap_mm": 1.5008191211635011,
+      "threshold_mm": 1.5,
+      "native_polygon_uncertainty_mm": 0.0011,
+      "distance_interval_mm": [
+        1.499719121163501,
+        1.5019191211635012
+      ],
+      "closest_projected_points_mm": [
+        [
+          108.058228,
+          104.068407
+        ],
+        [
+          109.457309,
+          103.52524
+        ]
+      ],
+      "layer_pairs_below_threshold_plus_epsilon": [
+        {
+          "MAIN_layer": "B.Cu",
+          "FIELD_layer": "B.Cu",
+          "gap_mm": 1.5008191211635011,
+          "same_face": true
+        }
+      ]
+    },
+    {
+      "MAIN": {
+        "uuid": "3dee04bb-bb12-4a61-ac8c-3f0ed5de3b2b",
+        "kind": "ZONE",
+        "net": "/+3V3_RS485",
+        "domain": "MAIN",
+        "zone_name": ""
+      },
+      "FIELD": {
+        "uuid": "c0f9cbb3-e510-4d4d-97cb-03c612e5b136",
+        "kind": "PCB_TRACK",
+        "net": "/DATA2_IC_ISO",
+        "domain": "FIELD",
+        "start_mm": [
+          109.7,
+          85.65
+        ],
+        "end_mm": [
+          109.7,
+          104.0
+        ],
+        "width_mm": 0.18
+      },
+      "gap_mm": 1.5010126423025152,
+      "threshold_mm": 1.5,
+      "native_polygon_uncertainty_mm": 0.0011,
+      "distance_interval_mm": [
+        1.499912642302515,
+        1.5021126423025153
+      ],
+      "closest_projected_points_mm": [
+        [
+          108.592509,
+          105.141815
+        ],
+        [
+          109.642905,
+          104.069571
+        ]
+      ],
+      "layer_pairs_below_threshold_plus_epsilon": [
+        {
+          "MAIN_layer": "F.Cu",
+          "FIELD_layer": "F.Cu",
+          "gap_mm": 1.5010126423025152,
+          "same_face": true
+        }
+      ]
+    }
+  ],
+  "input_errors": [],
+  "inventory": {
+    "MAIN_objects": 2609,
+    "FIELD_objects": 958,
+    "possible_opposite_domain_object_pairs": 2499422,
+    "exact_nearby_pair_distances_checked": 3903,
+    "all_potential_violations_covered_by_spatial_index": true,
+    "objects_by_kind_and_domain": {
+      "FIELD:PCB_TRACK": 695,
+      "FIELD:PCB_VIA": 105,
+      "MAIN:PCB_TRACK": 1909,
+      "MAIN:PCB_VIA": 288,
+      "FIELD:PAD": 156,
+      "MAIN:PAD": 405,
+      "MAIN:ZONE": 7,
+      "FIELD:ZONE": 2
+    },
+    "FIELD_nets": [
+      "/+3V3_ISO",
+      "/+5V_ISO",
+      "/DATA1_IC_ISO",
+      "/DATA1_ISO",
+      "/DATA2_IC_ISO",
+      "/DATA2_ISO",
+      "/DATA3_IC_ISO",
+      "/DATA3_ISO",
+      "/DATA4_IC_ISO",
+      "/DATA4_ISO",
+      "/DATA5_IC_ISO",
+      "/DATA5_ISO",
+      "/DATA6_IC_ISO",
+      "/DATA6_ISO",
+      "/DATA7_IC_ISO",
+      "/DATA7_ISO",
+      "/DATA8_IC_ISO",
+      "/DATA8_ISO",
+      "/GND_ISO",
+      "/RS485_A",
+      "/RS485_B",
+      "/RS485_TERM",
+      "/RS485_VISO",
+      "/RS485_VISO_OUT",
+      "/SCL_IC_ISO",
+      "/SCL_ISO",
+      "/SDA_IC_ISO",
+      "/SDA_ISO",
+      "/TVS_DATA14_REF_ISO",
+      "/TVS_DATA58_REF_ISO",
+      "/TVS_I2C_REF_ISO"
+    ],
+    "MAIN_nets": [
+      "",
+      "/+12V_LOGIC",
+      "/+12V_PANEL",
+      "/+3V3",
+      "/+3V3_RS485",
+      "/+5V_TMR",
+      "/ALARM_LED",
+      "/DATA1_CPU",
+      "/DATA2_CPU",
+      "/DATA3_CPU",
+      "/DATA4_CPU",
+      "/DATA5_CPU",
+      "/DATA6_CPU",
+      "/DATA7_CPU",
+      "/DATA8_CPU",
+      "/ESP_BOOT",
+      "/ESP_EN",
+      "/ETH_CS_CPU",
+      "/ETH_CS_N",
+      "/ETH_INT_N",
+      "/ETH_MISO",
+      "/ETH_MISO_CPU",
+      "/ETH_MOSI",
+      "/ETH_MOSI_CPU",
+      "/ETH_RST_F",
+      "/ETH_RST_N",
+      "/ETH_SCK",
+      "/ETH_SCK_CPU",
+      "/GND",
+      "/I2C_SCL",
+      "/I2C_SDA",
+      "/IB_12V_FUSED",
+      "/IB_BUZZ_BASE",
+      "/IB_BUZZ_CPU",
+      "/IB_BUZZ_OUT",
+      "/IB_LED_BASE",
+      "/IB_LED_CPU",
+      "/IB_LED_OUT",
+      "/IB_LED_SINK",
+      "/ISO_SCL_CPU",
+      "/ISO_SDA_CPU",
+      "/LED_ALARM_BASE",
+      "/LED_ALARM_DRIVE",
+      "/LED_ALARM_OUT",
+      "/LED_NET_BASE",
+      "/LED_NET_DRIVE",
+      "/LED_NET_OUT",
+      "/LED_PWR_OUT",
+      "/LED_STATUS_BASE",
+      "/LED_STATUS_DRIVE",
+      "/LED_STATUS_OUT",
+      "/MCP_RESET_N",
+      "/NET_LED",
+      "/RS485_DIR",
+      "/RS485_DIR_BUF",
+      "/RS485_DIR_CPU",
+      "/RS485_RX_BUF",
+      "/RS485_RX_CPU",
+      "/RS485_RX_RAW",
+      "/RS485_TX",
+      "/RS485_TX_BUF",
+      "/RS485_TX_CPU",
+      "/RTC_VBAT",
+      "/RTC_VCC",
+      "/STATUS_LED",
+      "/TVS_LED_REF",
+      "/TVS_USB_REF",
+      "/USB_CC1",
+      "/USB_CC2",
+      "/USB_DN",
+      "/USB_DN_CPU",
+      "/USB_DP",
+      "/USB_DP_CPU",
+      "/USB_VBUS",
+      "/USB_VBUS_SENSE",
+      "unconnected-(J2-SBU1-PadA8)",
+      "unconnected-(J2-SBU2-PadB8)",
+      "unconnected-(U1-IO3-Pad15)",
+      "unconnected-(U1-IO35-Pad28)",
+      "unconnected-(U1-IO36-Pad29)",
+      "unconnected-(U1-IO37-Pad30)",
+      "unconnected-(U1-IO46-Pad16)",
+      "unconnected-(U10-32KHZ-Pad1)",
+      "unconnected-(U10-INT{slash}SQW-Pad3)",
+      "unconnected-(U10-RST-Pad4)",
+      "unconnected-(U13-1Y-Pad3)",
+      "unconnected-(U13-2Y-Pad6)",
+      "unconnected-(U14-2Y-Pad6)",
+      "unconnected-(U14-3Y-Pad8)",
+      "unconnected-(U14-4Y-Pad11)",
+      "unconnected-(U16-OUT1-Pad16)",
+      "unconnected-(U16-OUT2-Pad15)",
+      "unconnected-(U16-OUT3-Pad14)",
+      "unconnected-(U16-OUT4-Pad13)",
+      "unconnected-(U16-OUT5-Pad12)",
+      "unconnected-(U2-NC-Pad2.4)"
+    ],
+    "non_copper_or_empty_shape_objects": [
+      {
+        "uuid": "2fb9d25e-db8f-4bbd-b5c7-ca0d44405ec1",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "6d912c76-339f-4796-9867-8b4667718360",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "59bf4a69-ba3f-417f-bca6-bcaf86d67629",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "c3dc13e8-65d0-43d7-90ee-4dfb4d080f1a",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "52fc279d-7764-4c7a-a26f-06288c48aa65",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "70fc39d7-fb2d-4e77-911c-30b0203c6399",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "dabedabe-ba29-4fd1-b960-10d1ac97dc4d",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "d770e898-5d36-4610-9cbb-a96f83416b53",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      },
+      {
+        "uuid": "0399e3d6-8768-4c01-bdb0-e2be94d8d9a4",
+        "kind": "PAD",
+        "reason": "No F.Cu/B.Cu polygon; e.g. paste-only or non-copper pad"
+      }
+    ]
+  },
+  "ordinary_zone_fill_observations": [
+    {
+      "uuid": "038ed3ed-7a35-4f06-b723-232e09aa23a9",
+      "net": "/GND",
+      "domain": "MAIN",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "outlines": 2,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 64.76590220005468
+        }
+      ]
+    },
+    {
+      "uuid": "20a0a2bf-0005-48b6-b0b0-fab768fee099",
+      "net": "/GND",
+      "domain": "MAIN",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "outlines": 5,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 84.72205729617761
+        }
+      ]
+    },
+    {
+      "uuid": "3dee04bb-bb12-4a61-ac8c-3f0ed5de3b2b",
+      "net": "/+3V3_RS485",
+      "domain": "MAIN",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "outlines": 2,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 58.7727624855455
+        }
+      ]
+    },
+    {
+      "uuid": "5d86f432-d23f-4553-a0df-3594be280d47",
+      "net": "/GND_ISO",
+      "domain": "FIELD",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "outlines": 18,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 512.5973596927234
+        }
+      ]
+    },
+    {
+      "uuid": "cfc2e6f9-78c4-4977-9dd5-28c60d30aba6",
+      "net": "/+3V3",
+      "domain": "MAIN",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "outlines": 18,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 752.507362659955
+        }
+      ]
+    },
+    {
+      "uuid": "db597a39-9265-4f5c-a5f3-b660276cdc30",
+      "net": "/GND",
+      "domain": "MAIN",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "outlines": 2,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 9.968102194031498
+        }
+      ]
+    },
+    {
+      "uuid": "59bb262f-5f6a-46ce-b8e4-cc0e8c06bd3c",
+      "net": "/GND_ISO",
+      "domain": "FIELD",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "B.Cu",
+          "outlines": 16,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 621.5299615419349
+        }
+      ]
+    },
+    {
+      "uuid": "b0852fae-db2d-43ee-80bf-53ccfbed921a",
+      "net": "/GND",
+      "domain": "MAIN",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "B.Cu",
+          "outlines": 24,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 1396.2991030089702
+        }
+      ]
+    },
+    {
+      "uuid": "c1939528-3d7b-4eb8-8790-ad592ba40979",
+      "net": "/GND",
+      "domain": "MAIN",
+      "is_filled": true,
+      "layers": [
+        {
+          "layer": "B.Cu",
+          "outlines": 3,
+          "has_filled_polys": true,
+          "fill_flag": 0,
+          "area_mm2": 30.963141391323468
+        }
+      ]
+    }
+  ],
+  "non_copper_rule_areas_not_measured": [
+    {
+      "uuid": "0d8885c0-86d6-4b48-81cf-dc24b19edcb7",
+      "name": "ISO_BARRIER_FINAL_0_3",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "170542cd-0727-4fd9-be41-d981c266f306",
+      "name": "ISO_BARRIER_FINAL_0_1",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "22267d65-6ee8-4afd-aaa9-233e785d2348",
+      "name": "ISO_BARRIER_FINAL_0_4",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "2a3ba78e-7adf-4429-a067-4ee60c16abfa",
+      "name": "ISO_BARRIER_FINAL_0_0",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "4b953aef-54f7-473c-9966-4ae64481d162",
+      "name": "ISO_BARRIER_FINAL_0_2",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "882d15da-036a-45f7-9212-b718a376ab2e",
+      "name": "ISO_BARRIER_FINAL_0_5",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "0dec31a7-ef32-4b7b-9181-8a4788282aa1",
+      "name": "ISO_BARRIER_FINAL_1_10",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "162780b4-40d8-4c82-87a1-af5d907d1e86",
+      "name": "ISO_BARRIER_FINAL_1_13",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "27cdfce6-2997-4628-9092-1c0e972a6fbd",
+      "name": "ISO_BARRIER_FINAL_1_6",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "2d9b3f29-1545-48ca-836c-3f842e027246",
+      "name": "ISO_BARRIER_FINAL_1_9",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "64c63dde-b92d-4f5c-86e1-45e6aef09391",
+      "name": "ISO_BARRIER_FINAL_1_7",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "6784fdca-e982-462c-aa84-b15070077470",
+      "name": "ISO_BARRIER_FINAL_1_12",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "745ecc37-02d0-4444-9919-366883e45573",
+      "name": "ISO_BARRIER_FINAL_1_8",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "7e995f22-3c96-4f75-91e9-7b83d5ce6d38",
+      "name": "ISO_BARRIER_FINAL_1_11",
+      "reason": "Rule areas are not copper"
+    },
+    {
+      "uuid": "a23933f5-e6d3-4f26-9735-53dac45b1c2c",
+      "name": "ISO_BARRIER_FINAL_1_14",
+      "reason": "Rule areas are not copper"
+    }
+  ],
+  "method": "Native saved-board polygons, with outline holes preserved. F.Cu and B.Cu geometry is unioned per physical UUID and projected onto the same XY plane. A spatial-index lower-bound search covers every opposite-domain pair below 1.5mm; query-nearest separately finds the global minimum. Native polygon comparison permits only the declared 0.0011mm numerical epsilon; near-boundary pairs and the strict uncertainty lower bound are also reported.",
+  "limitations": [
+    "Saved zone fill is measured exactly as loaded. This tool never refills or saves CAD and cannot prove that a cached fill was regenerated after the last route/outline edit; the final caller must run native full refill/save and freeze its SHA before this audit.",
+    "Pad/via outer envelopes are conservative: drill interiors are not used as safe passage for opposite-domain copper. Paste-only and other non-copper-layer shapes have no F.Cu/B.Cu geometry.",
+    "XY projection deliberately rejects cross-face overlap; it does not calculate a 3D insulation path through FR4, air clearance, enclosure creepage, slots, voltage ratings or isolation component certification.",
+    "A passing result applies only to the bound source files and stated numerical tolerance. Native connectivity/parity DRC, same-face production clearances, solder assembly and EMC remain separate requirements."
+  ]
+}

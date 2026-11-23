@@ -1,0 +1,723 @@
+{
+  "date": "2026-11-22",
+  "status": "pass",
+  "stage_only": false,
+  "sources_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "5ba899b9cd5b072e638b1ceb481c4a628a6e8daf56c6ec7268fc0e4c67ee2efa",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "305b8ada853a93b0f7638ef2c2566700f00cf4b3321c46c7744e9e9287e2d216",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "919e6198bc2c02624845d498dcc73268aa3cd97f5e32c693879c08cf7f2b36b8",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/tools/check_board.py": "c685e73839f10acf240ba302143bd92214c0e1a3f0d2f71ec979491221bdc4e0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/Power-budget.json": "6cbc9d9f2b5eaed8c7ee7d70c105d802d1647045e83c8e110b7abb1b4f842077",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/RS485-logic-budget.json": "1460cdf9e263f3c08e1e8d5f83b75d6b62abdabe792c08f0c238a1d88a201116",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/tools/srda_contract.py": "5d0ad9eea31871328b9c4c6a254b1df744ac5f01322e59ceccfeb0d4fcb847ca",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/tools/electrical_audit.py": "239cd89a0209abb619508cae779fd1ff294ff22f19ce7e7f1a77d9d87750bbd5",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/tools/passive_specifications.py": "772b98703d33a1a38a107827a69f8a07eaa9d22ed5108fce4778db84349be4ed",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/upper-factory-fix-20261122/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9"
+  },
+  "native_reports": {
+    "Lower.ERC": {
+      "sha256": "d9d4376fe4baf9bbf42efb17afb28f83f28066cb6a838315f5d1c12a22d2764c",
+      "violations": 0
+    },
+    "Lower.DRC": {
+      "sha256": "4b98b779be0d3a26994a7eee9114d9afcd404aa86a04beeb9905fe0dfba3b71a",
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    },
+    "Upper.ERC": {
+      "sha256": "a909924adcdeb606a5e05b0df6a148c0152023a70abfcdf3dbffc9b232d6f1e6",
+      "violations": 0
+    },
+    "Upper.DRC": {
+      "sha256": "c71fc47912b614bd83b465870705108c145616648e2e7aedc217b145f996d2c0",
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    }
+  },
+  "errors": [],
+  "notes": [],
+  "XML_PCB_full_parity": {
+    "component_count": 160,
+    "footprint_count": 160,
+    "XML_pin_count": 535,
+    "PCB_unique_pin_count": 535,
+    "refs_unique": true,
+    "full_pin_net_match": true,
+    "duplicate_physical_pad_numbers": {
+      "U1.41": [
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND",
+        "GND"
+      ],
+      "J2.SH": [
+        "GND",
+        "GND",
+        "GND"
+      ]
+    },
+    "metadata_mismatches": []
+  },
+  "independent_RS485_pin_map": {
+    "U11": {
+      "1": "GND",
+      "2": "+3V3_RS485",
+      "3": "RS485_RX_RAW",
+      "4": "RS485_DIR",
+      "5": "RS485_DIR",
+      "6": "RS485_TX",
+      "7": "+3V3_RS485",
+      "8": "GND",
+      "9": "GND_ISO",
+      "10": "RS485_VISO_OUT",
+      "11": "RS485_A",
+      "12": "RS485_B",
+      "13": "RS485_B",
+      "14": "RS485_A",
+      "15": "RS485_VISO",
+      "16": "GND_ISO"
+    },
+    "U12": {
+      "1": "+12V_LOGIC",
+      "2": "GND",
+      "3": "+3V3_RS485"
+    },
+    "U13": {
+      "1": "+3V3_RS485",
+      "2": "GND",
+      "3": "unconnected-(U13-1Y-Pad3)",
+      "4": "GND",
+      "5": "GND",
+      "6": "unconnected-(U13-2Y-Pad6)",
+      "7": "GND",
+      "8": "RS485_DIR_BUF",
+      "9": "RS485_DIR_CPU",
+      "10": "GND",
+      "11": "RS485_TX_BUF",
+      "12": "RS485_TX_CPU",
+      "13": "GND",
+      "14": "+3V3_RS485"
+    },
+    "U14": {
+      "1": "GND",
+      "2": "RS485_RX_RAW",
+      "3": "RS485_RX_BUF",
+      "4": "+3V3",
+      "5": "GND",
+      "6": "unconnected-(U14-2Y-Pad6)",
+      "7": "GND",
+      "8": "unconnected-(U14-3Y-Pad8)",
+      "9": "GND",
+      "10": "+3V3",
+      "11": "unconnected-(U14-4Y-Pad11)",
+      "12": "GND",
+      "13": "+3V3",
+      "14": "+3V3"
+    },
+    "FB1": {
+      "1": "RS485_VISO_OUT",
+      "2": "RS485_VISO"
+    },
+    "D9": {
+      "1": "RS485_A",
+      "2": "RS485_B",
+      "3": "GND_ISO"
+    },
+    "J8": {
+      "1": "+5V_ISO",
+      "2": "RS485_A",
+      "3": "RS485_B",
+      "4": "GND_ISO"
+    },
+    "JP2": {
+      "1": "RS485_TERM",
+      "2": "RS485_B"
+    },
+    "R47": {
+      "1": "RS485_TX_BUF",
+      "2": "RS485_TX"
+    },
+    "R48": {
+      "1": "RS485_DIR_BUF",
+      "2": "RS485_DIR"
+    },
+    "R49": {
+      "1": "RS485_RX_BUF",
+      "2": "RS485_RX_CPU"
+    },
+    "R50": {
+      "1": "+3V3",
+      "2": "RS485_TX_CPU"
+    },
+    "R51": {
+      "1": "RS485_DIR_CPU",
+      "2": "GND"
+    },
+    "R52": {
+      "1": "RS485_RX_CPU",
+      "2": "+3V3"
+    },
+    "R53": {
+      "1": "RS485_A",
+      "2": "RS485_TERM"
+    },
+    "R54": {
+      "1": "+3V3_RS485",
+      "2": "RS485_TX"
+    },
+    "R55": {
+      "1": "RS485_DIR",
+      "2": "GND"
+    },
+    "R56": {
+      "1": "+3V3_RS485",
+      "2": "RS485_RX_RAW"
+    },
+    "C37": {
+      "1": "+12V_LOGIC",
+      "2": "GND"
+    },
+    "C38": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C39": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C40": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C41": {
+      "1": "RS485_VISO_OUT",
+      "2": "GND_ISO"
+    },
+    "C42": {
+      "1": "RS485_VISO_OUT",
+      "2": "GND_ISO"
+    },
+    "C43": {
+      "1": "RS485_VISO",
+      "2": "GND_ISO"
+    },
+    "C44": {
+      "1": "RS485_VISO",
+      "2": "GND_ISO"
+    },
+    "C45": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C46": {
+      "1": "+3V3_RS485",
+      "2": "GND"
+    },
+    "C47": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  "critical_MPNs": {
+    "U11": {
+      "MPN": "ADM2687EBRIZ",
+      "Manufacturer": "Analog Devices",
+      "footprint": "RelayStack:ADM2687E_SOIC_IC_16_7.5x12.75mm_P1.27mm"
+    },
+    "U12": {
+      "MPN": "R-78K3.3-0.5",
+      "Manufacturer": "RECOM",
+      "footprint": "RelayStack:RECOM_R-78K3.3-0.5_SIP3_P2.54mm"
+    },
+    "U13": {
+      "MPN": "74LVC125AD,118",
+      "Manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+    },
+    "U14": {
+      "MPN": "74LVC125AD,118",
+      "Manufacturer": "Nexperia",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+    },
+    "FB1": {
+      "MPN": "BLM21PG221SN1D",
+      "Manufacturer": "Murata",
+      "footprint": "Inductor_SMD:L_0805_2012Metric"
+    },
+    "D9": {
+      "MPN": "CDSOT23-SM712",
+      "Manufacturer": "Bourns",
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    "C37": {
+      "MPN": "C3216X5R1V226M160AC",
+      "Manufacturer": "TDK",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    "C38": {
+      "MPN": "C3216X7R1V106K160AC",
+      "Manufacturer": "TDK",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric"
+    }
+  },
+  "SRDA_pin_part_contract": {
+    "status": "pass",
+    "errors": [],
+    "scope": "Pin topology and component contract; no transient/USB qualification inferred."
+  },
+  "root_check_board_RS485_comparison": {
+    "status": "pass",
+    "assertion_statements": 47
+  },
+  "bypass_placement": [
+    {
+      "cap": "C39",
+      "ADM_power_pin": 2,
+      "ADM_ground_pin": 1,
+      "cap_side": "B.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        103.6,
+        109.95
+      ],
+      "cap_ground_xy_mm": [
+        103.6,
+        111.85
+      ],
+      "ADM_power_xy_mm": [
+        105.85,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        105.85,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 2.561859676094692,
+      "direct_ground_distance_XY_mm": 2.3273429055470105,
+      "terminal_loop_XY_lower_bound_mm": 8.059202581641703,
+      "minimum_vertical_via_allowance_mm": 0,
+      "terminal_loop_3D_lower_bound_mm": 8.059202581641703,
+      "two_external_leads_3D_lower_bound_mm": 4.889202581641703,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C45",
+      "ADM_power_pin": 2,
+      "ADM_ground_pin": 1,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        107.3,
+        110.45
+      ],
+      "cap_ground_xy_mm": [
+        107.3,
+        112.35
+      ],
+      "ADM_power_xy_mm": [
+        105.85,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        105.85,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 1.6211492836873476,
+      "direct_ground_distance_XY_mm": 1.453108736468128,
+      "terminal_loop_XY_lower_bound_mm": 6.244258020155476,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 9.444258020155477,
+      "two_external_leads_3D_lower_bound_mm": 6.274258020155476,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C40",
+      "ADM_power_pin": 7,
+      "ADM_ground_pin": 8,
+      "cap_side": "B.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        103.7,
+        106.35
+      ],
+      "cap_ground_xy_mm": [
+        103.7,
+        104.45
+      ],
+      "ADM_power_xy_mm": [
+        105.85,
+        104.825
+      ],
+      "ADM_ground_xy_mm": [
+        105.85,
+        103.555
+      ],
+      "direct_power_distance_XY_mm": 2.63592962728522,
+      "direct_ground_distance_XY_mm": 2.32884628088674,
+      "terminal_loop_XY_lower_bound_mm": 8.13477590817196,
+      "minimum_vertical_via_allowance_mm": 0,
+      "terminal_loop_3D_lower_bound_mm": 8.13477590817196,
+      "two_external_leads_3D_lower_bound_mm": 4.96477590817196,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C42",
+      "ADM_power_pin": 10,
+      "ADM_ground_pin": 9,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        114.65,
+        106.05
+      ],
+      "cap_ground_xy_mm": [
+        116.55,
+        106.05
+      ],
+      "ADM_power_xy_mm": [
+        116.15,
+        104.825
+      ],
+      "ADM_ground_xy_mm": [
+        116.15,
+        103.555
+      ],
+      "direct_power_distance_XY_mm": 1.936653040686431,
+      "direct_ground_distance_XY_mm": 2.5268607005531583,
+      "terminal_loop_XY_lower_bound_mm": 7.6335137412395895,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 10.833513741239589,
+      "two_external_leads_3D_lower_bound_mm": 7.66351374123959,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C43",
+      "ADM_power_pin": 15,
+      "ADM_ground_pin": 16,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        115.25,
+        112.4
+      ],
+      "cap_ground_xy_mm": [
+        117.15,
+        112.4
+      ],
+      "ADM_power_xy_mm": [
+        116.15,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        116.15,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 1.520074011356026,
+      "direct_ground_distance_XY_mm": 1.0010119879402044,
+      "terminal_loop_XY_lower_bound_mm": 5.691085999296231,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 8.89108599929623,
+      "two_external_leads_3D_lower_bound_mm": 5.72108599929623,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    },
+    {
+      "cap": "C44",
+      "ADM_power_pin": 15,
+      "ADM_ground_pin": 16,
+      "cap_side": "F.Cu",
+      "ADM_side": "B.Cu",
+      "cap_plus_xy_mm": [
+        115.25,
+        110.2
+      ],
+      "cap_ground_xy_mm": [
+        117.15,
+        110.2
+      ],
+      "ADM_power_xy_mm": [
+        116.15,
+        111.175
+      ],
+      "ADM_ground_xy_mm": [
+        116.15,
+        112.445
+      ],
+      "direct_power_distance_XY_mm": 1.3268854509715602,
+      "direct_ground_distance_XY_mm": 2.457646231661506,
+      "terminal_loop_XY_lower_bound_mm": 6.954531682633066,
+      "minimum_vertical_via_allowance_mm": 3.2,
+      "terminal_loop_3D_lower_bound_mm": 10.154531682633067,
+      "two_external_leads_3D_lower_bound_mm": 6.984531682633066,
+      "two_external_leads_lower_bound_under10mm": true,
+      "scope": "Center-to-center terminal-loop placement lower bound. Actual routed detours/ground-plane return path and effective high-frequency loop are not inferred from this metric."
+    }
+  ],
+  "bypass_actual_copper_leads": null,
+  "local_regulator_power": {
+    "regulator": "U12 R-78K3.3-0.5",
+    "side": "F.Cu",
+    "budget": {
+      "ref": "U12",
+      "MPN": "R-78K3.3-0.5",
+      "input_net": "+12V_LOGIC",
+      "output_net": "+3V3_RS485",
+      "ground": "GND",
+      "rated_current_ma": 500,
+      "ADM_design_allocation_ma": 200,
+      "U13_and_bias_design_allocation_ma": 1,
+      "design_total_ma": 201,
+      "nominal_current_reserve_ma": 299,
+      "nominal_load_pct": 40.2,
+      "is_design_budget_not_guaranteed_maximum": true,
+      "efficiency_assumption_pct": 85,
+      "efficiency_scope": "Illustrative full design-load estimate; not a guaranteed minimum efficiency. Do not apply at idle or add quiescent current a second time.",
+      "output_power_w": 0.6633,
+      "input_power_w_estimate": 0.7803529411764706,
+      "input_current_ma_at12V_estimate": 65.02941176470588,
+      "input_current_ma_at11p2V_estimate": 69.67436974789916,
+      "dissipation_w_estimate": 0.11705294117647061,
+      "operating_input_V": [
+        4.5,
+        36
+      ],
+      "input_maximum_slew_V_per_us": 10,
+      "hard_plug_input_requirement": "Manufacturer calls for a 27 uF input electrolytic when hard plugging or exceeding input slew limit; especially important above 18 V. Remote Lower C8 is not proof of compliance at U12 pins.",
+      "assembly_power_off_required": true,
+      "local_input_capacitor": "C37 22 uF / 35 V X5R 20% 1206, TDK C3216X5R1V226M160AC; not a substitute for the manufacturer hard-plug electrolytic requirement",
+      "local_output_capacitor": "C38 10uF / 35V X7R1206, TDK C3216X7R1V106K160AC",
+      "full_current_temperature_scope": "Manufacturer 3.3 V / 0.5 A derating curve allows full current to 90 C under its convection conditions; this is not the allowable temperature of the whole assembly.",
+      "input_current_ma_at_filtered_design_voltage_estimate": 74.51941956370091
+    },
+    "pads": [
+      {
+        "pin": "1",
+        "xy_mm": [
+          96.2,
+          111.0
+        ],
+        "size_mm": [
+          1.9,
+          1.9
+        ],
+        "drill_mm": [
+          1.2,
+          1.2
+        ],
+        "net": "+12V_LOGIC",
+        "zones_containing_pad_center": []
+      },
+      {
+        "pin": "2",
+        "xy_mm": [
+          98.74,
+          111.0
+        ],
+        "size_mm": [
+          1.9,
+          1.9
+        ],
+        "drill_mm": [
+          1.2,
+          1.2
+        ],
+        "net": "GND",
+        "zones_containing_pad_center": [
+          {
+            "layer": "B.Cu",
+            "filled_area_mm2": 1379.5420552966025
+          }
+        ]
+      },
+      {
+        "pin": "3",
+        "xy_mm": [
+          101.28,
+          111.0
+        ],
+        "size_mm": [
+          1.9,
+          1.9
+        ],
+        "drill_mm": [
+          1.2,
+          1.2
+        ],
+        "net": "+3V3_RS485",
+        "zones_containing_pad_center": []
+      }
+    ],
+    "scope": "Illustrative switching-regulator power estimate, not guaranteed efficiency or enclosure thermal qualification. No SOT223 output-tab cooling assertion applies. C37/C38 are local decoupling; powered board mating is prohibited and input slew/hard-plug electrolytic requirements need independent verification."
+  },
+  "ADM_ground_copper": [
+    {
+      "pin": 1,
+      "net": "GND",
+      "xy_mm": [
+        105.85,
+        112.445
+      ],
+      "same_net_nearby_vias_mm": [
+        2.550397
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 1379.5420552966025,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    },
+    {
+      "pin": 8,
+      "net": "GND",
+      "xy_mm": [
+        105.85,
+        103.555
+      ],
+      "same_net_nearby_vias_mm": [
+        0.893672
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 1379.5420552966025,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    },
+    {
+      "pin": 9,
+      "net": "GND_ISO",
+      "xy_mm": [
+        116.15,
+        103.555
+      ],
+      "same_net_nearby_vias_mm": [
+        0.794685,
+        1.843509,
+        2.707679
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 621.5299615419254,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    },
+    {
+      "pin": 16,
+      "net": "GND_ISO",
+      "xy_mm": [
+        116.15,
+        112.445
+      ],
+      "same_net_nearby_vias_mm": [
+        0.769756,
+        2.139252,
+        2.225315
+      ],
+      "same_side_filled_copper_at_pad_center": [
+        {
+          "area_mm2": 621.5299615419254,
+          "pad_connection": 2,
+          "thermal_spoke_mm": 0.5
+        }
+      ]
+    }
+  ],
+  "poweroff_logic": {
+    "buffers": "Nexperia74LVC125AD,118; U13 local3V3_RS485 / U14 main3V3",
+    "ADM_input_biases": "TX47kPUlocal; DIR47kPD; localRO47kPU",
+    "CPU_side_biases": "TX47kPUmain; DIR10kPD; RX10kPUmain",
+    "Ioff_10uA_scope": "VCC=0V, -40..85C; not an intermediate-ramp guarantee",
+    "prototype_required": [
+      "Independent main/local rail on/off order and slow ramps",
+      "ADM transmit/receive under load54ohm and120ohm",
+      "R78 U12 heat, VIN slew and main/local rail ripple/undershoot during relay switching",
+      "Actual total input current and fuse/inrush margin"
+    ]
+  },
+  "dangerous_connections_checked": {
+    "ADM_primary_power_is_dedicated_3V3_from_12V_R78": true,
+    "no_5V_RxD_direct_into_ESP32": true,
+    "no_internal_ADM_isoPower_parallel_with_external3V3ISO": true,
+    "half_duplex_A_Y_and_B_Z_joined_correctly": true,
+    "all_bus_ground_refs_GND_ISO": true,
+    "bus_supply_pin_5V_from_TMR_domain": true,
+    "sensor_and_RS485_ground_domain_shared_not_port_isolated": true
+  },
+  "primary_sources": {
+    "ADM2687E": "https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf",
+    "buffer": "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf",
+    "U12_R78": "https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf",
+    "C37": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1V226M160AC",
+    "C38": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X7R1V106K160AC",
+    "C38_characterization": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c3216x7r1v106k160ac.pdf"
+  },
+  "limits": "XML/PCB physical pin topology, part metadata, placement lower bounds, regulator pin map and filled copper inventory. Not EMC certification, high-voltage isolation qualification, full EM return-path extraction or physical prototype validation.",
+  "Lower_RC_filter": {
+    "expected_pin_map": {
+      "D3": {
+        "1": "+12V_LOGIC_RAW",
+        "2": "+12V_SYS"
+      },
+      "R12": {
+        "1": "+12V_LOGIC_RAW",
+        "2": "+12V_LOGIC"
+      },
+      "C13": {
+        "1": "+12V_LOGIC",
+        "2": "GND"
+      },
+      "C8": {
+        "1": "+12V_LOGIC",
+        "2": "GND"
+      }
+    },
+    "actual_pin_map": {
+      "D3": {
+        "1": "+12V_LOGIC_RAW",
+        "2": "+12V_SYS"
+      },
+      "R12": {
+        "1": "+12V_LOGIC_RAW",
+        "2": "+12V_LOGIC"
+      },
+      "C13": {
+        "1": "+12V_LOGIC",
+        "2": "GND"
+      },
+      "C8": {
+        "1": "+12V_LOGIC",
+        "2": "GND"
+      }
+    },
+    "RAW_pad_inventory": [
+      [
+        "D3",
+        "1"
+      ],
+      [
+        "R12",
+        "1"
+      ]
+    ],
+    "scope": "Independent physical-pad topology check; native clearances and connectivity must separately prove that no copper bypass remains around R12."
+  }
+}

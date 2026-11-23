@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-22T09:07:17.763367+00:00",
+  "source_sha256": {
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "0efdcadaed2ec397c7fc961e87189f18f0722bb4f4a87aebfe581897daf7e0f9",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "f5b3d63f170cb83c307720b1ff884f1a2be448961dacde0cbf3041994bf17377"
+  },
+  "before_pcb_sha256": "38a6e481c1af831172e1ef4a7d9bb2e05bebd82edacc9c765a3fce212243d0d7",
+  "front_ROI_mm": [
+    70,
+    113,
+    80,
+    122
+  ],
+  "barrier_width_mm": 1.50001,
+  "J9_MAIN_to_J3_FIELD_pad_clearance_mm": 1.9599999999999937,
+  "all_previous_DRC_rules_preserved_byte_exact": true,
+  "only_added_rule": "Symmetric MAIN/FIELD minimum clearance1.5mm",
+  "zone_metadata_and_rule_allowances_preserved": true,
+  "zones": [
+    {
+      "uuid": "038ed3ed-7a35-4f06-b723-232e09aa23a9",
+      "name": "",
+      "net": "/GND",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "20a0a2bf-0005-48b6-b0b0-fab768fee099",
+      "name": "Left input ground return",
+      "net": "/GND",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "3dee04bb-bb12-4a61-ac8c-3f0ed5de3b2b",
+      "name": "",
+      "net": "/+3V3_RS485",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "5d86f432-d23f-4553-a0df-3594be280d47",
+      "name": "",
+      "net": "/GND_ISO",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "cfc2e6f9-78c4-4977-9dd5-28c60d30aba6",
+      "name": "",
+      "net": "/+3V3",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "e62c2fef-3f4e-49a9-8076-03f7cd89f3a7",
+      "name": "USB_DN_CPU_NECK",
+      "net": "",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "ab36f18f-12dd-48d5-a979-4a59cc99ddf3",
+      "name": "ISO_BARRIER",
+      "net": "",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "59bb262f-5f6a-46ce-b8e4-cc0e8c06bd3c",
+      "name": "",
+      "net": "/GND_ISO",
+      "outside_allowed_area_delta_mm2": 0.0
+    },
+    {
+      "uuid": "b0852fae-db2d-43ee-80bf-53ccfbed921a",
+      "name": "",
+      "net": "/GND",
+      "outside_allowed_area_delta_mm2": 0.0
+    }
+  ],
+  "scope": "Independent saved-outline/rule comparison; complete filled-copper clearance is separately checked by final native DRC."
+}

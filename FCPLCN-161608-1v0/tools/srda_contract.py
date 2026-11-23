@@ -4,7 +4,7 @@ SRDA_DATASHEET = "https://www.littelfuse.com/assetdocs/tvs-diode-array-spa-srda0
 SERIES_MPN = 'CRCW0805100RFKTAHP'
 SERIES_DATASHEET = 'https://www.vishay.com/docs/20115/crcwhp.pdf'
 ARRAYS = {
- 'D1': ('GND', 'TVS_USB_REF', ['USB_DP','USB_DN',None,None]),
+ 'D1': ('GND', 'TVS_USB_REF', [None,None,'USB_DN','USB_DP']),
  'D2': ('GND_ISO', 'TVS_DATA14_REF_ISO', ['DATA1_ISO','DATA2_ISO','DATA3_ISO','DATA4_ISO']),
  'D3': ('GND_ISO', 'TVS_I2C_REF_ISO', ['SDA_ISO','SCL_ISO',None,None]),
  'D4': ('GND', 'TVS_LED_REF', ['LED_NET_OUT','LED_STATUS_OUT','LED_ALARM_OUT','LED_PWR_OUT']),
@@ -18,7 +18,7 @@ def expected_arrays():
    out[ref][pin] = signal or ground
  return out
 
-def check_srda_contract(refs, nets, value, field, footprint):
+def check_srda_contract(refs, nets, value, field, footprint, *, inventory_count=148):
  errors=[]
  raw_field=field
  def field(ref,key):
@@ -26,7 +26,7 @@ def check_srda_contract(refs, nets, value, field, footprint):
   except KeyError:return ""
  def check(ok,message):
   if not ok: errors.append(message)
- check(len(refs)==148,'Upper inventory must contain148 components')
+ check(len(refs)==inventory_count,f'Upper inventory must contain {inventory_count} components')
  check(not any(r in refs for r in ('D5','D7','D10')),'Obsolete PESD references D5/D7/D10 remain')
  check(not any('PESD' in value(r).upper() or 'PESD' in field(r,'MPN').upper() for r in refs),'PESD part remains')
  for ref,expected in expected_arrays().items():

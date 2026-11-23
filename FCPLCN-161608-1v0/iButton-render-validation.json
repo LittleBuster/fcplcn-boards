@@ -1,0 +1,482 @@
+{
+  "passed": true,
+  "renderer": "Native KiCad",
+  "upper_pcb_sha256": "0efdcadaed2ec397c7fc961e87189f18f0722bb4f4a87aebfe581897daf7e0f9",
+  "schematic_source_sha256": "407871dc833fa66be65b9a5a114eeb9ab3051d48c1f09f46b22717695de4edaa",
+  "native_gallery_views": 27,
+  "source_files_preserved": true,
+  "aliases": {
+    "Stack-3D-preview.png": "Stack-angled-front.png",
+    "Stack-3D-top.png": "Stack-top.png",
+    "Stack-alignment-top.png": "Stack-top.png",
+    "Stack-3D-low-side.png": "Stack-front.png",
+    "FCPLCN-CPU-08-1v0-3D-preview.png": "FCPLCN-CPU-08-1v0-angled-front.png",
+    "FCPLCN-CPU-08-1v0-3D-top.png": "FCPLCN-CPU-08-1v0-top.png",
+    "FCPLCN-CPU-08-1v0-3D-bottom.png": "FCPLCN-CPU-08-1v0-bottom.png",
+    "FCPLCN-CPU-08-1v0-3D-bottom-preview.png": "FCPLCN-CPU-08-1v0-angled-bottom.png"
+  },
+  "images": [
+    {
+      "scene": "Upper",
+      "view": "top",
+      "side": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-top.png",
+      "sha256": "544f3b6a7223944b726b6861108ff9d3e1c225388c7a2822931dbcc4381c9c65",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-bottom.png",
+      "sha256": "89bba8006bacd98ef4045a52f650e7c0c8f557cf1bd5dc1fb993b8fd03ae53ff",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "front",
+      "side": "front",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-front.png",
+      "sha256": "fc3f07088011b3bd54ed8406134525d4e28a788e59c138ed387e113f500415f9",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "back",
+      "side": "back",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-back.png",
+      "sha256": "780f21f3697afaef48d1f7d231f6229833ba3a2d45aeef1980a3bc80daae6870",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "left",
+      "side": "left",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-left.png",
+      "sha256": "ff2b2ee73746aae57beab0548387c9423ba0ed6e5e6f85923fb967246921c366",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "right",
+      "side": "right",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-right.png",
+      "sha256": "1f49ba0e1c16430383601ff2435a305c4b15407702a83adde6c58afd6af09513",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "angled-front",
+      "side": "top",
+      "rotation_deg": [
+        -32.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-angled-front.png",
+      "sha256": "a5f7a8e5654a5c64d46fa68285e4a4c6172d925cfd5cbf700ef0dd75a54aa012",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "angled-back",
+      "side": "top",
+      "rotation_deg": [
+        32.0,
+        0.0,
+        8.0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-angled-back.png",
+      "sha256": "f6be307a1578ff7b44ac2a426b64fdf667399984c8123903184598f738eec47a",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "angled-bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        -25.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-angled-bottom.png",
+      "sha256": "fd3fd1143d971eb24709827addb79db258b086cd9cbb2495e20601789042350c",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "top",
+      "side": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-top.png",
+      "sha256": "e065e382724962f4069cb70c79459189ea436ea83b7113590b4030aae811fd6f",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-bottom.png",
+      "sha256": "2e93a6bc8d9a6153339fa01b7dbea737023c6a7ac16f859f852371087a7d1373",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "front",
+      "side": "front",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-front.png",
+      "sha256": "f9c867c5b9f445cffdf784d4e7845da51eabd5aca2a268f03a0694ec8922248d",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "back",
+      "side": "back",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-back.png",
+      "sha256": "18b27a59f129ef3fb1e06ce0187975138aaad682a2ffcc8c92194323591250a9",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "left",
+      "side": "left",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-left.png",
+      "sha256": "2904408efc73ca76a5cceaaad8777b4f8a8eb7886bf082d0e395200765842597",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "right",
+      "side": "right",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-right.png",
+      "sha256": "6158f613987e9852b6461e880d40c8ed1e1fa8ccaa4672162b47020ffede3d4b",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "angled-front",
+      "side": "top",
+      "rotation_deg": [
+        -32.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-angled-front.png",
+      "sha256": "99d0d9c15586886591f38dbe60debc01c5ac7c3ab6dbadb4101b96f0ba0814cb",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "angled-back",
+      "side": "top",
+      "rotation_deg": [
+        32.0,
+        0.0,
+        8.0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-angled-back.png",
+      "sha256": "b7f0ebe162be2f678dc016081cb0c62835d81ed9569c50fc203ecc9bed8842ba",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "angled-bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        -25.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-angled-bottom.png",
+      "sha256": "223e9b864ff032227356c5d38fe85979a73f5747380c3e30c2ecc52bb6994896",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "top",
+      "side": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-top.png",
+      "sha256": "c809ffd71f4f054ff367e71da055f6c523c73eba32807e35c8e5e30bb299ffb9",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-bottom.png",
+      "sha256": "6d279c72ac9c1ad5c93e82628d415d8c46ef016a8a7f112e55875a3eaf5f9a8b",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "front",
+      "side": "front",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-front.png",
+      "sha256": "b141e3549929198deed25f6eda691db78b2950c56cbfe4e528f71e213db8dd46",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "back",
+      "side": "back",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-back.png",
+      "sha256": "770ed1aab34b2add8434cdc00290cefecbf07e913c6fe31e2621ea9d0529e775",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "left",
+      "side": "left",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-left.png",
+      "sha256": "cd438e98c9dd7cd596b597d5f47d3a9845372cd26cfc3b98655f3f9ea051aada",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "right",
+      "side": "right",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-right.png",
+      "sha256": "984ccf34bdc987d301be8308154086f829ab35dba4e02eefa30f1967a9bebe4e",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-front",
+      "side": "top",
+      "rotation_deg": [
+        -32.0,
+        0.0,
+        -8.0
+      ],
+      "file": "Stack-angled-front.png",
+      "sha256": "dd2aeefabcde0751bce5131412e0d0a8de5f72b52d45820b016420d3ddc6d6d5",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-back",
+      "side": "top",
+      "rotation_deg": [
+        32.0,
+        0.0,
+        8.0
+      ],
+      "file": "Stack-angled-back.png",
+      "sha256": "fce9120522e11fd22efc2e50caa3c5f4d16e96a7922f305b202f5b6e25b4eca1",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        -25.0,
+        0.0,
+        -8.0
+      ],
+      "file": "Stack-angled-bottom.png",
+      "sha256": "c9fdc0edd8217cb20fc404b17cde52489c0f7ded864b16e87e3c6c91fe282a7f",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    }
+  ],
+  "detail_images": [
+    {
+      "file": "iButton-front-closeup.png",
+      "sha256": "89d8a84796a6ddb733e65221acbb623487a85e619230b45d1f9709a85242b7b7",
+      "renderer": "Native KiCad pcb render",
+      "pivot_board_xy_mm": [
+        73.69000000000001,
+        118.0
+      ]
+    },
+    {
+      "file": "JP2-120R-closeup.png",
+      "sha256": "edbc92818a2bdd39842cd801010c3c30d3e52f4a9f0c6385bcb059390c00a517",
+      "renderer": "Native KiCad pcb render",
+      "pivot_board_xy_mm": [
+        110.67,
+        118.3
+      ]
+    }
+  ],
+  "documentation_export_sha256": {
+    "schematics/cpu-schematic.pdf": "8df87bfb7d2bd9f31bda64f28b11ea5081e59bc5317353ce13c4ec10c428f509",
+    "schematics/cpu-schematic.png": "a0a30b2acc718f3870c7c025cf0cccb8e0a389950ca481a9f5fde4059de7e9f3",
+    "schematics/cpu-schematic.svg": "574fb20e1c86b08e567a8ae3cfbf77ea99ef52bb5fcc2860cd591d08cabb6ec9",
+    "schematics/cpu-pcb-bottom.png": "85cbadbfab5046345cc0252618bd70ec765aeba530ae1415ad41fddfce1e8f8c",
+    "schematics/cpu-pcb.svg": "0a0ccf0f5893b131e288ebb962ff3c0d69e1587c0ed326fd2b2bc1883f7224af",
+    "schematics/cpu-pcb.png": "a1635ec6c8cf16366d9a9913c8720ddf31d891c7f1ef2aeb8e0ad7eb566e0104",
+    "schematics/cpu-pcb-bottom.svg": "cc7c3d53befd8d20d2104ecdc8ef2e2667767c76d592623eace92b951866d920"
+  },
+  "schematic_source_unchanged": true
+}

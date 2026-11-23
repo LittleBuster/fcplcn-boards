@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-22T16:09:51.026495+07:00",
+  "product": "FCPLCn",
+  "revision": "J9 at exposed lower/front edge",
+  "sha256": {
+    "Upper": {
+      ".kicad_pcb": "0efdcadaed2ec397c7fc961e87189f18f0722bb4f4a87aebfe581897daf7e0f9",
+      ".kicad_sch": "407871dc833fa66be65b9a5a114eeb9ab3051d48c1f09f46b22717695de4edaa",
+      ".kicad_pro": "f02a70ea87cd53d22519ba410e41b70e38c411ea79e7183317bba02f9424246f",
+      ".kicad_dru": "f5b3d63f170cb83c307720b1ff884f1a2be448961dacde0cbf3041994bf17377",
+      ".xml": "72611f1ec4712b853e048cfdb6d8cb67e9352b8fd493d517afede175efde5a65"
+    },
+    "Lower": {
+      ".kicad_pcb": "9eb7f47603e7b0502fa8e65897da27859bf912662ffc726501129f2b9f640cf9",
+      ".kicad_sch": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
+      ".kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      ".kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      ".xml": "838e431865e6fa66ff32961d0453049f3392086fb0fb23de2ca6c1a36834c7eb"
+    }
+  },
+  "bom_purchased": {
+    "Upper": 160,
+    "Lower": 248,
+    "total": 408
+  },
+  "connector": "Upper J9 between Ethernet and DATA; LED- / BUZZER- / +12V left to right; wire entry +Y",
+  "GPIO": {
+    "LED": 43,
+    "BUZZER": 45
+  },
+  "lower_unchanged": true,
+  "electrical_design_unchanged_by_placement_correction": true,
+  "native_checks": {
+    "FCPLCN-CPU-08-1v0": {
+      "DRC": {
+        "active_violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0,
+        "baseline_excluded": 2
+      },
+      "ERC": {
+        "violations": 0
+      }
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "DRC": {
+        "active_violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0,
+        "baseline_excluded": 0
+      },
+      "ERC": {
+        "violations": 0
+      }
+    }
+  },
+  "geometry": {
+    "Lower": {
+      "copper_layers": 2,
+      "footprints": 251,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "minimum_track_width_mm": 0.22,
+      "usb_trace_lengths_mm": {}
+    },
+    "Upper": {
+      "copper_layers": 2,
+      "footprints": 160,
+      "non_45_90_segments": 0,
+      "strict_track_crossings": 0,
+      "minimum_track_width_mm": 0.18,
+      "usb_trace_lengths_mm": {
+        "/USB_DN_CPU": 8.474,
+        "/USB_DP_CPU": 4.315,
+        "/USB_DP": 12.997,
+        "/USB_DN": 16.596
+      }
+    }
+  },
+  "source_audit": "iButton-front-source-audit.json",
+  "mechanical": "iButton-mechanical-audit.json",
+  "physical_prototype_qualification_pending": true,
+  "pushed": false,
+  "firmware_changed": false
+}

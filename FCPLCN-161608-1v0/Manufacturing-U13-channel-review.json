@@ -1,0 +1,281 @@
+{
+  "decision": "PASS: DIRgate2→3 and TXgate1→4 use equivalent active gates; unusedgate1disabled and unusedgate2enabledconstantLOW withNCoutput.",
+  "scope": "Read-only datasheet/local-net review. No PCB, schematic, routing, model, GPIO, BOM or Stage edits made.",
+  "observed_stage_pcb_sha256": "d88a9b2ca9581c5d4ff2c38cd80d12ad72dc8905685381b3c68c35fb86c2bed2",
+  "sources": [
+    {
+      "url": "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf",
+      "revision": "Rev.12, 2025-05-02",
+      "support": [
+        "Section5.2/Table2 pin roles",
+        "Section6/Table3 non-inverting active-LOW enable truth table",
+        "Section9/Table6 Ioff",
+        "Section8/Table5 recommended supply"
+      ]
+    },
+    {
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/adm2682e-adm2687e.pdf",
+      "revision": "Rev.D, 2025-01",
+      "support": [
+        "DE activeHIGH; RE_N activeLOW; same DIR tied to both gives receive mode atLOW"
+      ]
+    }
+  ],
+  "part": {
+    "reference": "U13",
+    "MPN": "74LVC125AD,118",
+    "package": "SO14/SOT108-1",
+    "pin7": "/GND",
+    "pin14": "/+3V3_RS485",
+    "domain": "MAIN common ground, same local3.3V rail as U11 logic; U13 is not a galvanic barrier."
+  },
+  "pin_map": [
+    {
+      "pin": "1",
+      "datasheet_role": "1OE_N",
+      "before": "/GND",
+      "after_DIR_only": "/GND",
+      "after_DIR_and_TX": "/+3V3_RS485"
+    },
+    {
+      "pin": "2",
+      "datasheet_role": "1A",
+      "before": "/RS485_TX_CPU",
+      "after_DIR_only": "/RS485_TX_CPU",
+      "after_DIR_and_TX": "/GND"
+    },
+    {
+      "pin": "3",
+      "datasheet_role": "1Y",
+      "before": "/RS485_TX_BUF",
+      "after_DIR_only": "/RS485_TX_BUF",
+      "after_DIR_and_TX": "unconnected-(U13-1Y-Pad3)"
+    },
+    {
+      "pin": "4",
+      "datasheet_role": "2OE_N",
+      "before": "/GND",
+      "after_DIR_only": "/GND",
+      "after_DIR_and_TX": "/GND"
+    },
+    {
+      "pin": "5",
+      "datasheet_role": "2A",
+      "before": "/RS485_DIR_CPU",
+      "after_DIR_only": "/GND",
+      "after_DIR_and_TX": "/GND"
+    },
+    {
+      "pin": "6",
+      "datasheet_role": "2Y",
+      "before": "/RS485_DIR_BUF",
+      "after_DIR_only": "unconnected-(U13-2Y-Pad6)",
+      "after_DIR_and_TX": "unconnected-(U13-2Y-Pad6)"
+    },
+    {
+      "pin": "7",
+      "datasheet_role": "GND",
+      "before": "/GND",
+      "after_DIR_only": "/GND",
+      "after_DIR_and_TX": "/GND"
+    },
+    {
+      "pin": "8",
+      "datasheet_role": "3Y",
+      "before": "unconnected-(U13-3Y-Pad8)",
+      "after_DIR_only": "/RS485_DIR_BUF",
+      "after_DIR_and_TX": "/RS485_DIR_BUF"
+    },
+    {
+      "pin": "9",
+      "datasheet_role": "3A",
+      "before": "/GND",
+      "after_DIR_only": "/RS485_DIR_CPU",
+      "after_DIR_and_TX": "/RS485_DIR_CPU"
+    },
+    {
+      "pin": "10",
+      "datasheet_role": "3OE_N",
+      "before": "/+3V3_RS485",
+      "after_DIR_only": "/GND",
+      "after_DIR_and_TX": "/GND"
+    },
+    {
+      "pin": "11",
+      "datasheet_role": "4Y",
+      "before": "unconnected-(U13-4Y-Pad11)",
+      "after_DIR_only": "unconnected-(U13-4Y-Pad11)",
+      "after_DIR_and_TX": "/RS485_TX_BUF"
+    },
+    {
+      "pin": "12",
+      "datasheet_role": "4A",
+      "before": "/GND",
+      "after_DIR_only": "/GND",
+      "after_DIR_and_TX": "/RS485_TX_CPU"
+    },
+    {
+      "pin": "13",
+      "datasheet_role": "4OE_N",
+      "before": "/+3V3_RS485",
+      "after_DIR_only": "/+3V3_RS485",
+      "after_DIR_and_TX": "/GND"
+    },
+    {
+      "pin": "14",
+      "datasheet_role": "VCC",
+      "before": "/+3V3_RS485",
+      "after_DIR_only": "/+3V3_RS485",
+      "after_DIR_and_TX": "/+3V3_RS485"
+    }
+  ],
+  "changed_pins": {
+    "DIR_only": [
+      "5",
+      "6",
+      "8",
+      "9",
+      "10"
+    ],
+    "additional_optional_TX": [
+      "1",
+      "2",
+      "3",
+      "11",
+      "12",
+      "13"
+    ]
+  },
+  "truth_table": [
+    {
+      "OE_N": 0,
+      "A": 0,
+      "Y": 0
+    },
+    {
+      "OE_N": 0,
+      "A": 1,
+      "Y": 1
+    },
+    {
+      "OE_N": 1,
+      "A": "X",
+      "Y": "Z"
+    }
+  ],
+  "functional_contract": {
+    "TX": {
+      "gpio": 8,
+      "MCU_pad": "U1.12",
+      "input_net": "/RS485_TX_CPU",
+      "output_net": "/RS485_TX_BUF",
+      "downstream": "R47=22R to /RS485_TX then U11.6 TxD",
+      "before_gate": 1,
+      "after_DIR_only_gate": 1,
+      "after_both_gate": 4,
+      "active_enable_net": "/GND"
+    },
+    "DIR": {
+      "gpio": 48,
+      "MCU_pad": "U1.25",
+      "input_net": "/RS485_DIR_CPU",
+      "output_net": "/RS485_DIR_BUF",
+      "downstream": "R48=22R to /RS485_DIR then U11.4 RE_N and U11.5 DE",
+      "before_gate": 2,
+      "after_gate": 3,
+      "active_enable_net": "/GND"
+    },
+    "bias_unchanged": [
+      {
+        "ref": "R50",
+        "value": "47k",
+        "function": "TX CPU input pull-up to /+3V3"
+      },
+      {
+        "ref": "R51",
+        "value": "10k",
+        "function": "DIR CPU input pull-down to /GND"
+      },
+      {
+        "ref": "R54",
+        "value": "47k",
+        "function": "TX after-buffer bias to /+3V3_RS485"
+      },
+      {
+        "ref": "R55",
+        "value": "47k",
+        "function": "DIR after-buffer pull-down to /GND"
+      }
+    ],
+    "unused_gates": "Gate1: OE1 to localVCC, A2 toGND, Y3 explicitlyNC. Gate2: OE4 toGND, A5 toGND, Y6 explicitlyNC; enabled staticLOW with no output load. Every A/OE input is defined.",
+    "Ioff": "Unchanged device feature at VCC=0; bounded leakage, not ideal zero current. Pin permutation does not change it.",
+    "power_domain": "No MAIN↔FIELD reassignment. U14 RX buffer, U11 barrier, decoupling, R47/R48 and external pull resistors remain unchanged."
+  },
+  "default_states": [
+    {
+      "condition": "Both3.3V rails valid, MCU GPIOs high-Z",
+      "TX_CPU": "HIGH by R50",
+      "TX_BUF": "HIGH",
+      "DIR_CPU": "LOW by R51",
+      "DIR_BUF": "LOW",
+      "bus_mode": "DE=0/RE_N=0: transmitter disabled, receiver enabled."
+    },
+    {
+      "condition": "U13 rail exactly0V, CPUrail valid",
+      "buffer_outputs": "Ioff power-off state; external post-buffer bias only acts if its rail is valid. No claim about supply ramp logic."
+    },
+    {
+      "condition": "MCUrail off, U13rail valid",
+      "TX": "R50 is tied to an unpowered rail, so HIGH is not guaranteed. This already applies before the swap.",
+      "DIR": "R51/R55 retain the low default; under high-Z GPIO assumptions DE stays disabled."
+    }
+  ],
+  "implementation_checks_for_parent": [
+    "Update U13 schematic bindings, PCB pad nets, affected copper and literal14-pin assertions together.",
+    "Retire old enabled-gate source/output copper before tying former inputs/OEs to their new rails.",
+    "Unused Y pins get explicit schematic no-connect markers; gate1OE=VCC/A=GND; gate2OE=GND/A=GND. Do not leave A or OE floating.",
+    "Keep R50 pull-up and R51 pull-down on the same logical GPIO nets and keep R54/R55 after-buffer bias.",
+    "Verify enabled paths A→Y and the commonGND/VCC pins after netlist regeneration.",
+    "Native copper, boot behavior during rail ramps, EMC and physical routing remain separate checks."
+  ],
+  "numerical_datasheet_context": {
+    "VCC_recommended_V": [
+      1.65,
+      3.6
+    ],
+    "input_recommended_max_V": 5.5,
+    "Ioff_test": "VCC=0; VI or VO=5.5V",
+    "Ioff_abs_max_uA": {
+      "up_to85C": 10,
+      "up_to125C": 20
+    },
+    "note": "These are unchanged component limits, not a new circuit-level zero-leakage or ramp guarantee."
+  },
+  "unused_gate2_bias_revision": {
+    "pin4": "GND",
+    "pin5": "GND",
+    "pin6": "explicitNC",
+    "truth_table": "OE_N=LOW and A=LOW gives Y=LOW; output is unloaded. ActiveTX/DIR truth tables and bias unchanged.",
+    "change_reason": "Retire unused-gate power loop to open MAINground connection on two layers.",
+    "independent_review_pending": false,
+    "independent_review": "Confirmed from NexperiaRev12 Table2 physicalpin4=2OE_N/5=2A/6=2Y; Table3 LOW/LOW→LOW. UnloadedY6NC; activechannels3/4 unchanged."
+  },
+  "final_applied_pin_map": {
+    "1": "+3V3_RS485",
+    "2": "GND",
+    "3": "unconnected-(U13-1Y-Pad3)",
+    "4": "GND",
+    "5": "GND",
+    "6": "unconnected-(U13-2Y-Pad6)",
+    "7": "GND",
+    "8": "RS485_DIR_BUF",
+    "9": "RS485_DIR_CPU",
+    "10": "GND",
+    "11": "RS485_TX_BUF",
+    "12": "RS485_TX_CPU",
+    "13": "GND",
+    "14": "+3V3_RS485"
+  },
+  "pin_contract_application_PCB_sha256": "27997ed00b6f5cea118e271ba20d9085e2544f2809c1efb55a17c95baefd203f",
+  "applied_design": "DIRchannel3 and TXchannel4; unusedgate1disabled, unusedgate2enabledconstantLOW withNCoutput; no extra components; MCU GPIO8/48 unchanged."
+}

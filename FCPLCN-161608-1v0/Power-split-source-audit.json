@@ -1,0 +1,641 @@
+{
+  "passed": true,
+  "scope": "Exact power split revision compared with its real immediatebaseline; nativeconnectivity/geometry/USB/mechanical checks remain separate.",
+  "sources_sha256": {
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "15ab3935683fea5c40f0f1efeb9c5d5e8f763ca321789e3e115367d0fb38f096",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "f42f441650edb5869786c9fb362c36beb5cd79479f0dd7437da4349cca79994c",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "ab8cd2f8e957d8c99af90c91478e194d544c5baa88663d9fbca6414ba6e58aaf",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/LTV847S.wrl": "6c916c5190b3409f646ea676eb07092ccc6e8412ae7c0f68ef8b3a46e4affb44",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/KF128-2P.wrl": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/APAQ_350ARHA101M06X8P00_H9max.wrl": "b9854934d71e6db2476d3cc82713bb347a19ed3eae790fd65537bdd4f30e7d2e",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/ESP32-C3_Super_Mini-assembly.wrl": "68b783b6e316c1879c710b0251ad29fcec33f34083d4b1e4f97af821420ef848",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step": "05ad7d4945131c76ec7b9448dd9cbb5376b56adcd564c58d93e50ca7870fab1f",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/KF128-8P.wrl": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/C1-D8H12.wrl": "3661cad8c040d3ef81301e1ec000bece2b90293c061671ed3d902c9f4d6ffff0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/HF49FD-1H11.step": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/W5500_Lite_2x6-assembly.wrl": "c9787e50d7d567ad870ee4e7197a75ca693504010d8962b1c6694c6b0b85f401",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/TLP2363_5pin_SO6.wrl": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOIC-28W_7.5x17.9mm_P1.27mm.kicad_mod": "e2e6228017067d669ab789000cf4ecfed3381efb5ac7cc8b4db4f05cd19bb900",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_0805_2012Metric.kicad_mod": "ef1b2453a6d3bd77735746543bd9f96f2cc1f489548ef8526e12d302dfcb0ae0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/TLP2363_5pin_SO6.kicad_mod": "2b5df0e0bbc5e39641f56413a254f1a9274f185d070d1ca2bd1e6641da900c78",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-2P.kicad_mod": "6d2ff66fc54f1d763814df8b77efcf924f98bb244706a0aec3b2251f16bb7260",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_1206_3216Metric.kicad_mod": "c7320668dc81bbb954cb4f15e4e7a766c120059343d43551468c8f7ccc8fde37",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/RECOM_R-78E_PSE.kicad_mod": "c904c95327ccd09632876faffc768cad0828d4e22835f27316b4e710c839c1fa",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/StackSocket_2x03_P2.54mm.kicad_mod": "435f9763e8345477f23432223de7ae4c0eae5c5ac36fc77db4b04ca28eb18145",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMC.kicad_mod": "9a1b89a52213e361a095ebfe372c05b12cf2b521d205087ffaed73fdeadd84ce",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod": "6def6a60ffffe386dbcea1dd94a12a6a31c45f95731b3eac5a669d2fcdb8660b",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_APAQ_ARHA_D6.3mm_P2.5mm_H9max.kicad_mod": "13f29b1826ebc9784e62f29325181af978c9e5380de7a453a08241fc34b8702c",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/KF128-2.54-8P.kicad_mod": "5286a0ea6ee297414d4bec15f5cc2356832cf688477c9dd6dab7b4f74392cfe0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOP-18_7.495x11.515mm_P1.27mm.kicad_mod": "30492d74a3208066646e44a1404843cbe0ed47773f93ec073301a21c06590b34",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/SOT-223-3_TabPin2.kicad_mod": "8ae5f03e2c16377abed15e51af6864e23a934e1457b97fb7ea930e17fa99f11d",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/W5500_Lite_2x6.kicad_mod": "bac748ff4d05cb4e55b91b55a5e196f9f92c99539aaa65a239063b6212932af9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_2012Metric.kicad_mod": "cee1a355ee5ff95cd71a2a6e5ab74dce46e5974ddc31f4ab4c9fd1c17469a150",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": "694cf437b654373e63541bcb4bc80c7e617c041ea9b7fe807b11d229631e512e",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/RECOM_R-78K3.3-0.5_SIP3_P2.54mm.kicad_mod": "e7ee5bf5a15032cabb8fc1b443a90ea7061d81b7411c1ceffcafa47a0f4c0209",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "bcf73e24b31b178156321004e85bf691f00c41cbe79c312608011d64434764f9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/L_0805_PowerFilter.kicad_mod": "2437901e3be167f1be828f6039926586f965fc6d18622323b6fb2f2aae617a7b",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SOD-123.kicad_mod": "743aef59e65e82c128879ed4a43dfb3b86fd143c54a7999c0ffe4e99c5061987",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/C_1206_3216Metric.kicad_mod": "6182da432d3564c0b1de303aaad936efaa5c937c16dc0d6495852ebec66f9a80",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/D_SMB.kicad_mod": "008cc370f8c594eaa23f69e8622ac08679e37dcbcc919a57b12a37cd0a84978a",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LOLIN_S2_mini_V1.0.0.kicad_mod": "6a864e605ca94bc8844c523bea1b86b0fb6309c9b90c57159bfaf53f44bb4866",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/CP_Radial_D8.0mm_P3.50mm.kicad_mod": "6e627d54604b5df38f1cfed257fa04afcce1fef809705f2183637f777e28625e",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_0805_Wetting.kicad_mod": "3f1e04ca36c01e09357153c6bf5f70ef8c4d1ac89eacabbe7aac6023c8c26ca0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Nexperia_CFP3_SOD-123W.kicad_mod": "8a8a58edc936c04d55d72438f89c22c29726776436f70fe45f865cd6ad19e996",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/ESP32-C3_Super_Mini.kicad_mod": "7c1b1359c94fe90f4c63d496e6157fb8d4b024a91ddd75fbb327855415d12aec",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/LTV-847S.kicad_mod": "81d35d81ddc69932e68cb618839358d65955622cc0f8a395ce326169deff1071",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/Relay_SPST_Hongfa_HF49FD-1H11.kicad_mod": "d9c37341ff0e6b3f10a352892f334a69ceb2d1d796f9e4807d59f9f58afe8fb0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_2512_6332Metric.kicad_mod": "abab4bf8eeb3ed03061d8eeb56b542cdac074ce8a0ace0f9b06e933c0b48f297",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-RLY-1616-1v0/RelayBoard.pretty/R_Array_SIP9.kicad_mod": "c3ab6c56bac3a83fab434e3330bab4f294af68312c12085fffd17f1835ebc2f8",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "50e215d35a5b607c17f890e7e22da80796f0a34633cd87eb35c359d4bcb62f71",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "2252c36d3092a415da608608fb8fb9e1d0e5c616e6c596adfa7036b0ccb87e07",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "4a322497816aa3b2461070c6b17fd2565bb98bd875e60493105f437079b08eb5",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "5dc607b650c870a38e91fe83ff6ae62dfc9ac11bfbab659f13338bcefac285c9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/D_SMA.step": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/KF128-3P.wrl": "d598b818b6fe9eca2051874c6661f19e053543e199034fe5eecf61662048aaa0",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/KF128-4P.wrl": "b46d141ae4db1b0ac8d0a6e152699a60f02ef2aca8210554447655b4d5e09add",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/KF128-8P.wrl": "226920cce14c85ceafed0cc79e470a41856c8e9ccba1ca4d9fddca7caf89ed54",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/SW_SPST_TS-1088-xR020.step": "ebfe1a50181c9a502cd98b44b03a5ce8568ff7c77d4fd5906caaef4b9a290da8",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/ADM2687E_RI-16-2.wrl": "78fc299a8ac88660ba08bae32433f784902a2909bfde543b50c066a11472949a",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/BatteryHolder_QJ_CR1220-2_C70381.wrl": "6a8f69ef759bfe98e390059fb8392cab30b2e60e72088d1eeec473e298456e6b",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/StackHeader_2x03_P2.54mm_Bottom.wrl": "90a23b38676afc3a6bbe0071635019a0dda159b4a15868bde79be88ad7b0c82b",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-1.0.wrl": "84767b8854cd9aa834ef1a710195fd4a307f97a455acd26208a391a5edb8ed69",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.wrl": "64226a267ab1e0680d23f4ad7f3dfbc8b032d718c3cae9e3c309e01a29d314b1",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/SOIC-8_3.9x4.9mm_P1.27mm.step": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/KF128-10P.wrl": "b7e847cf2313f060d6b121f1b0f114bc8f106bf16695c6b85970ad90e2abd6d3",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/W5500_Lite_2x6-assembly.wrl": "2f1c19b8a6bcd1400b4f38ad26e18ff8607c7ae4f48a0dcc40fb25064aaf8a91",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_GCT_USB4120_Vertical.wrl": "53776f37f82434833b6b0d3ace5e82c7069dd3517b7bb6e2c218d8238f85ec85",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_GCT_USB4120_Vertical.kicad_mod": "3dae00168af245a359dde600484ed6f45510de7592679a6da9887f51976f8d7c",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78E_PSE.kicad_mod": "c904c95327ccd09632876faffc768cad0828d4e22835f27316b4e710c839c1fa",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/BatteryHolder_QJ_CR1220-2_C70381.kicad_mod": "c44a9d411ef89406e35bc49646692bc20a395bf008487fd6febec9f9c71631e6",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/SW_SPST_TS-1088-xR020.kicad_mod": "86e6da30eba8a50145a47512986a66f0e29b0d10165afa215bfd6ff27bdf45df",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/C3_Carrier_2x8.kicad_mod": "e35af89fa594fb43bd49fb6be5edc0a857af22bd38e1a1fc52673370474ee2df",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-8P.kicad_mod": "2ca56a7c7142276bece34aaf9f76696e900c4cec774749c4dfb2df1cb6a42156",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_GCT_USB4085_Overhang.kicad_mod": "a28e95f7d37f40c5ace10224cd36102dffcb1c2f9d1dec9896f81a7d4b2c5d69",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/W5500_Lite_2x6.kicad_mod": "8f85568f1de9cab08276e63f330d385a0505fdc87ec0a5a95ab9181f24ec455d",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-1.0_SIP3_P2.54mm.kicad_mod": "ba1df257f23ad41bec8efec61072b6f83cdc08b7d04f60babde989bf7fedb0f5",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/RECOM_R-78K3.3-0.5_SIP3_P2.54mm.kicad_mod": "ce2ae5174b49a01dd0cb3a7678443c7e300ab8befca9313bc33d9520a8eb17d2",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/ADM2687E_SOIC_IC_16_7.5x12.75mm_P1.27mm.kicad_mod": "af6955d9ea14b4e36e477478399f95bdbe5deb2fd8293fadee71e4dfbb4fa4f1",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.kicad_mod": "df251be00a9f091f21e17725163be92816914e8a82147f3c48eb4edb3a3cb7f9",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/ESP32-S3-WROOM-1U_PTH030.kicad_mod": "5c5e5fdd9cebda93102c7d74a5e0762f720f6ce7cbe77e24250fbf1574f0e753",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/SOIC8_SRDA_USB_Clearance.kicad_mod": "f7fd9fed81dd1b307e0140e2d99f496928b86a60f07d84ea82157453d232270e",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-3P.kicad_mod": "eb491f1cb5c14b0ed6ee9224ad5843e04e087fd4c27d877b942a8308f08f018f",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/TMR1_SIP6.kicad_mod": "501d447c9cff6237c990d36eec021f79a44dfdb7db52d83a0b57403b402da916",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/C0805_C50_Clearance.kicad_mod": "4f5231acfc50b47517f2f6b90f537a8d1668595b778e6c68368a0f3f6ce56d87",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/StackHeader_2x03_P2.54mm_Bottom.kicad_mod": "25d6b45724f403a335ea642ca8457c6103145c3d3ead4c0714a6766b187646ea",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-10P.kicad_mod": "032e4036190bdfabbcd5baeec9169ba374dec0b79657556d093d67aeb683d9ed",
+    "/Users/sergey/Documents/ChatGPT/УмныйДом/.codex-work/power-split-20261123/stage/FCPLCN-CPU-08-1v0/RelayStack.pretty/KF128-2.54-4P.kicad_mod": "2603ec81936270341d88956f778015b36deb8827c004043e3e1af4a068e31727"
+  },
+  "checks": [
+    {
+      "kind": "exact_reference_scope",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "added": [
+        "C54",
+        "C55",
+        "C56",
+        "U17"
+      ],
+      "removed": []
+    },
+    {
+      "kind": "physical_inventory",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "actual": 164
+    },
+    {
+      "kind": "fresh_native_schematic_matches_XML",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "unique_XML_refs_pin_bindings",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "full_XML_PCB_inventory",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "all_and_only_approved_power_pin_changes",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "allowed": [
+        [
+          "J1",
+          "4"
+        ],
+        [
+          "J1",
+          "3"
+        ],
+        [
+          "U4",
+          "2"
+        ],
+        [
+          "C11",
+          "1"
+        ]
+      ],
+      "problems": []
+    },
+    {
+      "kind": "retained_UUID_metadata_and_pad_inventory",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "problems": []
+    },
+    {
+      "kind": "new_component_exact_pin_contract",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "ref": "U17",
+      "expected": {
+        "1": "+12V_LOGIC",
+        "2": "GND",
+        "3": "+5V_TMR"
+      }
+    },
+    {
+      "kind": "new_component_exact_pin_contract",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "ref": "C54",
+      "expected": {
+        "1": "+12V_LOGIC",
+        "2": "GND"
+      }
+    },
+    {
+      "kind": "new_component_exact_pin_contract",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "ref": "C55",
+      "expected": {
+        "1": "+12V_LOGIC",
+        "2": "GND"
+      }
+    },
+    {
+      "kind": "new_component_exact_pin_contract",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "ref": "C56",
+      "expected": {
+        "1": "+5V_TMR",
+        "2": "GND"
+      }
+    },
+    {
+      "kind": "upper_U17_exact_moved_part",
+      "passed": true,
+      "actual": {
+        "uuid": "db712efd-f926-56d5-8bba-c542baee701f",
+        "reference": "U17",
+        "value": "R-78E5.0-1.0",
+        "footprint": "RelayStack:RECOM_R-78E_PSE",
+        "mpn": "R-78E5.0-1.0",
+        "fields": {
+          "Reference": "U17",
+          "Value": "R-78E5.0-1.0",
+          "Datasheet": "https://recom-power.com/pdf/Innoline/R-78E-1.0.pdf",
+          "Description": "",
+          "KiLib_Generator": "Recom_DCDC",
+          "MPN": "R-78E5.0-1.0",
+          "Manufacturer": "RECOM",
+          "InputVoltage": "8–28 V",
+          "OutputCurrent": "1 A"
+        },
+        "pose": [
+          108.5,
+          74.4,
+          180.0,
+          "F.Cu"
+        ],
+        "pad_numbers": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "pad_uuids": [
+          "5a6cd773-5e58-41dd-99e8-15e9ddf2898e",
+          "f879dac9-b2e2-4ea7-9020-ba16b394ca3f",
+          "f8f99a00-2f28-4c43-968f-785d70fca466"
+        ],
+        "pad_uuid_numbers": {
+          "5a6cd773-5e58-41dd-99e8-15e9ddf2898e": "1",
+          "f8f99a00-2f28-4c43-968f-785d70fca466": "2",
+          "f879dac9-b2e2-4ea7-9020-ba16b394ca3f": "3"
+        },
+        "pins": {
+          "1": [
+            "+12V_LOGIC"
+          ],
+          "2": [
+            "GND"
+          ],
+          "3": [
+            "+5V_TMR"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "explicit_local_3V3_endpoint_clearance_adjustment",
+      "passed": true,
+      "uuid": "ca4c340b-33b0-42bf-819e-5d13ab921a46",
+      "before": {
+        "uuid": "ca4c340b-33b0-42bf-819e-5d13ab921a46",
+        "net": "/+3V3",
+        "kind": "track",
+        "start": [
+          110.0,
+          75.5
+        ],
+        "end": [
+          110.0,
+          77.5
+        ],
+        "width": 0.45,
+        "layer": "B.Cu"
+      },
+      "after": {
+        "uuid": "ca4c340b-33b0-42bf-819e-5d13ab921a46",
+        "net": "/+3V3",
+        "kind": "track",
+        "start": [
+          110.0,
+          75.3
+        ],
+        "end": [
+          110.0,
+          77.5
+        ],
+        "width": 0.45,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "kind": "explicit_local_3V3_endpoint_clearance_adjustment",
+      "passed": true,
+      "uuid": "e797ab5a-dd33-4931-8029-395712f81d08",
+      "before": {
+        "uuid": "e797ab5a-dd33-4931-8029-395712f81d08",
+        "net": "/+3V3",
+        "kind": "track",
+        "start": [
+          110.0,
+          72.8
+        ],
+        "end": [
+          110.0,
+          75.5
+        ],
+        "width": 0.5,
+        "layer": "B.Cu"
+      },
+      "after": {
+        "uuid": "e797ab5a-dd33-4931-8029-395712f81d08",
+        "net": "/+3V3",
+        "kind": "track",
+        "start": [
+          110.0,
+          72.8
+        ],
+        "end": [
+          110.0,
+          75.3
+        ],
+        "width": 0.5,
+        "layer": "B.Cu"
+      }
+    },
+    {
+      "kind": "explicit_local_3V3_endpoint_clearance_adjustment",
+      "passed": true,
+      "uuid": "acb86e11-d6f6-4ea5-82d9-c8c512fc73bf",
+      "before": {
+        "uuid": "acb86e11-d6f6-4ea5-82d9-c8c512fc73bf",
+        "net": "/+3V3",
+        "kind": "via",
+        "xy": [
+          110.0,
+          75.5
+        ],
+        "diameter": 0.8,
+        "drill": 0.3
+      },
+      "after": {
+        "uuid": "acb86e11-d6f6-4ea5-82d9-c8c512fc73bf",
+        "net": "/+3V3",
+        "kind": "via",
+        "xy": [
+          110.0,
+          75.3
+        ],
+        "diameter": 0.8,
+        "drill": 0.3
+      }
+    },
+    {
+      "kind": "non_power_copper_exactly_preserved",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "violations": []
+    },
+    {
+      "kind": "outline_and_two_layers_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "all_header_poses_unchanged",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0"
+    },
+    {
+      "kind": "straight_tracks_only_45_or_90",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "violations": []
+    },
+    {
+      "kind": "BOM_exact_purchased_refs",
+      "passed": true,
+      "board": "FCPLCN-CPU-08-1v0",
+      "count": 164
+    },
+    {
+      "kind": "exact_reference_scope",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "added": [
+        "FB1"
+      ],
+      "removed": [
+        "U8"
+      ]
+    },
+    {
+      "kind": "physical_inventory",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "actual": 251
+    },
+    {
+      "kind": "fresh_native_schematic_matches_XML",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "unique_XML_refs_pin_bindings",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "full_XML_PCB_inventory",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "only_owned_power_parts_repositioned",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "ref": "U2"
+    },
+    {
+      "kind": "all_and_only_approved_power_pin_changes",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "allowed": [
+        [
+          "J43",
+          "4"
+        ],
+        [
+          "J43",
+          "3"
+        ],
+        [
+          "C3",
+          "1"
+        ],
+        [
+          "C6",
+          "1"
+        ],
+        [
+          "U2",
+          "3"
+        ]
+      ],
+      "problems": []
+    },
+    {
+      "kind": "retained_UUID_metadata_and_pad_inventory",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "problems": []
+    },
+    {
+      "kind": "new_component_exact_pin_contract",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "ref": "FB1",
+      "expected": {
+        "1": "+3V3_DCDC",
+        "2": "+3V3"
+      }
+    },
+    {
+      "kind": "lower_U2_exact_replacement",
+      "passed": true,
+      "actual": {
+        "uuid": "fd165d78-5922-508a-a4b5-7c2832ed0e08",
+        "reference": "U2",
+        "value": "R-78K3.3-0.5",
+        "footprint": "RelayBoard:RECOM_R-78K3.3-0.5_SIP3_P2.54mm",
+        "mpn": "R-78K3.3-0.5",
+        "fields": {
+          "Reference": "U2",
+          "Value": "R-78K3.3-0.5",
+          "Datasheet": "https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf",
+          "Description": "",
+          "MPN": "R-78K3.3-0.5",
+          "Manufacturer": "RECOM",
+          "InputVoltage": "4.5–36 V",
+          "OutputCurrent": "0.5 A"
+        },
+        "pose": [
+          142.7,
+          91.8,
+          90.0,
+          "top_layer"
+        ],
+        "pad_numbers": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "pad_uuids": [
+          "371791c5-2de4-40d7-9934-25b4e54be6a1",
+          "d52a3583-a992-4149-9f78-de1f2568d3b1",
+          "d6e9715c-f1f4-49da-b2da-40e5c7112ba7"
+        ],
+        "pad_uuid_numbers": {
+          "371791c5-2de4-40d7-9934-25b4e54be6a1": "1",
+          "d6e9715c-f1f4-49da-b2da-40e5c7112ba7": "2",
+          "d52a3583-a992-4149-9f78-de1f2568d3b1": "3"
+        },
+        "pins": {
+          "1": [
+            "+12V_LOGIC"
+          ],
+          "2": [
+            "GND"
+          ],
+          "3": [
+            "+3V3_DCDC"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "non_power_copper_exactly_preserved",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "violations": []
+    },
+    {
+      "kind": "outline_and_two_layers_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "all_header_poses_unchanged",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0"
+    },
+    {
+      "kind": "straight_tracks_only_45_or_90",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "violations": []
+    },
+    {
+      "kind": "BOM_exact_purchased_refs",
+      "passed": true,
+      "board": "FCPLCN-RLY-1616-1v0",
+      "count": 248
+    },
+    {
+      "kind": "stack_mechanics_unchanged",
+      "passed": true
+    },
+    {
+      "kind": "read_only_sources_preserved",
+      "passed": true,
+      "changed": []
+    }
+  ],
+  "errors": [],
+  "boards": {
+    "FCPLCN-CPU-08-1v0": {
+      "physical_count": 164,
+      "purchased_count": 164,
+      "new_refs": [
+        "C54",
+        "C55",
+        "C56",
+        "U17"
+      ],
+      "removed_refs": [],
+      "pose_changes": [],
+      "power_pin_changes": [
+        [
+          "J1",
+          "4"
+        ],
+        [
+          "J1",
+          "3"
+        ],
+        [
+          "U4",
+          "2"
+        ],
+        [
+          "C11",
+          "1"
+        ]
+      ],
+      "changed_copper_objects": 59
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "physical_count": 251,
+      "purchased_count": 248,
+      "new_refs": [
+        "FB1"
+      ],
+      "removed_refs": [
+        "U8"
+      ],
+      "pose_changes": [
+        {
+          "ref": "U2",
+          "before": [
+            143.5,
+            91.8,
+            90.0,
+            "top_layer"
+          ],
+          "after": [
+            142.7,
+            91.8,
+            90.0,
+            "top_layer"
+          ]
+        }
+      ],
+      "power_pin_changes": [
+        [
+          "J43",
+          "4"
+        ],
+        [
+          "J43",
+          "3"
+        ],
+        [
+          "C3",
+          "1"
+        ],
+        [
+          "C6",
+          "1"
+        ],
+        [
+          "U2",
+          "3"
+        ]
+      ],
+      "changed_copper_objects": 69
+    }
+  },
+  "purchased": {
+    "CPU": 164,
+    "RLY": 248,
+    "total": 412
+  }
+}

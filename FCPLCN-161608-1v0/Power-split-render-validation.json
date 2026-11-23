@@ -1,0 +1,631 @@
+{
+  "passed": true,
+  "renderer": "Native KiCad",
+  "source_sha256": {
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "4a322497816aa3b2461070c6b17fd2565bb98bd875e60493105f437079b08eb5",
+    "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.xml": "2252c36d3092a415da608608fb8fb9e1d0e5c616e6c596adfa7036b0ccb87e07",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "15ab3935683fea5c40f0f1efeb9c5d5e8f763ca321789e3e115367d0fb38f096",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "ab8cd2f8e957d8c99af90c91478e194d544c5baa88663d9fbca6414ba6e58aaf",
+    "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.xml": "f42f441650edb5869786c9fb362c36beb5cd79479f0dd7437da4349cca79994c",
+    "FCPLCN-CPU-08-1v0/RelayStack.kicad_sym": "0c9940fc639ba9b009a0f984333df340c7a0109d2c2e1b396750a14d06913790",
+    "FCPLCN-RLY-1616-1v0/RelayBoard.kicad_sym": "54b68db715587adaaefe14f01fa875cfd89624826833099a344495b554b67c87"
+  },
+  "native_gallery_views": 27,
+  "source_files_preserved": true,
+  "aliases": {
+    "Stack-3D-preview.png": {
+      "source": "Stack-angled-front.png",
+      "sha256": "956ec8ccc0abc127314877c14d76f39c058acd51efdbec44a0b3f107a899aa77"
+    },
+    "Stack-3D-top.png": {
+      "source": "Stack-top.png",
+      "sha256": "a22c2393443f2c9bdfab90254b87122dba9f8e3e3d50af5d3c7216fb1cbb7dcc"
+    },
+    "Stack-alignment-top.png": {
+      "source": "Stack-top.png",
+      "sha256": "a22c2393443f2c9bdfab90254b87122dba9f8e3e3d50af5d3c7216fb1cbb7dcc"
+    },
+    "Stack-3D-low-side.png": {
+      "source": "Stack-front.png",
+      "sha256": "ce12b170bae578634a0632aa25c2f050fffaa3493e74787845a51cfa9b180856"
+    },
+    "Base-3D-preview.png": {
+      "source": "FCPLCN-RLY-1616-1v0-angled-front.png",
+      "sha256": "b2126bc3eb49d435633d7d37c6136dfb6c2ab72e54f780c88a1abda4d96988af"
+    },
+    "Base-3D-top.png": {
+      "source": "FCPLCN-RLY-1616-1v0-top.png",
+      "sha256": "93784df6eb45149ef5d8b52d3a318edd776adf1f3ce3d98861709ce781973cb3"
+    },
+    "FCPLCN-CPU-08-1v0-3D-preview.png": {
+      "source": "FCPLCN-CPU-08-1v0-angled-front.png",
+      "sha256": "cb6f4ea704856f9aa062ebe6299e55cb23dac8291e76685085d7de8c976ded7a"
+    },
+    "FCPLCN-CPU-08-1v0-3D-top.png": {
+      "source": "FCPLCN-CPU-08-1v0-top.png",
+      "sha256": "26cac9c8f752a261872ec4aabe4066e4f449f6f598804a249bdf17f20854fc79"
+    },
+    "FCPLCN-CPU-08-1v0-3D-bottom.png": {
+      "source": "FCPLCN-CPU-08-1v0-bottom.png",
+      "sha256": "4f2dfa28c51ff0ff9d9c9a590c80b0b4eddc5dc752895d36d94cd579ffa46433"
+    },
+    "FCPLCN-CPU-08-1v0-3D-bottom-preview.png": {
+      "source": "FCPLCN-CPU-08-1v0-angled-bottom.png",
+      "sha256": "3a4faca6577126ed8e239832995adab8d36de687dcc4a74337b49a5369119ebb"
+    },
+    "FCPLCN-RLY-1616-1v0-3D-preview.png": {
+      "source": "FCPLCN-RLY-1616-1v0-angled-front.png",
+      "sha256": "b2126bc3eb49d435633d7d37c6136dfb6c2ab72e54f780c88a1abda4d96988af"
+    },
+    "FCPLCN-RLY-1616-1v0-3D-top.png": {
+      "source": "FCPLCN-RLY-1616-1v0-top.png",
+      "sha256": "93784df6eb45149ef5d8b52d3a318edd776adf1f3ce3d98861709ce781973cb3"
+    },
+    "FCPLCN-RLY-1616-1v0-3D-bottom.png": {
+      "source": "FCPLCN-RLY-1616-1v0-bottom.png",
+      "sha256": "233cb8aca3083775a6d54c301193ed7561a86a2e78fef593abdb77e314644de5"
+    },
+    "FCPLCN-RLY-1616-1v0-3D-bottom-preview.png": {
+      "source": "FCPLCN-RLY-1616-1v0-angled-bottom.png",
+      "sha256": "e42bca13758707b76c9289acd0e6cabdc6862b93333dabd8d106700c26ca82a4"
+    }
+  },
+  "images": [
+    {
+      "scene": "Upper",
+      "view": "top",
+      "side": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-top.png",
+      "sha256": "26cac9c8f752a261872ec4aabe4066e4f449f6f598804a249bdf17f20854fc79",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-bottom.png",
+      "sha256": "4f2dfa28c51ff0ff9d9c9a590c80b0b4eddc5dc752895d36d94cd579ffa46433",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "front",
+      "side": "front",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-front.png",
+      "sha256": "63c7559d32b8c96080149c56be2f323859e2905a20f4e74b01d27196250cf2cf",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "back",
+      "side": "back",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-back.png",
+      "sha256": "5c7a22f9e58944dcf6c43aaf1565fb2106f6327ddf886e24c8c195c3e7795b0d",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "left",
+      "side": "left",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-left.png",
+      "sha256": "21f648b6a2a581fb9ab9fe083d95a78d799fae6d60e4536abbe845325f4728b8",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "right",
+      "side": "right",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-right.png",
+      "sha256": "a3e75ce42490aa4f4ebe4b7b5ab2d508d60f2f108f00c4baacc978ebb1709fd4",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "angled-front",
+      "side": "top",
+      "rotation_deg": [
+        -32.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-angled-front.png",
+      "sha256": "cb6f4ea704856f9aa062ebe6299e55cb23dac8291e76685085d7de8c976ded7a",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "angled-back",
+      "side": "top",
+      "rotation_deg": [
+        32.0,
+        0.0,
+        8.0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-angled-back.png",
+      "sha256": "7520b656dbd582133fe2d65c8f68ac31bebf87301d8d445d3f4a6cec2fe77f5b",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Upper",
+      "view": "angled-bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        -25.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-CPU-08-1v0-angled-bottom.png",
+      "sha256": "3a4faca6577126ed8e239832995adab8d36de687dcc4a74337b49a5369119ebb",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "top",
+      "side": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-top.png",
+      "sha256": "93784df6eb45149ef5d8b52d3a318edd776adf1f3ce3d98861709ce781973cb3",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-bottom.png",
+      "sha256": "233cb8aca3083775a6d54c301193ed7561a86a2e78fef593abdb77e314644de5",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "front",
+      "side": "front",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-front.png",
+      "sha256": "b4e6798fadf706157b0302ec8b12d2b5496a14c778f9487d9136b0e000106156",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "back",
+      "side": "back",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-back.png",
+      "sha256": "8d3635d5e332df091559ed0cc4c2463e994b2f4aeaaab77dc9c7fab187bf84da",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "left",
+      "side": "left",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-left.png",
+      "sha256": "2acf6e39462ea9721d84b31371df0cb8c15712d03f733885bdc84fb4149e2c9c",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "right",
+      "side": "right",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-right.png",
+      "sha256": "399c6a096a72e1f787816639b5297961e039d34d66e93910f1f29b78dd79f81d",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "angled-front",
+      "side": "top",
+      "rotation_deg": [
+        -32.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-angled-front.png",
+      "sha256": "b2126bc3eb49d435633d7d37c6136dfb6c2ab72e54f780c88a1abda4d96988af",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "angled-back",
+      "side": "top",
+      "rotation_deg": [
+        32.0,
+        0.0,
+        8.0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-angled-back.png",
+      "sha256": "e2ac2d3fb8e8ee0db4c3a8e4660c228c510c75ebd681924580eb1e9202b9b4d7",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Lower",
+      "view": "angled-bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        -25.0,
+        0.0,
+        -8.0
+      ],
+      "file": "FCPLCN-RLY-1616-1v0-angled-bottom.png",
+      "sha256": "e42bca13758707b76c9289acd0e6cabdc6862b93333dabd8d106700c26ca82a4",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "top",
+      "side": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-top.png",
+      "sha256": "a22c2393443f2c9bdfab90254b87122dba9f8e3e3d50af5d3c7216fb1cbb7dcc",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-bottom.png",
+      "sha256": "28ca769010b7382dc5a83ba49601dca7aeda942390046efc5062c934b2be9a5e",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "front",
+      "side": "front",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-front.png",
+      "sha256": "ce12b170bae578634a0632aa25c2f050fffaa3493e74787845a51cfa9b180856",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "back",
+      "side": "back",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-back.png",
+      "sha256": "16e30cc19579a56064ec2c3f07ba2cb8088e5dcf55db96c0c7fcbdb734bc6b01",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "left",
+      "side": "left",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-left.png",
+      "sha256": "c012500f458471b57cbaab3b08e80c36e86548b0b72c2aa301a2199010152dde",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "right",
+      "side": "right",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "file": "Stack-right.png",
+      "sha256": "e3aacdb104363ec6c9d00e9c01b4f40a160734f72bc144ea25c5e032e4cf628e",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-front",
+      "side": "top",
+      "rotation_deg": [
+        -32.0,
+        0.0,
+        -8.0
+      ],
+      "file": "Stack-angled-front.png",
+      "sha256": "956ec8ccc0abc127314877c14d76f39c058acd51efdbec44a0b3f107a899aa77",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-back",
+      "side": "top",
+      "rotation_deg": [
+        32.0,
+        0.0,
+        8.0
+      ],
+      "file": "Stack-angled-back.png",
+      "sha256": "80f4ebab545a35bf138295388a9a044326c689463bb40f0da4c78a71d7e32344",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    },
+    {
+      "scene": "Stack",
+      "view": "angled-bottom",
+      "side": "bottom",
+      "rotation_deg": [
+        -25.0,
+        0.0,
+        -8.0
+      ],
+      "file": "Stack-angled-bottom.png",
+      "sha256": "83fd897d89ee5ef7af427f7c3959206690391f1ec27e3d37da3f71c908466ce2",
+      "width": 1712,
+      "height": 1232,
+      "requested_width": 1736,
+      "requested_height": 1264
+    }
+  ],
+  "detail_images": [
+    {
+      "file": "iButton-front-closeup.png",
+      "sha256": "9c6fc5c4f3317d0d873838c804b179d79e0bdeb65a2b0834a4f2fec52c2963a8",
+      "renderer": "Native KiCad pcb render",
+      "pivot_board_xy_mm": [
+        73.69000000000001,
+        118.0
+      ]
+    },
+    {
+      "file": "JP2-120R-closeup.png",
+      "sha256": "84951562f3fa595b0001fbbab3ca39d0a35e68aeca60916f3dc1e2ef1e1f66c1",
+      "renderer": "Native KiCad pcb render",
+      "pivot_board_xy_mm": [
+        110.67,
+        118.3
+      ]
+    }
+  ],
+  "documentation_export_sha256": {
+    "schematics/relay-pcb-bottom.svg": "0ba1a03ea5657157abaad98e39ba0efdd636c7d4627acf513ffdf979954c7973",
+    "schematics/cpu-schematic.pdf": "23577b2f990e881e89b1b6bc7133a77d258c9364cf362673001c5aa2ccf09e15",
+    "schematics/cpu-schematic.png": "79189db540fadf3420c599bbf0cdf11b1645ae935182d939d77b13230d6e376e",
+    "schematics/cpu-schematic.svg": "4ada95302dbe956940d24508d98930e503df67b90b82e237222aaa293c9d25f6",
+    "schematics/relay-pcb-bottom.png": "f1cb81a60d10c857d84a27d2d4261e32f69acb13a7afd6d1f4caa6e0ae4ec36e",
+    "schematics/README.md": "ed9e883497ded5c5e535c803d97418cae1a2026032314bb543807ba12d8f2a17",
+    "schematics/relay-pcb.svg": "a51f46a1d325a2906e98ad7c7e52f42f33f406e950c856629609f9a314425aea",
+    "schematics/relay-schematic.png": "c74c9aad348e2cf960d5c4999875b0c89d13c4f75cd3eb8ba8ed655023b51567",
+    "schematics/cpu-pcb-bottom.png": "9a7044f845b3a7e8036bac6b90e7585aeeb634d713f5dfc2c81c05b00989cde1",
+    "schematics/manifest.json": "dd029d806c77d0c5f2d07dbd1aef5a1e23f4467442ad17789073042286bdc698",
+    "schematics/relay-schematic.pdf": "4bdfaf6051afbf84030eed4c74cb97b881ebfac63e846e5ce41e1c9edaecc68b",
+    "schematics/cpu-pcb.svg": "83e10909caff32d8aec9e84bcc78647c92e330ae8af6da088428c9e8e69eb8c4",
+    "schematics/cpu-pcb.png": "fae863357e2e5f1d019094582fbf34b6bdab7d2a8b76d34d99fe1424c60f3986",
+    "schematics/cpu-pcb-bottom.svg": "6394e391d5c3e80d8fd98f559f50d97df6ae6c04c5bbccbfaf1d94b3c863ebff",
+    "schematics/relay-schematic.svg": "19c3001bd4ea68c2b5ce887a8b1999306575fa0a8b007daa65d9b3d8a0cd4381",
+    "schematics/relay-pcb.png": "fa6a41ea788100c469eeb8a452943a9ec3acaf789c058095c86bc4d1c7ff7538"
+  },
+  "schematic_render_copy_verification": {
+    "FCPLCN-CPU-08-1v0": {
+      "reason": "KiCad default zero-width wire export may omit strokes; disposable copy has explicit0.1524mm solid strokes. Canonical CAD remains unchanged.",
+      "normalizedWireStrokes": 527,
+      "componentAndPinNetMapVerifiedEqual": true,
+      "comparisonExcludedOnlyAdministrativeSheetPathProperties": true,
+      "renderCopySha256": "c76b7836e3397da079f940365905f29f8d1057cc1a6ee46c3075593394cb8bf8"
+    },
+    "FCPLCN-RLY-1616-1v0": {
+      "reason": "KiCad default zero-width wire export may omit strokes; disposable copy has explicit0.1524mm solid strokes. Canonical CAD remains unchanged.",
+      "normalizedWireStrokes": 15,
+      "componentAndPinNetMapVerifiedEqual": true,
+      "comparisonExcludedOnlyAdministrativeSheetPathProperties": true,
+      "renderCopySha256": "7a8baf8853d12d2490bcc0fe53c3134abd3abd45e02aae5d9dad3db94790bf66"
+    }
+  },
+  "documentation_previews": {
+    "renderer": "Native KiCad",
+    "sources_relative_to_project": {
+      "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
+      "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch": "4a322497816aa3b2461070c6b17fd2565bb98bd875e60493105f437079b08eb5",
+      "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pro": "50e215d35a5b607c17f890e7e22da80796f0a34633cd87eb35c359d4bcb62f71",
+      "FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_dru": "5dc607b650c870a38e91fe83ff6ae62dfc9ac11bfbab659f13338bcefac285c9",
+      "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb": "15ab3935683fea5c40f0f1efeb9c5d5e8f763ca321789e3e115367d0fb38f096",
+      "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch": "ab8cd2f8e957d8c99af90c91478e194d544c5baa88663d9fbca6414ba6e58aaf",
+      "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pro": "4cecc4be3f3780129e7c8acaf5d00d3c8e2b37b754cb89dc8cab7f50f3f014eb",
+      "FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_dru": "be94fb8bcda9b4d14f410f6c183f349d39201ecc5c5f70c8d9c80fb021de4645",
+      "Stack-mechanics.json": "3ec54211f6d4085dc4cd7b8f9fa6438c1cba52b08d01189d20508a703fb7db17",
+      "FCPLCN-CPU-08-1v0/3d/ADM2687E_RI-16-2.wrl": "78fc299a8ac88660ba08bae32433f784902a2909bfde543b50c066a11472949a",
+      "FCPLCN-CPU-08-1v0/3d/BatteryHolder_QJ_CR1220-2_C70381.wrl": "6a8f69ef759bfe98e390059fb8392cab30b2e60e72088d1eeec473e298456e6b",
+      "FCPLCN-CPU-08-1v0/3d/D_SMA.step": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+      "FCPLCN-CPU-08-1v0/3d/ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
+      "FCPLCN-CPU-08-1v0/3d/KF128-10P.wrl": "b7e847cf2313f060d6b121f1b0f114bc8f106bf16695c6b85970ad90e2abd6d3",
+      "FCPLCN-CPU-08-1v0/3d/KF128-3P.wrl": "d598b818b6fe9eca2051874c6661f19e053543e199034fe5eecf61662048aaa0",
+      "FCPLCN-CPU-08-1v0/3d/KF128-4P.wrl": "b46d141ae4db1b0ac8d0a6e152699a60f02ef2aca8210554447655b4d5e09add",
+      "FCPLCN-CPU-08-1v0/3d/KF128-8P.wrl": "226920cce14c85ceafed0cc79e470a41856c8e9ccba1ca4d9fddca7caf89ed54",
+      "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+      "FCPLCN-CPU-08-1v0/3d/RECOM_R-78K3.3-1.0.wrl": "84767b8854cd9aa834ef1a710195fd4a307f97a455acd26208a391a5edb8ed69",
+      "FCPLCN-CPU-08-1v0/3d/SOIC-8_3.9x4.9mm_P1.27mm.step": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+      "FCPLCN-CPU-08-1v0/3d/SW_SPST_TS-1088-xR020.step": "ebfe1a50181c9a502cd98b44b03a5ce8568ff7c77d4fd5906caaef4b9a290da8",
+      "FCPLCN-CPU-08-1v0/3d/StackHeader_2x03_P2.54mm_Bottom.wrl": "90a23b38676afc3a6bbe0071635019a0dda159b4a15868bde79be88ad7b0c82b",
+      "FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_GCT_USB4120_Vertical.wrl": "53776f37f82434833b6b0d3ace5e82c7069dd3517b7bb6e2c218d8238f85ec85",
+      "FCPLCN-CPU-08-1v0/3d/USB_C_Receptacle_HBXINTAO16PIN_DIP_Vertical.wrl": "64226a267ab1e0680d23f4ad7f3dfbc8b032d718c3cae9e3c309e01a29d314b1",
+      "FCPLCN-CPU-08-1v0/3d/W5500_Lite_2x6-assembly.wrl": "2f1c19b8a6bcd1400b4f38ad26e18ff8607c7ae4f48a0dcc40fb25064aaf8a91",
+      "FCPLCN-RLY-1616-1v0/3d/APAQ_350ARHA101M06X8P00_H9max.wrl": "b9854934d71e6db2476d3cc82713bb347a19ed3eae790fd65537bdd4f30e7d2e",
+      "FCPLCN-RLY-1616-1v0/3d/C1-D8H12.wrl": "3661cad8c040d3ef81301e1ec000bece2b90293c061671ed3d902c9f4d6ffff0",
+      "FCPLCN-RLY-1616-1v0/3d/ESP32-C3_Super_Mini-assembly.wrl": "68b783b6e316c1879c710b0251ad29fcec33f34083d4b1e4f97af821420ef848",
+      "FCPLCN-RLY-1616-1v0/3d/HF49FD-1H11.step": "133dbc7884251eacf1b2f1f74e7a8a50c596e56c21b6681da4816d6c39d7030a",
+      "FCPLCN-RLY-1616-1v0/3d/KF128-2P.wrl": "6647d5eaf436327727b67a34121a9f5b49473a37fc9fc009fb716c7391088d81",
+      "FCPLCN-RLY-1616-1v0/3d/KF128-8P.wrl": "7a4d6ca83d19b80898e42bfac9e7bc96e398d67988cbac55c821e622c887d2e1",
+      "FCPLCN-RLY-1616-1v0/3d/LTV847S.wrl": "6c916c5190b3409f646ea676eb07092ccc6e8412ae7c0f68ef8b3a46e4affb44",
+      "FCPLCN-RLY-1616-1v0/3d/RECOM_R-78K3.3-0.5.wrl": "39ce04856cba27e56904081d6affc46769a66988d6ddbf831e8618897f6b81d4",
+      "FCPLCN-RLY-1616-1v0/3d/SOIC-18W_7.5x11.6mm_P1.27mm.step": "05ad7d4945131c76ec7b9448dd9cbb5376b56adcd564c58d93e50ca7870fab1f",
+      "FCPLCN-RLY-1616-1v0/3d/StackSocket_2x03_P2.54mm.wrl": "c08e024da1343ed34bae82e1397dfe76d741ca298f3b4f8953bb04710758391c",
+      "FCPLCN-RLY-1616-1v0/3d/TLP2363_5pin_SO6.wrl": "1885885613715031594d44f3165abebbbfe8e8ea9af5ff7b21f0d38f7d922a4b",
+      "FCPLCN-RLY-1616-1v0/3d/W5500_Lite_2x6-assembly.wrl": "c9787e50d7d567ad870ee4e7197a75ca693504010d8962b1c6694c6b0b85f401"
+    },
+    "images": {
+      "stack-overview.png": {
+        "source": "Previews/native-all-views/Stack-angled-front.png",
+        "sha256": "956ec8ccc0abc127314877c14d76f39c058acd51efdbec44a0b3f107a899aa77"
+      },
+      "cpu-top.png": {
+        "source": "Previews/native-all-views/FCPLCN-CPU-08-1v0-top.png",
+        "sha256": "26cac9c8f752a261872ec4aabe4066e4f449f6f598804a249bdf17f20854fc79"
+      },
+      "cpu-bottom.png": {
+        "source": "Previews/native-all-views/FCPLCN-CPU-08-1v0-bottom.png",
+        "sha256": "4f2dfa28c51ff0ff9d9c9a590c80b0b4eddc5dc752895d36d94cd579ffa46433"
+      },
+      "relay-top.png": {
+        "source": "Previews/native-all-views/FCPLCN-RLY-1616-1v0-top.png",
+        "sha256": "93784df6eb45149ef5d8b52d3a318edd776adf1f3ce3d98861709ce781973cb3"
+      },
+      "ibutton-output.png": {
+        "source": "iButton-front-closeup.png",
+        "sha256": "9c6fc5c4f3317d0d873838c804b179d79e0bdeb65a2b0834a4f2fec52c2963a8"
+      }
+    },
+    "power_diagram": {
+      "source": "docs/readme/power-domains.svg",
+      "source_sha256": "e534668fad51710b4abf838f95d3f36030d4e122aea25354fb46b1c07ece4611",
+      "png_sha256": "8aadb1ba18770647ba3cf03cfe1bee28adce47510046932bedb180186d41ac88"
+    }
+  }
+}

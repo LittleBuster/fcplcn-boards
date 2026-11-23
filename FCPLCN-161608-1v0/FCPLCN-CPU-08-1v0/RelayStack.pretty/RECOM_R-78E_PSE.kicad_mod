@@ -1,0 +1,234 @@
+(footprint "RECOM_R-78E_PSE"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "DCDC-Converter, RECOM, RECOM_R-78E-0.5, SIP-3, pitch 2.54mm, package size 11.6x8.5x10.4mm^3, https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf")
+	(tags "dc-dc recom buck sip-3 pitch 2.54mm")
+	(property "Reference" "REF**"
+		(at 2.54 -7.56 0)
+		(layer "F.SilkS")
+		(uuid "c7307d06-9989-41fc-9fcc-1ab222a30b0e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RECOM_R-78E_PSE"
+		(at 2.54 3 0)
+		(layer "F.Fab")
+		(uuid "e4bc8bc1-a074-43a5-8825-972caf117cae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11b67c11-5328-4e54-bd10-a25ace9294e3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13dae798-9802-4586-8f9a-67468d0263c9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "Recom_DCDC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fe9f3b3a-8906-4c64-b134-c8b43d4eda4b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.57 -6.75)
+		(end 8.54 2.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fe9a4603-2d39-439a-9c07-0c9e0fee063c")
+	)
+	(fp_line
+		(start -3.61 1.06)
+		(end -3.61 2.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "64ce1b50-cdd2-4aba-82ad-61549d0e547c")
+	)
+	(fp_line
+		(start -3.61 2.3)
+		(end -2.37 2.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "aeb9c4f2-c237-4f19-8f54-1ff60a57bf27")
+	)
+	(fp_line
+		(start -3.37 -6.56)
+		(end 8.35 -6.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7e618df6-0959-4c40-9225-a33998412830")
+	)
+	(fp_line
+		(start -3.37 2.06)
+		(end -3.37 -6.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d319b9ad-1d14-4058-aee0-0afa0e0b1cdf")
+	)
+	(fp_line
+		(start -3.31 -6.5)
+		(end 8.29 -6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ae10cfbc-26ba-41a5-9b2f-9b88432b0734")
+	)
+	(fp_line
+		(start -3.31 1)
+		(end -3.31 -6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fe9f23c7-001d-4197-9e90-30166b69925d")
+	)
+	(fp_line
+		(start -2.31 2)
+		(end -3.31 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c0565952-486d-4c0a-b34a-22025807fc0c")
+	)
+	(fp_line
+		(start 8.29 -6.5)
+		(end 8.29 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "977f4e58-f3b1-4623-8192-605be7276868")
+	)
+	(fp_line
+		(start 8.29 2)
+		(end -2.31 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "90045c03-8b8b-4c81-b350-03bae00c44fe")
+	)
+	(fp_line
+		(start 8.35 -6.56)
+		(end 8.35 2.06)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3ca9705f-8e62-49b2-bdb4-402ab1ef6189")
+	)
+	(fp_line
+		(start 8.35 2.06)
+		(end -3.37 2.06)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b057e672-0cb3-43d4-9255-abc8c6d9f7fc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 -2.25 0)
+		(layer "F.Fab")
+		(uuid "62770b68-f2be-4203-b729-10a7cf4b83df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.65 2.3)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "32566d4d-0f89-4fa6-a0a8-daf134a2cc4c")
+	)
+	(pad "2" thru_hole oval
+		(at 2.54 0)
+		(size 1.65 2.3)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5e1d4954-6d02-47b3-8ae3-38b1731ae894")
+	)
+	(pad "3" thru_hole oval
+		(at 5.08 0)
+		(size 1.65 2.3)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "94752f4c-9865-4ab8-8a4c-4f3b2e0b023c")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Converter_DCDC.3dshapes/Converter_DCDC_RECOM_R-78E-0.5_THT.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

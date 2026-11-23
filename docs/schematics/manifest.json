@@ -4,53 +4,40 @@
   "sources": {
     "cpu-schematic": {
       "source": "FCPLCN-161608-1v0/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_sch",
-      "sha256": "a64df3c366c7dcafe46e23f47631aea24757c63579e4698fcb60a7edc3187e56",
+      "sha256": "4a322497816aa3b2461070c6b17fd2565bb98bd875e60493105f437079b08eb5",
       "pageMillimeters": [
         594.0,
-        630.0
+        920.0
       ],
       "pageCount": 1,
       "exports": [
         {
           "file": "cpu-schematic.svg",
-          "bytes": 4268914
+          "bytes": 4806483,
+          "sha256": "4ada95302dbe956940d24508d98930e503df67b90b82e237222aaa293c9d25f6"
         },
         {
           "file": "cpu-schematic.pdf",
-          "bytes": 209982
+          "bytes": 225026,
+          "sha256": "23577b2f990e881e89b1b6bc7133a77d258c9364cf362673001c5aa2ccf09e15"
         },
         {
           "file": "cpu-schematic.png",
-          "bytes": 562051
+          "bytes": 2151455,
+          "sha256": "79189db540fadf3420c599bbf0cdf11b1645ae935182d939d77b13230d6e376e"
         }
-      ]
-    },
-    "relay-schematic": {
-      "source": "FCPLCN-161608-1v0/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
-      "sha256": "4ebc9cebfc430335060756c507900099c0b9c7ea0d27df4879a08d79e8ca0e0d",
-      "pageMillimeters": [
-        594.0,
-        558.0
       ],
-      "pageCount": 1,
-      "exports": [
-        {
-          "file": "relay-schematic.svg",
-          "bytes": 4984771
-        },
-        {
-          "file": "relay-schematic.pdf",
-          "bytes": 261499
-        },
-        {
-          "file": "relay-schematic.png",
-          "bytes": 489033
-        }
-      ]
+      "renderWireStyle": {
+        "reason": "KiCad default zero-width wire export may omit strokes; disposable copy has explicit0.1524mm solid strokes. Canonical CAD remains unchanged.",
+        "normalizedWireStrokes": 527,
+        "componentAndPinNetMapVerifiedEqual": true,
+        "comparisonExcludedOnlyAdministrativeSheetPathProperties": true,
+        "renderCopySha256": "c76b7836e3397da079f940365905f29f8d1057cc1a6ee46c3075593394cb8bf8"
+      }
     },
     "cpu-pcb": {
       "source": "FCPLCN-161608-1v0/FCPLCN-CPU-08-1v0/FCPLCN-CPU-08-1v0.kicad_pcb",
-      "sha256": "e5686156d35a958e8e2c877c2b2dcff7c594aed889a6eebf05f6a48a91a33bd7",
+      "sha256": "efbac1f16778141782f6dc2f035f00b5267eb7b93ceb189ee218b322c01f7f08",
       "frontLayers": [
         "F.Cu",
         "F.SilkS",
@@ -65,19 +52,93 @@
       "exports": [
         {
           "file": "cpu-pcb.svg",
-          "bytes": 537437
+          "bytes": 615537,
+          "sha256": "83e10909caff32d8aec9e84bcc78647c92e330ae8af6da088428c9e8e69eb8c4"
         },
         {
           "file": "cpu-pcb.png",
-          "bytes": 1373943
+          "bytes": 1442008,
+          "sha256": "fae863357e2e5f1d019094582fbf34b6bdab7d2a8b76d34d99fe1424c60f3986"
         },
         {
           "file": "cpu-pcb-bottom.svg",
-          "bytes": 473789
+          "bytes": 557356,
+          "sha256": "6394e391d5c3e80d8fd98f559f50d97df6ae6c04c5bbccbfaf1d94b3c863ebff"
         },
         {
           "file": "cpu-pcb-bottom.png",
-          "bytes": 1360506
+          "bytes": 1433610,
+          "sha256": "9a7044f845b3a7e8036bac6b90e7585aeeb634d713f5dfc2c81c05b00989cde1"
+        }
+      ]
+    },
+    "relay-schematic": {
+      "source": "FCPLCN-161608-1v0/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_sch",
+      "sha256": "ab8cd2f8e957d8c99af90c91478e194d544c5baa88663d9fbca6414ba6e58aaf",
+      "pageMillimeters": [
+        594.0,
+        558.0
+      ],
+      "pageCount": 1,
+      "exports": [
+        {
+          "file": "relay-schematic.svg",
+          "bytes": 5026948,
+          "sha256": "19c3001bd4ea68c2b5ce887a8b1999306575fa0a8b007daa65d9b3d8a0cd4381"
+        },
+        {
+          "file": "relay-schematic.pdf",
+          "bytes": 283952,
+          "sha256": "4bdfaf6051afbf84030eed4c74cb97b881ebfac63e846e5ce41e1c9edaecc68b"
+        },
+        {
+          "file": "relay-schematic.png",
+          "bytes": 1853918,
+          "sha256": "c74c9aad348e2cf960d5c4999875b0c89d13c4f75cd3eb8ba8ed655023b51567"
+        }
+      ],
+      "renderWireStyle": {
+        "reason": "KiCad default zero-width wire export may omit strokes; disposable copy has explicit0.1524mm solid strokes. Canonical CAD remains unchanged.",
+        "normalizedWireStrokes": 15,
+        "componentAndPinNetMapVerifiedEqual": true,
+        "comparisonExcludedOnlyAdministrativeSheetPathProperties": true,
+        "renderCopySha256": "7a8baf8853d12d2490bcc0fe53c3134abd3abd45e02aae5d9dad3db94790bf66"
+      }
+    },
+    "relay-pcb": {
+      "source": "FCPLCN-161608-1v0/FCPLCN-RLY-1616-1v0/FCPLCN-RLY-1616-1v0.kicad_pcb",
+      "sha256": "15ab3935683fea5c40f0f1efeb9c5d5e8f763ca321789e3e115367d0fb38f096",
+      "frontLayers": [
+        "F.Cu",
+        "F.SilkS",
+        "Edge.Cuts"
+      ],
+      "bottomLayers": [
+        "B.Cu",
+        "B.SilkS",
+        "Edge.Cuts"
+      ],
+      "bottomMirrored": true,
+      "exports": [
+        {
+          "file": "relay-pcb.svg",
+          "bytes": 557558,
+          "sha256": "a51f46a1d325a2906e98ad7c7e52f42f33f406e950c856629609f9a314425aea"
+        },
+        {
+          "file": "relay-pcb.png",
+          "bytes": 1632242,
+          "sha256": "fa6a41ea788100c469eeb8a452943a9ec3acaf789c058095c86bc4d1c7ff7538"
+        },
+        {
+          "file": "relay-pcb-bottom.svg",
+          "bytes": 538630,
+          "sha256": "0ba1a03ea5657157abaad98e39ba0efdd636c7d4627acf513ffdf979954c7973"
+        },
+        {
+          "file": "relay-pcb-bottom.png",
+          "bytes": 1705908,
+          "sha256": "f1cb81a60d10c857d84a27d2d4261e32f69acb13a7afd6d1f4caa6e0ae4ec36e"
         }
       ]
     }
